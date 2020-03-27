@@ -1,0 +1,145 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1440px)
+  .container-fluid, .topbar
+    padding-right: 1.5rem
+  .contents__item .fields
+    padding-left: 1vw
+  .contents__item-1 .fields__item, .contents__item-1 .fields__item:nth-child(3n+3)
+    width: calc(50% - 10px)
+    margin-right: 20px
+  .card__field:nth-child(2)
+    width: calc(36% - 6vw)
+    margin: 0 3vw
+@media only screen and (max-width : 1199px)
+  .card__field
+    width: 100%
+    display: flex
+  .card__field:nth-child(2)
+    width: 100%
+    margin: 0
+  .card__row
+    width: calc(50% - 10px)
+    margin-right: 20px
+    &:nth-child(2n+2)
+      margin-right: 0
+  .card__ways
+    padding: 0
+  .sidebar .nav-item .nav-link
+    padding: 13px
+    font-size: 16px
+  .sidebar
+    width: 200px
+  .sidebar .nav-item .nav-link i
+    font-size: 16px
+    margin-right: 10px
+  .sidebar .sidebar-brand
+    padding: 10px
+  .sidebar .sidebar-brand .sidebar-brand-icon img
+    height: 25px
+  .sidebar .sidebar-brand, .topbar .nav-item .nav-link
+    height: 60px
+  #wrapper #content-wrapper
+    width: calc(100% - 200px)
+  .pills-custom .nav-link
+    padding: 10px
+  .pills-custom .nav-link
+    width: 155px
+  .contents__item .fields
+    padding-left: 0
+  .nav-tabs .nav-item
+    margin: 0
+  #container-wrapper
+    height: calc(100vh - 60px)
+@media only screen and (max-width : 991px)
+  .fields__item, .fields__item:nth-child(3n+3)
+    width: calc(50% - 10px)
+    margin-right: 20px
+    &:nth-child(2n+2)
+      margin-right: 0
+  .box-white__top-item
+    width: 50%
+  .container-fluid, .topbar
+    padding: 0 10px
+  .topbar.navbar-light .navbar-nav .nav-item .nav-link
+    padding: 0 15px!important
+    svg, .nav-link-arrow
+      transform: scale(0.8)
+      margin: 0
+  .first .btn
+    margin: 15px 15px 0 0
+  .box-white
+    padding: 0 15px
+  .first
+    padding: 15px
+  .nav-tabs .nav-link, .notes
+    padding: 10px 15px
+  .card
+    margin: 0 -15px 20px
+@media only screen and (max-width : 768px)
+  .box-white__top-item
+    width: auto
+  #wrapper #content-wrapper
+    width: 100%
+  #sidebarToggleTop.toggled
+    margin: 0
+    .sidebarToggleTop-top
+      top: 50%
+      transform: translate(-50%, -50%) rotate(225deg)
+    .sidebarToggleTop-center
+      opacity: 0
+    .sidebarToggleTop-bottom
+      top: 50%
+      transform: translate(-50%, -50%) rotate(-225deg)
+  .card__item
+    width: 100px
+    font-size: 14px
+  .card__select
+    max-width: calc(100% - 100px)
+  .block__blue
+    margin-left: 30px
+@media only screen and (max-width : 575px)
+  .pills-custom .nav-link
+    padding: 10px 20px
+    width: auto
+  .fields__item
+    width: 100%!important
+    margin: 0 0 25px!important
+  .card__row
+    width: 100%
+    margin: 0 0 10px
+  .card
+    padding: 15px
+  .nav-tabs
+    width: 100%
+    .nav-item
+      width: 50%
+      text-align: center
+  .box-white__top
+    padding: 10px 0
+  .block__blue
+    margin: 10px 0 0 0
+  .parties .btn-aquamarine
+    max-height: 30px
+  .card__way
+    width: fit-content
+  .card__way-line, .card__way:last-child .card__way-line
+    width: 50px
+  .public
+    padding-bottom: 40px
+  .saves
+    .btn-aquamarine, .btn-white
+      min-width: auto
+      width: 45%
+      margin: 0!important
+  .sidebar.toggled
+    width: 100vw!important
+  .sidebar-toggled
+    .overlay
+      opacity: 1
+      pointer-events: auto
+  .btn-drop
+    height: 30px

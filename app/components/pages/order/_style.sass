@@ -1,0 +1,250 @@
+.first
+  padding: 25px 30px 25px 25px
+  margin-bottom: 34px
+  margin-top: 40px
+  .btn
+    width: 123px
+    height: 74px
+    margin-left: 15px
+    border: solid 1px $color4
+  &__icon
+    width: 13px
+    height: 13px
+    margin-right: 15px
+
+.block
+  &__blue
+    min-width: 107px
+    padding: 4px 15px 5px
+    border-radius: 12px
+    background-color: $color3
+    width: fit-content
+    &-circle
+      width: 5px
+      height: 5px
+      background-color: $color1
+      border-radius: 50%
+      margin-right: 5px
+.orders
+  .input
+    width: calc(100% - 21px - 16px)
+.fields
+  padding-top: 23px
+  &__item
+    margin-bottom: 27px
+    width: calc(33.33% - 34px)
+    margin-right: 50px
+    &:nth-child(3n+3)
+      margin-right: 0
+  &__qty
+    font-size: 15px
+    color: $color1
+    line-height: 42px
+    width: 100px
+    border-radius: 4px
+    background-color: $color3
+    text-align: center
+    &-input, &-select
+      width: calc(100% - 100px)
+      border-radius: 0 4px 4px 0
+      border-left: none
+      margin: 0!important
+.tabs
+  padding-top: 30px
+.contents
+  padding: 30px 0 40px
+  &__item
+    display: none
+    &.active
+      display: block
+    .fields
+      padding-left: 70px
+    .fields__item, .fields__item:nth-child(3n+3)
+      width: calc(50% - 30px)
+      margin-right: 60px
+      margin-bottom: 40px
+      &:nth-child(2n+2)
+        margin-right: 0
+    .select
+      max-width: 100%
+      margin-bottom: 27px
+.transport-mode
+  &__box
+    border: solid 1px $color6
+    border-radius: 4px
+    overflow: hidden
+  &__item
+    width: 50%
+    height: 69px
+    border-bottom: solid 1px $color6
+    .text-13
+      margin-top: 6px
+      color: $color7
+    &.active
+      background-color: $color7
+      border-bottom: solid 1px $color7
+      .text-13
+        color: $color1
+
+  &__fcl
+    width: 23px
+    height: 23px
+  &__lcl
+    width: 30px
+    height: 19px
+  &__container
+    padding: 17px 15px 19px
+.contents__item
+  .btn-aquamarine
+    line-height: 26px
+    margin-top: -13px
+    padding: 9px 42px
+    font-size: 15px
+    font-weight: 500
+.transport
+  &__weight
+    &-item
+      width: 25%
+      border: solid 1px $color6
+      border-right: 0
+      line-height: 41px
+      text-align: center
+      font-size: 16px
+      color: $color5
+      cursor: pointer
+      &:first-child
+        border-radius: 4px 0 0 4px
+      &:last-child
+        border: solid 1px $color6
+        border-radius: 0 4px 4px 0
+        &.active
+          border: solid 1px $color3
+      &.active
+        border: solid 1px $color3
+        color: $color1
+        background: $color3
+.card
+  border-left: 5px solid $color3
+  padding: 22px 30px 47px 30px
+  margin: 0 -23px 20px
+  box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
+  &__label
+    position: relative
+    margin-bottom: 22px
+  &__check
+    @include check
+  &__row
+    margin-bottom: 8px
+  &__item
+    width: 120px
+    border-radius: 4px
+    color: $color1
+    line-height: 42px
+    text-align: center
+    background: $color7
+  &__blue
+    background: $color3
+  &__select
+    max-width: calc(100% - 120px)
+    border-radius: 0 4px 4px 0
+    margin-left: -2px
+    border-left: 0
+  &__field
+    width: 32%
+    &:nth-child(2)
+      width: calc(36% - 130px)
+      margin: 0 65px
+  &__ways
+    padding: 0 115px
+    margin-top: 57px
+    margin-bottom: 30px
+  &__way
+    width: 33.33%
+    &:last-child
+      .card__way-line
+        width: calc(100% - 42px)
+      img
+        padding: 0
+      .card__way-img
+        width: 27px
+    img
+      margin: 0 auto 23px
+      padding-left: 21px
+    &-img
+      width: 47px
+      height: 22px
+    &-boat
+      height: 22px
+      width: 39px
+    &-point
+      width: 21px
+      height: 21px
+      border: solid 1px $color3
+      border-radius: 50%
+      display: block
+      position: relative
+      p
+        position: absolute
+        width: fit-content
+        top: 100%
+        transform: translateX(-50%)
+        left: 50%
+        padding-top: 11px
+      &:before
+        @include before
+        width: 13px
+        height: 13px
+        background: $color3
+        border-radius: 50%
+        top: 3px
+        left: 3px
+    &-line
+      width: calc(100% - 21px)
+      background-color: $color7
+      opacity: 0.91
+      height: 4px
+.public
+  padding-bottom: 40px
+  .btn-aquamarine
+    min-width: 170px
+    line-height: 26px
+    font-size: 15px
+
+.notes
+  padding: 15px 25px
+  margin: 25px 0 20px
+  .text-16
+    color: #109cf1
+    text-transform: capitalize
+  &__icon
+    width: 15px
+    height: 15px
+    margin-left: 20px
+.mark-stage
+  padding: 20px
+  border-radius: 4px
+  box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
+  background-color: $color7
+  &__text
+    text-transform: uppercase
+    color: $color1
+  &__check
+    cursor: pointer
+    @include check
+    width: 16px
+    height: 16px
+    margin-right: 23px
+.saves
+  .btn-aquamarine
+    line-height: 26px
+    font-size: 15px
+    min-width: 170px
+.contents__item-2
+  .fields__item, .fields__item:nth-child(2n+2)
+    width: calc(33.33% - 20px)
+    margin-right: 30px
+    &:nth-child(3n+3)
+      margin-right: 0
+      width: calc(33.33% - 20px)
+  .fields
+    padding-left: 25px

@@ -8,7 +8,7 @@
     padding-right: 1.5rem
   .contents__item .fields
     padding-left: 1vw
-  .contents__item-1 .fields__item, .contents__item-1 .fields__item:nth-child(3n+3)
+  .fields__two .fields__item, .fields__two .fields__item:nth-child(3n+3)
     width: calc(50% - 10px)
     margin-right: 20px
   .card__field:nth-child(2)
@@ -79,6 +79,15 @@
     padding: 10px 15px
   .card
     margin: 0 -15px 20px
+  .table__body, .contents__product .table__body
+    max-height: 60vh
+  .contents__order-no, .contents__product
+    margin: 0 -16px
+  .table__drop
+    margin-top: 10px
+    border-top: solid 1px rgba(183, 188, 214, 0.37)
+  .garbage
+    margin-left: 15px
 @media only screen and (max-width : 768px)
   .box-white__top-item
     width: auto
@@ -101,6 +110,10 @@
     max-width: calc(100% - 100px)
   .block__blue
     margin-left: 30px
+  .table .block__blue
+    margin: 0 10px
+  .table p
+    font-size: 14px
 @media only screen and (max-width : 575px)
   .pills-custom .nav-link
     padding: 10px 20px
@@ -128,8 +141,6 @@
     width: fit-content
   .card__way-line, .card__way:last-child .card__way-line
     width: 50px
-  .public
-    padding-bottom: 40px
   .saves
     .btn-aquamarine, .btn-white
       min-width: auto
@@ -143,3 +154,7 @@
       pointer-events: auto
   .btn-drop
     height: 30px
+  .table__input
+    width: 100%
+  .public .table__form .btn-aquamarine
+    margin: 20px 0 0 10px

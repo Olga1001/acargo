@@ -118,6 +118,7 @@ button
   outline: none
   border: none
   appearance: none
+  background: transparent
   &:focus
     outline: none
 .select
@@ -173,6 +174,8 @@ button
     white-space: nowrap
     overflow: hidden
     text-overflow: ellipsis
+    width: 100%
+    height: 100%
 .nav-link-arrow
   width: 16px
   height: 16px
@@ -182,6 +185,11 @@ button
   position: absolute
   right: 0
   top: 0
+  &__blue
+    .checkbox__text
+      color: $color5
+      font-size: 16px
+      line-height: 2.13
   &__label
     margin-right: 25px
     cursor: pointer
@@ -189,7 +197,7 @@ button
     padding: 7px 20px
     border-radius: 4px
     background-color: #f6f7f8
-  &__icon
+  &__icon, &__icon-blue
     width: 16px
     height: 16px
     border: solid 1px $color6
@@ -200,7 +208,7 @@ button
     .checkbox__text
       font-weight: 500
   &:checked ~ .checkbox__check
-    background: $color3
+    background: $color4
     .checkbox__text
       color: $color1
     .checkbox__icon
@@ -220,7 +228,11 @@ button
     border-color: transparent
   &:checked ~ .mark-stage__check
     border-color: transparent
-    background: $color1 url(../img/check.svg) no-repeat center/90% 100%
+    background: $color1 url("../img/check.svg") no-repeat center/90% 100%
+  &:checked ~ .checkbox__icon-blue
+    border-color: $color4
+    background: url("../img/blue__check-box-empty-copy-6.svg") no-repeat center/ 16px
+
 .radio__check
   width: 21px
   height: 21px
@@ -352,6 +364,91 @@ button
   height: calc(100vh - 94px)
   overflow-y: auto
   -webkit-overflow-scrolling: touch
+.garbage
+  width: 12px
+  height: 16px
+  margin-left: 22px
+.fa-print
+  color: #b7bcd6
+  font-size: 16px
+.contents__order-no, .contents__product
+  margin: 0 -30px 0 -25px
+.contents__transport
+  .fields
+    margin-bottom: 44px
+.contents__product
+  .table__body
+    max-height: 345px
+.table
+  span
+    color: #67758d
+  p
+    color: $color2
+  .block__blue
+    min-width: auto
+    padding: 3px 15px
+    margin: 0 25px
+    opacity: 0
+    transition: all 0.3s ease
+    height: fit-content
+    &.active
+      opacity: 1
+    .text-13
+      font-size: 11px
+      color: $color1
+  &__arrow
+    width: 10px
+    height: 5px
+    &.active
+      transform: scale(1,-1)
+  &__head
+    background-color: rgba(#109cf1, 0.1)
+    padding: 20px 22px
+    p
+      color: #141515
+      text-transform: uppercase
+  &__body
+    max-height: 278px
+    overflow-y: auto
+    border: solid 1px rgba(183, 188, 214, 0.37)
+    &-item
+      padding: 25px 22px
+      border-bottom: solid 1px rgba(183, 188, 214, 0.37)
+      &:last-child
+        border-bottom: none
+    &::-webkit-scrollbar
+      width: 7px
+    &::-webkit-scrollbar-thumb
+      opacity: 0.7
+      border-radius: 4px
+      background-color: #b7bcd6
+    &-icon
+      width: 21px
+      height: 18px
+      margin-left: 14px
+  &__drop
+    display: none
+    padding: 8px 0 0 0
+    p
+      color: $color5
+      margin-top: 7px
+  &__input
+    border: none
+    width: calc(33.33% + .75rem)
+    font-style: italic
+.public .table__form
+  padding: 13px 10px
+  border: solid 1px rgba(183, 188, 214, 0.37)
+  border-top: none
+  .btn-aquamarine
+    min-width: auto
+    font-size: 14px
+    padding: 9px 30px
+    margin: 0
+.card
+  .card__select
+    margin-bottom: 0!important
+
 @import "../components/pages/order/style"
 
 @import "media"

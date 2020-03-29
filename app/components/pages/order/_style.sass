@@ -17,7 +17,7 @@
     min-width: 107px
     padding: 4px 15px 5px
     border-radius: 12px
-    background-color: $color3
+    background-color: $color4
     width: fit-content
     &-circle
       width: 5px
@@ -42,7 +42,7 @@
     line-height: 42px
     width: 100px
     border-radius: 4px
-    background-color: $color3
+    background-color: $color4
     text-align: center
     &-input, &-select
       width: calc(100% - 100px)
@@ -52,7 +52,7 @@
 .tabs
   padding-top: 30px
 .contents
-  padding: 30px 0 40px
+  padding: 30px 0 0
   &__item
     display: none
     &.active
@@ -118,13 +118,13 @@
         border: solid 1px $color6
         border-radius: 0 4px 4px 0
         &.active
-          border: solid 1px $color3
+          border: solid 1px $color4
       &.active
-        border: solid 1px $color3
+        border: solid 1px $color4
         color: $color1
-        background: $color3
+        background: $color4
 .card
-  border-left: 5px solid $color3
+  border-left: 5px solid $color4
   padding: 22px 30px 47px 30px
   margin: 0 -23px 20px
   box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
@@ -143,7 +143,7 @@
     text-align: center
     background: $color7
   &__blue
-    background: $color3
+    background: $color4
   &__select
     max-width: calc(100% - 120px)
     border-radius: 0 4px 4px 0
@@ -179,7 +179,7 @@
     &-point
       width: 21px
       height: 21px
-      border: solid 1px $color3
+      border: solid 1px $color4
       border-radius: 50%
       display: block
       position: relative
@@ -194,7 +194,7 @@
         @include before
         width: 13px
         height: 13px
-        background: $color3
+        background: $color4
         border-radius: 50%
         top: 3px
         left: 3px
@@ -204,17 +204,30 @@
       opacity: 0.91
       height: 4px
 .public
-  padding-bottom: 40px
   .btn-aquamarine
     min-width: 170px
     line-height: 26px
     font-size: 15px
-
+.contents__transport
+  padding-bottom: 40px
+.contents__document
+  padding: 0 10px 20px
+  .input
+    font-style: italic
+    color: $color2
+    &::-webkit-input-placeholder
+      color: $color2
+    &:-moz-placeholder
+      color: $color2
+    &::-moz-placeholder
+      color: $color2
+    &:-ms-input-placeholder
+      color: $color2
 .notes
   padding: 15px 25px
   margin: 25px 0 20px
   .text-16
-    color: #109cf1
+    color: $color4
     text-transform: capitalize
   &__icon
     width: 15px
@@ -239,7 +252,15 @@
     line-height: 26px
     font-size: 15px
     min-width: 170px
-.contents__item-2
+.fields
+  display: none
+  &.active
+    display: flex
+.contents__transport .fields__two
+  .fields__item
+    margin-bottom: 0
+.fields__two
+  padding-left: 20px!important
   .fields__item, .fields__item:nth-child(2n+2)
     width: calc(33.33% - 20px)
     margin-right: 30px

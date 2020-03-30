@@ -81,7 +81,7 @@ $('.popover-dismiss').popover({
 //ORDER
 $(document).ready(function () {
   $(".table__item").click(function () {
-    $(this).find(".table__arrow, .block__blue").toggleClass('active');
+    $(this).find(".table__arrow").toggleClass('active');
     $(this).closest(".table__body-item").find(".table__drop").slideToggle(300);
   });
 });

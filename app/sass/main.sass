@@ -153,11 +153,17 @@ button
     max-height: 138px
     padding: 7px 0
     background: $color1
+    appearance: none
+    scrollbar-color: #b7bcd6 #fff
+    scrollbar-width: thin
     &::-webkit-scrollbar
       width: 3px
+      appearance: none
     &::-webkit-scrollbar-thumb
       border-radius: 4px
       background-color: #b7bcd6
+    &::-webkit-scrollbar-button
+      display: none
   &__option
     color: $color2
     transition: all 0.25s ease
@@ -388,11 +394,8 @@ button
     min-width: auto
     padding: 3px 15px
     margin: 0 25px
-    opacity: 0
     transition: all 0.3s ease
     height: fit-content
-    &.active
-      opacity: 1
     .text-13
       font-size: 11px
       color: $color1

@@ -22,7 +22,7 @@
             @import "topbar.html"
             <!-- Container-->
             <div class="container-fluid" id="container-wrapper">
-                <div class="d-sm-flex align-items-center mt-1 bg-white">
+                <div class="d-sm-flex align-items-center mt-4 bg-white">
                     <ul class="nav nav-pills pills-custom">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Orders</a>
@@ -272,20 +272,31 @@
 
                 </div>
                 <div class="public box-white">
-                    <ul class="nav nav-tabs">
-                        <li class="nav-item">
-                            <a class="nav-link active" data-toggle="tab" href="#contents__item-1">Orders No</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " data-toggle="tab" href="#contents__item-2">products</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " data-toggle="tab" href="#contents__item-3">transport</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link " data-toggle="tab"  href="#contents__item-4">documents</a>
-                        </li>
-                    </ul>
+                    <div class="d-flex flex-wrap justify-content-between align-items-center ">
+                        <ul class="nav nav-tabs pt-4">
+                            <li class="nav-item">
+                                <a class="nav-link active" data-toggle="tab" href="#contents__item-1">Orders No</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#contents__item-2">products</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab" href="#contents__item-3">transport</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link " data-toggle="tab"  href="#contents__item-4">documents</a>
+                            </li>
+                        </ul>
+                        <div class="public__custom d-flex align-items-center pt-4">
+                            <label class="d-flex align-items-center">
+                                <input type="checkbox" class="checkbox">
+                                <span class="public__custom-text">Custom No</span>
+                                <span class="radio__check"></span>
+                            </label>
+                            <button type="button" class="btn-aquamarine ml-4">+ Add</button>
+                        </div>
+                    </div>
+
                     <div id="contents" class="contents">
                         <div id="contents__item-1" class="contents__item contents__order-no active">
                             <div class="table">
@@ -964,11 +975,11 @@
                                         <p class="text-14">Sellect transport mode</p>
                                         <div class="transport-mode__box">
                                             <div class="d-flex">
-                                                <div class="transport-mode__item d-flex flex-column align-items-center justify-content-center active">
+                                                <div class="transport-mode__item d-flex align-items-center justify-content-center active">
                                                     <img src="img/shipping.svg" alt="img" class="transport-mode__fcl">
                                                     <p class="text-13">FCL</p>
                                                 </div>
-                                                <div class="transport-mode__item d-flex flex-column align-items-center justify-content-center">
+                                                <div class="transport-mode__item d-flex align-items-center justify-content-center">
                                                     <img src="img/transport-mode_2.png" alt="img" class="transport-mode__lcl">
                                                     <p class="text-13">LCL</p>
                                                 </div>
@@ -990,6 +1001,11 @@
                                                         <li class="select__option">Box 1</li>
                                                         <li class="select__option">Box 1</li>
                                                         <li class="select__option">Box 1</li>
+                                                        <li class="select__option">Box 1</li>
+                                                        <li class="select__option">Box 1</li>
+                                                        <li class="select__option">Box 1</li>
+                                                        <li class="select__option">Box 1</li>
+                                                        <li class="select__option">Box 1</li>
                                                     </ul>
                                                 </div>
                                             </div>
@@ -1004,6 +1020,11 @@
                                                 <div class="select__item">20100</div>
                                                 <div class="select__drop">
                                                     <ul class="select__menu">
+                                                        <li class="select__option">20100</li>
+                                                        <li class="select__option">20100</li>
+                                                        <li class="select__option">20100</li>
+                                                        <li class="select__option">20100</li>
+                                                        <li class="select__option">20100</li>
                                                         <li class="select__option">20100</li>
                                                         <li class="select__option">20100</li>
                                                         <li class="select__option">20100</li>

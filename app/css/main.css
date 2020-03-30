@@ -162,12 +162,21 @@ button {
     overflow-y: auto;
     max-height: 138px;
     padding: 7px 0;
-    background: #ffffff; }
+    background: #ffffff;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    scrollbar-color: #b7bcd6 #fff;
+    scrollbar-width: thin; }
     .select__menu::-webkit-scrollbar {
-      width: 3px; }
+      width: 3px;
+      -webkit-appearance: none;
+              appearance: none; }
     .select__menu::-webkit-scrollbar-thumb {
       border-radius: 4px;
       background-color: #b7bcd6; }
+    .select__menu::-webkit-scrollbar-button {
+      display: none; }
   .select__option {
     color: #282e3b;
     -webkit-transition: all 0.25s ease;
@@ -452,14 +461,11 @@ button {
   min-width: auto;
   padding: 3px 15px;
   margin: 0 25px;
-  opacity: 0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content; }
-  .table .block__blue.active {
-    opacity: 1; }
   .table .block__blue .text-13 {
     font-size: 11px;
     color: #ffffff; }
@@ -608,7 +614,7 @@ button {
   height: 69px;
   border-bottom: solid 1px #b7bcd6; }
   .transport-mode__item .text-13 {
-    margin-top: 6px;
+    margin-left: 10px;
     color: #37517e; }
   .transport-mode__item.active {
     background-color: #37517e;
@@ -633,6 +639,9 @@ button {
   padding: 9px 42px;
   font-size: 15px;
   font-weight: 500; }
+
+.contents__item .fields {
+  padding-top: 0; }
 
 .transport__weight-item {
   width: 25%;
@@ -752,6 +761,24 @@ button {
   line-height: 26px;
   font-size: 15px; }
 
+.public .nav-tabs .nav-item:first-child {
+  margin-left: 0; }
+
+.public .nav-tabs .nav-item:last-child {
+  margin-right: 0; }
+
+.public__custom-text {
+  font-size: 14px;
+  color: #156ce4; }
+
+.public__custom .radio__check {
+  margin-left: 10px; }
+
+.public__custom .btn-aquamarine {
+  min-width: 100px;
+  line-height: 16px;
+  font-size: 14px; }
+
 .contents__transport {
   padding-bottom: 40px; }
 
@@ -842,7 +869,9 @@ button {
     width: calc(33.33% - 20px);
     margin-right: 30px; }
     .fields__two .fields__item:nth-child(3n+3) {
-      margin-right: 0; } }
+      margin-right: 0; }
+  .nav-tabs .nav-item {
+    margin: 0; } }
 
 @media only screen and (max-width: 1199px) {
   .card__field {
@@ -881,9 +910,8 @@ button {
   .pills-custom .nav-link {
     width: 155px; }
   .contents__item .fields {
-    padding-left: 0; }
-  .nav-tabs .nav-item {
-    margin: 0; }
+    padding-left: 0;
+    padding-top: 30px; }
   #container-wrapper {
     height: calc(100vh - 60px); } }
 
@@ -957,7 +985,11 @@ button {
   .table .block__blue {
     margin: 0 10px; }
   .table p {
-    font-size: 14px; } }
+    font-size: 14px; }
+  .sidebar.toggled .nav-item .nav-link {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: start; } }
 
 @media only screen and (max-width: 575px) {
   .pills-custom .nav-link {

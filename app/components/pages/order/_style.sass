@@ -78,7 +78,7 @@
     height: 69px
     border-bottom: solid 1px $color6
     .text-13
-      margin-top: 6px
+      margin-left: 10px
       color: $color7
     &.active
       background-color: $color7
@@ -101,6 +101,8 @@
     padding: 9px 42px
     font-size: 15px
     font-weight: 500
+  .fields
+    padding-top: 0
 .transport
   &__weight
     &-item
@@ -208,6 +210,21 @@
     min-width: 170px
     line-height: 26px
     font-size: 15px
+  .nav-tabs .nav-item
+    &:first-child
+      margin-left: 0
+    &:last-child
+      margin-right: 0
+  &__custom
+    &-text
+      font-size: 14px
+      color: #156ce4
+    .radio__check
+      margin-left: 10px
+    .btn-aquamarine
+      min-width: 100px
+      line-height: 16px
+      font-size: 14px
 .contents__transport
   padding-bottom: 40px
 .contents__document
@@ -256,11 +273,12 @@
   display: none
   &.active
     display: flex
-.contents__transport .fields__two
-  .fields__item
-    margin-bottom: 0
+.contents__transport
+  .fields__two
+    padding-left: 20px
+    .fields__item
+      margin-bottom: 0
 .fields__two
-  padding-left: 20px!important
   .fields__item, .fields__item:nth-child(2n+2)
     width: calc(33.33% - 20px)
     margin-right: 30px

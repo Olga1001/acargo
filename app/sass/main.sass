@@ -116,6 +116,9 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   margin: 0
 input[type=number]
   -moz-appearance: textfield
+input:disabled
+  background: #fff
+  opacity: 0.3
 label
   position: relative
 
@@ -334,6 +337,7 @@ button
   display: block
 .disabled
   opacity: 0.3
+  pointer-events: none
   .card__way-point:before
     content: none
 .container-fluid
@@ -484,6 +488,7 @@ button
 
 @import "../components/pages/order/style"
 @import "../components/pages/products/style"
+@import "../components/pages/booking/style"
 
 @import "media"
 

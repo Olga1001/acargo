@@ -101,9 +101,24 @@ img {
   z-index: 6; }
 
 .breadcrumbs {
-  height: 46px; }
+  position: relative; }
+  .breadcrumbs:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    width: 100%;
+    height: calc(100% - 8px);
+    background: #ffffff;
+    z-index: 0; }
   .breadcrumbs .disabled {
     opacity: 1; }
+  .breadcrumbs .nav {
+    position: relative;
+    z-index: 1; }
 
 input, textarea {
   font-size: 16px;
@@ -1036,7 +1051,9 @@ button {
   .pills-custom .nav-link {
     padding: 10px; }
   .pills-custom .nav-link {
-    width: 155px; }
+    width: 147px; }
+  .pills-custom .nav-item:first-child .nav-link {
+    padding: 10px 20px 10px 5px; }
   .contents__item .fields {
     padding-left: 0;
     padding-top: 30px; }
@@ -1093,9 +1110,13 @@ button {
     top: 100%; }
   .products .table {
     margin: 0 -15px;
-    width: calc(100% + 30px); } }
+    width: calc(100% + 30px); }
+  .breadcrumbs:before {
+    height: 100%; } }
 
 @media only screen and (max-width: 768px) {
+  .pills-custom .nav-item:first-child .nav-link {
+    padding: 10px; }
   .box-white__top-item {
     width: auto; }
   #wrapper #content-wrapper {

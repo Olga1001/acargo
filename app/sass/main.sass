@@ -101,9 +101,21 @@ img
 .sidebar.toggled
   z-index: 6
 .breadcrumbs
-  height: 46px
+  position: relative
+  &:before
+    @include before
+    top: 50%
+    transform: translateY(-50%)
+    width: 100%
+    height: calc(100% - 8px)
+    background: $color1
+    z-index: 0
   .disabled
     opacity: 1
+  .nav
+    position: relative
+    z-index: 1
+
 input, textarea
   font-size: 16px
   outline: none

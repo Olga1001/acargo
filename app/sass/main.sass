@@ -100,6 +100,10 @@ img
   transition: all 0.3s ease
 .sidebar.toggled
   z-index: 6
+.breadcrumbs
+  height: 46px
+  .disabled
+    opacity: 1
 input, textarea
   font-size: 16px
   outline: none
@@ -346,7 +350,7 @@ button
   height: auto
   padding: 0 7vw 0 0
   .nav-item .nav-link
-    height: 94px
+    height: 72px
 .topbar.navbar-light .navbar-nav .nav-item .nav-link
   padding: 0 23px
 
@@ -363,7 +367,7 @@ button
   z-index: 6
   &.toggled
     margin-left: -4rem
-  &:focus, &.active, &:focus
+  &:focus, &.active, &:focus, &:active
     background: transparent
 .sidebarToggleTop
   &-line
@@ -389,7 +393,7 @@ button
   #wrapper #content-wrapper
     width: calc(100% - 4.5rem)
 #container-wrapper
-  height: calc(100vh - 94px)
+  height: calc(100vh - 72px)
   overflow-y: auto
   -webkit-overflow-scrolling: touch
 .garbage

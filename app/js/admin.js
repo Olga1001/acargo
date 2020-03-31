@@ -84,11 +84,14 @@ $(document).ready(function () {
     $(this).find(".table__arrow").toggleClass('active');
     $(this).closest(".table__body-item").find(".table__drop").slideToggle(300);
   });
+  $(".transport-mode__item").click(function () {
+    $(this).toggleClass('active').siblings().removeClass('active');
+  });
 });
 
 //ORDER TRANSPORT
 $(document).ready(function () {
-  $(".transport__weight-item, .btn").click(function () {
+  $(".btn").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
   $(".select__item").click(function () {
@@ -108,4 +111,15 @@ $(document).ready(function () {
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
   });
+  $(".transport__weight-item input").on("change keyup", function(e){
+    var $this = $(this),
+        val = $this.val();
+
+    if(val.length >= 1){
+        $this.closest(".transport__weight-item").find("p").addClass('active');
+    }else {
+        $this.closest(".transport__weight-item").find("p").removeClass('active');
+    }
+  });
+
 });

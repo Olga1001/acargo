@@ -52,7 +52,7 @@ gulp.task('libs-css', ['sass'], function(){
 });
 gulp.task('libs-js', function(){
   return gulp.src([
-      // 'app/libs/..,
+      // 'app/vendor/..,
   ])
     .pipe(concat('libs.min.js'))
     .pipe(uglify())

@@ -81,8 +81,6 @@ body
 
 img
   display: block
-  width: 100%
-  height: 100%
   object-fit: contain
 
 .container
@@ -100,6 +98,41 @@ img
   transition: all 0.3s ease
 .sidebar.toggled
   z-index: 6
+.sidebar-menu
+  height: calc(100vh - 72px)
+  overflow-y: auto
+.sidebar .nav-item .nav-link[data-toggle="collapse"]::after
+  right: 10px
+  position: absolute
+  font-size: 12px
+  top: 50%
+  transform: translateY(-50%)
+.sidebar .nav-item .collapse
+  margin: 0
+  width: max-content
+  border-radius: 7px
+  &-item
+    padding: 2.5px 15px 2.5px 102px
+    background: #ffffff
+  &-link
+    padding-left: 15px
+    color: #282e3b
+    font-size: 14px
+    position: relative
+    &:before
+      @include before
+      top: 50%
+      transform: translateY(-50%)
+      border-radius: 50%
+      width: 7px
+      height: 7px
+      background-color: #109cf1
+.nav-link-img
+  width: 20px
+  margin-right: 25px
+  img
+    width: auto
+    height: auto
 .breadcrumbs
   position: relative
   &:before
@@ -115,7 +148,44 @@ img
   .nav
     position: relative
     z-index: 1
-
+.pills-custom
+  .nav-link
+    position: relative
+    overflow: hidden
+    &:before, &:after
+      @include before
+      content: none
+      left: auto
+      right: -1px
+      width: 0
+      height: 0
+      top: 50%
+      transform: translateY(-50%)
+      border-style: solid
+      border-width: 38px 0 38px 30px
+      border-color: transparent transparent transparent #ffffff
+      z-index: 2
+    &:after
+      right: 2px
+      border-width: 45px 0 45px 36px
+    &.active, &.active:hover
+      &:before
+        content: ''
+      &:after
+        content: ''
+        border-color: transparent transparent transparent #49ddaa
+    &.focus, &:hover
+      &:before
+        content: ''
+      &:after
+        content: ''
+        border-color: transparent transparent transparent #156ce4
+    &.disabled, &.disabled:hover
+      &:before
+        content: ''
+      &:after
+        content: ''
+        border-color: transparent transparent transparent #f6f7f8
 input, textarea
   font-size: 16px
   outline: none
@@ -127,6 +197,7 @@ input, textarea
   width: 100%
   appearance: none
   height: 42px
+  background: transparent
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
   margin: 0
@@ -292,6 +363,7 @@ button
   &__top
     border-bottom: solid 1px #ebeff2
     min-height: 56px
+    padding: 10px 0
     &-item
       width: calc(33.33% - 34px)
 .btn
@@ -308,9 +380,21 @@ button
     color: $color1
     padding: 9px
     text-align: center
+    display: inline-block
     &:hover, &:focus
       text-decoration: none
       color: $color1
+    &.big
+      font-size: 15px
+      min-width: 170px
+      padding: 14px 10px
+  &-disabled
+    opacity: 0.98
+    border-radius: 4px
+    background-color: #b7bcd6
+    color: #ffffff
+    line-height: 1
+    padding: 9px
   &-drop
     background: url("../img/down.svg") no-repeat right center / 14px
     width: 36px
@@ -324,7 +408,7 @@ button
     font-weight: 500
     color: $color5
     display: block
-.close
+.close img
   width: 20px
   height: 20px
   opacity: 1
@@ -343,6 +427,10 @@ button
   font-size: 18px
   color: #141515
   text-transform: uppercase
+.title-2
+  font-size: 25px
+  color: #141515
+  text-align: center
 .link
   color: #156ce4
   font-size: 15px
@@ -399,7 +487,7 @@ button
 .sidebar .nav-item
   margin-top: 19px
   margin-right: 7px
-  &:nth-child(2)
+  &:first-child
     margin-top: 43px
 .sidebar-toggled
   #wrapper #content-wrapper
@@ -501,10 +589,86 @@ button
 .card
   .card__select
     margin-bottom: 0!important
+.first
+  padding: 25px 30px 25px 25px
+  margin-bottom: 34px
+  margin-top: 40px
+  .btn
+    width: 123px
+    height: 74px
+    margin-left: 15px
+    border: solid 1px $color4
+  &__icon
+    width: 13px
+    height: 13px
+    margin-right: 15px
+  &__input
+    color: #282e3b
+    font-size: 15px
+    border: none
+    border-bottom: 1px solid #282e3b
+    padding: 0
+    height: 17px
+    width: 20px
+    text-align: center
+    margin-left: 5px
+    border-radius: 0
+.bg-light-blue
+  background-color: #e7f5fe
+#files
+  display: none
+.loader__files-drop
+  height: 188px
+  width: 100%
+  border-radius: 4px
+  background-color: rgba(#e7f5fe, 0.51)
+  transition: all 0.3s ease
+  cursor: pointer
+  color: #67758d
+  font-size: 22px
+  &:hover
+    background-color: rgba(#e7f5fe, 1)
+.popup
+  position: fixed
+  left: 0
+  top: 0
+  z-index: 99
+  width: 100%
+  height: 100vh
+  padding: 15px
+  background-color: rgba(#eff8fe, 0.6)
+  opacity: 0
+  pointer-events: none
+  transition: all 0.3s ease
+  &.active
+    opacity: 1
+    pointer-events: auto
+  .box-white
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    max-width: 1200px
+    width: calc(100% - 30px)
+    margin: 15px 0
+    overflow-y: auto
+    opacity: 0
+    pointer-events: none
+    transition: all 0.3s ease
+    -webkit-overflow-scrolling: touch
+    &.active
+      opacity: 1
+      pointer-events: auto
+    &.height
+      top: 0
+      transform: translate(-50%, 0)
+      height: calc(100vh - 30px)
 
 @import "../components/pages/order/style"
 @import "../components/pages/products/style"
 @import "../components/pages/booking/style"
+@import "../components/pages/loading/style"
+@import "../components/pages/pre-carriage/style"
 
 @import "media"
 

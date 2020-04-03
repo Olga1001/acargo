@@ -103,7 +103,7 @@ $(document).ready(function () {
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
   });
-  $(".select__drop, .select").click(function (e) {
+  $(".select__drop, .select, .popup .box-white").click(function (e) {
     e.stopPropagation();
   });
   $("body, html").click(function () {
@@ -120,5 +120,36 @@ $(document).ready(function () {
         $this.closest(".transport__weight-item").find("p").removeClass('active');
     }
   });
+
+});
+//LOADER
+$(document).ready(function () {
+  $("#files").on('change', function(){
+    let files = $("#files")[0].files[0];
+    $(".loader__files-name").text( files.name);
+  });
+});
+
+//POPUPS
+$(document).ready(function () {
+  $(".example .btn-white").on("change click keyup", function(){
+    let index = $(this).index(),
+        popupBox = $(".popup .box-white ").eq(index);
+    $(".popup").addClass('active');
+    popupBox.addClass('active');
+
+    if (popupBox.height() >= $(".popup").height()){
+      popupBox.addClass('height');
+      console.log("1");
+    } else {
+      popupBox.removeClass('height');
+      console.log("2");
+    }
+  });
+  $(".popup, .close").click(function(e){
+    e.preventDefault();
+    $(".popup, .popup .box-white").removeClass('active');
+  });
+
 
 });

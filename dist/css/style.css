@@ -545,10 +545,10 @@ a:focus {
   margin-right: 3px;
 }
 
-.sidebar .nav-item .nav-link i {
-  font-size: 18px;
-  margin-right: 25px;
-}
+/*.sidebar .nav-item .nav-link i {*/
+/*  font-size: 18px;*/
+/*  margin-right: 25px;*/
+/*}*/
 
 .sidebar .nav-item .nav-link span {
   display: inline;
@@ -592,11 +592,6 @@ a:focus {
   -webkit-transition: height 0.3s ease;
   transition: height 0.3s ease;
 
-}
-
-.sidebar .nav-item .collapse,
-.sidebar .nav-item .collapsing {
-  margin: 0 1rem;
 }
 
 .sidebar .nav-item .collapse .collapse-inner,
@@ -789,20 +784,24 @@ a:focus {
   display: flex;
   justify-content: center;
 }
-
+.sidebar.toggled .nav-item .nav-link-img{
+  margin: 0;
+}
 .sidebar.toggled .sidebar-heading {
   display: none;
 }
 
-.sidebar.toggled .nav-item .nav-link span {
+.sidebar.toggled .nav-item .nav-link .nav-item-name {
   display: none;
 }
-
-.sidebar.toggled .nav-item .nav-link i {
-  float: left;
-  text-align: center;
-  font-size: 1rem;
-  margin: 0;
+.sidebar.toggled .nav-item .collapse-item {
+  padding-left: 10px;
+}
+.sidebar.toggled .nav-item .collapse {
+  box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06);
+}
+.sidebar.toggled .nav-item {
+  margin-right: 0;
 }
 
 .sidebar.toggled .sidebar-brand .sidebar-brand-text {
@@ -822,6 +821,9 @@ a:focus {
 
 .sidebar.toggled .nav-item .nav-link[data-toggle="collapse"].collapsed::after {
   content: '\f105';
+}
+.sidebar.toggled .sidebar-menu{
+  overflow: visible;
 }
 @media (max-width: 768px) {
   #wrapper #content-wrapper {
@@ -875,7 +877,7 @@ a:focus {
 
   .sidebar.toggled .nav-item .collapse {
     position: relative;
-    padding-left: 1rem;
+    padding-left: 2.5rem;
     left: 0;
     z-index: 1;
     top: 0;
@@ -887,11 +889,6 @@ a:focus {
     border-radius: 0.35rem;
     -webkit-box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
     box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15);
-  }
-
-  .sidebar.toggled .nav-item .collapse,
-  .sidebar.toggled .nav-item .collapsing {
-    margin: 0 1rem;
   }
 
   .sidebar.toggled .nav-item .collapse .collapse-inner,

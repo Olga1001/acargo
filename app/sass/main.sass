@@ -168,24 +168,42 @@ img
     &:after
       right: 2px
       border-width: 45px 0 45px 36px
-    &.active, &.active:hover
+    &.active, &.active:hover, &.active:focus
       &:before
         content: ''
       &:after
         content: ''
         border-color: transparent transparent transparent #49ddaa
-    &.focus, &:hover
+    &.focus, &:hover, &:focus
       &:before
         content: ''
       &:after
         content: ''
         border-color: transparent transparent transparent #156ce4
-    &.disabled, &.disabled:hover
+    &.disabled, &.disabled:hover, &.disabled:focus
       &:before
         content: ''
       &:after
         content: ''
         border-color: transparent transparent transparent #f6f7f8
+    span
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 30px
+      z-index: -1
+  .nav-item
+    &:first-child
+      .focus
+        span
+          background-color: #156ce4
+      .disabled
+        span
+          background-color: #f6f7f8
+      .active
+        span
+          background-color: #49ddaa
 input, textarea
   font-size: 16px
   outline: none
@@ -368,6 +386,27 @@ button
       width: calc(33.33% - 34px)
 .btn
   @include blue
+  position: relative
+  &-arrow
+    position: absolute
+    width: 18px
+    height: 18px
+    right: 9px
+    &-crossshipment
+      .btn-arrow
+        &:first-child
+          top: 7px
+          transform: scale(1,-1)
+        &:last-child
+          bottom: 7px
+    &-export
+      .btn-arrow
+        bottom: 7px
+    &-import
+      .btn-arrow
+        bottom: 7px
+        transform: scale(-1,-1)
+
   &-text
     margin-top: 4px
   &-aquamarine
@@ -577,6 +616,20 @@ button
     border: none
     width: calc(33.33% + .75rem)
     font-style: italic
+  &-list
+    margin-top: 7px
+  &-item
+    margin-bottom: 4px
+    &:last-child
+      margin-bottom: 0
+    span
+      display: block
+      padding-left: 15px
+    a
+      font-size: 14px
+      color: #67758d
+      margin-top: 8px
+      display: block
 .public .table__form
   padding: 13px 10px
   border: solid 1px rgba(183, 188, 214, 0.37)
@@ -589,6 +642,7 @@ button
 .card
   .card__select
     margin-bottom: 0!important
+
 .first
   padding: 25px 30px 25px 25px
   margin-bottom: 34px
@@ -596,7 +650,6 @@ button
   .btn
     width: 123px
     height: 74px
-    margin-left: 15px
     border: solid 1px $color4
   &__icon
     width: 13px
@@ -663,7 +716,38 @@ button
       top: 0
       transform: translate(-50%, 0)
       height: calc(100vh - 30px)
-
+  &__loading
+    &-top
+      border-bottom: 4px solid rgba(#daf0fc, 0.65)
+      p
+        font-size: 17px
+        line-height: 1.47
+        color: #141515
+      .bg-light
+        padding: 13px 20px
+        min-width: 250px
+.text-11-blue
+  font-size: 11px
+  line-height: 1.91
+  color: #156ce4
+.message
+  border-radius: 2px
+  border: solid 1px
+  background: $color1
+  padding: 8px 22px 7px
+  min-height: 47px
+  &-text
+    font-size: 12px
+    line-height: 1.33
+    max-width: 475px
+.b-green
+  border-color: #2acc46
+.b-red
+  border-color: #e30c0c
+.b-orange
+  border-color: #f99e04
+.b-blue
+  border-color: #109cf1
 @import "../components/pages/order/style"
 @import "../components/pages/products/style"
 @import "../components/pages/booking/style"

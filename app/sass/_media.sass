@@ -67,6 +67,9 @@
     padding-left: 45px
   .nav-link-img
     margin-right: 9px
+  .btn-arrow
+    width: 1.5vw
+    height: 1.5vw
 @media only screen and (max-width : 991px)
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
     width: calc(50% - 10px)
@@ -84,7 +87,7 @@
       transform: scale(0.8)
       margin: 0
   .first .btn
-    margin: 15px 15px 0 0
+    margin: 15px 0 0 0
   .box-white
     padding: 0 15px
   .first
@@ -112,13 +115,13 @@
     color: #282e3b
   .table__arrow
     margin-right: 0
-  .products__item
+  .products
     padding: 25px 15px
-  .products .table__body-item .select__drop
-    top: 100%
-  .products .table
-    margin: 0 -15px
-    width: calc(100% + 30px)
+    .table__body-item .select__drop
+      top: 100%
+    .table
+      margin: 0 -15px
+      width: calc(100% + 30px)
   .breadcrumbs:before
     height: 100%
   .pre-carriage .table
@@ -139,6 +142,10 @@
     padding: 0 15px
   .pre-carriage .first .btn
     margin-top: 0
+  .loading__card-light
+    margin: 0 -15px
+    width: calc(100% + 30px)
+    padding: 0 15px
 @media only screen and (max-width : 768px)
   .sidebar .nav-item .nav-link .nav-item-name
     display: none
@@ -211,6 +218,11 @@
     display: block
   .sidebar .sidebar-menu
     display: none
+  .popup__loading-top .bg-light
+    min-width: auto
+  .btn-arrow
+    width: 18px
+    height: 18px
 @media only screen and (max-width : 575px)
   .pills-custom .nav-link
     padding: 10px 20px
@@ -269,3 +281,10 @@
     width: 100%
     &:nth-child(2n+2)
       margin-right: 0
+  .popup__loading-top .bg-light
+    padding: 15px
+  .loading__card-title
+    padding: 0 0 0 15px
+    border-width: 5px
+  .message
+    padding: 5px 10px

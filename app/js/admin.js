@@ -28,25 +28,6 @@
     }
   });
 
-  // Scroll to top button appear
-  $(document).on('scroll', function() {
-    var scrollDistance = $(this).scrollTop();
-    if (scrollDistance > 100) {
-      $('.scroll-to-top').fadeIn();
-    } else {
-      $('.scroll-to-top').fadeOut();
-    }
-  });
-
-  // Smooth scrolling using jQuery easing
-  $(document).on('click', 'a.scroll-to-top', function(e) {
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top)
-    }, 1000, 'easeInOutExpo');
-    e.preventDefault();
-  });
-
 })(jQuery); // End of use strict
 
 // Modal Javascript
@@ -77,7 +58,13 @@ $(function () {
 $('.popover-dismiss').popover({
   trigger: 'focus'
 });
-
+//MENU arrow
+$(document).ready(function () {
+  $(".sidebar-light .nav-item").click(function (e) {
+    e.preventDefault();
+    $(this).toggleClass('active');
+  })
+});
 //ORDER
 $(document).ready(function () {
   $(".table__item").click(function () {
@@ -127,6 +114,8 @@ $(document).ready(function () {
   $("#files").on('change', function(){
     let files = $("#files")[0].files[0];
     $(".loader__files-name").text( files.name);
+    $(".loader__files-name").addClass("font-style");
+    $(".close-document").addClass("active");
   });
 });
 

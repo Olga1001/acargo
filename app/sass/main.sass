@@ -101,12 +101,21 @@ img
 .sidebar-menu
   height: calc(100vh - 72px)
   overflow-y: auto
-.sidebar .nav-item .nav-link[data-toggle="collapse"]::after
+.sidebar .nav-item .nav-link::after
   right: 10px
   position: absolute
   font-size: 12px
   top: 50%
   transform: translateY(-50%)
+  background: url("../img/arrow-point-to-right.svg") no-repeat center / 6px 10px
+  width: 6px
+  height: 10px
+  color: transparent
+.sidebar-light .nav-item .nav-link[data-toggle="collapse"]::after
+  color: transparent
+.sidebar .nav-item.active .nav-link
+  &::after
+    transform: translateY(-50%) rotate(90deg)
 .sidebar .nav-item .collapse
   margin: 0
   width: max-content
@@ -538,9 +547,9 @@ button
 .garbage
   width: 12px
   height: 16px
-.fa-print
-  color: #b7bcd6
-  font-size: 16px
+.print
+  width: 17px
+  height: 16px
 .contents__order-no, .contents__product
   margin: 0 -30px 0 -25px
 .contents__transport
@@ -753,6 +762,7 @@ button
 @import "../components/pages/booking/style"
 @import "../components/pages/loading/style"
 @import "../components/pages/pre-carriage/style"
+@import "../components/pages/document/style"
 
 @import "media"
 

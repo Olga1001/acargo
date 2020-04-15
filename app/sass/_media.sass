@@ -4,7 +4,7 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (max-width : 1440px)
-  .container-fluid, .topbar
+  .container-fluid, .topbar, .popup
     padding-right: 1.5rem
   .contents__item .fields
     padding-left: 1vw
@@ -19,6 +19,10 @@
   .nav-tabs .nav-item
     margin: 0
 @media only screen and (max-width : 1199px)
+  .breadcrumbs
+    top: calc(60px + 1.5rem)
+  .first
+    top: calc(60px + 1.5rem + 37px + 25px)
   .card__field
     width: 100%
     display: flex
@@ -70,6 +74,8 @@
   .btn-arrow
     width: 1.5vw
     height: 1.5vw
+  .container-fluid
+    min-height: calc(100% - 60px)
 @media only screen and (max-width : 991px)
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
     width: calc(50% - 10px)
@@ -79,7 +85,7 @@
 
   .box-white__top-item
     width: 50%
-  .container-fluid, .topbar
+  .container-fluid, .topbar, .popup
     padding: 0 10px
   .topbar.navbar-light .navbar-nav .nav-item .nav-link
     padding: 0 15px!important
@@ -148,6 +154,9 @@
     padding: 0 15px
   .document__table .table__body-item, .document__add-row
     padding: 15px 10px
+  .breadcrumbs, .first
+    position: relative
+    top: 0
 @media only screen and (max-width : 768px)
   .sidebar .nav-item .nav-link .nav-item-name
     display: none
@@ -292,3 +301,6 @@
     border-width: 5px
   .message
     padding: 5px 10px
+  .document__files-drop
+    width: calc(100% - 20px)
+    margin: 0 auto

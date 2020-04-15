@@ -21,16 +21,20 @@
             @import "topbar.html"
             <!-- Container-->
             <div class="container-fluid " id="container-wrapper">
-                @import "breadcrumbs.html"
+                <div id="box">
+                    @import "breadcrumbs.html"
 
-                <div class="d-flex flex-wrap example my-5">
-                    <button type="button" class="btn-white m-3">loading 1</button>
-                    <button type="button" class="btn-white m-3">loading 2</button>
-                    <button type="button" class="btn-white m-3">loading 3</button>
-                    <button type="button" class="btn-white m-3">loading 4</button>
-                    <button type="button" class="btn-white m-3">product 1</button>
-                    <button type="button" class="btn-white m-3">product 2</button>
+                    <div class="d-flex flex-wrap example my-5">
+                        <button type="button" class="btn-white m-3">loading 1</button>
+                        <button type="button" class="btn-white m-3">loading 2</button>
+                        <button type="button" class="btn-white m-3">loading 3</button>
+                        <button type="button" class="btn-white m-3">loading 4</button>
+                        <button type="button" class="btn-white m-3">product 1</button>
+                        <button type="button" class="btn-white m-3">product 2</button>
+                    </div>
                 </div>
+
+                @import "popups.html"
 
             </div>
             <!---Container-->
@@ -39,7 +43,6 @@
     </div>
 </div>
 
-@import "popups.html"
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>

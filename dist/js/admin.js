@@ -85,8 +85,15 @@ $(document).ready(function () {
   });
   $(".select__option").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
-    let option = $(this).text();
-    $(this).closest(".select").find(".select__item").text(option);
+    let option = $(this).text(),
+        item = $(this).closest(".select").find(".select__item").prop("tagName");
+    console.log(item)
+    if (item == "DIV"){
+      $(this).closest(".select").find(".select__item").text(option);
+    } else {
+      $(this).closest(".select").find(".select__item").val(option);
+    }
+
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
   });
@@ -121,24 +128,15 @@ $(document).ready(function () {
 
 //POPUPS
 $(document).ready(function () {
-  $(".example .btn-white").on("change click keyup", function(){
-    let index = $(this).index(),
-        popupBox = $(".popup .box-white ").eq(index);
-    $(".popup").addClass('active');
-    popupBox.addClass('active');
-
-    if (popupBox.height() >= $(".popup").height()){
-      popupBox.addClass('height');
-      console.log("1");
-    } else {
-      popupBox.removeClass('height');
-      console.log("2");
-    }
+  $(".example .btn-white").click(function(){
+    let index = $(this).index();
+    $(".popup .box-white").eq(index).addClass('active').siblings().removeClass('active');
+    $(".container-fluid").addClass('active');
   });
   $(".popup, .close").click(function(e){
     e.preventDefault();
-    $(".popup, .popup .box-white").removeClass('active');
+    $(this).closest(".box-white").removeClass('active');
+    $(".container-fluid").removeClass('active');
   });
-
 
 });

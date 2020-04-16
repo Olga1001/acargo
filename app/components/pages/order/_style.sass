@@ -46,7 +46,7 @@
     &.active
       display: block
     .fields
-      padding-left: 70px
+      padding-left: 30px
     .fields__item, .fields__item:nth-child(3n+3)
       width: calc(50% - 1.9vw)
       margin-right: 3.6vw
@@ -61,7 +61,7 @@
     border: solid 1px $color6
     border-radius: 4px
     overflow: hidden
-    margin-bottom: 44px
+    margin-bottom: 20px
   &__item
     width: 50%
     height: 69px
@@ -184,8 +184,8 @@
       height: 22px
       width: 39px
     &-point
-      width: 21px
-      height: 21px
+      width: 22px
+      height: 22px
       border: solid 1px $color4
       border-radius: 50%
       display: block
@@ -203,8 +203,9 @@
         height: 13px
         background: $color4
         border-radius: 50%
-        top: 3px
-        left: 3px
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
     &-line
       width: calc(100% - 21px)
       background-color: $color7
@@ -212,12 +213,13 @@
       height: 4px
 .parties, .orders
   .input
-    width: calc(100% - 37px)
+    width: calc(100% - 38px)
 .public
   .btn-aquamarine
     min-width: 170px
     line-height: 26px
     font-size: 15px
+    margin-left: 44px
   .nav-tabs .nav-item
     &:first-child
       margin-left: 0
@@ -282,6 +284,10 @@
   &.active
     display: block
 .contents__transport
+  .fields__row
+    display: flex
+    .card__label
+      margin: 33px 20px 0 0
   .fields__two
     padding-left: 20px
     .fields__item

@@ -124,6 +124,15 @@ $(document).ready(function () {
     $(".loader__files-name").addClass("font-style");
     $(".close-document").addClass("active");
   });
+  $("#drop-upload, #drop-upload1").on('change', function(){
+    let $this = $(this).closest(".drop-upload");
+    let files = $(this)[0].files[0];
+    $this.find(".text-16").text(files.name);
+    $this.addClass('active');
+  });
+  $(".loading__file-icon").click(function () {
+    $(this).closest(".drop-upload").removeClass('active');
+  });
 });
 
 //POPUPS
@@ -136,7 +145,19 @@ $(document).ready(function () {
   $(".popup, .close").click(function(e){
     e.preventDefault();
     $(this).closest(".box-white").removeClass('active');
-    $(".container-fluid").removeClass('active');
+    $(".container-fluid, .popup").removeClass('active');
   });
 
+});
+//STICKY
+$(document).ready(function () {
+  $(window).scroll(function(){
+    if ($(window).width() > 768) {
+      if($(window).scrollTop() >= 100) {
+        $(".sticky").addClass('active');
+      } else {
+        $(".sticky").removeClass('active');
+      }
+    }
+  });
 });

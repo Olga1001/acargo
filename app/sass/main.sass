@@ -143,9 +143,7 @@ img
     width: auto
     height: auto
 .breadcrumbs
-  position: sticky
-  top: calc(1.5rem + 72px)
-  z-index: 7
+  position: relative
   &:before
     @include before
     top: 50%
@@ -227,6 +225,11 @@ input, textarea
   appearance: none
   height: 42px
   background: transparent
+textarea
+  border: none
+  width: 100%
+  max-width: 100%
+  padding: 0
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
   margin: 0
@@ -373,8 +376,8 @@ button
     background: url("../img/blue__check-box-empty-copy-6.svg") no-repeat center/ 16px
 
 .radio__check
-  width: 21px
-  height: 21px
+  width: 22px
+  height: 22px
   border: solid 1px $color6
   border-radius: 50%
   display: block
@@ -387,8 +390,9 @@ button
     height: 13px
     background: transparent
     border-radius: 50%
-    top: 3px
-    left: 3px
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
 .box-white
   @include box-white
   &__top
@@ -460,6 +464,19 @@ button
     font-weight: 500
     color: $color5
     display: block
+  &-blue
+    border-radius: 4px
+    background-color: rgba(#109cf1, 0.98)
+    line-height: 44px
+    text-align: center
+    max-width: 205px
+    width: 100%
+    font-size: 15px
+    font-weight: 500
+    font-stretch: normal
+    font-style: normal
+    letter-spacing: normal
+    color: #ffffff
 .close img
   width: 20px
   height: 20px
@@ -496,6 +513,12 @@ button
   pointer-events: none
   .card__way-point:before
     content: none
+.disabled-point:before
+    content: none!important
+.disabled-way
+  .card__way-boat, .card__way-line
+    opacity: 0.3
+    pointer-events: none
 .container-fluid
   padding-right: 7vw
   min-height: calc(100% - 72px)
@@ -528,7 +551,6 @@ button
 .container-fluid
   position: relative
   padding-top: 1.5rem
-
 .sidebar
   width: 290px
 #sidebarToggleTop
@@ -675,14 +697,19 @@ button
 .card
   .card__select
     margin-bottom: 0!important
-
+.sticky
+  position: sticky
+  top: 72px
+  z-index: 8
+  background: #eff8fe
+  &.active
+    padding: 10px 0
+    .first
+      margin: 10px 0 0
 .first
   padding: 25px 30px 25px 25px
   margin-bottom: 34px
   margin-top: 40px
-  position: sticky
-  top: calc(54px + 40px + 1.5rem + 72px)
-  z-index: 7
   .btn
     width: 123px
     height: 74px
@@ -703,7 +730,7 @@ button
     margin-left: 5px
     border-radius: 0
 .bg-light-blue
-  background-color: #e7f5fe
+  background-color: rgba(#e7f5fe, 0.51)
 #files
   display: none
 .loader__files-drop
@@ -772,13 +799,14 @@ button
     display: flex
     padding: 17px 22px
     img
-      width: 15px
+      width: 20px
       height: 15px
-      margin-top: 3px
+      margin-top: 5px
     &__text
       font-size: 15px
       line-height: 1.67
       color: #282e3b
+      max-width: 945px
 .b-green
   border-color: #2acc46
 .b-red
@@ -787,6 +815,35 @@ button
   border-color: #f99e04
 .b-blue
   border-color: #109cf1
+
+.c-blue
+  color: #156ce4
+.drop-upload
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 20px
+  border-radius: 4px
+  min-height: 64px
+  &__icon
+    margin-right: 22px
+    width: 26px
+    height: 24px
+  .text-16
+    text-transform: inherit
+  .loading__file-icon
+    display: none
+  &.active
+    .text-16
+      color: #141515
+      font-size: 18px
+      text-transform: inherit
+    .drop-upload__icon
+      display: none
+    .loading__file-icon
+      display: block
+#drop-upload, #drop-upload1
+  display: none
 .typeahead.dropdown-menu
   border: solid 1px #b7bcd6
   li a

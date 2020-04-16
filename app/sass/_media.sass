@@ -7,7 +7,9 @@
   .container-fluid, .topbar, .popup
     padding-right: 1.5rem
   .contents__item .fields
-    padding-left: 1vw
+    padding-left: 0
+  .fields__item .card__label
+    right: calc(100% + 10px)
   .card__field:nth-child(2)
     width: calc(36% - 6vw)
     margin: 0 3vw
@@ -18,11 +20,10 @@
       margin-right: 0
   .nav-tabs .nav-item
     margin: 0
+  .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3)
+    width: calc(50% - 0.8vw)
+    margin-right: 1.6vw
 @media only screen and (max-width : 1199px)
-  .breadcrumbs
-    top: calc(60px + 1.5rem)
-  .first
-    top: calc(60px + 1.5rem + 37px + 25px)
   .card__field
     width: 100%
     display: flex
@@ -62,7 +63,7 @@
     padding-left: 0
     padding-top: 30px
   #container-wrapper
-    height: calc(100vh - 60px)
+    //height: calc(100vh - 60px)
   .pre-carriage__card-item
     width: 33.33%
   .sidebar-menu
@@ -76,6 +77,8 @@
     height: 1.5vw
   .container-fluid
     min-height: calc(100% - 60px)
+  .sticky
+    top: 60px
 @media only screen and (max-width : 991px)
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
     width: calc(50% - 10px)
@@ -154,10 +157,9 @@
     padding: 0 15px
   .document__table .table__body-item, .document__add-row
     padding: 15px 10px
-  .breadcrumbs, .first
-    position: relative
-    top: 0
 @media only screen and (max-width : 768px)
+  .sticky
+    position: inherit
   .sidebar .nav-item .nav-link .nav-item-name
     display: none
   .sidebar.toggled .nav-item .nav-link .nav-item-name
@@ -236,6 +238,16 @@
     height: 18px
   .head-box
     padding: 15px
+  .drop-upload__icon
+    margin-right: 15px
+    width: 20px
+    height: 18px
+  .contents__transport .fields__row
+    display: block
+  .contents__transport .fields__row .card__label
+    margin: 0 0 15px 0
+  .public .btn-aquamarine
+    margin-left: 0
 @media only screen and (max-width : 575px)
   .pills-custom .nav-link
     padding: 10px 20px
@@ -304,3 +316,9 @@
   .document__files-drop
     width: calc(100% - 20px)
     margin: 0 auto
+  .message-info
+    padding: 10px
+  .message-info__text
+    font-size: 13px
+    line-height: 1.5
+

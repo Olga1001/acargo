@@ -87,7 +87,7 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active');
     let option = $(this).text(),
         item = $(this).closest(".select").find(".select__item").prop("tagName");
-    console.log(item)
+
     if (item == "DIV"){
       $(this).closest(".select").find(".select__item").text(option);
     } else {
@@ -96,6 +96,9 @@ $(document).ready(function () {
 
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
+  });
+  $(".select__option-check").click(function () {
+    $(this).toggleClass('active');
   });
   $(".select__drop, .select, .popup .box-white").click(function (e) {
     e.stopPropagation();

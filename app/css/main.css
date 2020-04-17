@@ -173,7 +173,9 @@ img {
     opacity: 1; }
   .breadcrumbs .nav {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    width: 100%;
+    padding-right: 220px; }
 
 .pills-custom .nav-link {
   position: relative;
@@ -825,6 +827,29 @@ button {
     padding: 10px 0; }
     .sticky.active .first {
       margin: 10px 0 0; }
+
+.nav-mark {
+  position: absolute;
+  right: 20px;
+  top: 0; }
+
+.btn-mark {
+  display: block;
+  line-height: 46px;
+  border-radius: 4px;
+  border: solid 1px #156ce4;
+  text-align: center;
+  padding: 0 30px 0 57px;
+  margin: 3px 0;
+  z-index: 2;
+  max-width: 195px;
+  font-size: 14px;
+  color: #156ce4;
+  background: #ffffff url("../img/check-box-empty-blue.svg") no-repeat left 30px center/11px; }
+  .btn-mark.active {
+    color: #ffffff;
+    background-color: #156ce4;
+    background-image: url("../img/check-box-empty.svg"); }
 
 .first {
   padding: 25px 30px 25px 25px;
@@ -1620,9 +1645,23 @@ button {
     margin: 0; }
   .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3) {
     width: calc(50% - 0.8vw);
-    margin-right: 1.6vw; } }
+    margin-right: 1.6vw; }
+  .breadcrumbs .nav {
+    padding-right: 120px; }
+  .nav-mark {
+    right: 0; }
+  .btn-mark {
+    padding: 0 20px 0 37px;
+    background-position: left 20px center; } }
 
 @media only screen and (max-width: 1199px) {
+  .btn-mark {
+    line-height: 36px;
+    margin: 0;
+    font-size: 10px;
+    padding: 0 10px 0 25px;
+    background-position: left 10px center;
+    background-size: 8px; }
   .card__field {
     width: 100%;
     display: -webkit-box;
@@ -1675,9 +1714,7 @@ button {
     width: 1.5vw;
     height: 1.5vw; }
   .container-fluid {
-    min-height: calc(100% - 60px); }
-  .sticky {
-    top: 60px; } }
+    min-height: calc(100% - 60px); } }
 
 @media only screen and (max-width: 991px) {
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2) {
@@ -1758,6 +1795,12 @@ button {
     padding: 15px 10px; } }
 
 @media only screen and (max-width: 768px) {
+  .breadcrumbs .nav {
+    padding-right: 0; }
+  .nav-mark {
+    position: relative; }
+  .btn-mark {
+    border-radius: 0; }
   .sticky {
     position: inherit; }
   .sidebar .nav-item .nav-link .nav-item-name {
@@ -1926,5 +1969,3 @@ button {
   .message-info__text {
     font-size: 13px;
     line-height: 1.5; } }
-
-/*/

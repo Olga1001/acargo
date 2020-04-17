@@ -23,7 +23,21 @@
   .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3)
     width: calc(50% - 0.8vw)
     margin-right: 1.6vw
+  .breadcrumbs .nav
+    padding-right: 120px
+  .nav-mark
+    right: 0
+  .btn-mark
+    padding: 0 20px 0 37px
+    background-position: left 20px center
 @media only screen and (max-width : 1199px)
+  .btn-mark
+    line-height: 36px
+    margin: 0
+    font-size: 10px
+    padding: 0 10px 0 25px
+    background-position: left 10px center
+    background-size: 8px
   .card__field
     width: 100%
     display: flex
@@ -77,8 +91,6 @@
     height: 1.5vw
   .container-fluid
     min-height: calc(100% - 60px)
-  .sticky
-    top: 60px
 @media only screen and (max-width : 991px)
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
     width: calc(50% - 10px)
@@ -158,6 +170,12 @@
   .document__table .table__body-item, .document__add-row
     padding: 15px 10px
 @media only screen and (max-width : 768px)
+  .breadcrumbs .nav
+    padding-right: 0
+  .nav-mark
+    position: relative
+  .btn-mark
+    border-radius: 0
   .sticky
     position: inherit
   .sidebar .nav-item .nav-link .nav-item-name

@@ -251,6 +251,8 @@ button
   background: transparent
   &:focus
     outline: none
+.link-share
+  position: relative
 .select
   position: relative
   width: 100%
@@ -325,6 +327,19 @@ button
     width: 100%
     height: 100%
     border: none
+  &-noarrow
+    &:before
+      content: none
+  &-absolut
+    position: absolute
+    left: 50%
+    transform: translateX(-50%)
+    width: fit-content
+    top: calc(100% + 10px)
+    display: none
+    z-index: 4
+    .select__menu
+      max-height: inherit
 .add-order-no
   .select
     border: none
@@ -529,7 +544,7 @@ button
 .disabled-point:before
     content: none!important
 .disabled-way
-  .card__way-boat, .card__way-line
+  .card__way-boat, .card__way-img, .card__way-line
     opacity: 0.3
     pointer-events: none
 .container-fluid

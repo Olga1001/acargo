@@ -561,7 +561,7 @@ button
   padding: 0 7vw 0 0
   .nav-item .nav-link
     height: 72px
-.navbar, .topbar, .sidebar-light .sidebar-brand, .sidebar-menu
+.sidebar-light .sidebar-brand, .sidebar-menu, .topbar
   position: sticky
   top: 0
   z-index: 999
@@ -581,16 +581,17 @@ button
   padding-top: 1.5rem
 .sidebar
   width: 290px
+.burger-mob
+  display: none
 #sidebarToggleTop
   position: relative
   width: 29px
   height: 29px
   padding: 25px
   z-index: 6
-  &.toggled
-    margin-left: -4rem
   &:focus, &.active, &:focus, &:active
     background: transparent
+
 .sidebarToggleTop
   &-line
     width: 29px
@@ -614,10 +615,8 @@ button
 .sidebar-toggled
   #wrapper #content-wrapper
     width: calc(100% - 4.5rem)
-#container-wrapper
-  //height: calc(100vh - 72px)
-  //overflow-y: auto
-  //-webkit-overflow-scrolling: touch
+  .sidebar .sidebar-brand
+    padding: 10px 11px
 .garbage
   width: 12px
   height: 16px

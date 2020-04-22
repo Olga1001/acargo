@@ -1,11 +1,14 @@
 .way
   background-color: rgba(#109cf1, 0.1)
   margin: 0 -30px 0 -25px
-  padding: 60px 0 50px
+  padding: 20px 0 50px
   display: flex
+  flex-wrap: wrap
   &__item
     width: 16.66%
-    p
+    margin-top: 40px
+    p, a
+      display: block
       text-align: center
       margin-top: 4px
     &-icon
@@ -201,14 +204,18 @@
   border-bottom: 1px solid rgba(#ebeff2, 0.8)
   padding: 10px 0
 .rate-road__item
-  width: 22%
+  width: calc(22% - 36px)
   margin-right: 48px
   &:nth-child(2)
-    width: 34%
+    width: calc(34% - 36px)
   &:last-child
     margin-right: 0
 .scale
   transform: scale(-1,1)
+.rate__content
+  display: none
+  &.active
+    display: block
 
 
 

@@ -10,7 +10,6 @@
     <link href="css/libs.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <script src="../../../../../tickets/app/js/tickets.js"></script>
 </head>
 
 <body id="page-top">
@@ -297,32 +296,31 @@
 </nav>
 <!-- Topbar -->
             <!-- Container-->
-            <div class="container-fluid" id="container-wrapper ">
+            <div class="container-fluid active" id="container-wrapper ">
                 <div id="box"></div>
-                <div class="popup py-4 active">
+                <div class="popup active">
                     <div class="box-white rate active">
-
                         <div class="d-flex justify-content-between">
                             <ul class="nav nav-tabs pt-4">
                                 <li class="nav-item">
-                                    <a class="nav-link " data-toggle="tab" href="#contents__item-1">OСEAN</a>
+                                    <a class="nav-link ">OСEAN</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link " data-toggle="tab" href="#contents__item-2">ROAD</a>
+                                    <a class="nav-link">ROAD</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#contents__item-3">rail</a>
+                                    <a class="nav-link active">rail</a>
                                 </li>
                             </ul>
                             <a href="#" class="close mt-3">
                                 <img src="img/gray__cancel.svg" alt="close">
                             </a>
                         </div>
-
+                        <!---contents-->
                         <div id="contents" class="contents py-5">
-                            <div id="contents__item-1" class="contents__item ">
+                            <div class="rate__content ">
                                 <div class="way">
-                                    <div class="way__item">
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
@@ -330,8 +328,8 @@
                                         </div>
                                         <p class="text-16">DO</p>
                                         <p class="text-13 c-dark">Haulage</p>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__line"></div>
@@ -339,8 +337,8 @@
                                         </div>
                                         <p class="text-16">LI</p>
                                         <p class="text-13 c-dark">Liner in</p>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
@@ -348,8 +346,8 @@
                                         </div>
                                         <p class="text-16">CY-CY</p>
                                         <p class="text-13 c-dark">Ocean freight</p>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
@@ -357,8 +355,8 @@
                                         </div>
                                         <p class="text-16">LO</p>
                                         <p class="text-13 c-dark">Liner out</p>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
@@ -366,8 +364,8 @@
                                         </div>
                                         <p class="text-16">FOT</p>
                                         <p class="text-13 c-dark">Free on truck</p>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
@@ -375,21 +373,21 @@
                                         </div>
                                         <p class="text-16">DO</p>
                                         <p class="text-13 c-dark">Haulage</p>
-                                    </div>
+                                    </a>
                                 </div>
                                 <div class="box-white__top mt-5 d-flex align-items-center">
                                     <h2 class="title">ORIGIN</h2>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Country</p>
                                         <input type="text" class="input" value="Rucava, LV">
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Place of loading</p>
                                         <input type="text" class="input" value="Busan, KR">
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Port</p>
                                         <input type="text" class="input" value="LTAP">
                                     </div>
@@ -398,22 +396,20 @@
                                     <h2 class="title">DESTINATION</h2>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Country</p>
                                         <input type="text" class="input" value="Rucava, LV">
 
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Place of loading</p>
                                         <input type="text" class="input" value="Busan, KR">
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Port</p>
                                         <input type="text" class="input" value="LTAP">
                                     </div>
-                                </div>
-                                <div class="row justify-content-between mt-2">
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -424,7 +420,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -435,7 +431,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -447,8 +443,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row pb-5">
-                                    <div class="col-5 pr-lg-5">
+                                <div class="row ">
+                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -462,7 +458,7 @@
                                             <button class="btn-add-blue">+ Add</button>
                                         </div>
                                     </div>
-                                    <div class="col-5 pr-lg-5">
+                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -478,10 +474,10 @@
                                     </div>
                                 </div>
                                 <div class="row pb-4">
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Specifications</textarea>
                                     </div>
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Notes</textarea>
                                     </div>
                                 </div>
@@ -585,12 +581,12 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div id="contents__item-2" class="contents__item ">
+                            <div class="rate__content ">
                                 <div class="box-white__top d-flex align-items-center">
                                     <h2 class="title">TRANSPORT MODE</h2>
                                 </div>
                                 <div class="d-flex mt-5">
-                                    <label class="d-flex align-items-center mr-5">
+                                    <label class="d-flex align-items-center mr-sm-5 mr-3">
                                         <input type="radio" name="radio1" class="checkbox" checked>
                                         <span class="checkbox__transport-check"></span>
                                         <img src="img/truck-1.svg" alt="truck" class="checkbox__transport-icon">
@@ -603,15 +599,15 @@
                                         <span class="checkbox__transport-text">LTL</span>
                                     </label>
                                 </div>
-                                <div class="row justify-content-between mt-5 pr-lg-5">
-                                    <div class="col-5 mt-3">
+                                <div class="row justify-content-between mt-5 mt-4 pr-xl-5">
+                                    <div class="col-lg-5 col-md-6 mt-3">
                                         <div class="head__border mb-4">
                                             <h2 class="title">ORIGIN</h2>
                                         </div>
                                         <p class="text-14">Provider </p>
                                         <input type="text" value="Rucava, LV">
                                     </div>
-                                    <div class="col-5 mt-3">
+                                    <div class="col-lg-5 col-md-6 mt-3">
                                         <div class="head__border mb-4">
                                             <h2 class="title">DESTINATION</h2>
                                         </div>
@@ -619,8 +615,8 @@
                                         <input type="text" value="Rucava, LV">
                                     </div>
                                 </div>
-                                <div class="d-flex pr-lg-5">
-                                    <div class="rate-road__item mt-5">
+                                <div class="d-flex flex-wrap pr-xl-5">
+                                    <div class="rate-road__item mt-sm-5 mt-4">
                                         <p class="text-14">Vechicle type </p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -631,7 +627,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rate-road__item mt-5">
+                                    <div class="rate-road__item mt-sm-5 mt-4">
                                         <p class="text-14">Valid time from and till </p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -642,7 +638,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rate-road__item mt-5">
+                                    <div class="rate-road__item mt-sm-5 mt-4">
                                         <p class="text-14">Rate per</p>
                                         <div class="select">
                                             <div class="select__item">Flat rate</div>
@@ -653,7 +649,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="rate-road__item mt-5">
+                                    <div class="rate-road__item mt-sm-5 mt-4">
                                         <p class="text-14">Currensy </p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -665,8 +661,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row my-5">
-                                    <div class="col-5">
+                                <div class="row my-sm-5 my-4">
+                                    <div class="col-lg-5 col-md-6">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -682,10 +678,10 @@
                                     </div>
                                 </div>
                                 <div class="row pb-4">
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Specifications</textarea>
                                     </div>
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Notes</textarea>
                                     </div>
                                 </div>
@@ -968,65 +964,65 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div id="contents__item-3" class="contents__item active">
+                            <div class="rate__content active">
                                 <div class="way">
-                                    <div class="way__item">
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
                                             <div class="way__line"></div>
                                         </div>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-city">
                                         <div class="way__item-way">
                                             <div class="way__line"></div>
                                             <div class="way__point"></div>
                                         </div>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-car">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
                                             <div class="way__line"></div>
                                         </div>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon scale way__item-icon-car">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
                                             <div class="way__line"></div>
                                         </div>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-city">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
                                             <div class="way__line"></div>
                                         </div>
-                                    </div>
-                                    <div class="way__item">
+                                    </a>
+                                    <a href="#" class="way__item">
                                         <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon">
                                         <div class="way__item-way">
                                             <div class="way__point"></div>
                                             <div class="way__line"></div>
                                         </div>
-                                    </div>
+                                    </a>
                                 </div>
 
                                 <div class="box-white__top mt-5 d-flex align-items-center">
                                     <h2 class="title">ORIGIN</h2>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Country</p>
                                         <input type="text" class="input" value="Rucava, LV">
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Place of loading</p>
                                         <input type="text" class="input" value="Busan, KR">
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Port</p>
                                         <input type="text" class="input" value="LTAP">
                                     </div>
@@ -1035,22 +1031,20 @@
                                     <h2 class="title">DESTINATION</h2>
                                 </div>
                                 <div class="row mt-4">
-                                    <div class="col-4 mb-5  pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Country</p>
                                         <input type="text" class="input" value="Rucava, LV">
 
                                     </div>
-                                    <div class="col-4 mb-5  pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Place of loading</p>
                                         <input type="text" class="input" value="Busan, KR">
                                     </div>
-                                    <div class="col-4 mb-5  pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Port</p>
                                         <input type="text" class="input" value="LTAP">
                                     </div>
-                                </div>
-                                <div class="row mt-2">
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -1061,7 +1055,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -1072,7 +1066,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-4 mb-5 pr-lg-5">
+                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
                                         <p class="text-14">Container type</p>
                                         <div class="select">
                                             <div class="select__item"></div>
@@ -1084,8 +1078,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row pb-5">
-                                    <div class="col-5 pr-lg-5">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -1099,7 +1093,7 @@
                                             <button class="btn-add-blue">+ Add</button>
                                         </div>
                                     </div>
-                                    <div class="col-5 pr-lg-5">
+                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -1115,10 +1109,10 @@
                                     </div>
                                 </div>
                                 <div class="row pb-4">
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Specifications</textarea>
                                     </div>
-                                    <div class="col-6 mt-3 pr-5">
+                                    <div class="col-sm-6 mt-3 pr-xl-5">
                                         <textarea cols="30" rows="10" class="textarea">Notes</textarea>
                                     </div>
                                 </div>
@@ -1310,6 +1304,7 @@
                                 </div>
                             </div>
                         </div>
+                        <!---contents-->
                     </div>
                 </div>
             </div>

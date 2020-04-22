@@ -155,6 +155,13 @@ $(document).ready(function () {
     $(".container-fluid, .popup").removeClass('active');
   });
 
+  //popup - rate
+  $(".nav-link").click(function(e){
+    e.preventDefault();
+    $(this).addClass('active').parent().siblings().find(".nav-link").removeClass('active');
+    let index = $(this).parent().index();
+    $(".rate__content").eq(index).addClass('active').siblings().removeClass('active');
+  });
 });
 //STICKY
 $(document).ready(function () {

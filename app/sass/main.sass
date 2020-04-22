@@ -160,9 +160,16 @@ img
     width: 100%
     padding-right: 220px
 .pills-custom
+  .nav-icon
+    width: 14px
+    height: 11px
+    margin-right: 6px
   .nav-link
     position: relative
     overflow: hidden
+    display: flex
+    align-items: center
+    justify-content: center
     &:before, &:after
       @include before
       content: none
@@ -232,6 +239,12 @@ textarea
   width: 100%
   max-width: 100%
   padding: 0
+.textarea
+  height: 107px
+  border-radius: 4px
+  background-color: #f3faff
+  resize: none
+  padding: 20px
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
   margin: 0
@@ -240,6 +253,26 @@ input[type=number]
 input:disabled
   background: #fff
   opacity: 0.3
+.input-add
+  border: none
+  padding: 10px 0 0
+  height: auto
+  &::-webkit-input-placeholder
+    font-size: 15px
+    font-style: italic
+    color: #109cf1
+  &:-moz-placeholder
+    font-size: 15px
+    font-style: italic
+    color: #109cf1
+  &::-moz-placeholder
+    font-size: 15px
+    font-style: italic
+    color: #109cf1
+  &:-ms-input-placeholder
+    font-size: 15px
+    font-style: italic
+    color: #109cf1
 label
   position: relative
 
@@ -287,14 +320,14 @@ button
     padding: 7px 0
     background: $color1
     appearance: none
-    scrollbar-color: #b7bcd6 #fff
+    scrollbar-color: $color6 #fff
     scrollbar-width: thin
     &::-webkit-scrollbar
       width: 3px
       appearance: none
     &::-webkit-scrollbar-thumb
       border-radius: 4px
-      background-color: #b7bcd6
+      background-color: $color6
     &::-webkit-scrollbar-button
       display: none
   &__option
@@ -344,6 +377,13 @@ button
   .select
     border: none
     max-width: 180px
+.arrow-drop
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 5px 5px 0 5px
+  border-color: #141515 transparent transparent transparent
+  margin-left: 5px
 #box
   width: 100%
 .nav-link-arrow
@@ -392,7 +432,7 @@ button
       background: url("../img/check-gray.svg") no-repeat center / 100%
   &:checked ~ .radio__check
     &:before
-      background: #B7BCD6
+      background: $color6
   &:checked ~ .card__check
     background: url("../img/check-gray.svg") no-repeat center / 100%
     border-color: transparent
@@ -402,7 +442,9 @@ button
   &:checked ~ .checkbox__icon-blue
     border-color: $color4
     background: url("../img/blue__check-box-empty-copy-6.svg") no-repeat center/ 16px
-
+  &:checked ~ .checkbox__transport-check
+    background: #109cf1 url("../img/check-white.svg") no-repeat center/ 80%
+    border: 1px solid #109cf1
 .radio__check
   width: 22px
   height: 22px
@@ -475,7 +517,7 @@ button
   &-disabled
     opacity: 0.98
     border-radius: 4px
-    background-color: #b7bcd6
+    background-color: $color6
     color: #ffffff
     line-height: 1
     padding: 9px
@@ -551,6 +593,7 @@ button
   padding-right: 7vw
   min-height: calc(100% - 72px)
   &.active
+    background-color: rgba(#013389, 0.48)
     #box
       display: none
     .popup
@@ -683,7 +726,7 @@ button
     &::-webkit-scrollbar-thumb
       opacity: 0.7
       border-radius: 4px
-      background-color: #b7bcd6
+      background-color: $color6
     &-icon
       width: 21px
       height: 18px
@@ -781,6 +824,10 @@ button
   background-color: rgba(#e7f5fe, 0.51)
 .bg-white
   background-color: $color1
+.bg-blue
+  background-color: #156ce4
+.bg-blue-bright
+  background-color: #109cf1
 #files
   display: none
 .loader__files-drop
@@ -798,15 +845,10 @@ button
   pointer-events: none
   opacity: 0
   transition: all 0.3s ease
-  position: absolute
-  left: 0
-  top: 0
   width: 100%
   padding: 0 7vw 0 1.5rem
-  height: 100%
-  overflow-y: auto
   z-index: 99
-  background-color: rgba(#013389, 0.48)
+  min-height: 100%
   &.active
     opacity: 1
     pointer-events: auto
@@ -868,6 +910,12 @@ button
 
 .c-blue
   color: #156ce4
+.c-dark
+  color: $color2
+.c-black
+  color: #141515
+.c-gray
+  color: $color6
 .drop-upload
   display: flex
   align-items: center
@@ -895,7 +943,7 @@ button
 #drop-upload, #drop-upload1
   display: none
 .typeahead.dropdown-menu
-  border: solid 1px #b7bcd6
+  border: solid 1px $color6
   li a
     background: $color1
     font-size: 16px
@@ -919,6 +967,7 @@ button
 @import "../components/pages/loading/style"
 @import "../components/pages/pre-carriage/style"
 @import "../components/pages/document/style"
+@import "../components/pages/rate/style"
 
 @import "media"
 

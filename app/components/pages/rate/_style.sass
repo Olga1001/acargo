@@ -1,0 +1,215 @@
+.way
+  background-color: rgba(#109cf1, 0.1)
+  margin: 0 -30px 0 -25px
+  padding: 60px 0 50px
+  display: flex
+  &__item
+    width: 16.66%
+    p
+      text-align: center
+      margin-top: 4px
+    &-icon
+      height: 50px
+      margin: 0 auto
+      &-city
+        height: 56px
+        margin-top: -6px
+      &-car
+        width: 47px
+        display: flex
+        align-items: flex-end
+    &-way
+      display: flex
+      align-items: center
+      position: relative
+      margin: 30px 0 25px
+    &:first-child
+      .way__line
+        left: 50%
+    &:last-child
+      .way__line
+        width: 50%
+  &__point
+    width: 22px
+    height: 22px
+    border: solid 1px $color4
+    border-radius: 50%
+    display: block
+    position: relative
+    z-index: 2
+    margin: 0 auto
+    &:before
+      @include before
+      width: 13px
+      height: 13px
+      background: $color4
+      border-radius: 50%
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__line
+    position: absolute
+    width: 100%
+    left: 0
+    top: 50%
+    transform: translateY(-50%)
+    background-color: $color7
+    opacity: 0.91
+    height: 4px
+    z-index: 1
+.btn-add-blue
+  border-radius: 4px
+  background-color: #156ce4
+  line-height: 40px
+  font-size: 15px
+  color: #ffffff
+  width: 128px
+  position: relative
+  z-index: 2
+.rate__row
+  .select
+    width: calc(100% - 118px)
+    margin-right: -10px
+  .select:before
+    right: 26px
+.rate
+  .nav-tabs .nav-link
+    width: 150px
+
+
+.table__rate
+  border: solid 1px rgba(183, 188, 214, 0.37)
+  overflow-x: auto
+  width: calc(100% + 55px)
+  margin: 0 -30px 0 -25px
+  p
+    width: 100%
+    color: #141515
+    max-width: 190px
+  &::-webkit-scrollbar
+    height: 6px
+    background: none
+  &::-webkit-scrollbar-thumb
+    background: rgba(183, 188, 214, 0.37)
+
+  &__body
+    li
+      &:last-child
+        border: none
+  &-item
+    padding: 0
+    min-width: 40px
+    height: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+  .bg-light-blue, .bg-blue, .table__rate-row-one, .table__rate-row-two
+    padding: 0 10px 0 20px
+    border-bottom: solid 1px rgba(183, 188, 214, 0.37)
+    min-height: 56px
+  .bg-blue, .table__rate-row-two
+    padding: 0 20px 0 30px
+  .bg-blue
+    p
+      color: #ffffff
+  .bg-light-blue, .table__rate-row-one
+    .table__rate-item
+      padding: 14px 25px 14px 0
+      &:first-child
+        width: 265px
+      &:nth-child(2)
+        width: 285px
+      &:nth-child(3)
+        width: 190px
+      &:nth-child(4)
+        width: 140px
+      &:nth-child(5)
+        width: 129px
+  .bg-blue, .table__rate-row-two
+    .table__rate-item
+      &:first-child
+        width: 88px
+      &:nth-child(2)
+        width: 189px
+      &:nth-child(3)
+        width: 183px
+.table__rate-two
+  .bg-blue .table__rate-item
+    padding: 14px 25px
+  .bg-light-blue, .table__rate-row-one
+    .table__rate-item
+      &:first-child
+        width: 253px
+      &:nth-child(2)
+        width: 262px
+      &:nth-child(3)
+        width: 179px
+      &:nth-child(4)
+        width: 146px
+      &:nth-child(5)
+        width: 186px
+  .bg-blue, .table__rate-row-two
+    padding: 0
+    .table__rate-item
+      p
+        text-align: center
+      &:first-child
+        width: 219px
+      &:nth-child(2)
+        width: 205px
+      &:nth-child(3)
+        width: 191px
+      &:nth-child(4)
+        width: 126px
+      &:nth-child(5)
+        width: 126px
+  .bg-blue
+    .table__rate-item
+      border-right: 1px solid #f4f5f8
+
+  .table__rate-item-pallet
+    width: 132px!important
+  .table__rate-item-tone
+    width: 205px!important
+    padding: 10px!important
+    span
+      display: block
+      font-size: 12px
+.table__rate-between
+  p
+    width: 45px
+.delimiter
+  padding: 0 20px
+  color: #b7bcd6!important
+  width: auto!important
+
+.checkbox__transport
+  &-check
+    width: 20px
+    height: 20px
+    border: solid 1px #bfc5d2
+    border-radius: 4px
+    box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
+    background-color: #ffffff
+    margin-right: 32px
+  &-icon
+    margin-right: 13px
+  &-text
+    font-size: 18px
+    color: #141515
+.head__border
+  border-bottom: 1px solid rgba(#ebeff2, 0.8)
+  padding: 10px 0
+.rate-road__item
+  width: 22%
+  margin-right: 48px
+  &:nth-child(2)
+    width: 34%
+  &:last-child
+    margin-right: 0
+.scale
+  transform: scale(-1,1)
+
+
+
+

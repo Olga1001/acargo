@@ -149,7 +149,7 @@ $(document).ready(function () {
     $(".popup .box-white").eq(index).addClass('active').siblings().removeClass('active');
     $(".container-fluid").addClass('active');
   });
-  $(".popup, .close, .container-fluid").click(function(e){
+  $(".popup, .close").click(function(e){
     e.preventDefault();
     $(this).closest(".box-white").removeClass('active');
     $(".container-fluid, .popup").removeClass('active');
@@ -160,7 +160,7 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).addClass('active').parent().siblings().find(".nav-link").removeClass('active');
     let index = $(this).parent().index();
-    $(".rate__content").eq(index).addClass('active').siblings().removeClass('active');
+    $(".contents__item").eq(index).addClass('active').siblings().removeClass('active');
   });
 });
 //STICKY

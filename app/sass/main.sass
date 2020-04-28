@@ -170,6 +170,7 @@ img
     display: flex
     align-items: center
     justify-content: center
+    color: #141515
     &:before, &:after
       @include before
       content: none
@@ -186,18 +187,19 @@ img
     &:after
       right: 2px
       border-width: 45px 0 45px 36px
-    &.active, &.active:hover, &.active:focus
-      &:before
-        content: ''
-      &:after
-        content: ''
-        border-color: transparent transparent transparent #49ddaa
+
     &.focus, &:hover, &:focus
       &:before
         content: ''
       &:after
         content: ''
         border-color: transparent transparent transparent #f6f7f8
+    &.active, &.active:hover, &.active:focus, &.active.focus, &.active.focus:hover, &.active.focus:focus
+      &:before
+        content: ''
+      &:after
+        content: ''
+        border-color: transparent transparent transparent #49ddaa
     &.disabled, &.disabled:hover, &.disabled:focus
       &:before
         content: ''
@@ -221,10 +223,16 @@ img
           background-color: #f6f7f8
       .disabled
         span
-          background-color: #f6f7f8
-      .active
+          background-color: #f6f7f8!important
+      .active, .active.focus
         span
           background-color: #49ddaa
+      &.active.disabled
+        span
+          background-color: #f6f7f8!important
+
+.pills-custom .nav-link.active.focus
+  background-image: url("../img/nav-custom/path-1.svg")
 input, textarea
   font-size: 16px
   outline: none

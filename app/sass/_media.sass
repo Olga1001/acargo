@@ -3,6 +3,10 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1500px)
+  .table__make-booking__row, .bg-light-blue
+    width: 100%
+
 @media only screen and (max-width : 1440px)
   .container-fluid, .topbar
     padding-right: 1.5rem
@@ -117,6 +121,8 @@
   .rate-road__item
     width: calc(22% - 23px)
     margin-right: 30px
+  .make-booking__col
+    max-width: 100%
 @media only screen and (max-width : 991px)
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
     width: calc(50% - 10px)
@@ -128,6 +134,8 @@
     width: 50%
   .container-fluid, .topbar
     padding: 0 10px
+  .container-fluid
+    padding: 10px
   .topbar.navbar-light .navbar-nav .nav-item .nav-link
     padding: 0 15px!important
     svg, .nav-link-arrow
@@ -209,6 +217,13 @@
     width: calc(50% - 15px)!important
     &:nth-child(2n+2)
       margin-right: 0
+  .table__make-booking
+    margin: 0 -15px
+    width: calc(100% + 30px)
+  .calc__btn
+    width: 42px
+  .calc__input
+    width: calc(100% - 82px)
 @media only screen and (max-width : 768px)
   .burger-mob
     display: block
@@ -418,4 +433,27 @@
     height: 15px
   .checkbox__transport-text
     font-size: 16px
+  .transfer
+    width: fit-content
+    transform: rotate(90deg)
+    padding: 0
+    margin: 0 auto
+  .transfer-img
+    margin: 0
+  .payment-detail
+    font-size: 14px
+    width: 90px
+  .path__check
+    width: 40px
+    height: 40px
+    background-size: 50%
+  .path
+    &__line
+      width: calc(100% - 40px - 10px)
+      margin: 0 5px
+    .text-16
+      font-size: 13px
+  .col-transfer .make-booking__col
+    width: 100%
+    margin-right: 0
 

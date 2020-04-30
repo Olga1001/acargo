@@ -1664,11 +1664,11 @@ button {
     background: none; }
   .table__make-booking::-webkit-scrollbar-thumb {
     background: rgba(183, 188, 214, 0.37); }
-  .table__make-booking li {
+  .table__make-booking .table__make-booking__row {
     border: solid 1px rgba(183, 188, 214, 0.37);
     border-top: none; }
-    .table__make-booking li:first-child {
-      border-top: solid 1px rgba(183, 188, 214, 0.37); }
+  .table__make-booking li:first-child .table__make-booking__row {
+    border-top: solid 1px rgba(183, 188, 214, 0.37); }
   .table__make-booking .bg-light-blue {
     padding: 4px 20px; }
   .table__make-booking .table__rate-item {
@@ -1694,10 +1694,12 @@ button {
   height: 75px; }
 
 .transfer {
+  display: block;
   width: 0;
-  display: block; }
+  padding-top: 35px; }
   .transfer-img {
-    width: 75px;
+    margin-left: -55px;
+    width: 25px;
     height: 21px; }
 
 .payment-detail {
@@ -1709,6 +1711,10 @@ button {
   border-radius: 4px;
   background-color: #e7f5fe;
   padding-top: 4px; }
+
+.col-transfer .make-booking__col {
+  width: 33.33%;
+  margin-right: 85px; }
 
 .loading__file {
   padding: 20px 15px; }
@@ -2153,6 +2159,10 @@ button {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (min-width: 1500px) {
+  .table__make-booking__row, .bg-light-blue {
+    width: 100%; } }
+
 @media only screen and (max-width: 1440px) {
   .container-fluid, .topbar {
     padding-right: 1.5rem; }
@@ -2269,9 +2279,7 @@ button {
     width: calc(22% - 23px);
     margin-right: 30px; }
   .make-booking__col {
-    max-width: 100%; }
-  .transfer-img {
-    width: 50px; } }
+    max-width: 100%; } }
 
 @media only screen and (max-width: 991px) {
   .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2) {
@@ -2591,7 +2599,11 @@ button {
     width: -moz-fit-content;
     width: fit-content;
     -webkit-transform: rotate(90deg);
-            transform: rotate(90deg); }
+            transform: rotate(90deg);
+    padding: 0;
+    margin: 0 auto; }
+  .transfer-img {
+    margin: 0; }
   .payment-detail {
     font-size: 14px;
     width: 90px; }
@@ -2603,4 +2615,7 @@ button {
     width: calc(100% - 40px - 10px);
     margin: 0 5px; }
   .path .text-16 {
-    font-size: 13px; } }
+    font-size: 13px; }
+  .col-transfer .make-booking__col {
+    width: 100%;
+    margin-right: 0; } }

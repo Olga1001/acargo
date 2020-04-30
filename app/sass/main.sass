@@ -250,12 +250,22 @@ textarea
   width: 100%
   max-width: 100%
   padding: 0
+  &.bg-white
+    border: solid 1px #b7bcd6
 .textarea
   height: 107px
   border-radius: 4px
   background-color: #f3faff
   resize: none
   padding: 20px
+.textarea__messages
+  position: relative
+  &-icon
+    position: absolute
+    left: 20px
+    top: 20px
+  .textarea
+    padding-left: 47px
 input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
   -webkit-appearance: none
   margin: 0
@@ -284,6 +294,9 @@ input:disabled
     font-size: 15px
     font-style: italic
     color: #109cf1
+.input-date
+  background: url("../img/calendar-1.svg") no-repeat right 17px center / 23px 23px
+  padding: 11px 45px 11px 13px
 label
   position: relative
 
@@ -295,6 +308,10 @@ button
   background: transparent
   &:focus
     outline: none
+.border-bottom
+  border-bottom: 4px solid #e7f5fe!important
+  &.d-flex
+    max-width: 503px
 .link-share
   position: relative
 .select
@@ -558,6 +575,11 @@ button
     font-style: normal
     letter-spacing: normal
     color: #ffffff
+.btn-submit
+  max-width: 225px
+  width: 100%
+  line-height: 26px
+  font-size: 15px
 .close img
   width: 20px
   height: 20px
@@ -602,6 +624,7 @@ button
     pointer-events: none
 .container-fluid
   padding-right: 7vw
+  padding-bottom: 1.5vw
   min-height: calc(100% - 72px)
   &.active
     background-color: rgba(#013389, 0.48)
@@ -835,6 +858,36 @@ button
     text-align: center
     margin-left: 5px
     border-radius: 0
+.calc
+  display: flex
+  border-radius: 4px
+  overflow: hidden
+  &__input
+    width: calc(100% - 59px - 59px)
+    border-radius: 0
+    text-align: center
+  &__btn
+    width: 59px
+    height: 42px
+    background-color: #156ce4
+    position: relative
+    &:before, &:after
+      content: ''
+      position: absolute
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+      background: #ffffff
+      height: 2px
+      width: 15px
+    &:after
+      width: 2px
+      height: 15px
+    &-minus
+      &:after
+        content: none
+
+
 .bg-light-blue
   background-color: rgba(#e7f5fe, 0.51)
 .bg-white
@@ -913,6 +966,10 @@ button
       line-height: 1.67
       color: #282e3b
       max-width: 945px
+.text-initial
+  text-transform: initial
+.weight-medium
+  font-weight: 500
 .b-green
   border-color: #2acc46
 .b-red
@@ -930,6 +987,8 @@ button
   color: #141515
 .c-gray
   color: $color6
+.c-navy-blue
+  color: $color7
 .drop-upload
   display: flex
   align-items: center

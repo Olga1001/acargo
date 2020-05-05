@@ -30,11 +30,11 @@
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
-  color: #67758d
+  color: $color5
 
 body input:required:valid,
 body textarea:required:valid
-  color: #67758d
+  color: $color5
 
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video
   margin: 0
@@ -592,6 +592,12 @@ button
 .btns .btn-aquamarine.big
   width: fit-content
   padding: 14px 33px
+.btn-template
+  position: relative
+  z-index: 2
+  margin-left: -5px
+  max-width: 155px
+  width: 100%
 .close img
   width: 20px
   height: 20px
@@ -615,6 +621,10 @@ button
   font-size: 25px
   color: #141515
   text-align: center
+.title-20
+  font-size: 20px
+  font-weight: 500
+  color: #ffffff
 .link
   color: #156ce4
   font-size: 15px
@@ -732,7 +742,7 @@ button
   .garbage
     margin-left: 22px
   span
-    color: #67758d
+    color: $color5
   p
     color: $color2
   .block__blue
@@ -800,7 +810,7 @@ button
       padding-left: 15px
     a
       font-size: 14px
-      color: #67758d
+      color: $color5
       margin-top: 8px
       display: block
 .public .table__form
@@ -917,7 +927,7 @@ button
   background-color: rgba(#e7f5fe, 0.51)
   transition: all 0.3s ease
   cursor: pointer
-  color: #67758d
+  color: $color5
   font-size: 22px
   &:hover
     background-color: rgba(#e7f5fe, 1)
@@ -1003,6 +1013,9 @@ button
   color: $color6
 .c-navy-blue
   color: $color7
+.c-white
+  color: #fff
+
 .drop-upload
   display: flex
   align-items: center

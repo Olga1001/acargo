@@ -57,7 +57,8 @@ blockquote, q
 blockquote:before, blockquote:after, q:before, q:after
   content: ''
   content: none
-
+i
+  font-style: italic
 a
   outline: none
   text-decoration: none
@@ -125,7 +126,7 @@ img
     background: #ffffff
   &-link
     padding-left: 15px
-    color: #282e3b
+    color: $color2
     font-size: 14px
     position: relative
     &:before
@@ -306,6 +307,7 @@ button
     height: 100%
     left: auto
     right: 16px
+    pointer-events: none
   &.active
     &:before
       transform: scale(1,-1)
@@ -422,7 +424,7 @@ button
   padding: 0
   height: auto
   font-size: 15px
-  color: #282e3b
+  color: $color2
   line-height: normal
 .add-order-no
   .select
@@ -795,7 +797,8 @@ button
       &:last-child
         border-bottom: none
     &::-webkit-scrollbar
-      width: 7px
+      width: 6px
+      height: 6px
     &::-webkit-scrollbar-thumb
       opacity: 0.7
       border-radius: 4px
@@ -831,7 +834,7 @@ button
 .table__sea .table__body
   max-height: 100%
 .table__rate-book .table__body
-  max-height: 100%
+  //max-height: 100%
 .table__rate-book
   margin: 0 -30px 0 -25px
   width: calc(100% + 55px)
@@ -892,10 +895,10 @@ button
     height: 13px
     margin-right: 15px
   &__input
-    color: #282e3b
+    color: $color2
     font-size: 15px
     border: none
-    border-bottom: 1px solid #282e3b
+    border-bottom: 1px solid $color2
     padding: 0
     height: 17px
     width: 20px
@@ -1013,7 +1016,7 @@ button
     &__text
       font-size: 15px
       line-height: 1.67
-      color: #282e3b
+      color: $color2
       max-width: 945px
 .text-initial
   text-transform: initial
@@ -1021,6 +1024,8 @@ button
   font-weight: 500
 .weight-normal
   font-weight: 400
+.weight-light
+  font-weight: 300
 .b-green
   border-color: #2acc46
 .b-red
@@ -1079,7 +1084,7 @@ button
     font-stretch: normal
     font-style: normal
     letter-spacing: normal
-    color: #282e3b
+    color: $color2
     line-height: 1.73
     cursor: pointer
     padding: 0 15px
@@ -1088,6 +1093,194 @@ button
       color: #109cf1
 .hide
   display: none!important
+.datepicker-dropdown, .show-calendar
+  box-shadow: 0 0 15px 0 rgba(55, 81, 126, 0.15)
+.datepicker-months tbody, .datepicker-years tbody
+  td
+    display: flex
+    flex-wrap: wrap
+    justify-content: center
+.datepicker-dropdown, .drp-calendar
+  padding: 25px 50px 20px
+  .prev, .next, th.prev, th.next
+    position: absolute
+    top: 50%
+    transform: translateY(-50%)
+    width: 50px!important
+    height: 50px!important
+    color: transparent
+    border-radius: 50%!important
+    box-shadow: 0 0 5px 0 rgba(#000, 0.1)!important
+    opacity: 1!important
+    span
+      display: none!important
+  .prev
+    left: -25px
+    background: url("../img/left-arrow.svg") no-repeat center / 100%
+  .next
+    right: -25px
+    background: url("../img/right-arrow.svg") no-repeat center / 100%
+
+
+.datepicker-switch
+  font-family: 'Roboto', sans-serif
+  font-size: 16px
+  color: #37517e
+  padding-bottom: 20px
+  display: block
+  padding-left: 12px
+.day
+  font-size: 14px
+  color: #455997
+  width: 34px
+  height: 34px
+  padding: 0!important
+  vertical-align: middle
+  text-align: center
+  margin: 2.5px 7px
+  display: inline-flex
+  justify-content: center
+  align-items: center
+  cursor: pointer
+  &.active
+    background-color: #109cf1
+    color: #ffffff
+    border-radius: 50%
+.dow
+  vertical-align: middle
+  text-align: center
+  opacity: 0.5
+  font-size: 11px
+  font-weight: bold
+  color: #b7bcd6
+  display: inline-block
+  margin: 2.5px 7px
+  padding-bottom: 15px
+  width: 34px
+  height: 34px
+
+.old, .new
+  opacity: 0.5
+.month, .year
+  width: 25%
+  display: flex
+  align-items: center
+  justify-content: center
+  padding: 4px
+.calendar-table
+  th.month, .month
+    justify-content: flex-start
+    font-family: "Roboto", sans-serif
+    font-size: 16px!important
+    font-weight: normal
+    font-stretch: normal
+    font-style: normal
+    line-height: normal!important
+    letter-spacing: normal
+    color: #37517e!important
+    width: fit-content!important
+    height: auto!important
+    margin-bottom: 13px
+    opacity: 1!important
+  thead
+    tr
+      display: flex
+      &:nth-child(2)
+        th
+          width: 34px!important
+          height: 34px!important
+    th
+      width: auto!important
+      opacity: 0.5
+      font-family: "Roboto", sans-serif
+      font-size: 11px
+      font-weight: bold
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      text-align: center
+      color: #b7bcd6!important
+      margin: 2.5px 6px!important
+      display: flex
+      align-items: center
+      justify-content: center
+
+  tbody
+    tr
+      display: flex
+    td, td.end-date, td.start-date
+      width: 47px!important
+      height: 34px!important
+      border-radius: 50% !important
+      font-family: "Roboto", sans-serif
+      font-size: 14px!important
+      font-weight: normal
+      font-stretch: normal
+      font-style: normal
+      line-height: normal
+      letter-spacing: normal
+      color: #455997!important
+      padding: 0px 5px!important
+      margin: 2.5px 0 !important
+      display: flex
+      align-items: center
+      justify-content: center
+      &.active
+        color: #ffffff!important
+        font-weight: bold
+        background: #109cf1!important
+        padding: 0!important
+        margin: 2.5px 6.5px!important
+        height: 34px!important
+        width: 34px!important
+
+      &.weekend
+        color: #ff5b5b!important
+.daterangepicker td.available:hover, .daterangepicker th.available:hover
+  background-color: transparent!important
+  border-color: transparent
+  color: inherit
+.daterangepicker td.in-range
+  background-color: rgba(#488dff, 0.1)!important
+.daterangepicker .drp-calendar
+  max-width: 100% !important
+  padding: 25px 38px 20px!important
+.daterangepicker td.in-range
+  background-color: rgba(#488dff, 0.1)
+  border-radius: 0!important
+.btn-primary
+  width: 107px
+  height: 44px
+  border-radius: 4px
+  background-color: #49ddaa!important
+  font-family: "Roboto", sans-serif
+  font-size: 14px!important
+  font-weight: bold!important
+  border: none!important
+  font-stretch: normal
+  font-style: normal
+  line-height: normal
+  letter-spacing: normal
+  color: #ffffff
+.drp-buttons
+  border: none!important
+  padding: 0 20px 20px!important
+.drp-selected, .cancelBtn
+  display: none!important
+.daterangepicker .drp-calendar.left .calendar-table
+  padding: 0!important
+.off
+  opacity: 0.5
+.drp-calendar.right
+  th.month
+    margin-left: -35px!important
+.highlighted, .weekend
+  color: #ff5b5b!important
+.daterangepicker.auto-apply .drp-buttons
+  display: block!important
+
+
 @import "../components/pages/order/style"
 @import "../components/pages/products/style"
 @import "../components/pages/booking/style"

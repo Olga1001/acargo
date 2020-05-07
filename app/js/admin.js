@@ -177,3 +177,51 @@ $(document).ready(function () {
     }
   });
 });
+//datepicker
+$(document).ready(function () {
+
+  $(".datepicker").datepicker({
+    weekStart: 1,
+    multidate: 1,
+    keyboardNavigation: false,
+    forceParse: false,
+    autoclose: true,
+    todayHighlight: true,
+    daysOfWeekHighlighted: "0,6",
+
+  });
+
+
+
+
+});
+
+//daterangepicker
+$(function() {
+  $('input[name="daterange"]').daterangepicker({
+    opens: 'left',
+    daysOfWeekHighlighted: "0,6",
+    autoUpdateInput: true,
+    weekStart: 1,
+    locale: {
+      applyLabel: 'Done'
+    }
+  }, function(start, end, label) {
+    console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  });
+});
+$(function() {
+  $('input[name="dates"]').daterangepicker({
+    singleDatePicker: true,
+    weekStart: 1,
+    opens: 'left',
+    autoUpdateInput: true,
+    daysOfWeekHighlighted: "0,6",
+    weekStart: 1,
+    locale: {
+      applyLabel: 'Done'
+    },
+  }, function(start, end, label) {
+    console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD') );
+  });
+});

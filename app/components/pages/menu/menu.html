@@ -10,6 +10,7 @@
     <link href="css/libs.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" media="all" href="css/daterangepicker.css" />
 </head>
 
 <body id="page-top">
@@ -89,6 +90,17 @@
                             </li>
                         </ul>
                     </div>
+                <div class="row py-5">
+                    <div class="col-md-4 mt-4">
+                        <input type="text" class="input input-date datepicker ">
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <input type="text" name="dates" class="input input-date">
+                    </div>
+                    <div class="col-md-4 mt-4">
+                        <input type="text" name="daterange" class="input input-date">
+                    </div>
+                </div>
                     <div class="first box-white">
                         <div class="row">
                             <div class="col-lg-9 col-12 d-flex flex-column justify-content-between">
@@ -193,7 +205,6 @@
                         </div>
                     </div>
                 </div>
-
                     <div class="message b-green d-flex align-items-center mt-2">
                         <img src="img/correct.svg" alt="icon" class="mr-sm-4 mr-3">
                         <p class="message-text"> There are many variations of passages of Lorem Ipsum available</p>
@@ -211,7 +222,6 @@
                         <p class="message-text">There are many variations of passages of Lorem Ipsum available, but the majority have
                             suffered alteration in some form</p>
                     </div>
-
                     <div class="message-info my-4">
                         <img src="img/create-24-px.svg" alt="edit" class="mr-sm-4 mr-3">
                         <p class="message-info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever
@@ -222,7 +232,6 @@
                         <img src="img/create-24-px.svg" alt="edit" class="mr-sm-4 mr-3">
                         <textarea rows="4" class="message-info__text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text eversince the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fivecenturies, but also the leap into electronic typesetting, remaining essentially unchanged.</textarea>
                     </div>
-
                     <div class="first box-white">
                         <div class="row align-items-center ">
                             <div class="col-md-10 col-12">
@@ -422,9 +431,6 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 @import "popups.html"
             </div>
             <!---Container-->
@@ -434,8 +440,13 @@
 </div>
 
 <script src="vendor/jquery/jquery.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.1/moment.min.js"></script>
+<script type="text/javascript" src="js/daterangepicker.js"></script>
+
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
 <script src="js/admin.js"></script>
 </body>
 

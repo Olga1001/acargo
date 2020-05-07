@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>acargo</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+</head>
+
+<body id="page-top">
+<div id="wrapper">
+    <div class="overlay"></div>
+    @import "sidebar.html"
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            @import "topbar.html"
+            <!-- Container-->
+            <div class="container-fluid active" id="container-wrapper">
+                <div id="box"> </div>
+                <div class="popup ">
+                    <div class="box-white py-4 active pr-xl-5">
+                        <div class="d-flex justify-content-end mb-3">
+                            <a href="#" class="close">
+                                <img src="img/gray__cancel.svg" alt="close">
+                            </a>
+                        </div>
+                        <h2 class="title-2 c-navy-blue weight-medium mb-5">CREATE REQUEST</h2>
+                        <div class="path">
+                            <div class="path__row">
+                                <div class="path__item active">
+                                    <div class="path__check"></div>
+                                    <div class="path__line"></div>
+                                </div>
+                                <div class="path__item active">
+                                    <div class="path__check"></div>
+                                    <div class="path__line"></div>
+                                </div>
+                                <div class="path__item ">
+                                    <div class="path__check bg-white"></div>
+                                </div>
+                            </div>
+                            <div class="path__row mt-4">
+                                <p class="text-16 text-initial">Select destination</p>
+                                <p class="text-16 text-initial">Choose carriers</p>
+                                <p class="text-16 text-initial">Send request</p>
+                            </div>
+                        </div>
+                        <div class="pr-xl-5">
+                            <form class="mt-5 pt-sm-5">
+                                <input type="text" class="input-search" placeholder="Search">
+                            </form>
+                            <div class="row pb-3">
+                                <div class="col-md-4 col-sm-6 mt-sm-5 mt-4">
+                                    <p class="text-14">Country</p>
+                                    <div class="select">
+                                        <div class="select__item"></div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mt-sm-5 mt-4">
+                                    <p class="text-14">Category</p>
+                                    <div class="select">
+                                        <div class="select__item"></div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4 col-sm-6 mt-sm-5 mt-4">
+                                    <p class="text-14">Groups</p>
+                                    <div class="select">
+                                        <div class="select__item"></div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="py-3 mt-5 ">
+                                <div class="box-white__top d-flex flex-wrap  align-items-center justify-content-between">
+                                    <h2 class="title">COMPANIES</h2>
+                                </div>
+                                <div class="table table__companies mt-4">
+                                    <div class="table__head d-none d-lg-block">
+                                        <div class="row">
+                                            <div class="col-3">
+                                                <div class="row">
+                                                    <div class="col-4"></div>
+                                                    <div class="col-8"><p>ID</p></div>
+                                                </div>
+                                            </div>
+                                            <div class="col-9">
+                                                <div class="row">
+                                                    <div class="col-3"><p>COMPANY</p></div>
+                                                    <div class="col-3"><p>COUNTRY</p></div>
+                                                    <div class="col-3"><p>CATEGORY</p></div>
+                                                    <div class="col-3"><p>GROUPS</p></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="table__body">
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__body-item">
+                                            <div class="row">
+                                                <div class="col-lg-3">
+                                                    <div class="row">
+                                                        <div class="col-lg-4 col-sm-1 col-2">
+                                                            <label class="d-flex" >
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-lg-8 col-sm-11 col-10">
+                                                            <p class="d-flex"><span class="d-lg-none d-flex">ID:</span>2030</p>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                                <div class="col-lg-9">
+                                                    <div class="row">
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COMPANY:</span>APL LT</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">COUNTRY:</span>Lithvinia</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">CATEGORY:</span>Ocean</p></div>
+                                                        <div class="col-sm-3 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">GROUPS:</span>Shipping line</p></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-7 mt-5 pr-xl-5">
+                                    <div class="textarea__messages">
+                                        <img src="img/create-14.svg" alt="create" class="textarea__messages-icon">
+                                        <textarea cols="30" rows="10" class="textarea" placeholder="Messages"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-xl-5 mt-5">
+                                    <div class="select__carrier">
+                                        <div class="select__item select__carrier-item d-flex align-items-center justify-content-center c-gray px-3">
+                                            <img src="img/team.svg" alt="team" class="img-team">
+                                            <p class="px-sm-4 px-2">Select carrier department</p>
+                                            <div class="arrow-drop"></div>
+                                        </div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option"></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+
+                        <div class=" mt-5 mb-4 mx-auto d-flex justify-content-center">
+                            <button type="submit" class="btn-aquamarine btn-submit">Send request  </button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+            <!---Container-->
+
+
+        </div>
+    </div>
+</div>
+
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="js/admin.js"></script>
+</body>
+
+</html>

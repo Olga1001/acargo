@@ -23,6 +23,8 @@
     height: 63px
     border-radius: 50%
     margin: 0 auto
+    &.bg-white
+      border: 2px solid $color4
   &__item
     display: flex
     align-items: center
@@ -103,10 +105,34 @@
     margin-right: 85px
     &:nth-child(2n+2)
       margin-right: 0
+.table__make-booking-second__body
+  max-height: 340px
+  overflow-y: auto
+  scrollbar-width: thin
+  scrollbar-color: rgba(183, 188, 214, 0.37) none
+  overflow-x: hidden
+  width: fit-content
+  &::-webkit-scrollbar
+    height: 6px
+    width: 6px
+    background: none
+  &::-webkit-scrollbar-thumb
+    background: rgba(183, 188, 214, 0.37)
 .table__make-booking-second
   margin: 0 -30px 0 -25px
   width: calc(100% + 55px)
   overflow-x: auto
+  scrollbar-width: thin
+  scrollbar-color: rgba(183, 188, 214, 0.37) none
+  direction: rtl
+  .table__make-booking-second__body li, .bg-light-blue
+    direction: ltr
+  &::-webkit-scrollbar
+    height: 6px
+    width: 6px
+    background: none
+  &::-webkit-scrollbar-thumb
+    background: rgba(183, 188, 214, 0.37)
   .bg-light-blue, .table__make-booking__row
     width: fit-content
   .table__rate-item
@@ -136,7 +162,7 @@
   border: solid 1px #b7bcd6
   min-height: 175px
   .select__item
-    color: #282e3b
+    color: $color2
   &__head
     border-radius: 4px 4px 0 0
     background-color: $color4
@@ -168,4 +194,5 @@
     max-width: 131px
     position: relative
     z-index: 1
+
 

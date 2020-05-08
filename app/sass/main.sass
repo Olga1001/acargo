@@ -426,6 +426,28 @@ button
   font-size: 15px
   color: $color2
   line-height: normal
+.input__clear
+  width: 100%
+  position: relative
+.clear
+  position: absolute
+  right: 15px
+  top: 50%
+  transform: translateY(-50%)
+  width: 20px
+  height: 20px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(45deg)
+    width: 1px
+    height: 15px
+    background: red
+  &:after
+    width: 15px
+    height: 1px
 .add-order-no
   .select
     border: none
@@ -443,6 +465,7 @@ button
   width: 16px
   height: 16px
   margin: 0 6px 0 24px
+
 .checkbox
   display: none
   position: absolute
@@ -508,6 +531,7 @@ button
   position: relative
   margin-left: 16px
   cursor: pointer
+  flex-shrink: 0
   &:before
     @include before
     width: 13px
@@ -971,6 +995,8 @@ button
     margin: 0!important
     &.active
       display: block
+  .vgm-weight
+    margin: 0 auto!important
   &__loading
     &-top
       border-bottom: 4px solid rgba(#daf0fc, 0.65)

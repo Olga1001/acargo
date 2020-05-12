@@ -123,7 +123,7 @@ img
   border-radius: 7px
   &-item
     padding: 2.5px 15px 2.5px 102px
-    background: #ffffff
+    background: $color1
   &-link
     padding-left: 15px
     color: $color2
@@ -136,7 +136,7 @@ img
       border-radius: 50%
       width: 7px
       height: 7px
-      background-color: #109cf1
+      background-color: $color4
 .nav-link-img
   width: 20px
   margin-right: 25px
@@ -183,7 +183,7 @@ img
       transform: translateY(-50%)
       border-style: solid
       border-width: 38px 0 38px 30px
-      border-color: transparent transparent transparent #ffffff
+      border-color: transparent transparent transparent $color1
       z-index: 2
     &:after
       right: 2px
@@ -252,7 +252,7 @@ textarea
   max-width: 100%
   padding: 0
   &.bg-white
-    border: solid 1px #b7bcd6
+    border: solid 1px $color6
 .textarea
   height: 107px
   border-radius: 4px
@@ -273,7 +273,7 @@ input::-webkit-outer-spin-button, input::-webkit-inner-spin-button
 input[type=number]
   -moz-appearance: textfield
 input:disabled
-  background: #fff
+  background: $color1
   opacity: 0.3
 
 label
@@ -328,7 +328,7 @@ button
     padding: 7px 0
     background: $color1
     appearance: none
-    scrollbar-color: $color6 #fff
+    scrollbar-color: $color6 $color1
     scrollbar-width: thin
     &::-webkit-scrollbar
       width: 3px
@@ -345,7 +345,7 @@ button
     cursor: pointer
     padding: 0 15px
     &.active, &:hover
-      color: #109cf1
+      color: $color4
   &__option-check
     color: $color2
     transition: all 0.25s ease
@@ -354,7 +354,7 @@ button
     padding: 0 30px 0 15px
     background-position: right 10px center
     &.active, &:hover
-      color: #109cf1
+      color: $color4
     &.active
       background: url("../img/check.svg") no-repeat right 10px center / 15px
   &__item
@@ -382,12 +382,12 @@ button
     .select__menu
       max-height: inherit
 .select__carrier
-  border: solid 1px #109cf1
+  border: solid 1px $color4
   border-radius: 4px
   &-item
     line-height: 52px
   .arrow-drop
-    border-color: #b7bcd6 transparent transparent transparent
+    border-color: $color6 transparent transparent transparent
 .input-add
   border: none
   padding: 10px 0 0
@@ -395,27 +395,27 @@ button
   &::-webkit-input-placeholder
     font-size: 15px
     font-style: italic
-    color: #109cf1
+    color: $color4
   &:-moz-placeholder
     font-size: 15px
     font-style: italic
-    color: #109cf1
+    color: $color4
   &::-moz-placeholder
     font-size: 15px
     font-style: italic
-    color: #109cf1
+    color: $color4
   &:-ms-input-placeholder
     font-size: 15px
     font-style: italic
-    color: #109cf1
+    color: $color4
 .input-date
   background: url("../img/calendar-1.svg") no-repeat right 17px center / 23px 23px
   padding: 11px 45px 11px 13px
 .input-search
   padding: 13px 20px 13px 53px
   border-radius: 4px
-  border: solid 1px rgba(#b7bcd6, 0.08)
-  background: rgba(#109cf1, 0.08) url("../img/search-1.svg") no-repeat left 20px center / 16px
+  border: solid 1px rgba($color6, 0.08)
+  background: rgba($color4, 0.08) url("../img/search-1.svg") no-repeat left 20px center / 16px
   font-size: 14px
   line-height: 1
   font-size: 14px
@@ -429,6 +429,8 @@ button
 .input__clear
   width: 100%
   position: relative
+  &:focus .drop, &:active .drop, .drop:hover
+    display: block
 .clear
   position: absolute
   right: 15px
@@ -443,10 +445,10 @@ button
     top: 50%
     transform: translate(-50%, -50%) rotate(45deg)
     width: 1px
-    height: 100%
-    background: #67758d
+    height: 20px
+    background: $color5
   &:after
-    width: 100%
+    width: 20px
     height: 1px
 .add-order-no
   .select
@@ -470,13 +472,25 @@ button
   left: 0
   top: 0
   width: 100%
-  z-index: 5
+  z-index: 6
   padding-top: 45px
+  display: none
+  &.active
+    display: block
   &__menu
     border-radius: 4px
     border: solid 1px rgba(183, 188, 214, 0.23)
-    background-color: #ffffff
+    background-color: $color1
     padding: 14px
+    max-height: 322px
+    overflow-y: auto
+    scrollbar-width: thin
+    &::-webkit-scrollbar
+      width: 6px
+      height: 6px
+    &::-webkit-scrollbar-thumb
+      border-radius: 4px
+      background-color: rgba($color6, 0.6)
   &__label
     .card__check
       width: 16px
@@ -484,7 +498,7 @@ button
 .check__text
   font-size: 12px
   line-height: 1.58
-  color: #67758d
+  color: $color5
 .checkbox
   display: none
   position: absolute
@@ -539,10 +553,12 @@ button
     border-color: $color4
     background: url("../img/blue__check-box-empty-copy-6.svg") no-repeat center/ 16px
   &:checked ~ .checkbox__transport-check
-    background: #109cf1 url("../img/check-white.svg") no-repeat center/ 80%
-    border: 1px solid #109cf1
+    background: $color4 url("../img/check-white.svg") no-repeat center/ 80%
+    border: 1px solid $color4
+  &:checked ~ .checkbox__transport-icon path
+    fill: #109cf1
   &:checked ~ .check__text
-    color: #109cf1
+    color: $color4
 .radio__check
   width: 22px
   height: 22px
@@ -572,9 +588,10 @@ button
       width: calc(33.33% - 34px)
 .btn-search
   border-radius: 4px 0 0 4px
-  border: solid 1px #b7bcd6
-  background-color: #109cf1
+  border: solid 1px $color6
+  background-color: $color4
   height: 29px
+
 .search-input
   font-size: 13px
   height: 29px
@@ -599,6 +616,27 @@ button
 .icon-search
   width: 15px
   height: 100%
+.btn-item
+  position: absolute
+  right: 0
+  top: 0
+  width: 0
+  height: 44px
+  border-radius: 4px
+  border: solid 1px #49ddaa
+  background-color: #ffffff
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 16px
+  color: #37517e
+  z-index: 4
+  transition: all 0.2s ease
+  opacity: 0
+  pointer-events: none
+  white-space: nowrap
+  img
+    margin-right: 18px
 .btn
   @include blue
   position: relative
@@ -635,9 +673,15 @@ button
     padding: 9px
     text-align: center
     display: inline-block
+    position: relative
     &:hover, &:focus
       text-decoration: none
       color: $color1
+      .btn-item
+        opacity: 1
+        pointer-events: auto
+        width: 265px
+
     &.big
       font-size: 15px
       min-width: 170px
@@ -646,7 +690,7 @@ button
     opacity: 0.98
     border-radius: 4px
     background-color: $color6
-    color: #ffffff
+    color: $color1
     line-height: 1
     padding: 9px
   &-drop
@@ -664,7 +708,7 @@ button
     display: block
   &-blue
     border-radius: 4px
-    background-color: rgba(#109cf1, 0.98)
+    background-color: rgba($color4, 0.98)
     line-height: 44px
     text-align: center
     max-width: 205px
@@ -674,7 +718,7 @@ button
     font-stretch: normal
     font-style: normal
     letter-spacing: normal
-    color: #ffffff
+    color: $color1
 .btn-submit
   max-width: 225px
   width: 100%
@@ -694,14 +738,14 @@ button
   width: 100%
   line-height: 41px
   border-radius: 4px
-  border: solid 1.5px #109cf1
+  border: solid 1.5px $color4
   display: flex
   align-items: center
   justify-content: center
   font-size: 16px
-  color: #109cf1
+  color: $color4
   .arrow-drop
-    border-color: #109cf1 transparent transparent transparent
+    border-color: $color4 transparent transparent transparent
     margin-left: 15px
   &.active
     .arrow-drop
@@ -732,7 +776,7 @@ button
 .title-20
   font-size: 20px
   font-weight: 500
-  color: #ffffff
+  color: $color1
 .link
   color: #156ce4
   font-size: 15px
@@ -741,6 +785,10 @@ button
   width: 100%
   text-align: right
   display: block
+.link-show
+  font-size: 16px
+  color: #109cf1
+  text-decoration: underline
 .disabled
   opacity: 0.3
   pointer-events: none
@@ -841,6 +889,7 @@ button
   .table__body
     max-height: 345px
 .table
+  scrollbar-width: thin
   &__one
     .table__body-item
       padding: 25px 40px
@@ -870,7 +919,7 @@ button
     &.active
       transform: scale(1,-1)
   &__head
-    background-color: rgba(#109cf1, 0.1)
+    background-color: rgba($color4, 0.1)
     padding: 20px 22px
     p
       color: #141515
@@ -968,9 +1017,9 @@ button
   width: fit-content
   font-size: 14px
   color: #156ce4
-  background-color: #ffffff
+  background-color: $color1
   &.active
-    color: #ffffff
+    color: $color1
     padding: 0 30px 0 57px
     background: #156ce4 url("../img/check-box-empty.svg") no-repeat left 30px center / 11px
 .first
@@ -1007,7 +1056,7 @@ button
   &__btn
     width: 59px
     height: 42px
-    background-color: #109cf1
+    background-color: $color4
     position: relative
     &:before, &:after
       content: ''
@@ -1015,7 +1064,7 @@ button
       top: 50%
       left: 50%
       transform: translate(-50%, -50%)
-      background: #ffffff
+      background: $color1
       height: 2px
       width: 15px
     &:after
@@ -1035,7 +1084,7 @@ button
   &:focus .menu, &:active .menu, .menu:hover
     display: block
 .bg-gray
-  background: #B7BCD6
+  background: $color6
 .bg-light-green
   background-color: rgba(#49ddaa, 0.15)
 .bg-light-orange
@@ -1047,7 +1096,7 @@ button
 .bg-blue
   background-color: #156ce4
 .bg-blue-bright
-  background-color: #109cf1
+  background-color: $color4
 #files
   display: none
 .loader__files-drop
@@ -1092,7 +1141,7 @@ button
     max-width: 900px
   &__request
     max-width: 940px
-    border: solid 1px #109cf1
+    border: solid 1px $color4
 .check
   width: 18px
   height: 13px
@@ -1123,7 +1172,7 @@ button
   height: 16px
 .included
   font-size: 15px
-  color: #109cf1
+  color: $color4
   position: relative
   img
     margin-right: 6px
@@ -1149,7 +1198,7 @@ button
   &__list
     border-radius: 2px
     box-shadow: 1px 2px 15px 2px rgba(40, 46, 59, 0.12)
-    background-color: #ffffff
+    background-color: $color1
     padding: 17px 24px
 .table__rate-table li
   &:last-child, &:nth-last-child(1), &:nth-last-child(2),  &:nth-last-child(3)
@@ -1170,7 +1219,7 @@ button
   &-info
     border-radius: 4px
     box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
-    background-color: #ffffff
+    background-color: $color1
     display: flex
     padding: 17px 22px
     img
@@ -1188,13 +1237,11 @@ button
   &-list
     font-size: 14px
     padding: 5px 12px
-    &:last-child
-      padding-right: 0
     a
       display: block
     .link
       font-size: 16px
-      color: #109cf1
+      color: $color4
       font-weight: normal
 .text-initial
   text-transform: initial
@@ -1211,7 +1258,7 @@ button
 .b-orange
   border-color: #f99e04
 .b-blue
-  border-color: #109cf1
+  border-color: $color4
 
 .c-blue
   color: #156ce4
@@ -1224,7 +1271,7 @@ button
 .c-navy-blue
   color: $color7
 .c-white
-  color: #fff
+  color: $color1
 .c-orange
   color: #f99e04
 .c-green
@@ -1272,7 +1319,7 @@ button
     padding: 0 15px
   li
     &.active, &:hover
-      color: #109cf1
+      color: $color4
 .hide
   display: none!important
 .datepicker-dropdown, .show-calendar
@@ -1325,8 +1372,8 @@ button
   align-items: center
   cursor: pointer
   &.active
-    background-color: #109cf1
-    color: #ffffff
+    background-color: $color4
+    color: $color1
     border-radius: 50%
 .dow
   vertical-align: middle
@@ -1334,7 +1381,7 @@ button
   opacity: 0.5
   font-size: 11px
   font-weight: bold
-  color: #b7bcd6
+  color: $color6
   display: inline-block
   margin: 2.5px 7px
   padding-bottom: 15px
@@ -1382,7 +1429,7 @@ button
       line-height: normal
       letter-spacing: normal
       text-align: center
-      color: #b7bcd6!important
+      color: $color6!important
       margin: 2.5px 6px!important
       display: flex
       align-items: center
@@ -1409,9 +1456,9 @@ button
       align-items: center
       justify-content: center
       &.active
-        color: #ffffff!important
+        color: $color1!important
         font-weight: bold
-        background: #109cf1!important
+        background: $color4!important
         padding: 0!important
         margin: 2.5px 6.5px!important
         height: 34px!important
@@ -1444,7 +1491,7 @@ button
   font-style: normal
   line-height: normal
   letter-spacing: normal
-  color: #ffffff
+  color: $color1
 .drp-buttons
   border: none!important
   padding: 0 20px 20px!important
@@ -1470,7 +1517,6 @@ button
 @import "../components/pages/pre-carriage/style"
 @import "../components/pages/document/style"
 @import "../components/pages/rate/style"
-@import "../components/pages/rate-table/style"
 
 @import "media"
 

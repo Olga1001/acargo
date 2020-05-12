@@ -443,10 +443,10 @@ button
     top: 50%
     transform: translate(-50%, -50%) rotate(45deg)
     width: 1px
-    height: 15px
-    background: red
+    height: 100%
+    background: #67758d
   &:after
-    width: 15px
+    width: 100%
     height: 1px
 .add-order-no
   .select
@@ -465,7 +465,26 @@ button
   width: 16px
   height: 16px
   margin: 0 6px 0 24px
-
+.drop
+  position: absolute
+  left: 0
+  top: 0
+  width: 100%
+  z-index: 5
+  padding-top: 45px
+  &__menu
+    border-radius: 4px
+    border: solid 1px rgba(183, 188, 214, 0.23)
+    background-color: #ffffff
+    padding: 14px
+  &__label
+    .card__check
+      width: 16px
+      height: 16px
+.check__text
+  font-size: 12px
+  line-height: 1.58
+  color: #67758d
 .checkbox
   display: none
   position: absolute
@@ -512,7 +531,7 @@ button
       background: $color6
   &:checked ~ .card__check
     background: url("../img/check-gray.svg") no-repeat center / 100%
-    border-color: transparent
+    border: none
   &:checked ~ .mark-stage__check
     border-color: transparent
     background: $color1 url("../img/check.svg") no-repeat center/90% 100%
@@ -522,6 +541,8 @@ button
   &:checked ~ .checkbox__transport-check
     background: #109cf1 url("../img/check-white.svg") no-repeat center/ 80%
     border: 1px solid #109cf1
+  &:checked ~ .check__text
+    color: #109cf1
 .radio__check
   width: 22px
   height: 22px
@@ -549,6 +570,35 @@ button
     padding: 10px 0
     &-item
       width: calc(33.33% - 34px)
+.btn-search
+  border-radius: 4px 0 0 4px
+  border: solid 1px #b7bcd6
+  background-color: #109cf1
+  height: 29px
+.search-input
+  font-size: 13px
+  height: 29px
+  padding: 6px 15px
+  border-radius: 0 4px 4px 0
+  border-left: none
+  &::-webkit-input-placeholder
+    color: $color6
+    font-style: italic
+
+  &:-moz-placeholder
+    color: $color6
+    font-style: italic
+
+  &::-moz-placeholder
+    color: $color6
+    font-style: italic
+
+  &:-ms-input-placeholder
+    color: $color6
+    font-style: italic
+.icon-search
+  width: 15px
+  height: 100%
 .btn
   @include blue
   position: relative
@@ -639,6 +689,23 @@ button
   margin-left: -5px
   max-width: 155px
   width: 100%
+.btn-filter
+  max-width: 303px
+  width: 100%
+  line-height: 41px
+  border-radius: 4px
+  border: solid 1.5px #109cf1
+  display: flex
+  align-items: center
+  justify-content: center
+  font-size: 16px
+  color: #109cf1
+  .arrow-drop
+    border-color: #109cf1 transparent transparent transparent
+    margin-left: 15px
+  &.active
+    .arrow-drop
+      transform: scale(1,-1)
 .close img
   width: 20px
   height: 20px
@@ -940,7 +1007,7 @@ button
   &__btn
     width: 59px
     height: 42px
-    background-color: #156ce4
+    background-color: #109cf1
     position: relative
     &:before, &:after
       content: ''
@@ -957,8 +1024,22 @@ button
     &-minus
       &:after
         content: none
-
-
+.circle
+  &-span
+    width: 3px
+    height: 3px
+    background-color: #282e3b
+    border-radius: 50%
+    margin: 2px
+    display: block
+  &:focus .menu, &:active .menu, .menu:hover
+    display: block
+.bg-gray
+  background: #B7BCD6
+.bg-light-green
+  background-color: rgba(#49ddaa, 0.15)
+.bg-light-orange
+  background-color: rgba(#f99e04, 0.15)
 .bg-light-blue
   background-color: rgba(#e7f5fe, 0.51)
 .bg-white
@@ -1019,6 +1100,63 @@ button
   font-size: 11px
   line-height: 1.91
   color: #156ce4
+.icon-cursor
+  width: 15px
+  height: 21px
+.icon-team
+  width: 23px
+  height: 19px
+.icon-add
+  width: 20px
+  height: 20px
+.icon-clip
+  width: 9px
+  height: 10px
+.icon-calendar
+  width: 16px
+  height: 16px
+.icon-document
+  width: 13px
+  height: 17px
+.icon-bin, .icon-maths
+  width: 12px
+  height: 16px
+.included
+  font-size: 15px
+  color: #109cf1
+  position: relative
+  img
+    margin-right: 6px
+    display: inline
+.menu
+  display: none
+  position: absolute
+  right: 30px
+  top: 0
+  width: max-content
+  z-index: 7
+  overflow: visible
+  visibility: visible
+  padding-top: 50px
+  &__item
+    margin-bottom: 20px
+    &:last-child
+      margin-bottom: 0
+    img
+      width: 16px
+      margin-right: 24px
+      display: inline
+  &__list
+    border-radius: 2px
+    box-shadow: 1px 2px 15px 2px rgba(40, 46, 59, 0.12)
+    background-color: #ffffff
+    padding: 17px 24px
+.table__rate-table li
+  &:last-child, &:nth-last-child(1), &:nth-last-child(2),  &:nth-last-child(3)
+    .menu, .notes-window
+      top: auto
+      bottom: 0
+      padding: 0 0 50px 0
 .message
   border-radius: 2px
   border: solid 1px
@@ -1044,6 +1182,20 @@ button
       line-height: 1.67
       color: $color2
       max-width: 945px
+
+
+.period
+  &-list
+    font-size: 14px
+    padding: 5px 12px
+    &:last-child
+      padding-right: 0
+    a
+      display: block
+    .link
+      font-size: 16px
+      color: #109cf1
+      font-weight: normal
 .text-initial
   text-transform: initial
 .weight-medium
@@ -1073,6 +1225,10 @@ button
   color: $color7
 .c-white
   color: #fff
+.c-orange
+  color: #f99e04
+.c-green
+  color: #49ddaa
 
 .drop-upload
   display: flex
@@ -1314,6 +1470,7 @@ button
 @import "../components/pages/pre-carriage/style"
 @import "../components/pages/document/style"
 @import "../components/pages/rate/style"
+@import "../components/pages/rate-table/style"
 
 @import "media"
 

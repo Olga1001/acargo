@@ -4600,6 +4600,163 @@
             <a href="#" class="btn-aquamarine big my-5">Send  </a>
         </div>
     </div>
+    <div class="popup__loading box-white py-4" id="loading_popup">
+        <input type="hidden" name="containernumber" value="4">
+        <div class="d-flex justify-content-end mb-3">
+            <a href="#" class="close">
+                <img src="https://acargo.click/test/img/acargo/gray__cancel.svg" alt="close">
+            </a>
+        </div>
+        <div class="popup__loading-top d-flex justify-content-between align-items-sm-center align-items-end mb-5">
+            <div class="bg-light">
+                <p>ORDER <br>Shipper Order No. 8 / 4</p>
+            </div>
+            <div class="btns d-flex flex-sm-row flex-column justify-content-end">
+                <!--            <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center">
+                                <img src="https://acargo.click/test/img/acargo/white__create-24-px.svg" alt="edit" class="edit">
+                            </a>-->
+                <a href="javascript:void(0)" id="remove_loading_products" onclick="removeLoadingProducts(this, 4)" class="btn-aquamarine hide d-flex justify-content-center align-items-center mt-sm-0 mt-1">
+                    <img src="https://acargo.click/test/img/acargo/white-bin.svg" alt="garbage" class="garbage">
+                </a>
+            </div>
+        </div>
+        <div class="row justify-content-lg-between">
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <p class="text-14">Truck</p>
+                <input type="text" class="input" name="truck" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <p class="text-14">Container</p>
+                <input type="text" class="input" name="container" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <p class="text-14">Tara weight</p>
+                <input type="text" class="input" name="tara" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <p class="text-14">Seal</p>
+                <input type="text" class="input" name="seal" value="">
+            </div>
+            <div class="col-lg-2 col-md-4 col-sm-6 mb-3">
+                <p class="text-14">Total weight</p>
+                <input type="text" class="input" name="totalweight" readonly="1" value="">
+            </div>
+        </div>
+        <div class="loading__card my-4 loading-product__item">
+            <input type="hidden" name="product[productid][2760]" value="1981">
+            <input type="hidden" name="product[name][2760]" value="First Product">
+            <input type="hidden" name="product[id][2760]" value="2760">
+            <div class="row py-4">
+                <div class="col-md-6">
+                    <h3 class="title loading__card-title d-flex align-items-center">First Product</h3>
+                </div>
+                <div class="col-md-6 d-flex justify-content-md-end justify-content-between mt-md-0 mt-3">
+                    <div class="loading__card-col">
+                        <p class="text-11-blue">Batch No</p>
+                        <input type="text" name="product[batchno][2760]" value="">
+                    </div>
+                    <div class="loading__card-col ml-sm-5 ml-2">
+                        <p class="text-11-blue">HS Code</p>
+                        <input type="text" name="product[code][2760]" value="First Product">
+                    </div>
+                </div>
+            </div>
+            <div class="loading__card-light">
+                <div class="row d-lg-flex flex-lg-nowrap justify-content-lg-between pt-2 pb-4">
+                    <div class="my-3 d-flex align-items-center w-lg-0 w-100">
+                        <label class="checkbox__blue d-flex align-items-center container-action mt-lg-4">
+                            <input type="checkbox" name="loadingproduct[]" onclick="checkLoadingRemoveProduct()" value="1981" class="checkbox">
+                            <span class="checkbox__icon-blue m-lg-0 mx-3"></span>
+                        </label>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Packaging</p>
+                        <div class="select" inited="1">
+                            <input type="hidden" name="product[packaging][2760]" value="21">
+                            <div class="select__item">Big Bales 5.8m3</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option" data-value="3">Big Bales 6.0m3</li>
+                                    <li class="select__option active" data-value="21">Big Bales 5.8m3</li>
+                                    <li class="select__option" data-value="20">Big Bales 5.5m3</li>
+                                    <li class="select__option" data-value="19">Big Bales 5.0m3</li>
+                                    <li class="select__option" data-value="18">Big Bales 4.5m3</li>
+                                    <li class="select__option" data-value="17">Big Bales 4.0m3</li>
+                                    <li class="select__option" data-value="16">Big Bales 3.5m3</li>
+                                    <li class="select__option" data-value="15">Big Bales 3.0m3</li>
+                                    <li class="select__option" data-value="14">Bags 300 l.</li>
+                                    <li class="select__option" data-value="1">Bags 250 l.</li>
+                                    <li class="select__option" data-value="22">Bags 225 l.</li>
+                                    <li class="select__option" data-value="12">Bags 220 l.</li>
+                                    <li class="select__option" data-value="11">Bags 100 l.</li>
+                                    <li class="select__option" data-value="10">Bags 70 l.</li>
+                                    <li class="select__option" data-value="9">Bags 50 l.</li>
+                                    <li class="select__option" data-value="8">Bags 20 l.</li>
+                                    <li class="select__option" data-value="7">Bags 10 l.</li>
+                                    <li class="select__option" data-value="6">Bags 5 l.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Pallets qty.</p>
+                        <input type="text" class="input" name="product[palletsqty][2760]" value="2">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Packages on pallet</p>
+                        <input type="text" name="product[onpallets][2760]" value="">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Quantity</p>
+                        <input type="text" name="product[quantity][2760]" value="24">
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Pallets type</p>
+                        <div class="select" inited="1">
+                            <input type="hidden" class="input" name="product[pltype][2760]" value="ht">
+                            <div class="select__item">HT Pallets</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li data-value="st" class="select__option">Standard Pallets</li>
+                                    <li data-value="ht" class="select__option active">HT Pallets</li>
+                                    <li data-value="eu" class="select__option">European Pallets</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-sm-6 my-3">
+                        <p class="text-14">Weight </p>
+                        <input type="text" data-weight="1" onkeyup="refreshOrderLoadingWeight(this)" name="product[weight][2760]" value="">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row loading__product align-items-end pb-4">
+            <div class="col-lg-7">
+                <p class="text-14">Select product </p>
+                <div class="d-flex ">
+                    <div class="select" id="addProductTOLoading" inited="1">
+                        <input type="hidden" id="newproduct" name="newproductid" value="">
+                        <!--<div class="select__item"></div>-->
+                        <input type="test" class="input select__item" id="newproductname" name="newproductname" value="">
+                        <div class="select__drop">
+                            <ul class="select__menu">
+                                <li class="select__option" data-value="1983">test product</li>
+                                <li class="select__option" data-value="1984">Product name 2</li>
+                                <li class="select__option" data-value="1987">dvsdvsdvsdvsdv</li>
+                                <li class="select__option" data-value="1990">new test product</li>
+                                <li class="select__option" data-value="1991">test test</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" onclick="addToLoadingNewProduct(this)" class="btn-blue">+ Add new product</a>
+                </div>
+            </div>
+            <div class="col-lg-5">
+                <button type="button" onclick="saveLoading(this)" class="btn-aquamarine big mx-lg-3 mt-3">Save</button>
+            </div>
+        </div>
+    </div>
 </div>
             </div>
             <!---Container-->

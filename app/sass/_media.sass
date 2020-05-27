@@ -4,9 +4,10 @@
 
 /* Large Devices, Wide Screens */
 @media only screen and (min-width : 1500px)
-  .table__make-booking__row, .bg-light-blue
+  .table__rate .bg-light-blue, .table__rate .bg-blue, .table__rate .table__rate-row-one, .table__rate .table__rate-row-two
     width: 100%
-
+  .table__rate .table__rate-row-two
+    background: #fff
 @media only screen and (max-width : 1440px)
   .container-fluid, .topbar
     padding-right: 1.5rem
@@ -53,8 +54,11 @@
   .fields__two .fields__item:nth-child(2n+2):nth-child(3n+3)
     margin-right: 0
     width: calc(50% - 15px)
-  .table__make-booking-second, .table__rate-table, .table__rate-table-road
+  .table__make-booking-second, .table__rate-table, .table__rate-table-road, .table__rate
     width: calc(100% + 55px + 1.5rem)
+  .table__rate .table__rate-row-two
+    background: #fff
+
 @media only screen and (max-width : 1199px)
   .btn-mark
     line-height: 36px
@@ -248,6 +252,8 @@
   .table__make-booking-second, .table__make-booking
     width: calc(100% + 30px + 10px)
 @media only screen and (max-width : 768px)
+  .rate-archive
+    margin-right: 15px
   .burger-mob
     display: block
   .sidebar-toggled

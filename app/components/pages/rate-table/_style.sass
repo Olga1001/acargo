@@ -14,7 +14,7 @@
     p
       font-size: 14px
       color: #141515
-    input
+    .input-table
       margin-top: 6px
 
   .table__rate-item
@@ -46,14 +46,61 @@
   padding: 5px 10px
   max-width: 80px
 
+.input-table
+  background-color: #fff
+  height: 29px
+  padding: 5px 10px
+  max-width: 80px
+
+.typeahead.dropdown-menu
+  width: fit-content!important
+  height: 200px;
+  overflow-y: auto;
+
 .input-date
   background: #fff url("../img/calendar-1.svg") no-repeat left 10px center / 16px
-  padding-left: 26px
+  padding-left: 30px
+
+.input-search
+  height: 29px
+  max-width: 150px
+  background: #fff url("../img/search-1.svg") no-repeat left 10px center / 14px
+  padding-left: 30px
+  border: solid 1px #b7bcd6
+
+.table__clear
+  position: absolute
+  right: 0
+  top: 0
+  width: 15px
+  height: 15px
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%) rotate(45deg)
+    width: 15px
+    height: 1px
+    background: #B7BCD6
+    transition: all 0.3s ease
+  &:after
+    width: 1px
+    height: 15px
+  &:hover
+    &:before, &:after
+      background: #e30c0c
+.table__relative
+  position: relative
+  width: fit-content
+  p
+    padding-right: 20px
 
 .select-table
   margin-top: 6px
   height: 29px
   width: 79px
+
   .select__item
     line-height: 27px
     font-size: 14px

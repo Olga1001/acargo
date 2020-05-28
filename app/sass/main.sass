@@ -1513,6 +1513,67 @@ button
   color: #ff5b5b!important
 .daterangepicker.auto-apply .drp-buttons
   display: block!important
+.slider-tick-label
+  .way__item-icon
+    opacity: 0.3
+  &.label-is-selection
+    .way__item-icon
+      opacity: 1
+
+.slider.slider-horizontal
+  width: calc(100% - 150px)
+  margin: 120px auto 100px!important
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label
+  position: relative
+  .way__item-icon
+    width: 65px
+    position: absolute
+    left: 50%
+    bottom: calc(100% + 20px + 30px)
+    transform: translateX(-50%)
+.slider-handle
+  background: none
+  width: 22px
+  height: 22px
+  border: none
+  box-shadow: none
+.slider-tick
+  background: none
+  width: 22px
+  height: 22px
+  border: 1px solid #109CF1
+  box-shadow: none
+  background: #fff
+  opacity: 1
+.slider-tick.in-selection
+  background: none
+  width: 22px
+  height: 22px
+  border: 1px solid #109CF1
+  box-shadow: none
+  &:before
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%, -50%)
+    width: 13px
+    height: 13px
+    border-radius: 50%
+    background: #109CF1
+.slider-selection.tick-slider-selection
+  box-shadow: none
+  background: #37517e
+.slider.slider-horizontal .slider-track
+  height: 4px
+  margin-top: 0
+.slider-track-low, .slider-track-high
+  box-shadow: none
+  background: #37517e
+  opacity: 0.3
+.slider.slider-horizontal .slider-tick-label-container .slider-tick-label
+  padding-top: 25px
+
 
 
 @import "../components/pages/order/style"

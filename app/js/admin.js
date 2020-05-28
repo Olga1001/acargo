@@ -237,4 +237,19 @@ $(document).ready(function () {
   $(".input__clear").click(function (e) {
     $(this).find(".drop").toggleClass('active').parents().siblings().find(".drop").removeClass('active');
   });
+
+
+  $("input.range-way").bootstrapSlider({
+    value: [1,6],
+    ticks: [1,2,3,4,5,6],
+    ticks_labels: [
+        ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>',
+        '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LI</p><p class="text-13 c-dark">Liner out</p>',
+        '<img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon"><p class="text-16">CY-CY</p><p class="text-13 c-dark">Ocean freight</p>',
+        '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LO</p><p class="text-13 c-dark">Liner out</p>',
+        '<img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon"><p class="text-16">FOT</p><p class="text-13 c-dark">Free on truck</p>',
+        ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>'
+    ],
+    look_to_sticks: true
+  });
 });

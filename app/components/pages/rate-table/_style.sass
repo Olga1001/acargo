@@ -1,13 +1,32 @@
 .table__rate-sea
   background: transparent
+  overflow: auto
+  max-height: 670px
+  scrollbar-width: thin
+  ul li:first-child
+    .table__make-booking__row
+      border-top: none
+  &::-webkit-scrollbar
+    width: 6px
+    height: 6px
+    background: none
+  &::-webkit-scrollbar-thumb
+    background: rgba(183, 188, 214, 0.37)
   .icon-cursor
     height: 14px
   .menu
     right: auto
     left: 0
     padding-top: 20px
+  .bg-light-blue
+    position: sticky
+    top: 0
+    z-index: 3
+    box-shadow: 0 3px 7px 0 rgba(40, 46, 59, 0.19)
+    border: none
+    background-color: #e7f5fe
   .bg-light-blue, .table__make-booking__row
-    padding: 4px 20px 4px 0
+    padding: 4px 0
   .table__make-booking__row
     background: #fff
   .bg-light-blue
@@ -29,13 +48,15 @@
       margin: 0
       width: 210px
     &:nth-child(5)
-      width: 136px
+      width: 140px
     &:nth-child(6)
       width: 161px
+      .select-table
+        width: 100px
     &:nth-child(7)
-      width: 220px
+      width: 215px
     &:nth-last-child(2),  &:nth-last-child(3)
-      width: 115px
+      width: 105px
     &:nth-last-child(1)
       width: 60px
       text-align: center
@@ -44,13 +65,7 @@
   background-color: #fff
   height: 29px
   padding: 5px 10px
-  max-width: 80px
-
-.input-table
-  background-color: #fff
-  height: 29px
-  padding: 5px 10px
-  max-width: 80px
+  max-width: 100px
 
 .typeahead.dropdown-menu
   width: fit-content!important

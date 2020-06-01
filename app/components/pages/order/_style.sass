@@ -320,3 +320,224 @@
 .card__ways-two
   .card__way
     width: 50%
+
+.filters
+  .select
+    min-width: 140px
+
+.arrows
+  display: flex
+  position: relative
+  padding: 6px
+  img
+    width: 6px
+    height: 10px
+  &__prev
+    transform: scale(-1,1)
+    &-double
+      transform: scale(-1,1)
+
+.tool
+  width: 45px
+  height: 45px
+  border-radius: 4px
+  background-color: rgba(#109cf1, 0.1)
+  position: relative
+  display: flex
+  justify-content: center
+  align-items: center
+  &-span
+    position: absolute
+    bottom: calc(100% + 5px)
+    left: 50%
+    transform: translateX(-50%)
+    border-radius: 7px
+    background-color: #109cf1
+    font-size: 9px
+    color: #ffffff
+    min-width: 55px
+    display: block
+    text-align: center
+    padding: 2px 5px
+  img
+    height: 18px
+    width: 22px
+
+.schedule-item, .dates-item
+  font-size: 14px
+  color: #67758d
+  width: 36px
+  line-height: 27px
+  text-align: center
+  display: block
+  border-radius: 4px
+  border: solid 1px rgba(183, 188, 214, 0.6)
+  background-color: #ffffff
+  &.active
+    background-color: #49ddaa
+    color: #ffffff
+
+.click__more
+  width: 0
+  height: 0
+  border-style: solid
+  border-width: 5px 5px 0 5px
+  border-color: #B7BCD6 transparent transparent transparent
+  margin: 20px auto 0
+
+.table__order .table__item__routing .select-table
+  width: 80px
+.table__item
+  border-right: 1px solid #fff
+  padding: 10px 20px
+  flex-shrink: 0
+  width: 140px
+  position: relative
+  .table__clear
+    right: 5px
+    top: 5px
+  &__check
+    width: 56px
+  &__week
+    width: 115px
+  &__routing
+    width: 325px
+  &__schedule
+    width: 160px
+  &__orders
+    width: 235px
+  &__dates
+    width: 170px
+  &__company
+    width: 245px
+  &__item
+    width: 235px
+  &__qty
+    width: 95px
+  &__cargo
+    width: 150px
+  &__documents
+    width: 195px
+  &__invoice
+    width: 185px
+  &__out
+    width: 125px
+  &__kpi
+    width: 92px
+
+.drop-more
+  padding: 0
+  display: flex
+  flex-direction: column
+  justify-content: space-between
+  transition: all 0.3s ease
+  height: 0
+  &.active
+    padding-top: 25px
+    height: 400px
+.tip
+  border-radius: 0 24px 24px 0
+  width: fit-content
+  padding: 8px 40px
+  background-color: rgba(#109cf1, 0.07)
+
+.table__order-list
+  position: relative
+  z-index: 2
+  background: #fff
+.table__order__head
+  position: relative
+  z-index: 3
+
+.table__order
+  width: calc(100% + 7vw + 55px)
+  margin: 20px -30px 0 -25px
+  overflow: hidden
+  overflow-x: auto
+  scrollbar-width: thin
+  background: #fff
+  p.text-14
+    font-size: 14px
+    margin-left: -8px
+  .way
+    max-width: 1200px
+  .slider.slider-horizontal .slider-tick-label-container .slider-tick-label .way__item-icon
+    transform: translateX(-50%) scale(0.84)
+  &::-webkit-scrollbar
+    height: 6px
+    background: none
+  &::-webkit-scrollbar-thumb
+    background: rgba(183, 188, 214, 0.37)
+  .input-search
+    max-width: 100%
+  .select-table
+    width: 100%
+  p
+    font-size: 15px
+  &__head
+    p
+      color: #ffffff
+    .table__item
+      background-color: #109cf1
+      display: flex
+      flex-direction: column
+      justify-content: center
+      &__qty, &__cargo, &__documents, &__out, &__kpi
+        align-items: center
+  &__body
+    .table__item
+      padding-top: 20px
+
+.table__order__bottom
+  background-color: rgba(#109cf1, 0.1)
+  padding: 8px 20px
+  position: relative
+  &:before
+    content: ''
+    position: absolute
+    left: 0
+    top: 0
+    width: 100%
+    background-color: rgba(#109cf1, 0.1)
+    height: 100%
+    z-index: 2
+
+.tool-item
+  border-radius: 2px
+  background-color: #37517e
+  line-height: 42px
+  padding: 0 15px
+  margin-right: 20px
+  display: flex
+  justify-content: center
+  align-items: center
+  min-width: 105px
+  color: #ffffff
+  position: relative
+  z-index: 3
+  img
+    margin-right: 10px
+
+.img-timeline
+  height: 14px
+.img-share
+  width: 19px
+  height: 19px
+
+.input-notes
+  background: #fff url("../img/create-24-px-blue.svg") no-repeat left 20px center / 14px
+  padding-left: 40px
+  //max-width: 600px
+  min-width: 400px
+  position: relative
+  z-index: 3
+
+.orders__green
+  border-radius: 8.5px
+  background-color: #49ddaa
+  line-height: 17px
+  padding: 0 10px
+  font-size: 10px
+  color: #fff
+  height: fit-content
+

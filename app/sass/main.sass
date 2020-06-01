@@ -381,6 +381,25 @@ button
     z-index: 4
     .select__menu
       max-height: inherit
+.select__two
+  border: none
+  height: auto
+  width: fit-content
+  .select__item
+    line-height: 1
+    font-size: 15px
+    padding: 0 20px 0 0
+  .select__option
+    font-size: 14px
+    line-height: normal
+    padding: 0 10px
+    margin: 5px 0
+    color: #67758d
+    &:hover, &.active
+      color: #109CF1
+  &:before
+    right: 5px
+
 .select__carrier
   border: solid 1px $color4
   border-radius: 4px
@@ -419,19 +438,31 @@ button
   font-size: 14px
   line-height: 1
   font-size: 14px
-.input-text
+.input-text, .input-normal
   border: none
   padding: 0
   height: auto
   font-size: 15px
   color: $color2
   line-height: normal
+.input-normal
+  color: #b7bcd6
+  text-align: center
+  &::-webkit-input-placeholder
+    color: #b7bcd6
+  &:-moz-placeholder
+    color: #b7bcd6
+  &::-moz-placeholder
+    color: #b7bcd6
+  &:-ms-input-placeholder
+    color: #b7bcd6
+
 .input__clear
   width: 100%
   position: relative
   &:focus .drop, &:active .drop, .drop:hover
     display: block
-.clear
+.clear, .clear-two
   position: absolute
   right: 15px
   top: 50%
@@ -447,9 +478,22 @@ button
     width: 1px
     height: 20px
     background: $color5
+    transition: all 0.3s ease
   &:after
     width: 20px
     height: 1px
+.clear-two
+  right: 14px
+  &:hover
+    &:before, &:after
+      background-color: red
+  &:before
+    height: 16px
+    background-color: #b7bcd6
+  &:after
+    width: 16px
+    background-color: #b7bcd6
+
 .add-order-no
   .select
     border: none
@@ -719,6 +763,13 @@ button
     font-style: normal
     letter-spacing: normal
     color: $color1
+
+.btn-add
+  font-size: 16px
+  color: #ffffff
+  padding: 0 10px
+  line-height: 45px
+
 .btn-submit
   max-width: 225px
   width: 100%
@@ -750,10 +801,18 @@ button
   &.active
     .arrow-drop
       transform: scale(1,-1)
+
+.table__clear.bg-white-clear
+  &:before, &:after
+    background: #fff
+
 .close img
   width: 20px
   height: 20px
   opacity: 1
+.text-small
+  font-size: 10px!important
+  color: #b7bcd6
 .text-13
   font-size: 13px
   color: $color1
@@ -1139,7 +1198,10 @@ button
         padding: 13px 20px
         min-width: 250px
   &__rate-sea
-    max-width: 900px
+    max-width: 930px
+    .table__head, .table__body-item
+      .row
+        padding: 0 20px
   &__request
     max-width: 940px
     border: solid 1px $color4

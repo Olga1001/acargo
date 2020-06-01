@@ -321,325 +321,522 @@
                         <!---contents-->
                         <div id="contents" class="contents py-5">
                             <div class="contents__item active">
-                                <div class="way d-lg-flex align-items-center py-3">
-                                    <div class="way__checks px-3">
-                                        <label class="d-flex mb-2 pb-1">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Haulage  DO</span>
-                                        </label>
-                                        <label class="d-flex mb-2 pb-1">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Liner in  LI</span>
-                                        </label>
-                                        <label class="d-flex mb-2 pb-1">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Ocean freight  CY-CY</span>
-                                        </label>
-                                        <label class="d-flex mb-2 pb-1">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Liner out  LO</span>
-                                        </label>
-                                        <label class="d-flex mb-2 pb-1">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Free on truck  FOT</span>
-                                        </label>
-                                        <label class="d-flex">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue mr-4"></span>
-                                            <span class="text-16 text-initial">Haulage  DO</span>
-                                        </label>
-                                    </div>
-                                    <div class="scroll w-100">
-                                        <div class="px-3 w-100 d-flex justify-content-center row-range">
-                                            <input type="text" class="range-way" data-slider="5">
-                                        </div>
-                                    </div>
 
-                                </div>
-                                <div class="box-white__top mt-5 d-flex align-items-center">
-                                    <h2 class="title">ORIGIN</h2>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Country</p>
-                                        <input type="text" class="input" value="Rucava, LV">
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Port</p>
-                                        <input type="text" class="input" value="LTAP">
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Place of loading</p>
-                                        <input type="text" class="input" value="Busan, KR">
-                                    </div>
-
-                                </div>
-                                <div class="box-white__top d-flex align-items-center">
-                                    <h2 class="title">DESTINATION</h2>
-                                </div>
-                                <div class="row mt-4">
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Country</p>
-                                        <input type="text" class="input" value="Rucava, LV">
-
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Port</p>
-                                        <input type="text" class="input" value="LTAP">
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Place of loading</p>
-                                        <input type="text" class="input" value="Busan, KR">
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Container type</p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
+                                <div class="d-flex flex-wrap mt-5 justify-content-between align-items-end">
+                                    <div class="d-flex filters">
+                                        <div class="select mr-2 mt-3">
+                                            <div class="select__item">All orders</div>
                                             <div class="select__drop">
                                                 <ul class="select__menu">
-                                                    <li class="select__option">Container type</li>
+                                                    <li class="select__option active">All orders</li>
+                                                    <li class="select__option">All orders</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="select disabled mr-2 mt-3">
+                                            <div class="select__item">Defauilt view</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Defauilt view</li>
+                                                    <li class="select__option">Defauilt view</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="select disabled mr-2 mt-3">
+                                            <div class="select__item">Stage</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Stage</li>
+                                                    <li class="select__option">Stage</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="select disabled mr-2 mt-3">
+                                            <div class="select__item">Label</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Label</li>
+                                                    <li class="select__option">Label</li>
                                                 </ul>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Valid time from and till </p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option"></li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Quotation No. </p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option"></li>
-                                                </ul>
-                                            </div>
+                                    <div class="d-flex align-items-center mt-4">
+                                        <a href="#" class="tool ">
+                                            <span class="tool-span">Split</span>
+                                            <img src="img/orientation.svg" alt="orientation">
+                                        </a>
+                                        <a href="#" class="tool ml-2">
+                                            <img src="img/merge.svg" alt="merge">
+                                        </a>
+                                        <a href="#" class="tool ml-2">
+                                            <img src="img/signs.svg" alt="signs">
+                                        </a>
+                                        <a href="#" class="tool ml-2">
+                                            <img src="img/document.svg" alt="document">
+                                        </a>
+                                        <a href="#" class="tool ml-2">
+                                            <img src="img/share.svg" alt="share">
+                                        </a>
+                                        <a href="#" class="tool ml-2">
+                                            <img src="img/bin.svg" alt="bin">
+                                        </a>
+                                        <a href="#" class="btn-aquamarine btn-add ml-2">+ Add</a>
+                                        <div class="d-flex ml-4">
+                                            <a href="#" class="arrows arrows__prev">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                            </a>
+                                            <a href="#" class="arrows arrows__prev">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                            </a>
+                                            <a href="#" class="arrows arrows__next">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                            </a>
+                                            <a href="#" class="arrows arrows__next">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                            </a>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="row ">
-                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
-                                        <p class="text-14">Provider </p>
-                                        <div class="d-flex rate__row">
-                                            <div class="select">
-                                                <input class="select__item" value="">
+
+                                <ul class="table__order">
+                                    <ul class="d-flex table__order__head w-100">
+                                        <li class="table__item table__item__check">
+                                            <label class="d-flex mt-3">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checkbox__icon-blue ml-0"></span>
+                                            </label>
+                                        </li>
+                                        <li class="table__item table__item__week">
+                                            <p>WEEK</p>
+                                            <input type="text" class="input-table input-date mt-1">
+                                        </li>
+                                        <li class="table__item table__item__routing">
+                                            <p>CLIENT ROUTING</p>
+                                            <div class="d-flex mt-1">
+                                                    <input type="text" class="input-table input-search mr-2">
+                                                    <div class="select select-table bg-white m-0">
+                                                        <div class="select__item">FAS</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">FAS</li>
+                                                                <li class="select__option ">FAS</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            <button type="reset" class="table__clear bg-white-clear"></button>
+                                        </li>
+                                        <li class="table__item table__item__booking">
+                                            <p>BOOKING</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
                                                 <div class="select__drop">
                                                     <ul class="select__menu">
-                                                        <li class="select__option">Provider</li>
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option "></li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <button class="btn-add-blue">+ Add</button>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-5 col-md-6 pr-xl-5 pb-sm-5 pb-4">
-                                        <p class="text-14">Provider </p>
-                                        <div class="d-flex rate__row">
-                                            <div class="select">
-                                                <input class="select__item" value="FAK">
+                                        </li>
+                                        <li class="table__item table__item__schedule">
+                                            <p>SCHEDULE</p>
+                                            <div class="d-flex">
+                                                <a href="#" class="schedule-item active mt-1 mr-1">CUT</a>
+                                                <a href="#" class="schedule-item mt-1 mr-1">ETD</a>
+                                                <a href="#" class="schedule-item mt-1">ETA</a>
+                                            </div>
+                                        </li>
+                                        <li class="table__item table__item__orders">
+                                            <p>ORDERS</p>
+                                            <input type="text" class="input-table input-search mt-1">
+                                        </li>
+                                        <li class="table__item table__item__status">
+                                            <p>STATUS</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item">Ready</div>
                                                 <div class="select__drop">
                                                     <ul class="select__menu">
-                                                        <li class="select__option">FAK</li>
+                                                        <li class="select__option active">Ready</li>
+                                                        <li class="select__option">Ready</li>
                                                     </ul>
                                                 </div>
                                             </div>
-                                            <button class="btn-add-blue">+ Add</button>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row pb-4">
-                                    <div class="col-sm-6 mt-3 pr-xl-5">
-                                        <textarea cols="30" rows="10" class="textarea">Specifications</textarea>
-                                    </div>
-                                    <div class="col-sm-6 mt-3 pr-xl-5">
-                                        <textarea cols="30" rows="10" class="textarea">Notes</textarea>
-                                    </div>
-                                </div>
-                                <div class="d-flex justify-content-center py-5 saves">
-                                    <a href="#" class="btn-aquamarine">Add rate </a>
-                                </div>
-                                <div class="box-white__top d-flex align-items-center">
-                                    <h2 class="title">RATE ARCHIVE</h2>
-                                </div>
-                                <div class="d-flex flex-wrap mb-5 pb-5">
-                                    <a href="#" class="rate-archive mt-3">Company_LTD (12)</a>
-                                    <a href="#" class="rate-archive mt-3">Company_LTD (8)</a>
-                                    <a href="#" class="rate-archive mt-3">Company_LTD (16)</a>
-                                    <a href="#" class="rate-archive mt-3">Company_LTD (12)</a>
-                                </div>
-                                <div class="btns d-flex">
-                                    <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center m-0">
-                                        <img src="img/white__create-24-px.svg" alt="edit" class="edit">
-                                    </a>
-                                    <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center ml-3">
-                                        <img src="img/white-bin.svg" alt="garbage" class="garbage">
-                                    </a>
-                                </div>
-
-                                <div class="table__rate mt-3">
-                                    <div class="d-flex">
-                                        <div class="bg-light-blue d-flex align-items-center">
-                                            <div class="table__rate-item flex-row align-items-center justify-content-start">
-                                                <label class="d-flex">
-                                                    <input type="checkbox" class="checkbox">
-                                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                                </label>
-                                                <p>FROM</p>
+                                        </li>
+                                        <li class="table__item table__item__dates">
+                                            <p>DATES</p>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="dates-item mt-1 mr-1">O</a>
+                                                <a href="#" class="dates-item mt-1 mr-1">R</a>
+                                                <a href="#" class="dates-item mt-1">L</a>
                                             </div>
-                                            <div class="table__rate-item"><p>TO</p></div>
-                                            <div class="table__rate-item"><p>CONTAINER TYPE</p></div>
-                                            <div class="table__rate-item"><a href="#" class="c-black d-flex align-items-center">TOTAL <span class="arrow-drop"></span></a></div>
-                                            <div class="table__rate-item"><p>SURCHARGES</p></div>
-                                        </div>
-                                        <div class="bg-blue d-flex align-items-center">
-                                            <div class="table__rate-item"><p>DO</p></div>
-                                            <div class="table__rate-item"><p>LI</p></div>
-                                            <div class="table__rate-item"><p></p></div>
-                                            <div class="table__rate-item"><p>CY-CY</p></div>
-                                            <div class="table__rate-item"><p>LO</p></div>
-                                            <div class="table__rate-item"><p></p></div>
-                                            <div class="table__rate-item"><p>FOT</p></div>
-                                            <div class="table__rate-item"><p>DO</p></div>
-                                        </div>
-                                    </div>
-                                    <ul class="table__rate__body">
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item table__rate-item flex-row align-items-center justify-content-start">
-                                                    <label class="d-flex">
-                                                        <input type="checkbox" class="checkbox">
-                                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                                    </label>
-                                                    <p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Klaipeda, 246000, Lithuania
-                                                    LTKL</p>
-                                                </div>
-                                                <div class="table__rate-item"><p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Shanghai, 345000, China
-                                                    CHLT</p></div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>500 €</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center ">
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
-                                                </div>
-                                                <div class="table__rate-item ">
-                                                    <div class="d-flex align-items-center justify-content-center">
-                                                        <a href="#" class="c-gray">... </a>
-                                                        <p class="delimiter">|</p>
-                                                    </div>
+                                        </li>
+                                        <li class="table__item table__item__truck">
+                                            <p>TRUCK</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
                                                 </div>
                                             </div>
                                         </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item flex-row align-items-center justify-content-start">
-                                                    <label class="d-flex">
-                                                        <input type="checkbox" class="checkbox">
-                                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                                    </label>
-                                                    <p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Klaipeda, 246000, Lithuania
-                                                    LTKL</p></div>
-                                                <div class="table__rate-item"><p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Shanghai, 345000, China
-                                                    CHLT</p></div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>500 €</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>550 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p></p></div>
-                                                <div class="table__rate-item"><p>450 €</p></div>
-                                                <div class="table__rate-item"><p></p></div>
-                                                <div class="table__rate-item"><p>450 €</p></div>
-                                                <div class="table__rate-item"><p></p></div>
-                                                <div class="table__rate-item"><p>30 €</p></div>
+                                        <li class="table__item table__item__company">
+                                            <p>COMPANY</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item flex-row align-items-center justify-content-start">
-                                                    <label class="d-flex">
-                                                        <input type="checkbox" class="checkbox">
-                                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                                    </label>
-                                                    <p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Klaipeda, 246000, Lithuania
-                                                    LTKL</p></div>
-                                                <div class="table__rate-item"><p class="d-flex"><img src="img/flag.png" alt="flag" class="flag">Shanghai, 345000, China
-                                                    CHLT</p></div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>500 €</p></div>
+                                        <li class="table__item table__item__cont">
+                                            <p>cont</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
+                                                </div>
                                             </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>550 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p></p></div>
-                                                <div class="table__rate-item"><p>450 €</p></div>
-                                                <div class="table__rate-item"><p>450 €</p></div>
-                                                <div class="table__rate-item"><p></p></div>
-                                                <div class="table__rate-item"><p>450 €</p></div>
-                                                <div class="table__rate-item"><p>30 €</p></div>
+                                        </li>
+                                        <li class="table__item table__item__seal">
+                                            <p>seal</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
+                                                </div>
                                             </div>
+                                        </li>
+                                        <li class="table__item table__item__weight">
+                                            <p>TARA WEIGHT</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__item table__item__item">
+                                            <p>ITEM</p>
+                                            <input type="text" class="input-table input-search mt-1">
+                                        </li>
+                                        <li class="table__item table__item__qty">
+                                            <p>QTY</p>
+                                        </li>
+                                        <li class="table__item table__item__cargo">
+                                            <p>CARGO WEIGHT</p>
+                                        </li>
+                                        <li class="table__item table__item__documents">
+                                            <p>DOCUMENTS</p>
+                                        </li>
+                                        <li class="table__item table__item__invoice">
+                                            <p>OUR INVOICE</p>
+                                            <div class="select select-table bg-white m-0 mt-1">
+                                                <div class="select__item"></div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active"></li>
+                                                        <li class="select__option"></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="table__item table__item__out">
+                                            <p>TRUCK OUT</p>
+                                        </li>
+                                        <li class="table__item table__item__kpi">
+                                            <p>KPI</p>
                                         </li>
                                     </ul>
-                                </div>
-                                <div class="d-flex justify-content-center pt-5 saves">
-                                    <a href="#" class="btn-white">Save </a>
-                                </div>
+                                    <li class="table__order__body">
+                                        <div class="d-flex table__order-list">
+                                            <div class="table__item table__item__check">
+                                                <label class="d-flex">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="click__more"></div>
+                                            </div>
+                                            <div class="table__item table__item__week">
+                                                <p>W47</p>
+                                            </div>
+                                            <div class="table__item table__item__routing">
+                                                <p class="d-flex">
+                                                    <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                    <br>
+                                                    CIF Aqaba
+                                                </p>
+                                            </div>
+                                            <div class="table__item table__item__booking">
+                                                <p>Evergreen LT</p>
+                                                <p class="c-gray">503990010631</p>
+                                                <p>5 x 40’HC</p>
+                                            </div>
+                                            <div class="table__item table__item__schedule">
+                                                <p>CUT  28-11</p>
+                                                <p>  ETD  25-11</p>
+                                                <p> ETA  24-12 </p>
+                                            </div>
+                                            <div class="table__item table__item__orders">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <p class="text-small">12/10</p>
+                                                    <a href="#" class="orders__link ml-2">
+                                                        <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                    </a>
+                                                    <a href="#" class="orders__link ml-2">
+                                                        <img src="img/interface-3.svg" alt="interface" class="">
+                                                    </a>
+                                                </div>
+                                                <div class="d-flex mt-1">
+                                                    <div class="orders__green mr-2">Arriving</div>
+                                                    <div>
+                                                        <p>OR027124
+                                                            <span class="tooltip"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__status">
+                                                <p>Ready</p>
+                                                <div class="d-flex">
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item"></div>
+                                                    <div class="status-item"></div>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__dates">
+                                                <p>O. 01-05-20</p>
+                                                <p>R. 10-04 / L. 11-04</p>
+                                            </div>
+                                            <div class="table__item table__item__truck">
+                                                <p>MS8647888</p>
+                                            </div>
+                                            <div class="table__item table__item__company">
+                                                <p>Aljazeera Agriculture Company</p>
+                                            </div>
+                                            <div class="table__item table__item__cont">
+                                                <p>125836</p>
+                                            </div>
+                                            <div class="table__item table__item__seal">
+                                                <p>147938</p>
+                                            </div>
+                                            <div class="table__item table__item__weight">
+                                                <p>3800 kg</p>
+                                            </div>
+                                            <div class="table__item table__item__item">
+                                                <p>Spanvall Poultry Bedding SP</p>
+                                            </div>
+                                            <div class="table__item table__item__qty">
+                                                <p>700 pcs</p>
+                                            </div>
+                                            <div class="table__item table__item__cargo">
+                                                <p>23400 kg</p>
+                                            </div>
+                                            <div class="table__item table__item__documents">
+                                                <p>CRM, BL, INV, Invoice2</p>
+                                            </div>
+                                            <div class="table__item table__item__invoice">
+                                                <p>€ 3880.08</p>
+                                            </div>
+                                            <div class="table__item table__item__out">
+                                                <p>€135.00</p>
+                                            </div>
+                                            <div class="table__item table__item__kpi">
+                                                <p>€15.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="drop-more">
+                                            <div class="tip"><p class="text-16 c-navy-blue">TRUCKING</p></div>
+                                            <div class="way bg-white p-0 m-0">
+                                                <div class="scroll w-100">
+                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                        <input type="text" class="range-way" data-slider="5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__order__bottom d-flex">
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                </a>
+                                                <a href="#" class="tool-item">Open</a>
+                                                <input type="text" class="input-notes">
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="table__order__body">
+                                        <div class="d-flex table__order-list">
+                                            <div class="table__item table__item__check">
+                                                <label class="d-flex">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="click__more"></div>
+                                            </div>
+                                            <div class="table__item table__item__week">
+                                                <p>W47</p>
+                                            </div>
+                                            <div class="table__item table__item__routing">
+                                                <p class="d-flex">
+                                                    <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                    <br>
+                                                    CIF Aqaba
+                                                </p>
+                                            </div>
+                                            <div class="table__item table__item__booking">
+                                                <p>Evergreen LT</p>
+                                                <p class="c-gray">503990010631</p>
+                                                <p>5 x 40’HC</p>
+                                            </div>
+                                            <div class="table__item table__item__schedule">
+                                                <p>CUT  28-11</p>
+                                                <p>  ETD  25-11</p>
+                                                <p> ETA  24-12 </p>
+                                            </div>
+                                            <div class="table__item table__item__orders">
+                                                <div class="d-flex justify-content-end align-items-center">
+                                                    <p class="text-small">12/10</p>
+                                                    <a href="#" class="orders__link ml-2">
+                                                        <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                    </a>
+                                                    <a href="#" class="orders__link ml-2">
+                                                        <img src="img/interface-3.svg" alt="interface" class="">
+                                                    </a>
+                                                </div>
+                                                <div class="d-flex mt-1">
+                                                    <div class="orders__green mr-2">Arriving</div>
+                                                    <div>
+                                                        <p class="c-orange">OR027124</p>
+                                                        <p class="text-14">1. P19-4487-4787879</p>
+                                                        <p class="text-14">   2. P19-4487-4787879</p>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__status">
+                                                <p>Ready</p>
+                                                <div class="d-flex">
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item active"></div>
+                                                    <div class="status-item"></div>
+                                                    <div class="status-item"></div>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__dates">
+                                                <p>O. 01-05-20</p>
+                                                <p>R. 10-04 / L. 11-04</p>
+                                            </div>
+                                            <div class="table__item table__item__truck">
+                                                <p>MS8647888</p>
+                                            </div>
+                                            <div class="table__item table__item__company">
+                                                <p>Aljazeera Agriculture Company</p>
+                                            </div>
+                                            <div class="table__item table__item__cont">
+                                                <p>125836</p>
+                                            </div>
+                                            <div class="table__item table__item__seal">
+                                                <p>147938</p>
+                                            </div>
+                                            <div class="table__item table__item__weight">
+                                                <p>3800 kg</p>
+                                            </div>
+                                            <div class="table__item table__item__item">
+                                                <p>Spanvall Poultry Bedding SP</p>
+                                            </div>
+                                            <div class="table__item table__item__qty">
+                                                <p>700 pcs</p>
+                                            </div>
+                                            <div class="table__item table__item__cargo">
+                                                <p>23400 kg</p>
+                                            </div>
+                                            <div class="table__item table__item__documents">
+                                                <p>CRM, BL, INV, Invoice2</p>
+                                            </div>
+                                            <div class="table__item table__item__invoice">
+                                                <p>€ 3880.08</p>
+                                            </div>
+                                            <div class="table__item table__item__out">
+                                                <p>€135.00</p>
+                                            </div>
+                                            <div class="table__item table__item__kpi">
+                                                <p>€15.00</p>
+                                            </div>
+                                        </div>
+                                        <div class="drop-more">
+                                            <div class="tip"><p class="text-16 c-navy-blue">TRUCKING</p></div>
+                                            <div class="way bg-white p-0 m-0">
+                                                <div class="scroll w-100">
+                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                        <input type="text" class="range-way" data-slider="5">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__order__bottom d-flex">
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                </a>
+                                                <a href="#" class="tool-item">
+                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                </a>
+                                                <a href="#" class="tool-item">Open</a>
+                                                <input type="text" class="input-notes">
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+
+
+
+
+
                             </div>
                             <div class="contents__item ">
                                 <div class="box-white__top d-flex align-items-center">

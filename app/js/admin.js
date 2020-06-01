@@ -252,4 +252,10 @@ $(document).ready(function () {
     ],
     look_to_sticks: true
   });
+
+  $(".click__more").click(function (e) {
+    e.preventDefault();
+    // $(this).closest(".table__order__body").find(".drop-more").slideToggle(300);
+    $(this).closest(".table__order__body").find(".drop-more").toggleClass('active');
+  });
 });

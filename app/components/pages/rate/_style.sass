@@ -139,12 +139,9 @@
         width: 129px
   .bg-blue, .table__rate-row-two
     .table__rate-item
-      &:first-child
-        width: 88px
-      &:nth-child(2)
-        width: 189px
-      &:nth-child(3)
-        width: 183px
+      width: 88px
+      text-align: center
+      position: relative
 .table__rate-two
   .bg-blue .table__rate-item
     padding: 14px 25px
@@ -191,9 +188,13 @@
   p
     width: 45px
 .delimiter
-  padding: 0 20px
+  padding: 0
   color: #b7bcd6!important
   width: auto!important
+  position: absolute
+  right: 0
+  top: 50%
+  transform: translateY(-50%)
 
 .checkbox__transport
   &-check
@@ -355,7 +356,6 @@
   display: block
   border-radius: 2px
   background-color: #109cf1
-
 
 
 

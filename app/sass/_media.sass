@@ -59,7 +59,7 @@
   .fields__two .fields__item:nth-child(2n+2):nth-child(3n+3)
     margin-right: 0
     width: calc(50% - 15px)
-  .table__make-booking-second, .table__rate-table, .table__rate-table-road, .table__rate
+  .table__make-booking-second, .table__rate-table, .table__rate-table-road, .table__rate, .table__order
     width: calc(100% + 55px + 1.5rem)
   .table__rate .table__rate-row-two
     background: #fff
@@ -223,6 +223,10 @@
   .table__rate
     margin: 0 -15px
     width: calc(100% + 30px)
+  .table__order
+    margin: 0 -25px 0 -15px
+    width: calc(100% + 30px + 10px)
+
   .way
     margin: 0 -15px
   .way__item
@@ -256,6 +260,8 @@
     padding: 20px 15px !important
   .table__make-booking-second, .table__make-booking
     width: calc(100% + 30px + 10px)
+  .tools, .arrows-row
+    width: 100%
 @media only screen and (max-width : 768px)
   .popup__rate-sea .table__head .row, .popup__rate-sea .table__body-item .row
     padding: 0
@@ -403,6 +409,13 @@
     width: 100%
   .row-range
     width: 700px!important
+  .filters
+    width: 100%
+  .filters .select
+    width: calc(50% - 7.5px)
+    margin: 0 15px 15px 0!important
+    &:nth-child(2n+2)
+      margin-right: 0!important
 @media only screen and (max-width : 575px)
 
   .pills-custom .nav-link

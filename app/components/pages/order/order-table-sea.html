@@ -4,11 +4,11 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="widdiv=device-widdiv, initial-scale=1, shrink-to-fit=no">
     <title>acargo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="css/libs.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/css/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
@@ -47,7 +47,7 @@
                             <div class="contents__item active">
 
                                 <div class="d-flex flex-wrap mt-5 justify-content-between align-items-end">
-                                    <div class="d-flex filters">
+                                    <div class="d-flex flex-wrap filters">
                                         <div class="select mr-2 mt-3">
                                             <div class="select__item">All orders</div>
                                             <div class="select__drop">
@@ -85,61 +85,42 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex align-items-center mt-4">
-                                        <a href="#" class="tool ">
-                                            <span class="tool-span">Split</span>
-                                            <img src="img/orientation.svg" alt="orientation">
-                                        </a>
-                                        <a href="#" class="tool ml-2">
-                                            <img src="img/merge.svg" alt="merge">
-                                        </a>
-                                        <a href="#" class="tool ml-2">
-                                            <img src="img/signs.svg" alt="signs">
-                                        </a>
-                                        <a href="#" class="tool ml-2">
-                                            <img src="img/document.svg" alt="document">
-                                        </a>
-                                        <a href="#" class="tool ml-2">
-                                            <img src="img/share.svg" alt="share">
-                                        </a>
-                                        <a href="#" class="tool ml-2">
-                                            <img src="img/bin.svg" alt="bin">
-                                        </a>
-                                        <a href="#" class="btn-aquamarine btn-add ml-2">+ Add</a>
-                                        <div class="d-flex ml-4">
-                                            <a href="#" class="arrows arrows__prev">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                            </a>
-                                            <a href="#" class="arrows arrows__prev">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                            </a>
-                                            <a href="#" class="arrows arrows__next">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                            </a>
-                                            <a href="#" class="arrows arrows__next">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                                <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
-                                            </a>
+                                    <div class="d-flex align-items-center justify-content-end arrows-row mt-3">
+                                            <a href="#" class="btn-aquamarine btn-add ml-2">+ Add</a>
+                                            <div class="d-flex ml-4">
+                                                <a href="#" class="arrows arrows__prev">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__prev">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__next">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__next">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                            </div>
                                         </div>
-                                    </div>
                                 </div>
-
-                                <ul class="table__order">
-                                    <ul class="d-flex table__order__head w-100">
-                                        <li class="table__item table__item__check">
-                                            <label class="d-flex mt-3">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="checkbox__icon-blue ml-0"></span>
-                                            </label>
-                                        </li>
-                                        <li class="table__item table__item__week">
-                                            <p>WEEK</p>
-                                            <input type="text" class="input-table input-date mt-1">
-                                        </li>
-                                        <li class="table__item table__item__routing">
-                                            <p>CLIENT ROUTING</p>
-                                            <div class="d-flex mt-1">
+                                <div class="table__order">
+                                    <div>
+                                        <div class="d-flex table__order-head">
+                                            <div class="table__item table__item__check">
+                                                <label class="d-flex mt-4">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                            </div>
+                                            <div class="table__item table__item__week">
+                                                <p>WEEK</p>
+                                                <input type="text" class="input-table input-date mt-1">
+                                            </div>
+                                            <div class="table__item table__item__routing">
+                                                <p>CLIENT ROUTING</p>
+                                                <div class="d-flex mt-1">
                                                     <input type="text" class="input-table input-search mr-2">
                                                     <div class="select select-table bg-white m-0">
                                                         <div class="select__item">FAS</div>
@@ -151,433 +132,953 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            <button type="reset" class="table__clear bg-white-clear"></button>
-                                        </li>
-                                        <li class="table__item table__item__booking">
-                                            <p>BOOKING</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option "></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__schedule">
-                                            <p>SCHEDULE</p>
-                                            <div class="d-flex">
-                                                <a href="#" class="schedule-item active mt-1 mr-1">CUT</a>
-                                                <a href="#" class="schedule-item mt-1 mr-1">ETD</a>
-                                                <a href="#" class="schedule-item mt-1">ETA</a>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__orders">
-                                            <p>ORDERS</p>
-                                            <input type="text" class="input-table input-search mt-1">
-                                        </li>
-                                        <li class="table__item table__item__status">
-                                            <p>STATUS</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item">Ready</div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active">Ready</li>
-                                                        <li class="select__option">Ready</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__dates">
-                                            <p>DATES</p>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#" class="dates-item mt-1 mr-1">O</a>
-                                                <a href="#" class="dates-item mt-1 mr-1">R</a>
-                                                <a href="#" class="dates-item mt-1">L</a>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__truck">
-                                            <p>TRUCK</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__company">
-                                            <p>COMPANY</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__cont">
-                                            <p>cont</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__seal">
-                                            <p>seal</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__weight">
-                                            <p>TARA WEIGHT</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__item">
-                                            <p>ITEM</p>
-                                            <input type="text" class="input-table input-search mt-1">
-                                        </li>
-                                        <li class="table__item table__item__qty">
-                                            <p>QTY</p>
-                                        </li>
-                                        <li class="table__item table__item__cargo">
-                                            <p>CARGO WEIGHT</p>
-                                        </li>
-                                        <li class="table__item table__item__documents">
-                                            <p>DOCUMENTS</p>
-                                        </li>
-                                        <li class="table__item table__item__invoice">
-                                            <p>OUR INVOICE</p>
-                                            <div class="select select-table bg-white m-0 mt-1">
-                                                <div class="select__item"></div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active"></li>
-                                                        <li class="select__option"></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="table__item table__item__out">
-                                            <p>TRUCK OUT</p>
-                                        </li>
-                                        <li class="table__item table__item__kpi">
-                                            <p>KPI</p>
-                                        </li>
-                                    </ul>
-                                    <li class="table__order__body">
-                                        <div class="d-flex table__order-list">
-                                            <div class="table__item table__item__check">
-                                                <label class="d-flex">
-                                                    <input type="checkbox" class="checkbox">
-                                                    <span class="checkbox__icon-blue ml-0"></span>
-                                                </label>
-                                                <div class="click__more"></div>
-                                            </div>
-                                            <div class="table__item table__item__week">
-                                                <p>W47</p>
-                                            </div>
-                                            <div class="table__item table__item__routing">
-                                                <p class="d-flex">
-                                                    <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
-                                                    <br>
-                                                    CIF Aqaba
-                                                </p>
+                                                <button type="reset" class="table__clear bg-white-clear"></button>
                                             </div>
                                             <div class="table__item table__item__booking">
-                                                <p>Evergreen LT</p>
-                                                <p class="c-gray">503990010631</p>
-                                                <p>5 x 40’HC</p>
-                                            </div>
-                                            <div class="table__item table__item__schedule">
-                                                <p>CUT  28-11</p>
-                                                <p>  ETD  25-11</p>
-                                                <p> ETA  24-12 </p>
-                                            </div>
-                                            <div class="table__item table__item__orders">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <p class="text-small">12/10</p>
-                                                    <a href="#" class="orders__link ml-2">
-                                                        <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
-                                                    </a>
-                                                    <a href="#" class="orders__link ml-2">
-                                                        <img src="img/interface-3.svg" alt="interface" class="">
-                                                    </a>
-                                                </div>
-                                                <div class="d-flex mt-1">
-                                                    <div class="orders__green mr-2">Arriving</div>
-                                                    <div>
-                                                        <p>OR027124
-                                                            <span class="tooltip"><img src="img/error.svg" alt="error"> Please add documents…</span>
-                                                        </p>
+                                                <p>BOOKING</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option "></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="table__item table__item__status">
-                                                <p>Ready</p>
+                                            <div class="table__item table__item__schedule">
+                                                <p>SCHEDULE</p>
                                                 <div class="d-flex">
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item"></div>
-                                                    <div class="status-item"></div>
+                                                    <a href="#" class="schedule-item mt-1 mr-1">CUT</a>
+                                                    <a href="#" class="schedule-item mt-1 mr-1">Ediv</a>
+                                                    <a href="#" class="schedule-item mt-1">ETA</a>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__orders">
+                                                <p>ORDERS</p>
+                                                <input type="text" class="input-table input-search mt-1">
+                                            </div>
+                                            <div class="table__item table__item__status">
+                                                <p>STATUS</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item">Ready</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Ready</li>
+                                                            <li class="select__option">Ready</li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="table__item table__item__dates">
-                                                <p>O. 01-05-20</p>
-                                                <p>R. 10-04 / L. 11-04</p>
+                                                <p>DATES</p>
+                                                <div class="d-flex justify-content-between">
+                                                    <a href="#" class="dates-item mt-1 mr-1">O</a>
+                                                    <a href="#" class="dates-item mt-1 mr-1">R</a>
+                                                    <a href="#" class="dates-item mt-1">L</a>
+                                                </div>
                                             </div>
                                             <div class="table__item table__item__truck">
-                                                <p>MS8647888</p>
-                                            </div>
-                                            <div class="table__item table__item__company">
-                                                <p>Aljazeera Agriculture Company</p>
-                                            </div>
-                                            <div class="table__item table__item__cont">
-                                                <p>125836</p>
-                                            </div>
-                                            <div class="table__item table__item__seal">
-                                                <p>147938</p>
-                                            </div>
-                                            <div class="table__item table__item__weight">
-                                                <p>3800 kg</p>
-                                            </div>
-                                            <div class="table__item table__item__item">
-                                                <p>Spanvall Poultry Bedding SP</p>
-                                            </div>
-                                            <div class="table__item table__item__qty">
-                                                <p>700 pcs</p>
-                                            </div>
-                                            <div class="table__item table__item__cargo">
-                                                <p>23400 kg</p>
-                                            </div>
-                                            <div class="table__item table__item__documents">
-                                                <p>CRM, BL, INV, Invoice2</p>
-                                            </div>
-                                            <div class="table__item table__item__invoice">
-                                                <p>€ 3880.08</p>
-                                            </div>
-                                            <div class="table__item table__item__out">
-                                                <p>€135.00</p>
-                                            </div>
-                                            <div class="table__item table__item__kpi">
-                                                <p>€15.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="drop-more">
-                                            <div class="tip"><p class="text-16 c-navy-blue">TRUCKING</p></div>
-                                            <div class="way bg-white p-0 m-0">
-                                                <div class="scroll w-100">
-                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
-                                                        <input type="text" class="range-way" data-slider="5">
+                                                <p>truck</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option"></li>
+                                                        </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="table__order__bottom d-flex">
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/document.svg" alt="Copy" class="">Copy
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
-                                                </a>
-                                                <a href="#" class="tool-item">Open</a>
-                                                <input type="text" class="input-notes">
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="table__order__body">
-                                        <div class="d-flex table__order-list">
-                                            <div class="table__item table__item__check">
-                                                <label class="d-flex">
-                                                    <input type="checkbox" class="checkbox">
-                                                    <span class="checkbox__icon-blue ml-0"></span>
-                                                </label>
-                                                <div class="click__more"></div>
-                                            </div>
-                                            <div class="table__item table__item__week">
-                                                <p>W47</p>
-                                            </div>
-                                            <div class="table__item table__item__routing">
-                                                <p class="d-flex">
-                                                    <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
-                                                    <br>
-                                                    CIF Aqaba
-                                                </p>
-                                            </div>
-                                            <div class="table__item table__item__booking">
-                                                <p>Evergreen LT</p>
-                                                <p class="c-gray">503990010631</p>
-                                                <p>5 x 40’HC</p>
-                                            </div>
-                                            <div class="table__item table__item__schedule">
-                                                <p>CUT  28-11</p>
-                                                <p>  ETD  25-11</p>
-                                                <p> ETA  24-12 </p>
-                                            </div>
-                                            <div class="table__item table__item__orders">
-                                                <div class="d-flex justify-content-end align-items-center">
-                                                    <p class="text-small">12/10</p>
-                                                    <a href="#" class="orders__link ml-2">
-                                                        <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
-                                                    </a>
-                                                    <a href="#" class="orders__link ml-2">
-                                                        <img src="img/interface-3.svg" alt="interface" class="">
-                                                    </a>
+                                            <div class="table__item table__item__company">
+                                                <p>COMPANY</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex mt-1">
-                                                    <div class="orders__green mr-2">Arriving</div>
+                                            </div>
+                                            <div class="table__item table__item__cont">
+                                                <p>cont</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div></div>
+                                            <div class="table__item table__item__seal">
+                                                <p>seal</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__weight">
+                                                <p>TARA WEIGHT</p>
+                                                <div class="select select-table bg-white m-0 mt-1">
+                                                    <div class="select__item"></div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active"></li>
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table__item table__item__item">
+                                                <p>ITEM</p>
+                                                <input type="text" class="input-table input-search mt-1">
+                                            </div>
+                                            <div class="table__item table__item__qty"> <p>QTY</p></div>
+                                            <div class="table__item table__item__cargo"> <p>CARGO WEIGHT</p></div>
+                                            <div class="table__item table__item__documents"> <p>DOCUMENTS</p></div>
+                                            <div class="table__item table__item__invoice">
+                                                <p>OUR INVOICE</p>
+                                                <input type="text" class="input-table input-search mt-1">
+                                            </div>
+                                            <div class="table__item table__item__out"><p>TRUCK OUT</p></div>
+                                            <div class="table__item table__item__kpi"><p>KPI</p></div>
+                                        </div>
+                                        <ul>
+                                            <li class="table__order-list">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p>OR027124</p>
+                                                                    <p class="text-14">1. P19-4487-4787879</p>
+                                                                    <p class="text-14">2. P19-4487-4787879</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates">
+                                                            <p>O. 01-05-20</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck">
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
                                                     <div>
-                                                        <p class="c-orange">OR027124</p>
-                                                        <p class="text-14">1. P19-4487-4787879</p>
-                                                        <p class="text-14">   2. P19-4487-4787879</p>
-                                                    </div>
+                                                        <div>
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
 
-                                                </div>
-                                            </div>
-                                            <div class="table__item table__item__status">
-                                                <p>Ready</p>
-                                                <div class="d-flex">
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item active"></div>
-                                                    <div class="status-item"></div>
-                                                    <div class="status-item"></div>
-                                                </div>
-                                            </div>
-                                            <div class="table__item table__item__dates">
-                                                <p>O. 01-05-20</p>
-                                                <p>R. 10-04 / L. 11-04</p>
-                                            </div>
-                                            <div class="table__item table__item__truck">
-                                                <p>MS8647888</p>
-                                            </div>
-                                            <div class="table__item table__item__company">
-                                                <p>Aljazeera Agriculture Company</p>
-                                            </div>
-                                            <div class="table__item table__item__cont">
-                                                <p>125836</p>
-                                            </div>
-                                            <div class="table__item table__item__seal">
-                                                <p>147938</p>
-                                            </div>
-                                            <div class="table__item table__item__weight">
-                                                <p>3800 kg</p>
-                                            </div>
-                                            <div class="table__item table__item__item">
-                                                <p>Spanvall Poultry Bedding SP</p>
-                                            </div>
-                                            <div class="table__item table__item__qty">
-                                                <p>700 pcs</p>
-                                            </div>
-                                            <div class="table__item table__item__cargo">
-                                                <p>23400 kg</p>
-                                            </div>
-                                            <div class="table__item table__item__documents">
-                                                <p>CRM, BL, INV, Invoice2</p>
-                                            </div>
-                                            <div class="table__item table__item__invoice">
-                                                <p>€ 3880.08</p>
-                                            </div>
-                                            <div class="table__item table__item__out">
-                                                <p>€135.00</p>
-                                            </div>
-                                            <div class="table__item table__item__kpi">
-                                                <p>€15.00</p>
-                                            </div>
-                                        </div>
-                                        <div class="drop-more">
-                                            <div class="tip"><p class="text-16 c-navy-blue">TRUCKING</p></div>
-                                            <div class="way bg-white p-0 m-0">
-                                                <div class="scroll w-100">
-                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
-                                                        <input type="text" class="range-way" data-slider="5">
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="table__order__bottom d-flex">
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/document.svg" alt="Copy" class="">Copy
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
-                                                </a>
-                                                <a href="#" class="tool-item">
-                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
-                                                </a>
-                                                <a href="#" class="tool-item">Open</a>
-                                                <input type="text" class="input-notes">
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                            </li>
+                                            <li class="table__order-list bt-green">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p class="c-orange">OR027124
+                                                                        <span class="tooltip__table"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                                    </p>
 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates">
+                                                            <p>O. 01-05-20</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck">
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
+                                                    <div>
+                                                        <div >
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="table__order-list bt-pink">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p class="c-orange">OR027124
+                                                                        <span class="tooltip__table"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                                    </p>
 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates active">
+                                                            <p>O. 01-05-20</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck active">
+                                                            <p>MS8647888</p>
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont active">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal active">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight active">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item active">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
+                                                    <div>
+                                                        <div >
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
 
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="table__order-list bt-orange">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p class="c-orange">OR027124
+                                                                        <span class="tooltip__table"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                                    </p>
 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates active">
+                                                            <p>O. 01-05-20</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck active">
+                                                            <p>MS8647888</p>
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont active">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal active">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight active">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item active">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
+                                                    <div>
+                                                        <div >
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="table__order-list bt-yellow">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p class="c-orange">OR027124
+                                                                        <span class="tooltip__table"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                                    </p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates active">
+                                                            <p>O. 01-05-20</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck active">
+                                                            <p>MS8647888</p>
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont active">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal active">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight active">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item active">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
+                                                    <div>
+                                                        <div >
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="table__order-list bt-blue">
+                                                <div class="table__order-main">
+                                                    <div class="d-flex">
+                                                        <div class="table__item table__item__check">
+                                                            <label class="d-flex">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue ml-0"></span>
+                                                            </label>
+                                                            <div class="click__more"></div>
+                                                        </div>
+                                                        <div class="table__item table__item__week">
+                                                            <p>W47</p>
+                                                        </div>
+                                                        <div class="table__item table__item__routing">
+                                                            <p class="d-flex">
+                                                                <img src="img/flag.svg" alt="flag" class="flag">Aljazeera Agriculture Company
+                                                                <br>
+                                                                CIF Aqaba
+                                                            </p>
+                                                        </div>
+                                                        <div class="table__item table__item__booking">
+                                                            <p>Evergreen LT</p>
+                                                            <p class="c-gray">503990010631</p>
+                                                            <p>5 x 40’HC</p>
+                                                        </div>
+                                                        <div class="table__item table__item__schedule">
+                                                            <p>CUT  28-11</p>
+                                                            <p>  Ediv  25-11</p>
+                                                            <p> ETA  24-12 </p>
+                                                        </div>
+                                                        <div class="table__item table__item__orders">
+                                                            <div class=" d-flex justify-content-end align-items-center">
+                                                                <p class="text-small">12/10</p>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/miscellaneous.svg" alt="miscellaneous" class="">
+                                                                </a>
+                                                                <a href="#" class="orders__link ml-2">
+                                                                    <img src="img/interface-3.svg" alt="interface" class="">
+                                                                </a>
+                                                            </div>
+                                                            <div class="d-flex mt-1">
+                                                                <div class="orders__green mr-2">Arriving</div>
+                                                                <div>
+                                                                    <p class="c-orange">OR027124
+                                                                        <span class="tooltip__table"><img src="img/error.svg" alt="error"> Please add documents…</span>
+                                                                    </p>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__status">
+                                                            <p>Ready</p>
+                                                            <div class="d-flex">
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item active"></div>
+                                                                <div class="status-item"></div>
+                                                                <div class="status-item"></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="table__item table__item__dates active">
+                                                            <p>O. 01-05-20</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                            <p class="text-14">R. 10-04 / L. 11-04</p>
+                                                        </div>
+                                                        <div class="table__item table__item__truck active">
+                                                            <p>MS8647888</p>
+                                                            <p>MS8647888</p>
+                                                        </div>
+                                                        <div class="table__item table__item__company">
+                                                            <p>Aljazeera Agriculture Company</p>
+                                                        </div>
+                                                        <div class="table__item table__item__cont active">  <p>125836</p></div>
+                                                        <div class="table__item table__item__seal active">
+                                                            <p>147938</p>
+                                                        </div>
+                                                        <div class="table__item table__item__weight active">
+                                                            <p>3800 kg</p>
+                                                        </div>
+                                                        <div class="table__item table__item__item active">
+                                                            <p>Spanvall Pouldivy Bedding SP</p>
+                                                        </div>
+                                                        <div class="table__item table__item__qty"> <p>700 pcs</p></div>
+                                                        <div class="table__item table__item__cargo"> <p> 23400 kg</p></div>
+                                                        <div class="table__item table__item__documents"> <p>CRM, BL, INV, Invoice2</p></div>
+                                                        <div class="table__item table__item__invoice">
+                                                            <p>€ 3880.08</p>
+                                                        </div>
+                                                        <div class="table__item table__item__out"><p>€135.00</p></div>
+                                                        <div class="table__item table__item__kpi"><p>€15.00</p></div>
+                                                    </div>
+                                                </div>
+                                                <div class="drop-more">
+                                                    <div>
+                                                        <div >
+                                                            <div class="tip">
+                                                                <p class="text-16 c-navy-blue">TRUCKING</p>
+                                                            </div>
+                                                            <div class="way bg-white p-0 m-0">
+                                                                <div class="scroll w-100">
+                                                                    <div class="px-3 w-100 d-flex justify-content-center row-range">
+                                                                        <input type="text" class="range-way" data-slider="5">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="table__order__bottom d-flex">
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/create-24-px.svg" alt="create" class="">Edit
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/document.svg" alt="Copy" class="">Copy
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/bin.svg" alt="Delete" class="">Delete
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/calendar-1.svg" alt="Timeline" class="img-timeline">Timeline
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/chat-1.svg" alt="Chat" class="">Chat
+                                                                </a>
+                                                                <a href="#" class="tool-item">
+                                                                    <img src="img/share.svg" alt="Share" class="img-share">Share
+                                                                </a>
+                                                                <a href="#" class="tool-item">Open</a>
+                                                                <div class="relative-input">
+                                                                    <input type="text" class="input-notes" placeholder="Notes">
+                                                                    <button type="reset" class="clear clear-two"></button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+
+                                    </div>
+                                </div>
 
                             </div>
                             <div class="contents__item ">
                                 <div class="box-white__top d-flex align-items-center">
-                                    <h2 class="title">TRANSPORT MODE</h2>
+                                    <h2 class="title">divANSPORT MODE</h2>
                                 </div>
                                 <div class="d-flex mt-5">
                                     <label class="d-flex align-items-center mr-sm-5 mr-3">
                                         <input type="radio" name="radio1" class="checkbox" checked>
-                                        <span class="checkbox__transport-check"></span>
-                                        <img src="img/truck-1.svg" alt="truck" class="checkbox__transport-icon">
-                                        <span class="checkbox__transport-text">FTL</span>
+                                        <span class="checkbox__divansport-check"></span>
+                                        <img src="img/truck-1.svg" alt="truck" class="checkbox__divansport-icon">
+                                        <span class="checkbox__divansport-text">FTL</span>
                                     </label>
                                     <label class="d-flex align-items-center">
                                         <input type="radio" name="radio1" class="checkbox">
-                                        <span class="checkbox__transport-check"></span>
-                                        <img src="img/truck-2.svg" alt="truck" class="checkbox__transport-icon">
-                                        <span class="checkbox__transport-text">LTL</span>
+                                        <span class="checkbox__divansport-check"></span>
+                                        <img src="img/truck-2.svg" alt="truck" class="checkbox__divansport-icon">
+                                        <span class="checkbox__divansport-text">LTL</span>
                                     </label>
                                 </div>
                                 <div class="row justify-content-between mt-5 mt-4 pr-xl-5">
@@ -680,8 +1181,8 @@
                                             <div class="table__rate-item"><p>LOADING FREE TIME</p></div>
                                         </div>
                                         <div class="bg-blue d-flex align-items-center">
-                                            <div class="table__rate-item"><p>Extra unloading place</p></div>
-                                            <div class="table__rate-item"><p>Extra 1 hour</p></div>
+                                            <div class="table__rate-item"><p>Exdiva unloading place</p></div>
+                                            <div class="table__rate-item"><p>Exdiva 1 hour</p></div>
                                             <div class="table__rate-item"><p>Downtime</p></div>
                                             <div class="table__rate-item"><p>ADR</p></div>
                                             <div class="table__rate-item"><p>°C</p></div>
@@ -691,35 +1192,11 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Litruania</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania
-                                                        Loading place:  LTRL</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China
-                                                        Loading place:  KTRL</p>
+                                                    <p>Coundivy:  Shangai, China</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -737,33 +1214,13 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Lidivuania
+                                                        Loading place:  LdivL</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
+                                                    <p>Coundivy:  Shangai, China
+                                                        Loading place:  KdivL</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -781,11 +1238,55 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
+                                                    <p>Coundivy:  Shangai, China</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
+                                                <div class="table__rate-item"><p>1500 $</p></div>
+                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                            </div>
+                                            <div class="d-flex table__rate-row-two align-items-center">
+                                                <div class="table__rate-item"><p>4500 €</p></div>
+                                                <div class="table__rate-item"><p>350 €</p></div>
+                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
+                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item"><p>Yes</p></div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex">
+                                            <div class="d-flex table__rate-row-one align-items-center">
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Shangai, China</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
+                                                <div class="table__rate-item"><p>1500 $</p></div>
+                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                            </div>
+                                            <div class="d-flex table__rate-row-two align-items-center">
+                                                <div class="table__rate-item"><p>4500 €</p></div>
+                                                <div class="table__rate-item"><p>350 €</p></div>
+                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
+                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item"><p>Yes</p></div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex">
+                                            <div class="d-flex table__rate-row-one align-items-center">
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Shangai, China</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -825,35 +1326,11 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>3500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>350 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
+                                                    <p>Coundivy:  Shangai, China</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -873,35 +1350,11 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
-                                            </div>
-                                            <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>3500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>350 €</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
-                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
-                                            </div>
-                                        </li>
-                                        <li class="d-flex">
-                                            <div class="d-flex table__rate-row-one align-items-center">
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
-                                                </div>
-                                                <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
+                                                    <p>Coundivy:  Shangai, China</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -921,11 +1374,59 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
+                                                    <p>Coundivy:  Shangai, China</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
+                                                <div class="table__rate-item"><p>1500 $</p></div>
+                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                            </div>
+                                            <div class="d-flex table__rate-row-two align-items-center">
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>3500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>350 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex">
+                                            <div class="d-flex table__rate-row-one align-items-center">
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Shangai, China</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
+                                                <div class="table__rate-item"><p>1500 $</p></div>
+                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                            </div>
+                                            <div class="d-flex table__rate-row-two align-items-center">
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>3500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>4500 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>350 €</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
+                                                <div class="table__rate-item table__rate-item-pallet"><p>Yes</p></div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex">
+                                            <div class="d-flex table__rate-row-one align-items-center">
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Klaipeda, Lidivuania</p>
+                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <p>Coundivy:  Shangai, China</p>
                                                     <input type="text" class="input-add" placeholder="+ Add loading place">
                                                 </div>
                                                 <div class="table__rate-item"><p>255’ DVLT</p></div>
@@ -1002,7 +1503,7 @@
                                 </div>
                                 <div class="row mt-4">
                                     <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Country</p>
+                                        <p class="text-14">Coundivy</p>
                                         <input type="text" class="input" value="Rucava, LV">
                                     </div>
                                     <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
@@ -1019,7 +1520,7 @@
                                 </div>
                                 <div class="row mt-4">
                                     <div class="col-sm-6 col-md-4 mb-sm-5 mb-4 pr-xl-5">
-                                        <p class="text-14">Country</p>
+                                        <p class="text-14">Coundivy</p>
                                         <input type="text" class="input" value="Rucava, LV">
 
                                     </div>
@@ -1117,7 +1618,7 @@
                                             <div class="table__rate-item"><p>SURCHARGES</p></div>
                                         </div>
                                         <div class="bg-blue d-flex align-items-center">
-                                            <div class="table__rate-item table__rate-item-tone"><p>1 TRUCK</p></div>
+                                            <div class="table__rate-item table__rate-item-tone"><p>1 truck</p></div>
                                             <div class="table__rate-item table__rate-item-tone"><p>1 TONE <span>Hand wagon loading</span></p></div>
                                             <div class="table__rate-item table__rate-item-tone"><p>1 TONE <span>Hand wagon loading</span></p></div>
                                             <div class="table__rate-item table__rate-item-tone bg-blue-bright"><p>1 TONE <span>Hand wagon loading</span></p></div>
@@ -1129,7 +1630,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1152,7 +1653,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1175,7 +1676,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1198,7 +1699,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1221,7 +1722,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1244,7 +1745,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1267,7 +1768,7 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Klaipeda, 246000, Lithuania
+                                                    <p>Klaipeda, 246000, Lidivuania
                                                         LTKL</p>
                                                 </div>
                                                 <div class="table__rate-item">
@@ -1303,9 +1804,10 @@
 </div>
 
 <script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/bootsdivap/js/bootsdivap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-slider/10.6.2/bootstrap-slider.min.js"></script>
+
+<script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
 <script src="js/admin.js"></script>
 </body>
 

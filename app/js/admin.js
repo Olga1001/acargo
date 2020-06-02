@@ -52,12 +52,12 @@ $(document).ready(function () {
 
 // Popover Javascript
 
-$(function () {
-  $('[data-toggle="popover"]').popover()
-});
-$('.popover-dismiss').popover({
-  trigger: 'focus'
-});
+// $(function () {
+//   $('[data-toggle="popover"]').popover()
+// });
+// $('.popover-dismiss').popover({
+//   trigger: 'focus'
+// });
 //MENU arrow
 $(document).ready(function () {
   $(".sidebar-light .nav-item").click(function (e) {
@@ -168,7 +168,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(window).scroll(function(){
     if ($(window).width() > 768) {
-      if($(window).scrollTop() >= 100) {
+      if($(window).scrollTop() >= 50) {
         $(".sticky").addClass('active');
         $(".topbar").slideUp(0);
       } else {
@@ -245,17 +245,24 @@ $(document).ready(function () {
     ticks_labels: [
         ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>',
         '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LI</p><p class="text-13 c-dark">Liner out</p>',
-        '<img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon"><p class="text-16">CY-CY</p><p class="text-13 c-dark">Ocean freight</p>',
+        '<img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon way__item-icon__boat"><p class="text-16">CY-CY</p><p class="text-13 c-dark">Ocean freight</p>',
         '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LO</p><p class="text-13 c-dark">Liner out</p>',
-        '<img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon"><p class="text-16">FOT</p><p class="text-13 c-dark">Free on truck</p>',
+        '<img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon way__item-icon__car"><p class="text-16">FOT</p><p class="text-13 c-dark">Free on truck</p>',
         ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>'
     ],
     look_to_sticks: true
   });
+});
 
+$(document).ready(function () {
   $(".click__more").click(function (e) {
+
     e.preventDefault();
-    // $(this).closest(".table__order__body").find(".drop-more").slideToggle(300);
-    $(this).closest(".table__order__body").find(".drop-more").toggleClass('active');
+    $(this).closest(".table__order-list").toggleClass('active').siblings().removeClass('active');
+    $(this).closest(".table__order-list").find(".drop-more").slideToggle(300).closest(".table__order-list").siblings().find(".drop-more").slideUp(300);
+
+    $("input.range-way").bootstrapSlider('refresh');
+
   });
+
 });

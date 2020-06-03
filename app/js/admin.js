@@ -252,9 +252,33 @@ $(document).ready(function () {
     ],
     look_to_sticks: true
   });
-});
+  $("input.range-way2").bootstrapSlider({
+    value: [1,4],
+    ticks: [1,2,3,4],
+    ticks_labels: [
+      ' <img src="img/buildings.svg" alt="icon" class="way__item-icon"> <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_1</p>',
+      '<img src="img/buildings.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_2</p>',
+      '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>',
+      '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><p class="text-14 c-gray">Delivery_2</p>',
 
-$(document).ready(function () {
+    ],
+    look_to_sticks: true
+  });
+  $("input.range-way3").bootstrapSlider({
+    value: [1,6],
+    ticks: [1,2,3,4,5,6],
+    ticks_labels: [
+      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point">',
+      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house">',
+      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon "> <img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-center">',
+      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-rotate">',
+      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house">',
+      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point">'
+    ],
+    look_to_sticks: true
+  });
+
+  //click on arrow in page order table sea
   $(".click__more").click(function (e) {
 
     e.preventDefault();
@@ -262,7 +286,8 @@ $(document).ready(function () {
     $(this).closest(".table__order-list").find(".drop-more").slideToggle(300).closest(".table__order-list").siblings().find(".drop-more").slideUp(300);
 
     $("input.range-way").bootstrapSlider('refresh');
+    $("input.range-way2").bootstrapSlider('refresh');
+    $("input.range-way3").bootstrapSlider('refresh');
 
   });
-
 });

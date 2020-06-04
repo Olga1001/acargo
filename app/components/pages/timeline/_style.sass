@@ -1,0 +1,37 @@
+.timeline
+  margin: 10px 0 100px
+  &-circle
+    position: relative
+    z-index: 2
+    &:before
+      content: ''
+      position: absolute
+      z-index: 1
+      left: 50%
+      top: 0
+      transform: translate(-50%, 0)
+      height: calc(100% + 145px)
+      width: 2px
+      background: #109cf1
+
+  &-item
+    max-width: 370px
+    width: 100%
+  &-icon
+    margin: 0 50px
+    flex-shrink: 0
+    width: 120px
+    height: 120px
+    position: relative
+    z-index: 2
+  &-row
+    padding-bottom: 145px
+    position: relative
+    z-index: 2
+    &:last-child
+      padding-bottom: 0
+      .timeline-circle:before
+        content: none
+    &:first-child
+      .timeline-circle:before
+        top: 120px

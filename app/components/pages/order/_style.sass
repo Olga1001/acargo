@@ -402,102 +402,103 @@
 .table__order .table__item__routing .select-table
   width: 80px
 
-.table__order-head
-  border-width: 0 0 0 5px
-  border-style: solid
-  border-color: #109cf1
-  position: sticky
-  z-index: 5
-  top: 0
-  box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
+.table__order
+  .table__order-head
+    border-width: 0 0 0 5px
+    border-style: solid
+    border-color: #109cf1
+    position: sticky
+    z-index: 5
+    top: 0
+    box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06)
+    .table__item
+      padding: 8px 20px
+      background-color: #109cf1
+      color: #ffffff
+      vertical-align: middle
+      text-transform: uppercase
+      position: relative
+      resize: horizontal
+      overflow: auto
+      &::-webkit-resizer
+        //display: none
+        &:hover ~ .table__item
+          border-right: 1px solid #49ddaa
+
+      &__qty, &__cargo, &__documents, &__out, &__kpi
+        justify-content: center
+  .table__order-list .table__item
+    &__invoice
+      text-align: center
   .table__item
-    padding: 8px 20px
-    background-color: #109cf1
-    color: #ffffff
-    vertical-align: middle
-    text-transform: uppercase
+    border-right: 1px solid #fff
+    flex-shrink: 0
+    min-width: 145px
     position: relative
-    resize: horizontal
-    overflow: auto
-    &::-webkit-resizer
-      //display: none
-      &:hover ~ .table__item
-        border-right: 1px solid #49ddaa
+    padding: 20px 20px 10px 20px
+    width: min-content
+    vertical-align: top
+    display: flex
+    flex-direction: column
+    &.noresize
+      overflow: visible
+    .input-table
+      max-width: none
+    &:before
+      content: none
+      position: absolute
+      left: 0
+      bottom: 0
+      width: 100%
+      height: calc(100% - 10px)
+      background-color: rgba(#109cf1, 0.1)
+    &.active:before
+      content: ''
+    .table__clear
+      right: 5px
+      top: 5px
+    &__way
+      min-width: 264px
+    &__booking
+      min-width: 170px
+    &__check
+      min-width: 56px
+      padding-left: 15px!important
+    &__week
+      min-width: 115px
+    &__routing
+      min-width: 325px
+    &__schedule
+      min-width: 160px
+    &__schedule2
+      min-width: 120px
+    &__orders
+      min-width: 235px
+      p.text-14
+        margin-left: -8px
+    &__dates
+      min-width: 162px
+    &__company
+      min-width: 250px
+    &__item
+      min-width: 235px
+    &__qty
+      min-width: 95px
+    &__cargo
+      min-width: 150px
+    &__documents
+      min-width: 195px
+    &__invoice
+      min-width: 185px
+    &__out
+      min-width: 125px
+    &__kpi
+      min-width: 92px
+    &__customer, &__place
+      min-width: 260px
+
     &__qty, &__cargo, &__documents, &__out, &__kpi
-      justify-content: center
-
-
-.table__order-list .table__item
-  &__invoice
-    text-align: center
-
-.table__item
-  border-right: 1px solid #fff
-  flex-shrink: 0
-  min-width: 145px
-  position: relative
-  padding: 20px 20px 10px 20px
-  width: min-content
-  vertical-align: top
-  display: flex
-  flex-direction: column
-  .input-table
-    max-width: none
-  &:before
-    content: none
-    position: absolute
-    left: 0
-    bottom: 0
-    width: 100%
-    height: calc(100% - 10px)
-    background-color: rgba(#109cf1, 0.1)
-  &.active:before
-    content: ''
-  .table__clear
-    right: 5px
-    top: 5px
-  &__way
-    min-width: 264px
-  &__booking
-    min-width: 170px
-  &__check
-    min-width: 56px
-    padding-left: 15px!important
-  &__week
-    min-width: 115px
-  &__routing
-    min-width: 325px
-  &__schedule
-    min-width: 160px
-  &__schedule2
-    min-width: 120px
-  &__orders
-    min-width: 235px
-    p.text-14
-      margin-left: -8px
-  &__dates
-    min-width: 162px
-  &__company
-    min-width: 250px
-  &__item
-    min-width: 235px
-  &__qty
-    min-width: 95px
-  &__cargo
-    min-width: 150px
-  &__documents
-    min-width: 195px
-  &__invoice
-    min-width: 185px
-  &__out
-    min-width: 125px
-  &__kpi
-    min-width: 92px
-  &__customer, &__place
-    min-width: 260px
-
-  &__qty, &__cargo, &__documents, &__out, &__kpi
-    align-items: center
+      align-items: center
 
 .relative
   position: relative

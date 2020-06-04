@@ -399,7 +399,10 @@ button
       color: #109CF1
   &:before
     right: 5px
-
+.select__search
+  .select__item
+    background: url("../img/search-1.svg") no-repeat left 15px center/ 14px
+    padding-left: 35px
 .select__carrier
   border: solid 1px $color4
   border-radius: 4px
@@ -849,6 +852,8 @@ button
   font-size: 16px
   color: #109cf1
   text-decoration: underline
+.text-decoration-none
+  text-decoration: none
 .disabled
   opacity: 0.3
   pointer-events: none
@@ -1206,8 +1211,23 @@ button
   &__request
     max-width: 940px
     border: solid 1px $color4
-.popup .box-white.popup__rate-sea
-  margin: 0 auto!important
+  &__max-width
+    max-width: 930px
+    margin: 0 auto!important
+
+.popup .box-white
+  &.popup__rate-sea, &.popup__max-width
+    margin: 0 auto!important
+
+
+.table__merge
+  max-width: 560px
+  width: 100%
+  padding: 0
+  margin: 0 auto
+  height: 100%
+  .table__body
+    max-height: 100%
 .check
   width: 18px
   height: 13px
@@ -1444,6 +1464,7 @@ button
     background-color: $color4
     color: $color1
     border-radius: 50%
+
 .dow
   vertical-align: middle
   text-align: center

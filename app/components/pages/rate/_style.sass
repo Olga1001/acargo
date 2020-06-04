@@ -121,7 +121,7 @@
   .bg-blue, .table__rate-row-two
     border-right: solid 1px rgba(183, 188, 214, 0.37)
   .bg-blue, .table__rate-row-two
-    padding: 0 20px 0 30px
+    padding: 0
   .bg-blue
     p
       color: #ffffff
@@ -138,6 +138,9 @@
         width: 140px
       &:nth-child(5)
         width: 129px
+  .bg-blue .table__rate-item
+    border-right: 1px solid rgba(#ffffff, 0.5)
+
   .bg-blue, .table__rate-row-two
     .table__rate-item
       width: 88px
@@ -175,7 +178,7 @@
         width: 126px
   .bg-blue
     .table__rate-item
-      border-right: 1px solid #f4f5f8
+      border-right: 1px solid rgba(#ffffff, 0.5)
 
   .table__rate-item-pallet
     width: 132px!important
@@ -378,3 +381,45 @@
       font-style: italic
 
 
+.table__plus
+  width: 20px
+  height: 20px
+  background-color: #ffffff
+  border-radius: 50%
+  margin: 0 auto
+  cursor: pointer
+  position: relative
+  z-index: 5
+  &:before,  &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    background-color: #156ce4
+    width: 1px
+    height: 10px
+  &:after
+    width: 10px
+    height: 1px
+
+
+.table__plus-drop
+  display: none
+  position: absolute
+  right: 10px
+  top: 0
+  padding-top: 65px
+  z-index: 4
+  &.active
+    display: block
+.table__plus-menu
+  width: fit-content
+  padding: 20px 25px
+  height: 230px
+  border-radius: 2px
+  box-shadow: 1px 2px 15px 2px rgba(40, 46, 59, 0.12)
+  background-color: #ffffff
+.table__plus-text
+  font-size: 13px
+  color: #282e3b

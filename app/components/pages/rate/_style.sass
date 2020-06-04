@@ -388,8 +388,6 @@
   border-radius: 50%
   margin: 0 auto
   cursor: pointer
-  position: relative
-  z-index: 5
   &:before,  &:after
     content: ''
     position: absolute
@@ -403,6 +401,15 @@
     width: 10px
     height: 1px
 
+.table__plus-click
+  &:focus .table__plus-drop, &:active .table__plus-drop, .table__plus-drop:hover
+    display: block
+.table__plus-btn
+  font-size: 15px
+  line-height: 36px
+  display: block
+  padding: 0 10px
+  min-width: 85px
 
 .table__plus-drop
   display: none
@@ -415,8 +422,7 @@
     display: block
 .table__plus-menu
   width: fit-content
-  padding: 20px 25px
-  height: 230px
+  padding: 19px 25px
   border-radius: 2px
   box-shadow: 1px 2px 15px 2px rgba(40, 46, 59, 0.12)
   background-color: #ffffff

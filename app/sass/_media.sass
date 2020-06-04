@@ -264,8 +264,12 @@
     width: 100%
 @media only screen and (max-width : 768px)
   .timeline-row
-    margin-bottom: 80px
-  .timeline-icon
+    padding-bottom: 80px
+  .timeline-row:first-child .timeline-circle:before
+    top: 40px
+  .timeline-circle:before
+    height: calc(100% + 80px)
+  .timeline-circle
     margin: 0 30px 0 0
   .timeline-item
     max-width: 100%
@@ -426,6 +430,7 @@
   .timeline-icon
     width: 80px
     height: 80px
+  .timeline-circle
     margin-right: 15px
   .pills-custom .nav-link
     padding: 10px 20px

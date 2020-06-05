@@ -100,7 +100,7 @@
   p
     width: 100%
     color: #141515
-    max-width: 190px
+    //max-width: 190px
   &::-webkit-scrollbar
     width: 6px
     height: 6px
@@ -108,12 +108,12 @@
   &::-webkit-scrollbar-thumb
     background: rgba(183, 188, 214, 0.37)
   &-item
-    padding: 0
+    padding: 14px 0
     min-width: 40px
     height: 100%
     display: flex
     flex-direction: column
-    justify-content: center
+    //justify-content: center
   .bg-light-blue, .bg-blue, .table__rate-row-one, .table__rate-row-two
     padding: 0 10px 0 20px
     border-bottom: solid 1px rgba(183, 188, 214, 0.37)
@@ -123,8 +123,13 @@
   .bg-blue, .table__rate-row-two
     padding: 0
   .bg-blue
+    .table__rate-item
+      justify-content: center
     p
       color: #ffffff
+  .bg-light-blue
+    .table__rate-item
+      justify-content: center
   .bg-light-blue, .table__rate-row-one
     .table__rate-item
       padding: 14px 25px 14px 0
@@ -429,3 +434,21 @@
 .table__plus-text
   font-size: 13px
   color: #282e3b
+
+.table__li
+  color: #282e3b
+  font-size: 15px
+  line-height: 1.33
+  min-height: 20px
+  //white-space: nowrap
+  //text-overflow: ellipsis
+  //overflow: hidden
+.table__rate p
+  min-height: 20px
+  //white-space: nowrap
+  //overflow: hidden
+  //text-overflow: ellipsis
+
+.table__li-num
+  list-style-type: decimal
+  margin-left: 15px

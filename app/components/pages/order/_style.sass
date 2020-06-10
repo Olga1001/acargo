@@ -433,6 +433,7 @@
   width: 80px
 
 .table__order
+
   .table__order-head
     border-width: 0 0 0 5px
     border-style: solid
@@ -478,10 +479,11 @@
       content: none
       position: absolute
       left: 0
-      bottom: 0
+      bottom: 8px
       width: 100%
-      height: calc(100% - 10px)
+      height: calc(100% - 23px)
       background-color: rgba(#109cf1, 0.1)
+      pointer-events: none
     &.active:before
       content: ''
     .table__clear
@@ -495,7 +497,7 @@
       min-width: 56px
       padding-left: 15px!important
     &__week
-      min-width: 115px
+      min-width: 77px
     &__routing
       min-width: 325px
     &__schedule
@@ -508,6 +510,8 @@
         margin-left: -8px
     &__dates
       min-width: 162px
+      a, .text-14
+        line-height: 1.5
     &__company
       min-width: 250px
     &__item
@@ -526,13 +530,21 @@
       min-width: 92px
     &__customer, &__place
       min-width: 260px
-
+    &__truck
+      a
+        min-height: 21px
     &__qty, &__cargo, &__documents, &__out, &__kpi
       align-items: center
 
 .relative
   position: relative
 .table__order-list
+  a
+    color: #282e3b
+    font-size: 14px
+    line-height: 1.5
+    &:hover
+      color: #156ce4
   &.active
     .click__more:before
       transform: translate(-50%, -50%) scale(1,-1)

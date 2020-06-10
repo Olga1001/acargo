@@ -9,6 +9,26 @@
 @media only screen and (min-width : 1930px)
   .table__rate-sea .bg-light-blue, .table__rate-sea .table__make-booking__row
     width: 100%
+@media only screen and (max-width : 1570px)
+  .navbar-item
+    padding: 0 20px
+    min-width: 172px
+  .navbar-list
+    max-width: 640px
+    width: 100%
+    overflow-x: auto
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      right: 0
+      top: 0
+      height: 100%
+      width: 40px
+      pointer-events: none
+      background: linear-gradient(to left, rgba(#37517e, 0.9), rgba(#37517e, 0.1))
+      z-index: 2
+
 @media only screen and (min-width : 1500px)
   .table__rate .bg-light-blue, .table__rate .bg-blue, .table__rate .table__rate-row-one, .table__rate .table__rate-row-two
     width: 100%
@@ -272,6 +292,7 @@
   .tools, .arrows-row
     width: 100%
 @media only screen and (max-width : 768px)
+
   .timeline-row
     padding-bottom: 80px
   .timeline-row:first-child .timeline-circle:before

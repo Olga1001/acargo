@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>acargo</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
     <link href="css/libs.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
@@ -884,8 +885,8 @@
                                     </div>
                                     <div class="col-xl-8 col-12">
                                         <div class="fields mb-0 active d-md-flex">
-                                            <label class="fields__empty"></label>
-                                            <div class="d-flex flex-wrap w-100">
+                                            <label class="fields__empty d-xl-block d-none"></label>
+                                            <div class="d-flex flex-wrap w-100 mr-xl-5 pr-xl-3">
                                                 <div class="fields__item mb-0">
                                                     <p class="text-14">Incoterm</p>
                                                     <div class="select">
@@ -936,92 +937,141 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="card ">
+                                <div class="card pb-0">
                                     <label class="card__label">
                                         <input type="checkbox" class="checkbox" checked>
                                         <span class="card__check"></span>
                                     </label>
                                     <div class="row justify-content-between">
-                                        <div class="col-md-6 pr-xl-5">
-                                            <div class="card__row d-flex w-100">
-                                                <div class="card__item w-50">Origin</div>
-                                                <div class="select card__select">
-                                                    <input class="select__item" value="Rucava, LV">
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option">Rucava, LV1</li>
-                                                            <li class="select__option">Rucava, LV</li>
-                                                        </ul>
+                                        <ul class="col-lg-6 pr-xl-5">
+                                            <li class="card__list-item">
+                                                <div class="card__list-item_col">
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__item w-50">Origin</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="Rucava, LV">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">Rucava, LV1</li>
+                                                                    <li class="select__option">Rucava, LV</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__blue card__item w-50">Place of loading</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="UAODS">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">UAODS</li>
+                                                                    <li class="select__option">UAODS</li>
+                                                                    <li class="select__option">UAODS</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row d-flex w-100">
-                                                <div class="card__blue card__item w-50">Place of loading</div>
-                                                <div class="select card__select">
-                                                    <input class="select__item" value="UAODS">
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option">UAODS</li>
-                                                            <li class="select__option">UAODS</li>
-                                                            <li class="select__option">UAODS</li>
-                                                        </ul>
+                                                <button type="button" class="clear"></button>
+                                            </li>
+                                            <li class="card__list-item">
+                                                <div class="card__list-item_col">
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__item w-50">Origin</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="Rucava, LV">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">Rucava, LV1</li>
+                                                                    <li class="select__option">Rucava, LV</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__blue card__item w-50">Place of loading</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="UAODS">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">UAODS</li>
+                                                                    <li class="select__option">UAODS</li>
+                                                                    <li class="select__option">UAODS</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <button type="button" class="clear"></button>
+                                            </li>
                                             <a href="#" class="link text-left my-4 weight-normal" >+ Add place of loading</a>
-                                        </div>
-                                        <div class="col-md-6 pr-xl-5">
-                                            <div class="card__row d-flex w-100">
-                                                <div class="card__item w-50">Destanation</div>
-                                                <div class="select card__select">
-                                                    <input class="select__item" value="Busan, KR">
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option">Busan, KR</li>
-                                                            <li class="select__option">Busan, KR</li>
-                                                        </ul>
+                                        </ul>
+                                        <ul class="col-lg-6 pr-xl-5">
+                                            <li class="card__list-item">
+                                                <div class="card__list-item_col">
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__item w-50">Destanation</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="Busan, KR">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">Busan, KR</li>
+                                                                    <li class="select__option">Busan, KR</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__blue card__item w-50">Place of delivery</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="CNSHA">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">CNSHA</li>
+                                                                    <li class="select__option">CNSHA2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                            <div class="card__row d-flex w-100">
-                                                <div class="card__blue card__item w-50">Place of delivery</div>
-                                                <div class="select card__select">
-                                                    <input class="select__item" value="CNSHA">
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option">CNSHA</li>
-                                                            <li class="select__option">CNSHA2</li>
-                                                        </ul>
+                                                <button type="button" class="clear"></button>
+                                            </li>
+                                            <li class="card__list-item">
+                                                <div class="card__list-item_col">
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__item w-50">Destanation</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="Busan, KR">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">Busan, KR</li>
+                                                                    <li class="select__option">Busan, KR</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="card__row d-flex w-100">
+                                                        <div class="card__blue card__item w-50">Place of delivery</div>
+                                                        <div class="select card__select">
+                                                            <input class="select__item" value="CNSHA">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">CNSHA</li>
+                                                                    <li class="select__option">CNSHA2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div>
+                                                <button type="button" class="clear"></button>
+                                            </li>
                                             <a href="#" class="link text-left my-4 weight-normal">+ Add place of loading</a>
-                                        </div>
+                                        </ul>
                                     </div>
-                                    <div class="d-flex card__ways card__ways-two justify-content-center py-4 w-100 mx-auto">
-                                        <div class="card__way">
-                                            <img src="img/delivery-truck-1.svg" alt="icon transport" class="card__way-img">
-                                            <div class="card__way-width d-flex align-items-center w-100">
-                                                <div class="card__way-point">
-                                                    <p class="c-gray mt-2">Place of loading</p>
-                                                </div>
-                                                <div class="card__way-line"></div>
-                                            </div>
-                                        </div>
+                                    <div class="way_v2">
+                                        <input type="text" class="range-way2">
+                                    </div>
 
-                                        <div class="card__way">
-                                            <img src="img/delivery-truck-1.svg" alt="icon transport" class="card__way-img">
-                                            <div class="card__way-width d-flex align-items-center w-100">
-                                                <div class="card__way-point">
-                                                    <p class="c-gray mt-2">Place of delivery 2</p>
-                                                </div>
-                                                <div class="card__way-line"></div>
-                                                <div class="card__way-point">
-                                                    <p class="c-gray mt-2">Place of delivery 2</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
 
                                 </div>
                             </div>
@@ -4795,6 +4845,7 @@
 <script src="vendor/jquery/jquery.min.js"></script>
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
 <script src="js/admin.js"></script>
 </body>
 

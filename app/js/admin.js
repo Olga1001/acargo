@@ -168,7 +168,7 @@ $(document).ready(function () {
 $(document).ready(function () {
   $(window).scroll(function(){
     if ($(window).width() > 768) {
-      if($(window).scrollTop() >= 50) {
+      if($(window).scrollTop() > 1) {
         $(".sticky").addClass('active');
         $(".topbar").slideUp(0);
       } else {

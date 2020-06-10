@@ -396,6 +396,13 @@ button
     z-index: 4
     .select__menu
       max-height: inherit
+.select__add
+  border: none
+  max-width: 210px
+  .select__item
+    font-size: 15px
+    font-style: italic
+    color: #b7bcd6
 .select__two
   border: none
   height: auto
@@ -404,6 +411,9 @@ button
     line-height: 1
     font-size: 15px
     padding: 0 20px 0 0
+    &.text-14
+      font-size: 14px
+      margin: 0
   .select__option
     font-size: 14px
     line-height: normal
@@ -486,6 +496,25 @@ button
     color: #b7bcd6
   &:-ms-input-placeholder
     color: #b7bcd6
+.input-gray
+  font-size: 14px
+  border: none
+  padding: 0
+  line-height: 1
+  height: auto
+  font-weight: normal
+  font-stretch: normal
+  font-style: normal
+  letter-spacing: normal
+  color: $color6
+  &::-webkit-input-placeholder
+    color: $color6
+  &:-moz-placeholder
+    color: $color6
+  &::-moz-placeholder
+    color: $color6
+  &:-ms-input-placeholder
+    color: $color6
 .input-notes_v2
   border-radius: 4px
   text-align: left
@@ -1172,6 +1201,18 @@ button
     &-minus
       &:after
         content: none
+
+
+.table_v2
+  margin: 0 -30px 0 -25px
+  width: calc(100% + 55px)
+  .table__head
+    padding: 12px 20px
+  .table__body
+    overflow: visible
+    max-height: none
+  .table__body-item
+    padding: 10px 20px
 .circle
   position: relative
   &-span
@@ -1357,7 +1398,24 @@ button
       color: $color2
       max-width: 945px
 
+.loading__info-col
+  input
+    border: none
+    border-bottom: solid 1px rgba(183, 188, 214, 0.37)
+    background-color: #ffffff
+    padding: 2px 0
+    font-size: 14px
+    line-height: 1
+    height: auto
+    color: #282e3b
+    margin-right: 22px
+    width: 55px
+    border-radius: 0
+    flex-shrink: 0
 
+  .text-11-blue
+    white-space: nowrap
+    margin-right: 10px
 .period
   &-list
     font-size: 14px
@@ -1393,11 +1451,11 @@ button
 .c-blue
   color: #156ce4
 .c-dark
-  color: $color2
+  color: $color2!important
 .c-black
   color: #141515
 .c-gray
-  color: $color6
+  color: $color6!important
 .c-navy-blue
   color: $color7
 .c-white

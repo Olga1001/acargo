@@ -496,6 +496,29 @@ button
     color: #b7bcd6
   &:-ms-input-placeholder
     color: #b7bcd6
+
+.input__dark-gray
+  padding: 0
+  border: none
+  height: auto
+  line-height: 1
+  &::-webkit-input-placeholder
+    font-size: 14px
+    font-style: italic
+    color: #67758d
+  &:-moz-placeholder
+    font-size: 14px
+    font-style: italic
+    color: #67758d
+  &::-moz-placeholder
+    font-size: 14px
+    font-style: italic
+    color: #67758d
+  &:-ms-input-placeholder
+    font-size: 14px
+    font-style: italic
+    color: #67758d
+
 .input-gray
   font-size: 14px
   border: none
@@ -604,10 +627,13 @@ button
     .card__check
       width: 16px
       height: 16px
+.overlay-small
+  max-height: 125px
 .check__text
   font-size: 12px
   line-height: 1.58
   color: $color5
+
 .checkbox
   display: none
   position: absolute
@@ -636,6 +662,7 @@ button
   &__private-check
     .checkbox__text
       font-weight: 500
+
   &:checked ~ .checkbox__check
     background: $color4
     .checkbox__text
@@ -668,6 +695,9 @@ button
     fill: #109cf1
   &:checked ~ .check__text
     color: $color4
+.check-small
+  width: 16px!important
+  height: 16px!important
 .radio__check
   width: 22px
   height: 22px

@@ -549,7 +549,7 @@ button
   position: relative
   &:focus .drop, &:active .drop, .drop:hover
     display: block
-.clear, .clear-two
+.clear, .clear-two, .delete_v1
   position: absolute
   right: 15px
   top: 50%
@@ -580,6 +580,18 @@ button
     background-color: #b7bcd6
   &:after
     width: 16px
+    background-color: #b7bcd6
+
+.delete_v1
+  right: -8px
+  &:hover
+    &:before, &:after
+      background-color: red
+  &:before
+    height: 14px
+    background-color: #b7bcd6
+  &:after
+    width: 14px
     background-color: #b7bcd6
 
 .add-order-no
@@ -1807,7 +1819,11 @@ button
 .slider.slider-horizontal .slider-tick-label-container .slider-tick-label
   padding-top: 25px
 
-
+.h-22
+  height: 22px
+  display: flex
+  margin-bottom: 22px
+  align-items: center
 
 @import "../components/pages/order/style"
 @import "../components/pages/products/style"

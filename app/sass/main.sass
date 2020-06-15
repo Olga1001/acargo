@@ -478,7 +478,7 @@ button
   font-size: 14px
   line-height: 1
   font-size: 14px
-.input-text, .input-normal
+.input-text, .input-normal, .input-resize
   border: none
   padding: 0
   height: auto
@@ -488,6 +488,18 @@ button
 .input-normal
   color: #b7bcd6
   text-align: center
+  &::-webkit-input-placeholder
+    color: #b7bcd6
+  &:-moz-placeholder
+    color: #b7bcd6
+  &::-moz-placeholder
+    color: #b7bcd6
+  &:-ms-input-placeholder
+    color: #b7bcd6
+.input-resize
+  min-width: 14px
+  margin-right: 5px
+  //width: 8px
   &::-webkit-input-placeholder
     color: #b7bcd6
   &:-moz-placeholder

@@ -164,6 +164,7 @@ $(document).ready(function () {
     $(".contents__item").eq(index).addClass('active').siblings().removeClass('active');
     $("input.range-way3").bootstrapSlider('refresh');
     $("input.range-way").bootstrapSlider('refresh');
+    $("input.range-way4").bootstrapSlider('refresh');
   });
 });
 //STICKY
@@ -270,15 +271,31 @@ $(document).ready(function () {
     value: [1,6],
     ticks: [1,2,3,4,5,6],
     ticks_labels: [
-      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point">',
-      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house">',
-      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon "> <img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-center">',
-      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-rotate">',
-      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house">',
-      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point">'
+      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>',
+      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"> <img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-center"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+      '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+      '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+      ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'
     ],
     look_to_sticks: true
   });
+
+    $("input.range-way4").bootstrapSlider({
+        value: [1,7],
+        ticks: [1,2,3,4,5,6,7],
+        ticks_labels: [
+            '<img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            '<img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-train"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>',
+            ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'
+        ],
+        look_to_sticks: true,
+    });
+
 
   //click on arrow in page order table sea
   $(".click__more").click(function (e) {

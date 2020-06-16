@@ -498,7 +498,8 @@ button
     color: #b7bcd6
 .input-resize
   min-width: 14px
-  margin-right: 5px
+  min-height: 20px
+  //margin-right: 5px
   //width: 8px
   &::-webkit-input-placeholder
     color: #b7bcd6
@@ -595,7 +596,7 @@ button
     background-color: #b7bcd6
 
 .delete_v1
-  right: -8px
+  right: 0
   &:hover
     &:before, &:after
       background-color: red
@@ -657,7 +658,6 @@ button
   font-size: 12px
   line-height: 1.58
   color: $color5
-
 .checkbox
   display: none
   position: absolute
@@ -719,6 +719,15 @@ button
     fill: #109cf1
   &:checked ~ .check__text
     color: $color4
+
+.slider-tick.round
+  &.disabled
+    background: #fff
+    &:before
+      content: none
+.way__item-icon.disabled
+  opacity: 0.3!important
+
 .check-small
   width: 16px!important
   height: 16px!important
@@ -1533,6 +1542,9 @@ button
   color: $color7
 .c-white
   color: $color1
+  &:before, &:after
+    background-color: $color1
+
 .c-orange
   color: #f99e04
 .c-green
@@ -1834,7 +1846,7 @@ button
 .h-22
   height: 22px
   display: flex
-  margin-bottom: 22px
+  //margin-bottom: 22px
   align-items: center
 
 @import "../components/pages/order/style"

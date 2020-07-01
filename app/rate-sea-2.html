@@ -308,7 +308,7 @@
                                     <a class="nav-link active">OСEAN</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
-                                    <a class="nav-link">ROAD</a>
+                                    <a class="nav-link ">ROAD</a>
                                 </li>
                                 <li class="nav-item" role="presentation">
                                     <a class="nav-link ">rail</a>
@@ -1637,54 +1637,41 @@
                                         <input type="text" value="Rucava, LV">
                                     </div>
                                 </div>
-                                <div class="d-flex flex-wrap pr-xl-5">
-                                    <div class="rate-road__item mt-sm-5 mt-4">
-                                        <p class="text-14">Vechicle type </p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option">Vechicle type</li>
-                                                </ul>
+                                <div class="row flex-wrap pr-xl-5 pb-4">
+                                    <div class="col-xl-8">
+                                        <div class="row">
+                                            <div class="col-md-4 mt-sm-5 mt-4 pr-xl-4">
+                                                <p class="text-14">Rate per </p>
+                                                <div class="select">
+                                                    <div class="select__item">Truck</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option">Truck</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-sm-5 mt-4 pr-xl-4">
+                                                <p class="text-14">Currency</p>
+                                                <div class="select">
+                                                    <div class="select__item c-dark">EUR</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option">EUR</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4 mt-sm-5 mt-4 pr-xl-4">
+                                                <p class="text-14">Valid time from and till</p>
+                                                
+                                                <input type="text" class="input-date">
                                             </div>
                                         </div>
+                                      
                                     </div>
-                                    <div class="rate-road__item mt-sm-5 mt-4">
-                                        <p class="text-14">Valid time from and till </p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option">Valid time from and till</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rate-road__item mt-sm-5 mt-4">
-                                        <p class="text-14">Rate per</p>
-                                        <div class="select">
-                                            <div class="select__item">Flat rate</div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option">Flat rate</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="rate-road__item mt-sm-5 mt-4">
-                                        <p class="text-14">Currensy </p>
-                                        <div class="select">
-                                            <div class="select__item"></div>
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option">Currensy</li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="row my-sm-5 my-4">
-                                    <div class="col-lg-5 col-md-6">
+                                   
+                                    <div class="col-xl-4 col-md-8 mt-sm-5 mt-4">
                                         <p class="text-14">Provider </p>
                                         <div class="d-flex rate__row">
                                             <div class="select">
@@ -1731,14 +1718,14 @@
                                         <img src="img/white-bin.svg" alt="garbage" class="garbage">
                                     </a>
                                 </div>
-                                <div class="table__rate table__rate-two mt-3">
+                                <div class="table__rate table__rate-two table__rate-sea-2 mt-3">
                                     <div class="d-flex">
                                         <div class="bg-light-blue d-flex align-items-center">
                                             <div class="table__rate-item"><p>FROM</p></div>
                                             <div class="table__rate-item"><p>TO</p></div>
                                             <div class="table__rate-item"><p>VECHICLE TYPE</p></div>
-                                            <div class="table__rate-item"><p>FLAT RATE</p></div>
-                                            <div class="table__rate-item"><p>LOADING FREE TIME</p></div>
+                                            <div class="table__rate-item"><p>TRUCK RATE</p></div>
+                                            <div class="table__rate-item"><p>LOADING TIME</p></div>
                                         </div>
                                         <div class="bg-blue d-flex align-items-center">
                                             <div class="table__rate-item"><p>Extra unloading place</p></div>
@@ -1752,113 +1739,511 @@
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div>
+                                                            <label class="d-flex h-22 mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                         <img src="img/flag.svg" alt="flag" class="flag">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder">
+                                                                    <p>Loading place: LTKL<a href="#" class=" delete_v1"></a></p>
+                                                                 </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <img src="img/flag.svg" alt="flag" class="flag">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder">
+                                                                    <p>Loading place: LTKL<a href="#" class=" delete_v1"></a></p>
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                                <div class="table__rate-item"> 
+                                                    <div class="select select__two mr-3">
+                                                        <input type="text" class="select__item c-dark placeholder-italic" placeholder="Select a trailer" value="Mega-trailer 100m3">
+                                                     
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> / hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> € / 24 hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania
-                                                        Loading place:  LTRL</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div>
+                                                            <label class="d-flex h-22 mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China
-                                                        Loading place:  KTRL</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                                <div class="table__rate-item">
+                                                    <div class="select select__two mr-3"> 
+                                                        <input type="text" class="select__item c-dark placeholder-italic" placeholder="Select a trailer" value="Mega-trailer 100m3">
+                                                     
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> / hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> € / 24 hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div>
+                                                            <label class="d-flex h-22 mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                         <img src="img/flag.svg" alt="flag" class="flag">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder">
+                                                                    <p>Loading place: LTKL<a href="#" class=" delete_v1"></a></p>
+                                                                 </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <img src="img/flag.svg" alt="flag" class="flag">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder">
+                                                                    <p>Loading place: LTKL<a href="#" class=" delete_v1"></a></p>
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                                <div class="table__rate-item"> 
+                                                    <div class="select select__two mr-3"> 
+                                                        <input type="text" class="select__item c-dark placeholder-italic" placeholder="Select a trailer" value="Mega-trailer 100m3">
+                
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> / hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;"></div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 0px;"> € / 24 hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div>
+                                                            <label class="d-flex h-22 mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                                <div class="table__rate-item">
+                                                    <div class="select select__two mr-3">
+                                                        <input type="text" class="select__item c-dark placeholder-italic" placeholder="Select a trailer">
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> / hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> € / 24 hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
                                             </div>
                                         </li>
                                         <li class="d-flex">
                                             <div class="d-flex table__rate-row-one align-items-center">
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Klaipeda, Lithuania</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div>
+                                                            <label class="d-flex h-22 mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue m-0"></span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
                                                 <div class="table__rate-item">
-                                                    <p>Country:  Shangai, China</p>
-                                                    <input type="text" class="input-add" placeholder="+ Add loading place">
+                                                    <div class="d-flex align-items-center w-100">
+                                                        <div class="w-100">
+                                                            <ul class="">
+                                                                <li class="table__li mt-0 noborder ml-4">
+                                                                    <input type="text" class="input-text placeholder-italic" placeholder=" + Enter loading place">
+                                                                </li>
+                                                            </ul>
+                                                            
+                                                        </div>
+                                                    </div>
                                                 </div>
-                                                <div class="table__rate-item"><p>255’ DVLT</p></div>
-                                                <div class="table__rate-item"><p>1500 $</p></div>
-                                                <div class="table__rate-item"><p>23 hours</p></div>
+                                                <div class="table__rate-item">
+                                                    <div class="select select__two mr-3">
+                                                        <input type="text" class="select__item c-dark placeholder-italic" placeholder="Select a trailer" value="Mega-trailer 100m3">
+                                                     
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                                <li class="select__option">Mega-trailer 100m3</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> / hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                             <div class="d-flex table__rate-row-two align-items-center">
-                                                <div class="table__rate-item"><p>4500 €</p></div>
-                                                <div class="table__rate-item"><p>350 €</p></div>
-                                                <div class="table__rate-item"><p>100 € / 24 hours</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
-                                                <div class="table__rate-item"><p>Yes</p></div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> €
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <ul>
+                                                        <li class="table__li mt-0 noborder">
+                                                            <div class="table__span" style="display: none;">...</div>
+                                                            <input type="text" class="input-resize" placeholder="..." style="width: 12.0469px;"> € / 24 hours
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__rate-item">
+                                                    <label class="d-flex justify-content-center">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue m-0"></span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="d-flex">
+                                            <div class="d-flex table__rate-row-one align-items-center pl-5">
+                                                <div class="table__rate-item ml-4 pl-2">
+                                                   <a href="#" class="c-nave-gray text-italic">+ Add extra line</a>
+                                                </div>
                                             </div>
                                         </li>
                                     </ul>

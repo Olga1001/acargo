@@ -1859,5 +1859,153 @@ button
 @import "../components/pages/rate-table/style"
 @import "../components/pages/timeline/style"
 
+.table__rate-sea-2  .table__rate-item 
+  height: auto
+  min-height: none
+
+.placeholder-italic::-webkit-input-placeholder
+  font-style: italic
+
+.placeholder-italic:-moz-placeholder
+  font-style: italic
+
+.placeholder-italic::-moz-placeholder
+  font-style: italic;
+
+.placeholder-italic:-ms-input-placeholder
+  font-style: italic
+
+.bg-before
+  position: relative
+  z-index: 1
+  overflow: visible!important
+  width: fit-content!important
+  padding: 0!important
+ 
+.bg-before.bg-before-blue
+  width: 100%!important
+
+.bg-before.bg-before-blue:before
+  left: 2px
+  width: calc(100% - 4px)
+
+.bg-before:before
+  content: ''
+  position: absolute
+  left: -30px
+  top: -1px
+  height: calc(100% + 2px)
+  width: calc(100% + 60px)
+  z-index: -1
+  background: rgba(73, 221, 170, 1)
+  opacity: 0.3
+
+.text-right 
+  min-height: 17px
+
+.table__rate-other 
+  width: 129px!important
+
+.table__rate-c 
+  width: 81px!important
+
+.table__rate-rate 
+  width: 113px!important
+
+.table__rate-time 
+  width: 190px!important
+
+.check-icon 
+  display: block;
+  width: 19px;
+  height: 19px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+.check-icon-edit 
+  background-image: url("../img/edit-2.svg")
+
+.check-icon-doc 
+  background-image: url("../img/doc.svg")
+
+.check-icon-maths 
+  background-image: url("../img/maths.svg")
+
+.checkbox:checked ~ .check-icon-edit 
+  background-image: url("../img/edit-2-active.svg")
+
+.checkbox:checked ~ .check-icon-doc 
+  background-image: url("../img/doc-active.svg")
+
+.checkbox:checked ~ .check-icon-maths 
+  background-image: url("../img/maths-active.svg")
+
+.table__rate-time.table__rate-time-green:before 
+  background-color: rgba(73,221,170, 0.12)
+
+.table__rate-time.table__rate-time-orange:before 
+  background-color: rgba(249, 158, 4, 0.1)
+
+.table__rate-time:before
+  content: ''
+  position: absolute
+  z-index: -1
+  left: -10px
+  top: 0
+  height: 100%
+  width: 100%
+
+.nav-tabs_v2
+  padding-top: 30px
+  box-shadow: 1px 1px 9px 0 rgba(40, 46, 59, 0.16)
+  border: solid 1px #ffffff
+  background-color: #ffffff
+  margin-left: -1.5rem
+  margin-right: calc(-1.5rem + (-7vw))
+  width: calc(100% + 1.5rem + 7vw)
+  overflow-x: auto
+  margin-top: -1.5rem
+  position: sticky
+  top: 0
+  flex-wrap: nowrap
+
+.nav-tabs_v2 .nav-link 
+  padding: 15px 55px
+  display: block
+  border-bottom: 4px solid transparent
+  font-size: 15px
+  color: #141515
+  cursor: pointer
+  text-transform: uppercase
+
+.nav-link.active 
+  border-color: #156ce4
+  color: #156ce4
+
+.table__order .table__item__booking
+  min-width: 170px
+.table__order .table__order-head .table__item__price, .table__order .table__order-head .table__item__extra
+  justify-content: center
+  align-items: center
+  background-color: #156ce4;
+
+.table__order .table__item__price, .table__order .table__item__extra 
+  width: 106px
+  text-align: center;
+  
+.table__shiipment-booking
+  width: calc(100% + 7vw)
+  margin: 24px 0 0 0
+.table__shiipment-booking .table__order-list
+  border-width: 1px 1px 1px 1px
+  border-color: #b7bcd6 transparent transparent transparent
+  margin-top: -1px
+  position: relative
+.table__shiipment-booking .table__order-list:hover
+  border-color: #109cf1
+  z-index: 2
+.table__rate-sea .table__rate-item
+  flex-shrink: 0
 @import "media"
 

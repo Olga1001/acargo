@@ -4388,6 +4388,7 @@ button {
 .check-icon-maths {
   background-image: url("../img/maths.svg");
 }
+
 .checkbox:checked ~ .check-icon-edit {
   background-image: url("../img/edit-2-active.svg");
 }
@@ -4424,6 +4425,62 @@ button {
 .nav-link.active {
   border-color: #156ce4;
   color: #156ce4;
+}
+.tooltip_other {
+  position: absolute;
+  right: 0;
+  top: 100%;
+  background: #fff;
+  z-index: 6;
+  border-radius: 2px;
+  box-shadow: 1px 2px 15px 2px rgba(40, 46, 59, 0.12);
+  padding: 17px 15px;
+  width: max-content;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s ease;
+}
+
+.tooltip_other textarea {
+  width: 268px;
+  height: 75px;
+  border-radius: 4px;
+  border: solid 0.5px #b7bcd6;
+  padding: 10px;
+}
+.tooltip_other textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  font-style: italic;
+  color: #b7bcd6; }
+
+.tooltip_other textarea:-moz-placeholder {
+  font-size: 13px;
+  font-style: italic;
+  color: #b7bcd6; }
+
+.tooltip_other textarea::-moz-placeholder {
+  font-size: 13px;
+  font-style: italic;
+  color: #b7bcd6; }
+
+.tooltip_other textarea:-ms-input-placeholder {
+  font-size: 13px;
+  font-style: italic;
+  color: #b7bcd6;}
+
+.relative:hover .tooltip_other{
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.table__rate-road li:last-child .tooltip_other, .table__rate-road li:nth-last-child(2) .tooltip_other {
+  top: auto;
+  bottom: 100%;
+}
+
+.table__rate-road li:first-child .tooltip_other, .table__rate-road li:nth-child(2) .tooltip_other {
+  top: 100%;
+  bottom: auto;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

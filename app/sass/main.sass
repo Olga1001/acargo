@@ -1,6 +1,5 @@
-@import "fonts"
-@import "vars"
-
+@import 'vars.sass';
+// @import 'libs.sass';
 
 *
   -webkit-box-sizing: border-box
@@ -551,12 +550,29 @@ button
     color: $color6
   &:-ms-input-placeholder
     color: $color6
+
 .input-notes_v2
   border-radius: 4px
   text-align: left
   background: #f3faff url("../img/create-24-px.svg") no-repeat left 20px center / 14px
   padding-left: 45px
   border: none
+  &.bg-white 
+    border: solid 1px rgba(183, 188, 214, 0.52)
+    background: #f3faff url("../img/create-24-px-blue.svg") no-repeat left 20px center / 14px
+    &::-webkit-input-placeholder
+      font-style: italic
+      color: $color6
+    &:-moz-placeholder
+      font-style: italic
+      color: $color6
+    &::-moz-placeholder
+      font-style: italic
+      color: $color6
+    &:-ms-input-placeholder
+      font-style: italic
+      color: $color6
+
 .input__clear
   width: 100%
   position: relative
@@ -618,6 +634,9 @@ button
   border-width: 5px 5px 0 5px
   border-color: #141515 transparent transparent transparent
   margin-left: 5px
+  &.b-gray 
+    border-color: #b7bcd6 transparent transparent transparent
+
 #box
   width: 100%
 .nav-link-arrow
@@ -816,20 +835,20 @@ button
     position: absolute
     width: 18px
     height: 18px
-    right: 9px
+    right: 5px
     &-crossshipment
       .btn-arrow
         &:first-child
-          top: 7px
+          top: 6px
           transform: scale(1,-1)
         &:last-child
-          bottom: 7px
+          bottom: 6px
     &-export
       .btn-arrow
-        bottom: 7px
+        bottom: 6px
     &-import
       .btn-arrow
-        bottom: 7px
+        bottom: 6px
         transform: scale(-1,-1)
 
   &-text
@@ -897,6 +916,11 @@ button
   color: #ffffff
   padding: 0 10px
   line-height: 45px
+  
+.btn-add_v2 
+  background: url("../img/add.svg") no-repeat center / contain
+  width: 45px
+  height: 45px
 
 .btn-submit
   max-width: 225px
@@ -940,6 +964,10 @@ button
   opacity: 1
 .text-small
   font-size: 10px!important
+  color: #b7bcd6
+.text-12
+  font-size: 12px
+  line-height: 1.75
   color: #b7bcd6
 .text-13
   font-size: 13px
@@ -1032,6 +1060,7 @@ button
   min-height: 43px
   display: flex
   align-items: center
+  min-width: 215px
   &:last-child
     border: none
   img
@@ -1073,7 +1102,7 @@ button
   &-bottom
     bottom: 15px
 .sidebar .nav-item
-  margin-top: 17px
+  margin-top: 10px
   margin-right: 7px
   &:first-child
     margin-top: 43px
@@ -1306,6 +1335,10 @@ button
     display: block
 .bg-gray
   background: $color6
+.bg-green
+  background-color: #49ddaa
+.bg-orange
+  background-color:#f99e04
 .bg-light-green
   background-color: rgba(#49ddaa, 0.15)
 .bg-light-orange
@@ -1318,6 +1351,8 @@ button
   background-color: #156ce4
 .bg-blue-bright
   background-color: $color4
+.bg-light
+   background-color: rgba(#24b1ff, 0.12)
 #files
   display: none
 .loader__files-drop
@@ -1506,6 +1541,8 @@ button
       font-size: 16px
       color: $color4
       font-weight: normal
+.text-up 
+  text-transform: uppercase
 .text-initial
   text-transform: initial
 .weight-medium
@@ -1849,15 +1886,17 @@ button
   //margin-bottom: 22px
   align-items: center
 
-@import "../components/pages/order/style"
-@import "../components/pages/products/style"
-@import "../components/pages/booking/style"
-@import "../components/pages/loading/style"
-@import "../components/pages/pre-carriage/style"
-@import "../components/pages/document/style"
-@import "../components/pages/rate/style"
-@import "../components/pages/rate-table/style"
-@import "../components/pages/timeline/style"
+@import "pages/order/style"
+@import "pages/products/style"
+@import "pages/booking/style"
+@import "pages/loading/style"
+@import "pages/pre-carriage/style"
+@import "pages/document/style"
+@import "pages/rate/style"
+@import "pages/rate-table/style"
+@import "pages/timeline/style"
+@import "pages/shipment/style"
+
 
 .table__rate-sea-2  .table__rate-item 
   height: auto
@@ -1879,7 +1918,7 @@ button
   position: relative
   z-index: 1
   overflow: visible!important
-  width: fit-content!important
+  width: min-content!important
   padding: 0!important
  
 .bg-before.bg-before-blue
@@ -1979,9 +2018,25 @@ button
   cursor: pointer
   text-transform: uppercase
 
+.nav-link_v3
+  padding: 10px 55px
+  border-bottom: 3px solid rgba(#b7bcd6, 0.19)
+  color: #282e3b
+  font-size: 16px
+  cursor: pointer
+  display: block
+  &.active 
+    border-color: #156ce4
+    color: #156ce4
+
 .nav-link.active 
   border-color: #156ce4
   color: #156ce4
+
+.contents__item_v3
+  display: none
+  &.active 
+    display: block
 
 .table__order .table__item__booking
   min-width: 170px
@@ -2059,6 +2114,31 @@ button
 .table__rate-road li:first-child .tooltip_other, .table__rate-road li:nth-child(2) .tooltip_other
   top: 100%
   bottom: auto
-  
-@import "media"
+
+.block__blue_v2
+  border-radius: 4px
+  background-color: #109cf1
+  line-height: 23px
+  padding: 0 16px
+  font-size: 13px
+  color: #ffffff
+
+.btn-blue_v2
+  width: 123px
+  height: 74px
+  border: solid 1px #109CF1
+  height: 100%
+  min-height: 74px
+
+.dots-transit
+  width: calc(8.33% - 5px)
+  height: 10px
+  background-color: rgba(#49ddaa, 0.3)
+  margin-right: 5px
+  &.active
+    background-color: #49ddaa
+  &:last-child
+    margin-right: 0
+@import "media.sass"
+
 

@@ -316,7 +316,7 @@
                     <div class="d-flex justify-content-between">
                         <ul class="nav nav-tabs_v2 pt-4">
                             <li class="nav-item">
-                                <a class="nav-link">DASHBOARD</a>
+                                <a class="nav-link active">DASHBOARD</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link ">BOOKING</a>
@@ -328,7 +328,7 @@
                                 <a class="nav-link">PUBLIC</a>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <a class="nav-link active">active</a>
+                                <a class="nav-link ">active</a>
                             </li>
                             <li class="nav-item" role="presentation">
                                 <a class="nav-link">history</a>
@@ -336,7 +336,7 @@
                         </ul>
                     </div>
                     <div id="contents" class="contents py-3">
-                        <div class="contents__item">
+                        <div class="contents__item active" >
                             <div class="row">
                                 <div class="col-xl-6 mb-xl-5 mb-4">
                                     <div class="dashboard-item">
@@ -474,7 +474,10 @@
                                 </div>
                             </div>
                         </div> 
-                        <div class="contents__item active">
+                        <div class="contents__item"></div>
+                        <div class="contents__item"></div>
+                        <div class="contents__item"></div>
+                        <div class="contents__item ">
                             <div class="box-white px-0 my-2 chipment-container">
                                 <div class="bg-light d-flex flex-wrap justify-content-between align-items-center px-sm-4 pt-2 pb-4">
                                     <div>
@@ -672,23 +675,24 @@
                                                             <div class="row">
                                                                 <div class="col-sm-6 mb-4">
                                                                     <div class="d-flex align-items-center">
-                                                                        <img src="img/flag.svg" alt="flag" class="flag">
-                                                                        <div class="pl-1">
+                                                                        <img src="img/flag.svg" alt="flag" class="flag flag-big mx-2">
+                                                                        <div class="px-1">
                                                                             <p class="text-14 c-navy-blue m-0">Port of loading</p>
                                                                             <p class="text-16 c-dark">Klaideda, LT </p>
                                                                         </div>
                                                                     </div>
                                                                 </div>
                                                                 <div class="col-sm-6 mb-4">
-                                                                    <div class="d-flex align-items-center justify-content-sm-end">
-                                                                        <img src="img/flag.svg" alt="flag" class="flag">
-                                                                        <div class="pl-1">
+                                                                    <div class="d-flex flex-sm-row flex-row-reverse align-items-center justify-content-end">
+                                                                        <div class="px-1 text-sm-right">
                                                                             <p class="text-14 c-navy-blue m-0">Port of loading</p>
                                                                             <p class="text-16 c-dark">Klaideda, LT </p>
                                                                         </div>
+                                                                        <img src="img/flag.svg" alt="flag" class="flag flag-big mx-2">
                                                                     </div>
                                                                 </div>
                                                             </div>
+                                                           
                                                             <div class="d-flex flex-wrap justify-content-between">
                                                                 <p class="text-12 pt-1">Departing 25 May, 2020  15:23 </p>
                                                                 <p class="text-12 pt-1">Arraving 30 June, 2020  15:00 </p>
@@ -765,6 +769,7 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="contents__item_v3"></div>
                                         <div class="contents__item_v3 ">
                                             <div class="timeline py-5">
                                                 <div class="timeline-row d-flex flex-md-row flex-row-reverse justify-content-md-center justify-content-end">
@@ -1231,8 +1236,580 @@
                                             </ul>
                                         </div>
                                     </div>
+                                    <div class="chipment-popup">
+                                        <div class="d-flex justify-content-between align-items-center my-sm-3 p-sm-4 p-3">
+                                            <h2 class="title">LOADING</h2>
+                                            <a href="#" class="close">
+                                                <img src="img/gray__cancel.svg" alt="close">
+                                            </a>
+                                        </div>
+                                        <div class="table table__shipment_loading">
+                                            <div class="table__head d-none d-lg-block">
+                                                <div class="row">
+                                                    <div class="col-6">
+                                                        <div class="row ">
+                                                            <div class="col-5">
+                                                                <div class="d-flex">
+                                                                    <label class="checkbox__blue">
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                    </label>
+                                                                    <p>ORDER NO</p>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-4"><p>DATE</p></div>
+                                                            <div class="col-3"><p>RATE</p></div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6">
+                                                        <div class="row">
+                                                            <div class="col-4"><p>CONTAINER</p></div>
+                                                            <div class="col-4"><p>TRUCK</p></div>
+                                                            <div class="col-4"><p>TRANSPORTER</p></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <ul class="chipment-popup__table__body">
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item py-3">
+                                                    <div class="row align-items-lg-center">
+                                                        <div class="col-lg-6">
+                                                            <div class="row justify-content-between align-items-lg-center">
+                                                                <div class="col-lg-5">
+                                                                    <p><span class="d-lg-none d-block mb-2">ORDER NO</span></p>
+                                                                    <div class="d-flex">
+                                                                        <label class="checkbox__blue">
+                                                                            <input type="checkbox" class="checkbox">
+                                                                            <span class="checkbox__icon-blue m-0 mr-3"></span>
+                                                                        </label>
+                                                                        <p>P20-0140-K77781</p>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-lg-4 col-6">  
+                                                                    <p> <span class="d-lg-none d-block mb-2 mt-3">DATE</span></p>
+                                                                    <p>R.  10.05.2020  </p>
+                                                                    <p>L.  18.05.2020  </p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">RATE</span>450 €</p></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-lg-6">
+                                                            <div class="row align-items-lg-center">
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">CONTAINER</span>48764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRUCK</span>888764823</p></div>
+                                                                <div class="col-md-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">TRANSPORTER</span>Logistic Company</p></div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="chipment-popup px-sm-4 px-3 pb-5">
+                                        <div class="box-white__top d-flex justify-content-between align-items-center mt-sm-3 py-sm-4 py-3">
+                                            <h2 class="title">PARTIES</h2>
+                                            <div class="d-flex align-items-center btns">
+                                                <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center">
+                                                    <img src="img/white__create-24-px.svg" alt="edit" class="edit">
+                                                    <span class="btn-item d-sm-flex d-none">
+                                                        <img src="img/create-14.svg" alt="edit" class="edit">
+                                                        Edit rates
+                                                    </span>
+                                                </a>
+                                                <a href="#" class="close ml-4">
+                                                    <img src="img/gray__cancel.svg" alt="close">
+                                                </a>
+                                            </div>
+                                           
+                                        </div>
+                                       <div class="row">
+                                           <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Client</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Cargo company">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                           </div>
+                                           <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Agent</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Mark Melnikov">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Shipper</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Logistic company">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                           </div>
+                                           <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Customs broker</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Spanvall Poultry Bedding">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Transporter</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Cargo company LTD">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                           </div>
+                                           <div class="col-lg-4 col-sm-6 mt-4 pt-2">
+                                                <p class="text-14">Consigner</p>
+                                                <div class="d-flex align-items-center relative mr-md-4 pr-4">
+                                                    <input type="text" class="input mr-3" value="Logistic company">
+                                                    <button type="reset" class="delete_v1"></button>
+                                                </div>
+                                            </div>
+                                       </div>
+                                    </div>
+                                    <div class="chipment-popup">
+                                        <div class="d-flex justify-content-between align-items-center my-sm-3 p-sm-4 p-3">
+                                            <h2 class="title">DOCUMENTS</h2>
+                                            <a href="#" class="close">
+                                                <img src="img/gray__cancel.svg" alt="close">
+                                            </a>
+                                        </div>
+                                        <div class="table document__table">
+                                            <div class="table__head d-none d-lg-block">
+                                                <div class="row">
+                                                    <div class="col-3"><p>DOCUMENTS</p></div>
+                                                    <div class="col-9">
+                                                        <div class="row">
+                                                            <div class="col-3"><p>DATE</p></div>
+                                                            <div class="col-3"><p>FILE</p></div>
+                                                            <div class="col-4"><p>ASSIGNED</p></div>
+                                                            <div class="col-2"><p>Actions</p></div>
+                                                        </div>
+                                                    </div>
+                                                   
+                                                </div>
+                                            </div>
+                                            <ul class="table__body">
+                                                <li class="table__body-item">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <p><span class="d-lg-none d-flex mb-2">DOCUMENTS:</span>Shipping Line Instruction</p>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">DATE:</span>11.02.2020</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>FILE:</span></p>
+                                                                    <p class="d-flex align-items-center">36_20021314.pdf <span class="close-document"></span></p>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">ASSIGNED:</span>SIPER, AGNT, SIPER, AGNT</p>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>ACTIONS:</span></p>
+                                                                    <div class="d-flex pl-lg-2">
+                                                                        <a href="#"><img src="img/print.svg" alt="print" class="print"></a>
+                                                                        <a href="#"> <img src="img/bin.svg" alt="garbage" class="garbage"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <p><span class="d-lg-none d-flex mb-2">DOCUMENTS:</span>Shipping Line Instruction</p>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">DATE:</span>11.02.2020</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>FILE:</span></p>
+                                                                    <p class="d-flex align-items-center">36_20021314.pdf <span class="close-document"></span></p>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">ASSIGNED:</span>SIPER, AGNT, SIPER, AGNT</p>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>ACTIONS:</span></p>
+                                                                    <div class="d-flex pl-lg-2">
+                                                                        <a href="#"><img src="img/print.svg" alt="print" class="print"></a>
+                                                                        <a href="#"> <img src="img/bin.svg" alt="garbage" class="garbage"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <p><span class="d-lg-none d-flex mb-2">DOCUMENTS:</span>Shipping Line Instruction</p>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">DATE:</span>11.02.2020</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>FILE:</span></p>
+                                                                    <p class="d-flex align-items-center">36_20021314.pdf <span class="close-document"></span></p>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">ASSIGNED:</span>SIPER, AGNT, SIPER, AGNT</p>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>ACTIONS:</span></p>
+                                                                    <div class="d-flex pl-lg-2">
+                                                                        <a href="#"><img src="img/print.svg" alt="print" class="print"></a>
+                                                                        <a href="#"> <img src="img/bin.svg" alt="garbage" class="garbage"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <p><span class="d-lg-none d-flex mb-2">DOCUMENTS:</span>Shipping Line Instruction</p>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">DATE:</span>11.02.2020</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>FILE:</span></p>
+                                                                    <p class="d-flex align-items-center">36_20021314.pdf <span class="close-document"></span></p>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">ASSIGNED:</span>SIPER, AGNT, SIPER, AGNT</p>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>ACTIONS:</span></p>
+                                                                    <div class="d-flex pl-lg-2">
+                                                                        <a href="#"><img src="img/print.svg" alt="print" class="print"></a>
+                                                                        <a href="#"> <img src="img/bin.svg" alt="garbage" class="garbage"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                                <li class="table__body-item">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-lg-3">
+                                                            <p><span class="d-lg-none d-flex mb-2">DOCUMENTS:</span>Shipping Line Instruction</p>
+                                                        </div>
+                                                        <div class="col-lg-9">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">DATE:</span>11.02.2020</p>
+                                                                </div>
+                                                                <div class="col-lg-3 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>FILE:</span></p>
+                                                                    <label for="files" class="document__add d-flex align-items-center">
+                                                                        <span class="loader__files-name">+ Add document</span>
+                                                                        <span class="close-document"></span>
+                                                                        <input type="file" id="files" name="files[]" multiple="">
+                                                                    </label>
+                                                                </div>
+                                                                <div class="col-lg-4 col-md-4 col-6">
+                                                                    <p><span class="d-lg-none d-flex mb-2 mt-3">ASSIGNED:</span>SIPER, AGNT, SIPER, AGNT</p>
+                                                                </div>
+                                                                <div class="col-lg-2 col-md-4 col-6">
+                                                                    <p class="d-lg-none d-flex mb-2 mt-3"><span>ACTIONS:</span></p>
+                                                                    <div class="d-flex pl-lg-2">
+                                                                        <a href="#"><img src="img/print.svg" alt="print" class="print"></a>
+                                                                        <a href="#"> <img src="img/bin.svg" alt="garbage" class="garbage"></a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                      
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                            <div class="document__add-row">
+                                                <div class="row align-items-center">
+                                                    <div class="col-md-3">
+                                                        <div class="select">
+                                                            <div class="select__item"> + Add a new document </div>
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option active">document 1</li>
+                                                                    <li class="select__option ">document 2</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-3">
+                                                        <a href="#" class="btn-aquamarine">Save </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="chipment-popup">
+                                        <div class="box-white__top d-flex justify-content-between align-items-center my-sm-3 p-sm-4 p-3">
+                                            <h2 class="title">TRACKING</h2>
+                                            <a href="#" class="close">
+                                                <img src="img/gray__cancel.svg" alt="close">
+                                            </a>
+                                        </div>
+                                        <div class="row justify-content-center">
+                                            <div class="col-lg-7 p-4">
+                                                <div class="row ">
+                                                    <div class="col-sm-6 mb-4">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="img/flag.svg" alt="flag" class="flag mx-2">
+                                                            <div class="px-1">
+                                                                <p class="text-16 text-initial c-navy-blue mb-2">Port of loading</p>
+                                                                <p class="title text-initial c-dark">Klaideda, LT  </p>
+                                                                <p>05.08.2020 </p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-sm-6 mb-4">
+                                                        <div class="d-flex flex-sm-row flex-row-reverse align-items-center justify-content-end">
+                                                            <div class="px-1 text-sm-right">
+                                                                <p class="text-16 text-initial c-navy-blue mb-2">Port of loading</p>
+                                                                <p class="title text-initial c-dark">Chaihai, CN </p>
+                                                                <p>05.08.2020 </p>
+                                                            </div>
+                                                            <img src="img/flag.svg" alt="flag" class="flag mx-2">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-wrap justify-content-between">
+                                                    <p class="text-12 pt-1">Departing 25 May, 2020  15:23 </p>
+                                                    <p class="text-12 pt-1">Arraving 30 June, 2020  15:00 </p>
+                                                </div>
+                                                <div class="d-flex justify-content-between py-2">
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit active"></div>
+                                                    <div class="dots-transit "></div>
+                                                    <div class="dots-transit "></div>
+                                                    <div class="dots-transit "></div>
+                                                </div>
+                                                <p class="c-blue text-center title text-initial mt-3">20 days left</p>
+                                                <p class="text-center text-italic c-navy-blue mt-1">Transit time 30 days</p>
+                                            </div>
+                                            <div id="map"></div>
+                                          
+                                        </div>
+                                    </div>
                                 </div>
-                               
                             </div>
                         </div>
                     </div>

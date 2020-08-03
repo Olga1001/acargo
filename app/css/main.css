@@ -2764,7 +2764,8 @@ button {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column; 
+  background: #fff;}
   .table__order .table__item.noresize {
     overflow: visible; }
   .table__order .table__item .input-table {
@@ -2793,15 +2794,13 @@ button {
   .table__order .table__item__week {
     min-width: 77px; }
   .table__order .table__item__routing {
-    min-width: 325px; }
+    min-width: 295px; }
   .table__order .table__item__schedule {
     min-width: 160px; }
   .table__order .table__item__schedule2 {
     min-width: 120px; }
   .table__order .table__item__orders {
     min-width: 235px; }
-    .table__order .table__item__orders p.text-14 {
-      margin-left: -8px; }
   .table__order .table__item__dates {
     min-width: 162px; }
     .table__order .table__item__dates a, .table__order .table__item__dates .text-14 {
@@ -2868,8 +2867,30 @@ button {
   width: fit-content;
   background: #fff;
   border-style: solid;
-  border-width: 0 0 1px 5px;
-  border-color: transparent transparent #b7bcd6 transparent; }
+  border-width: 1px 1px 1px 5px;
+  margin-top: -1px;
+  position: relative;
+  z-index: 1;
+  border-color: #b7bcd6 transparent #b7bcd6 transparent; }
+  .table__order-list:hover {
+    z-index: 3;
+    border-top-color: #109cf1;
+    border-bottom-color: #109cf1;
+  }
+  /* .table__order .table__order-list {
+    border: none;
+    width: 100%;
+  } */
+  /* .table__order .table__item {
+    border-color: #b7bcd6 transparent #b7bcd6 transparent; 
+    border-style: solid;
+    border-width: 1px 0 1px 0;
+
+  }
+  .table__order .table__order-list:hover .table__item {
+    border-top-color: #109cf1;
+    border-bottom-color: #109cf1; */
+  }
   .table__order-list:last-child .tooltip__table {
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -2878,15 +2899,16 @@ button {
     left: calc(100% + 10px); }
 
 .table__order {
-  width: calc(100% + 7vw + 55px);
+  width: calc(100% + 7vw + 55px + 1.5rem);
   margin: 18px -30px 0 -25px;
   overflow-x: auto;
   scrollbar-width: thin;
   overflow-y: auto;
+  background: #fff;
   max-height: 550px; }
   .table__order p.text-14 {
     font-size: 14px;
-    line-height: 1.36;
+    line-height: 19px;
     margin-bottom: 0; }
   .table__order p.c-orange {
     position: relative; }
@@ -2942,7 +2964,12 @@ button {
 .table__order__bottom {
   background-color: rgba(16, 156, 241, 0.1);
   padding: 8px 20px;
+  direction: rtl;
+  width: auto;
   margin-left: -5px; }
+.table__order__bottom .input-notes {
+  width: 500px;
+}
 
 .tool-item, a.tool-item {
   border-radius: 2px;
@@ -4727,6 +4754,17 @@ button {
   width: 14px;
   height: 14px;
 }
+.hide-focus {
+  padding: 5px 10px!important;
+  background: #fff!important;
+}
+.table__order__sticky {
+  width: max-content;
+  position: sticky;
+  right: 15px;
+  padding: 0 15px;
+  direction: ltr;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1890px) {
@@ -5393,4 +5431,7 @@ button {
     font-size: 16px; }
   .nav-tabs_v3 .nav-item {
     width: 50%;
-    text-align: center; } }
+    text-align: center; } 
+    .table__order__bottom .input-notes {
+      width: 100%;
+    }}

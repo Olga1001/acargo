@@ -154,7 +154,7 @@ $(document).ready(function () {
     $(".container-fluid, .popup").removeClass('active');
   }); //popup - rate
 
-  $(".nav-link").click(function (e) {
+  $(".nav-tabs .nav-link").click(function (e) {
     e.preventDefault();
     $(this).addClass('active').parent().siblings().find(".nav-link").removeClass('active');
     var index = $(this).parent().index();

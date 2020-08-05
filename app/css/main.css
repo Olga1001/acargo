@@ -2900,9 +2900,17 @@ button {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     left: calc(100% + 10px); }
-
+.select-normal {
+  background: none;
+  border: none;
+  outline: none;
+}
+.select-normal option {
+  color: #282e3b;
+  padding: 3px 10px;
+}
 .table__order {
-  width: calc(100% + 7vw + 55px + 1.5rem);
+  width: calc(100% + 7vw + 55px);
   margin: 18px -30px 0 -25px;
   overflow-x: auto;
   scrollbar-width: thin;
@@ -4778,7 +4786,13 @@ button {
   padding: 5px 10px!important;
   background: #fff!important;
 }
-
+.b-none {
+  border: none
+}
+.navbar-expand .navbar-nav {
+  background-color: #37517e;
+  position: relative;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1890px) {
@@ -4804,6 +4818,9 @@ button {
     width: 100%;
     overflow-x: auto;
     position: relative; }
+    .navbar-list.active {
+        overflow: visible;
+    }
     .navbar-list:before {
       content: '';
       position: absolute;

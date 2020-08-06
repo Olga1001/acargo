@@ -819,7 +819,12 @@ button {
     fill: #109cf1; }
   .checkbox:checked ~ .check__text {
     color: #109CF1; }
-
+.checkbox-absolute {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 5;
+}
 .slider-tick.round.disabled {
   background: #fff; }
   .slider-tick.round.disabled:before {
@@ -4425,7 +4430,15 @@ button {
         content: none; }
     .timeline-row:first-child .timeline-circle:before {
       top: 120px; }
-
+.timeline-date {
+  font-size: 20px;
+  color: #37517e;
+}
+.timeline-date span{
+  display: block;
+  font-size: 18px;
+  color: #b7bcd6;
+}
 .dashboard-item {
   border-radius: 10px;
   -webkit-box-shadow: 0 3px 19px 0 rgba(55, 81, 126, 0.39);
@@ -5296,7 +5309,13 @@ button {
     padding: 15px;
     font-size: 14px; }
   .nav-link_v3 {
-    padding: 10px 25px; } }
+    padding: 10px 25px; } 
+  .timeline-date {
+    font-size: 18px;
+  }
+  .timeline-date span{
+    font-size: 14px;
+  }}
 
 @media only screen and (max-width: 575px) {
   .timeline-icon {
@@ -5391,6 +5410,7 @@ button {
     height: 15px; }
   .checkbox__transport-text {
     font-size: 16px; }
+  
   .transfer {
     width: -webkit-fit-content;
     width: -moz-fit-content;

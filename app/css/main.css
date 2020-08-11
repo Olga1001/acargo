@@ -2897,9 +2897,9 @@ button {
     width: 100%;
   }
   .table__order .table__item {
-    border-color: #b7bcd6 transparent #b7bcd6 transparent; 
+    border-color: #b7bcd6 #fff #b7bcd6 transparent; 
     border-style: solid;
-    border-width: 1px 0 1px 0;
+    border-width: 1px 1px 1px 0;
 
   }
   .table__order .table__order-list:hover .table__item {
@@ -4678,11 +4678,23 @@ button {
     border-width: 0 0 0 1px; }
 
 .table__shiipment-booking .table__order-list {
-  border-width: 1px 1px 1px 1px;
+  border-width: 0px;
   border-color: #b7bcd6 transparent transparent transparent;
   margin-top: -1px;
   position: relative; }
-
+  .table__shiipment-booking .table__order-list .table__item {
+    padding: 7px 20px 7px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column; 
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
 .table__shiipment-booking .table__order-list:hover {
   border-color: #109cf1;
   z-index: 2; }

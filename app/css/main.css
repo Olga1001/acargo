@@ -4904,6 +4904,15 @@ button {
       width: 15px;
       height: 15px;
       margin-top: 10px; }
+      .last.active-scale .last-btn {
+        display: block;
+      }
+      .table__order-list.active-focus .last {
+        opacity: 1;
+      }
+      .table__order-list.active-focus .last-btn {
+        display: block;
+      }
     .last-btns {
       width: -webkit-fit-content;
       width: -moz-fit-content;
@@ -4919,7 +4928,12 @@ button {
       display: block;
       padding: 10px;
       pointer-events: auto;
+      display: none;
       z-index: 4; }
+      
+      .last-btn:last-child {
+        display: block;
+      }
       .last-btn-icon {
         width: 13px;
         height: 15px;

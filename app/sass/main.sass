@@ -2275,7 +2275,29 @@ button
 .table__order .table__order-list, .table__order .table__order-head
   &.bl-0 
     border-left-width: 0px
+.fs-20 
+    font-size: 20px
 
+.icon-client
+    width: 27px
+    height: 100%
+    object-fit: contain
+    margin: 0 13px
+
+.table__body__client 
+    max-height: 415px
+
+.relative
+    .clear 
+        transition: all 0.3s ease
+        opacity: 0
+    &:hover 
+        .clear
+            opacity: 1
+.clear, .clear-two, .delete_v1
+    &:hover 
+        &:before, &:after
+            background-color: #e30c0c
 @import "media.sass"
 
 

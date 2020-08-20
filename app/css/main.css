@@ -1062,6 +1062,7 @@ button {
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;
+  min-width: 170px;
   padding: 14px 33px; }
 
 .btn-template {
@@ -1163,7 +1164,9 @@ button {
   font-size: 16px;
   color: #109cf1;
   text-decoration: underline; }
-
+.underline {
+  text-decoration-line: underline;
+}
 .text-decoration-none {
   text-decoration: none; }
 
@@ -4870,10 +4873,10 @@ button {
     padding-top: 25px; }
     .nav-tabs_companies .nav-link {
       padding: 10px 40px;
-      border-bottom: 3px solid rgba(183, 188, 214, 0.19);
+      border-bottom: 3px solid #f2f2f7;
       font-size: 16px;
       color: #282e3b;
-      min-width: 165px;
+      min-width: 185px;
       text-align: center; }
       .nav-tabs_companies .nav-link.active {
         color: #156ce4;
@@ -4951,6 +4954,35 @@ button {
   
   .table__order .table__order-list.bl-0, .table__order .table__order-head.bl-0 {
     border-left-width: 0px; }
+    .ml--1 {
+      margin-left: -4px; }
+    
+    .btn-aquamarine.big.fs-16 {
+      font-size: 16px; }
+      .fs-20 {
+        font-size: 20px; }
+      
+      .icon-client {
+        width: 27px;
+        height: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        margin: 0 13px; }
+      
+      .table__body__client {
+        max-height: 415px; }
+      
+      .relative .clear {
+        -webkit-transition: all 0.3s ease;
+        -o-transition: all 0.3s ease;
+        transition: all 0.3s ease;
+        opacity: 0; }
+      
+      .relative:hover .clear {
+        opacity: 1; }
+      
+      .clear:hover:before, .clear:hover:after, .clear-two:hover:before, .clear-two:hover:after, .delete_v1:hover:before, .delete_v1:hover:after {
+        background-color: #e30c0c; }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1890px) {
@@ -5140,8 +5172,10 @@ button {
     margin-right: 1.5rem; }
   .nav-tabs_v2 .nav-link {
     padding: 15px 25px; } }
-
 @media only screen and (max-width: 991px) {
+  .nav-tabs_companies .nav-item{
+    width: 50%;
+  }
   .pre-carriage__card_v2 {
     padding: 0 15px 20px;
     max-height: 300px; }
@@ -5630,4 +5664,8 @@ button {
     text-align: center; } 
     .table__order__bottom .input-notes {
       width: 100%;
-    }}
+    }
+    .nav-tabs_companies .nav-item{
+      width: 100%;
+    }
+  }

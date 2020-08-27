@@ -77,6 +77,11 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+
+  $(".relative .tool").click(function (e) {
+    e.stopPropagation();
+     $(this).closest('.relative').find(".select__drop").slideToggle(300);
+  })
   $(".btn").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
@@ -229,6 +234,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+
   $(".btn-filter").click(function (e) {
     e.preventDefault();
     $(this).toggleClass('active');
@@ -269,8 +275,8 @@ $(document).ready(function () {
     $("input.range-way").bootstrapSlider('refresh');
     $("input.range-way2").bootstrapSlider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
+    $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale')
 
-    $(this).closest(".table__order-list").find(".last").toggleClass("active-scale ").closest(".table__order-list").siblings().find(".last").removeClass("active-scale ");
   });
   var $inputs = $('.table__rate-item'); // Resize based on text if text.length > 0
   // Otherwise resize based on the placeholder

@@ -2859,12 +2859,15 @@ button {
   .table__order .table__item__customer, .table__order .table__item__place {
     min-width: 260px; }
   .table__order .table__item__truck a {
-    min-height: 21px; }
+    line-height: 19px;
+    min-height: 19px; }
   .table__order .table__item__qty, .table__order .table__item__cargo, .table__order .table__item__documents, .table__order .table__item__out, .table__order .table__item__kpi {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
-
+    .table__order .table__order-list .table__item.table__item__truck {
+      padding-top: 45px;
+    }
 .relative {
   position: relative; }
 
@@ -2880,6 +2883,10 @@ button {
 .table__order_v2 .table__order-list.active {
   border-left-width: 2px!important;
   border-left-color: #109cf1!important;
+}
+.table__order_v2 .table__order-list.bl-5 {
+  border-left-width: 5px!important;
+
 }
 .table__order-list.active .click__more:before {
   -webkit-transform: translate(-50%, -50%) scale(1, -1);
@@ -2943,6 +2950,10 @@ button {
   .table__order .table__order-list:hover .table__item {
     border-top-color: #109cf1;
     border-bottom-color: #109cf1;
+  }
+  .table__order .table__order-list.bl-1:hover {
+    border-left-color: #109cf1;
+    z-index: 1;
   }
   .table__order-list:last-child .tooltip__table {
     top: 50%;
@@ -3195,20 +3206,7 @@ button {
     width: 27px;
     height: auto; }
 
-.bt-green {
-  border-left: 5px solid #49ddaa; }
 
-.bt-pink {
-  border-left: 5px solid #e4b0fd; }
-
-.bt-orange {
-  border-left: 5px solid #f99e04; }
-
-.bt-yellow {
-  border-left: 5px solid #f5e943; }
-
-.bt-blue {
-  border-left: 5px solid #109cf1; }
 
 .btns .btn-aquamarine {
   margin-left: 10px;
@@ -5001,9 +4999,17 @@ button {
     padding-right: 50px !important; }
     .table__order_v2 .table__item:last-child.table__item__kpi {
       min-width: 116px; }
-  
-  .table__order .table__order-list.bl-0, .table__order .table__order-head.bl-0 {
-    border-left-width: 0px; }
+      .table__order-head.bl-5,   .table__order-list.bl-5{
+        border-left-width: 5px !important;
+      }
+  .table__order .table__order-list.bl-1, .table__order .table__order-head.bl-1 {
+    z-index: initial;
+    border-left-width: 1px; 
+    border-left-color: #b7bcd6;
+  }
+  .table__order-list.active-focus {
+    border-left-width: 2px!important;
+  }
     .ml--1 {
       margin-left: -4px; }
     
@@ -5299,7 +5305,7 @@ button {
   border-style: solid;
   border-width: 1px 1px 1px 0;
   z-index: 4; }
-
+  
 .last {
   width: 33px;
   height: 100%; }
@@ -5314,24 +5320,42 @@ button {
   position: initial; }
 
 .table__order_v2 .table__order-list {
-  z-index: initial;
-  border-left-width: 2px !important;
-  border-left-color: #b7bcd6; }
+  z-index: initial;}
 
 .table__order_v2 .table__order-list.active:hover {
-  border-width: 2px 0 2px 2px;
+  border-width: 0px 0 2px 2px;
   border-color: #109cf1; }
 
-.table__order_v2 .table__order-list:hover {
-  border-left-color: #109cf1; }
+
   .table__order_v2 .table__order-list:hover .table__item {
     border-color: #109cf1 #fff #109cf1 transparent;
     border-width: 2px 1px 2px 0;
     z-index: 4; }
+    .table__order_v2 .table__order-list.bl-1:hover {
+      border-left-width: 2px;
+      border-left-color: #109cf1; }
 .select__drop_center {
   left: 50%;
   transform: translateX(-50%);
 }
+.table__order .table__item.active .input-text {
+  line-height: 19px;
+}
+.bt-green {
+  border-left: 5px solid #49ddaa!important; }
+
+.bt-pink {
+  border-left: 5px solid #e4b0fd!important; }
+
+.bt-orange {
+  border-left: 5px solid #f99e04!important; }
+
+.bt-yellow {
+  border-left: 5px solid #f5e943!important; }
+
+.bt-blue {
+  border-left: 5px solid #109cf1!important; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (min-width: 1890px) {

@@ -1548,6 +1548,17 @@ button {
     display: block; }
   .circle:focus .menu, .circle:active .menu, .circle .menu:hover {
     display: block; }
+    
+.orders__green {
+  border-radius: 8.5px;
+  background-color: #49ddaa;
+  line-height: 17px;
+  padding: 0 10px;
+  font-size: 10px;
+  color: #fff;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content; }
 .bg-yellow {
   background-color: #f5e943;
 }
@@ -3112,16 +3123,6 @@ button {
     font-style: italic;
     color: #b7bcd6; }
 
-.orders__green {
-  border-radius: 8.5px;
-  background-color: #49ddaa;
-  line-height: 17px;
-  padding: 0 10px;
-  font-size: 10px;
-  color: #fff;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content; }
 
 .status-item {
   width: 10px;
@@ -4949,7 +4950,7 @@ button {
       height: 15px;
       margin-top: 10px; }
       .last.active-scale .last-btn {
-        display: block;
+        display: block!important;
       }
       .active-focus .last {
         opacity: 1;
@@ -4961,7 +4962,7 @@ button {
       }
       .active-focus {
           border-left-color: #109cf1!important; }
-      .active-focus .last-btn {
+      .last-btn.hide {
         display: block;
       }
     .last-btns {
@@ -4976,15 +4977,12 @@ button {
       background-color: #109cf1; }
     .last-btn {
       background-color: #109cf1;
-      display: block;
+      display: none;
       padding: 11px 10px;
       pointer-events: auto;
-      display: none;
+      display: block;
       z-index: 4; }
       
-      .last-btn:last-child {
-        display: block;
-      }
       .last-btn-icon {
         width: 13px;
         height: 15px;

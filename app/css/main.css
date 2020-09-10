@@ -1658,7 +1658,10 @@ button {
 
 .popup .box-white.popup__rate-sea, .popup .box-white.popup__max-width {
   margin: 0 auto !important; }
-
+.popup_acitve {
+  opacity: 1!important;
+  transition: none!important;
+}
 .table__merge {
   max-width: 560px;
   width: 100%;
@@ -5017,7 +5020,6 @@ button {
     border-color: #109cf1 #fff #109cf1 transparent;
     border-width: 2px 1px 2px 0;
     z-index: 4;
-    position: relative;
 
   }
     .ml--1 {
@@ -5103,6 +5105,7 @@ button {
       height: 26px;
       max-width: 160px; }
     .select-contry .select__item {
+      height: auto;
       line-height: 24px;
       padding: 0 30px; }
     .select-contry .btns .btn-aquamarine {
@@ -6105,4 +6108,21 @@ button {
       width: 35px; }
   .nav-tabs_company .nav-item {
     width: 50%; }
+    .select-contry {
+      flex-direction: column;
+    }
+    .select-contry .select {
+      max-width: 100%;
+      border-width: 1px 0 0 0;
+    }
+    .select-contry .select {
+      height: auto;
+      margin: 0;
+    }
+    .select-contry .select__item {
+      padding: 10px;
+    }
+    .select-contry .btns .btn-aquamarine {
+      width: 100%;
+    }
   }

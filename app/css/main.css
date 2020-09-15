@@ -369,6 +369,7 @@ button {
     transition: all 0.2s ease;
     width: 10px;
     height: 100%;
+    min-height: 5px;
     left: auto;
     right: 16px;
     pointer-events: none; }
@@ -434,6 +435,8 @@ button {
   .select__item {
     line-height: 40px;
     padding: 0 30px 0 13px;
+    min-width: 30px;
+    min-height: 10px;
     color: #67758d;
     font-size: 16px;
     white-space: nowrap;
@@ -803,6 +806,9 @@ button {
     background: url("../img/check-gray.svg") no-repeat center/100%; }
   .checkbox:checked ~ .radio__check:before {
     background: #b7bcd6; }
+    .checkbox:checked ~ .radio__check.c-blue:before {
+      background: #109cf1;
+    }
   .checkbox:checked ~ .card__check {
     background: url("../img/check-gray.svg") no-repeat center/100%;
     border: none; }
@@ -862,7 +868,9 @@ button {
     -webkit-transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%); }
-
+.radio__check.c-blue {
+  border: solid 1px #109cf1;
+}
 .box-white {
   border-radius: 4px;
   -webkit-box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06);
@@ -1150,6 +1158,9 @@ button {
   font-size: 20px;
   font-weight: 500;
   color: #ffffff; }
+
+.text-t-up {
+  text-transform: uppercase;}
 
 .link {
   color: #156ce4;
@@ -3070,7 +3081,7 @@ button {
     top: 0;
     height: 100%;
     width: 100%;
-    background-color: rgba(16, 156, 241, 0.1);
+    /* background-color: rgba(16, 156, 241, 0.1); */
   }
   .table__order__sticky {
     width: max-content;
@@ -4899,7 +4910,9 @@ button {
 
 .fs-14 {
   font-size: 14px; }
-
+.fs-15 {
+  font-size: 15px;
+}
 .btn-aquamarine_normal {
   min-width: 153px;
   width: -webkit-fit-content;
@@ -5416,6 +5429,33 @@ button {
   }
   .table__order .table__order-head .table__item__last {
     background-color: #109cf1;
+  }
+  .table-p-m {
+    margin-left: 0!important;
+    margin-right: 0!important;
+    width: 100%!important;
+  }
+  .select-block {
+    border: none; 
+    width: fit-content;
+    height: fit-content;
+    border-radius: 14px;
+    background-color: #49ddaa;
+    cursor: pointer;
+  }
+  .select-block:before {
+    background-image: url("../img/arrow-drop-down-24-px-white.svg");
+  }
+  .select-block .select__item {
+    color: #ffffff;
+    font-size: 13px;
+    width: auto;
+    line-height: normal;
+    padding: 4px 31px 5px 20px;
+    min-height: auto;
+  }
+  .shadow-2 {
+    box-shadow: 0 1px 6px 0 rgba(40, 46, 59, 0.21);
   }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

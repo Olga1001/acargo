@@ -16,8 +16,12 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     }
 
     ;
+  
   }); // Close any open menu accordions when window is resized below 768px
-
+  if (window.matchMedia("(max-width: 768px)").matches) { 
+    $("body").removeClass("sidebar-toggled");
+    $(".sidebar").removeClass("toggled");
+  }
   $(window).resize(function () {
     if ($(window).width() < 768) {
       $('.sidebar .collapse').collapse('hide');
@@ -204,6 +208,29 @@ $(document).ready(function () {
 }); //daterangepicker
 
 $(document).ready(function () {
+
+  $(function () {
+    $('input[name="calendar"]').daterangepicker({
+      singleDatePicker: true,
+      // opens: 'center',
+      daysOfWeekHighlighted: "0,6",
+      autoUpdateInput: true,
+      inline:true,
+      showCustomRangeLabel: false,
+      alwaysShowCalendars: true,
+      alwaysOpen: true,
+      weekStart: 1,
+      locale: {
+        applyLabel: 'Add event',
+        direction: 'calendar-container'
+      }
+    }, function (start, end, label) {
+      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    });
+  
+  });
+
+
   $(function () {
     $('input[name="daterange"]').daterangepicker({
       opens: 'left',
@@ -283,7 +310,7 @@ $(document).ready(function () {
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
     
   });
-  var $inputs = $('.table__rate-item, .block_resize-input'); // Resize based on text if text.length > 0
+  var $inputs = $('.table__rate-item, .select-calendar'); // Resize based on text if text.length > 0
   // Otherwise resize based on the placeholder
 
   function resizeForText(text) {

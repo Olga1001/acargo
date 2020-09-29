@@ -310,7 +310,7 @@ $(document).ready(function () {
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
     
   });
-  var $inputs = $('.table__rate-item, .select-calendar'); // Resize based on text if text.length > 0
+  var $inputs = $('.table__rate-item, .select-calendar, .block_resize-input'); // Resize based on text if text.length > 0
   // Otherwise resize based on the placeholder
 
   function resizeForText(text) {

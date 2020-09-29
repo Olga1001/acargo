@@ -2854,7 +2854,7 @@ button {
     padding-top: 45px;
   }
   .table__order .table__item.pt-29 {
-    padding-top: 29px;
+    padding-top: 29px!important;
   }
   .pt-29 {
     padding-top: 29px;
@@ -5747,24 +5747,18 @@ button {
     height: 5px;
     position: relative;
     background-color: rgba(183, 188, 214, 0.33);
+    z-index: 1;
     border-radius: 4px;}
-    .line-tracking:before {
+    .line-tracking__active {
       content:'';
       position: absolute;
       left: 0;
       top: 0;
       border-radius: 4px;
-      width: 70%; 
       height: 100%;
-
+      z-index: 2;
     }
-    .line-tracking.bg-blue-bright:before {
-      background-color: #109CF1; 
-    }
-    .line-tracking.bg-green:before {
-      background-color: #51db92;
-
-    }
+  
     .boat_tracking {
       height: 15px;
       width: fit-content; 

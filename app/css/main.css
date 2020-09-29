@@ -278,6 +278,7 @@ input, textarea {
   -moz-appearance: none;
   appearance: none;
   height: 42px;
+  min-width: 35px;
   background: transparent; }
 
 textarea {
@@ -5840,6 +5841,34 @@ button {
   .line-normal {
     line-height: 1;
   }
+  .blue-commission {
+    font-size: 25px;
+    color: #ffffff;
+    width: 64px;
+    line-height: 42px;
+    text-align: center;
+    border-radius: 4px;
+    background-color: #109cf1;
+    margin-left: -4px;
+    position: relative;
+    z-index: 1;
+  }
+  .ml--25 {
+    margin-left: -25px;
+  }
+  .mr--30 {
+    margin-right: -30px;
+
+  }
+  .absolute {
+    position: absolute;
+  }
+  .t-3 {
+    top: 16px;
+  }
+  .r-3 {
+    right: 16px;
+  }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -6195,7 +6224,13 @@ button {
     margin-right: -10px; }
   .table__shiipment-booking {
     margin: 0;
-    width: calc(100% + 10px); } }
+    width: calc(100% + 10px); }
+    .mr--30 {
+      margin-right: -15px;
+  }
+  .ml--25 {
+      margin-left: -15px;
+  } }
 
 @media only screen and (max-width: 768px) {
   .way__item-icon.way__item-icon-forklift, .way__item-icon.way__item-icon-center, .way__item-icon.way__item-icon-train {
@@ -6395,6 +6430,9 @@ button {
       right: 0; }}
 
 @media only screen and (max-width: 575px) {
+  .close-small.r-3 {
+    right: 8px;
+  }
   .way_v2 {
     overflow-x: auto;
   }

@@ -5897,6 +5897,51 @@ button {
     padding: 0 34px 0 24px;
     line-height: 42px;
   }
+  .calendar {
+    box-shadow: 0 1px 15px 0 rgba(69, 65, 78, 0.14);
+  }
+  .check-calendar {
+    line-height: 33px;
+    border: solid 1px #49ddaa;
+    text-align: center;
+    display: block;
+    padding: 0 25px;
+    color: #ffff;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+  }
+  .calendar-radio label:first-child .check-calendar{
+    border-radius: 4px 0 0 4px;
+  }
+  .calendar-radio label:last-child .check-calendar{
+    border-radius: 0 4px 4px 0;
+  }
+  .checkbox:checked ~ .check-calendar {
+    background-color: #49ddaa;
+  }
+  .timetables li {
+    font-size: 14px;
+  }
+  .timetables-blue {
+    background-color: rgba(218,240,252,.5);
+    border-left: 3px solid #24b1ff
+  }
+  .calendar__container td {
+    width: 14.2%;
+    position: relative;
+    border: solid 1px #ebedf2;
+    font-size: 15px;
+  }
+  .calendar__container td.td-day {
+    min-height: 145px;
+    padding: 34px 10px 10px 10px;
+  }
+  .calendar__container td span{
+    position: absolute;
+    right: 8px;
+    top: 8px;
+  }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1500px) {

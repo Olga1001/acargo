@@ -1604,6 +1604,9 @@ button {
 .bg-orange {
   background-color: #f99e04; }
 
+.bg-orange-light {
+  background-color: rgba(	249, 158, 4, 0.2); }
+
 .bg-light-green {
   background-color: rgba(73, 221, 170, 0.15); }
 
@@ -5927,21 +5930,61 @@ button {
     background-color: rgba(218,240,252,.5);
     border-left: 3px solid #24b1ff
   }
+  .timetables-orange {
+    background-color: rgba(255,184,34,.15);
+    border-left: 3px solid #ffb822
+  }
+
+
   .calendar__container td {
     width: 14.2%;
+    padding: 0;
+  }
+  .calendar__container .td-day {
     position: relative;
     border: solid 1px #ebedf2;
     font-size: 15px;
-  }
-  .calendar__container td.td-day {
-    min-height: 145px;
+    height: 145px;
+    overflow-y: auto;
     padding: 34px 10px 10px 10px;
   }
-  .calendar__container td span{
+  .calendar__container .td-day__num {
     position: absolute;
     right: 8px;
     top: 8px;
   }
+
+  .calendar__week td {
+    width: 13.5%;
+    border: solid 1px #ebedf2;
+    font-size: 13px;
+    vertical-align: middle;
+    height: 36px;
+    padding: 4px 8px;
+    line-height: 1;
+  }
+  
+  .calendar__week td.bg-blue-bright, .calendar__week td.bg-white {
+    width: 67px;
+    text-align: center;
+
+  }
+  .calendar__item {
+    display: none;
+  }
+  .calendar__item.active {
+    display: block;
+  }
+  .btn-arrow_v2 img {
+    width: 29px;
+    height: 29px;
+    object-fit: contain;
+
+  }
+  .btn-next_v2 img {
+    transform: scaleX(-1);
+  }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -6159,7 +6202,23 @@ button {
     width: 100%;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
-    justify-content: center; } }
+    justify-content: center; } 
+    .calendar__tables {
+      overflow-x: auto;
+    }
+    .calendar__container table{
+      width: 1070px!important;}
+    .timetables li {
+      font-size: 12px;}
+      .calendar__container .td-day {
+        height: 100px;
+        padding: 25px 5px 5px 5px;
+      }
+      .calendar__container .td-day__num {
+        font-size: 13px;
+        right: 5px;
+        top: 5px;
+      }}
 @media only screen and (max-width: 991px) {
   .nav-tabs_companies .nav-item{
     width: 50%;

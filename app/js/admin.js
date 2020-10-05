@@ -43,6 +43,37 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 $(document).ready(function () {
+
+
+  $(window).on("load", function() {
+    //Prevent having no "active" slide
+    var $el = $('.calendar__item.active');
+    if (!$el.length) {
+      $('.calendar__item').first().addClass('active');
+    }
+  });
+  
+  $(".btn-prev_v2").click(function() {
+    var $el = $('.active').prev('.calendar__item');
+    if (!$el.length) //If no previous, s$elect last
+    {
+      $el = $('.calendar__item').last();
+    }
+    $('.active').removeClass('active');
+    $el.addClass('active');
+  });
+  
+  $(".btn-next_v2").click(function() {
+    var $el = $('.active').next('.calendar__item');
+    if (!$el.length) //If no next, s$elect first
+    {
+      $el = $('.calendar__item').first();
+    }
+    $('.active').removeClass('active');
+    $el.addClass('active');
+  });
+
+
   $("#myBtn").click(function () {
     $('.modal').modal('show');
   });

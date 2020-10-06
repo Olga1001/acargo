@@ -1,27 +1,60 @@
 @import "vars"
 
-/*==========  Desktop First  ==========*/
+/*==========  Desktop First  ==========
+/* Large Devices, Wide Screens
+@media (min-width: 1200px) and (max-width: 1500px)
+  .orders-item
+    padding-left: 15px !important
+    padding-right: 15px !important
 
-/* Large Devices, Wide Screens */
-@media only screen and (min-width : 1890px)
+    img
+      margin-right: 0px !important
+      width: 40px
+      height: 33px
+
+  .table__v2
+    .table__body, .bg-blue-bright
+      min-width: 900px
+
+  .table__orders-production
+    .table__body, .bg-blue-bright
+      min-width: 900px
+
+  .trucking-list li
+    min-width: 555px
+
+@media only screen and (min-width: 1890px)
   .table__rate-table, .table__rate-table-road
     width: calc(100% + 55px)
-  .table__rate-sea 
+
+  .table__rate-sea
     width: calc(100% + 55px + 7vw)
-@media only screen and (min-width : 1930px)
-  .table__rate-sea .bg-light-blue, .table__rate-sea .table__make-booking__row
-    width: 100%
-  .table__rate-road .bg-light-blue, .table__rate-road .table__make-booking__row
-    width: fit-content;
-@media only screen and (max-width : 1570px)
+
+@media only screen and (min-width: 1930px)
+  .table__rate-sea
+    .bg-light-blue, .table__make-booking__row
+      width: 100%
+
+  .table__rate-road
+    .bg-light-blue, .table__make-booking__row
+      width: -webkit-fit-content
+      width: -moz-fit-content
+      width: fit-content
+
+@media only screen and (max-width: 1570px)
   .navbar-item
     padding: 0 20px
     min-width: 172px
+
   .navbar-list
     max-width: 640px
     width: 100%
     overflow-x: auto
     position: relative
+
+    &.active
+      overflow: visible
+
     &:before
       content: ''
       position: absolute
@@ -30,638 +63,1100 @@
       height: 100%
       width: 40px
       pointer-events: none
-      background: linear-gradient(to left, rgba(#37517e, 0.9), rgba(#37517e, 0.1))
+      background: -webkit-gradient(linear, right top, left top, from(rgba(55, 81, 126, 0.9)), to(rgba(55, 81, 126, 0.1)))
+      background: -o-linear-gradient(right, rgba(55, 81, 126, 0.9), rgba(55, 81, 126, 0.1))
+      background: linear-gradient(to left, rgba(55, 81, 126, 0.9), rgba(55, 81, 126, 0.1))
       z-index: 2
 
-@media only screen and (min-width : 1500px)
-  .table__rate .bg-light-blue, .table__rate .bg-blue, .table__rate .table__rate-row-one, .table__rate .table__rate-row-two
-    width: 100%
-  .table__rate .table__rate-row-two
-    background: #fff
-@media only screen and (max-width : 1440px)
+@media only screen and (min-width: 1500px)
+  .table__rate
+    .bg-light-blue, .bg-blue, .table__rate-row-one
+      width: 100%
+
+    .table__rate-row-two
+      width: 100%
+      background: #fff
+
+@media only screen and (max-width: 1440px)
   .container-fluid, .topbar
     padding-right: 1.5rem
+
   .contents__item .fields
     padding-left: 0
+
   .fields__item .card__label
     right: calc(100% + 10px)
+
   .card__field:nth-child(2)
     width: calc(36% - 6vw)
     margin: 0 3vw
+
   .fields__two .fields__item
     width: calc(33.33% - 20px)
     margin-right: 30px
+
     &:nth-child(3n+3)
       margin-right: 0
+
   .nav-tabs .nav-item
     margin: 0
-  .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3)
+
+  .contents__item .fields__item
     width: calc(50% - 0.8vw)
     margin-right: 1.6vw
+
+    &:nth-child(3n+3)
+      width: calc(50% - 0.8vw)
+      margin-right: 1.6vw
+
   .breadcrumbs .nav
     padding-right: 120px
+
   .nav-mark
     right: 0
+
   .btn-mark
     padding: 0 20px
+
     &.active
       background-position: left 20px center
       padding: 0 20px 0 37px
+
   .way__item-icon
     height: 3.47vw
+
   .way__item-icon-city
     height: 3.88vw
     margin-top: -0.416vw
+
   .way__item-icon-car
     width: 3.26vw
+
   .way__mid-icon
     height: 2.3vw
+
   .way__mid
     top: calc(50% - 2.77vw)
+
   .way__item-icon
     &.way__item-icon-forklift, &.way__item-icon-center, &.way__item-icon-train
       height: 2vw
+
   .fields__two .fields__item:nth-child(2n+2)
     margin-right: 0
     width: calc(50% - 15px)
-  .fields__two .fields__item:nth-child(2n+2):nth-child(3n+3)
-    margin-right: 0
-    width: calc(50% - 15px)
+
+    &:nth-child(3n+3)
+      margin-right: 0
+      width: calc(50% - 15px)
+
   .table__make-booking-second, .table__rate-table, .table__rate-table-road, .table__rate, .table__order
     width: calc(100% + 55px + 1.5rem)
+
   .table__send-seles
     width: calc(100% + 55px)
+
   .table__rate .table__rate-row-two
     background: #fff
+
   .way__item-icon__car
     height: 2.22vw
-  .table__shiipment-booking 
+
+  .table__shiipment-booking
     width: calc(100% + 1.5rem)
+
   .nav-tabs_v2
     margin-right: -1.5rem
     width: calc(100% + 3rem)
-@media only screen and (max-width : 1199px)
+
+  .table__rate-request
+    width: calc(100% + 55px)
+
+@media only screen and (max-width: 1199px)
   .notes-window
     left: -30px
+
   .btn-mark
     line-height: 36px
     margin: 0
     font-size: 10px
     padding: 0 10px
+
     &.active
       background-position: left 10px center
       background-size: 8px
       padding: 0 10px 0 25px
+
   .card__field
     width: 100%
+    display: -webkit-box
+    display: -ms-flexbox
     display: flex
-  .card__field:nth-child(2)
-    width: 100%
-    margin: 0
+
+    &:nth-child(2)
+      width: 100%
+      margin: 0
+
   .card__row
     width: calc(50% - 10px)
     margin-right: 20px
+
     &:nth-child(2n+2)
       margin-right: 0
+
   .card__ways
     padding: 0
-  .sidebar .nav-item .nav-link
-    padding: 13px
-    font-size: 16px
+
   .sidebar
+    .nav-item .nav-link
+      padding: 13px
+      font-size: 16px
+
+      i
+        font-size: 16px
+        margin-right: 10px
+
     width: 200px
-  .sidebar .nav-item .nav-link i
-    font-size: 16px
-    margin-right: 10px
-  .sidebar .sidebar-brand
-    padding: 10px
-  .sidebar .sidebar-brand .sidebar-brand-icon img
-    height: 25px
-  .sidebar .sidebar-brand, .topbar .nav-item .nav-link
+
+    .sidebar-brand
+      padding: 10px
+
+      .sidebar-brand-icon img
+        height: 25px
+
+      height: 60px
+
+  .topbar .nav-item .nav-link
     height: 60px
+
   #wrapper #content-wrapper
     width: calc(100% - 200px)
-  .pills-custom .nav-link
-    padding: 10px
-  .pills-custom .nav-link
-    width: 147px
-  .pills-custom .nav-item:first-child .nav-link
-    padding: 10px 20px 10px 5px
+
+  .pills-custom
+    .nav-link
+      padding: 10px
+      width: 147px
+
+    .nav-item:first-child .nav-link
+      padding: 10px 20px 10px 5px
+
   .contents__item .fields
     padding-left: 0
     padding-top: 30px
-  #container-wrapper
-    //height: calc(100vh - 60px)
+
   .pre-carriage__card-item
     width: 33.33%
+
   .sidebar-menu
     height: calc(100vh - 60px)
+
   .sidebar .nav-item .collapse-item
     padding-left: 45px
+
   .nav-link-img
     margin-right: 9px
+
   .btn-arrow
     width: 1.5vw
     height: 1.5vw
+
   .container-fluid
     min-height: calc(100% - 60px)
-  .rate-road__item:nth-child(2)
-    width: calc(34% - 23px)
+
   .rate-road__item
+    &:nth-child(2)
+      width: calc(34% - 23px)
+
     width: calc(22% - 23px)
     margin-right: 30px
+
   .make-booking__col
     max-width: 100%
+
   .card__ways-two
     max-width: 90%
+
   .graphic
     margin-right: 1.5rem
+
   .nav-tabs_v2 .nav-link
     padding: 15px 25px
+
   .popup__send-request
-      left: calc(50% - 385px + 100px)
-@media only screen and (max-width : 991px)
+    left: calc(50% - 385px + 100px)
+
+  .navbar-item, .topbar_2
+    height: 60px
+
+  .oval-block
+    margin-right: 20px
+
+  .supbar
+    padding-bottom: 60px
+
+  .ovals__absolute
+    position: absolute
+    left: 0
+    bottom: 15px
+    width: 100%
+    -webkit-box-pack: center
+    -ms-flex-pack: center
+    justify-content: center
+
+  .calendar__tables
+    overflow-x: auto
+
+  .calendar__container table
+    width: 1070px !important
+
+  .timetables li
+    font-size: 12px
+
+  .calendar__container
+    .td-day
+      height: 100px
+      padding: 25px 5px 5px 5px
+
+    .td-day__num
+      font-size: 13px
+      right: 5px
+      top: 5px
+
+@media only screen and (max-width: 991px)
+  .nav-tabs_companies .nav-item
+    width: 50%
+
   .pre-carriage__card_v2
     padding: 0 15px 20px
     max-height: 300px
+
   .line-between__time:before
     right: -0.375rem
     width: 10px
-  .fields__item, .fields__item:nth-child(3n+3), .fields__two .fields__item, .fields__two .fields__item:nth-child(2n+2)
+
+  .fields__item
     width: calc(50% - 10px)
     margin-right: 20px
+
+    &:nth-child(3n+3)
+      width: calc(50% - 10px)
+      margin-right: 20px
+
+  .fields__two .fields__item
+    width: calc(50% - 10px)
+    margin-right: 20px
+
     &:nth-child(2n+2)
+      width: calc(50% - 10px)
+      margin-right: 20px
+
+  .fields__item
+    &:nth-child(2n+2), &:nth-child(3n+3):nth-child(2n+2)
       margin-right: 0
+
+  .fields__two .fields__item:nth-child(2n+2)
+    margin-right: 0
+
   .box-white__top-item
     width: 50%
+
   .container-fluid, .topbar
     padding: 0 10px
+
   .container-fluid
     padding: 10px
+
   .topbar.navbar-light .navbar-nav .nav-item .nav-link
-    padding: 0 15px!important
+    padding: 0 15px !important
+
     svg, .nav-link-arrow
+      -webkit-transform: scale(0.8)
+      -ms-transform: scale(0.8)
       transform: scale(0.8)
       margin: 0
+
   .first .btn
     margin: 15px 0 0 0
+
   .box-white
     padding: 0 15px
+
   .vgm-weight
     padding: 50px
+
   .first
     padding: 15px
+
   .nav-tabs .nav-link, .notes
     padding: 10px 15px
+
   .card
     margin: 0 -15px 20px
+
   .table__body, .contents__product .table__body
     max-height: 60vh
+
   .contents__order-no, .contents__product
     margin: 0 -16px
+
   .table__drop
     margin-top: 10px
     border-top: solid 1px rgba(183, 188, 214, 0.37)
+
   .table .garbage
     margin-left: 15px
-  .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3)
+
+  .contents__item .fields__item
     width: calc(50% - 10px)
     margin-right: 20px
-  .contents__item .fields__item:nth-child(2n+2)
-    margin-right: 0
+
+    &:nth-child(3n+3)
+      width: calc(50% - 10px)
+      margin-right: 20px
+
+    &:nth-child(2n+2)
+      margin-right: 0
 
   .table__drop p
     color: #282e3b
+
   .table__arrow
     margin-right: 0
+
   .products
     padding: 25px 15px
+
     .table__body-item .select__drop
       top: 100%
+
     .table
       margin: 0 -15px
       width: calc(100% + 30px)
+
   .breadcrumbs:before
     height: 100%
+
   .pre-carriage .table
     margin: 0 -15px
     width: calc(100% + 30px)
+
   .pre-carriage__card
     padding: 0
+
   .pre-carriage__card-row
     border-bottom: 1px solid rgba(183, 188, 214, 0.37)
     padding-bottom: 20px
+
     &:last-child
       border: none
+
   .pre-carriage__card-item
     width: 50%
+
   .pre-carriage__card-top
     padding: 0 15px 0 10px
+
   .pre-carriage__card-info
     padding: 0 15px
+
   .pre-carriage .first .btn
     margin-top: 0
+
   .loading__card-light
     margin: 0 -15px
     width: calc(100% + 30px)
     padding: 0 15px
+
   .document__table .table__body-item, .document__add-row
     padding: 15px 10px
+
   .table__rate
     margin: 0 -15px
     width: calc(100% + 30px)
+
   .table__order
     margin: 0 -25px 0 -15px
     width: calc(100% + 30px + 10px)
 
   .way
     margin: 0 -15px
+
   .way__item
     .text-16
       font-size: 13px
+
     .text-13
       font-size: 11px
+
   .rate-road__item
-    width: calc(50% - 15px)!important
+    width: calc(50% - 15px) !important
+
     &:nth-child(2n+2)
       margin-right: 0
+
   .table__make-booking
     margin: 0 -15px
     width: calc(100% + 30px)
+
   .calc__btn
     width: 42px
+
   .calc__input
     width: calc(100% - 82px)
+
   .btn-template
     max-width: 100px
+
   .table__rate-book
     margin: 0 -15px
     width: calc(100% + 30px)
-  .daterangepicker .ranges, .daterangepicker .drp-calendar
-    clear: both
-  .daterangepicker .drp-calendar
-    width: 100%!important
-    padding: 20px 15px !important
+
+  .daterangepicker
+    .ranges
+      clear: both
+
+    .drp-calendar
+      clear: both
+      width: 100% !important
+      padding: 20px 15px !important
+
   .datepicker-dropdown, .drp-calendar
-    width: auto!important
+    width: auto !important
     padding: 20px 15px !important
+
   .table__make-booking-second, .table__make-booking
     width: calc(100% + 30px + 10px)
+
   .tools, .arrows-row
     width: 100%
+
   .nav-tabs_v2
     width: calc(100% + 20px)
     margin-left: -10px
     margin-right: -10px
+
   .table__shiipment-booking
-    margin: 0;
+    margin: 0
     width: calc(100% + 10px)
-@media only screen and (max-width : 768px)
-  .way__item-icon.way__item-icon-forklift, .way__item-icon.way__item-icon-center, .way__item-icon.way__item-icon-train
-    height: 20px
+
+  .mr--30
+    margin-right: -15px
+
+  .ml--25
+    margin-left: -15px
+
+@media only screen and (max-width: 768px)
+  .way__item-icon
+    &.way__item-icon-forklift, &.way__item-icon-center, &.way__item-icon-train
+      height: 20px
+
   .timeline-row
     padding-bottom: 80px
-  .timeline-row:first-child .timeline-circle:before
-    top: 40px
-  .timeline-circle:before
-    height: calc(100% + 80px)
+
+    &:first-child .timeline-circle:before
+      top: 40px
+
   .timeline-circle
+    &:before
+      height: calc(100% + 80px)
+
     margin: 0 30px 0 0
+
   .timeline-item
     max-width: 100%
-  .popup__rate-sea .table__head .row, .popup__rate-sea .table__body-item .row
-    padding: 0
+
+  .popup__rate-sea
+    .table__head .row, .table__body-item .row
+      padding: 0
+
   .input-normal
     text-align: left
+
   .clear-two
     top: 15px
+    -webkit-transform: none
+    -ms-transform: none
     transform: none
+
   .rate-archive
     margin-right: 15px
+
   .burger-mob
     display: block
+
   .sidebar-toggled
     .burger-mob
       display: none
+
     .topbar
       z-index: 1
+
   .breadcrumbs .nav
     padding-right: 0
+
   .nav-mark
     position: relative
+
   .btn-mark
     border-radius: 0
+
   .sticky
     position: inherit
-  .sidebar .nav-item .nav-link .nav-item-name
-    display: none
-  .sidebar.toggled .nav-item .nav-link .nav-item-name
-    display: block
-  .sidebar .nav-item .nav-item-name
-    display: none
-  .sidebar.toggled .nav-item .nav-link-img
-    margin-right: 10px
-  .sidebar.toggled .nav-item .collapse
-    box-shadow: none
-  .sidebar .nav-item
-    margin-top: 5px
-  .sidebar .nav-item:first-child
-    margin-top: 20px
+
+  .sidebar
+    .nav-item .nav-link .nav-item-name
+      display: none
+
+    &.toggled .nav-item .nav-link .nav-item-name
+      display: block
+
+    .nav-item .nav-item-name
+      display: none
+
+    &.toggled .nav-item
+      .nav-link-img
+        margin-right: 10px
+
+      .collapse
+        -webkit-box-shadow: none
+        box-shadow: none
+
+    .nav-item
+      margin-top: 5px
+
+      &:first-child
+        margin-top: 20px
+
   .pills-custom .nav-item:first-child .nav-link
     padding: 10px
+
   .box-white__top-item
     width: auto
+
   #wrapper #content-wrapper
     width: 100%
+
   #sidebarToggleTop.toggled
     margin: 0
+
     .sidebarToggleTop-top
       top: 50%
+      -webkit-transform: translate(-50%, -50%) rotate(225deg)
+      -ms-transform: translate(-50%, -50%) rotate(225deg)
       transform: translate(-50%, -50%) rotate(225deg)
+
     .sidebarToggleTop-center
       opacity: 0
+
     .sidebarToggleTop-bottom
       top: 50%
+      -webkit-transform: translate(-50%, -50%) rotate(-225deg)
+      -ms-transform: translate(-50%, -50%) rotate(-225deg)
       transform: translate(-50%, -50%) rotate(-225deg)
+
   .card__item
     width: 100px
     font-size: 14px
+
   .card__select
-    max-width: calc(100% - 100px)!important
+    max-width: calc(100% - 100px) !important
+
   .block__blue
     margin-left: 30px
-  .table .block__blue
-    margin: 0 10px
-  .table p
-    font-size: 14px
+
+  .table
+    .block__blue
+      margin: 0 10px
+
+    p
+      font-size: 14px
+
   .sidebar.toggled .nav-item .nav-link
+    -webkit-box-pack: start
+    -ms-flex-pack: start
     justify-content: start
+
   .booking__box-input
     max-width: 100%
+
   .pills-custom .nav-link
     &:before, &:after
-      content: none!important
+      content: none !important
+
   .pre-carriage__card-row
     padding: 15px 0 5px
+
     .title
       padding: 0
       width: 100%
+
   .pre-carriage__card-fields
     width: 100%
+
   .pre-carriage__card-item
     padding: 10px 0
     margin-right: 20px
     width: calc(50% - 10px)
+
     &:nth-child(2n+2)
       margin-right: 0
+
   .pre-carriage__card-info
     max-height: 320px
+
   .table__one .table__body-item, .products .add-order-no
     padding: 15px
+
   .table__two .table__body-item
     padding: 20px 15px
-  .sidebar.toggled .sidebar-menu
-    display: block
-  .sidebar .sidebar-menu
-    display: none
+
+  .sidebar
+    &.toggled .sidebar-menu
+      display: block
+
+    .sidebar-menu
+      display: none
+
   .popup__loading-top .bg-light
     min-width: auto
+
   .btn-arrow
     width: 18px
     height: 18px
+
   .head-box
     padding: 15px
+
   .drop-upload__icon
     margin-right: 15px
     width: 20px
     height: 18px
+
   .contents__transport .fields__row
     display: block
-  .contents__transport .fields__row .card__label
-    margin: 0 0 15px 0
+
+    .card__label
+      margin: 0 0 15px 0
+
   .public .btn-aquamarine
     margin-left: 0
+
   .way__item-icon
     height: 30px
     margin-top: 0
+
   .way__item
     width: 33.33%
+
   .way__item-icon-city
     height: 36px
     margin-top: -6px
+
   .way__item-icon-car
     width: 33px
+
   .way__mid-icon
     height: 25px
+
   .way__mid
     top: calc(50% - 10px)
     left: 20px
+
   .pills-custom .nav-link.focus
     background: #f6f7f8
+
   .vgm-weight
     padding: 40px 15px
-  .datepicker-dropdown .prev, .datepicker-dropdown .next, .datepicker-dropdown th.prev, .datepicker-dropdown th.next, .drp-calendar .prev, .drp-calendar .next, .drp-calendar th.prev, .drp-calendar th.next
-    width: 30px!important
-    height: 30px!important
+
+  .datepicker-dropdown
+    .prev, .next
+      width: 30px !important
+      height: 30px !important
+
+    th
+      &.prev, &.next
+        width: 30px !important
+        height: 30px !important
+
+  .drp-calendar
+    .prev, .next
+      width: 30px !important
+      height: 30px !important
+
+    th
+      &.prev, &.next
+        width: 30px !important
+        height: 30px !important
+
   .datepicker-dropdown .prev, .drp-calendar .prev
     left: -15px
+
   .datepicker-dropdown .next, .drp-calendar .next
     right: -15px
+
   .pre-carriage__card-info .pre-carriage__card-name
     width: auto
     margin-bottom: 15px
+
   .scroll
     overflow-x: auto
     width: 100%
+
   .row-range
-    width: 700px!important
+    width: 700px !important
+
   .filters
     width: 100%
-  .filters .select
-    width: calc(50% - 7.5px)
-    margin: 0 15px 15px 0!important
-    &:nth-child(2n+2)
-      margin-right: 0!important
+
+    .select
+      width: calc(50% - 7.5px)
+      margin: 0 15px 15px 0 !important
+
+      &:nth-child(2n+2)
+        margin-right: 0 !important
+
   .nav-tabs_v2 .nav-link
     padding: 15px
     font-size: 14px
+
   .nav-link_v3
     padding: 10px 25px
+
   .timeline-date
     font-size: 18px
-  .timeline-date span
-    font-size: 14px
+
+    span
+      font-size: 14px
+
   .popup__send-request
-    position: fixed 
-    left: 50% 
-    transform: translate(-50%,-50%)
+    position: fixed
+    left: 50%
+    -webkit-transform: translate(-50%, -50%)
+    -ms-transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%)
     width: calc(100% - 30px)
-  
+
   .nav-tabs_company .nav-item
     width: 33.33%
+
   .popup__company-info
     position: fixed
     right: 0
-@media only screen and (max-width : 575px)
+
+@media only screen and (max-width: 575px)
+  .close-small.r-3
+    right: 8px
+
+  .way_v2
+    overflow-x: auto
+
   .timeline-icon
     width: 80px
     height: 80px
+
   .timeline-circle
     margin-right: 15px
+
   .pills-custom .nav-link
     padding: 10px 20px
     width: auto
+
   .fields__item
-    width: 100%!important
-    margin: 0 0 25px!important
+    width: 100% !important
+    margin: 0 0 25px !important
+
   .card__row
     width: 100%
     margin: 0 0 10px
+
   .card
     padding: 15px
+
   .nav-tabs
     width: 100%
+
     .nav-item
       width: 50%
       text-align: center
+
   .box-white__top
     padding: 10px 0
+
   .block__blue
     margin: 10px 0 0 0
+
   .parties .btn-aquamarine
     max-height: 30px
+
   .card__way
+    width: -webkit-fit-content
+    width: -moz-fit-content
     width: fit-content
+
   .card__way-line, .card__way:last-child .card__way-line
     width: 50px
+
   .saves
     .btn-aquamarine, .btn-white
       min-width: auto
       width: 45%
-      margin: 0!important
+      margin: 0 !important
+
   .sidebar.toggled
-    width: 100vw!important
-  .sidebar-toggled
-    .overlay
-      opacity: 1
-      pointer-events: auto
+    width: 100vw !important
+
+  .sidebar-toggled .overlay
+    opacity: 1
+    pointer-events: auto
+
   .btn-drop
     height: 30px
+
   .table__input
     width: 100%
-  .public .table__form .btn-aquamarine
-    margin: 20px 0 0 10px
-  .public .btn-aquamarine
-    margin: 0
-  .transport__weight-item input
-    padding: 10px 13px 10px 25px
-  .transport__weight-item p.active
-    left: 9px
+
+  .public
+    .table__form .btn-aquamarine
+      margin: 20px 0 0 10px
+
+    .btn-aquamarine
+      margin: 0
+
+  .transport__weight-item
+    input
+      padding: 10px 13px 10px 25px
+
+    p.active
+      left: 9px
+
   .loading__btns button
     max-width: 100%
     margin: 0
+
   .pre-carriage__card-item
     margin-right: 0
     width: 100%
+
     &:nth-child(2n+2)
       margin-right: 0
+
   .popup__loading-top .bg-light
     padding: 15px
+
   .loading__card-title
     padding: 0 0 0 15px
     border-width: 5px
+
   .message
     padding: 5px 10px
+
   .document__files-drop
     width: calc(100% - 20px)
     margin: 0 auto
+
   .message-info
     padding: 10px
+
   .message-info__text
     font-size: 13px
     line-height: 1.5
+
   .rate .nav-tabs .nav-link
     width: 100%
+
   .btn-add-blue
     width: 90px
+
   .rate__row .select
     width: calc(100% - 80px)
+
   .rate-road__item
-    width: 100%!important
+    width: 100% !important
     margin-right: 0
+
   .checkbox__transport-check
     margin-right: 20px
+
   .checkbox__transport-icon
     height: 15px
+
   .checkbox__transport-text
     font-size: 16px
+
   .transfer
+    width: -webkit-fit-content
+    width: -moz-fit-content
     width: fit-content
+    -webkit-transform: rotate(90deg)
+    -ms-transform: rotate(90deg)
     transform: rotate(90deg)
     padding: 0
     margin: 0 auto
+
   .transfer-img
     margin: 0
+
   .payment-detail
     font-size: 14px
     width: 90px
+
   .path__check
     width: 40px
     height: 40px
     background-size: 50%
-  .path
-    &__line
-      width: calc(100% - 40px - 10px)
-      margin: 0 5px
-    .text-16
-      font-size: 13px
+
+  .path__line
+    width: calc(100% - 40px - 10px)
+    margin: 0 5px
+
+  .path .text-16
+    font-size: 13px
+
   .col-transfer .make-booking__col
     width: 100%
     margin-right: 0
+
   .loading__product .btn-blue
     font-size: 13px
+
   .card__ways-two
     max-width: 100%
-  .card__ways-two .card__way
-    width: fit-content
+
+    .card__way
+      width: -webkit-fit-content
+      width: -moz-fit-content
+      width: fit-content
+
   .card__item
     font-size: 12px
+
   .card__way-point p
     font-size: 11px
+    width: -webkit-fit-content
+    width: -moz-fit-content
     width: fit-content
+
   .btns .btn-aquamarine.big
     padding: 14px
+
   .input-search
     padding: 13px 20px 13px 33px
     background-position: left 10px center
+
   .booking__search .btn-blue
     max-width: 100px
+
   .title-20, .rate__text-request
     font-size: 18px
+
   .table__sea
     margin: 0 -15px
     width: calc(100% + 30px)
+
   .daterangepicker
-    width: auto!important
-  .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td
+    width: auto !important
+
+  .calendar-table tbody td
     height: 34px !important
     width: 34px !important
-    margin: 2px 0!important
-  .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active, .day, .dow
-    margin: 2px 0!important
+    margin: 2px 0 !important
+
+    &.end-date, &.start-date
+      height: 34px !important
+      width: 34px !important
+      margin: 2px 0 !important
+
+  .daterangepicker .calendar-table
+    th, td
+      height: 34px !important
+      width: 34px !important
+      margin: 2px 0 !important
+
+  .calendar-table tbody td
+    &.active, &.end-date.active, &.start-date.active
+      margin: 2px 0 !important
+
+  .day, .dow
+    margin: 2px 0 !important
+
   .datepicker-dropdown, .drp-calendar
-    width: auto!important
+    width: auto !important
+
   .graphic
     margin-right: 0
-  .dashboard-item 
+
+  .dashboard-item
     .text-right
       font-size: 13px
+
     .title
       font-size: 16px
+
   .nav-tabs_v3 .nav-item
     width: 50%
     text-align: center
+
+  .table__order__bottom .input-notes, .nav-tabs_companies .nav-item
+    width: 100%
+
   .company-list__settings
-      width: 35px
+    width: 35px
+
   .nav-tabs_company .nav-item
     width: 50%
+
+  .select-contry
+    flex-direction: column
+
+    .select
+      max-width: 100%
+      border-width: 1px 0 0 0
+      height: auto
+      margin: 0
+
+    .select__item
+      padding: 10px
+
+    .btns .btn-aquamarine
+      width: 100%
+
+  .ovals__absolute
+    bottom: 5px
+    padding: 0 0.5rem
+
+  .supbar
+    padding-bottom: 120px
+
+  .oval-block
+    width: calc(45% - 10px)
+    margin-bottom: 10px
+
+    &:nth-child(2n+2)
+      margin-right: 0
+
+  .check-btn
+    width: 100%
+
+  .quotes-requests__list li
+    min-width: 520px
+
+  .trucking-list li
+    min-width: 540px
+
+  .supbar.pd-mob-2
+    padding-bottom: 70px
+
+@media only screen and (max-width: 400px)
+  .oval-block
+    width: 100%
+    margin-right: 0
+    margin-bottom: 10px
+
+  .supbar
+    padding-bottom: 175px
+
+  .checkbox__loading .check-btn__green
+    width: 63px
+
+  .supbar.pd-mob-2
+    padding-bottom: 120px

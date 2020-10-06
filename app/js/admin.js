@@ -129,6 +129,7 @@ $(document).ready(function () {
   });
   $(".select__option").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
+    let colorOption = $(this).attr("data-color");
     var option = $(this).text(),
         item = $(this).closest(".select").find(".select__item").prop("tagName");
 
@@ -137,7 +138,8 @@ $(document).ready(function () {
     } else {
       $(this).closest(".select").find(".select__item").val(option);
     }
-
+    $(this).closest(".select").find(".select__item__color").append("<div></div>");
+    $(this).closest(".select").find(".select__item__color").find("div").addClass(colorOption);
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
   });

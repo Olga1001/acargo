@@ -1617,6 +1617,9 @@ button {
 .bg-light-blue {
   background-color: rgba(231, 245, 254, 0.51); }
 
+.bg-light_05 {
+  background-color: #eff8fe61!important;}
+
 .bg-white {
   background-color: #ffffff; }
 
@@ -5788,21 +5791,37 @@ button {
   
   .fs-28 {
     font-size: 28px; }
-  
+    .to-do-list {
+      overflow-x: auto;
+    }
+    .to-do-list::-webkit-scrollbar {
+      width: 6px;
+      height: 6px; }
+      .to-do-list::-webkit-scrollbar-thumb {
+        opacity: 0.7;
+        border-radius: 4px;
+        background-color: #b7bcd6; }
+    .to-do-list li {
+      min-width: 300px;
+    }
   .to-do-list__left {
     min-width: 58px; }
   
   .to-do-list__right {
     border-radius: 4px;
     border: solid 1px rgba(183, 188, 214, 0.37); }
-  
+  .to-do-list li:last-child .menu,  .to-do-list li:nth-last-child(2) .menu {
+    top: auto;
+    bottom: 0;
+    padding-bottom: 20px;
+
+  }
   .trucking-list {
     overflow-x: auto; }
     .trucking-list li:nth-child(odd) {
       background-color: rgba(183, 188, 214, 0.13); }
     .trucking-list li {
       min-width: 460px; }
-  
   .quotes-requests__list {
     overflow-y: auto;
     max-height: 343px;
@@ -5822,7 +5841,7 @@ button {
   .table__v2  {
     overflow-x: auto; }
     .table__v2 .table__body {
-      max-height: 405px; }
+      max-height: 420px; }
       .table__v2 .table__body-item {
       min-height: 50px; }
   
@@ -5948,7 +5967,7 @@ button {
     position: relative;
     border: solid 1px #ebedf2;
     font-size: 15px;
-    height: 145px;
+    height: 120px;
     overflow-y: auto;
     padding: 34px 10px 10px 10px;
   }
@@ -6130,6 +6149,15 @@ button {
   border-radius: 0;
   object-fit: contain;
 }
+.popup__network {
+  max-width: 680px;
+  width: 100%;
+  background: #ffffff;
+  min-height: 100%;
+}
+.mh-auto {
+  min-height: auto;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1500px) {
@@ -6160,6 +6188,9 @@ button {
     width: fit-content; } }
 
 @media only screen and (max-width: 1570px) {
+  
+  .quotes-requests__list li {
+    min-width: 560px; }
   .navbar-item {
     padding: 0 20px;
     min-width: 172px; }
@@ -6928,7 +6959,7 @@ button {
     .check-btn {
       width: 100%; }
   .quotes-requests__list li {
-    min-width: 520px; }
+    min-width: 560px; }
   .trucking-list li {
     min-width: 540px; } 
   .supbar.pd-mob-2 {

@@ -490,6 +490,7 @@ button
   transition: all 0.25s ease
   line-height: 1.73
   cursor: pointer
+  min-height: 25px
   padding: 0 15px
 
   &.active, &:hover
@@ -1828,6 +1829,9 @@ button
 .bg-light-blue
   background-color: rgba(231, 245, 254, 0.51)
 
+.bg-light_05
+  background-color: #eff8fe61 !important
+
 .bg-white
   background-color: #ffffff
 
@@ -1993,6 +1997,7 @@ button
 
 .menu__item
   margin-bottom: 20px
+  min-width: auto !important
 
   &:last-child
     margin-bottom: 0
@@ -2158,6 +2163,9 @@ button
 
 .c-dark
   color: #282e3b !important
+
+.c-dark_v2
+  color: #222222
 
 .c-black
   color: #141515
@@ -6559,12 +6567,32 @@ p.c-green
 .fs-28
   font-size: 28px
 
+/* .to-do-list {
+ *  overflow-x: auto;
+ *}
+ *.to-do-list::-webkit-scrollbar {
+ *  width: 6px;
+ *  height: 6px; }
+ *  .to-do-list::-webkit-scrollbar-thumb {
+ *    opacity: 0.7;
+ *    border-radius: 4px;
+ *    background-color: #b7bcd6; }
+ *.to-do-list li {
+ *  min-width: 300px;
+ *}
+
 .to-do-list__left
   min-width: 58px
 
 .to-do-list__right
   border-radius: 4px
   border: solid 1px rgba(183, 188, 214, 0.37)
+
+.to-do-list li
+  &:last-child .menu, &:nth-last-child(2) .menu
+    top: auto
+    bottom: 0
+    padding-bottom: 20px
 
 .trucking-list
   overflow-x: auto
@@ -6598,13 +6626,16 @@ p.c-green
   overflow-x: auto
 
   .table__body
-    max-height: 405px
+    max-height: 420px
 
   .table__body-item
     min-height: 50px
 
 .nav-tabs_supplier, .table__orders-production
   overflow-x: auto
+
+.nav-tabs_supplier .nav-link
+  min-width: auto
 
 .oval-block
   -ms-flex-negative: 0
@@ -6727,7 +6758,7 @@ p.c-green
     position: relative
     border: solid 1px #ebedf2
     font-size: 15px
-    height: 145px
+    height: 120px
     overflow-y: auto
     padding: 34px 10px 10px 10px
 
@@ -6789,6 +6820,139 @@ p.c-green
 .img__order-confirmed
   width: 100%
   max-width: 480px
+
+.head__company
+  background: url("../img/bg-6.svg") no-repeat (center / cover)
+  padding-top: 50px
+
+.circle-logo
+  width: 85px
+  height: 85px
+  border-radius: 50%
+  background: #fff
+
+  img
+    width: 66px
+    height: 100%
+    margin: 0 auto
+
+.max-1130
+  max-width: 1130px
+
+.nav-tabs_v4 .nav-link
+  color: #ffffff
+  padding: 10px 40px
+  margin: 0 40px
+  border-bottom: 4px solid transparent
+
+  &.active
+    border-bottom: 4px solid #f99e04
+
+.list-workers li
+  min-height: 111px
+  border-radius: 4px
+  box-shadow: 0 0 9px 0 rgba(40, 46, 59, 0.11)
+  background-color: #ffffff
+  position: relative
+
+.list-workers__icon
+  width: 15px
+  margin-right: 20px
+
+.list-workers__btns
+  height: 100%
+  border-radius: 0 4px 4px 0
+  background-color: #49ddaa
+  position: absolute
+  top: 0
+  right: 0
+
+  a
+    display: block
+
+.input__password-big
+  font-size: 32px
+  color: rgba(183, 188, 214, 0.77)
+  padding: 0 13px
+  line-height: 1
+
+.checkbox__icon-blue.big
+  width: 20px
+  height: 20px
+
+.checkbox:checked ~ .checkbox__icon-blue.big
+  background-size: 20px
+
+.b-r-14
+  border-radius: 14px
+
+.select-color
+  border: none
+  width: 125px
+
+.select__item__color div
+  width: 80px
+  height: 42px
+  border-radius: 4px
+
+.select-color .select__item
+  padding: 0
+
+.h-fit
+  height: fit-content
+
+.card-company
+  border-radius: 10px
+  box-shadow: 0 2px 9px 0 rgba(55, 81, 126, 0.28)
+  border: solid 1px #ffffff
+  background-color: #ffffff
+  padding: 30px 24px
+  width: 100%
+
+.rating img
+  width: 16px
+  height: 16px
+  object-fit: contain
+  opacity: 0.15
+  margin: 2px
+
+  &.active
+    opacity: 1
+
+.card-company__circle
+  width: 85px
+  height: 85px
+  border-radius: 50%
+  border: 3px solid rgb(36, 177, 255)
+
+  img
+    width: 66px
+    height: 100%
+    margin: 0 auto
+
+.flag_v2
+  width: 23px
+  border-radius: 0
+  object-fit: contain
+
+.popup__network
+  max-width: 680px
+  width: 100%
+  background: #ffffff
+  min-height: 100%
+
+.mh-auto
+  min-height: auto
+
+.item-left
+  width: calc(100% - 560px)
+  padding-right: 20px
+
+.item-right
+  width: 560px
+
+.box-shadow__dark
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2)
 
 @import "media.sass"
 

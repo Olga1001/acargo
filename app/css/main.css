@@ -1769,7 +1769,8 @@ button {
   visibility: visible;
   padding-top: 20px; }
   .menu__item {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+  min-width: auto!important; }
     .menu__item:last-child {
       margin-bottom: 0; }
     .menu__item img {
@@ -5791,7 +5792,7 @@ button {
   
   .fs-28 {
     font-size: 28px; }
-    .to-do-list {
+    /* .to-do-list {
       overflow-x: auto;
     }
     .to-do-list::-webkit-scrollbar {
@@ -5803,7 +5804,7 @@ button {
         background-color: #b7bcd6; }
     .to-do-list li {
       min-width: 300px;
-    }
+    } */
   .to-do-list__left {
     min-width: 58px; }
   
@@ -5847,7 +5848,9 @@ button {
   
   .nav-tabs_supplier, .table__orders-production {
     overflow-x: auto; }
-  
+  .nav-tabs_supplier .nav-link {
+    min-width: auto;
+  }
   .oval-block {
     -ms-flex-negative: 0;
     flex-shrink: 0; }
@@ -6158,16 +6161,43 @@ button {
 .mh-auto {
   min-height: auto;
 }
+.item-left {
+  width: calc(100% - 560px);
+  padding-right: 20px;
+}
+.item-right {
+  width: 560px;
+}
+.box-shadow__dark {
+  box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
-@media (min-width: 1200px) and (max-width: 1500px) {
+@media (min-width: 1200px) and (max-width: 1600px) {
+  
+  .quotes-requests__list li {
+    min-width: 560px; }
+  .orders-item img {
+    width: 30px;
+  }
+  .orders-item .fs-18 {
+    font-size: 15px;
+  }
+  .orders-item .c-gray {
+    font-size: 13px;
+  }
+  .item-right {
+    width: 40%
+  }
+  .item-left {
+    width: 60%}
+    .item-small {
+      flex: 0 0 100%!important;
+      max-width: 100%!important;
+    }
   .orders-item {
     padding-left: 15px !important;
     padding-right: 15px !important; }
-    .orders-item img {
-      margin-right: 0px !important;
-      width: 40px;
-      height: 33px; }
   .table__v2 .table__body, .table__v2 .bg-blue-bright, .table__orders-production .table__body, .table__orders-production .bg-blue-bright {
     min-width: 900px; }
   .trucking-list li {
@@ -6286,6 +6316,10 @@ button {
     width: calc(100% + 55px); } }
 
 @media only screen and (max-width: 1199px) {
+  .item-right, .item-left {
+    width: 100%;
+    padding: 0;
+  }
   .notes-window {
     left: -30px; }
   .btn-mark {
@@ -6545,6 +6579,16 @@ button {
   } }
 
 @media only screen and (max-width: 768px) {
+  .orders-item .fs-18 {
+    font-size: 15px;
+  }
+  .orders-item .c-gray {
+    font-size: 13px;
+  }
+  .orders-item img {
+    width: 30px;
+
+  }
   .way__item-icon.way__item-icon-forklift, .way__item-icon.way__item-icon-center, .way__item-icon.way__item-icon-train {
     height: 20px; }
   .timeline-row {

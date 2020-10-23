@@ -1901,7 +1901,8 @@ button {
   color: #24b1ff; }
 
 .c-blue-light {
-  color: #109CF1; }
+  color: #109CF1; 
+  fill: #109CF1;}
 
 .c-light-blue {
   color: #e1f4ff;
@@ -1923,7 +1924,8 @@ button {
   color: #141515; }
 
 .c-gray {
-  color: #b7bcd6 !important; }
+  color: #b7bcd6 !important; 
+  fill: #b7bcd6;}
 
 .c-navy-blue {
   color: #37517e; }
@@ -5850,6 +5852,7 @@ button {
   .table__v2  {
     overflow-x: auto; }
     .table__v2 .table__body {
+      height: 100%;
       max-height: 252px; }
       .table__v2 .table__body-item {
       min-height: 50px; }
@@ -5863,9 +5866,11 @@ button {
     -ms-flex-negative: 0;
     flex-shrink: 0; }
 .table__orders-arrived .table__body {
+  height: 100%;
   max-height: 308px; }
 
 .table__transport-rates .table__body {
+  height: 100%;
   max-height: 352px; }
 .table__orders-arrived_v2 .table__body {
   max-height: 810px; }
@@ -5960,15 +5965,26 @@ button {
   .timetables li {
     font-size: 14px;
   }
-  .timetables-blue {
+  .timetables .bg-blue {
     background-color: rgba(218,240,252,.5);
     border-left: 3px solid #24b1ff
   }
-  .timetables-orange {
+  .timetables .bg-orange{
     background-color: rgba(255,184,34,.15);
     border-left: 3px solid #ffb822
   }
-
+  .timetables .bg-yellow {
+    background-color: rgba(245, 233, 67,.15);
+    border-left: 3px solid #f5e943;
+  }
+  .timetables .bg-green {
+    background-color: rgba(73, 221, 170,.15);
+    border-left: 3px solid #49ddaa;
+  }
+  .timetables .bg-blue-navy {
+    background-color: rgba(55, 81, 126,.15);
+    border-left: 3px solid #37517e;
+  }
 
   .calendar__container td {
     width: 14.2%;
@@ -6384,6 +6400,25 @@ button {
   background-size: 39px;
 
 }
+.available.active_v3 {
+  border: solid 1px #109cf1;
+  padding: 0 !important;
+  margin: 2.5px 6.5px !important;
+  height: 34px !important;
+  width: 34px !important;
+}
+.available.active_v4 {
+  padding: 0 !important;
+  margin: 2.5px 6.5px !important;
+  height: 34px !important;
+  width: 34px !important;
+  border: solid 1px #109cf1;
+  background-color: rgba(36, 177, 255, 0.17)!important;
+  
+}
+.calendar-customer .calendar-table .available {
+  border-radius: 6px!important;
+}
 .calendar-customer.white .calendar-table .available {
   border-radius: 50%!important;
 }
@@ -6404,6 +6439,9 @@ button {
   .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
     margin: 2.5px 1px!important;
     width: 32px !important;}
+    .available.active_v3, .available.active_v4 {
+      margin: 2.5px 1px!important;
+      width: 32px !important;}
   .calendar-customer .calendar-table .available:hover {
     margin: 2.5px 1px!important;
     width: 32px !important;}
@@ -7056,6 +7094,10 @@ button {
       right: 0; }}
 
 @media only screen and (max-width: 575px) {
+  .available.active_v3, .available.active_v4 {
+    margin: 2.5px 1px!important;
+    height: 32px!important;
+    width: 32px !important;}
   .calendar-customer.white .prev, .calendar-customer.white .next {
     width: 20px!important;
     height: 20px!important;

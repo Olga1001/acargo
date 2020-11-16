@@ -322,10 +322,10 @@
                                     <a class="nav-link nav-link_v3 ">WAITING  </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link_v3 active">ACTIVE</a>
+                                    <a class="nav-link nav-link_v3 ">ACTIVE</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link nav-link_v3">COMPLETED</a>
+                                    <a class="nav-link nav-link_v3 active">COMPLETED</a>
                                 </li>
                             </ul>
                             <div class="px-3">
@@ -789,7 +789,7 @@
                                 </div>
                                
                             </div>
-                            <div class="contents__item active">
+                            <div class="contents__item">
                                 <div class="bg-light_v2 px-sm-3 row mx-0 py-3">
                                     <div class="col-xl-6 pl-xl-4">
                                         <div class="row">
@@ -1072,6 +1072,315 @@
                                                     </div>
                                                 </li>
                                             </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                               
+                            </div>
+                            <div class="contents__item active">
+                                <div class="bg-light_v2 px-sm-3 row mx-0 py-3">
+                                    <div class="col-xl-6 pl-xl-4">
+                                        <div class="row">
+                                            <div class="col-sm-6 mb-3">
+                                                <div class="row checkboxes__blue">
+                                                    <label class="col-4 px-xl-2"> 
+                                                      <input class="checkbox" type="radio" name="radio" >
+                                                      <span class="check-btn__blue py-2"> 
+                                                            <svg class="svg-sprite-icon icon-boat">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <label class="col-4 px-xl-2""> 
+                                                      <input class="checkbox" type="radio" name="radio" >
+                                                      <span class="check-btn__blue py-2"> 
+                                                        <svg class="svg-sprite-icon icon-delivery-truck">
+                                                          <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg></span>
+                                                    </label>
+                                                    <label class="col-4 px-xl-2"> 
+                                                      <input class="checkbox" type="radio" name="radio" checked>
+                                                      <span class="check-btn__blue py-2"> 
+                                                        <svg class="svg-sprite-icon icon-train">
+                                                          <use xlink:href="img/sprite/symbol/sprite.svg#train"></use>
+                                                        </svg></span>
+                                                    </label>
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-6 mb-3">
+                                                <div class="select bg-white">
+                                                    <div class="select__item">Carrier</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Carrier</li>
+                                                            <li class="select__option">Carrier</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pl-xl-2 mb-xl-0 mb-3">
+                                                <div class="d-flex relative">
+                                                    <div class="select bg-white b-r-0 br-r-0">
+                                                        <div class="select__item">From</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">From</li>
+                                                                <li class="select__option">From</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                    <div class="line-vertical"></div>
+                                                    <div class="select bg-white b-l-0 br-l-0">
+                                                        <div class="select__item">To</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">To</li>
+                                                                <li class="select__option">To</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-6">
+                                        <div class="row">
+                                            <div class="col-md-3 col-sm-6 mb-3">
+                                                <div class="select bg-white">
+                                                    <div class="select__item">Incoterm</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Incoterm</li>
+                                                            <li class="select__option">Incoterm</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 mb-3">
+                                                <div class="select bg-white">
+                                                    <div class="select__item">Arrived</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option">Delayed</li>
+                                                            <li class="select__option">Earlier</li>
+                                                            <li class="select__option">On time</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 mb-3">
+                                                <input type="text" class="input-date right" placeholder="ETD">
+                                            </div>
+                                            <div class="col-md-3 col-sm-6 mb-3">
+                                                <input type="text" class="input-date right" placeholder="ETA">
+                                            </div>
+                                            <div class="col-12">
+                                                <div class="d-flex">    
+                                                    <input type="text" class="bg-white b-r-0 br-r-0">
+                                               
+                                                    <button type="button" class="btn-aquamarine min-w-80">
+                                                        <img src="img/search-white.svg" alt="search" class="icon-search mx-auto">
+                                                    </button>
+                                                 </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3 py-1">
+                                    <ul class="base">
+                                        <li class="base-li base-border d-flex justify-content-between pl-sm-3 mt-3">
+                                            <ul class="row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                                        <div class="d-flex align-items-center justify-content-sm-end">
+                                                            <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                            <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                                <p class="mr-2">  Klaipeda, LT -  </p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                                <p>Shangai, CN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                                        <p class=" text-sm-right">18.05.2020 </p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                                        <p class=" text-sm-right">28.05.2020</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                                        <p class=" text-sm-right">Acargo Company LTD</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                                        <p class=" text-sm-right">Logistic LTD</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                                        <div class="d-flex justify-content-sm-end align-items-center">
+                                                            <p class="text-sm-right mr-1">8</p>   
+                                                            <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                            <p class="text-sm-right">Platform  </p>   
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                                        <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                                        <p class="text-sm-right">150782938</p> 
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                                        <p class="text-sm-right">LIFO</p> 
+                                                  </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                                         <p class="text-sm-right">18.05.2020 </p>   
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6"> </li>
+                                            </ul>
+                                            
+                                            <div class="base-settings d-lg-flex flex-column justify-content-around py-4">
+                                                <a href="#" class="">
+                                                    <img src="img/outside.svg" alt="outside">
+                                                </a>
+                                                <a href="#" class="">
+                                                    <img src="img/document-white.svg" alt="document">
+                                                </a>
+                                            </div>
+                                        </li>
+                                        <li class="base-li active base-border d-flex justify-content-between pl-sm-3 mt-3">
+                                            <ul class=" row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                                        <div class="d-flex align-items-center justify-content-sm-end">
+                                                            <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                            <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                                <p class="mr-2">  Klaipeda, LT -  </p>
+                                                            </div>
+                                                            <div class="d-flex align-items-center">
+                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                                <p>Shangai, CN</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                                        <p class=" text-sm-right">18.05.2020 </p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                                        <p class=" text-sm-right">28.05.2020</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                                        <p class=" text-sm-right">Acargo Company LTD</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                                        <p class=" text-sm-right">Logistic LTD</p>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                                        <div class="d-flex justify-content-sm-end align-items-center">
+                                                            <p class="text-sm-right mr-1">8</p>   
+                                                            <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                            <p class="text-sm-right">Platform  </p>   
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                                        <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                                        <p class="text-sm-right">150782938</p> 
+                                                    </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                                        <p class="text-sm-right">LIFO</p> 
+                                                  </div>
+                                                </li>
+                                                <li class="col-xl-4 col-lg-6">
+                                                    <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                                         <p class="text-sm-right">18.05.2020 </p>   
+                                                    </div>
+                                                </li>
+                                                
+                                                <li class="col-xl-4 col-lg-6"> </li>
+                                            </ul>
+                                            
+                                            <div class="base-settings d-lg-flex flex-column justify-content-around py-4">
+                                                <a href="#" class="">
+                                                    <img src="img/outside.svg" alt="outside">
+                                                </a>
+                                                <a href="#" class="">
+                                                    <img src="img/document-white.svg" alt="document">
+                                                </a>
+                                            </div>
                                         </li>
                                     </ul>
                                 </div>

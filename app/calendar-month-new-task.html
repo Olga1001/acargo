@@ -621,40 +621,69 @@
                       <img class="ml-auto" src="img/cancel.svg" alt="close">
                     </a>
                     <h2 class="title-2 py-4">Сreate new task</h2>
-                    <div class="row justify-content-center px-4 mx-0 pb-2">
+                    <div class="row justify-content-center px-sm-4 mx-0 pb-2">
                       <div class="col-sm-8 mb-4">
                         <p class="mb-2">Description</p>
-                        <textarea class="textarea bg-white" cols="30" rows="10"></textarea>
+                        <input type="text" value="New delivery">
+                      </div>
+                      <div class="col-sm-8 mb-4">
+                        <p class="mb-2">Choose time </p>
+                        <div class="d-flex align-items-center">
+                          <div class="select">
+                            <div class="select__item">8.00</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option active">8.00</li>
+                                    <li class="select__option">9.00</li>
+                                </ul>
+                            </div> 
+                          </div>
+                          <hr class="dash mx-3"></hr>
+                          <div class="select">
+                            <div class="select__item">10.00</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option active">10.00</li>
+                                    <li class="select__option">9.00</li>
+                                </ul>
+                            </div>
+                          </div>
+                        </div>
+                        <button class="btn_v2 mt-3 mx-auto">All day</button>
                       </div>
                       <div class="col-sm-8 pt-2">
-                        <p class="mb-2">Label status</p>
+                        <p class="mb-2 c-black">Label status </p>
                         <ul class="select__menu mh-content p-3 mb-4 relative">
                           <li class="px-1">                              
                             <label class="d-flex align-items-center">
-                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-yellow"></span><span>Default view</span>
+                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-yellow"></span><span>Follow up</span>
                             </label>
                           </li>
                           <li class="px-1 mt-3">                              
                             <label class="d-flex align-items-center">
-                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-orange"></span><span>Default view</span>
-                            </label>
-                          </li>
-                          <li class="px-1 mt-3">                              
-                            <label class="d-flex align-items-center">
-                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-blue"></span><span>Default view</span>
-                            </label>
-                          </li>
-                          <li class="px-1 mt-3">                             
-                            <label class="d-flex align-items-center">
-                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-green"></span><span>Default view</span>
-                            </label>
-                          </li>
-                          <li class="px-1 mt-3">                              
-                            <label class="d-flex align-items-center">
-                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span><span>Default view</span>
+                              <input class="checkbox" type="checkbox"><span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span><span>Important</span>
                             </label>
                           </li>
                         </ul>
+                      </div>
+                      <div class="col-sm-8">
+                        <div class="d-flex flex-wrap justify-content-center pb-2">
+                          <label class="checkbox__label my-1 mx-3">
+                            <input type="radio" name="radio1" class="checkbox" checked="">
+                            <span class="checkbox__check d-flex align-items-center">
+                              <span class="checkbox__text">Private</span>
+                              <span class="checkbox__icon"></span>
+                            </span>
+                          </label>
+                          <label class="checkbox__label my-1 mx-3">
+                            <input type="radio" name="radio1" class="checkbox" checked="">
+                            <span class="checkbox__check d-flex align-items-center">
+                              <span class="checkbox__text">Shared</span>
+                              <span class="checkbox__icon"></span>
+                            </span>
+                          </label>
+                        </div>
+                       
                       </div>
                     </div>
                     <div class="bg-blue p-xl-5 p-4">

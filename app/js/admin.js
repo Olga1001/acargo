@@ -211,9 +211,15 @@ $(document).ready(function () {
     var index = $(this).parent().index();
     $(".contents__item_v3").eq(index).addClass('active').siblings().removeClass('active');
   });
-}); //STICKY
+}); 
 
+
+
+//STICKY
 $(document).ready(function () {
+  let topbarHeight = $(".topbar").height();
+  $(".popup__booking-detail").css("top", topbarHeight);
+
   $(window).scroll(function () {
     if ($(window).width() > 768) {
       if ($(window).scrollTop() > 1) {
@@ -223,6 +229,14 @@ $(document).ready(function () {
         $(".sticky").removeClass('active');
         $(".topbar").slideDown(0);
       }
+    }
+    if ($(window).scrollTop() > 1) {
+      $(".popup__booking-detail").addClass('top-0');
+      $(".popup__company-info").addClass('top-0');
+    } else {
+      $(".popup__booking-detail").removeClass('top-0');
+      $(".popup__company-info").removeClass('top-0');
+
     }
   });
 }); //datepicker

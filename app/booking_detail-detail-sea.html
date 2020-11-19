@@ -10,933 +10,1502 @@
     <link href="css/style.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
   </head>
-  <body class="sidebar-toggled" id="page-top">
-    <nav class="navbar navbar-expand navbar-light supbar pt-4 pb-xl-4 px-xl-5"> 
-      <div class="d-flex align-items-center justify-content-between w-100"><a class="sidebar-brand-icon" href="#"><img class="logo" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" alt="logo"></a>
-        <div class="d-flex flex-wrap pr-xl-5 mr-xl-5 ovals__absolute">
-          <div class="oval-block">
-            <div class="select select-calendar">
-              <svg class="svg-sprite-icon icon-calendar">
-                <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
-              </svg>
-              <div class="select__item c-dark">3 Month</div>
-              <div class="select__drop">
-                <ul class="select__menu">
-                  <li class="select__option">3 Month  </li>
-                  <li class="select__option">4 Month  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="oval-block oval-block__current">
-            <div class="select select-current">
-              <div class="select__item">USD </div>
-              <div class="select__drop">
-                <ul class="select__menu">
-                  <li class="select__option">USD </li>
-                </ul>
-              </div>
-            </div>
-            <input class="input-normal" type="text" value="0,463 RUB">
-          </div>
-          <div class="oval-block">
-            <p class="c-gray fs-14 w-100 text-center">Today:<span class="c-dark">Jan 31</span></p>
-            <button class="btn-calendar" type="button">
-              <svg class="svg-sprite-icon icon-calendar_2">
-                <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
-              </svg>
-            </button>
-          </div>
-        </div>
-        <ul class="d-flex">
-          <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle h-100" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
-                <defs>
-                  <path id="prefix__a" d="M1.524 14.527V2.132l8.48 6.845 8.472-6.845v12.395H1.524zM17.143 1.49l-7.095 5.587-7.19-5.587h14.285zM18.182 0H1.818C.815 0 0 .797 0 1.778v12.444C0 15.202.815 16 1.818 16h16.364C19.185 16 20 15.203 20 14.222V1.778C20 .798 19.185 0 18.182 0z"></path>
-                </defs>
-                <g fill="none" fill-rule="evenodd">
-                  <g transform="translate(0 4)">
-                    <use fill="#B7BCD6" xlink:href="#prefix__a"></use>
-                  </g>
-                  <circle cx="4.5" cy="4.5" r="4.5" fill="#49DDAA" transform="translate(15)"></circle>
-                </g>
-              </svg></a>
-            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
-              <h6 class="dropdown-header">Message Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/man.png" style="max-width: 60px" alt="">
-                  <div class="status-indicator bg-success"></div>
-                </div>
-                <div class="font-weight-bold">
-                  <div class="text-truncate">
-                    Hi there! I am wondering if you can help me with a problem I've been
-                    having.
-                  </div>
-                  <div class="small text-gray-500">Udin Cilok · 58m</div>
-                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/girl.png" style="max-width: 60px" alt="">
-                  <div class="status-indicator bg-default"></div>
-                </div>
-                <div>
-                  <div class="text-truncate">
-                    Am I a good boy? The reason I ask is because someone told me that people
-                    say this to all dogs, even if they aren't good...
-                  </div>
-                  <div class="small text-gray-500">Jaenab · 2w</div>
-                </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle h-100" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 22">
-                <g fill="none" fill-rule="evenodd">
-                  <path fill="#B7BCD6" fill-rule="nonzero" d="M19.63 17.983c-2.372-1.056-2.462-5.588-2.464-5.702V9.24c0-2.927-1.813-5.443-4.39-6.514C12.77 1.222 11.527 0 10 0 8.473 0 7.23 1.222 7.225 2.727 4.647 3.798 2.834 6.314 2.834 9.24v3.04c-.002.115-.092 4.647-2.464 5.703-.27.12-.418.41-.356.696.063.286.319.49.615.49h6.012c.123.668.444 1.29.934 1.794C8.226 21.632 9.088 22 10 22c.912 0 1.774-.368 2.425-1.037.49-.504.81-1.126.934-1.794h6.012c.296 0 .552-.204.615-.49.062-.286-.086-.576-.356-.696zm-3.124-2.171c.25.745.602 1.493 1.103 2.116H2.39c.5-.623.854-1.37 1.103-2.116h13.012zM10 1.241c.69 0 1.275.457 1.458 1.081-.471-.096-.959-.147-1.458-.147-.5 0-.987.05-1.457.147.182-.624.766-1.081 1.457-1.081zM4.092 12.285V9.24c0-3.211 2.65-5.824 5.908-5.824 3.258 0 5.908 2.613 5.908 5.824v3.05c0 .093.016 1.074.266 2.281H3.826c.25-1.208.265-2.19.266-2.286zM10 20.759c-.96 0-1.799-.682-2.068-1.59h4.136c-.27.908-1.107 1.59-2.068 1.59z"></path>
-                  <circle cx="4" cy="4" r="4" fill="#49DDAA" transform="translate(13)"></circle>
-                </g>
-              </svg></a>
-            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
-              <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                  <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
-                </div>
-                <div>
-                  <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
-                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                  <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
-                </div>
-                <div>
-                  <div class="small text-gray-500">December 7, 2019</div>$290.29 has been deposited into your account!
-                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                <div class="mr-3">
-                  <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                </div>
-                <div>
-                  <div class="small text-gray-500">December 2, 2019</div>Spending Alert: We've noticed unusually high spending for your account.
-                </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-            </div>
-          </li>
-          <li class="nav-item dropdown no-arrow">
-            <a class="nav-link dropdown-toggle h-100 pr-sm-1 pr-0" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
-                <g fill="#B7BCD6">
-                  <path d="M24 12.5C24 5.591 18.633 0 12 0 5.368 0 0 5.59 0 12.5 0 19.347 5.322 25 12 25c6.65 0 12-5.621 12-12.5zM12 1.465c5.841 0 10.594 4.95 10.594 11.035 0 2.226-.636 4.365-1.814 6.178-4.733-5.304-12.818-5.313-17.56 0-1.178-1.813-1.814-3.952-1.814-6.178C1.406 6.415 6.16 1.465 12 1.465zM4.098 19.849c4.208-4.917 11.597-4.916 15.804 0-4.222 4.92-11.58 4.922-15.804 0z"></path>
-                  <path d="M12.5 13.542c2.481 0 4.5-2.003 4.5-4.465V7.59c0-2.461-2.019-4.464-4.5-4.464S8 5.128 8 7.589v1.488c0 2.462 2.019 4.465 4.5 4.465zm-3-5.953c0-1.64 1.346-2.976 3-2.976s3 1.335 3 2.976v1.488c0 1.642-1.346 2.977-3 2.977s-3-1.335-3-2.977V7.59z"></path>
-                </g>
-              </svg><span class="ml-3 d-none d-lg-inline c-dark">Client</span>
-              <span class="d-sm-inline-flex ml-4 pl-2 d-none">
-                <span class="settings__circle"></span>
-                <span class="settings__circle"></span>
-                <span class="settings__circle"></span>
-              </span>
-            </a>
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-              <a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>                                Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>                                Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>                                Activity Log</a>
-              <div class="dropdown-divider">
-                <a class="dropdown-item" href="login.html"></a>
-                <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>                                Logout</div>
-            </div>
-          </li>
-        </ul>
-      </div>
-    </nav>
+  <body id="page-top">
+  
     <div id="wrapper">
       <div class="overlay"></div>
-      <!-- Sidebar-->
-      <nav class="navbar-nav sidebar sidebar-light accordion toggled" id="accordionSidebar">
-        <div class="sidebar-brand d-flex align-items-center justify-content-between border-right"><a class="sidebar-brand-icon" href="#"><img class="logo" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" alt="logo"></a>
-          <button id="sidebarToggleTop"><span class="sidebarToggleTop-line sidebarToggleTop-top"></span><span class="sidebarToggleTop-line sidebarToggleTop-center"></span><span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span></button>
+      <nav class="navbar-nav sidebar sidebar-light accordion" id="accordionSidebar">
+        <div class="sidebar-brand d-flex align-items-center justify-content-between border-right">
+            <a href="#" class="sidebar-brand-icon">
+                <img src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" alt="logo" class="logo">
+            </a>
+            <button id="sidebarToggleTop" class="">
+                <span class="sidebarToggleTop-line sidebarToggleTop-top"></span>
+                <span class="sidebarToggleTop-line sidebarToggleTop-center"></span>
+                <span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span>
+            </button>
         </div>
         <ul class="sidebar-menu">
-          <li class="nav-item active"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/supermarket-1.svg" alt="icon" width="17" height="18"></span><span class="nav-item-name">Orders</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/truck.svg" alt="icon" width="17" height="13"></span><span class="nav-item-name">Transport Rate</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/graph.svg" alt="icon" width="16" height="17"></span><span class="nav-item-name">Rates</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img src="img/sidebar/calendar.svg" alt="icon"></span><span class="nav-item-name">Bookings</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img src="img/sidebar/placeholder.svg" alt="icon"></span><span class="nav-item-name">Track & Trace</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/template.svg" alt="icon"></span><span class="nav-item-name">Templates</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/work.svg" alt="icon"></span><span class="nav-item-name">Companies</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" data-toggle="collapse" href="#collapseCompany" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="nav-link-img"><img src="img/sidebar/user-1.svg" alt="icon"></span><span class="nav-item-name">My company</span></a></li>
-          <ul class="collapse" id="collapseCompany">
-            <li class="collapse-item"><a class="collapse-link" href="#">Departments</a></li>
-            <li class="collapse-item"><a class="collapse-link" href="#">Detail</a></li>
-            <li class="collapse-item"><a class="collapse-link" href="#">Ports</a></li>
-          </ul>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" data-toggle="collapse" href="#collapseAccess" role="button" aria-expanded="false" aria-controls="collapseExample"><span class="nav-link-img"><img src="img/sidebar/door.svg" alt="icon"></span><span class="nav-item-name">Access</span></a></li>
-          <ul class="collapse" id="collapseAccess">
-            <li class="collapse-item"><a class="collapse-link" href="#">Access</a></li>
-            <li class="collapse-item"><a class="collapse-link" href="#">Detail</a></li>
-          </ul>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/back-up.svg" alt="icon"></span><span class="nav-item-name">Backup</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/speech-bubble.svg" alt="icon"></span><span class="nav-item-name">Messages</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/document.svg" alt="icon"></span><span class="nav-item-name">Quotes</span></a></li>
-          <li class="nav-item"><a class="nav-link w-100 d-flex align-items-center" href="#"><span class="nav-link-img"><img class="nav-link-img" src="img/sidebar/cost.svg" alt="icon"></span><span class="nav-item-name">Requests</span></a></li>
+            <li class="nav-item active">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/supermarket-1.svg" alt="icon" class="nav-link-img" width="17" height="18">
+                    </span>
+                    <span class="nav-item-name">Orders</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/truck.svg" alt="icon" class="nav-link-img" width="17" height="13">
+                    </span>
+                    <span class="nav-item-name">Transport Rate</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/graph.svg" alt="icon" class="nav-link-img" width="16" height="17">
+                    </span>
+                    <span class="nav-item-name">Rates</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/calendar.svg" alt="icon">
+                    </span>
+                    <span class="nav-item-name">Bookings</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/placeholder.svg" alt="icon">
+                    </span>
+                    <span class="nav-item-name">Track &amp; Trace</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/template.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Templates</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/work.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Companies</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" data-toggle="collapse" href="#collapseCompany" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/user-1.svg" alt="icon">
+                    </span>
+                    <span class="nav-item-name">My company</span>
+                </a>
+                <ul class="collapse" id="collapseCompany">
+                    <li class="collapse-item">
+                        <a class="collapse-link" href="#">Departments</a>
+                    </li>
+                    <li class="collapse-item">
+                        <a class="collapse-link" href="#">Detail</a>
+                    </li>
+                    <li class="collapse-item">
+                        <a class="collapse-link" href="#">Ports</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" data-toggle="collapse" href="#collapseAccess" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    <span class="nav-link-img">
+                        <img src="img/sidebar/door.svg" alt="icon">
+                    </span>
+                    <span class="nav-item-name">Access</span>
+                </a>
+                <ul class="collapse" id="collapseAccess">
+                    <li class="collapse-item">
+                        <a class="collapse-link" href="#">Access</a>
+                    </li>
+                    <li class="collapse-item">
+                        <a class="collapse-link" href="#">Detail</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/back-up.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Backup</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/speech-bubble.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Messages</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/document.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Quotes</span>
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link w-100 d-flex align-items-center" href="#">
+                    <span class="nav-link-img">
+                         <img src="img/sidebar/cost.svg" alt="icon" class="nav-link-img">
+                    </span>
+                    <span class="nav-item-name">Requests</span>
+                </a>
+            </li>
         </ul>
-      </nav>
+    </nav>
       <div class="d-flex flex-column" id="content-wrapper">
+      
         <div id="content">
-          <nav class="navbar navbar-expand navbar-light bg-navbar topbar static-top pr-xl-5 topbar_2">
-            <button class="burger-mob" id="sidebarToggleTop"><span class="sidebarToggleTop-line sidebarToggleTop-top"></span><span class="sidebarToggleTop-line sidebarToggleTop-center"></span><span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span></button>
-            <ul class="navbar-list align-items-center d-md-flex d-none">
-              <li class="navbar-item b-none">
-                <a href="#" class="d-flex align-items-center">
-                  <svg class="svg-sprite-icon icon-supermarket navbar-item__svg mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#supermarket"></use>
-                  </svg>
-                  <span class="fs-18 c-white">Orders</span>
-                </a>
-              </li>
-              <li class="navbar-item b-none">
-                <a href="#" class="d-flex align-items-center">
-                  <svg class="svg-sprite-icon icon-graph  navbar-item__svg mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#graph"></use>
-                  </svg>
-                  <span class="fs-18 c-white text-nowrap">Transport Rate</span>
-                </a>
-              </li>
-              <li class="navbar-item b-none">
-                <a href="#" class="d-flex align-items-center">
-                  <svg class="svg-sprite-icon icon-calendar navbar-item__svg mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
-                  </svg>
-                  <span class="fs-18 c-white">Tracking             </span>
-                </a>
-              </li>
-              <li class="navbar-item b-none">
-                <a href="#" class="d-flex align-items-center">
-                  <svg class="svg-sprite-icon icon-user-1 navbar-item__svg mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#user-1"></use>
-                  </svg>
-                  <span class="fs-18 c-white text-nowrap">My account</span>
-                </a>
-              </li>
+          <nav class="navbar navbar-expand navbar-light bg-navbar topbar static-top">
+            <button id="sidebarToggleTop" class="burger-mob">
+                <span class="sidebarToggleTop-line sidebarToggleTop-top"></span>
+                <span class="sidebarToggleTop-line sidebarToggleTop-center"></span>
+                <span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span>
+            </button>
+            <ul class="navbar-list d-flex align-items-center d-md-flex d-none">
+                <li class="navbar-item">
+                    <div class="d-flex align-items-center">
+                        <img src="img/calendar-blue.svg" alt="calendar" class="">
+                        <p class="c-white">3 Month</p>
+                    </div>
+                </li>
+                <li class="navbar-item">
+                    <p class="c-white"><span class="c-blue-v1">96 </span> Containers<br>
+                        in product plan</p>
+                </li>
+                <li class="navbar-item">
+                    <p class="c-white"><span class="c-blue-v1">253 </span> Containers on<br>
+                        the way of delivery</p>
+                </li>
+                <li class="navbar-item">
+                    <p class="c-white"><span class="c-blue-v1">188 </span>  Containers has<br>
+                        been delivered</p>
+                </li>
             </ul>
-            <div class="d-flex ml-auto topbar-checkboxes"> 
-              <Label>
-                <input class="checkbox" type="radio" name="radio" checked><span class="check-btn d-flex align-items-center justify-content-center">
-                  <svg class="svg-sprite-icon icon-manager mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#manager"></use>
-                  </svg><span>Сustomer   </span></span>
-              </Label>
-              <label>
-                <input class="checkbox" type="radio" name="radio"><span class="check-btn d-flex align-items-center justify-content-center">
-                  <svg class="svg-sprite-icon icon-leader mr-3">
-                    <use xlink:href="img/sprite/symbol/sprite.svg#leader"></use>
-                  </svg><span>Agent</span></span>
-              </label>
-            </div>
+            <ul class="navbar-nav justify-content-end">
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <a class="nav-link dropdown-toggle" href="#" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+                            <defs>
+                                <path id="prefix__a" d="M1.524 14.527V2.132l8.48 6.845 8.472-6.845v12.395H1.524zM17.143 1.49l-7.095 5.587-7.19-5.587h14.285zM18.182 0H1.818C.815 0 0 .797 0 1.778v12.444C0 15.202.815 16 1.818 16h16.364C19.185 16 20 15.203 20 14.222V1.778C20 .798 19.185 0 18.182 0z"></path>
+                            </defs>
+                            <g fill="none" fill-rule="evenodd">
+                                <g transform="translate(0 4)">
+                                    <use fill="#B7BCD6" xlink:href="#prefix__a"></use>
+                                </g>
+                                <circle cx="4.5" cy="4.5" r="4.5" fill="#49DDAA" transform="translate(15)"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                        <h6 class="dropdown-header">
+                            Message Center
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="img/man.png" style="max-width: 60px" alt="">
+                                <div class="status-indicator bg-success"></div>
+                            </div>
+                            <div class="font-weight-bold">
+                                <div class="text-truncate">Hi there! I am wondering if you can help me with a problem I've been
+                                    having.</div>
+                                <div class="small text-gray-500">Udin Cilok · 58m</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="dropdown-list-image mr-3">
+                                <img class="rounded-circle" src="img/girl.png" style="max-width: 60px" alt="">
+                                <div class="status-indicator bg-default"></div>
+                            </div>
+                            <div>
+                                <div class="text-truncate">Am I a good boy? The reason I ask is because someone told me that people
+                                    say this to all dogs, even if they aren't good...</div>
+                                <div class="small text-gray-500">Jaenab · 2w</div>
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown no-arrow mx-1">
+                    <a class="nav-link dropdown-toggle px-4 border-right border-left" href="#" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="mx-2" xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 22">
+                            <g fill="none" fill-rule="evenodd">
+                                <path fill="#B7BCD6" fill-rule="nonzero" d="M19.63 17.983c-2.372-1.056-2.462-5.588-2.464-5.702V9.24c0-2.927-1.813-5.443-4.39-6.514C12.77 1.222 11.527 0 10 0 8.473 0 7.23 1.222 7.225 2.727 4.647 3.798 2.834 6.314 2.834 9.24v3.04c-.002.115-.092 4.647-2.464 5.703-.27.12-.418.41-.356.696.063.286.319.49.615.49h6.012c.123.668.444 1.29.934 1.794C8.226 21.632 9.088 22 10 22c.912 0 1.774-.368 2.425-1.037.49-.504.81-1.126.934-1.794h6.012c.296 0 .552-.204.615-.49.062-.286-.086-.576-.356-.696zm-3.124-2.171c.25.745.602 1.493 1.103 2.116H2.39c.5-.623.854-1.37 1.103-2.116h13.012zM10 1.241c.69 0 1.275.457 1.458 1.081-.471-.096-.959-.147-1.458-.147-.5 0-.987.05-1.457.147.182-.624.766-1.081 1.457-1.081zM4.092 12.285V9.24c0-3.211 2.65-5.824 5.908-5.824 3.258 0 5.908 2.613 5.908 5.824v3.05c0 .093.016 1.074.266 2.281H3.826c.25-1.208.265-2.19.266-2.286zM10 20.759c-.96 0-1.799-.682-2.068-1.59h4.136c-.27.908-1.107 1.59-2.068 1.59z"></path>
+                                <circle cx="4" cy="4" r="4" fill="#49DDAA" transform="translate(13)"></circle>
+                            </g>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">
+                            Alerts Center
+                        </h6>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-primary">
+                                    <i class="fas fa-file-alt text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 12, 2019</div>
+                                <span class="font-weight-bold">A new monthly report is ready to download!</span>
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-success">
+                                    <i class="fas fa-donate text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 7, 2019</div>
+                                $290.29 has been deposited into your account!
+                            </div>
+                        </a>
+                        <a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-warning">
+                                    <i class="fas fa-exclamation-triangle text-white"></i>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 2, 2019</div>
+                                Spending Alert: We've noticed unusually high spending for your account.
+                            </div>
+                        </a>
+                        <a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown no-arrow">
+                    <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                            <g fill="#B7BCD6">
+                                <path d="M24 12.5C24 5.591 18.633 0 12 0 5.368 0 0 5.59 0 12.5 0 19.347 5.322 25 12 25c6.65 0 12-5.621 12-12.5zM12 1.465c5.841 0 10.594 4.95 10.594 11.035 0 2.226-.636 4.365-1.814 6.178-4.733-5.304-12.818-5.313-17.56 0-1.178-1.813-1.814-3.952-1.814-6.178C1.406 6.415 6.16 1.465 12 1.465zM4.098 19.849c4.208-4.917 11.597-4.916 15.804 0-4.222 4.92-11.58 4.922-15.804 0z"></path>
+                                <path d="M12.5 13.542c2.481 0 4.5-2.003 4.5-4.465V7.59c0-2.461-2.019-4.464-4.5-4.464S8 5.128 8 7.589v1.488c0 2.462 2.019 4.465 4.5 4.465zm-3-5.953c0-1.64 1.346-2.976 3-2.976s3 1.335 3 2.976v1.488c0 1.642-1.346 2.977-3 2.977s-3-1.335-3-2.977V7.59z"></path>
+                            </g>
+                        </svg>
+                        <span class="ml-3 d-none d-lg-inline">Alina Ivanov</span>
+                        <img src="img/down.svg" alt="arrow dropdown" class="nav-link-arrow">
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Profile
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Settings
+                        </a>
+                        <a class="dropdown-item" href="#">
+                            <i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Activity Log
+                        </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="login.html">
+                            <i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>
+                            Logout
+                        </a>
+                    </div>
+                </li>
+            </ul>
           </nav>
           <div class="container-fluid px-sm-4 px-3" id="container-wrapper">
             <div class="px-xl-4" id="box">
               <div class="box-white p-0 mx-auto relative">
-                <div class="bg-blue-pale px-sm-4 px-3 pb-1 pt-3 mx-0">
-                  <div class="row">
-                    <div class="col-11">
-                      <div class="row">
-                        <div class="col-xl-3 col-lg-4 col-md-6 mr-xl-4">
-                          <div class="row pb-1">
-                            <div class="col-lg-4 col-sm-5 mb-2">
-                              <p class="fs-16 c-white weight-bold mr-sm-4 mr-2">Order  </p>
-                            </div>
-                            <div class="col-lg-8 col-sm-7 mb-2">
-                              <p class="c-white">OR-753827598</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="row pb-1">
-                            <div class="col-12 mb-2">
-                              <p class="d-flex align-items-center c-white">
-                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-3">
-                                Klaipeda, LT  
-                                <span class="mx-2"> - </span>     
-                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-3"> New York,USA
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 mr-xl-4">
-                          <div class="row pb-1">
-                            <div class="col-sm-5 mb-2">
-                              <p class="c-white weight-bold pr-sm-4 pr-2">ETD   </p>
-                            </div>
-                            <div class="col-sm-7 mb-2">
-                              <p class="c-white d-flex align-items-center"> 25.02.2020</p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 mr-xl-4">
-                          <div class="row pb-1">
-                            <div class="col-lg-4 col-sm-5 mb-2">
-                              <p class="fs-16 c-white weight-bold mr-sm-4 mr-2">Date  </p>
-                            </div>
-                            <div class="col-lg-8 col-sm-7 mb-2">
-                              <div class="d-flex align-items-center">
-                                <img src="img/calendar-1-white.svg" alt="calendar" width="14px" class="mr-3">
-                                <p class="c-white">22.05.2020</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6">
-                          <div class="row pb-1">
-                            <div class="col-12 mb-2">
-                              <p class="d-flex align-items-center c-white">
-                                <svg class="svg-sprite-icon c-white mr-2" width="16px" height="18px">
-                                  <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                </svg>
-                                3x  45’CH
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-xl-3 col-lg-4 col-md-6 mr-xl-4">
-                          <div class="row pb-1">
-                            <div class="col-sm-5 mb-2">
-                              <p class="c-white weight-bold pr-sm-4 pr-2">ETA</p>
-                            </div>
-                            <div class="col-sm-7 mb-2">
-                              <p class="c-white d-flex align-items-center">25.02.2020</p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-1 justify-content-end d-flex">
-                      <a href="#" class="close-small">
-                          <img src="img/white__cancel.svg" alt="close">
-                      </a>
-                    </div>
-                  </div>
-                </div>
-                <div class=" px-sm-4 p-3 pt-sm-2">
-                  <div class="d-flex flex-wrap align-items-end justify-content-between">
-                    <ul class="nav nav-tabs_v3 mt-3">
+                <div class="d-flex flex-wrap justify-content-between align-items-center px-sm-4">
+                  <ul class="nav nav-tabs_v3 py-4 px-3">
                       <li class="nav-item">
-                          <a class="nav-link_v3 active">DETAIL  </a>
+                          <a class="nav-link nav-link ">WAITING  </a>
                       </li>
-                      <li class="nav-item" role="presentation">
-                          <a class="nav-link_v3">PARTIES</a>
+                      <li class="nav-item">
+                          <a class="nav-link nav-link active">ACTIVE</a>
                       </li>
-                      <li class="nav-item" role="presentation">
-                          <a class="nav-link_v3 ">DOCUMENT</a>
+                      <li class="nav-item">
+                          <a class="nav-link nav-link">COMPLETED</a>
                       </li>
-                    </ul>
-                    <div class="d-flex align-items-center">
-                      <div class="select select-normal select-noarrow h-auto">
-                        <button type="button" class="select__item  btn-mark d-flex align-items-center px-4 mt-3">
-                          <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
-                          </svg>Mark as comlete
-                        </button>
-                        <div class="select__drop mt-2">
-                          <ul class="select__menu">
-                            <li class="select__option mb-2 active">
-                              <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="14px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#create"></use>
-                              </svg>
-                              Modify
-                            </li>
-                            <li class="select__option mb-2 ">
-                              <svg class="svg-sprite-icon c-gray mr-2" width="17px" height="17px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
-                              </svg>
-                              Copy booking
-                            </li>
-                            <li class="select__option">
-                              <svg class="svg-sprite-icon c-gray mr-2" width="17px" height="17px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#cancel"></use>
-                              </svg>
-                              Cancel booking
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                      <div class="circle pl-4 mt-3 pr-1">
-                        <span class="circle-span bg-gray big"></span>
-                        <span class="circle-span bg-gray big"></span>
-                        <span class="circle-span bg-gray big"></span>
-                        <div class="menu menu-right">
-                            <ul class="menu__list">
-                                <li class="menu__item">
-                                    <a href="#" class="text-14">
-                                        <img src="img/calendar-1.svg" alt="calendar" class="icon-calendar">
-                                        Booking
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="text-14">
-                                        <img src="img/document.svg" alt="document" class="icon-document">
-                                        Dublicate
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="text-14">
-                                        <img src="img/maths.svg" alt="maths" class="icon-maths">
-                                        Send to sales
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="text-14">
-                                        <img src="img/create-24-px.svg" alt="create" class="edit">
-                                        Edit
-                                    </a>
-                                </li>
-                                <li class="menu__item">
-                                    <a href="#" class="text-14">
-                                        <img src="img/bin.svg" alt="bin" class="icon-calendar">
-                                        Delete
-                                    </a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    </div>
-                  </div>
-                  <div id="contents" class="contents py-5">
-                    <div class="contents__item_v3 active">
-                      <div class="row">
-                        <div class="col-lg-10 d-flex align-items-center flex-md-nowrap flex-wrap">
-                          <p class="text-up mr-4 mb-3">Order</p>  
-                          <div class="select select-normal mb-3">
-                            <div class="select__item c-blue-gray bg-light_05"> YMFKLP0014418 - 3x  45’CH - Sea;  AAFKLP0014418 - 5x  45’CH - Sea</div>
-                            <div class="select__drop">
-                              <ul class="select__menu">
-                                <li class="select__option active"> YMFKLP0014418 - 3x  45’CH - Sea;  AAFKLP0014418 - 5x  45’CH - Sea</li>
-                                <li class="select__option"> YMFKLP0014418 - 3x  45’CH - Sea;  AAFKLP0014418 - 5x  45’CH - Sea</li>
-                              </ul>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="row justify-content-between">
-                        <div class="col-lg-6 mt-4 pr-xl-5">
-                          <div class="d-flex align-items-center mb-4">
-                            <img src="img/calendar-blue_v2.svg" class="mr-3" alt="calendar" height="24px" width="24px">
-                            <p class="fs-16 text-up">booking info</p>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Carrier </p>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="select select-normal h-auto">
-                                <div class="select__item bb-1 lh-1 c-dark fs-15"> CARGO Company LTD</div>
-                                <div class="select__drop">
-                                  <ul class="select__menu">
-                                    <li class="select__option active">CARGO Company LTD</li>
-                                    <li class="select__option">CARGO Company LTD 2</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6 py-1">
-                              <p class="fs-16 c-blue-gray">Booking office </p>
-                            </div>
-                            <div class="col-sm-6 py-1">
-                              <input type="text" class="input-text br-0" value="Pushkina 12/1, Moscow, RU">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Quotation No.</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0 " value="AA-77893982798 ">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Rate</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text" value="18 EUR / hour ">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Vechicle type</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text" value="Samitrailer ">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Quantity</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="12">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center pt-5">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Loading</p>
-                            </div>
-                            <div class="col-sm-6 d-flex justify-content-between">
-                              <div class="d-flex align-items-center block_resize-input">
-                                <div class="table__span" style="display: none;"></div>
-                                <input type="text" class="input-text mr-3" value="12.08.2020 - 15.08.2020 ">
-                                <img src="img/calendar-1.svg" alt="calendar" width="15px" height="15px">
-                              </div> 
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">ETD</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="d-flex align-items-center block_resize-input">
-                                <div class="table__span" style="display: none;"></div>
-                                <input type="text" class="input-text mr-3" value="12.08.2020 ">
-                                <img src="img/calendar-1.svg" alt="calendar" width="15px" height="15px">
-                              </div> 
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">ETA</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <div class="d-flex align-items-center block_resize-input">
-                                <div class="table__span" style="display: none;"></div>
-                                <input type="text" class="input-text mr-3" value="12.08.2020 ">
-                                <img src="img/calendar-1.svg" alt="calendar" width="15px" height="15px">
-                              </div> 
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col-lg-6 mt-4 pl-xl-5">
-                          <div class="d-flex align-items-center mb-4">
-                            <img src="img/box.svg" class="mr-3" alt="box" height="24px" width="24px">
-                            <p class="fs-16 text-up">Vechicle type</p>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Description</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="Fruits and vegetables">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">HS code</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="AB-1273736463892">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6 col-8">
-                              <p class="fs-16 c-blue-gray">Dangerous cargo </p>
-                            </div>
-                            <div class="col-sm-6 col-4">
-                              <label>
-                                <input type="checkbox" class="checkbox" checked>
-                                <span class="checkbox__icon-blue m-0 big"></span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6 col-8">
-                              <p class="fs-16 c-blue-gray">Temperature control</p>
-                            </div>
-                            <div class="col-sm-6 col-4">
-                              <label>
-                                <input type="checkbox" class="checkbox" checked>
-                                <span class="checkbox__icon-blue m-0 big"></span>
-                              </label>
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">IMO class</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="AB-245">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Temperature</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="+15 °C">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Ventilation</p>
-                            </div>
-                            <div class="col-sm-6 py-1">
-                              <input type="text" class="input-text bb-1 br-0" value="20 %">
-                            </div>
-                          </div>
-                          <div class="row mb-3 align-items-center">
-                            <div class="col-sm-6">
-                              <p class="fs-16 c-blue-gray">Weight</p>
-                            </div>
-                            <div class="col-sm-6">
-                              <input type="text" class="input-text bb-1 br-0" value="2000 kg">
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                     
-                      <div class="row">
-                        <div class="col-lg-6">
-                          <div class="d-flex align-items-center mt-5 mb-2">
-                            <img src="img/create-24-px-blue.svg" alt="create" class="mr-3">
-                            <p class="text-up">Remarks</p>
-                          </div>
-                          <textarea class="textarea_v2 " cols="20" rows="4"></textarea>
-                        </div>
-                      </div>
-                     
-                    </div> 
-                    <div class="contents__item_v3 ">
-                        <div class="row">
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Shipper</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Consignee</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Customs broker</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Agent</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Customs broker</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                          <div class="col-xl-4 col-sm-6 mb-4">
-                            <div class="b-1 br-4 min-h-175">
-                              <div class="bg-light_05 py-2 px-3 d-flex align-items-center">
-                                <img src="img/manager.svg" alt="manager" width="15px" height="17px" class="mr-2">
-                                <p class="fs-18 pl-1">Transporter</p>
-                              </div>
-                              <div class="p-3">
-                                  <div class="select select-normal h-auto bb-1">
-                                    <div class="d-flex align-items-center">
-                                      <img class="flag_v3" src="img/flag.svg" alt="flag">
-                                      <div class="select__item lh-1 c-blue fs-16">ACARGO Company LTD</div>
-                                    </div>
-                                  
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active">ACARGO Company LTD</li>
-                                        <li class="select__option">ACARGO Company LTD</li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                  <p class="mt-2 pt-1">Klaipeda, 246000, Lithuania</p>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="my-5">
-                          <div class="d-flex align-items-center mb-4">
-                            <img src="img/wallet-outline-in-a-circle.svg" class="mr-3" alt="calendar" height="24px" width="24px">
-                            <p class="fs-16 text-up">PAYMENT</p>
-                          </div>
-                          <div class="row justify-content-between">
-                            <div class="col-xl-6 col-sm-6">
-                              <div class="row">
-                                <div class="col-6">
-                                  <p class="fs-16 c-blue-gray">Freight cost</p>
-                                </div>
-                                <div class="col-6">
-                                  <div class="row">
-                                    <div class="col-xl-6">
-                                      <label class="checkbox__blue d-flex align-items-center container-action mb-4">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="checkbox__icon-blue mr-3 big"></span>
-                                        <span class="pl-1 fs-16">Prepaid</span>
-                                      </label>
-                                    </div>
-                                    <div class="col-xl-6">
-                                      <label class="checkbox__blue d-flex align-items-center container-action mb-4">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="checkbox__icon-blue mr-3 big"></span>
-                                        <span class="pl-1 fs-16">Collect</span>
-                                      </label>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                    </div> 
-                    <div class="contents__item_v3">
-                      <div class="table mx-0">
-                        <div class="table__head d-none d-md-block">
-                          <div class="row">
-                            <div class="col-4">
-                              <p>DOCUMENT NAME</p>
-                            </div>
-                            <div class="col-8">
-                              <div class="row">
-                                <div class="col-4"><p>DATE</p></div>
-                                <div class="col-4"><p>FILE</p></div>
-                                <div class="col-4"><p>Actions</p></div>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                        <ul class="table__body">
-                            <li class="table__body-item p-sm-4 p-3 ">
-                                <div class="row align-items-center">
-                                  <div class="col-md-4">
-                                    <p><span class="d-md-none d-flex mb-2 mt-sm-3">DOCUMENT NAME:</span>Invoice_742888677</p>
-                                      
-                                  </div>
-                                  <div class="col-md-8">
-                                    <div class="row align-items-center">
-                                      <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">DATE:</span> 11.02.2020</p></div>
-                                      <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">FILE:</span> 20021314.pdf</p></div>
-                                      <div class="col-sm-4">
-                                        <div class="d-md-flex align-items-center">
-                                          <p><span class="d-md-none d-flex mb-2 mt-3">Actions:</span></p>
-                                          <div class="d-flex align-items-center">
-                                              <a href="#"><img src="img/add-file.svg" alt="add-file" class="add-file m-0"></a>
-                                              <a href="#" class="ml-4"><img src="img/print.svg" alt="print" class="print m-0"></a>
-                                              <a href="#" class="ml-4"><img src="img/bin.svg" alt="garbage" class="garbage m-0"></a>
-                                          </div>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </li>
-                            <li class="table__body-item p-sm-4 p-3 ">
-                              <div class="row align-items-center">
-                                <div class="col-md-4">
-                                  <p><span class="d-md-none d-flex mb-2 mt-sm-3">DOCUMENT NAME:</span>Invoice_742888677</p>
-                                    
-                                </div>
-                                <div class="col-md-8">
-                                  <div class="row align-items-center">
-                                    <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">DATE:</span> 11.02.2020</p></div>
-                                    <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">FILE:</span> 20021314.pdf</p></div>
-                                    <div class="col-sm-4">
-                                      <div class="d-md-flex align-items-center">
-                                        <p><span class="d-md-none d-flex mb-2 mt-3">Actions:</span></p>
-                                        <div class="d-flex align-items-center">
-                                            <a href="#"><img src="img/add-file.svg" alt="add-file" class="add-file m-0"></a>
-                                            <a href="#" class="ml-4"><img src="img/print.svg" alt="print" class="print m-0"></a>
-                                            <a href="#" class="ml-4"><img src="img/bin.svg" alt="garbage" class="garbage m-0"></a>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                          </li>
-                          <li class="table__body-item p-sm-4 p-3 ">
-                            <div class="row align-items-center">
-                              <div class="col-md-4">
-                                <p><span class="d-md-none d-flex mb-2 mt-sm-3">DOCUMENT NAME:</span>Invoice_742888677</p>
-                                  
-                              </div>
-                              <div class="col-md-8">
-                                <div class="row align-items-center">
-                                  <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">DATE:</span> 11.02.2020</p></div>
-                                  <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">FILE:</span> 20021314.pdf</p></div>
-                                  <div class="col-sm-4">
-                                    <div class="d-md-flex align-items-center">
-                                      <p><span class="d-md-none d-flex mb-2 mt-3">Actions:</span></p>
-                                      <div class="d-flex align-items-center">
-                                          <a href="#"><img src="img/add-file.svg" alt="add-file" class="add-file m-0"></a>
-                                          <a href="#" class="ml-4"><img src="img/print.svg" alt="print" class="print m-0"></a>
-                                          <a href="#" class="ml-4"><img src="img/bin.svg" alt="garbage" class="garbage m-0"></a>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                        </li>
-                        <li class="table__body-item p-sm-4 p-3 ">
-                          <div class="row align-items-center">
-                            <div class="col-md-4">
-                              <p><span class="d-md-none d-flex mb-2 mt-sm-3">DOCUMENT NAME:</span>Invoice_742888677</p>
-                                
-                            </div>
-                            <div class="col-md-8">
-                              <div class="row align-items-center">
-                                <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">DATE:</span> 11.02.2020</p></div>
-                                <div class="col-sm-4 col-6"><p><span class="d-md-none d-flex mb-2 mt-3">FILE:</span> 20021314.pdf</p></div>
-                                <div class="col-sm-4">
-                                  <div class="d-md-flex align-items-center">
-                                    <p><span class="d-md-none d-flex mb-2 mt-3">Actions:</span></p>
-                                    <div class="d-flex align-items-center">
-                                        <a href="#"><img src="img/add-file.svg" alt="add-file" class="add-file m-0"></a>
-                                        <a href="#" class="ml-4"><img src="img/print.svg" alt="print" class="print m-0"></a>
-                                        <a href="#" class="ml-4"><img src="img/bin.svg" alt="garbage" class="garbage m-0"></a>
-                                    </div>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                      </li>
-                            <li class="table__body-item sticky-bottom bg-white py-3 p-sm-4 p-3">
-                              <div class="row align-items-center">
-                                <div class="col-md-4">
-                                  <div class="select select-normal">
-                                    <div class="select__item"> 
-                                      <p class="fs-14 c-gray text-italic"> + Add  new document </p>
-                                    </div>
-                                    <div class="select__drop">
-                                      <ul class="select__menu">
-                                        <li class="select__option active"></li>
-                                        <li class="select__option"></li>
-                                      </ul>
-                                    </div>
-                                  </div>
-                                    
-                                </div>
-                                <div class="col-md-8">
-                                  <div class="row align-items-center">
-                                    <div class="col-sm-4 d-md-block d-none"></div>
-                                    <div class="col-sm-4 ">
-                                      <label for="drop-upload1" class="d-flex align-items-center">
-                                          <img src="img/upload-blue.svg" alt="upload" class="mr-3" width="17px" height="15px">
-                                          <input type="file" id="drop-upload1" name="files[]" multiple="" value="  ">
-                                          <span class="fs-14 text-italic c-blue-gray underline">Upload file</span>
-                                      </label>
-                                    </div>
-                                    <div class="col-sm-4"></div>
-                                  </div>
-                                </div>
-                              </div>
-                            </li>
-                        </ul>
-                    </div>
-
-                    </div> 
+                  </ul>
+                  <div class="px-3">
+                      <button type="button" class="btn-aquamarine big">+ New booking</button>
                   </div>
               </div>
-                <div class="popup_v2">
-                  <div class="popup__network ml-auto">
+              <!---contents-->
+              <div id="contents" class="contents py-3">
+                  <div class="contents__item ">
+                      <div class="bg-light_v2 px-sm-3 row mx-0 py-3">
+                          <div class="col-xl-6 pl-xl-4">
+                              <div class="row">
+                                  <div class="col-sm-6 mb-3">
+                                      <div class="row checkboxes__blue">
+                                          <label class="col-4 px-xl-2"> 
+                                            <input class="checkbox" type="radio" name="radio" checked>
+                                            <span class="check-btn__blue py-2"> 
+                                                  <svg class="svg-sprite-icon icon-boat">
+                                                  <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                  </svg>
+                                              </span>
+                                          </label>
+                                          <label class="col-4 px-xl-2""> 
+                                            <input class="checkbox" type="radio" name="radio">
+                                            <span class="check-btn__blue py-2"> 
+                                              <svg class="svg-sprite-icon icon-delivery-truck">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                              </svg></span>
+                                          </label>
+                                          <label class="col-4 px-xl-2"> 
+                                            <input class="checkbox" type="radio" name="radio">
+                                            <span class="check-btn__blue py-2"> 
+                                              <svg class="svg-sprite-icon icon-train">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#train"></use>
+                                              </svg></span>
+                                          </label>
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-6 mb-3">
+                                      <div class="select bg-white">
+                                          <div class="select__item">Carrier</div>
+                                          <div class="select__drop">
+                                              <ul class="select__menu">
+                                                  <li class="select__option active">Carrier</li>
+                                                  <li class="select__option">Carrier</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 pl-xl-2 mb-xl-0 mb-3">
+                                      <div class="d-flex relative">
+                                          <div class="select bg-white b-r-0 br-r-0">
+                                              <div class="select__item">From</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">From</li>
+                                                      <li class="select__option">From</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="line-vertical"></div>
+                                          <div class="select bg-white b-l-0 br-l-0">
+                                              <div class="select__item">To</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">To</li>
+                                                      <li class="select__option">To</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xl-6">
+                              <div class="row">
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <div class="select bg-white">
+                                          <div class="select__item">Incoterm</div>
+                                          <div class="select__drop">
+                                              <ul class="select__menu">
+                                                  <li class="select__option active">Incoterm</li>
+                                                  <li class="select__option">Incoterm</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="Cut-off">
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="ETD">
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="ETA">
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="d-flex">    
+                                          <input type="text" class="bg-white b-r-0 br-r-0">
+                                     
+                                          <button type="button" class="btn-aquamarine min-w-80">
+                                              <img src="img/search-white.svg" alt="search" class="icon-search mx-auto">
+                                          </button>
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 py-1">
+                          <ul class="base">
+                              <li class="base-li active d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                              <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                               <p class="text-sm-right">LIFO</p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white-bin.svg" alt="bin">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border bg-gray row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                              <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                               <p class="text-sm-right">LIFO</p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white-bin.svg" alt="bin">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                              <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                               <p class="text-sm-right">LIFO</p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white-bin.svg" alt="bin">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                              <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                              <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                  <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                  <p>3x40'HC </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                               <p class="text-sm-right">LIFO</p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white-bin.svg" alt="bin">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                            <p class=" text-sm-right">28.05.2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                            <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                    <p class="mr-2">  Klaipeda, LT -  </p>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                    <p>Shangai, CN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                            <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                            <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                <p>3x40'HC </p>   
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                            <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                <p>3x40'HC </p>   
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                            <p class="text-sm-right">Logistic LTD</p> 
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                            <p class="text-sm-right">LIFO</p> 
+                                      </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                             <p class="text-sm-right">LIFO</p>   
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                            <p class="text-sm-right">150782938</p> 
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="base-settings">
+                                    <a href="#" class="">
+                                        <img src="img/outside.svg" alt="outside">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/white__create-24-px.svg" alt="create">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/document-white.svg" alt="document">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/white-bin.svg" alt="bin">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                            <p class=" text-sm-right">28.05.2020</p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                            <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                    <p class="mr-2">  Klaipeda, LT -  </p>
+                                                </div>
+                                                <div class="d-flex align-items-center">
+                                                    <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                    <p>Shangai, CN</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
+                                            <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                            <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                <p>3x40'HC </p>   
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
+                                            <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
+                                                <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
+                                                <p>3x40'HC </p>   
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                            <p class="text-sm-right">Logistic LTD</p> 
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                            <p class="text-sm-right">LIFO</p> 
+                                      </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                             <p class="text-sm-right">LIFO</p>   
+                                        </div>
+                                    </li>
+                                    <li class="col-xl-4 col-lg-6">
+                                        <div class="d-sm-flex align-items-center justify-content-between mt-4">
+                                            <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                            <p class="text-sm-right">150782938</p> 
+                                        </div>
+                                    </li>
+                                </ul>
+                                <div class="base-settings">
+                                    <a href="#" class="">
+                                        <img src="img/outside.svg" alt="outside">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/white__create-24-px.svg" alt="create">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/document-white.svg" alt="document">
+                                    </a>
+                                    <a href="#" class="">
+                                        <img src="img/white-bin.svg" alt="bin">
+                                    </a>
+                                </div>
+                            </li>
+                          </ul>
+                      </div>
+                     
+                  </div>
+                  <div class="contents__item active">
+                      <div class="bg-light_v2 px-sm-3 row mx-0 py-3">
+                          <div class="col-xl-6 pl-xl-4">
+                              <div class="row">
+                                  <div class="col-sm-6 mb-3">
+                                      <div class="row checkboxes__blue">
+                                          <label class="col-4 px-xl-2"> 
+                                            <input class="checkbox" type="radio" name="radio" checked>
+                                            <span class="check-btn__blue py-2"> 
+                                                  <svg class="svg-sprite-icon icon-boat">
+                                                  <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                  </svg>
+                                              </span>
+                                          </label>
+                                          <label class="col-4 px-xl-2""> 
+                                            <input class="checkbox" type="radio" name="radio" >
+                                            <span class="check-btn__blue py-2"> 
+                                              <svg class="svg-sprite-icon icon-delivery-truck">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                              </svg></span>
+                                          </label>
+                                          <label class="col-4 px-xl-2"> 
+                                            <input class="checkbox" type="radio" name="radio" >
+                                            <span class="check-btn__blue py-2"> 
+                                              <svg class="svg-sprite-icon icon-train">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#train"></use>
+                                              </svg></span>
+                                          </label>
+                                        </div>
+                                  </div>
+                                  <div class="col-sm-6 mb-3">
+                                      <div class="select bg-white">
+                                          <div class="select__item">Carrier</div>
+                                          <div class="select__drop">
+                                              <ul class="select__menu">
+                                                  <li class="select__option active">Carrier</li>
+                                                  <li class="select__option">Carrier</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-12 pl-xl-2 mb-xl-0 mb-3">
+                                      <div class="d-flex relative">
+                                          <div class="select bg-white b-r-0 br-r-0">
+                                              <div class="select__item">From</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">From</li>
+                                                      <li class="select__option">From</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="line-vertical"></div>
+                                          <div class="select bg-white b-l-0 br-l-0">
+                                              <div class="select__item">To</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">To</li>
+                                                      <li class="select__option">To</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                    
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="col-xl-6">
+                              <div class="row">
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <div class="select bg-white">
+                                          <div class="select__item">Incoterm</div>
+                                          <div class="select__drop">
+                                              <ul class="select__menu">
+                                                  <li class="select__option active">Incoterm</li>
+                                                  <li class="select__option">Incoterm</li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="Cut-off">
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="ETD">
+                                  </div>
+                                  <div class="col-md-3 col-sm-6 mb-3">
+                                      <input type="text" class="input-date right" placeholder="ETA">
+                                  </div>
+                                  <div class="col-12">
+                                      <div class="d-flex">    
+                                          <input type="text" class="bg-white b-r-0 br-r-0">
+                                     
+                                          <button type="button" class="btn-aquamarine min-w-80">
+                                              <img src="img/search-white.svg" alt="search" class="icon-search mx-auto">
+                                          </button>
+                                       </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 py-1">
+                          <ul class="base">
+                              <li class="base-li active d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                              <div class="d-flex align-items-center justify-content-sm-end">
+                                                  <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                  <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                              <p class=" text-sm-right">18.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                              <p class=" text-sm-right">Acargo Company LTD</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                              <p class=" text-sm-right">28.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                              <div class="d-flex justify-content-sm-end align-items-center">
+                                                  <p class="text-sm-right mr-1">8</p>   
+                                                  <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                  <p class="text-sm-right">Platform  </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                              <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Сut-off</p>
+                                               <p class="text-sm-right">22.05.2020  18:23 </p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/cancel-3.svg" alt="cancel">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li  d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border bg-gray row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                              <div class="d-flex align-items-center justify-content-sm-end">
+                                                  <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                  <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                              <p class=" text-sm-right">18.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                              <p class=" text-sm-right">Acargo Company LTD</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                              <p class=" text-sm-right">28.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                              <div class="d-flex justify-content-sm-end align-items-center">
+                                                  <p class="text-sm-right mr-1">8</p>   
+                                                  <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                  <p class="text-sm-right">Platform  </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                              <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Сut-off</p>
+                                               <p class="text-sm-right">22.05.2020  18:23 </p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/cancel-3.svg" alt="cancel">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                              <div class="d-flex align-items-center justify-content-sm-end">
+                                                  <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                  <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                              <p class=" text-sm-right">18.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                              <p class=" text-sm-right">Acargo Company LTD</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                              <p class=" text-sm-right">28.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                              <div class="d-flex justify-content-sm-end align-items-center">
+                                                  <p class="text-sm-right mr-1">8</p>   
+                                                  <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                  <p class="text-sm-right">Platform  </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                              <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Сut-off</p>
+                                               <p class="text-sm-right">22.05.2020  18:23 </p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/cancel-3.svg" alt="cancel">
+                                      </a>
+                                  </div>
+                              </li>
+                              <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
+                                  <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Booking No.</p>
+                                              <div class="d-flex align-items-center justify-content-sm-end">
+                                                  <img src="img/open-lock-variant-silhouette.svg" alt="open-lock" class="mr-2" height="15px" width="15px">
+                                                  <a href="#" class="text-sm-right c-dark underline">288373799</a>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-sm-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
+                                              <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p class="mr-2">  Klaipeda, LT -  </p>
+                                                  </div>
+                                                  <div class="d-flex align-items-center">
+                                                      <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
+                                                      <p>Shangai, CN</p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETD</p>
+                                              <p class=" text-sm-right">18.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
+                                              <p class=" text-sm-right">28.05.2020</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2"> Carrier</p>
+                                              <p class=" text-sm-right">Acargo Company LTD</p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">ETA</p>
+                                              <p class=" text-sm-right">28.05.2020 </p>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Wagon type</p>
+                                              <div class="d-flex justify-content-sm-end align-items-center">
+                                                  <p class="text-sm-right mr-1">8</p>   
+                                                  <img src="img/train.svg" alt="train" height="15px" width="18px" class="mr-3">
+                                                  <p class="text-sm-right">Platform  </p>   
+                                              </div>
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Price</p>
+                                              <p class="text-sm-right">1500 EUR  ( Extra 250 EUR )</p>  
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
+                                              <p class="text-sm-right">Logistic LTD</p> 
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
+                                              <p class="text-sm-right">LIFO</p> 
+                                        </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Сut-off</p>
+                                               <p class="text-sm-right">22.05.2020  18:23 </p>   
+                                          </div>
+                                      </li>
+                                      <li class="col-xl-4 col-lg-6">
+                                          <div class="d-sm-flex align-items-center justify-content-between mt-3">
+                                              <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
+                                              <p class="text-sm-right">150782938</p> 
+                                          </div>
+                                      </li>
+                                  </ul>
+                                  
+                                  <div class="base-settings">
+                                      <a href="#" class="">
+                                          <img src="img/outside.svg" alt="outside">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/white__create-24-px.svg" alt="create">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/document-white.svg" alt="document">
+                                      </a>
+                                      <a href="#" class="">
+                                          <img src="img/cancel-3.svg" alt="cancel">
+                                      </a>
+                                  </div>
+                              </li>
+                          </ul>
+                          
+                      </div>
+                     
+                  </div>
+              </div>
+              <!---contents-->
+                <div class="popup_v2 overflow-y-hidden">
+                  <div class="popup__booking-detail ml-auto">
                     <div class="bg-blue">
                       <div class="px-2">
                         <div class="pt-3 px-md-4">
                           <a class="close-small" href="#"><img  src="img/white__cancel.svg" alt="close"></a>
-                          <div class="d-sm-flex align-items-center justify-content-between pt-4 ">
-                            <p class="title-2 c-white weight-medium mb-2 text-up text-left">Booking:  OR_687527592275</p>
+                          <div class="d-sm-flex align-items-center justify-content-between pt-2 ">
+                            <p class="title-2 c-white text-up text-left">Booking:  OR_687527592275</p>
                             <div class="btns d-flex flex-wrap"> 
-                              <button class="btn-aquamarine d-flex justify-content-center align-items-center mb-2 ml-0"><img src="img/white__create-24-px.svg" alt="share"></button>
-                              <button class="btn-aquamarine d-flex justify-content-center align-items-center mb-2"><img src="img/document-white.svg" alt="bin"></button>
-                              <button class="btn-aquamarine d-flex justify-content-center align-items-center mb-2"><img src="img/white-bin.svg" alt="bin"></button>
+                              <button class="btn-aquamarine d-flex justify-content-center align-items-center ml-0"><img src="img/white__create-24-px.svg" alt="share"></button>
+                              <button class="btn-aquamarine d-flex justify-content-center align-items-center"><img src="img/document-white.svg" alt="bin"></button>
+                              <button class="btn-aquamarine d-flex justify-content-center align-items-center"><img src="img/white-bin.svg" alt="bin"></button>
                             </div>
                           </div>
                           <div class="d-flex flex-wrap align-items-center">
@@ -945,63 +1514,64 @@
                             <img src="img/open-lock.svg" alt="open lock" width="15px" height="19px">
                           </div>
                           <div class="row pt-3 align-items-center">
-                            <div class="col-md-6 d-flex align-items-center mt-2">
-                              <img src="img/flag.svg" alt="flag" class="flag">
-                              <p class="fs-16 c-white"> Klaipeda, LT</p>
-                              <p class="fs-16 c-white mx-2">-</p>
-                              <img src="img/flag.svg" alt="flag" class="flag">
-                              <p class="fs-16 c-white">Shangai, CN</p>
+                            <div class="col-md-6">
+                              <div class="d-flex align-items-center mt-2">
+                                <img src="img/flag.svg" alt="flag" class="flag">
+                                <p class="fs-16 c-white"> Klaipeda, LT</p>
+                                <p class="fs-16 c-white mx-2">-</p>
+                                <img src="img/flag.svg" alt="flag" class="flag">
+                                <p class="fs-16 c-white">Shangai, CN</p>
+                              </div>
+                              <div class="d-flex align-items-center mt-3">
+                                <svg class="svg-sprite-icon c-white" width="20px" height="20px">
+                                  <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                </svg>
+                                <p class="c-white ml-3">3x  45’CH</p>
+                              </div>
                             </div>
-                            <div class="col-md-6 d-flex justify-content-md-end mt-2">
-                              <p class="c-white ml-3">CUT-OFF:   25.02.2020  8:25</p>
-                            </div>
-                            <div class="col-md-6 d-flex align-items-center mt-2">
-                              <svg class="svg-sprite-icon c-white" width="20px" height="20px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
-                              </svg>
-                              <p class="c-white ml-3">3x  45’CH</p>
-                            </div>
-                            <div class="col-md-6 d-flex justify-content-md-end align-items-center mt-2">
-                              <p class="c-white ml-3">ETD:   25.02.2020</p>
-                            </div>
-                            <div class="col-md-6 d-flex justify-content-md-end align-items-center mt-2"> </div>
-                            <div class="col-md-6 d-flex justify-content-md-end align-items-center mt-2">
-                              <p class="c-white ml-3">ETD:   25.02.2020</p>
+                            <div class="col-md-6 mt-2">
+                              <p class="c-white ml-md-3 text-md-right mt-2">CUT-OFF:   
+                                <span class="ml-2">25.02.2020  8:25</span></p>
+                              <p class="c-white ml-md-3 text-md-right mt-2">ETD:  
+                                <span class="ml-2">25.02.2020</span></p>
+                              <p class="c-white ml-md-3 text-md-right mt-2">ETA:   
+                                <span class="ml-2">25.02.2020</span>
+                              </p>
                             </div>
                           </div>
                         </div>
                       </div>
                       
                       
-                      <ul class="nav nav-tabs_v5 flex-sm-nowrap justify-content-center pt-4">
-                        <li class="nav-item w-sm-100 w-50"><a class="nav-link active" href="#">DETAIL   </a></li>
-                        <li class="nav-item w-sm-100 w-50"><a class="nav-link " href="#">CARGO</a></li>
-                        <li class="nav-item w-sm-100 w-50"><a class="nav-link " href="#">PARTIES</a></li>
-                        <li class="nav-item w-sm-100 w-50"><a class="nav-link " href="#">DOCUMENTS</a></li>
+                      <ul class="nav nav-tabs_v5 flex-sm-nowrap flex-wrap justify-content-center pt-4">
+                        <li class="nav-item w-sm-100 w-50"><a class="nav-link_v3 active" href="#">DETAIL   </a></li>
+                        <li class="nav-item w-sm-100 w-50"><a class="nav-link_v3 " href="#">CARGO</a></li>
+                        <li class="nav-item w-sm-100 w-50"><a class="nav-link_v3 " href="#">PARTIES</a></li>
+                        <li class="nav-item w-sm-100 w-50"><a class="nav-link_v3 " href="#">DOCUMENTS</a></li>
                       </ul>
                     </div>
-                    <div id="contents" class="contents py-4 px-sm-4 px-1">
-                      <div class="contents__item p-2">
+                    <div id="contents" class="contents pt-4 px-sm-4 px-1">
+                      <div class="contents__item_v3 p-2 active">
                         <ul class="pb-4">
                           <li class="d-flex align-items-center mb-3">
                             <img src="img/calendar-blue_v2.svg" class="mr-3" alt="calendar" height="24px" width="24px">
                             <p class="fs-16 text-up">Carrier</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Сompany</p>
-                            <p class="fs-18 pl-3 text-right">CARGO Company LTD</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Сompany</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">CARGO Company LTD</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Address</p>
-                            <p class="fs-18 pl-3 text-right">Moscow, Russia</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Address</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Moscow, Russia</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Quotation No.</p>
-                            <p class="fs-18 pl-3 text-right">AB-47984982489</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Quotation No.</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">AB-47984982489</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Price</p>
-                            <p class="fs-18 pl-3 text-right">1800 EUR / Extra 150 EUR</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Price</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">1800 EUR / Extra 150 EUR</p>
                           </li>
                         </ul>
                         <ul class="pb-4">
@@ -1009,166 +1579,166 @@
                             <img src="img/calendar-blue_v2.svg" class="mr-3" alt="calendar" height="24px" width="24px">
                             <p class="fs-16 text-up">booking info </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Bill of landing </p>
-                            <p class="fs-18 pl-3 text-right">AA-647337858</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Bill of landing </p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">AA-647337858</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">BL type</p>
-                            <p class="fs-18 pl-3 text-right">Active </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">BL type</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Active </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Loading</p>
-                            <p class="fs-18 pl-3 text-right">08.08.2020 - 27.08.2020  </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Loading</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">08.08.2020 - 27.08.2020  </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Cut - off</p>
-                            <p class="fs-18 pl-3 text-right">08.08.2020  14:38</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Cut - off</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">08.08.2020  14:38</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">ETD</p>
-                            <p class="fs-18 pl-3 text-right">28.08.2020</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">ETD</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">28.08.2020</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">ETA</p>
-                            <p class="fs-18 pl-3 text-right">12.09.2020</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">ETA</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">12.09.2020</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Demurrages</p>
-                            <p class="fs-18 pl-3 text-right">8 hours</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Demurrages</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">8 hours</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Detentions</p>
-                            <p class="fs-18 pl-3 text-right">5 hours </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Detentions</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">5 hours </p>
                           </li>
                         </ul>
                         <ul class="pb-4">
-                          <li class="d-flex align-items-center mb-3">
+                          <li class="row align-items-center mb-3">
                             <img src="img/ship-blue.svg" class="mr-3" alt="ship" height="24px" width="24px">
                             <p class="fs-16 text-up">SEA LINE</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Sea line</p>
-                            <p class="fs-18 pl-3 text-right">Yang ming </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Sea line</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Yang ming </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Vessel</p>
-                            <p class="fs-18 pl-3 text-right">VV33300 </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Vessel</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">VV33300 </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Voyage</p>
-                            <p class="fs-18 pl-3 text-right">VV33300 </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Voyage</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">VV33300 </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Transhipment</p>
-                            <p class="fs-18 pl-3 text-right">Humburg, GE </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Transhipment</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Humburg, GE </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Terminal Pick-up</p>
-                            <p class="fs-18 pl-3 text-right">KKT-1 </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Terminal Pick-up</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">KKT-1 </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Terminal Drop</p>
-                            <p class="fs-18 pl-3 text-right">KKT-1 </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Terminal Drop</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">KKT-1 </p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Container release</p>
-                            <p class="fs-18 pl-3 text-right">AD-1 </p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Container release</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">AD-1 </p>
                           </li>
                         </ul>
                       
                       </div>
-                      <div class="contents__item p-2 ">
+                      <div class="contents__item_v3 p-2 ">
                         <ul class="pb-4">
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">1. Description</p>
-                            <p class="fs-18 pl-3 text-right">Fruit & vegetables</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">1. Description</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">Fruit & vegetables</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">HS code</p>
-                            <p class="fs-18 pl-3 text-right">83782-88398438</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">HS code</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">83782-88398438</p>
                           </li>
                         </ul>
                         <ul class="pb-4">
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">1. Description</p>
-                            <p class="fs-18 pl-3 text-right">Fruit & vegetables</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">1. Description</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">Fruit & vegetables</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">HS code</p>
-                            <p class="fs-18 pl-3 text-right">83782-88398438</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">HS code</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">83782-88398438</p>
                           </li>
                         </ul>
                         <ul class="pb-4">
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">1. Description</p>
-                            <p class="fs-18 pl-3 text-right">Fruit & vegetables</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">1. Description</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">Fruit & vegetables</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">HS code</p>
-                            <p class="fs-18 pl-3 text-right">83782-88398438</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">HS code</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">83782-88398438</p>
                           </li>
                         </ul>
                         <ul class="pb-4">
                           
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Dangerous cargo </p>
-                            <label>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">Dangerous cargo </p>
+                            <label class="col-sm-4 pl-xl-4">
                               <input type="checkbox" class="checkbox" checked="">
                               <span class="checkbox__icon-blue m-0 big"></span>
                             </label>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Temperature control</p>
-                            <label>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">Temperature control</p>
+                            <label class="col-sm-4 pl-xl-4">
                               <input type="checkbox" class="checkbox" checked="">
                               <span class="checkbox__icon-blue m-0 big"></span>
                             </label>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">IMO class</p>
-                            <p class="fs-18 pl-3 text-right">AB-47984982489</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">IMO class</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">AB-47984982489</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">UNO No.</p>
-                            <p class="fs-18 pl-3 text-right">984982489</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">UNO No.</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">984982489</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Temperature</p>
-                            <p class="fs-18 pl-3 text-right">- 15 °C</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">Temperature</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">- 15 °C</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Ventilation</p>
-                            <p class="fs-18 pl-3 text-right">25 %</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">Ventilation</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">25 %</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Weight</p>
-                            <p class="fs-18 pl-3 text-right">1500 kg</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-8 fs-16 c-blue-gray">Weight</p>
+                            <p class="col-sm-4 fs-18 pl-xl-4">1500 kg</p>
                           </li>
                         </ul>
                       
                       </div>
-                      <div class="contents__item p-2 active">
+                      <div class="contents__item_v3 p-2 ">
                         <ul class="pb-4">
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">Customs broker</p>
-                            <p class="fs-18 pl-3 text-right">Logistic LTD</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Customs broker</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Logistic LTD</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">Shipper</p>
-                            <p class="fs-18 pl-3 text-right">CARGO Company LTD</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Shipper</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">CARGO Company LTD</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">Consignee</p>
-                            <p class="fs-18 pl-3 text-right">Ocean Company</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Consignee</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Ocean Company</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">Agent</p>
-                            <p class="fs-18 pl-3 text-right">Logistic LTD</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Agent</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Logistic LTD</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center pb-3">
-                            <p class="fs-16 c-blue-gray">Transporter</p>
-                            <p class="fs-18 pl-3 text-right">CARGO Company LTD</p>
+                          <li class="row align-items-center pb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Transporter</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">CARGO Company LTD</p>
                           </li>
                         </ul>
                         <ul class="pb-4">
@@ -1176,22 +1746,22 @@
                             <img src="img/wallet-outline-in-a-circle.svg" class="mr-3" alt="calendar" height="24px" width="24px">
                             <p class="fs-16 text-up">PAYMENT</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Freight</p>
-                            <p class="fs-18 pl-3 text-right">Collect</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Freight</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Collect</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Origin</p>
-                            <p class="fs-18 pl-3 text-right">Collect</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Origin</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Collect</p>
                           </li>
-                          <li class="d-flex justify-content-between align-items-center mb-3">
-                            <p class="fs-16 c-blue-gray">Destination</p>
-                            <p class="fs-18 pl-3 text-right">Prepaid</p>
+                          <li class="row align-items-center mb-3">
+                            <p class="col-sm-7 fs-16 c-blue-gray">Destination</p>
+                            <p class="col-sm-5 fs-18 pl-xl-4">Prepaid</p>
                           </li>
                         </ul>
                       
                       </div>
-                      <div class="contents__item p-2 ">
+                      <div class="contents__item_v3 p-2 ">
                         <div class="row mb-3 d-sm-flex d-none">
                           <div class="col-sm-5">
                             <p class="c-blue">DOCUMENT NAME</p>

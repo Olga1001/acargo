@@ -313,33 +313,38 @@
             </nav>
             <!-- Topbar -->
             <!-- Container-->
-            <div class="container-fluid pr-4" id="container-wrapper ">
+            
+            <div class="container-fluid" id="container-wrapper ">
+               
+                  
                 <div id="box">
+                    <ul class="nav nav-tabs_v2 pt-4 d-flex justify-content-between">
+                        <li class="nav-item">
+                            <a class="nav-link">DASHBOARD</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link ">BOOKING</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link">new</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link">PUBLIC</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link active">active</a>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <a class="nav-link">history</a>
+                        </li>
+                        <li class="px-3">
+                            <button type="button" class="btn-aquamarine big">+ Add new shipment</button>
+                        </li>
+                    </ul>
                     <div class=" px-0">
-                        <div class="d-flex justify-content-between">
-                            <ul class="nav nav-tabs_v2 pt-4">
-                                <li class="nav-item">
-                                    <a class="nav-link">DASHBOARD</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link ">BOOKING</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link">new</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link">PUBLIC</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link active">active</a>
-                                </li>
-                                <li class="nav-item" role="presentation">
-                                    <a class="nav-link">history</a>
-                                </li>
-                            </ul>
-                        </div>
                         <!---contents-->
-                        <div id="contents" class="contents pt-3">
+                        <div id="contents" class="contents mt-3 pt-0 shadow2">
+                            <div class="contents__item"></div>
                             <div class="contents__item"></div>
                             <div class="contents__item"></div>
                             <div class="contents__item"></div>
@@ -375,10 +380,10 @@
                                             </div>
                                             <div class="col-sm-6 mb-3">
                                                 <div class="select bg-white">
-                                                    <div class="select__item">Carrier</div>
+                                                    <div class="select__item">Company</div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
-                                                            <li class="select__option active">Carrier</li>
+                                                            <li class="select__option active">Company</li>
                                                             <li class="select__option">Carrier</li>
                                                         </ul>
                                                     </div>
@@ -414,11 +419,11 @@
                                         <div class="row">
                                             <div class="col-md-3 col-sm-6 mb-3">
                                                 <div class="select bg-white">
-                                                    <div class="select__item">Incoterm</div>
+                                                    <div class="select__item">Sort by</div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
-                                                            <li class="select__option active">Incoterm</li>
-                                                            <li class="select__option">Incoterm</li>
+                                                            <li class="select__option active">Sort by</li>
+                                                            <li class="select__option">Sort by</li>
                                                         </ul>
                                                     </div>
                                                 </div>
@@ -444,358 +449,400 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="px-3 py-1">
-                                    <ul class="base">
-                                        <li class="base-li active d-flex justify-content-between px-sm-3 mt-3">
-                                            <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
-                                                        <p class=" text-sm-right">28.05.2020</p>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
-                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p class="mr-2">  Klaipeda, LT -  </p>
+                                <ul class="base">
+                                    <li class="base-li active relative">
+                                        <div class="base-border bt-0 bx-0 d-xl-flex w-100 mx-0 justify-content-between">
+                                            <div class="d-flex pl-sm-4 p-0 pr-lg-0 pr-5">
+                                                <svg class="svg-sprite-icon icon-success mr-3 mt-4 c-gray-light" width="16px" height="16px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
+                                                </svg>
+                                                <div class="d-sm-flex w-100 pt-4">
+                                                    <div class="pr-sm-4">
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="block mr-3 bg-green px-3 w-min">Loading</div>
+                                                            <p class="text-right">30 days left</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="c-blue-gray mr-3">Booking:     </div>
+                                                            <p class="text-right fs-16"> 4487-4787879</p>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <div class="d-flex align-items-center justify-content-sm-between px-0 ">
+                                                                <p class="c-blue-gray mr-3 fs-16">Order: </p>
+                                                                <button class="collapsed text-right d-flex align-items-center p-0 mr--20"  type="button" data-toggle="collapse" data-target="#collapseOrder" aria-expanded="false" aria-controls="collapseOrder" > 
+                                                                    <span class="fs-16 c-dark text-nowrap">P20-0140-K777-8/1</span>
+                                                                    <span class="arrow-drop b-gray m-0 ml-2"></span> 
+                                                                </button>
                                                             </div>
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p>Shangai, CN</p>
+                                                            <div class="collapse pt-1" id="collapseOrder">
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
-                                                        <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
+                                                    <div class="pl-sm-5">
+                                                        <div class="d-flex align-items-center mb-3 min-h-23">
+                                                            <svg class="svg-sprite-icon icon-boat mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                            </svg>
+                                                            <p>3x40'HC </p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <svg class="svg-sprite-icon icon-leader  mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#leader "></use>
+                                                            </svg>
+                                                            <p>Acargo Company LTD</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <p><span class="mr-2 c-blue-gray weight-medium">Term: </span>    LI - FO</p>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
-                                                        <p class="text-sm-right">Logistic LTD</p> 
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                        <p class="text-sm-right">LIFO</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                         <p class="text-sm-right">LIFO</p>   
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
-                                                        <p class="text-sm-right">150782938</p> 
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="base-settings">
-                                                <a href="#" class="">
-                                                    <img src="img/outside.svg" alt="outside">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white__create-24-px.svg" alt="create">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/document-white.svg" alt="document">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white-bin.svg" alt="bin">
-                                                </a>
+                                                </div>
                                             </div>
-                                        </li>
-                                        <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
-                                            <ul class="base-border bg-gray row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
-                                                        <p class=" text-sm-right">28.05.2020</p>
+                                            <div class="bg-gray_2 pl-4 pr-lg-4 pr-5 pt-4 pb-2 w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Vilnius 58000, LT</p>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
-                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p class="mr-2">  Klaipeda, LT -  </p>
-                                                            </div>
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p>Shangai, CN</p>
-                                                            </div>
-                                                        </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Shanghai 26000, CN</p>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
-                                                        <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                                </div>
+                                                <div class="d-flex align-items-center pt-3 pb-2 relative">
+                                                    <p class="absolute fs-14 c-orange text-center w-100 top--5">
+                                                        7 days delay
+                                                    </p>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-blue-bright way2-pin"></div>
+                                                        <div class="bg-blue-bright way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
-                                                        <p class="text-sm-right">Logistic LTD</p> 
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                        </svg>
+                                                        <div class="bg-blue-bright way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                        <p class="text-sm-right">LIFO</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                         <p class="text-sm-right">LIFO</p>   
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-blue-bright way2-pin"></div>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
-                                                        <p class="text-sm-right">150782938</p> 
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                            <div class="base-settings">
-                                                <a href="#" class="">
-                                                    <img src="img/outside.svg" alt="outside">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white__create-24-px.svg" alt="create">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/document-white.svg" alt="document">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white-bin.svg" alt="bin">
-                                                </a>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2 ">
+                                                        Sea line    <span class="weight-light ml-2"> Maesk</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2 ">
+                                                        ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        Booking   <span class="weight-light ml-2"> 4738393746</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+
                                             </div>
-                                        </li>
-                                        <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
-                                            <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
-                                                        <p class=" text-sm-right">28.05.2020</p>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
-                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p class="mr-2">  Klaipeda, LT -  </p>
+                                        </div>
+                                        <div class="base-settings absolute h-100 px-0">
+                                            <a href="#" class="h-50 d-flex align-items-center w-100 px-0 bb-1 b-white ">
+                                                <img src="img/outside.svg" alt="outside" class="mx-auto">
+                                            </a>
+                                            <a href="#" class="h-50  d-flex align-items-center w-100">
+                                                <img src="img/paper-plane.svg" alt="paper-plane px-0" class="mx-auto">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="base-li relative">
+                                        <div class="base-border bt-0 bx-0 d-xl-flex w-100 mx-0 justify-content-between br-0 p-0">
+                                            <div class="d-flex pl-sm-4 pr-lg-4 pr-5">
+                                                <svg class="svg-sprite-icon icon-success mr-3 c-orange mt-4" width="16px" height="16px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
+                                                </svg>
+                                                <div class="d-sm-flex w-100 pt-4">
+                                                    <div class="pr-sm-4">
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="block mr-3 bg-orange px-3 w-min">Delivered</div>
+                                                            <p class="text-right">30 days left</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="c-blue-gray mr-3">Booking:     </div>
+                                                            <p class="text-right fs-16"> 4487-4787879</p>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <div class="d-flex align-items-center justify-content-sm-between px-0 ">
+                                                                <p class="c-blue-gray mr-3 fs-16">Order: </p>
+                                                                <button class="collapsed text-right d-flex align-items-center p-0 mr--20"  type="button" data-toggle="collapse" data-target="#collapseOrder2" aria-expanded="false" aria-controls="collapseOrder2" > 
+                                                                    <span class="fs-16 c-dark text-nowrap">P20-0140-K777-8/1</span>
+                                                                    <span class="arrow-drop b-gray m-0 ml-2"></span> 
+                                                                </button>
                                                             </div>
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p>Shangai, CN</p>
+                                                            <div class="collapse pt-1" id="collapseOrder2">
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
-                                                        <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
+                                                    <div class="pl-sm-5">
+                                                        <div class="d-flex align-items-center mb-3 min-h-23">
+                                                            <svg class="svg-sprite-icon icon-boat mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                            </svg>
+                                                            <p>3x40'HC </p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <svg class="svg-sprite-icon icon-leader  mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#leader "></use>
+                                                            </svg>
+                                                            <p>Acargo Company LTD</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <p><span class="mr-2 c-blue-gray weight-medium">Term: </span>    LI - FO</p>
                                                         </div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
-                                                        <p class="text-sm-right">Logistic LTD</p> 
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                        <p class="text-sm-right">LIFO</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                         <p class="text-sm-right">LIFO</p>   
-                                                    </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
-                                                        <p class="text-sm-right">150782938</p> 
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                            <div class="base-settings">
-                                                <a href="#" class="">
-                                                    <img src="img/outside.svg" alt="outside">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white__create-24-px.svg" alt="create">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/document-white.svg" alt="document">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white-bin.svg" alt="bin">
-                                                </a>
+                                                </div>
                                             </div>
-                                        </li>
-                                        <li class="base-li d-flex justify-content-between px-sm-3 mt-3">
-                                            <ul class="base-border row w-100 px-sm-3 pb-3 mx-0 justify-content-between align-items-center">
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Date</p>
-                                                        <p class=" text-sm-right">28.05.2020</p>
+                                            <div class="bg-gray_2 pl-4 pr-lg-4 pr-5 pt-4 pb-2 w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Vilnius 58000, LT</p>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-sm-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Destination</p>
-                                                        <div class="d-flex flex-wrap text-sm-right justify-content-sm-end"> 
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p class="mr-2">  Klaipeda, LT -  </p>
-                                                            </div>
-                                                            <div class="d-flex align-items-center">
-                                                                <img class="flag_v3 mr-2" src="img/flag.svg" alt="flag">
-                                                                <p>Shangai, CN</p>
-                                                            </div>
-                                                        </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Shanghai 26000, CN</p>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2"> Loading date</p>
-                                                        <p class=" text-sm-right">22.05.20 - 25.05.20 </p>
+                                                </div>
+                                                <div class="d-flex align-items-center pt-3 pb-2 relative">
+                                                    <p class="absolute fs-14 c-orange text-center w-100 top--5">
+                                                        7 days delay
+                                                    </p>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-green way2-line"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Container type</p>
-                                                        <div class="d-flex justify-content-sm-end text-sm-right align-items-center">
-                                                            <img src="img/boat.svg" alt="boat" height="16px" class="mr-3">
-                                                            <p>3x40'HC </p>   
-                                                        </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                        <div class="bg-gray way2-line opacity-3"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Client</p>
-                                                        <p class="text-sm-right">Logistic LTD</p> 
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-boat c-gray mx-1 opacity-3" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                        </svg>
+                                                        <div class="bg-gray way2-line opacity-3"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                        <p class="text-sm-right">LIFO</p> 
-                                                  </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Incoterm</p>
-                                                         <p class="text-sm-right">LIFO</p>   
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-gray way2-pin"></div>
+                                                        <div class="bg-gray way2-line opacity-3"></div>
                                                     </div>
-                                                </li>
-                                                <li class="col-xl-4 col-lg-6">
-                                                    <div class="d-sm-flex align-items-center justify-content-between mt-4">
-                                                        <p class="c-gray fs-14 mb-sm-0 mb-2">Order No.</p>
-                                                        <p class="text-sm-right">150782938</p> 
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-gray mx-1 opacity-3" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-gray way2-line opacity-3"></div>
                                                     </div>
-                                                </li>
-                                            </ul>
-                                            <div class="base-settings">
-                                                <a href="#" class="">
-                                                    <img src="img/outside.svg" alt="outside">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white__create-24-px.svg" alt="create">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/document-white.svg" alt="document">
-                                                </a>
-                                                <a href="#" class="">
-                                                    <img src="img/white-bin.svg" alt="bin">
-                                                </a>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-gray way2-pin"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        Sea line    <span class="weight-light ml-2"> Maesk</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        Booking   <span class="weight-light ml-2"> 4738393746</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+
                                             </div>
-                                        </li>
-                                    </ul>
-                                </div>
+                                        </div>
+                                        <div class="base-settings absolute h-100 px-0">
+                                            <a href="#" class="h-50 d-flex align-items-center w-100 px-0 bb-1 b-white ">
+                                                <img src="img/outside.svg" alt="outside" class="mx-auto">
+                                            </a>
+                                            <a href="#" class="h-50  d-flex align-items-center w-100">
+                                                <img src="img/paper-plane.svg" alt="paper-plane px-0" class="mx-auto">
+                                            </a>
+                                        </div>
+                                    </li>
+                                    <li class="base-li relative ">
+                                        <div class="base-border bt-0 bx-0 d-xl-flex w-100 mx-0 justify-content-between br-0 p-0">
+                                            <div class="d-flex pl-sm-4 pr-lg-4 pr-5">
+                                                <div class="pr-3 mr-3"></div>
+                                                <div class="d-sm-flex w-100 pt-4">
+                                                    <div class="pr-sm-4">
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="block mr-3 bg-orange px-3 w-min">Delivered</div>
+                                                            <p class="text-right">30 days left</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center justify-content-sm-between mb-3">
+                                                            <div class="c-blue-gray mr-3">Booking:     </div>
+                                                            <p class="text-right fs-16"> 4487-4787879</p>
+                                                        </div>
+                                                        <div class="mb-3">
+                                                            <div class="d-flex align-items-center justify-content-sm-between px-0 ">
+                                                                <p class="c-blue-gray mr-3 fs-16">Order: </p>
+                                                                <button class="collapsed text-right d-flex align-items-center p-0 mr--20"  type="button" data-toggle="collapse" data-target="#collapseOrder2" aria-expanded="false" aria-controls="collapseOrder2" > 
+                                                                    <span class="fs-16 c-dark text-nowrap">P20-0140-K777-8/1</span>
+                                                                    <span class="arrow-drop b-gray m-0 ml-2"></span> 
+                                                                </button>
+                                                            </div>
+                                                            <div class="collapse pt-1" id="collapseOrder2">
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                                <div class="fs-13 c-blue-gray pb-1">
+                                                                    PM_4487-4787879    L. 01/05/20 
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="pl-sm-5">
+                                                        <div class="d-flex align-items-center mb-3 min-h-23">
+                                                            <svg class="svg-sprite-icon icon-boat mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                            </svg>
+                                                            <p>3x40'HC </p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <svg class="svg-sprite-icon icon-leader  mr-3 c-gray" width="16px" height="16px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#leader "></use>
+                                                            </svg>
+                                                            <p>Acargo Company LTD</p>
+                                                        </div>
+                                                        <div class="d-flex align-items-center mb-3">
+                                                            <p><span class="mr-2 c-blue-gray weight-medium">Term: </span>    LI - FO</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="bg-gray_2 pl-4 pr-lg-4 pr-5 pt-4 pb-2 w-100">
+                                                <div class="d-flex align-items-center justify-content-between">
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Vilnius 58000, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-1 c-blue-gray fs-14 weight-light">Shanghai 26000, CN</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center pt-3 pb-2 relative">
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                        <div class="bg-green way2-line "></div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-green way2-line "></div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <div class="bg-green way2-pin"></div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        Sea line    <span class="weight-light ml-2"> Maesk</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+                                                <div class="d-flex flex-sm-nowrap flex-wrap align-items-center justify-content-between">
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETD <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        Booking   <span class="weight-light ml-2"> 4738393746</span>
+                                                    </p>
+                                                    <p class="fs-14 weight-medium c-blue-gray mb-2">
+                                                        NEW ETA   <span class="weight-light ml-2"> 08.09.2020</span>
+                                                    </p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="base-settings absolute h-100 px-0">
+                                            <a href="#" class="h-50 d-flex align-items-center w-100 px-0 bb-1 b-white ">
+                                                <img src="img/outside.svg" alt="outside" class="mx-auto">
+                                            </a>
+                                            <a href="#" class="h-50  d-flex align-items-center w-100">
+                                                <img src="img/paper-plane.svg" alt="paper-plane px-0" class="mx-auto">
+                                            </a>
+                                        </div>
+                                    </li>
+                                </ul>
                                
                             </div>
                             <div class="contents__item"></div>
@@ -812,7 +859,7 @@
 </div>
 
 <script src="vendor/jquery/jquery.min.js"></script>
-<script src="vendor/bootsdivap/js/bootsdivap.bundle.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="js/admin.js"></script>
 </body>
 

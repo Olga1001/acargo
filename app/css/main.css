@@ -2843,6 +2843,9 @@ button {
   .schedule-item.active, .schedule-item:hover, .dates-item.active, .dates-item:hover {
     background-color: #49ddaa;
     color: #ffffff; }
+    
+  .dates-item.active svg, .dates-item:hover svg{
+    fill: #ffffff;}
 
 .click__more {
   width: -webkit-fit-content;
@@ -2999,7 +3002,7 @@ button {
       align-items: center;
     }
   .table__order .table__item__customer, .table__order .table__item__place {
-    min-width: 260px; }
+    min-width: 265px; }
   .table__order .table__item__truck a {
     line-height: 19px;
     min-height: 19px; }
@@ -6700,6 +6703,23 @@ button {
 }
 .b-0 {
   border-width: 0;
+}
+.btn-aquamarine.hover {
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.btn-aquamarine.hover span{
+  width: 0;
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+.btn-aquamarine.hover:hover {
+  width: 130px;
+}
+.btn-aquamarine.hover:hover span{
+  opacity: 1;
+  width: auto;
+  margin-left: 10px;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

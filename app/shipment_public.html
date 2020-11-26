@@ -326,10 +326,10 @@
                             <a class="nav-link ">BOOKING</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link active">new</a>
+                            <a class="nav-link ">new</a>
                         </li>
                         <li class="nav-item" role="presentation">
-                            <a class="nav-link">PUBLIC</a>
+                            <a class="nav-link active">PUBLIC</a>
                         </li>
                         <li class="nav-item" role="presentation">
                             <a class="nav-link ">active</a>
@@ -343,10 +343,10 @@
                     </ul>
                     <div class=" px-0">
                         <!---contents-->
-                        <div id="contents" class="contents mt-3 pt-0 shadow2">
+                        <div id="contents" class="contents mt-3 pt-0">
                             <div class="contents__item"></div>
                             <div class="contents__item"></div>
-                            <div class="contents__item active ">
+                            <div class="contents__item  ">
                                 <div class="bg-blue-bright px-sm-3 row mx-0 py-3">
                                     <div class="col-xl-6 pl-xl-4">
                                         <div class="row">
@@ -789,7 +789,289 @@
                                 </ul>
                                
                             </div>
-                            <div class="contents__item"></div>
+                            <div class="contents__item active">
+                                <div class="d-flex flex-wrap justify-content-between align-items-end">
+                                    <div class="d-flex flex-wrap filters">
+                                        <div class="select bg-white mr-2 mt-3">
+                                            <div class="select__item">All orders</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">All orders</li>
+                                                    <li class="select__option">All orders</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                     
+                                        <div class="select bg-white disabled mr-2 mt-3">
+                                            <div class="select__item ">Label</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Label</li>
+                                                    <li class="select__option">Label</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end flex-wrap tools">
+                                        <a href="#" class="tool ml-2 mt-4 ">
+                                            <img src="img/create-24-px.svg" alt="create">
+                                        </a>
+                                        <a href="#" class="tool ml-2 mt-4 ">
+                                            <img src="img/document.svg" alt="document">
+                                        </a>
+                                        <a href="#" class="tool ml-2 mt-4 ">
+                                            <img src="img/bin.svg" alt="bin">
+                                        </a>
+                                        <div class="d-flex flex-wrap align-items-center justify-content-end arrows-row ">
+                                            <a href="#" class="btn-aquamarine btn-add ml-2 px-4 mt-4">+ Add new shipment</a>
+                                            <div class="d-flex ml-4 mt-4">
+                                                <a href="#" class="arrows arrows__prev">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__prev">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__next">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                                <a href="#" class="arrows arrows__next">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                    <img src="img/arrow-point-to-right.svg" alt="arrow" class="arrows-icon">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    
+                                </div>
+                                <div class="box-white py-0 ">
+                                    <div class="table__order mt-4 table__order_v2">
+                                        <div>
+                                            <div class="d-flex table__order-head bl-1">
+                                                <div class="table__item table__item__check noresize">
+                                                    <label class="d-flex mt-4">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="checkbox__icon-blue ml-0"></span>
+                                                    </label>
+                                                </div>
+                                                <div class="table__item table__item__dates">
+                                                    <p>MODE</p>
+                                                    <div class="d-flex justify-content-between">
+                                                        <a class="dates-item mt-1 mr-1 active" href="#">
+                                                            <svg class="svg-sprite-icon icon-boat c-gray" width="18px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a class="dates-item mt-1 mr-1" href="#">
+                                                            <svg class="svg-sprite-icon icon-delivery-truck c-gray" width="18px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a class="dates-item mt-1" href="#">
+                                                            <svg class="svg-sprite-icon icon-train c-gray" width="18px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#train"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                  </div>
+                                                  <div class="table__item table__item__way">
+                                                    <p>FROM</p>
+                                                    <input class="input-table input-search mt-1" type="text">
+                                                  </div>
+                                                  <div class="table__item table__item__way">
+                                                    <p>TO</p>
+                                                    <input class="input-table input-search mt-1" type="text">
+                                                  </div>
+                                                  <div class="table__item table__item__place">
+                                                    <p>ORDERS</p>
+                                                    <input class="input-table input-search mt-1" type="text">
+                                                  </div>
+                                                    <div class="table__item">
+                                                        <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                                                            <p>BIDs</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="table__item">
+                                                        <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                                                            <p>BEST BIDs</p>
+                                                        </div>
+                                                    
+                                                    </div>
+                                                <div class="table__item table__item__last">
+                                                </div>
+                                               
+                                            </div>
+                                            <ul>
+                                              <li class="table__order-list bl-1">
+                                                <label class="d-flex checkbox-absolute pt-29">
+                                                    <input class="checkbox" type="checkbox"><span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="table__order-main">
+                                                  <div class="d-flex">
+                                                    <div class="table__item table__item__check pt-29"></div>
+                                                    <div class="table__item table__item__dates pt-29">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="img/boat-gray.svg" alt="boat" class="mr-3" height="17px">
+                                                            <p>5x40‘HC</p>
+                                                        </div>
+                                                    </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Klaipeda, 246000, Lithuania
+                                                      LTKL</p>
+                                                  </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Shanghai, 345000, China
+                                                      CHLT</p>
+                                                  </div>
+
+                                                  <div class="table__item table__item__place ">
+                                                      <div class="d-flex align-items-center justify-content-end">
+                                                        <a class="orders__link ml-2" href="#">
+                                                            <svg class="svg-sprite-icon icon-interface-3 c-gray" width="15px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a class="orders__link ml-2" href="#">
+                                                            <svg class="svg-sprite-icon icon-success c-orange" width="15px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
+                                                            </svg>
+                                                        </a>
+                                                      </div>
+                                                    <p>OR_19-4487-4787879</p>
+                                                    <p class="c-gray fs-14">Loading 12.08.2020 - 15.08.2020</p>
+                                                  </div>
+
+                                                    <div class="table__item pt-29">
+                                                      <p class="text-center">135</p>
+                                                    </div>
+                                                    <div class="table__item pt-29">
+                                                        <p class="text-center">880 €</p>
+                                                      </div>
+                                                    <div class="table__item__last">
+                                                      <div class="last">
+                                                        <div class="last-btns">
+                                                          <a class="last-btn" href="#"><img class="last-btn-icon" src="img/outside.svg" alt="outside"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/white__create-24-px.svg" alt="create"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/document-white.svg" alt="document"></a>
+                                                        
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="table__order-list bl-1">
+                                                <label class="d-flex checkbox-absolute pt-29">
+                                                    <input class="checkbox" type="checkbox"><span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="table__order-main">
+                                                  <div class="d-flex">
+                                                    <div class="table__item table__item__check pt-29"></div>
+                                                    <div class="table__item table__item__dates pt-29">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="img/boat-gray.svg" alt="boat" class="mr-3" height="17px">
+                                                            <p>5x40‘HC</p>
+                                                        </div>
+                                                    </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Klaipeda, 246000, Lithuania
+                                                      LTKL</p>
+                                                  </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Shanghai, 345000, China
+                                                      CHLT</p>
+                                                  </div>
+
+                                                  <div class="table__item table__item__place ">
+                                                      <div class="d-flex align-items-center justify-content-end">
+                                                        <a class="orders__link ml-2" href="#">
+                                                            <svg class="svg-sprite-icon icon-success c-gray-light" width="15px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
+                                                            </svg>
+                                                        </a>
+                                                      </div>
+                                                    <p>OR_19-4487-4787879</p>
+                                                    <p class="c-gray fs-14">Loading 12.08.2020 - 15.08.2020</p>
+                                                  </div>
+
+                                                    <div class="table__item pt-29">
+                                                      <p class="text-center">135</p>
+                                                    </div>
+                                                    <div class="table__item pt-29">
+                                                        <p class="text-center">880 €</p>
+                                                      </div>
+                                                    <div class="table__item__last">
+                                                      <div class="last">
+                                                        <div class="last-btns">
+                                                          <a class="last-btn" href="#"><img class="last-btn-icon" src="img/outside.svg" alt="outside"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/white__create-24-px.svg" alt="create"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/document-white.svg" alt="document"></a>
+                                                        
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                              <li class="table__order-list bl-1">
+                                                <label class="d-flex checkbox-absolute pt-29">
+                                                    <input class="checkbox" type="checkbox"><span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="table__order-main">
+                                                  <div class="d-flex">
+                                                    <div class="table__item table__item__check pt-29"></div>
+                                                    <div class="table__item table__item__dates pt-29">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="img/boat-gray.svg" alt="boat" class="mr-3" height="17px">
+                                                            <p>5x40‘HC</p>
+                                                        </div>
+                                                    </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Klaipeda, 246000, Lithuania
+                                                      LTKL</p>
+                                                  </div>
+                                                  <div class="table__item table__item__way pt-29">
+                                                    <p class="d-flex">
+                                                      <img class="flag" src="img/flag.svg" alt="flag">Shanghai, 345000, China
+                                                      CHLT</p>
+                                                  </div>
+
+                                                  <div class="table__item table__item__place  pt-29">
+                                                    <p>OR_19-4487-4787879</p>
+                                                    <p class="c-gray fs-14">Loading 12.08.2020 - 15.08.2020</p>
+                                                  </div>
+
+                                                    <div class="table__item pt-29">
+                                                      <p class="text-center">135</p>
+                                                    </div>
+                                                    <div class="table__item pt-29">
+                                                        <p class="text-center">880 €</p>
+                                                      </div>
+                                                    <div class="table__item__last">
+                                                      <div class="last">
+                                                        <div class="last-btns">
+                                                          <a class="last-btn" href="#"><img class="last-btn-icon" src="img/outside.svg" alt="outside"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/white__create-24-px.svg" alt="create"></a>
+                                                          <a class="last-btn " href="#"><img class="last-btn-icon" src="img/document-white.svg" alt="document"></a>
+                                                        
+                                                        </div>
+                                                      </div>
+                                                    </div>
+                                                  </div>
+                                                </div>
+                                              </li>
+                                            </ul>
+                
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                             <div class="contents__item ">
                                 <div class="bg-blue-bright px-sm-3 row mx-0 py-3">
                                     <div class="col-xl-6 pl-xl-4">

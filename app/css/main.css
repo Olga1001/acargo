@@ -1643,6 +1643,9 @@ button {
 }
 .bg-gray {
   background: #b7bcd6; }
+.bg-gray-light {
+  background-color: #d8dfed;
+}
 .bg-gray_2 {
   background: rgba(183, 188, 214, 0.08);}
 .bg-green {
@@ -1662,7 +1665,8 @@ button {
 
 .bg-light-blue {
   background-color: rgba(231, 245, 254, 0.51); }
-
+.bg-light-white {
+  background-color: #f6f9fc;}
 .bg-light_05 {
   background-color: #eff8fe61!important;}
 
@@ -1982,7 +1986,7 @@ button {
   color: #37517e; }
 
 .c-white {
-  color: #ffffff;
+  color: #ffffff!important;
   fill: #ffffff; }
   .c-white:before, .c-white:after {
     background-color: #ffffff; }
@@ -5031,7 +5035,7 @@ button {
 .fs-14 {
   font-size: 14px; }
 .fs-15 {
-  font-size: 15px;
+  font-size: 15px!important;
 }
 .btn-aquamarine_normal {
   min-width: 153px;
@@ -6568,12 +6572,20 @@ button {
   text-align: center;
   transition: all 0.3s ease;
 }
-
 .btn_v2:hover {
   background-color: #109cf1;
   color: #ffffff;
 }
-
+.btn_v3  {
+  max-width: 197px;
+  width: 100%;
+  line-height: 44px;
+  padding: 0 20px;
+  border-radius: 4px;
+  border: solid 1px #109cf1;
+  font-size: 15px;
+  color: #37517e;
+}
 .top-0 {
   top: 0!important;
 }
@@ -6721,6 +6733,53 @@ button {
   width: auto;
   margin-left: 10px;
 }
+.circle-big {
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+.circle-big img{
+  width: 15px;
+  height: 100%;
+  margin: 0 auto;
+  display: block;
+}
+.line-vertical_shipment {
+  position: absolute;
+  left: 17px;
+  top: 8px;
+  height: 100%;
+  width: 3px;
+  opacity: 0.43;
+  border-radius: 2px;
+  background-color: rgba(16, 156, 241, 0.48);
+  z-index: 0;
+}
+.circle-small {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+.line-16 {
+  width: 1px;
+  height: 16px;
+  background: #b7bcd6;
+  position: absolute;
+  left: 2px;
+  top: 50%;
+  transform: translateY(-50%)
+}
+.w-160 {
+  width: 160px;
+}
+
+.text-break-all p, .text-break-all{
+  word-break: break-all;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -7661,7 +7720,10 @@ button {
   .trucking-list li {
     min-width: 540px; } 
   .supbar.pd-mob-2 {
-    padding-bottom: 70px;}}
+    padding-bottom: 70px;}
+    .min-sm-700 {
+      min-width: 700px;
+    }}
       
 @media only screen and (max-width: 400px) {
   .oval-block {

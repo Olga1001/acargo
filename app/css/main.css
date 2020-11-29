@@ -1020,7 +1020,7 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none; }
-    .btn.active p, .btn.active svg g, .btn.active span, .btn:hover p, .btn:hover svg g, .btn:hover span {
+    .btn.active p, .btn.active svg g, .btn.active svg, .btn.active span, .btn:hover p, .btn:hover svg g, .btn:hover span {
       fill: #ffffff;
       color: #ffffff; }
   .btn-arrow {
@@ -1960,10 +1960,10 @@ button {
 }
 
 .c-blue-gray {
-  color: #67758d; }
+  color: #67758d!important; }
 
 .c-blue {
-  color: #156ce4; }
+  color: #156ce4!important; }
 
 .c-dark {
   color: #282e3b !important; }
@@ -4694,6 +4694,11 @@ button {
   width: 100%;
   height: 335px; }
 
+.map2 {
+  margin-left: -2rem;
+  margin-right: -2rem;
+  width: calc(100% + 4rem)!important;
+}
 .table__rate-sea-2 .table__rate-item {
   height: auto;
   min-height: none; }
@@ -5449,10 +5454,10 @@ button {
   .icon-id-card {
     width: 18px;
     height: 12px; }
-  
   .fs-18 {
-    font-size: 18px; }
-  
+    font-size: 18px;}
+  .fs-17 {
+    font-size: 17px;}
   .fs-14 {
     font-size: 14px; }
   
@@ -5975,6 +5980,10 @@ button {
   }
   .r-3 {
     right: 16px;
+  }
+  .t-center{
+    top: 50%;
+    transform: translateY(-50%);
   }
   .fs-10 {
     font-size: 10px;
@@ -6751,7 +6760,7 @@ button {
   position: absolute;
   left: 17px;
   top: 8px;
-  height: 100%;
+  height: calc(100% - 40px);
   width: 3px;
   opacity: 0.43;
   border-radius: 2px;
@@ -6780,6 +6789,14 @@ button {
   word-break: break-all;
 }
 
+button[data-toggle="collapse"] .arrow-drop.t-center{
+  transform: translateY(-50%) scaleY(-1);}
+button.collapsed[data-toggle="collapse"] .arrow-drop.t-center{
+  transform: translateY(-50%) scaleY(1);}
+button[data-toggle="collapse"] .arrow-drop{
+  transform: scaleY(-1);}
+button.collapsed[data-toggle="collapse"] .arrow-drop{
+  transform: scaleY(1);}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -7721,9 +7738,12 @@ button {
     min-width: 540px; } 
   .supbar.pd-mob-2 {
     padding-bottom: 70px;}
-    .min-sm-700 {
-      min-width: 700px;
-    }}
+  .min-sm-700 {
+    min-width: 700px;}
+  .map2 {
+      margin-left: -12px;
+      margin-right: -12px;
+      width: calc(100% + 24px)!important;}}
       
 @media only screen and (max-width: 400px) {
   .oval-block {

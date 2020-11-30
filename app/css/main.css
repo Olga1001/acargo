@@ -401,6 +401,10 @@ button {
       left: auto;
 
     }
+    .select__drop.right {
+      left: auto;
+      right: 0
+    }
   .select__menu {
     border-radius: 4px;
     border: solid 1px #b7bcd6;
@@ -1281,7 +1285,7 @@ button {
   z-index: 999; }
 
 .sidebar-menu {
-  top: 72px; }
+  top: 72px;}
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
   padding: 0 23px; }
@@ -6283,6 +6287,9 @@ button {
 .mh-auto {
   min-height: auto;
 }
+.mxh-auto {
+  max-height: none;
+}
 .item-left {
   width: calc(100% - 560px);
   padding-right: 20px;
@@ -6716,6 +6723,9 @@ button {
 .shadow2 {
   box-shadow: 0 1px 14px 0 rgba(40, 46, 59, 0.13);
 }
+.shadow3 {
+  box-shadow: 0 1px 5px 0 rgba(103, 117, 141, 0.25);
+}
 .h-7 {
   height: 7px
 }
@@ -6797,6 +6807,42 @@ button[data-toggle="collapse"] .arrow-drop{
   transform: scaleY(-1);}
 button.collapsed[data-toggle="collapse"] .arrow-drop{
   transform: scaleY(1);}
+.max-360 {
+  max-width: 360px;
+  width: 100%;
+}
+.dropdown-menu__content{
+  max-height: 195px;
+  height: fit-content;
+  overflow-y: auto;
+  scrollbar-color: #b7bcd6 #ffffff;
+  scrollbar-width: thin;}
+.dropdown-menu__content::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+  background: none; }
+.dropdown-menu__content::-webkit-scrollbar-thumb {
+  background: rgba(183, 188, 214, 0.37); }
+.popup__full-map {
+  position: fixed;
+  top: 72px;
+  left: 0 ;
+  z-index: 999;
+  width: 100%;
+  height: calc(100vh - 72px);
+  background-color: #eff8fe;
+}
+.popup__full-map_y {
+  overflow-y: auto;
+  height: calc(100vh - 72px);
+  scrollbar-color: #b7bcd6 #ffffff;
+  scrollbar-width: thin;}
+.popup__full-map_y::-webkit-scrollbar {
+  height: 12px;
+  width: 12px;
+  background: none; }
+.popup__full-map_y::-webkit-scrollbar-thumb {
+  background: rgba(183, 188, 214, 0.37); }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -6972,6 +7018,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     width: calc(100% + 55px); } }
 
 @media only screen and (max-width: 1199px) {
+  .popup__full-map {
+    top: 60px;
+    height: calc(100vh - 60px);}
   .base-w-56, .base-w-53 {
     max-width: 100%;}
   .popup__booking-detail {
@@ -7101,6 +7150,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
       }
       .base-li li {
         max-width: 100%;
+      }
+      .row__to-do-list .select__drop{
+        left: auto;
+        right: 0;
       }}
 @media only screen and (max-width: 991px) {
   .calendar-customer .prev {

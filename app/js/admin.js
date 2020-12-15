@@ -354,7 +354,14 @@ $(document).ready(function () {
     $("input.range-way2").bootstrapSlider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
-    
+  });
+
+  $(".table__order-main").on("change click", function (e) {
+    setTimeout(() => {
+      $("input.range-way").bootstrapSlider('refresh');
+      $("input.range-way2").bootstrapSlider('refresh');
+      $("input.range-way3").bootstrapSlider('refresh');
+    }, 1);
   });
   var $inputs = $('.table__rate-item, .select-calendar, .block_resize-input'); // Resize based on text if text.length > 0
   // Otherwise resize based on the placeholder

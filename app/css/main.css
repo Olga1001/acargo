@@ -1688,7 +1688,9 @@ button {
 }
 .bg-light {
   background-color: rgba(36, 177, 255, 0.12); }
-
+  .bg-light_v3 {
+    background-color: rgba(231, 245, 254, 0.26);
+  }
 .bg-blue-navy {
   background-color: #37517e;
 }
@@ -1828,6 +1830,10 @@ button {
   overflow: visible;
   visibility: visible;
   padding-top: 20px; }
+  .menu.right {
+    left: auto!important;
+    right: 5px!important;
+  }
   .menu__item {
     margin-bottom: 20px;
   min-width: auto!important; }
@@ -1953,7 +1959,8 @@ button {
 }
 
 .c-blue-v1 {
-  color: #24b1ff; }
+  color: #24b1ff;
+  fill: #24b1ff;  }
 
 .c-blue-light {
   color: #109CF1; 
@@ -1967,7 +1974,8 @@ button {
   color: #67758d!important; }
 
 .c-blue {
-  color: #156ce4!important; }
+  color: #156ce4!important;
+  fill: #156ce4!important;  }
 
 .c-dark {
   color: #282e3b !important; }
@@ -4148,16 +4156,19 @@ button {
   box-shadow: 0 0 11px 0 rgba(137, 146, 167, 0.36);
   border: solid 1px #ffffff;
   background-color: #ffffff;
-  padding: 15px 24px 69px;
-  max-width: 314px;
-  margin-right: 40px;
-  width: 100%;
+  padding: 15px 19px 73px 14px;
+  max-width: 400px;
+  width: calc(33.33% - 10px);
+  margin-right: 15px;
   position: relative; }
+  .graphic:last-child {
+    margin-right: 0;
+  }
   .graphic .arrow-drop {
     border-color: #67758d transparent transparent transparent; }
   .graphic__item {
     width: 100%;
-    height: 69px;
+    height: 76px;
     -o-object-fit: cover;
     object-fit: cover;
     position: absolute;
@@ -4165,8 +4176,8 @@ button {
     left: 0;
     overflow: hidden; }
     .graphic__item img {
-      height: 70px;
-      width: calc(100% + 35px);
+      height: 81px;
+      width: calc(100% + 42px);
       -o-object-fit: cover;
       object-fit: cover;
       margin-left: -25px; }
@@ -4480,15 +4491,17 @@ button {
     .table__rate-sea .table__rate-item:first-child {
       margin-right: 10px; }
     .table__rate-sea .table__rate-item:nth-child(2) {
-      width: 165px; }
+      width: 213px; }
+    .table__rate-sea .table__rate-item:nth-child(2) .input-table{
+      max-width: 170px;}
     .table__rate-sea .table__rate-item:nth-child(3), .table__rate-sea .table__rate-item:nth-child(4) {
       padding: 15px 0;
       margin: 0;
-      width: 210px; }
+      width: 198px; }
     .table__rate-sea .table__rate-item:nth-child(5) {
-      width: 140px; }
+      width: 122px; }
     .table__rate-sea .table__rate-item:nth-child(6) {
-      width: 161px; }
+      width: 147px; }
       .table__rate-sea .table__rate-item:nth-child(6) .select-table {
         width: 100px; }
     .table__rate-sea .table__rate-item:nth-child(7) {
@@ -4789,7 +4802,9 @@ button {
 
 .table__rate-time.table__rate-time-green:before {
   background-color: rgba(73, 221, 170, 0.12); }
-
+.checkbox:checked ~ .svg-sprite-icon.c-gray {
+  fill: #24B1FF;
+}
 .table__rate-time.table__rate-time-orange:before {
   background-color: rgba(249, 158, 4, 0.1); }
 
@@ -5040,12 +5055,14 @@ button {
     background: none; }
   .popup-customize__columns::-webkit-scrollbar-thumb {
     background: rgba(183, 188, 214, 0.37); }
-
+.fs-12 {
+  font-size: 12px;}
+.fs-13 {
+  font-size: 13px;}
 .fs-14 {
   font-size: 14px; }
 .fs-15 {
-  font-size: 15px!important;
-}
+  font-size: 15px!important;}
 .btn-aquamarine_normal {
   min-width: 153px;
   width: -webkit-fit-content;
@@ -6843,6 +6860,24 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   background: none; }
 .popup__full-map_y::-webkit-scrollbar-thumb {
   background: rgba(183, 188, 214, 0.37); }
+.table__rate-item_company {
+  width: 210px!important;}
+.table__rate-item_rate {
+  width: 140px!important;}
+.table__rate-item_wagon {
+  width: 151px!important;}
+.table__rate-item_wagon .select-table {
+  min-width: 100px;}
+.table__rate-sea_2 {
+  width: calc(100% + 55px);}
+.table__rate-item_checkbox {
+  width: 32px!important;}
+.table__rate-item-other {
+  width: 121px!important;}
+.min-h-22 {
+  min-height: 22px;}
+.min-w-100 {
+  min-width: 100%;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -6893,7 +6928,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   .table__rate-table, .table__rate-table-road {
     width: calc(100% + 55px); }
   .table__rate-sea {
-    width: calc(100% + 55px + 7vw); } }
+    width: calc(100% + 55px + 7vw); } 
+  .table__rate-sea_2 {
+    width: calc(100% + 55px);}}
 
 @media only screen and (min-width: 1930px) {
   .table__rate-sea .bg-light-blue, .table__rate-sea .table__make-booking__row {
@@ -7113,7 +7150,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   .card__ways-two {
     max-width: 90%; }
   .graphic {
-    margin-right: 1.5rem; }
+    max-width: 100%;
+    width: calc(50% - 7.5px)}
+  .graphic:nth-child(2n+2) {
+    margin-right: 0; }
   .nav-tabs_v2 .nav-link {
     padding: 15px 25px; }
   .popup__send-request {
@@ -7739,6 +7779,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     width: auto !important; }
   .graphic {
     margin-right: 0; }
+    
+  .graphic {
+    width: 100%;}
   .dashboard-item .text-right {
     font-size: 13px; }
   .dashboard-item .title {

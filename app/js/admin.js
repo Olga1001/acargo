@@ -4,6 +4,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 (function ($) {
   "use strict"; // Start of use strict
+
   // Toggle the side navigation
 
   $("#sidebarToggle, #sidebarToggleTop, .overlay").on('click', function (e) {
@@ -44,6 +45,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 $(document).ready(function () {
 
+  let widthOrderTable = $(".table__order-main").width();
+  $(".collapse_v2").css("width", widthOrderTable);
 
   $(window).on("load", function() {
     //Prevent having no "active" slide
@@ -103,6 +106,9 @@ $(document).ready(function () {
 }); //ORDER
 
 $(document).ready(function () {
+
+
+
   $(".table__item").click(function () {
     $(this).find(".table__arrow").toggleClass('active');
     $(this).closest(".table__body-item").find(".table__drop").slideToggle(300);

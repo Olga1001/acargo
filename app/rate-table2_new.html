@@ -402,14 +402,14 @@
                                 </div>
                                 <div class="d-flex flex-wrap align-items-center justify-content-between mb-2">
                                     <div class="d-flex pt-3">
-                                        <label class=" mr-3">
+                                        <label class="show-graphic mr-3">
                                             <input type="radio" name="sort1" class="checkbox" checked>
                                             <svg class="svg-sprite-icon icon-increase c-gray" width="18px" height="14px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#increase"></use>
                                             </svg>
                                         </label>
-                                        <label class=" mr-3">
-                                            <input type="radio" name="sort1" class="checkbox">
+                                        <label class="hide-graphic mr-3">
+                                            <input type="radio" name="sort1" class="checkbox ">
                                             <svg class="svg-sprite-icon icon-list c-gray" width="18px" height="14px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#list"></use>
                                             </svg>
@@ -456,14 +456,17 @@
                                             <div class="table__rate-item">
                                                 <div class="table__relative">
                                                     <p>VALID TIME</p>
-                                                    <input type="text" class="input-table fs-13 " value="01.05.2020 - 31.05.2020">
+                                                    <div class="relative mt-6">
+                                                        <input type="text" class="input-table fs-13 mt-0 pr-3 pl-2" value="01.05.2020 - 31.05.2020">
+                                                        <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="table__rate-item">
                                                 <div class="table__relative">
                                                     <p>FROM</p>
                                                     <div class="relative mt-6">
-                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate" value="USKL">
+                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate max-w-170" value="USKL">
                                                         <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
                                                     </div>
                                                 </div>
@@ -472,15 +475,15 @@
                                                 <div class="table__relative">
                                                     <p>TO</p>
                                                     <div class="relative mt-6">
-                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate" value="USKL">
+                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate max-w-170" value="USKL">
                                                         <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="table__rate-item">
-                                                <div class="table__relative">
+                                                <div class="table__relative min-w-100px">
                                                     <p>TERM</p>
-                                                    <div class="select select-table select-v3 select-noarrow bg-white">
+                                                    <div class="select select-table select-v3 select-noarrow bg-white w-100">
                                                         <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
                                                         <div class="select__item fs-13 pr-4 text-truncate">LIFO</div>
                                                         <div class="select__drop">
@@ -541,9 +544,9 @@
                                                 </div>
                                             </div>
                                             <div class="table__rate-item">
-                                                <div class="table__relative">
+                                                <div class="table__relative min-w-100px">
                                                     <p>CONTAINER</p>
-                                                    <div class="select select-table select-noarrow bg-white">
+                                                    <div class="select select-table select-noarrow bg-white w-100">
                                                         <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
                                                         <div class="select__item fs-13 pr-4 text-truncate">255’ DVLT</div>
                                                         <div class="select__drop">
@@ -559,7 +562,7 @@
                                                 <div class="table__relative">
                                                     <p>COMPANY</p>
                                                     <div class="relative mt-6">
-                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate" value="COSCO Shipping">
+                                                        <input type="text" class="input-table input-search mt-0 fs-13 pr-4 text-truncate max-w-170" value="COSCO Shipping">
                                                         <button type="reset" class="reset absolute t-center r-0 mr-2"></button>
                                                     </div>
                                                 </div>
@@ -572,13 +575,14 @@
                                         <li class="table__make-booking__row py-0 min-w-100" >
                                             <button class="d-flex align-items-center p-0 text-left w-100 collapsed collapsed-bg" data-toggle="collapse" href="#collapseRateInfoOne" role="button" aria-expanded="false" aria-controls="collapseRateInfoOne">
                                                 <div class="table__rate-item table__rate-item_checkbox justify-content-center">
-                                                    
                                                     <label class="d-flex">
                                                         <input type="checkbox" class="checkbox">
                                                         <span class="checkbox__icon-blue"></span>
                                                     </label>
                                                 </div>
-                                                <div class="table__rate-item text-center bg-green-light py-3"><p>01.05.2020 | 31.05.2020</p></div>
+                                                <div class="table__rate-item active-green-light realtive py-3">
+                                                    <p class="w-fit-content">01.05.2020 | 31.05.2020</p>
+                                                </div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">USKL</p></div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">LTKL</p></div>
                                                 <div class="table__rate-item"><p>LIFO</p></div>
@@ -588,34 +592,56 @@
                                                     <div class="d-flex align-items-center">
                                                         <p class="mr-3">1500 €</p>
                                                     </div>
-                                                    <p class="fs-13 c-blue-gray">Surcharges 150 €</p>
-                                                    <div class="notes-window">
-                                                        <div class="notes-container">
-                                                            <p class="text-14">Notes</p>
-                                                            <textarea class="notes-textarea" placeholder="Text here…"></textarea>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Requires temperature control</span>
-                                                            </label>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Dangerous cargo</span>
-                                                            </label>
+                                                    <div class="relative btn-notes">
+                                                        <p class="fs-14 c-blue-gray">Surcharges 150 €</p>
+                                                        <div class="notes-window pt-4">
+                                                            <div class="notes-container">
+                                                                <p class="text-14 text-left">Surcharges</p>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA 1 HOUR - 80 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EDOWNTIME -  880 €</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="table__rate-item table__rate-item-other ml-auto">
                                                     <div class="d-flex align-items-center justify-content-end">
-                                                        <label class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-edit"></span>
-                                                        </label>
-                                                        <label  class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-doc"></span>
-                                                        </label>
+                                                        <div class="relative btn-notes">
+                                                            <label class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-edit"></span>
+                                                            </label>
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Notes</p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="relative btn-notes">
+                                                            <label  class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-doc"></span>
+                                                            </label>
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Specification </p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div class="circle pr-2">
                                                             <span class="circle-span bg-gray"></span>
                                                             <span class="circle-span bg-gray"></span>
@@ -726,22 +752,61 @@
                                                                         <p class="mb-2 min-h-22"">
                                                                             1500 EUR
                                                                         </p>
-                                                                        <p class="mb-2 min-h-22">
-                                                                            150 EUR
-                                                                        </p>
+                                                                        <div class="relative btn-notes">
+                                                                            <p class="mb-2 min-h-22">
+                                                                                150 EUR
+                                                                            </p>
+                                                                            <div class="notes-window right pt-4">
+                                                                                <div class="notes-container">
+                                                                                    <p class="text-14 text-left">Surcharges</p>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA 1 HOUR - 80 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EDOWNTIME -  880 €</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Specification</span>
-                                                            </a>
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Note:  new rates</span>
-                                                            </a>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2">
+                                                                    <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Specification</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 text-left">Specification</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2 ">
+                                                                    <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Note:  new rates</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 4 text-left">Notes</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                           
                                                         </div>
                                                     </div>
                                                 </div>
@@ -782,7 +847,9 @@
                                                         <span class="checkbox__icon-blue"></span>
                                                     </label>
                                                 </div>
-                                                <div class="table__rate-item text-center bg-orange-light py-3"><p>01.05.2020 | 31.05.2020</p></div>
+                                                <div class="table__rate-item active-orange-light realtive py-3">
+                                                    <p class="w-fit-content">01.05.2020 | 31.05.2020</p>
+                                                </div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">USKL</p></div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">LTKL</p></div>
                                                 <div class="table__rate-item"><p>LIFO</p></div>
@@ -791,39 +858,67 @@
                                                 <div class="table__rate-item table__rate-item_rate">
                                                     <div class="d-flex align-items-center">
                                                         <p class="mr-3 text-nowrap">1500 €</p>
-                                                        <img src="img/danger-2.svg" alt="danger" class="mr-2">
-                                                        <img src="img/heat.svg" alt="heat" class="mr-2">
-                                                        <div class="block-info">ADR cargo</div>
+                                                        <div class="relative mr-2 hover-block-info">
+                                                            <img src="img/danger-2.svg" alt="danger">
+                                                            <div class="block-info">ADR cargo</div>
+                                                        </div>
+                                                        <div class="relative mr-2 hover-block-info">
+                                                            <img src="img/heat.svg" alt="heat">
+                                                            <div class="block-info">Temperature control</div>
+                                                        </div>
                                                     </div>
-                                                   
-                                                    <p class="fs-13 c-blue-gray">Surcharges 150 €</p>
-                                                    <div class="notes-window">
-                                                        <div class="notes-container">
-                                                            <p class="text-14">Notes</p>
-                                                            <textarea class="notes-textarea" placeholder="Text here…"></textarea>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Requires temperature control</span>
-                                                            </label>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Dangerous cargo</span>
-                                                            </label>
+                                                    <div class="relative btn-notes">
+                                                        <p class="fs-13 c-blue-gray">Surcharges 150 €</p>
+                                                        <div class="notes-window pt-4">
+                                                            <div class="notes-container">
+                                                                <p class="text-14 text-left">Surcharges</p>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA 1 HOUR - 80 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EDOWNTIME -  880 €</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="table__rate-item table__rate-item-other ml-auto">
                                                     <div class="d-flex align-items-center justify-content-end">
-                                                        <label class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-edit"></span>
-                                                        </label>
-                                                        <label  class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-doc"></span>
-                                                        </label>
+                                                     
+                                                        <div class="relative btn-notes">
+                                                            <label class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-edit"></span>
+                                                            </label>
+                                                           
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Notes</p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="relative btn-notes">
+                                                            <label  class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-doc"></span>
+                                                            </label>
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Specification</p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                         <div class="circle pr-2">
                                                             <span class="circle-span bg-gray"></span>
                                                             <span class="circle-span bg-gray"></span>
@@ -931,25 +1026,60 @@
                                                                         <p class="c-blue-gray fs-14 mb-2 min-h-22"">Extra</p>
                                                                     </div>
                                                                     <div class="mr-3">
-                                                                        <p class="mb-2 min-h-22"">
-                                                                            1500 EUR
-                                                                        </p>
-                                                                        <p class="mb-2 min-h-22">
-                                                                            150 EUR
-                                                                        </p>
+                                                                        <p class="mb-2 min-h-22"">1500 EUR</p>
+                                                                        <div class="relative btn-notes">
+                                                                            <p class="mb-2 min-h-22">150 EUR </p>
+                                                                            <div class="notes-window right pt-4">
+                                                                                <div class="notes-container">
+                                                                                    <p class="text-14 text-left">Surcharges</p>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA 1 HOUR - 80 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EDOWNTIME -  880 €</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Specification</span>
-                                                            </a>
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Note:  new rates</span>
-                                                            </a>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2">
+                                                                    <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Specification</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 text-left">Specification</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2">
+                                                                    <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Note:  new rates</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 text-left">Notes</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                          
                                                         </div>
                                                     </div>
                                                 </div>
@@ -990,7 +1120,9 @@
                                                         <span class="checkbox__icon-blue"></span>
                                                     </label>
                                                 </div>
-                                                <div class="table__rate-item text-center"><p>01.05.2020 | 31.05.2020</p></div>
+                                                <div class="table__rate-item realtive py-3">
+                                                    <p class="w-fit-content">01.05.2020 | 31.05.2020</p>
+                                                </div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">USKL</p></div>
                                                 <div class="table__rate-item"><p class="d-flex align-items-center"><img src="img/flag.svg" alt="flag" class="flag">LTKL</p></div>
                                                 <div class="table__rate-item"><p>LIFO</p></div>
@@ -999,37 +1131,66 @@
                                                 <div class="table__rate-item table__rate-item_rate">
                                                     <div class="d-flex align-items-center">
                                                         <p class="mr-3 text-nowrap">1500 €</p>
-                                                        <img src="img/danger-2.svg" alt="danger" class="mr-2">
-                                                        <div class="block-info">Temperature control</div>
+                                                        <div class="relative mr-2 hover-block-info">
+                                                            <img src="img/danger-2.svg" alt="danger">
+                                                            <div class="block-info">ADR cargo</div>
+                                                        </div>
+                                                        <div class="relative mr-2 hover-block-info">
+                                                            <img src="img/heat.svg" alt="heat">
+                                                            <div class="block-info">Temperature control</div>
+                                                        </div>
                                                     </div>
-                                                    <p class="fs-13 c-blue-gray">Surcharges 150 €</p>
-                                                    <div class="notes-window">
-                                                        <div class="notes-container">
-                                                            <p class="text-14">Notes</p>
-                                                            <textarea class="notes-textarea" placeholder="Text here…"></textarea>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Requires temperature control</span>
-                                                            </label>
-                                                            <label class="d-flex mt-2 pt-1">
-                                                                <input type="checkbox" class="checkbox" checked="">
-                                                                <span class="checkbox__icon-blue mr-3 ml-0"></span>
-                                                                <span class="text-14 m-0">Dangerous cargo</span>
-                                                            </label>
+                                                    <div class="relative btn-notes">
+                                                        <p class="fs-13 c-blue-gray">Surcharges 150 €</p>
+                                                        <div class="notes-window pt-4">
+                                                            <div class="notes-container">
+                                                                <p class="text-14 text-left">Surcharges</p>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EXTRA 1 HOUR - 80 €</span>
+                                                                </label>
+                                                                <label class="d-flex mt-3">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                    <span>EDOWNTIME -  880 €</span>
+                                                                </label>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="table__rate-item table__rate-item-other ml-auto">
                                                     <div class="d-flex align-items-center justify-content-end">
-                                                        <label class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-edit"></span>
-                                                        </label>
-                                                        <label  class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="check-icon check-icon-doc"></span>
-                                                        </label>
+                                                        <div class="relative btn-notes">
+                                                            <label class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-edit"></span>
+                                                            </label>
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Notes</p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="relative btn-notes">
+                                                            <label  class="mr-3">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check-icon check-icon-doc"></span>
+                                                            </label>  
+                                                            <div class="notes-window right pt-4">
+                                                                <div class="notes-container">
+                                                                    <p class="text-14 text-left">Specification</p>
+                                                                    <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    
                                                         <div class="circle pr-2">
                                                             <span class="circle-span bg-gray"></span>
                                                             <span class="circle-span bg-gray"></span>
@@ -1137,25 +1298,59 @@
                                                                         <p class="c-blue-gray fs-14 mb-2 min-h-22"">Extra</p>
                                                                     </div>
                                                                     <div class="mr-3">
-                                                                        <p class="mb-2 min-h-22"">
-                                                                            1500 EUR
-                                                                        </p>
-                                                                        <p class="mb-2 min-h-22">
-                                                                            150 EUR
-                                                                        </p>
+                                                                        <p class="mb-2 min-h-22"">1500 EUR</p>
+                                                                        <div class="relative btn-notes">
+                                                                            <p class="mb-2 min-h-22">150 EUR </p>
+                                                                            <div class="notes-window right pt-4">
+                                                                                <div class="notes-container">
+                                                                                    <p class="text-14 text-left">Surcharges</p>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA UPLOADING PLACE - 350 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EXTRA 1 HOUR - 80 €</span>
+                                                                                    </label>
+                                                                                    <label class="d-flex mt-3">
+                                                                                        <input type="checkbox" class="checkbox" checked>
+                                                                                        <span class="checkbox__icon-blue mr-2 ml-0"></span>
+                                                                                        <span>EDOWNTIME -  880 €</span>
+                                                                                    </label>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
                                                                     </div>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="d-flex justify-content-end">
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Specification</span>
-                                                            </a>
-                                                            <a href="#" class="ml-4 d-flex align-items-center py-2">
-                                                                <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
-                                                                <span class="fs-13 c-blue-gray">Note:  new rates</span>
-                                                            </a>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2">
+                                                                    <img src="img/doc-active.svg" alt="doc" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Specification</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 text-left">Specification</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="relative btn-notes">
+                                                                <p class="ml-4 d-flex align-items-center py-2">
+                                                                    <img src="img/edit-2-active.svg" alt="edit" class="mr-3" width="16px" height="16px">
+                                                                    <span class="fs-13 c-blue-gray">Note:  new rates</span>
+                                                                </p>
+                                                                <div class="notes-window right pt-4">
+                                                                    <div class="notes-container">
+                                                                        <p class="text-14 text-left">Notes</p>
+                                                                        <textarea class="notes-textarea" placeholder="Text here…"></textarea>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>

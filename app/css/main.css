@@ -1648,7 +1648,7 @@ button {
   height: -moz-fit-content;
   height: fit-content; }
 .bg-none {
-  background-color: transparent;}
+  background-color: transparent!important;}
 .bg-yellow {
   background-color: #f5e943;}
 .bg-gray {
@@ -1703,12 +1703,12 @@ button {
   background-color: #e0f4ff}
 .bg-light {
   background-color: rgba(36, 177, 255, 0.12); }
-  .bg-light_v3 {
-    background-color: rgba(231, 245, 254, 0.26);}
+.bg-light_v3 {
+  background-color: rgba(231, 245, 254, 0.26);}
 .bg-blue-navy {
-  background-color: #37517e;}
+  background-color: #37517e!important;}
 .bg-blue-pale {
-  background-color: #049dbd;}
+  background-color: #049dbd!important;}
 
 .bg-pale-azure {
   background-color: #e7f5fe;}
@@ -3170,7 +3170,7 @@ button {
   }
   .table__order .table__order-list.bl-1:hover {
     border-left-color: #109cf1;
-    z-index: 1;
+    z-index: 5;
   }
   .table__order-list:last-child .tooltip__table {
     top: 50%;
@@ -6929,6 +6929,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .lh-19 {
   line-height: 19px!important;}
 .w-fit-content {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
   width: fit-content;}
 .bl-1 {
   border-left-width: 1px;}
@@ -6955,6 +6957,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   right: 20px;}
 .w-400 {
   width: 400px;}
+.w-500 {
+  width: 500px;}
   .collapsed-bg {
     background-color: #f8fcfe;}
 .collapsed.collapsed-bg {
@@ -7035,6 +7039,43 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   max-height: none;}
 .max-204 {
   max-width: 204px!important;}
+  .way_3 {
+    padding: 0 0 30px 0;
+  }
+.way_3 .way__line {
+  height: 1px;
+  opacity: 0.91;
+  border-radius: 4px;
+  background-color: #ccd2f2;}
+.way_3 .way__point {
+  width: 7px;
+  height: 7px;
+  background-color: #24b1ff;}
+.way_3 .way__point:before {
+  content: none}
+.way_3 .way__item-icon {
+  transform: none;
+  width: 31px;
+  height: 21px;}
+.way_3 p {
+  line-height: 1;}
+.way_3 .way__item-way {
+  margin: 10px 0 20px;}
+.way_3 .way__item {
+  position: relative;
+  margin-top: 30px;}
+.way__item_truck {
+  width: 16px;
+  height: 16px;
+  object-fit: contain;
+  position: absolute;
+  top: 5px; 
+  right: -8px;}
+.scalex-1 {
+  transform: scaleX(-1)!important;}
+.m-h-auto {
+  min-height: auto;}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {

@@ -44,8 +44,8 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 $(document).ready(function () {
-
-  let widthOrderTable = $(".table__order-main").width();
+ 
+  let widthOrderTable = this.find(".table__order-main").width();
   $(".collapse_v2").css("width", widthOrderTable);
 
   $(window).on("load", function() {
@@ -360,6 +360,10 @@ $(document).ready(function () {
     $("input.range-way2").bootstrapSlider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
+  });
+
+  $(".collapsed-bg").click(function (e) { 
+    $(this).find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
   });
 
   $(".table__order-main").on("change click", function (e) {

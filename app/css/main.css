@@ -407,15 +407,9 @@ button {
     min-width: -webkit-max-content;
     min-width: -moz-max-content;
     min-width: max-content; }
-    .select__drop.right {
-      right: 0;
-      left: auto;
-
-    }
-    .select__drop.right {
-      left: auto;
-      right: 0
-    }
+  .select__drop.right {
+    left: auto;
+    right: 0;}
   .select__menu {
     border-radius: 4px;
     border: solid 1px #b7bcd6;
@@ -2944,6 +2938,8 @@ button {
   min-height: 17px;
 }
 .table__order .table__order-head {
+  /* width: -moz-fit-content; */
+  width: 100%;
   border-width: 0 0 0 5px;
   border-style: solid;
   border-color: #109cf1;
@@ -2955,6 +2951,7 @@ button {
   -webkit-box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06);
   box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06); }
   .table__order .table__order-head .table__item {
+    min-height: 70px;
     padding: 8px 20px;
     background-color: #109cf1;
     color: #ffffff;
@@ -2977,12 +2974,9 @@ button {
   border-right: 1px solid #fff;
   -ms-flex-negative: 0;
   flex-shrink: 0;
-  min-width: 145px;
   position: relative;
   padding: 20px 20px 10px 20px;
-  width: -webkit-min-content;
-  width: -moz-min-content;
-  width: min-content;
+  width: 145px;
   vertical-align: top;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3022,56 +3016,56 @@ button {
     right: 5px;
     top: 5px; }
   .table__order .table__item__way {
-    min-width: 264px; }
+    width: 264px; }
   .table__order .table__item__booking {
-    min-width: 170px; }
+    width: 170px; }
   .table__order .table__item__booking_2 {
-    min-width: 140px;}
+    width: 140px;}
   .table__order .table__item__check {
-    min-width: 56px;
+    width: 56px;
     padding-left: 15px !important; }
   .table__order .table__item__week {
-    min-width: 93px; }
+    width: 93px; }
   .table__order .table__item__routing {
-    min-width: 295px; }
+    width: 295px!important; }
   .table__order .table__item__schedule {
-    min-width: 160px; }
+    width: 160px; }
   .table__order .table__item__schedule2 {
-    min-width: 120px; }
+    width: 120px; }
   .table__order .table__item__orders {
-    min-width: 235px; }
+    width: 235px; }
   .table__order .table__item__dates {
-    min-width: 162px; }
+    width: 162px; }
     .table__order .table__item__dates a, .table__order .table__item__dates .text-14 {
       line-height: 19px; }
   .table__order .table__item__company {
-    min-width: 250px; }
+    width: 250px; }
   .table__order .table__item__item {
-    min-width: 235px; }
+    width: 235px; }
   .table__order .table__item__qty {
-    min-width: 95px; }
+    width: 95px; }
   .table__order .table__item__cargo {
-    min-width: 150px; }
+    width: 150px; }
   .table__order .table__item__documents {
-    min-width: 195px; }
+    width: 195px; }
   .table__order .table__item__setting {
-    min-width: 58px; }
+    width: 58px; }
   .table__order .table__item__invoice {
-    min-width: 185px; }
+    width: 185px; }
     .table__order .table__item__consignee {
-      min-width: 240px;
+      width: 240px;
     }
   .table__order .table__item__out {
-    min-width: 125px; }
+    width: 125px; }
   .table__order .table__item__kpi {
-    min-width: 92px; }
+    width: 92px; }
     .table__order .table__item__rate {
-      min-width: 100px;
+      width: 100px;
       justify-content: center;
       align-items: center;
     }
   .table__order .table__item__customer, .table__order .table__item__place {
-    min-width: 265px; }
+    width: 265px; }
   .table__order .table__item__truck a {
     line-height: 19px;
     min-height: 19px; }
@@ -3162,7 +3156,7 @@ button {
   .table__order .table__item {
     border-color: #b7bcd6 #fff #b7bcd6 transparent; 
     border-style: solid;
-    border-width: 1px 1px 1px 0;
+    border-width: 1px 1px 0 0;
 
   }
   .table__order .table__order-list:hover .table__item {
@@ -5184,23 +5178,28 @@ button {
     z-index: 7;
     height: 100%;
     pointer-events: none;
+    overflow: hidden;
     opacity: 0;
-    /* border: solid 2px #109cf1;  */
-    }
+    /* border: solid 2px #109cf1;  */}
     .last.active-scale {
+      overflow: visible;
       opacity: 1;
-      position: relative;
-    }
-    .last.active-scale:before { 
+      position: relative;}
+    .last:before { 
       content: '';
       position: absolute; 
-      right: 0; 
-      top: 100%; 
-      height: 352px; 
-      width: 100%;
+      right: -2px; 
+      top: -2px; 
+      height: 100vh; 
+      width: calc(100% + 2px);
       background: #109cf1;
-      z-index: -1;
-    }
+      z-index: -1;}
+    .last.active-scale.bg-blue:before {
+      background-color: #156ce4 !important;}
+      .last.active-scale.bg-blue-pale:before {
+        background-color: #049dbd !important}
+        .last.active-scale.bg-blue-navy:before {
+          background-color: #37517e !important;}
     .last.active-scale .last-btn-icon {
       width: 15px;
       height: 15px;
@@ -5263,6 +5262,7 @@ button {
         padding: 0!important;
         border: none!important;
         resize: none;
+        position: initial!important;
     }
   .table__order .table__order-list.bl-1, .table__order .table__order-head.bl-1 {
     z-index: initial;
@@ -5577,8 +5577,8 @@ button {
   max-height: 100%;
   height: 100%; }
   .table__item__last {
-  position: -webkit-sticky;
-  position: sticky;
+  position: -webkit-sticky!important;
+  position: sticky!important;
   right: 0;
   border-color: #b7bcd6 #fff #b7bcd6 transparent;
   border-style: solid;
@@ -5590,6 +5590,8 @@ button {
   
 .last {
   margin-left: auto;
+  overflow: hidden;
+  position: relative;
   width: 33px;
   height: 100%; }
   .last.active {
@@ -5611,13 +5613,13 @@ button {
 
 
   .table__order_v2 .table__order-list:hover .table__item {
-    border-color: #109cf1 #fff #109cf1 transparent;
+    border-color: #109cf1 transparent #109cf1 transparent;
     border-width: 2px 1px 2px 0; }
     .table__order_v2 .table__order-list.bl-1:hover {
       border-left-width: 2px;
       border-left-color: #109cf1; }
       .table__order_v2 .table__order-list:hover .table__item__last{
-        border-color: #109cf1 #fff #109cf1 transparent;
+        border-color: #109cf1 transparent #109cf1 transparent;
         border-width: 2px 1px 2px 0;
       }
  
@@ -5649,7 +5651,7 @@ button {
   }
 
   .table__order_v2 .table__order-list{
-    border-width: 0px 0px 1px 5px;
+    border-width: 0px 0px 0px 5px;
     margin-top: -2px;
   }
   .table__order_v2 .table__order-list.bl-1:hover {
@@ -5661,7 +5663,7 @@ button {
     border-width: 0 0 0 1px
   }
   .table__order_v2 .table__order-list:last-child .table__item__last {
-    border-width: 1px 1px 1px 0;
+    border-width: 1px 1px 0px 0;
    
   }
   .table__order_v2 .table__order-list:last-child:hover .table__item__last {
@@ -6967,14 +6969,14 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .collapsed.collapsed-bg {
   background-color: #ffffff;}
 .table__order-main.collapsed.collapsed-bg .table__item, .table__order-main.collapsed.collapsed-bg .table__item__last{
-  background-color: #ffffff;
+  background-color: transparent;
   border-color: #b7bcd6 #fff #b7bcd6 transparent;}
 .table__order .table__order-list:hover .table__order-main.collapsed.collapsed-bg .table__item {
   border-top-color: #109cf1;
   border-bottom-color: #109cf1;}
 .table__order-main.collapsed-bg .table__item, .table__order-main.collapsed-bg .table__item__last{
   background-color: #f8fcfe;
-  border-color: #f8fcfe;}
+  border-color: #f8fcfe #f8fcfe #f8fcfe #f8fcfe;}
 /* .collapsed-bg:hover .table__item__last {
   border-bottom-width: 0!important;}
 .collapsed.collapsed-bg:hover .table__item__last {
@@ -7088,7 +7090,21 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-height: 75px;}
 .z-index-2 {
   z-index: 2;}
-
+.w-auto {
+  width: auto;}
+/* td.table__item {
+  border: none!important;} */
+.table__order .table__item__last {
+  width: auto;
+  padding: 0!important;}
+.table__order_v2 .table__item.table__item__last:last-child {
+  padding: 0!important;}
+.thead {
+  position: sticky;
+  top: 0;
+  z-index: 5;}
+.w_40 {
+  width: calc(100% + 30px + 10px);}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -7190,7 +7206,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 @media only screen and (min-width: 992px) {
   .nav-tabs_v2.w-100-lg-pr-5{
     margin-right: -3rem;
-    width: calc(100% + 3rem + 1.5rem);}} 
+    width: calc(100% + 3rem + 1.5rem);}
+  .w_lg_55_1-5 {
+    width: calc(100% + 55px + 1.5rem);}} 
 @media only screen and (max-width: 1199px) {
   .popup__full-map {
     top: 60px;

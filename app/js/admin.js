@@ -44,9 +44,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 
 $(document).ready(function () {
- 
-  let widthOrderTable = this.find(".table__order-main").width();
-  $(".collapse_v2").css("width", widthOrderTable);
 
   $(window).on("load", function() {
     //Prevent having no "active" slide
@@ -248,69 +245,69 @@ $(document).ready(function () {
 }); //datepicker
 
 $(document).ready(function () {
-  $(".datepicker").datepicker({
-    weekStart: 1,
-    multidate: 1,
-    keyboardNavigation: false,
-    forceParse: false,
-    autoclose: true,
-    todayHighlight: true,
-    daysOfWeekHighlighted: "0,6"
-  });
+  // $(".datepicker").datepicker({
+  //   weekStart: 1,
+  //   multidate: 1,
+  //   keyboardNavigation: false,
+  //   forceParse: false,
+  //   autoclose: true,
+  //   todayHighlight: true,
+  //   daysOfWeekHighlighted: "0,6"
+  // });
 }); //daterangepicker
 
 $(document).ready(function () {
 
-  $(function () {
-    $('input[name="calendar"]').daterangepicker({
-      singleDatePicker: true,
-      // opens: 'center',
-      daysOfWeekHighlighted: "0,6",
-      autoUpdateInput: true,
-      inline:true,
-      showCustomRangeLabel: false,
-      alwaysShowCalendars: true,
-      alwaysOpen: true,
-      weekStart: 1,
-      locale: {
-        applyLabel: 'Add event',
-        direction: 'calendar-container'
-      }
-    }, function (start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
+  // $(function () {
+  //   $('input[name="calendar"]').daterangepicker({
+  //     singleDatePicker: true,
+  //     // opens: 'center',
+  //     daysOfWeekHighlighted: "0,6",
+  //     autoUpdateInput: true,
+  //     inline:true,
+  //     showCustomRangeLabel: false,
+  //     alwaysShowCalendars: true,
+  //     alwaysOpen: true,
+  //     weekStart: 1,
+  //     locale: {
+  //       applyLabel: 'Add event',
+  //       direction: 'calendar-container'
+  //     }
+  //   }, function (start, end, label) {
+  //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  //   });
   
-  });
+  // });
 
 
-  $(function () {
-    $('input[name="daterange"]').daterangepicker({
-      opens: 'left',
-      daysOfWeekHighlighted: "0,6",
-      autoUpdateInput: true,
-      weekStart: 1,
-      locale: {
-        applyLabel: 'Done'
-      }
-    }, function (start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
-  });
-  $(function () {
-    var _$$daterangepicker;
+  // $(function () {
+  //   $('input[name="daterange"]').daterangepicker({
+  //     opens: 'left',
+  //     daysOfWeekHighlighted: "0,6",
+  //     autoUpdateInput: true,
+  //     weekStart: 1,
+  //     locale: {
+  //       applyLabel: 'Done'
+  //     }
+  //   }, function (start, end, label) {
+  //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  //   });
+  // });
+  // $(function () {
+  //   var _$$daterangepicker;
 
-    $('input[name="dates"]').daterangepicker((_$$daterangepicker = {
-      singleDatePicker: true,
-      weekStart: 1,
-      opens: 'left',
-      autoUpdateInput: true,
-      daysOfWeekHighlighted: "0,6"
-    }, _defineProperty(_$$daterangepicker, "weekStart", 1), _defineProperty(_$$daterangepicker, "locale", {
-      applyLabel: 'Done'
-    }), _$$daterangepicker), function (start, end, label) {
-      console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-    });
-  });
+  //   $('input[name="dates"]').daterangepicker((_$$daterangepicker = {
+  //     singleDatePicker: true,
+  //     weekStart: 1,
+  //     opens: 'left',
+  //     autoUpdateInput: true,
+  //     daysOfWeekHighlighted: "0,6"
+  //   }, _defineProperty(_$$daterangepicker, "weekStart", 1), _defineProperty(_$$daterangepicker, "locale", {
+  //     applyLabel: 'Done'
+  //   }), _$$daterangepicker), function (start, end, label) {
+  //     console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+  //   });
+  // });
 });
 $(document).ready(function () {
 
@@ -354,16 +351,18 @@ $(document).ready(function () {
   }); 
   $(".click__more").click(function (e) {
     e.preventDefault();
-    $(this).closest(".table__order-list").toggleClass('active').siblings().removeClass('active');
-    $(this).closest(".table__order-list").find(".drop-more").slideToggle(300).closest(".table__order-list").siblings().find(".drop-more").slideUp(300);
+    $(this).closest(".table__order-list").toggleClass('active');
+    $(this).closest(".table__order-list").find(".drop-more").slideToggle(300);
     $("input.range-way").bootstrapSlider('refresh');
     $("input.range-way2").bootstrapSlider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
-    $(this).closest(".table__order-list").find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
+    $(this).closest(".table__order-list").find(".last").toggleClass('active-scale');
   });
 
   $(".collapsed-bg").click(function (e) { 
-    $(this).find(".last").toggleClass('active-scale').closest(".table__order-list").siblings().find(".last").removeClass('active-scale');
+    $(this).find(".last").toggleClass('active-scale');
+    $(this).find(".popup2").removeClass('active');
+    $(this).closest(".table__order-list_td").toggleClass('overflow-hidden');
   });
 
   $(".table__order-main").on("change click", function (e) {

@@ -862,6 +862,9 @@ button {
     .checkbox:checked ~ .checkbox__check .checkbox__icon {
       border-color: transparent;
       background: #ffffff url("../img/check.svg") no-repeat center/90% 100%; }
+  .checkbox:checked ~ .icon-success {
+    fill: #f99e04;
+    opacity: 1;}
   .checkbox:checked ~ .checkbox__private-check .checkbox__text {
     color: #156ce4; }
   .checkbox:checked ~ .checkbox__private-check .checkbox__icon {
@@ -2015,8 +2018,8 @@ button {
   color: #db5151; }
 
 .c-orange {
-  color: #f99e04;
-  fill: #f99e04;}
+  color: #f99e04!important;
+  fill: #f99e04!important;}
 
 .c-green {
   color: #49ddaa;
@@ -6732,6 +6735,7 @@ button {
   .overflow-hidden {
     overflow: hidden!important;}
   .icon-success {
+    fill: #b7bcd6;
     transform: rotate(90deg)}
   .mr--40{
     margin-right: -40px;}
@@ -6978,7 +6982,6 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .table__order.navy .table__order-list:hover .table__order-main.collapsed.collapsed-bg .table__item {
   border-top-color: #37517e;
   border-bottom-color: #37517e;}
-
 .table__order-main.collapsed-bg .table__item, .table__order-main.collapsed-bg .table__item__last{
   background-color: #f8fcfe;
   border-color: #f8fcfe #f8fcfe #f8fcfe #f8fcfe;}
@@ -7122,7 +7125,13 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   z-index: 3;}
 .m-h-355 {
   max-height: 355px!important;}
-
+.table__item__check .icon-success{
+  cursor: pointer;
+  opacity: 0;}
+.table__item__check .icon-success.c-orange {
+  opacity: 1;}
+.table__order_v2 .table__order-list:hover .table__item__check .icon-success{
+  opacity: 1;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {

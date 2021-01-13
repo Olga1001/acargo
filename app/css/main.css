@@ -396,6 +396,12 @@ button {
     .select.active .btn-mark svg{
       fill: #ffffff;
     }
+    .select.active .arrow-drop{
+      -webkit-transform: scale(1, -1);
+      -ms-transform: scale(1, -1);
+      transform: scale(1, -1);
+
+    }
   .select__drop {
     position: absolute;
     top: 100%;
@@ -534,9 +540,13 @@ button {
   padding-left: 35px; }
 
 .select__carrier {
+  background: url("../img/team.svg") no-repeat 15px center / 27px;
   border: solid 1px #109CF1;
   border-radius: 4px; }
+  .select__carrier .select__item {
+    padding-left: 60px;}
   .select__carrier-item {
+    width: 100%;
     line-height: 52px; }
   .select__carrier .arrow-drop {
     border-color: #b7bcd6 transparent transparent transparent; }
@@ -7148,6 +7158,7 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   color: #b7bcd6!important;}
 .way__item.disabled .fs-13 {
   color: #bac5cf!important;}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {
@@ -7775,6 +7786,11 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
       right: 0; }}
 
 @media only screen and (max-width: 575px) {
+  .select__carrier {
+    background-size: 19px;
+    background-position: 10px center;}
+  .select__carrier .select__item {
+    padding-left: 37px;}
   .available.active_v3, .available.active_v4 {
     margin: 2.5px 1px!important;
     height: 32px!important;

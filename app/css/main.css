@@ -3973,6 +3973,7 @@ button {
       position: relative;
       margin: 30px 0 25px; }
     .way__item:first-child .way__line {
+      width: 50%;
       left: 50%; }
     .way__item:last-child .way__line {
       width: 50%; }
@@ -7132,6 +7133,21 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   opacity: 1;}
 .table__order_v2 .table__order-list:hover .table__item__check .icon-success{
   opacity: 1;}
+.way__item.disabled {
+  opacity: 1;}
+.way__item.disabled img {
+  opacity: 0.3;
+  filter: grayscale(1);}
+.way__item.disabled .way__point{
+  border-color: #b7bcd6;
+  background-color: #b7bcd6;}
+.way__item.disabled .way__line {
+  opacity: 1;
+  background-color: #ccd2f2;}
+.way__item.disabled .fs-12 {
+  color: #b7bcd6!important;}
+.way__item.disabled .fs-13 {
+  color: #bac5cf!important;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {

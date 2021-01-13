@@ -49,7 +49,7 @@ $(document).ready(function () {
       console.log("1");
       let height = $(this).height(); 
       console.log(height);
-      $(this).find(".line__last").height(height);
+      $(this).find(".line__last").height(height - 53);
     });
 
   $(window).on("load", function() {

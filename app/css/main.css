@@ -3114,7 +3114,7 @@ button {
 
   }
   .table__order-list.active .table__item__last {
-    border: none;
+    border: none!important;
   }
   .table__order-list.active {
     z-index: unset;
@@ -5194,9 +5194,9 @@ button {
       opacity: 1;
       position: relative;}
     .last:before { 
-      content: '';
+      /* content: ''; */
       position: absolute; 
-      right: -1px; 
+      right: -2px; 
       top: -2px; 
       height: 100%; 
       width: calc(100% + 1px);
@@ -5238,6 +5238,7 @@ button {
       right: 0;
       direction: rtl;
       height: 100%;
+      border: none!important;
       background-color: #109cf1; }
     .last-btn {
       background-color: #109cf1;
@@ -5266,7 +5267,7 @@ button {
       }
       .table__order .table__order-head .table__item__last {
         background-color: #109cf1;
-        min-width: 34px!important;
+        width: 33px!important;
         padding: 0!important;
         border: none!important;
         resize: none;
@@ -5590,7 +5591,7 @@ button {
   right: 0;
   border-color: #b7bcd6 #fff #b7bcd6 transparent;
   border-style: solid;
-  border-width: 1px 1px 0px 0;
+  border-width: 1px 0px 0px 0!important;
   width: 100%;
   z-index: 4;
   /* margin-left: -33px; */
@@ -7113,7 +7114,7 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 /* td.table__item {
   border: none!important;} */
 .table__order .table__item__last {
-  width: auto;
+  width: 34px;
   padding: 0!important;}
 .table__order_v2 .table__item.table__item__last:last-child {
   padding: 0!important;}
@@ -7127,7 +7128,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   position: sticky;
   right: 0;
   margin-left: auto;
-  width: 44px;
+  width: 33px;
+  flex-shrink: 0;
   min-height: 166px;
   z-index: 3;}
 .m-h-355 {

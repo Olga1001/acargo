@@ -373,7 +373,7 @@
                             <td class="table__item table__item__last bg-blue"></td>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="orders_results">
                           <tr class="table__order-list b-1 bl-1">
                             <td class="table__order-list_td relative">
                               <table class="table__order-main collapsed collapsed-bg b-0" data-toggle="collapse" href="#collapseOrderOne" role="button" aria-expanded="false" aria-controls="collapseOrderOne">
@@ -387,8 +387,8 @@
                                   </td>
                                   <td class="table__item table__item__check noresize">
                                     <label>
-                                      <input type="checkbox" class="checkbox">
-                                      <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
+                                      <input type="checkbox" class="checkbox" checked>
+                                      <svg class="svg-sprite-icon icon-success mt-4 c-blue" width="16px" height="16px">
                                         <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
                                       </svg>
                                     </label>
@@ -630,11 +630,11 @@
                                       </div>
                                     </div>
                                
-                                  <div class="d-flex w-400 pb-3 mr-5 pr-5">
-                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0" width="14px" height="14px">
+                                  <div class="d-flex w-400 pb-3 pr-4">
+                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0 mt-1" width="14px" height="14px">
                                       <use xlink:href="img/sprite/symbol/sprite.svg#edit-2"></use>
                                     </svg>
-                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
+                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75 p-2 b-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
                                   </div>
                                   <div class="bg-blue line__last"></div>
                                 </div>
@@ -665,7 +665,7 @@
                                   <td class="table__item table__item__check noresize">
                                     <label>
                                       <input type="checkbox" class="checkbox" checked>
-                                      <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
+                                      <svg class="svg-sprite-icon icon-success mt-4 c-orange" width="16px" height="16px">
                                         <use xlink:href="img/sprite/symbol/sprite.svg#success"></use>
                                       </svg>
                                     </label>
@@ -916,11 +916,11 @@
                                       </div>
                                     </div>
                                
-                                  <div class="d-flex w-400 pb-3 mr-5 pr-5">
-                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0" width="14px" height="14px">
+                                  <div class="d-flex w-400 pb-3 pr-4">
+                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0 mt-1" width="14px" height="14px">
                                       <use xlink:href="img/sprite/symbol/sprite.svg#edit-2"></use>
                                     </svg>
-                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
+                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75 p-2 b-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
                                   </div>
                                   <div class="bg-blue line__last"></div>
                                 </div>
@@ -1203,11 +1203,11 @@
                                     </div>
                                   </div>
                                
-                                  <div class="d-flex w-400 pb-3 mr-5 pr-5">
-                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0" width="14px" height="14px">
+                                  <div class="d-flex w-400 pb-3 pr-4">
+                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0 mt-1" width="14px" height="14px">
                                       <use xlink:href="img/sprite/symbol/sprite.svg#edit-2"></use>
                                     </svg>
-                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
+                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75 p-2 b-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
                                   </div>
                                   <div class="bg-blue line__last"></div>
                                 </div>
@@ -1226,9 +1226,135 @@
                             </td>
                           </tr>
                         </tbody>
+                    
+                      </table>
+                    </div>
+
+                    <div class="table__order table__order_v2 table__order_v3 h-100">
+                      <table border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%">
+                        <thead class="thead">
+                          <tr class="bg-blue d-flex table__order-head b-1 bl-1">
+                            <td class="table__item table__item__check noresize bg-blue ">
+                              <div>
+                                <label class="d-flex mt-4 pt-1">
+                                  <input class="checkbox" type="checkbox"><span class="checkbox__icon-blue ml-0"></span>
+                                </label>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__week noresize bg-blue">
+                              <div>
+                                <p>WEEK</p>
+                                <input class="input-table input-date mt-1" type="text">
+                              </div>
+                            </td>
+                            <td class="table__item table__item__routing noresize bg-blue">
+                              <div>
+                                <p>CLIENT ROUTING</p>
+                                <div class="d-flex mt-1">
+                                  <input class="input-table input-search mr-2 hide-focus" type="text">
+                                  <div class="select select-table bg-white m-0">
+                                    <div class="select__item">FAS</div>
+                                    <div class="select__drop">
+                                      <ul class="select__menu">
+                                        <li class="select__option active">FAS</li>
+                                        <li class="select__option">FAS</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                </div>
+                                <button class="table__clear bg-white-clear" type="reset"></button>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__booking_2 noresize bg-blue">
+                              <div>
+                                <p>BOOKING</p>
+                                <div class="select select-table bg-white m-0 mt-1">
+                                  <div class="select__item"></div>
+                                  <div class="select__drop">
+                                    <ul class="select__menu">
+                                      <li class="select__option active"></li>
+                                      <li class="select__option"></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__schedule bg-blue">
+                              <div>
+                                <p>SCHEDULE</p>
+                                <div class="d-flex"><a class="schedule-item mt-1 mr-1" href="#">CUT</a><a class="schedule-item mt-1 mr-1" href="#">Ediv</a><a class="schedule-item mt-1" href="#">ETA</a></div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__orders bg-blue">
+                              <div>
+                                <p>ORDERS</p>
+                                <input class="input-table input-search mt-1" type="text">
+                              </div>
+                            </td>
+                            <td class="table__item table__item__status bg-blue">
+                              <div>
+                                <p>STATUS</p>
+                                <div class="select select-table bg-white m-0 mt-1">
+                                  <div class="select__item">Ready</div>
+                                  <div class="select__drop">
+                                    <ul class="select__menu">
+                                      <li class="select__option active">Ready</li>
+                                      <li class="select__option">Ready</li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__dates bg-blue">
+                              <div>
+                                <p>DATES</p>
+                                <div class="d-flex justify-content-between"><a class="dates-item mt-1 mr-1" href="#">O</a><a class="dates-item mt-1 mr-1" href="#">R</a><a class="dates-item mt-1" href="#">L</a></div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__truck bg-blue">
+                              <div>
+                                <p>truck</p>
+                                <div class="select select-table bg-white m-0 mt-1">
+                                  <div class="select__item"></div>
+                                  <div class="select__drop">
+                                    <ul class="select__menu">
+                                      <li class="select__option active"></li>
+                                      <li class="select__option"></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__truck bg-blue">
+                              <div>
+                                <p>CONTAINER</p>
+                                <div class="select select-table bg-white m-0 mt-1">
+                                  <div class="select__item"></div>
+                                  <div class="select__drop">
+                                    <ul class="select__menu">
+                                      <li class="select__option active"></li>
+                                      <li class="select__option"></li>
+                                    </ul>
+                                  </div>
+                                </div>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__documents bg-blue" align="center">
+                              <div>
+                                <p>DOCUMENTS</p>
+                              </div>
+                            </td>
+                            <td class="table__item table__item__setting noresize pr-2 bg-blue"></td>
+                            <td class="table__item table__item__last bg-blue"></td>
+                          </tr>
+                        </thead>
+                        <tbody id="orders_results" class="d-flex align-items-center justify-content-center">
+                         <tr>
+                           <td class="p-3">No Results</td>
+                         </tr>
+                        </tbody>
                       
                       </table>
-                 
                     </div>
                   
                   </div>
@@ -1385,7 +1511,7 @@
                             <td class="table__item table__item__last bg-blue-pale"></td>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="orders_results">
                           <tr class="table__order-list b-1 bl-1">
                             <td class="table__order-list_td relative">
                               <table class="table__order-main collapsed collapsed-bg b-0" data-toggle="collapse" href="#collapseOrder2One" role="button" aria-expanded="false" aria-controls="collapseOrder2One">
@@ -1617,11 +1743,11 @@
                                     </div>
                                   </div>
                              
-                                  <div class="d-flex pr-5 w-500 ">
-                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0" width="14px" height="14px">
+                                  <div class="d-flex w-500 pb-3 pr-4">
+                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0 mt-1" width="14px" height="14px">
                                       <use xlink:href="img/sprite/symbol/sprite.svg#edit-2"></use>
                                     </svg>
-                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75" col="1" row="1">Note will be here…</textarea>
+                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75  p-2 b-1" col="1" row="1">Note will be here…</textarea>
                                   </div>
                                   <div class="bg-blue-pale line__last"></div>
                                 </div>
@@ -1813,7 +1939,7 @@
                             <td class="table__item table__item__last bg-blue-navy"></td>
                           </tr>
                         </thead>
-                        <tbody>
+                        <tbody id="orders_results">
                           <tr class="table__order-list b-1 bl-1">
                             <td class="table__order-list_td relative">
                               <table class="table__order-main collapsed collapsed-bg b-0" data-toggle="collapse" href="#collapseOrder3One" role="button" aria-expanded="false" aria-controls="collapseOrder3One">
@@ -2063,11 +2189,11 @@
                                     </div>
                                   </div>
                              
-                                  <div class="d-flex w-500 pb-3 mr-5 pr-5">
-                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0" width="14px" height="14px">
+                                  <div class="d-flex w-500 pb-3 pr-4">
+                                    <svg class="svg-sprite-icon icon-edit-2 c-blue mr-2 flex-shrink-0 mt-1" width="14px" height="14px">
                                       <use xlink:href="img/sprite/symbol/sprite.svg#edit-2"></use>
                                     </svg>
-                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
+                                    <textarea class="textarea2 fs-14 p-0 bg-none m-h-75 p-2 b-1">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book…</textarea>
                                   </div>
                                   
                                 <div class="bg-blue-navy line__last"></div>

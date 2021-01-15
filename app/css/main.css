@@ -868,9 +868,12 @@ button {
     .checkbox:checked ~ .checkbox__check .checkbox__icon {
       border-color: transparent;
       background: #ffffff url("../img/check.svg") no-repeat center/90% 100%; }
-  .checkbox:checked ~ .icon-success {
-    fill: #f99e04;
+  .checkbox:checked ~ .icon-success.c-orange {
+    fill: #f99e04!important;
     opacity: 1;}
+    .checkbox:checked ~ .icon-success.c-blue {
+      fill: #156ce4!important;
+      opacity: 1;}
   .checkbox:checked ~ .checkbox__private-check .checkbox__text {
     color: #156ce4; }
   .checkbox:checked ~ .checkbox__private-check .checkbox__icon {
@@ -6743,7 +6746,7 @@ button {
   .overflow-hidden {
     overflow: hidden!important;}
   .icon-success {
-    fill: #b7bcd6;
+    fill: #b7bcd6!important;
     transform: rotate(90deg)}
   .mr--40{
     margin-right: -40px;}
@@ -7090,6 +7093,7 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .way_3 .way__item-way {
   margin: 10px 0 20px;}
 .way_3 .way__item {
+  width: 100%;
   position: relative;
   margin-top: 30px;}
 .way__item_truck {
@@ -7156,7 +7160,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   color: #b7bcd6!important;}
 .way__item.disabled .fs-13 {
   color: #bac5cf!important;}
-
+#orders_results {
+  display: block;
+  min-height: 300px;
+  max-height: 400px;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {

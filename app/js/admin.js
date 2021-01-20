@@ -111,7 +111,10 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-
+  // dashed line start-finish  
+  let segmentDashed = $(".line-vertical_shipment").height() - $(".dashed-start").position().top;
+  let topStartDashed = $(".dashed-start").position().top;
+  $(".line-vertical_dashed").css({"top":(topStartDashed + 11), "height": (segmentDashed - 11)});
 
   $(".table__item").click(function () {
     $(this).find(".table__arrow").toggleClass('active');

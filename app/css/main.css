@@ -6833,8 +6833,8 @@ button {
   width: auto;
   margin-left: 10px;}
 .circle-big {
-  width: 35px;
-  height: 35px;
+  width: 36px;
+  height: 36px;
   border-radius: 50%;
   flex-shrink: 0;
   position: relative;
@@ -6846,21 +6846,37 @@ button {
   margin: 0 auto;
   display: block;
 }
+
 .line-vertical_shipment {
   position: absolute;
   left: 17px;
   top: 8px;
-  height: calc(100% - 40px);
+  height: calc(100% - 50px);
   width: 3px;
   opacity: 0.43;
   border-radius: 2px;
   background-color: rgba(16, 156, 241, 0.48);
   z-index: 0;
 }
+.line-vertical_dashed {
+  position: absolute;
+  left: 17px;
+  top: 11px;
+  height: calc(100% - 40px);
+  width: 3px;
+  border-radius: 2px;
+  background-color: #eff8fe;
+  z-index: 1;
+  border-right: 3px dashed rgba(183,188,214, 0.35);
+}
 .circle-small {
   width: 6px;
   height: 6px;
   border-radius: 50%;
+}
+.dashed-start .circle-small{
+  width: 11px;
+  height: 11px
 }
 .line-16 {
   width: 1px;

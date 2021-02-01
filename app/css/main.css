@@ -868,9 +868,15 @@ button {
     .checkbox:checked ~ .checkbox__check .checkbox__icon {
       border-color: transparent;
       background: #ffffff url("../img/check.svg") no-repeat center/90% 100%; }
+  .checkbox:checked ~ .icon-success {
+    fill: #b7bcd6!important;
+    opacity: 1;}
   .checkbox:checked ~ .icon-success.c-orange {
     fill: #f99e04!important;
     opacity: 1;}
+    .checkbox:checked ~ .icon-success.c-gray-light {
+      fill:  rgba(183, 188, 214, 0.3)!important;
+      opacity: 1;}
     .checkbox:checked ~ .icon-success.c-blue {
       fill: #156ce4!important;
       opacity: 1;}
@@ -6550,11 +6556,11 @@ button {
   width: 100%;}
 .base-li:hover .base-settings{
   opacity: 1;
-  pointer-events: auto;
-}
+  pointer-events: auto;}
 .base-li:hover .base-border:before {
-  border-color: #109cf1;
-}
+  border-color: #109cf1;}
+  .base-li:hover .icon-success{
+    opacity: 1;}
 .base-border {
   border: solid 1px rgba(183, 188, 214, 0.62);
   border-radius: 4px;
@@ -7154,7 +7160,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   z-index: 3;}
 .m-h-355 {
   max-height: 355px!important;}
-.table__item__check .icon-success{
+ 
+.table__item__check .icon-success, .base-li .icon-success{
   cursor: pointer;
   opacity: 0;}
 .table__item__check .icon-success.c-orange {
@@ -7190,6 +7197,43 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-width: 160px;}
 .w-300 {
   width: 300%;}
+
+/* .way-two-points .way__item:first-child{
+  
+} */
+.way-two-points {
+  max-width: 800px;
+}
+.way-two-points .way__item-icon {
+  width: 55px
+}
+.way-two-points .way__item:first-child .way__item-icon, .way-two-points .way__item:first-child .way__point {
+  margin: 0;
+  left: 24px;
+}
+.way-two-points .way__item:first-child .way__line {
+  width: calc(100% - 24px);
+  left: 24px;
+}
+
+.way-two-points .way__item:first-child p {
+  text-align: left;
+}
+.way-two-points .way__item:last-child .way__item-icon, .way-two-points .way__item:last-child .way__point {
+  margin: 0;
+  margin-left: auto;
+}
+.way-two-points .way__item:last-child .way__point {
+  right: 24px
+}
+.way-two-points .way__item:last-child .way__line {
+  width: calc(100% - 24px);
+  left: 0;
+}
+.way-two-points .way__item:last-child p {
+  text-align: right;
+}
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 1200px) and (max-width: 1599px) {

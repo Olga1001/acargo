@@ -48,8 +48,8 @@
         <div id="content">
           <nav class="navbar navbar-expand navbar-light bg-navbar topbar static-top">
             <button class="burger-mob" id="sidebarToggleTop"><span class="sidebarToggleTop-line sidebarToggleTop-top"></span><span class="sidebarToggleTop-line sidebarToggleTop-center"></span><span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span></button>
-            <div class="d-sm-flex d-none pr-xl-5 ml-auto navbar-list ml-xl-5 ml-3">
-              <div class="oval-block bg-white">
+            <div class="d-sm-flex d-none pr-xl-5 ml-auto navbar-list ml-xl-5 ml-3 overflow-visible">
+              <!-- <div class="oval-block bg-white">
                 <div class="select select-calendar">
                   <svg class="svg-sprite-icon icon-calendar">
                     <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
@@ -62,6 +62,17 @@
                     </ul>
                   </div>
                 </div>
+              </div> -->
+              <div class="oval-block oval-block__current bg-white">
+                <div class="select select-current">
+                  <div class="select__item">USD </div>
+                  <div class="select__drop">
+                    <ul class="select__menu">
+                      <li class="select__option">USD </li>
+                    </ul>
+                  </div>
+                </div>
+                <input class="input-normal" type="text" value="0,463 RUB">
               </div>
               <div class="oval-block oval-block__current bg-white">
                 <div class="select select-current">
@@ -74,14 +85,14 @@
                 </div>
                 <input class="input-normal" type="text" value="0,463 RUB">
               </div>
-              <div class="oval-block bg-white">
+              <!-- <div class="oval-block bg-white">
                 <p class="c-gray fs-14 w-100 text-center">Today:<span class="c-dark">Jan 31</span></p>
                 <button class="btn-calendar" type="button">
                   <svg class="svg-sprite-icon icon-calendar_2">
                     <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
                   </svg>
                 </button>
-              </div>
+              </div> -->
             </div>
             <ul class="navbar-nav ml-auto">
               <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">

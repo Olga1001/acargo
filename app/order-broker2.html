@@ -271,153 +271,138 @@
             </label>
           </div>
         </nav>
-        <!--<div class="container-fluid" id="container-wrapper">-->
-        <div class="container-fluid pr-0 pl-3 pt-3" id="container-wrapper">
+        <div class="container-fluid" id="container-wrapper">
           <div id="box">
-            <div class="box-white rate mb-0">
-              <div class="contents pt-0" id="contents">
-                <div class="contents__item active" id="orders_content">
-                  <div class="d-flex flex-wrap pt-4 justify-content-between align-items-end">
-                    <div class="d-flex flex-wrap filters">
-                      <div class="select bg-white mr-2 mt-3" inited="1">
-                        <input type="hidden" name="company" value="">
-                        <div class="select__item">All orders</div>
-                        <div class="select__drop">
-                          <ul class="select__menu">
-                            <li class="select__option" data-value="">All orders</li>
-                            <li class="select__option" data-value="1">BALTVIA</li>
-                          </ul>
-                        </div>
-                      </div>
-                      <!--                            <div class="select bg-white mr-2 mt-3">
-                              <input type="hidden" name="view" value="" onchange="customizeView(this)">
-                              <div class="select__item text-italic">Defauilt view</div>
-                              <div class="select__drop">
-                                  <ul class="select__menu">
-                                      <li class="select__option active" data-value="default">Default view</li>
-                                                                              <li class="select__option disabled" data-value="0">-----------------</li>    
-                                      <li class="select__option" data-value="custom">Customize</li>    
-                                  </ul>
-                              </div>
-                          </div>-->
-                      <div class="select bg-white mr-2 mt-3" inited="1">
-                        <div class="select__item text-italic">Label</div>
-                        <div class="select__drop">
-                          <ul class="select__menu max-height-100 p-3" id="filter_labels">
-                            <li class="px-1">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="setSearchLabel(this);" name="label"
-                                  data-name="All orders" data-color="" value="" type="radio">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-white"></span>
-                                <span>All orders</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="setSearchLabel(this);" data-name="Completed"
-                                  data-color="green" name="label" value="19" type="radio">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-green"></span>
-                                <span>Completed</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="setSearchLabel(this);" data-name="Test for Orders"
-                                  data-color="orange" name="label" value="15" type="radio">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-orange"></span>
-                                <span>Test for Orders</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="setSearchLabel(this);"
-                                  data-name="test for Shipments and Orders" data-color="blue-navy" name="label"
-                                  value="17" type="radio">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span>
-                                <span>test for Shipments and Orders</span>
-                              </label>
-                            </li>
-                          </ul>
-                        </div>
+           
+            <div class=" ml-xl-2"  >
+              <div id="orders_content" style="max-width: 1821px">
+                <div class="d-flex flex-wrap justify-content-between align-items-end mb-3">
+                  <div class="d-flex flex-wrap filters">
+                    <div class="select bg-white mr-2 mt-3" inited="1">
+                      <input type="hidden" name="company" value="">
+                      <div class="select__item">All orders</div>
+                      <div class="select__drop">
+                        <ul class="select__menu">
+                          <li class="select__option" data-value="">All orders</li>
+                          <li class="select__option" data-value="1">BALTVIA</li>
+                        </ul>
                       </div>
                     </div>
-                    <div class="d-flex justify-content-end flex-wrap pt-2 tools">
-                      <div class="relative">
-                        <a href="javascript:void(0)" class="tool ml-2 hide" id="label_button">
-                          <img src="https://acargo.click/test/img/acargo/tag.svg" alt="tag">
-                        </a>
-
-                        <div class="select__drop select__drop_center">
-                          <ul class="select__menu max-height-100 p-3">
-                            <li class="px-1">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="markOrderLabels(this)" data-name="0"
-                                  data-color="white" name="marker[]" value="0" type="checkbox">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-white"></span>
-                                <span>Remove</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="markOrderLabels(this)" data-name="Completed"
-                                  data-color="green" name="marker[]" value="19" type="checkbox">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-green"></span>
-                                <span>Completed</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="markOrderLabels(this)" data-name="Test for Orders"
-                                  data-color="orange" name="marker[]" value="15" type="checkbox">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-orange"></span>
-                                <span>Test for Orders</span>
-                              </label>
-                            </li>
-                            <li class="px-1 mt-3">
-                              <label class="d-flex align-items-center hover-underline">
-                                <input class="checkbox" onchange="markOrderLabels(this)"
-                                  data-name="test for Shipments and Orders" data-color="blue-navy" name="marker[]"
-                                  value="17" type="checkbox">
-                                <span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span>
-                                <span>test for Shipments and Orders</span>
-                              </label>
-                            </li>
-                          </ul>
-                        </div>
+                    <div class="select bg-white mr-2 mt-3 disabled" inited="1">
+                      <input type="hidden" name="company" value="">
+                      <div class="select__item">Defauilt view</div>
+                      <div class="select__drop">
+                        <ul class="select__menu">
+                          <li class="select__option" data-value="">Defauilt view</li>
+                          <li class="select__option" data-value="1">Defauilt view</li>
+                        </ul>
                       </div>
-                      <div class="d-flex flex-wrap align-items-center justify-content-end arrows-row ">
-                        <div class="d-flex ml-4 mt-4">
-                          <a href="javascript:void(0)" onclick="scrollOrders(this, 'start')"
-                            class="arrows arrows__prev">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                          </a>
-                          <a href="javascript:void(0)" onclick="scrollOrders(this, 'back')" class="arrows arrows__prev">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                          </a>
-                          <a href="javascript:void(0)" onclick="scrollOrders(this, 'forward')"
-                            class="arrows arrows__next">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                          </a>
-                          <a href="javascript:void(0)" onclick="scrollOrders(this, 'end')" class="arrows arrows__next">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                            <img src="https://acargo.click/test/img/acargo/arrow-point-to-right.svg" alt="arrow"
-                              class="arrows-icon">
-                          </a>
-                        </div>
+                    </div>
+                    <!--                            <div class="select bg-white mr-2 mt-3">
+                            <input type="hidden" name="view" value="" onchange="customizeView(this)">
+                            <div class="select__item text-italic">Defauilt view</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option active" data-value="default">Default view</li>
+                                                                            <li class="select__option disabled" data-value="0">-----------------</li>    
+                                    <li class="select__option" data-value="custom">Customize</li>    
+                                </ul>
+                            </div>
+                        </div>-->
+                    <div class="select bg-white mr-2 mt-3 disabled" inited="1">
+                      <div class="select__item text-italic">Label</div>
+                      <div class="select__drop">
+                        <ul class="select__menu max-height-100 p-3" id="filter_labels">
+                          <li class="px-1">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="setSearchLabel(this);" name="label"
+                                data-name="All orders" data-color="" value="" type="radio">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-white"></span>
+                              <span>All orders</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="setSearchLabel(this);" data-name="Completed"
+                                data-color="green" name="label" value="19" type="radio">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-green"></span>
+                              <span>Completed</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="setSearchLabel(this);" data-name="Test for Orders"
+                                data-color="orange" name="label" value="15" type="radio">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-orange"></span>
+                              <span>Test for Orders</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="setSearchLabel(this);"
+                                data-name="test for Shipments and Orders" data-color="blue-navy" name="label"
+                                value="17" type="radio">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span>
+                              <span>test for Shipments and Orders</span>
+                            </label>
+                          </li>
+                        </ul>
                       </div>
                     </div>
                   </div>
-
-                  <div class="table__order table__order_v2 table__order_v3 h-table" id="scroll_content">
+                  <div class="d-flex justify-content-end flex-wrap tools">
+                    <div class="relative mt-2">
+                      <a href="javascript:void(0)" class="tool ml-2 hide" id="label_button">
+                        <img src="https://acargo.click/test/img/acargo/tag.svg" alt="tag">
+                      </a>
+    
+                      <div class="select__drop select__drop_center">
+                        <ul class="select__menu max-height-100 p-3">
+                          <li class="px-1">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="markOrderLabels(this)" data-name="0"
+                                data-color="white" name="marker[]" value="0" type="checkbox">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-white"></span>
+                              <span>Remove</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="markOrderLabels(this)" data-name="Completed"
+                                data-color="green" name="marker[]" value="19" type="checkbox">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-green"></span>
+                              <span>Completed</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="markOrderLabels(this)" data-name="Test for Orders"
+                                data-color="orange" name="marker[]" value="15" type="checkbox">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-orange"></span>
+                              <span>Test for Orders</span>
+                            </label>
+                          </li>
+                          <li class="px-1 mt-3">
+                            <label class="d-flex align-items-center hover-underline">
+                              <input class="checkbox" onchange="markOrderLabels(this)"
+                                data-name="test for Shipments and Orders" data-color="blue-navy" name="marker[]"
+                                value="17" type="checkbox">
+                              <span class="checkbox__icon-empty ml-0 mr-3 bg-blue-navy"></span>
+                              <span>test for Shipments and Orders</span>
+                            </label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                    <a href="#" class="btn-aquamarine btn-add ml-3 px-4 mt-2">+ Add new order</a>
+                  
+                  </div>
+                </div>
+                <div class="">
+                  <div class=" table__order table__order_v2 table__order_v3 table_v5 h-table bb-1 py-0" id="scroll_content">
                     <table border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%">
                       <thead class="thead" id="order_search_form">
-                        <tr class=" d-flex table__order-head b-1 bl-1">
+                        <tr class=" d-flex table__order-head b-1 bl-0">
                           <td class="table__item table__item__check noresize  ">
                             <div>
                               <label class="d-flex mt-4 pt-1">
@@ -554,8 +539,8 @@
                         </tr>
                       </thead>
                       <tbody id="orders_results">
-
-                        <tr class="table__order-list b-1 bl-1 order-item overflow-hidden hover1" data-value="740">
+  
+                        <tr class="table__order-list b-1 bl-0 order-item overflow-hidden hover1" data-value="740">
                           <td class="table__order-list_td relative">
                             <table class="table__order-main  b-0">
                               <tbody>
@@ -635,10 +620,10 @@
                                           <p><a target="_blank"
                                               href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
                                         </td>
-
+  
                                         <td class="table__item table__item__routing pt-3">
                                           <div class="d-flex justify-content-center align-items-center pt-2">
-
+  
                                             <img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">
                                             <p class="text-small c-dark text-italic ml-3">text</p>
                                           </div>
@@ -646,7 +631,7 @@
                                             <div class="line-tracking__active bg-green" style="width: 50%;"></div>
                                           </div>
                                         </td>
-
+  
                                       </tr>
                                       <tr class="collapse" id="collapseOrderOne_740">
                                         <td>
@@ -665,18 +650,28 @@
                                             </div>
                                           </div>
                                           <div class="d-flex py-2 px-4 bg-light-blue">
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/white-share.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/white__cancel.svg" alt="save"
+                                                width="14px" height="14px">
+                                              <span>Close</span>
+                                            </a>
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/save.svg" alt="save"
+                                                width="14px" height="14px">
+                                              <span>Save</span>
+                                            </a>
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/white-share.svg" alt="Share"
                                                 width="14px" height="14px">
                                               <span>Share</span>
                                             </a>
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/calendar-1-white.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
                                                 width="12px" height="12px">
                                               <span>Timeline</span>
                                             </a>
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/chat-1-white.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
                                                 width="16px" height="14px">
                                               <span>Chat</span>
                                             </a>
@@ -684,7 +679,7 @@
                                               <input type="checkbox" class="checkbox">
                                               <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
                                               
-                                                <svg class="svg-sprite-icon c-blue mr-2" width="11px" height="11px">
+                                                <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
                                                   <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
                                                 </svg>
                                                 <span class="unchecked">Mark as comlete</span> 
@@ -696,7 +691,7 @@
                                         </td>
                                       </tr>
                                     </table>
-
+  
                                   </td>
                                   <td class="td-action" style="display: table-cell;vertical-align: middle;">
                                     <table  border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -735,20 +730,20 @@
                                                 </table>
                                               </td>
                                             </tr>
-                                         
+                                          
                                           </table>
                                         </td>
                                       </tr>
                                     </table>
                                   </td>
-                                 
+                                  
                                 </tr>
-
+  
                               </tbody>
                             </table>
                           </td>
                         </tr>
-                        <tr class="table__order-list b-1 bl-1 order-item overflow-hidden hover1" data-value="740">
+                        <tr class="table__order-list b-1 bl-0 order-item overflow-hidden hover1" data-value="740">
                           <td class="table__order-list_td relative">
                             <table class="table__order-main  b-0">
                               <tbody>
@@ -828,10 +823,10 @@
                                           <p><a target="_blank"
                                               href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
                                         </td>
-
+  
                                         <td class="table__item table__item__routing pt-3">
                                           <div class="d-flex justify-content-center align-items-center pt-2">
-
+  
                                             <!--<img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">-->
                                             <p class="text-small c-dark text-italic ml-3"></p>
                                           </div>
@@ -839,7 +834,7 @@
                                             <div class="line-tracking__active bg-green" style="width: 0%;"></div>
                                           </div>
                                         </td>
-
+  
                                       </tr>
                                       <tr class="collapse" id="collapseOrderOne_739">
                                         <td>
@@ -858,25 +853,25 @@
                                             </div>
                                           </div>
                                           <div class="d-flex py-2 px-4 bg-light-blue">
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/white-share.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/white-share.svg" alt="Share"
                                                 width="14px" height="14px">
                                               <span>Share</span>
                                             </a>
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/calendar-1-white.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
                                                 width="12px" height="12px">
                                               <span>Timeline</span>
                                             </a>
-                                            <a href="#" class="bg-blue tool-item">
-                                              <img class="img-share mr-2" src="img/chat-1-white.svg" alt="Share"
+                                            <a href="#" class="bg-blue-bright tool-item">
+                                              <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
                                                 width="16px" height="14px">
                                               <span>Chat</span>
                                             </a>
                                             <label>
                                               <input type="checkbox" class="checkbox">
                                               <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
-                                                <svg class="svg-sprite-icon c-blue mr-2" width="11px" height="11px">
+                                                <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
                                                   <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
                                                 </svg>
                                                 <span class="unchecked">Mark as comlete</span> 
@@ -887,7 +882,7 @@
                                         </td>
                                       </tr>
                                     </table>
-
+  
                                   </td>
                                   <td class="td-action" style="display: table-cell;vertical-align: middle;">
                                     <table  border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%">
@@ -926,25 +921,27 @@
                                                 </table>
                                               </td>
                                             </tr>
-                                         
+                                          
                                           </table>
                                         </td>
                                       </tr>
                                     </table>
                                   </td>
-                                 
+                                  
                                 </tr>
-
+  
                               </tbody>
                             </table>
                           </td>
                         </tr>
-
-
+  
+  
                       </tbody>
                     </table>
                   </div>
                 </div>
+               
+              
               </div>
             </div>
           </div>
@@ -1218,7 +1215,7 @@
   <script src="https://acargo.click/test/js/plugins/typeahead/typeahead.js?v=3"></script>
   <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+  <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
   <!--<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />-->
   <!--<script src="https://acargo.click/test/vendor/jquery-easing/jquery.easing.min.js"></script>-->
   <!--<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>-->
@@ -1227,48 +1224,6 @@
   <script src="https://acargo.click/test/js/mainnew.js?v=33"></script>
   <script src="https://acargo.click/test/js/admin.js?v=878"></script>
 
-  <div class="daterangepicker ltr auto-apply show-calendar opensleft">
-    <div class="ranges"></div>
-    <div class="drp-calendar left">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-calendar right">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default"
-        type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled"
-        type="button">Apply</button> </div>
-  </div>
-  <div class="daterangepicker ltr auto-apply show-calendar opensleft">
-    <div class="ranges"></div>
-    <div class="drp-calendar left">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-calendar right">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default"
-        type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled"
-        type="button">Apply</button> </div>
-  </div>
-  <div class="daterangepicker ltr auto-apply show-calendar opensleft">
-    <div class="ranges"></div>
-    <div class="drp-calendar left">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-calendar right">
-      <div class="calendar-table"></div>
-      <div class="calendar-time" style="display: none;"></div>
-    </div>
-    <div class="drp-buttons"><span class="drp-selected"></span><button class="cancelBtn btn btn-sm btn-default"
-        type="button">Cancel</button><button class="applyBtn btn btn-sm btn-primary" disabled="disabled"
-        type="button">Apply</button> </div>
-  </div>
 </body>
 
 </html>

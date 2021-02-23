@@ -275,7 +275,7 @@
           <div id="box">
            
             <div class=" ml-xl-2"  >
-              <div id="orders_content" style="max-width: 1821px">
+              <div id="orders_content" style="max-width: 1790px">
                 <div class="d-flex flex-wrap justify-content-between align-items-end mb-3">
                   <div class="d-flex flex-wrap filters">
                     <div class="select bg-white mr-2 mt-3" inited="1">
@@ -398,453 +398,451 @@
                   
                   </div>
                 </div>
-                <div class="">
-                  <div class=" table__order table__order_v2 table__order_v3 table_v5 h-table  py-0" id="scroll_content">
-                    <table border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%">
-                      <thead class="thead" id="order_search_form">
-                        <tr class=" d-flex table__order-head b-1 ">
-                          <td class="table__item table__item__check noresize  ">
-                            <div>
-                              <label class="d-flex mt-4 pt-1">
-                                <input type="checkbox" name="checlall" class="checkbox" value="1"
-                                  onclick="checkAllOrders(this)">
-                                <span class="checkbox__icon-blue ml-0"></span>
-                              </label>
-                            </div>
-                          </td>
-                          <td class="table__item table__item__status noresize ">
-                            <div>
-                              <p>STATUS</p>
-                              <div class="select select-table bg-white m-0 mt-1" inited="1">
-                                <input type="hidden" onchange="typeSearch(this);" name="status" value="">
-                                <div class="select__item">Status</div>
-                                <div class="select__drop">
-                                  <ul class="select__menu">
-                                    <li class="select__option active" data-value="all">ALL</li>
-                                    <li class="select__option" data-value="received">NEW ORDER</li>
-                                    <li class="select__option" data-value="delivery">AT DELIVERY</li>
-                                    <li class="select__option" data-value="arriving">ARRIVING</li>
-                                    <li class="select__option" data-value="arrived">ARRIVED</li>
-                                    <li class="select__option" data-value="completed">COMPLETED</li>
-                                  </ul>
-                                </div>
+                <div class=" table__order table__order_v2 table__order_v3 table_v5 h-table  py-0" id="scroll_content">
+                  <table border-collapse="0" cellspacing="0" cellpadding="0" border="0" width="100%" style="width: fit-content;">
+                    <thead class="thead" id="order_search_form">
+                      <tr class=" d-flex table__order-head b-1 ">
+                        <td class="table__item table__item__check noresize  ">
+                          <div>
+                            <label class="d-flex mt-4 pt-1">
+                              <input type="checkbox" name="checlall" class="checkbox" value="1"
+                                onclick="checkAllOrders(this)">
+                              <span class="checkbox__icon-blue ml-0"></span>
+                            </label>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__status noresize ">
+                          <div>
+                            <p>STATUS</p>
+                            <div class="select select-table bg-white m-0 mt-1" inited="1">
+                              <input type="hidden" onchange="typeSearch(this);" name="status" value="">
+                              <div class="select__item">Status</div>
+                              <div class="select__drop">
+                                <ul class="select__menu">
+                                  <li class="select__option active" data-value="all">ALL</li>
+                                  <li class="select__option" data-value="received">NEW ORDER</li>
+                                  <li class="select__option" data-value="delivery">AT DELIVERY</li>
+                                  <li class="select__option" data-value="arriving">ARRIVING</li>
+                                  <li class="select__option" data-value="arrived">ARRIVED</li>
+                                  <li class="select__option" data-value="completed">COMPLETED</li>
+                                </ul>
                               </div>
                             </div>
-                          </td>
-                          <td class="table__item table__item__schedule noresize ">
-                            <div>
-                              <p>SCHEDULE</p>
-                              <div class="d-flex">
-                                <input type="hidden" autocomplete="off" class="datepicker-range"
-                                  onchange="typeSearch(this, 'date')" id="searchcutoff" name="cutoff" value="">
-                                <input type="hidden" autocomplete="off" class="datepicker-range"
-                                  onchange="typeSearch(this, 'date')" id="searchetd" name="etd" value="">
-                                <input type="hidden" autocomplete="off" class="datepicker-range"
-                                  onchange="typeSearch(this, 'date')" id="searcheta" name="eta" value="">
-                                <a href="javascript:void(0)" class="schedule-item mt-1 mr-1" data-source="searchcutoff"
-                                  onclick="$('#searchcutoff').trigger('click');">CF</a>
-                                <a href="javascript:void(0)" class="schedule-item mt-1 mr-1" data-source="searchetd"
-                                  onclick="$('#searchetd').trigger('click');">ETD</a>
-                                <a href="javascript:void(0)" class="schedule-item mt-1" data-source="searcheta"
-                                  onclick="$('#searcheta').trigger('click');">ETA</a>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__schedule noresize ">
+                          <div>
+                            <p>SCHEDULE</p>
+                            <div class="d-flex">
+                              <input type="hidden" autocomplete="off" class="datepicker-range"
+                                onchange="typeSearch(this, 'date')" id="searchcutoff" name="cutoff" value="">
+                              <input type="hidden" autocomplete="off" class="datepicker-range"
+                                onchange="typeSearch(this, 'date')" id="searchetd" name="etd" value="">
+                              <input type="hidden" autocomplete="off" class="datepicker-range"
+                                onchange="typeSearch(this, 'date')" id="searcheta" name="eta" value="">
+                              <a href="javascript:void(0)" class="schedule-item mt-1 mr-1" data-source="searchcutoff"
+                                onclick="$('#searchcutoff').trigger('click');">CF</a>
+                              <a href="javascript:void(0)" class="schedule-item mt-1 mr-1" data-source="searchetd"
+                                onclick="$('#searchetd').trigger('click');">ETD</a>
+                              <a href="javascript:void(0)" class="schedule-item mt-1" data-source="searcheta"
+                                onclick="$('#searcheta').trigger('click');">ETA</a>
+                            </div>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__mode noresize ">
+                          <div>
+                            <p>MODE</p>
+                            <div class="select select-table bg-white m-0 mt-1" inited="1">
+                              <input type="hidden" name="ord_cat" onchange="typeSearch(this);" value="sea"
+                                id="ord_cat">
+                              <div class="select__item c-dark">Sea</div>
+                              <div class="select__drop">
+                                <ul class="select__menu">
+                                  <li class="select__option active" data-value="sea">Sea</li>
+                                  <li class="select__option" data-value="land">Road</li>
+                                  <li class="select__option" data-value="rail">Rail</li>
+                                </ul>
                               </div>
                             </div>
-                          </td>
-                          <td class="table__item table__item__mode noresize ">
-                            <div>
-                              <p>MODE</p>
-                              <div class="select select-table bg-white m-0 mt-1" inited="1">
-                                <input type="hidden" name="ord_cat" onchange="typeSearch(this);" value="sea"
-                                  id="ord_cat">
-                                <div class="select__item c-dark">Sea</div>
-                                <div class="select__drop">
-                                  <ul class="select__menu">
-                                    <li class="select__option active" data-value="sea">Sea</li>
-                                    <li class="select__option" data-value="land">Road</li>
-                                    <li class="select__option" data-value="rail">Rail</li>
-                                  </ul>
-                                </div>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__type noresize ">
+                          <div>
+                            <p>TYPE</p>
+                            <div class="select select-table bg-white m-0 mt-1" inited="1">
+                              <input type="hidden" name="container" value="" onchange="typeSearch(this);">
+                              <div class="select__item"></div>
+                              <div class="select__drop">
+                                <ul class="select__menu">
+                                  <li class="select__option" data-value="1">20'DV</li>
+                                  <li class="select__option" data-value="5">20' Tank</li>
+                                  <li class="select__option" data-value="3">40'HC</li>
+                                  <li class="select__option" data-value="2">40'DV</li>
+                                  <li class="select__option" data-value="15">40'HCPW</li>
+                                  <li class="select__option" data-value="6">40' Tank</li>
+                                  <li class="select__option" data-value="4">45'HСPW</li>
+                                  <li class="select__option" data-value="7">20' Reefer Standard</li>
+                                  <li class="select__option" data-value="8">40' Reefer High</li>
+                                  <li class="select__option" data-value="12">20' Flat</li>
+                                  <li class="select__option" data-value="9">20' Open Top</li>
+                                  <li class="select__option" data-value="14">40' Flat High</li>
+                                  <li class="select__option" data-value="13">40' Flat Standard</li>
+                                  <li class="select__option" data-value="10">40' Open Top</li>
+                                  <li class="select__option" data-value="11">40' Open Top High</li>
+                                </ul>
                               </div>
                             </div>
-                          </td>
-                          <td class="table__item table__item__type noresize ">
-                            <div>
-                              <p>TYPE</p>
-                              <div class="select select-table bg-white m-0 mt-1" inited="1">
-                                <input type="hidden" name="container" value="" onchange="typeSearch(this);">
-                                <div class="select__item"></div>
-                                <div class="select__drop">
-                                  <ul class="select__menu">
-                                    <li class="select__option" data-value="1">20'DV</li>
-                                    <li class="select__option" data-value="5">20' Tank</li>
-                                    <li class="select__option" data-value="3">40'HC</li>
-                                    <li class="select__option" data-value="2">40'DV</li>
-                                    <li class="select__option" data-value="15">40'HCPW</li>
-                                    <li class="select__option" data-value="6">40' Tank</li>
-                                    <li class="select__option" data-value="4">45'HСPW</li>
-                                    <li class="select__option" data-value="7">20' Reefer Standard</li>
-                                    <li class="select__option" data-value="8">40' Reefer High</li>
-                                    <li class="select__option" data-value="12">20' Flat</li>
-                                    <li class="select__option" data-value="9">20' Open Top</li>
-                                    <li class="select__option" data-value="14">40' Flat High</li>
-                                    <li class="select__option" data-value="13">40' Flat Standard</li>
-                                    <li class="select__option" data-value="10">40' Open Top</li>
-                                    <li class="select__option" data-value="11">40' Open Top High</li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                          </td>
-                          <td class="table__item table__item__way noresize ">
-                            <div>
-                              <p>COMPANY</p>
-                              <input class="input-table input-search mt-1" name="company"
-                                onkeyup="typeSearch(this);checkFieldIcon(this);" type="text">
-                            </div>
-                          </td>
-                          <td class="table__item table__item__orders noresize ">
-                            <div>
-                              <p>ORDER NO</p>
-                              <input type="text" onkeyup="typeSearch(this);checkFieldIcon(this);" name="orderno"
-                                class="input-table input-search mt-1">
-                            </div>
-                          </td>
-                          <td class="table__item table__item__truck noresize ">
-                            <div>
-                              <p>CONTAINER</p>
-                              <input type="text" onkeyup="typeSearch(this)" name="cont"
-                                class="input-table input-search m-0 mt-1">
-                            </div>
-                          </td>
-                          <td class="table__item table__item__documents noresize " align="center">
-                            <div>
-                              <p>DOCUMENTS</p>
-                            </div>
-                          </td>
-                          <td class="table__item table__item__routing " align="center">
-                            <div class="d-flex align-items-center justify-content-center w-100 h-100">
-                              <p>TRACKING</p>
-                            </div>
-                          </td>
-                        
-                        </tr>
-                      </thead>
-                      <tbody id="orders_results">
-  
-                        <tr class="table__order-list order-item overflow-hidden hover1" data-value="740">
-                          <td class="table__order-list_td relative">
-                            <table class="table__order-main  b-0">
-                              <tbody>
-                                <tr>
-                                  <td style="display: table-cell;vertical-align: top;">
-                                    <table>
-                                      <tr class="d-flex ">
-                                        <td class="strong-line subcompany-color__1"></td>
-                                        <td class="checkbox-absolute ">
-                                          <label class="d-flex">
-                                            <input type="checkbox" name="orderid[]" class="checkbox" value="740"
-                                              onclick="checkOrderActionButton()">
-                                            <span class="checkbox__v2"></span>
-                                          </label>
-                                        </td>
-                                        <td class="table__item table__item__check noresize">
-                                          <!--                            <label>
-                                    <input type="checkbox" onclick="setFavoritedOrder(this, 740)"  name="favorited[740]" value="" class="checkbox">
-                                    <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
-                                      <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#success"></use>
-                                    </svg>
-                                </label>-->
-                                        </td>
-                                        <td class="table__item table__item__status" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p>NEW ORDER</p>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__way noresize ">
+                          <div>
+                            <p>COMPANY</p>
+                            <input class="input-table input-search mt-1" name="company"
+                              onkeyup="typeSearch(this);checkFieldIcon(this);" type="text">
+                          </div>
+                        </td>
+                        <td class="table__item table__item__orders noresize ">
+                          <div>
+                            <p>ORDER NO</p>
+                            <input type="text" onkeyup="typeSearch(this);checkFieldIcon(this);" name="orderno"
+                              class="input-table input-search mt-1">
+                          </div>
+                        </td>
+                        <td class="table__item table__item__truck noresize ">
+                          <div>
+                            <p>CONTAINER</p>
+                            <input type="text" onkeyup="typeSearch(this)" name="cont"
+                              class="input-table input-search m-0 mt-1">
+                          </div>
+                        </td>
+                        <td class="table__item table__item__documents noresize " align="center">
+                          <div>
+                            <p>DOCUMENTS</p>
+                          </div>
+                        </td>
+                        <td class="table__item table__item__routing " align="center">
+                          <div class="d-flex align-items-center justify-content-center w-100 h-100">
+                            <p>TRACKING</p>
+                          </div>
+                        </td>
+                      
+                      </tr>
+                    </thead>
+                    <tbody id="orders_results">
+
+                      <tr class="table__order-list order-item overflow-hidden hover1" data-value="740">
+                        <td class="table__order-list_td relative">
+                          <table class="table__order-main  b-0">
+                            <tbody>
+                              <tr>
+                                <td style="display: table-cell;vertical-align: top;">
+                                  <table>
+                                    <tr class="d-flex ">
+                                      <td class="strong-line subcompany-color__1"></td>
+                                      <td class="checkbox-absolute ">
+                                        <label class="d-flex">
+                                          <input type="checkbox" name="orderid[]" class="checkbox" value="740"
+                                            onclick="checkOrderActionButton()">
+                                          <span class="checkbox__v2"></span>
+                                        </label>
+                                      </td>
+                                      <td class="table__item table__item__check noresize">
+                                        <!--                            <label>
+                                  <input type="checkbox" onclick="setFavoritedOrder(this, 740)"  name="favorited[740]" value="" class="checkbox">
+                                  <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
+                                    <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#success"></use>
+                                  </svg>
+                              </label>-->
+                                      </td>
+                                      <td class="table__item table__item__status" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p>NEW ORDER</p>
+                                        <div class="d-flex">
+                                          <div class="status-item active"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__schedule" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p>CUT </p>
+                                        <p>ETD </p>
+                                        <p>ETA </p>
+                                      </td>
+                                      <td class="table__item table__item__mode" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <div class="d-flex align-items-center">
+                                          <img src="https://acargo.click/test/img/acargo/boat-gray.svg" alt="boat"
+                                            class="mr-3" height="17px">
+                                          <p>SEA</p>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__type" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p>1x40'HC</p>
+                                      </td>
+                                      <td class="table__item table__item__way" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p class="d-flex">
+                                          <img src="https://acargo.click/test/img/countries/svg/latvia.svg" title=""
+                                            alt="" class="flag">
+                                          COMPAQPEAT SIA
+                                        </p>
+                                      </td>
+                                      <td class="table__item table__item__orders" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <div
+                                          class="d-flex justify-content-between align-items-center h-17 absolute r-20 t-7">
+                                          <div class="order__labels-740">
+                                          </div>
                                           <div class="d-flex">
-                                            <div class="status-item active"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
+                                            <p class="text-small">1/0</p>
                                           </div>
-                                        </td>
-                                        <td class="table__item table__item__schedule" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p>CUT </p>
-                                          <p>ETD </p>
-                                          <p>ETA </p>
-                                        </td>
-                                        <td class="table__item table__item__mode" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <div class="d-flex align-items-center">
-                                            <img src="https://acargo.click/test/img/acargo/boat-gray.svg" alt="boat"
-                                              class="mr-3" height="17px">
-                                            <p>SEA</p>
-                                          </div>
-                                        </td>
-                                        <td class="table__item table__item__type" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p>1x40'HC</p>
-                                        </td>
-                                        <td class="table__item table__item__way" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p class="d-flex">
-                                            <img src="https://acargo.click/test/img/countries/svg/latvia.svg" title=""
-                                              alt="" class="flag">
-                                            COMPAQPEAT SIA
-                                          </p>
-                                        </td>
-                                        <td class="table__item table__item__orders" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <div
-                                            class="d-flex justify-content-between align-items-center h-17 absolute r-20 t-7">
-                                            <div class="order__labels-740">
-                                            </div>
-                                            <div class="d-flex">
-                                              <p class="text-small">1/0</p>
-                                            </div>
-                                          </div>
-                                          <div class="mt-2">
-                                            <p class="">OR0740 </p>
-                                            <p class="text-14">
-                                              OR0740 1 / 1 </p>
-                                          </div>
-                                        </td>
-                                        <td class="table__item table__item__truck active " href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p>&nbsp;</p>
-                                          <p>CON1000</p>
-                                        </td>
-                                        <td class="table__item table__item__documents pt-29" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <p></p>
-                                          <p><a target="_blank"
-                                              href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
-                                        </td>
-  
-                                        <td class="table__item table__item__routing pt-3" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
-                                          <div class="d-flex justify-content-center align-items-center pt-2">
-  
-                                            <img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">
-                                            <p class="text-small c-dark text-italic ml-3">text</p>
-                                          </div>
-                                          <div class="line-tracking bg-green mt-2">
-                                            <div class="line-tracking__active bg-green" style="width: 50%;"></div>
-                                          </div>
-                                        </td>
-  
-                                      </tr>
-                                      <tr class="collapse" id="collapseOrderOne_740">
-                                        <td>
-                                          <div class="d-flex pt-4 pb-3 px-4">
-                                            <input class="input-notes max-550 mr-5" type="text" placeholder="Notes">
-                                            <label
-                                              class=" bg-light-blue d-flex justify-content-center align-items-center px-4 mr-5">
-                                              <input type="file" name="files[]" multiple="">
-                                              <img src="img/upload-blue.svg" alt="upload" class="mr-2">
-                                              <span class="c-blue-gray"> Uploaload document</span>
-                                            </label>
-                                            <div class="d-flex align-items-center pl-4">
-                                              <p>Document_123.pdf</p>
-                                              <button class="close-small_2 ml-2" type="button"><img
-                                                  src="img/gray__cancel.svg" alt="close"></button>
-                                            </div>
-                                          </div>
-                                          <div class="d-flex py-2 px-4 bg-light-blue">
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/white__cancel.svg" alt="save"
-                                                width="14px" height="14px">
-                                              <span>Close</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/save.svg" alt="save"
-                                                width="14px" height="14px">
-                                              <span>Save</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/white-share.svg" alt="Share"
-                                                width="14px" height="14px">
-                                              <span>Share</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
-                                                width="12px" height="12px">
-                                              <span>Timeline</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
-                                                width="16px" height="14px">
-                                              <span>Chat</span>
-                                            </a>
-                                            <label>
-                                              <input type="checkbox" class="checkbox">
-                                              <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
-                                              
-                                                <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
-                                                  <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
-                                                </svg>
-                                                <span class="unchecked">Mark as comlete</span> 
-                                                <span class="checked">Comleted</span> 
-                                              </span>
-                                            </label>
-                                          
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </table>
-  
-                                  </td>
-                              
-                                  
-                                </tr>
-  
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-                        <tr class="table__order-list order-item overflow-hidden hover1" data-value="740">
-                          <td class="table__order-list_td relative">
-                            <table class="table__order-main  b-0">
-                              <tbody>
-                                <tr>
-                                  <td style="display: table-cell;vertical-align: top;">
-                                    <table>
-                                      <tr class="d-flex ">
-                                        <td class="strong-line subcompany-color__1"></td>
-                                        <td class="checkbox-absolute ">
-                                          <label class="d-flex">
-                                            <input type="checkbox" name="orderid[]" class="checkbox" value="740"
-                                              onclick="checkOrderActionButton()">
-                                            <span class="checkbox__v2"></span>
+                                        </div>
+                                        <div class="mt-2">
+                                          <p class="">OR0740 </p>
+                                          <p class="text-14">
+                                            OR0740 1 / 1 </p>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__truck active " href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p>&nbsp;</p>
+                                        <p>CON1000</p>
+                                      </td>
+                                      <td class="table__item table__item__documents pt-29" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <p></p>
+                                        <p><a target="_blank"
+                                            href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
+                                      </td>
+
+                                      <td class="table__item table__item__routing pt-3" href="#collapseOrderOne_740" data-toggle="collapse" datatoggle="slideToggle" aria-expanded="true">
+                                        <div class="d-flex justify-content-center align-items-center pt-2">
+
+                                          <img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">
+                                          <p class="text-small c-dark text-italic ml-3">text</p>
+                                        </div>
+                                        <div class="line-tracking bg-green mt-2">
+                                          <div class="line-tracking__active bg-green" style="width: 50%;"></div>
+                                        </div>
+                                      </td>
+
+                                    </tr>
+                                    <tr class="collapse" id="collapseOrderOne_740">
+                                      <td>
+                                        <div class="d-flex pt-4 pb-3 px-4">
+                                          <input class="input-notes max-550 mr-5" type="text" placeholder="Notes">
+                                          <label
+                                            class=" bg-light-blue d-flex justify-content-center align-items-center px-4 mr-5">
+                                            <input type="file" name="files[]" multiple="">
+                                            <img src="img/upload-blue.svg" alt="upload" class="mr-2">
+                                            <span class="c-blue-gray"> Uploaload document</span>
                                           </label>
-                                        </td>
-                                        <td class="table__item table__item__check noresize">
-                                          <!--                            <label>
-                                    <input type="checkbox" onclick="setFavoritedOrder(this, 740)"  name="favorited[740]" value="" class="checkbox">
-                                    <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
-                                      <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#success"></use>
-                                    </svg>
-                                </label>-->
-                                        </td>
-                                        <td class="table__item table__item__status">
-                                          <p>NEW ORDER</p>
+                                          <div class="d-flex align-items-center pl-4">
+                                            <p>Document_123.pdf</p>
+                                            <button class="close-small_2 ml-2" type="button"><img
+                                                src="img/gray__cancel.svg" alt="close"></button>
+                                          </div>
+                                        </div>
+                                        <div class="d-flex py-2 px-4 bg-light-blue">
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/white__cancel.svg" alt="save"
+                                              width="14px" height="14px">
+                                            <span>Close</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/save.svg" alt="save"
+                                              width="14px" height="14px">
+                                            <span>Save</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/white-share.svg" alt="Share"
+                                              width="14px" height="14px">
+                                            <span>Share</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
+                                              width="12px" height="12px">
+                                            <span>Timeline</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
+                                              width="16px" height="14px">
+                                            <span>Chat</span>
+                                          </a>
+                                          <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
+                                            
+                                              <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                              </svg>
+                                              <span class="unchecked">Mark as comlete</span> 
+                                              <span class="checked">Comleted</span> 
+                                            </span>
+                                          </label>
+                                        
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </td>
+                            
+                                
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+                      <tr class="table__order-list order-item overflow-hidden hover1" data-value="740">
+                        <td class="table__order-list_td relative">
+                          <table class="table__order-main  b-0">
+                            <tbody>
+                              <tr>
+                                <td style="display: table-cell;vertical-align: top;">
+                                  <table>
+                                    <tr class="d-flex ">
+                                      <td class="strong-line subcompany-color__1"></td>
+                                      <td class="checkbox-absolute ">
+                                        <label class="d-flex">
+                                          <input type="checkbox" name="orderid[]" class="checkbox" value="740"
+                                            onclick="checkOrderActionButton()">
+                                          <span class="checkbox__v2"></span>
+                                        </label>
+                                      </td>
+                                      <td class="table__item table__item__check noresize">
+                                        <!--                            <label>
+                                  <input type="checkbox" onclick="setFavoritedOrder(this, 740)"  name="favorited[740]" value="" class="checkbox">
+                                  <svg class="svg-sprite-icon icon-success mt-4" width="16px" height="16px">
+                                    <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#success"></use>
+                                  </svg>
+                              </label>-->
+                                      </td>
+                                      <td class="table__item table__item__status">
+                                        <p>NEW ORDER</p>
+                                        <div class="d-flex">
+                                          <div class="status-item active"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                          <div class="status-item"></div>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__schedule">
+                                        <p>CUT </p>
+                                        <p>ETD </p>
+                                        <p>ETA </p>
+                                      </td>
+                                      <td class="table__item table__item__mode">
+                                        <div class="d-flex align-items-center">
+                                          <img src="https://acargo.click/test/img/acargo/boat-gray.svg" alt="boat"
+                                            class="mr-3" height="17px">
+                                          <p>SEA</p>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__type">
+                                        <p>1x40'HC</p>
+                                      </td>
+                                      <td class="table__item table__item__way">
+                                        <p class="d-flex">
+                                          <img src="https://acargo.click/test/img/countries/svg/latvia.svg" title=""
+                                            alt="" class="flag">
+                                          COMPAQPEAT SIA
+                                        </p>
+                                      </td>
+                                      <td class="table__item table__item__orders">
+                                        <div
+                                          class="d-flex justify-content-between align-items-center h-17 absolute r-20 t-7">
+                                          <div class="order__labels-740">
+                                          </div>
                                           <div class="d-flex">
-                                            <div class="status-item active"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
-                                            <div class="status-item"></div>
+                                            <p class="text-small">1/0</p>
                                           </div>
-                                        </td>
-                                        <td class="table__item table__item__schedule">
-                                          <p>CUT </p>
-                                          <p>ETD </p>
-                                          <p>ETA </p>
-                                        </td>
-                                        <td class="table__item table__item__mode">
-                                          <div class="d-flex align-items-center">
-                                            <img src="https://acargo.click/test/img/acargo/boat-gray.svg" alt="boat"
-                                              class="mr-3" height="17px">
-                                            <p>SEA</p>
+                                        </div>
+                                        <div class="mt-2">
+                                          <p class="">OR0740 </p>
+                                          <p class="text-14">
+                                            OR0740 1 / 1 </p>
+                                        </div>
+                                      </td>
+                                      <td class="table__item table__item__truck active">
+                                        <p>&nbsp;</p>
+                                        <p>CON1000</p>
+                                      </td>
+                                      <td class="table__item table__item__documents pt-29">
+                                        <p></p>
+                                        <p><a target="_blank"
+                                            href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
+                                      </td>
+
+                                      <td class="table__item table__item__routing pt-3">
+                                        <div class="d-flex justify-content-center align-items-center pt-2">
+
+                                          <!--<img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">-->
+                                          <p class="text-small c-dark text-italic ml-3"></p>
+                                        </div>
+                                        <div class="line-tracking bg-green mt-2">
+                                          <div class="line-tracking__active bg-green" style="width: 0%;"></div>
+                                        </div>
+                                      </td>
+
+                                    </tr>
+                                    <tr class="collapse" id="collapseOrderOne_739">
+                                      <td>
+                                        <div class="d-flex pt-4 pb-3 px-4">
+                                          <input class="input-notes max-550 mr-5" type="text" placeholder="Notes">
+                                          <label
+                                            class=" bg-light-blue d-flex justify-content-center align-items-center px-4 mr-5">
+                                            <input type="file" name="files[]" multiple="">
+                                            <img src="img/upload-blue.svg" alt="upload" class="mr-2">
+                                            <span class="c-blue-gray"> Uploaload document</span>
+                                          </label>
+                                          <div class="d-flex align-items-center pl-4">
+                                            <p>Document_123.pdf</p>
+                                            <button class="close-small_2 ml-2" type="button"><img
+                                                src="img/gray__cancel.svg" alt="close"></button>
                                           </div>
-                                        </td>
-                                        <td class="table__item table__item__type">
-                                          <p>1x40'HC</p>
-                                        </td>
-                                        <td class="table__item table__item__way">
-                                          <p class="d-flex">
-                                            <img src="https://acargo.click/test/img/countries/svg/latvia.svg" title=""
-                                              alt="" class="flag">
-                                            COMPAQPEAT SIA
-                                          </p>
-                                        </td>
-                                        <td class="table__item table__item__orders">
-                                          <div
-                                            class="d-flex justify-content-between align-items-center h-17 absolute r-20 t-7">
-                                            <div class="order__labels-740">
-                                            </div>
-                                            <div class="d-flex">
-                                              <p class="text-small">1/0</p>
-                                            </div>
-                                          </div>
-                                          <div class="mt-2">
-                                            <p class="">OR0740 </p>
-                                            <p class="text-14">
-                                              OR0740 1 / 1 </p>
-                                          </div>
-                                        </td>
-                                        <td class="table__item table__item__truck active">
-                                          <p>&nbsp;</p>
-                                          <p>CON1000</p>
-                                        </td>
-                                        <td class="table__item table__item__documents pt-29">
-                                          <p></p>
-                                          <p><a target="_blank"
-                                              href="https://acargo.click/test/orders/740/crm/1">CMR</a></p>
-                                        </td>
-  
-                                        <td class="table__item table__item__routing pt-3">
-                                          <div class="d-flex justify-content-center align-items-center pt-2">
-  
-                                            <!--<img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">-->
-                                            <p class="text-small c-dark text-italic ml-3"></p>
-                                          </div>
-                                          <div class="line-tracking bg-green mt-2">
-                                            <div class="line-tracking__active bg-green" style="width: 0%;"></div>
-                                          </div>
-                                        </td>
-  
-                                      </tr>
-                                      <tr class="collapse" id="collapseOrderOne_739">
-                                        <td>
-                                          <div class="d-flex pt-4 pb-3 px-4">
-                                            <input class="input-notes max-550 mr-5" type="text" placeholder="Notes">
-                                            <label
-                                              class=" bg-light-blue d-flex justify-content-center align-items-center px-4 mr-5">
-                                              <input type="file" name="files[]" multiple="">
-                                              <img src="img/upload-blue.svg" alt="upload" class="mr-2">
-                                              <span class="c-blue-gray"> Uploaload document</span>
-                                            </label>
-                                            <div class="d-flex align-items-center pl-4">
-                                              <p>Document_123.pdf</p>
-                                              <button class="close-small_2 ml-2" type="button"><img
-                                                  src="img/gray__cancel.svg" alt="close"></button>
-                                            </div>
-                                          </div>
-                                          <div class="d-flex py-2 px-4 bg-light-blue">
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/white-share.svg" alt="Share"
-                                                width="14px" height="14px">
-                                              <span>Share</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
-                                                width="12px" height="12px">
-                                              <span>Timeline</span>
-                                            </a>
-                                            <a href="#" class="bg-blue-bright tool-item">
-                                              <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
-                                                width="16px" height="14px">
-                                              <span>Chat</span>
-                                            </a>
-                                            <label>
-                                              <input type="checkbox" class="checkbox">
-                                              <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
-                                                <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
-                                                  <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
-                                                </svg>
-                                                <span class="unchecked">Mark as comlete</span> 
-                                                <span class="checked">Comleted</span> 
-                                              </span>
-                                            </label>
-                                          </div>
-                                        </td>
-                                      </tr>
-                                    </table>
-  
-                                  </td>
-                              
-                                </tr>
-  
-                              </tbody>
-                            </table>
-                          </td>
-                        </tr>
-  
-  
-                      </tbody>
-                    </table>
-                  </div>
+                                        </div>
+                                        <div class="d-flex py-2 px-4 bg-light-blue">
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/white-share.svg" alt="Share"
+                                              width="14px" height="14px">
+                                            <span>Share</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/calendar-1-white.svg" alt="Share"
+                                              width="12px" height="12px">
+                                            <span>Timeline</span>
+                                          </a>
+                                          <a href="#" class="bg-blue-bright tool-item">
+                                            <img class="mr-2" src="img/chat-1-white.svg" alt="Share"
+                                              width="16px" height="14px">
+                                            <span>Chat</span>
+                                          </a>
+                                          <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
+                                              <svg class="svg-sprite-icon c-blue-light mr-2" width="11px" height="11px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                              </svg>
+                                              <span class="unchecked">Mark as comlete</span> 
+                                              <span class="checked">Comleted</span> 
+                                            </span>
+                                          </label>
+                                        </div>
+                                      </td>
+                                    </tr>
+                                  </table>
+
+                                </td>
+                            
+                              </tr>
+
+                            </tbody>
+                          </table>
+                        </td>
+                      </tr>
+
+
+                    </tbody>
+                  </table>
                 </div>
                
               

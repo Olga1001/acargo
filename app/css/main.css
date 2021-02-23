@@ -916,6 +916,17 @@ button {
   top: 20px;
   z-index: 4;
 }
+.checked{
+  color: white;
+  display: none;}
+.checkbox:checked ~ span .unchecked {
+  display: none;}
+.checkbox:checked ~ span .checked {
+  display: block;}
+.checkbox:checked ~ .btn-mark {
+  background-color: #156ce4;}
+.checkbox:checked ~ span svg.c-blue {
+  fill: #fff!important;}
 .slider-tick.round.disabled {
   background: #fff; }
   .slider-tick.round.disabled:before {
@@ -7435,6 +7446,7 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   border-color: #b7bcd6 #fff #b7bcd6 transparent;
   border-style: solid;
   border-width: 1px 0 0 0;
+  width: 34px;
   z-index: 5;}
 .hover1:hover .td-action {
   background-color: #109CF1;}

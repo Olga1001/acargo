@@ -43,7 +43,7 @@
         <div class="oval-block oval-block__current">
           <div class="select select-current" inited="1">
             <input type="hidden" name="defaultcurrency" value="2" onchange="showCurrencyDefRate(this)">
-            <div class="select__item c-dark">USD </div>
+            <div class="select__item c-white">USD </div>
             <div class="select__drop">
               <ul class="select__menu">
                 <li class="select__option active" data-value="2" data-rate="0.824">USD</li>
@@ -57,7 +57,7 @@
           <p class="c-gray fs-14 w-100 text-center">Today:<span class="c-dark">Feb 22</span></p>
           <button class="btn-calendar" type="button">
             <svg class="svg-sprite-icon icon-calendar_2">
-              <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#calendar_2"></use>
+              <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
             </svg>
           </button>
         </div>
@@ -219,8 +219,8 @@
           <ul class="navbar-list align-items-center d-md-flex d-none">
             <li class="navbar-item b-none">
               <a href="https://acargo.click/test/brokers/dashboard/" class="d-flex align-items-center">
-                <svg class="svg-sprite-icon icon-supermarket navbar-item__svg mr-3">
-                  <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#supermarket"></use>
+                <svg class="svg-sprite-icon icon-dashboard navbar-item__svg mr-3">
+                  <use xlink:href="img/sprite/symbol/sprite.svg#dashboard"></use>
                 </svg>
                 <span class="fs-18 c-white">Dashboard</span>
               </a>
@@ -228,23 +228,31 @@
             <li class="navbar-item b-none">
               <a href="https://acargo.click/test/brokers/orders/" class="d-flex align-items-center">
                 <svg class="svg-sprite-icon icon-supermarket navbar-item__svg mr-3">
-                  <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#supermarket"></use>
+                  <use xlink:href="img/sprite/symbol/sprite.svg#supermarket"></use>
                 </svg>
                 <span class="fs-18 c-white">Orders</span>
               </a>
             </li>
             <li class="navbar-item b-none">
               <a href="https://acargo.click/test/brokers/shipments/" class="d-flex align-items-center">
-                <svg class="svg-sprite-icon icon-graph  navbar-item__svg mr-3">
-                  <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#graph"></use>
+                <svg class="svg-sprite-icon icon-graph navbar-item__svg mr-3">
+                  <use xlink:href="img/sprite/symbol/sprite.svg#graph"></use>
                 </svg>
                 <span class="fs-18 c-white text-nowrap">Shipments</span>
               </a>
             </li>
             <li class="navbar-item b-none">
               <a href="https://acargo.click/test/brokers/profile/" class="d-flex align-items-center">
+                <svg class="svg-sprite-icon icon-calendar navbar-item__svg mr-3">
+                  <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
+                </svg>
+                <span class="fs-18 c-white text-nowrap">Tracking</span>
+              </a>
+            </li>
+            <li class="navbar-item b-none">
+              <a href="https://acargo.click/test/brokers/profile/" class="d-flex align-items-center">
                 <svg class="svg-sprite-icon icon-user-1 navbar-item__svg mr-3">
-                  <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#user-1"></use>
+                  <use xlink:href="img/sprite/symbol/sprite.svg#user-1"></use>
                 </svg>
                 <span class="fs-18 c-white text-nowrap">My account</span>
               </a>
@@ -254,9 +262,11 @@
             <label>
               <input class="checkbox" value="CUST-BR" type="radio" onchange="loadTable(this, 'CUST-BR')" checked=""
                 name="table_type"><span class="check-btn d-flex align-items-center justify-content-center">
+            
                 <svg class="svg-sprite-icon icon-leader mr-3">
-                  <use xlink:href="https://acargo.click/test/img/acargo/sprite/symbol/sprite.svg#leader"></use>
-                </svg><span>Broker</span>
+                  <use xlink:href="img/sprite/symbol/sprite.svg#leader"></use>
+                </svg>
+                <span>Broker</span>
               </span>
             </label>
           </div>
@@ -629,11 +639,11 @@
                                         <td class="table__item table__item__routing pt-3">
                                           <div class="d-flex justify-content-center align-items-center pt-2">
 
-                                            <!--<img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">-->
-                                            <p class="text-small c-dark text-italic ml-3"></p>
+                                            <img src="https://acargo.click/test/img/acargo/boat.svg" alt="boat" class="boat_tracking">
+                                            <p class="text-small c-dark text-italic ml-3">text</p>
                                           </div>
                                           <div class="line-tracking bg-green mt-2">
-                                            <div class="line-tracking__active bg-green" style="width: 0%;"></div>
+                                            <div class="line-tracking__active bg-green" style="width: 50%;"></div>
                                           </div>
                                         </td>
 
@@ -670,11 +680,18 @@
                                                 width="16px" height="14px">
                                               <span>Chat</span>
                                             </a>
-                                            <button type="button"
-                                              class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
-                                              <img src="img/check-box-empty-blue.svg" alt="check" class="mr-2"> Mark as
-                                              comlete
-                                            </button>
+                                            <label>
+                                              <input type="checkbox" class="checkbox">
+                                              <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
+                                              
+                                                <svg class="svg-sprite-icon c-blue mr-2" width="11px" height="11px">
+                                                  <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                                <span class="unchecked">Mark as comlete</span> 
+                                                <span class="checked">Comleted</span> 
+                                              </span>
+                                            </label>
+                                          
                                           </div>
                                         </td>
                                       </tr>
@@ -856,11 +873,16 @@
                                                 width="16px" height="14px">
                                               <span>Chat</span>
                                             </a>
-                                            <button type="button"
-                                              class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
-                                              <img src="img/check-box-empty-blue.svg" alt="check" class="mr-2"> Mark as
-                                              comlete
-                                            </button>
+                                            <label>
+                                              <input type="checkbox" class="checkbox">
+                                              <span type="button" class="btn-mark bg-light-blue d-flex align-items-center px-4 m-0">
+                                                <svg class="svg-sprite-icon c-blue mr-2" width="11px" height="11px">
+                                                  <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                                <span class="unchecked">Mark as comlete</span> 
+                                                <span class="checked">Comleted</span> 
+                                              </span>
+                                            </label>
                                           </div>
                                         </td>
                                       </tr>

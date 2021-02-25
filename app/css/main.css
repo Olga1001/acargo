@@ -919,10 +919,13 @@ button {
 .checked{
   color: white;
   display: none;}
+
 .checkbox:checked ~ span .unchecked {
   display: none;}
 .checkbox:checked ~ span .checked {
-  display: block;}
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;}
 .checkbox:checked ~ .btn-mark {
   background-color: #109CF1}
 .checkbox:checked ~ span svg {

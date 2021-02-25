@@ -5711,6 +5711,9 @@ button {
   .table__order_v2 .table__order-list:last-child {
     border-width: 0 0 0 1px
   }
+  .table__order_v2 .table__order-list:first-child {
+    border-width: 0 0 1px 1px
+  }
   .table__order_v2 .table__order-list:last-child .table__item__last {
     border-width: 1px 1px 0px 0;
    
@@ -6727,7 +6730,7 @@ button {
   line-height: 1;
 }
 .b-1 {
-  border: solid 1px rgba(183, 188, 214, 0.48);
+  border: solid 1px rgba(183, 188, 214, 0.48)!important;
 }
 .br-4 {
   border-radius: 4px;
@@ -7449,18 +7452,23 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .max-550{
   max-width: 550px;}
 .hover1:hover .table__order-main .table__item{
-  border-bottom-width: 2px;}
+  border-width: 0;}
 .hover1 {
-  border-right-width: 2px!important;
-  border-left-width: 2px!important;}
-.hover1:hover {
-  border-right-width: 2px!important;
-  border-left-width: 2px!important;
-  border-bottom-width: 0px!important;
-  border-bottom-color: #109cf1;
-  border-right-color: #109cf1;
-  border-left-color: #109cf1;
-
+  position: relative;}
+  .hover1:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; 
+    border: 2px solid #109cf1;
+    pointer-events: none;
+    opacity: 0;
+    z-index: 2;
+  }
+.hover1:hover:before {
+  opacity: 1;
 }
   
 .td-action {

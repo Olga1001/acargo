@@ -1997,12 +1997,22 @@ button {
   font-weight: 700; }
 .weight-medium {
   font-weight: 500; }
-
 .weight-normal {
   font-weight: 400; }
-
 .weight-light {
   font-weight: 300; }
+.bl-0 {
+  border-left-width: 0px!important;}
+.bb-1 {
+  border-bottom: solid 1px rgba(183, 188, 214, 0.52)!important;
+  padding: 4px 0;}
+.bx-1 {
+  border-left: solid 1px rgba(183, 188, 214, 0.52);
+  border-right: solid 1px rgba(183, 188, 214, 0.52);}
+.bt-1 {
+  border-top: 1px solid}
+.b-1 {
+  border: solid 1px rgba(183, 188, 214, 0.48)!important;}
 .b-green {
   border-color: #2acc46!important; }
 .b-green-2 {
@@ -2860,10 +2870,10 @@ button {
 
 .nav-tabs .nav-item {
   text-align: center; }
-  .nav-tabs .nav-item:first-child {
-    margin-left: 0; }
-  .nav-tabs .nav-item:last-child {
-    margin-right: 0; }
+.nav-tabs .nav-item:first-child {
+  margin-left: 0; }
+.nav-tabs .nav-item:last-child {
+  margin-right: 0; }
 
 .fields__empty {
   min-width: 24px;
@@ -4685,7 +4695,6 @@ button {
   .select-search .select__item {
     background: url("../img/search-1.svg") no-repeat left 10px center/14px;
     padding-left: 30px; }
-
 .notes-edit {
   width: 18px;
   height: 18px;
@@ -4696,7 +4705,6 @@ button {
     width: 50%;
     height: 100%;
     margin: 0 auto; }
-
 .flag {
   width: 22px;
   height: 22px;
@@ -4705,7 +4713,6 @@ button {
   object-fit: cover;
   margin-right: 9px;
   display: block; }
-
 .timeline {
   margin: 10px 0 100px; }
   .timeline-circle {
@@ -6595,6 +6602,8 @@ button {
   min-width: auto;}
 .min-w-1320 {
   min-width: 1320px;}
+.min-w-2155 {
+  min-width: 2155px;}
 .w-80 {
   width: 80px;}
 .w-88 {
@@ -6717,37 +6726,18 @@ button {
   bottom: 0;
   z-index: 9;
   border-top: solid 1px rgba(183, 188, 214, 0.37);
-  margin-top: -1px;
-}
-.bl-0 {
-  border-left-width: 0px!important;}
-.bb-1 {
-  border-bottom: solid 1px rgba(183, 188, 214, 0.52)!important;
-  padding: 4px 0;}
-.bx-1 {
-  border-left: solid 1px rgba(183, 188, 214, 0.52);
-  border-right: solid 1px rgba(183, 188, 214, 0.52);}
-.bt-1 {
-  border-top: 1px solid}
+  margin-top: -1px;}
 .lh-1 {
-  line-height: 1;
-}
-.b-1 {
-  border: solid 1px rgba(183, 188, 214, 0.48)!important;
-}
+  line-height: 1;}
 .br-4 {
-  border-radius: 4px;
-}
+  border-radius: 4px;}
 
 .min-h-175 {
-  min-height: 175px;
-}
+  min-height: 175px;}
 .br-0 {
-  border-radius: 0;
-}
+  border-radius: 0;}
 .w-min {
-  width: min-content
-}
+  width: min-content}
 .dash {
   width: 13px;
   height: 2px;
@@ -7433,18 +7423,26 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   width: 144px}
 .col-mode {
   width: 124px}
-.col-from, .col-to {
+.col-from, .col-to, .col-container2 {
   width: 196px}
 .col-term, .col-container {
   width: 141px}
-.col-user {
+.col-user, .col-container3 {
   width: 180px}
 .col-action {
   margin-left: auto;
   max-width: 100px;}
+.col-container4 {
+  width: 160px}
+.col-container5 {
+  width: 120px}
+.col-container4 input, .col-container4 .select{
+  max-width: 118px}
+.col-container3 input {
+  max-width: 131px;}
 .col-mode input {
   max-width: 79px}
-.col-from input, .col-to input {
+.col-from input, .col-to input, .col-container2 input {
   max-width: 151px;}
 .col-term .select-table, .col-container .select-table {
   max-width: 96px;}
@@ -7468,12 +7466,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     border: 2px solid #109cf1;
     pointer-events: none;
     opacity: 0;
-    z-index: 2;
-  }
+    z-index: 2;}
 .hover1:hover:before {
-  opacity: 1;
-}
-  
+  opacity: 1;}
 .td-action {
   position: sticky;
   right: 0;
@@ -7499,6 +7494,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   background-color: #b7bcd6; }
 .notifaction::-webkit-scrollbar-button {
   display: none; }
+.h-400 {
+  height: 400px!important;}
+.nav-tabs .nav-link {
+  height: 100%;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -7508,6 +7507,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     margin: 0 -1.5rem;}
   .max-sm-191 {
     max-width: 191px;}}
+@media (min-width: 1200px) {   
+  .min-w-xl-155 {
+    min-width: 155px;}}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .calendar-customer .prev, .calendar-customer .next {
     background-size: 90%;}
@@ -8203,10 +8205,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     padding: 15px; }
   .nav-tabs {
     width: 100%; }
-    .nav-tabs .nav-item {
-      width: 50%;
-      margin: 0;
-      text-align: center; }
+  .nav-tabs .nav-item {
+    width: 50%;
+    margin: 0;
+    text-align: center; }
   .box-white__top {
     padding: 10px 0; }
   .block__blue {

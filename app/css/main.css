@@ -1046,7 +1046,14 @@ button {
   white-space: nowrap; }
   .btn-item img {
     margin-right: 18px; }
-
+.btn-action {
+  width: 12px;
+  height: 12px;
+  font-size: 10px;
+  line-height: 12px;
+  border-radius: 4px;
+  padding: 0;
+  text-align: center;}
 .btn {
   border-radius: 4px;
   -webkit-appearance: none;
@@ -1301,13 +1308,13 @@ button {
 .disabled {
   opacity: 0.3;
   pointer-events: none; }
-  .disabled .card__way-point:before {
+  .disabled .card__way-point:before, .card__way-point.disabled:before {
     content: none; }
 
 .disabled-point:before {
   content: none !important; }
 
-.disabled-way .card__way-boat, .disabled-way .card__way-img, .disabled-way .card__way-line {
+.disabled-way .card__way-boat, .disabled-way .card__way-img, .disabled-way .card__way-line, .card__way-line.disabled {
   opacity: 0.3;
   pointer-events: none; }
 
@@ -7504,6 +7511,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   height: 400px!important;}
 .nav-tabs .nav-link {
   height: 100%;}
+.max-400 {
+  max-width: 400px;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

@@ -574,24 +574,24 @@ button {
 .select-v3 .select__menu {
   padding: 0;
   overflow-x: hidden; }
-
 .select__menu-top {
   border-radius: 1.5px;
   background-color: rgba(183, 188, 214, 0.33);
   padding: 5px 10px; }
   .select__menu-top p.text-13 {
     color: #109cf1 !important; }
-
 .select__menu-body {
   padding: 10px 10px 2px 10px; }
-
 .input-date {
-  background: url("../img/calendar-1.svg") no-repeat right 17px center/23px 23px;
+  background: url("../img/calendar-1.svg") no-repeat right 17px center/ 23px 23px;
   padding: 11px 45px 11px 13px; }
 .input-date.right {
   padding: 11px 30px 11px 15px; 
-  background-position-x: calc(100% - 15px)
-}
+  background-position-x: calc(100% - 15px)}
+.input-date.right-0 {
+  background-position-x: 99%}
+.input-time {
+  background: url("../img/wall-clock.svg") no-repeat right 2px center/ 17px;}
 .input-search {
   padding: 13px 20px 13px 53px;
   border-radius: 4px;
@@ -1752,6 +1752,7 @@ button {
   background-color: #eff8fe61!important;}
 .bg-white {
   background-color: #ffffff; }
+
 .bg-blue {
   background-color: #156ce4!important; }
 .bg-blue-bright {
@@ -1760,6 +1761,8 @@ button {
   background-color: #e0f4ff}
 .bg-light_v4 {
   background-color: #ecf7fe!important;}
+.bg-light_v6 {
+  background-color: #eef9ff; }
 .bg-light {
   background-color: rgba(36, 177, 255, 0.12); }
 .bg-light_v3 {
@@ -1776,7 +1779,7 @@ button {
   background-color: #049dbd!important;}
 .bg-blue-v1 {
   background-color: #24b1ff;}
- 
+
 .bg-pale-azure {
   background-color: #e7f5fe;}
 
@@ -2001,10 +2004,8 @@ button {
     font-size: 16px;
     color: #109CF1;
     font-weight: normal; }
-
 .text-up {
   text-transform: uppercase; }
-
 .text-initial {
   text-transform: initial; }
 .weight-bold {
@@ -2065,6 +2066,9 @@ button {
 .c-gray {
   color: #b7bcd6 !important; 
   fill: #b7bcd6;}
+.c-gray2 {
+  color: #8992a7;}
+ 
 .c-gray-light {
   color: rgba(183, 188, 214, 0.3)!important; 
   fill:  rgba(183, 188, 214, 0.3);}
@@ -7510,6 +7514,47 @@ padding-top: 15px;}
   opacity: 1;}
 .way6 .slider-tick-label img{
   opacity: 0.5;}
+.btn-plus{
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: block;
+  flex-shrink: 0;
+  background-color: rgb(183, 188, 214, 0.16);
+  position: relative;}
+.btn-plus:before, .btn-plus:after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  transition: all 0.3s ease;
+  background-color: #109cf1;}
+.btn-plus:before {
+  width: 8px;
+  height: 1px;}
+.btn-plus:after {
+  width: 1px;
+  height: 8px;
+  -webkit-transform: translate(-50%, -50%) rotate(90deg);
+  -ms-transform: translate(-50%, -50%) rotate(90deg);
+  transform: translate(-50%, -50%) rotate(90deg);}
+.collapsed .btn-plus:after {
+  -webkit-transform: translate(-50%, -50%) rotate(0deg);
+  -ms-transform: translate(-50%, -50%) rotate(0deg);
+  transform: translate(-50%, -50%) rotate(0deg);}
+.number {
+  background-color: rgba(183, 188, 214, 0.19);
+  border-radius: 50%;
+  width: 31px;
+  height: 31px;
+  line-height: 31px;
+  -ms-flex-negative: 0;
+  flex-shrink: 0;
+  text-align: center;
+  color: #156ce4;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

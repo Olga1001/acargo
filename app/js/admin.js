@@ -359,6 +359,12 @@ $(document).ready(function () {
     ticks_labels: [' <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">UAODS</p> ', '<img src="img/boat.svg" alt="icon" class="way__item-truck" height="22px"><p class="text-14 c-gray">UAODS</p>', '<img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>'],
     look_to_sticks: true
   }); 
+  $("input.range-way6").bootstrapSlider({
+    value: [1, 4],
+    ticks: [1, 2, 3, 4],
+    ticks_labels: ['<img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> ', '<p class="fs-14 text-center">POL <span class="fs-14 d-block">RUCAVA, LV</span></p>', '<img src="img/boat.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">POD <span class="fs-14 d-block">RUCAVA, LV</span></p>',' <img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> '],
+    look_to_sticks: true
+  }); 
   $(".click__more").click(function (e) {
     e.preventDefault();
     $(this).closest(".table__order-list").toggleClass('active');

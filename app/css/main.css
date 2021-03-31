@@ -2336,7 +2336,9 @@ button {
     width: 34px !important; }
   .calendar-table tbody td.weekend, .calendar-table tbody td.end-date.weekend, .calendar-table tbody td.start-date.weekend {
     color: #ff5b5b !important; }
-
+    .daterangepicker {
+      z-index: 99999!important;
+    }
 .daterangepicker td.available:hover, .daterangepicker th.available:hover {
   background-color: transparent !important;
   border-color: transparent;
@@ -5982,9 +5984,12 @@ button {
     border-radius: 4px;
     -webkit-box-shadow: 0 0 9px 0 rgba(137, 146, 167, 0.29);
     box-shadow: 0 0 9px 0 rgba(137, 146, 167, 0.29);
-    border: solid 1px #ffffff;
+    border: 1px solid #ffffff;
     background-color: #ffffff;
     height: 100%; }
+    .orders-item.active {
+      border-color: #109cf1;
+    }
     .orders-item img {
       width: 45px;
       height: 38px; }
@@ -7606,6 +7611,7 @@ padding-top: 15px;}
   .orders-item .c-gray {
     font-size: 13px;
   }
+
   .item-right {
     width: 40%
   }

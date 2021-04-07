@@ -354,7 +354,13 @@ button {
 .select__time .select__item {
   background: url("../img/wall-clock.svg") no-repeat left 15px center/21px;
   padding-left: 40px; }
- 
+  .line-between {
+    height: 1px;
+    width: 8px;
+    background-color: rgba(151, 151, 151, 0.71);
+    display: block;
+    flex-shrink: 0;
+  }
 .line-between__time {
   position: relative; }
   .line-between__time:before {
@@ -1768,6 +1774,8 @@ button {
   background-color: #ecf7fe!important;}
 .bg-light_v6 {
   background-color: #eef9ff; }
+.bg-light_v7 {
+  background-color: rgba(243, 250, 255, 0.86); }
 .bg-light {
   background-color: rgba(36, 177, 255, 0.12); }
 .bg-light_v3 {
@@ -4935,16 +4943,30 @@ button {
 
 .check-icon-maths {
   background-image: url("../img/maths.svg"); }
-
+.check-date {
+  padding: 7px 26px 5px;
+  border-radius: 6px;
+  border: solid 1px #b7bcd6;
+  display: block;
+  position: relative;}
+.check-date_icon {
+  display: none;
+  z-index: 2;
+  position: absolute;
+  top: -7px;
+  right: -7px;
+  width: 17px;
+  height: 17px;}
+.checkbox:checked ~ .check-date .check-date_icon {
+  display: block;}
+.checkbox:checked ~ .check-date {
+  border-color: #156ce4}
 .checkbox:checked ~ .check-icon-edit {
   background-image: url("../img/edit-2-active.svg"); }
-
 .checkbox:checked ~ .check-icon-doc {
   background-image: url("../img/doc-active.svg"); }
-
 .checkbox:checked ~ .check-icon-maths {
   background-image: url("../img/maths-active.svg"); }
-
 .table__rate-time.table__rate-time-green:before {
   background-color: rgba(73, 221, 170, 0.12); }
 .checkbox:checked ~ .svg-sprite-icon.c-gray {
@@ -6750,6 +6772,8 @@ button {
   line-height: 1;}
 .br-4 {
   border-radius: 4px;}
+.br-6 {
+  border-radius: 6px;}
 .min-h-175 {
   min-height: 175px;}
 .br-0 {
@@ -7577,7 +7601,21 @@ padding-top: 15px;}
   color: #156ce4;}
 .bg-light_v5.collapsed {
   background-color: #fff;}
+.email-list_item .email-list_item-btn.collapsed{
+  background: #fff;}
+.email-list_item .email-list_item-btn{
+  background-color: rgba(243, 250, 255, 0.86);}
+.email-list  .collapse {
+  background-color: rgba(243, 250, 255, 0.86);}
   
+.line {
+  position: absolute;
+  width: 1px;
+  top: 41px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: calc(100% - 41px);
+  background-color: #109cf1;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

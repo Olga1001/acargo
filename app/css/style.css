@@ -542,9 +542,8 @@ a:focus {
   display: block;
   width: 100%;
   text-align: left;
-  padding: 13px 15px 13px 60px;
+  padding: 13px 45px 13px 34px;
   font-size: 18px;
-  margin-right: 3px;
 }
 
 /*.sidebar .nav-item .nav-link i {*/
@@ -554,6 +553,8 @@ a:focus {
 
 .sidebar .nav-item .nav-link span {
   display: inline;
+  font-size: 16px;
+  line-height: 1;
 }
 
 .sidebar .nav-item .nav-link[data-toggle="collapse"]::after {
@@ -741,12 +742,16 @@ a:focus {
 
 .sidebar.toggled .nav-item .collapse {
   position: absolute;
-  left: calc(4.5rem + 1.5rem / 2);
-  top: 2px;
+  left: 100%;
+  top: 50%;
+  min-width: 211px;
+  border: 0;
+  transform: translateY(-50%);
   -webkit-animation-name: growIn;
   animation-name: growIn;
   -webkit-animation-duration: 200ms;
   animation-duration: 200ms;
+  background-color: #fff;
   -webkit-animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);
   animation-timing-function: transform cubic-bezier(0.18, 1.25, 0.4, 1), opacity cubic-bezier(0, 1, 0.4, 1);  
 }
@@ -791,6 +796,7 @@ a:focus {
 }
 .sidebar.toggled .nav-item .collapse-item {
   padding-left: 10px;
+  padding-right: 19px;
 }
 .sidebar.toggled .nav-item .collapse {
   box-shadow: 6px 0 18px 0 rgba(0, 0, 0, 0.06);
@@ -1000,8 +1006,6 @@ a:focus {
 .sidebar-light .nav-item .nav-link {
   border-left: 3px solid transparent;
   color: #282e3b;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
 }
 
 .sidebar-light .nav-item .nav-link i {
@@ -1028,7 +1032,7 @@ a:focus {
 
 .sidebar-light .nav-item.active .nav-link {
   color: #282e3b;
-  background-color: rgba(16, 156, 241, 0.07);
+  background-color: rgba(16, 156, 241, 0.06);
   border-left-color: #37517e;
 }
 

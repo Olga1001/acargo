@@ -105,7 +105,19 @@ img {
 .sidebar-menu {
   height: calc(100vh - 72px);
   overflow-y: auto; }
-
+  .sidebar-menu::-webkit-scrollbar {
+    scrollbar-color: #b7bcd6 #ffffff;
+    scrollbar-width: thin; }
+  .sidebar-menu::-webkit-scrollbar {
+    width: 6px;
+    -webkit-appearance: none;
+    background: none; 
+    appearance: none; }
+  .sidebar-menu::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: rgba(183, 188, 214, 0.37);}
+  .sidebar-menu::-webkit-scrollbar-button {
+    display: none; }
 .sidebar .nav-item .nav-link::after {
   content: none!important;
   right: 10px;
@@ -7696,6 +7708,16 @@ padding-top: 15px;}
   padding-right: 0;}
 .max-h-215 {
   max-height: 215px;}
+  .sidebar.toggled .nav-item .nav-link[data-toggle]:before {
+    content: '';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: url("../img/arrow-point-to-right.svg") no-repeat center / contain;
+    width: 10px;
+    height: 10px;
+  }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

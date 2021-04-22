@@ -102,12 +102,12 @@ $(document).ready(function () {
 // });
 //MENU arrow
 
-$(document).ready(function () {
-  $(".sidebar-light .nav-item").click(function (e) {
-    e.preventDefault();
-    $(this).toggleClass('active');
-  });
-}); //ORDER
+// $(document).ready(function () {
+//   $(".sidebar-light .nav-item").click(function (e) {
+//     e.preventDefault();
+//     $(this).toggleClass('active');
+//   });
+// }); //ORDER
 
 $(document).ready(function () {
 

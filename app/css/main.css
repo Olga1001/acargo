@@ -437,7 +437,7 @@ button {
     min-width: -moz-max-content;
     min-width: max-content; }
   .select__drop.right {
-    left: auto;
+    left: auto!important;
     right: 0;}
   .select__menu {
     border-radius: 4px;
@@ -1440,6 +1440,7 @@ button {
   .navbar-item:hover svg {
     fill: #3bbaff!important;}
 #wrapper #content-wrapper {
+  overflow: hidden;
   width: calc(100% - 290px);
   background-color: #eff8fe; }
 
@@ -2096,8 +2097,13 @@ button {
   border-color: #f5e943!important;}
 .b-blue-navy {
   border-color: #37517e!important;}
-  .b-gray {
-    border-color: #b7bcd6 !important; }
+.b-gray {
+  border-color: #b7bcd6 !important; }
+.b-gray2 {
+  border-color: rgba(183, 188, 214, 0.47) !important; }
+.b-light {
+  border-color: #eff8fe !important; }
+
 .c-blue-v1 {
   color: #24b1ff;
   fill: #24b1ff;  }
@@ -2124,23 +2130,18 @@ button {
 .c-gray2 {
   color: #8992a7;
   fill: #8992a7;}
-
 .c-gray-light {
   color: rgba(183, 188, 214, 0.3)!important; 
   fill:  rgba(183, 188, 214, 0.3);}
-
 .c-navy-blue {
   color: #37517e; }
-
 .c-white {
   color: #ffffff!important;
   fill: #ffffff; }
   .c-white:before, .c-white:after {
     background-color: #ffffff; }
-
 .c-red {
   color: #db5151; }
-
 .c-orange {
   color: #f99e04!important;
   fill: #f99e04!important;}
@@ -6715,6 +6716,8 @@ button {
   min-width: 140px;}
 .min-w-160 {
   min-width: 160px;}
+.min-w-175 {
+  min-width: 175px;}
 .min-w-auto {
   min-width: auto;}
 .min-w-1320 {
@@ -7414,15 +7417,19 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   overflow-x: auto;
   scrollbar-color: #b7bcd6 #ffffff;
   scrollbar-width: thin; }
-.scroll-x::-webkit-scrollbar {
+.scroll-xy {
+  overflow: auto;
+  scrollbar-color: #b7bcd6 #ffffff;
+  scrollbar-width: thin;}
+.scroll-x::-webkit-scrollbar, .scroll-xy::-webkit-scrollbar {
   width: 3px;
   height: 6px;
   -webkit-appearance: none;
   appearance: none; }
-.scroll-x::-webkit-scrollbar-thumb {
+.scroll-x::-webkit-scrollbar-thumb, .scroll-xy::-webkit-scrollbar-thumb {
   border-radius: 4px;
   background: rgba(183, 188, 214, 0.37) }
-.scroll-x::-webkit-scrollbar-button {
+.scroll-x::-webkit-scrollbar-button, .scroll-xy::-webkit-scrollbar-button {
   display: none; }
 .avatar-user {
   border-radius: 50%;
@@ -7810,7 +7817,75 @@ padding-top: 15px;}
 .select__drop-2 .select__menu{
   border-top: none;
   border-radius: 0 0 4px 4px;}
+.lh-35 {
+  line-height: 35px;}
+.check-tabs {
+  max-width: 659px;
+  width: 100%;
+  border: solid 0.5px #d9effd;
+  overflow: hidden;
+  border-radius: 4px;}
+.check-tab {
+  font-size: 14px;
+  letter-spacing: normal;
+  text-align: center;
+  color: #282e3b;
+  padding: 0 5px;
+  display: block;
+  border-right: solid 0.5px #d9effd;
+  line-height: 33px;}
+  .check-tabs label {
+    width: 100%;}
+.check-tabs label:last-child .check-tab {
+  border-right: none;}
+.checkbox:checked ~ .check-tab {
+  background-color: rgba(16, 156, 241, 0.16);}
+.py-7 {
+  padding-top: 7px;
+  padding-bottom: 7px;}
+.calendar__head {
+  width: 100%;
+  padding: 33px 35px 12px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 7;}
+.calendar__head-th {
+  min-width: 159px;
+  width: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;}
 
+.calendar__box-item {
+  min-width: 159px;
+  padding: 8px 6px 8px 21px;}
+.calendar__box-item .fs-13:first-child{
+  margin-bottom: 3px;}
+.calendar__box-item button {
+  transition: all 0.3s ease;
+  opacity: 0;}
+.calendar__box-item:hover button {
+  opacity: 1;}
+.show .dropdown-menu {
+  display: block!important;}
+.show .btn-car {
+  opacity: 1;}
+.calendar__box {
+  padding: 0 35px;}
+.calendar__box td {
+  position: relative;
+  width: 10%;}
+.calendar__box-border{
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0px;
+  height: 100%;
+  border-left-width: 10px;
+  border-style: solid;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -8436,6 +8511,7 @@ padding-top: 15px;}
   .scroll {
     overflow-x: auto;
     width: 100%; }
+  
   .row-range {
     width: 700px !important; }
   .filters {

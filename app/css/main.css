@@ -5843,44 +5843,34 @@ button {
     height: fit-content;
     border-radius: 14px;
     background-color: #49ddaa;
-    cursor: pointer;
-  }
+    cursor: pointer;}
   .select-block:before {
-    background-image: url("../img/arrow-drop-down-24-px-white.svg");
-  }
+    background-image: url("../img/arrow-drop-down-24-px-white.svg");}
   .select-block .select__item {
     color: #ffffff;
     font-size: 13px;
     width: auto;
     line-height: normal;
     padding: 4px 31px 5px 20px;
-    min-height: auto;
-  }
+    min-height: auto;}
   .shadow-2 {
-    box-shadow: 0 1px 6px 0 rgba(40, 46, 59, 0.21);
-  }
+    box-shadow: 0 1px 6px 0 rgba(40, 46, 59, 0.21);}
   .ml--12-5 {
-    margin-left: -12.5px;
-  }
+    margin-left: -12.5px;}
   .close-right-absolute {
     position: absolute;
     right: 0;
-    top: 85px;
-  }
+    top: 85px;}
   .popup .box-white__bulk-requests {
     max-width: 805px;
     width: 100%;
     margin: 0 auto!important;
-    display: block;
-  }
+    display: block;}
   .overlay-y-380 {
     max-height: 380px;
-    overflow-y: auto;
-  }
-
+    overflow-y: auto;}
   .popup .box-white.mb-3 {
-    margin-bottom: 15px!important;
-  }
+    margin-bottom: 15px!important;}
   .navbar-item__svg {
     width: 17px;
     height: 20px;
@@ -6239,7 +6229,6 @@ button {
   .r-3 {
     left: auto!important;
     right: 16px;}
-
   .r-0 {
     left: auto!important;
     right: 0;}
@@ -6250,11 +6239,12 @@ button {
     transform: translateY(-50%);}
   .l-100 {
     left: 100%}
+  .l-0{
+    left: 0;}
   .bot-10{
     bottom: 10px;}
-    .mt-34 {
-      margin-top: 34px;
-    }
+  .mt-34 {
+    margin-top: 34px;}
   .fs-10 {
     font-size: 10px;}
   .select__blue {
@@ -7821,24 +7811,26 @@ padding-top: 15px;}
   line-height: 35px;}
 .check-tabs {
   max-width: 659px;
+  padding: 0;
   width: 100%;
   border: solid 0.5px #d9effd;
   overflow: hidden;
   border-radius: 4px;}
 .check-tab {
   font-size: 14px;
+  height: 100%;
+  display: block;
   letter-spacing: normal;
   text-align: center;
   color: #282e3b;
-  padding: 0 5px;
-  display: block;
+  padding: 1px 5px;
   border-right: solid 0.5px #d9effd;
+  margin-right: -1px;
   line-height: 33px;}
   .check-tabs label {
-    width: 100%;}
-.check-tabs label:last-child .check-tab {
-  border-right: none;}
+    width: 100%; }
 .checkbox:checked ~ .check-tab {
+  margin-right: 0px;
   background-color: rgba(16, 156, 241, 0.16);}
 .py-7 {
   padding-top: 7px;
@@ -7852,17 +7844,19 @@ padding-top: 15px;}
   z-index: 7;}
 .calendar__head-th {
   min-width: 159px;
-  width: 10%;
+  width: 100%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;}
-
+.calendar__head-th:first-child {
+  width: 5%;
+  min-width: 90px;}
 .calendar__box-item {
   min-width: 159px;
   padding: 8px 6px 8px 21px;}
-.calendar__box-item .fs-13:first-child{
+.calendar__box-item .relative{
   margin-bottom: 3px;}
 .calendar__box-item button {
   transition: all 0.3s ease;
@@ -7871,21 +7865,51 @@ padding-top: 15px;}
   opacity: 1;}
 .show .dropdown-menu {
   display: block!important;}
-.show .btn-car {
+.show button {
   opacity: 1;}
 .calendar__box {
+  position: relative;
   padding: 0 35px;}
 .calendar__box td {
   position: relative;
   width: 10%;}
+  .calendar__box td:first-child {
+    min-width: 90px;
+    width: 5%}
 .calendar__box-border{
   position: absolute;
   left: 0;
   top: 0;
   width: 0px;
-  height: 100%;
+  height: calc(100% - 0.5px);
   border-left-width: 10px;
   border-style: solid;}
+.op-1 {
+  opacity: 1!important;}
+.ml--7{
+  margin-left: -7px;}
+.search-calendar {
+  min-width: 320px;
+  width: 26%;}
+.search-calendar input {
+  margin-right: -4px;}
+.calendar__arrow {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  background: url("../img/arrow.svg") no-repeat center / contain;
+  z-index: 5;
+  width: 32px;
+  height: 32px;}
+.calendar__arrow_prev {
+  left: 40px;}
+.calendar__arrow_next {
+  -webkit-transform: translateY(-50%) scaleX(-1);
+  -ms-transform: translateY(-50%) scaleX(-1);
+  transform: translateY(-50%) scaleX(-1);
+  right: -19px}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -7919,24 +7943,18 @@ padding-top: 15px;}
   .quotes-requests__list li {
     min-width: 560px; }
   .orders-item img {
-    width: 30px;
-  }
+    width: 30px;}
   .orders-item .fs-18 {
-    font-size: 15px;
-  }
+    font-size: 15px;}
   .orders-item .c-gray {
-    font-size: 13px;
-  }
-
+    font-size: 13px;}
   .item-right {
-    width: 40%
-  }
+    width: 40%}
   .item-left {
     width: 60%}
     .item-small {
       flex: 0 0 100%!important;
-      max-width: 100%!important;
-    }
+      max-width: 100%!important;}
   .orders-item {
     padding-left: 15px !important;
     padding-right: 15px !important; }
@@ -7944,7 +7962,6 @@ padding-top: 15px;}
     min-width: 900px; }
   .trucking-list li {
     min-width: 555px; } }
-
 @media only screen and (min-width: 1890px) {
   .table__rate-table, .table__rate-table-road {
     width: calc(100% + 55px); }
@@ -7952,7 +7969,6 @@ padding-top: 15px;}
     width: calc(100% + 55px + 7vw); } 
   .table__rate-sea_2 {
     width: calc(100% + 55px);}}
-
 @media only screen and (min-width: 1930px) {
   .table__rate-sea .bg-light-blue, .table__rate-sea .table__make-booking__row {
     width: 100%; }
@@ -7960,7 +7976,6 @@ padding-top: 15px;}
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; } }
-
 @media only screen and (max-width: 1570px) {
   .base-w-53, .base-w-47, .base-w-59, .base-w-41 {
     max-width: 100%;} 
@@ -7976,8 +7991,7 @@ padding-top: 15px;}
     overflow-x: auto;
     position: relative; }
     .navbar-list.active {
-        overflow: visible;
-    }
+        overflow: visible;}
     .navbar-list:before {
       content: '';
       position: absolute;
@@ -8014,11 +8028,23 @@ padding-top: 15px;}
     width: calc(100% + 3rem + 1.5rem);}
   .w_lg_55_1-5 {
     width: calc(100% + 55px + 1.5rem);}} 
+@media only screen and (max-width: 1500px) {
+  .calendar__arrow_prev {
+    left: 0;}
+  .calendar__arrow_next{
+    right: -50px;}
+  .calendar__head {
+    padding: 33px 0 12px;}
+  .calendar__box {
+    padding-left: 0;
+    padding-right: 0;}}
 @media only screen and (max-width: 1440px) {
-    .btns-block .btn_v3{
-      padding: 0 10px;
-      font-size: 12px; }}
+  .btns-block .btn_v3{
+    padding: 0 10px;
+    font-size: 12px; }}
 @media only screen and (max-width: 1199px) {
+  .search-calendar {
+    width: 100%;}
   .table_v3 {
     margin: 0 -1rem;}
   .popup__full-map {
@@ -8163,6 +8189,8 @@ padding-top: 15px;}
         right: 0;
       }}
 @media only screen and (max-width: 991px) {
+  .check-tabs label {
+    width: 33.33%;}
   .line-broad {
     margin: 0 -1.5rem;}
   .calendar-customer .prev {
@@ -8544,6 +8572,8 @@ padding-top: 15px;}
       right: 0; }}
 
 @media only screen and (max-width: 575px) {
+  .check-tabs label {
+    width: 50%;}
   .base-border {
     padding-right: 45px;}
   .line-broad {

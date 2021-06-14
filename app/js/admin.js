@@ -5,6 +5,11 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 (function ($) {
   "use strict"; // Start of use strict
 
+  $(".chat_tab").on('click', function () {
+    let index = $(this).index();
+    $(this).addClass('active').siblings().removeClass('active');
+    $(".chat-list").eq(index).addClass('active').siblings().removeClass('active');
+  });
   // Toggle the side navigation
 
   $("#sidebarToggle, #sidebarToggleTop, .overlay").on('click', function (e) {

@@ -5,10 +5,18 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 (function ($) {
   "use strict"; // Start of use strict
 
-  $(".chat_tab").on('click', function () {
-    let index = $(this).index();
-    $(this).addClass('active').siblings().removeClass('active');
-    $(".chat-list").eq(index).addClass('active').siblings().removeClass('active');
+  function chtaTab(el) {
+    $(`${el} .chat_tab`).on('click', function () {
+      let index = $(this).index();
+      $(this).addClass('active').siblings().removeClass('active');
+      $(`${el} .chat-list`).eq(index).addClass('active').siblings().removeClass('active');
+    });
+  }
+  chtaTab('.chat');
+  chtaTab('.dropdown-list');
+
+  $('.dropdown-list').on('click', function (e) {
+    e.stopPropagation();
   });
   // Toggle the side navigation
 

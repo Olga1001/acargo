@@ -13,96 +13,191 @@
 </head>
 
 <body id="page-top">
-    <div class="chat-fixed "> 
-        <div id="dropdownChat" class="collapse w-385">
-            <div class="d-grid">
-                <div class="dropdown-header p-0">
-                    <div class="absolute py-2 r-0 t-0 align-items-end d-flex">
-                        <button class="btn-turn" type="button">
-                            <svg class="svg-sprite-icon c-gray" width="12px" height="2px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#turn"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-expand py-0" type="button">
-                            <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
-                            </svg>
-                        </button>
-                        <button class="btn-close " type="button" data-toggle="collapse" data-target="#dropdownChat" aria-expanded="false" aria-controls="dropdownChat">
-                            <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
-                            </svg>
-                        </button>
-                    </div>
-                    <div class="d-flex align-items-center py-2 px-3">
-                        <div class="avatar small mr-sm-3 mr-2">
-                            <img src="img/users.svg" alt="avatar">
+    <div class="chat-fixed d-flex align-items-end"> 
+        <div class="relative mr-4">  
+            <div id="dropdownChat2" class="chat-popup__body collapse w-385">
+                <div class="d-grid">
+                    <div class="dropdown-header p-0">
+                        <div class="absolute py-2 r-0 t-0 align-items-end d-flex">
+                            <button class="btn-turn" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="2px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#turn"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-expand py-0" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-close " type="button" data-toggle="collapse" data-target="#dropdownChat2" aria-expanded="false" aria-controls="dropdownChat2">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </button>
                         </div>
-                        <div>
-                            <p class="mb-1">Anton Ivanov</p>
-                            <p class="fs-12 c-blue-gray">Online</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="dropdownChat_window py-1">
-                    <div class="d-flex align-items-center px-4 py-3">
-                        <div class="avatar small mr-sm-4 mr-2">
-                            <img src="img/users.svg" alt="avatar">
-                        </div>
-                        <div class="w-100">
-                            <div class="dropdownChat_message bg-blue-v2">
-                                <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                        <div class="d-flex align-items-center py-2 px-3">
+                            <div class="avatar small mr-sm-3 mr-2">
+                                <img src="img/users.svg" alt="avatar">
                             </div>
-                            <p class="fs-10 c-navy-blue py-1">10.35AM</p>
-                        </div>
-                    </div>
-                    <div class="d-flex align-items-center px-4 py-3">
-                        <div class="w-100">
-                            <div class="dropdownChat_message bg-gray_3 ">
-                                <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                            <div>
+                                <p class="mb-1">Anton Ivanov</p>
+                                <p class="fs-12 c-blue-gray">Online</p>
                             </div>
-                            <p class="fs-10 c-navy-blue py-1 text-left">10.35AM</p>
-                        </div>
-                        <div class="avatar small ml-sm-4 mr-2">
-                            <img src="img/users.svg" alt="avatar">
                         </div>
                     </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div class="avatar small mr-sm-4 mr-2">
+                                <img src="img/users.svg" alt="avatar">
+                            </div>
+                            <div class="w-100">
+                                <div class="chat-popup_message bg-blue-v2">
+                                    <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <p class="fs-10 c-navy-blue py-1">10.35AM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div class="w-100">
+                                <div class="chat-popup_message bg-gray_3 ">
+                                    <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <p class="fs-10 c-navy-blue py-1 text-left">10.35AM</p>
+                            </div>
+                            <div class="avatar small ml-sm-4 mr-2">
+                                <img src="img/users.svg" alt="avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <form class="dropdown-footer d-flex bt-1 b-gray py-1">
+                        <input type="text" placeholder="Type a message here …" class="input-normal text-left py-2 px-3 c-dark">
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="px-1">
+                                <img src="img/paper-clip.svg" alt="paper clip" width="18px" height="17px">
+                            </button>
+                            <button type="button" class="px-1">
+                                <img src="img/smile.svg" alt="smile" width="18px" height="18px">
+                            </button>
+                        </div>
+                        <button type="submit" class="px-3">
+                            <svg class="svg-sprite-icon c-green" width="18px" height="16px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#paper-plane"></use>
+                            </svg>
+                        </button>
+                    </form>
                 </div>
-                <form class="dropdown-footer d-flex bt-1 b-gray py-1">
-                    <input type="text" placeholder="Type a message here …" class="input-normal text-left py-2 px-3 c-dark">
-                    <div class="d-flex align-items-center">
-                        <button type="button" class="px-1">
-                            <img src="img/paper-clip.svg" alt="paper clip" width="18px" height="17px">
-                        </button>
-                        <button type="button" class="px-1">
-                            <img src="img/smile.svg" alt="smile" width="18px" height="18px">
-                        </button>
-                    </div>
-                    <button type="submit" class="px-3">
-                        <svg class="svg-sprite-icon c-green" width="18px" height="16px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#paper-plane"></use>
+            
+            </div>
+            <div class="chat-fixed-link dropdown-toggle d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#dropdownChat2" aria-expanded="false" aria-controls="dropdownChat2">
+                <div class="d-flex align-items-center">
+                    <p class="c-white">Anton Ivanov</p>
+                    <div class="chat_count-message">2</div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn-expand py-0" type="button">
+                        <svg class="svg-sprite-icon c-white" width="12px" height="12px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
                         </svg>
                     </button>
-                </form>
+                    <button class="btn-close" type="button">
+                        <svg class="svg-sprite-icon c-white" width="10px" height="10px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
-          
         </div>
-        <div class="chat-fixed-link dropdown-toggle d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#dropdownChat" aria-expanded="false" aria-controls="dropdownChat">
-            <div class="d-flex align-items-center">
-                <p class="c-white">Anton Ivanov</p>
-                <div class="chat_count-message">2</div>
+        <div class="relative">  
+            <div id="dropdownChat" class="chat-popup__body collapse w-385">
+                <div class="d-grid">
+                    <div class="dropdown-header p-0">
+                        <div class="absolute py-2 r-0 t-0 align-items-end d-flex">
+                            <button class="btn-turn" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="2px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#turn"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-expand py-0" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <button class="btn-close " type="button" data-toggle="collapse" data-target="#dropdownChat" aria-expanded="false" aria-controls="dropdownChat">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="d-flex align-items-center py-2 px-3">
+                            <div class="avatar small mr-sm-3 mr-2">
+                                <img src="img/users.svg" alt="avatar">
+                            </div>
+                            <div>
+                                <p class="mb-1">Anton Ivanov</p>
+                                <p class="fs-12 c-blue-gray">Online</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="py-1">
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div class="avatar small mr-sm-4 mr-2">
+                                <img src="img/users.svg" alt="avatar">
+                            </div>
+                            <div class="w-100">
+                                <div class="chat-popup_message bg-blue-v2">
+                                    <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <p class="fs-10 c-navy-blue py-1">10.35AM</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center px-4 py-3">
+                            <div class="w-100">
+                                <div class="chat-popup_message bg-gray_3 ">
+                                    <p class="fs-13">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor</p>
+                                </div>
+                                <p class="fs-10 c-navy-blue py-1 text-left">10.35AM</p>
+                            </div>
+                            <div class="avatar small ml-sm-4 mr-2">
+                                <img src="img/users.svg" alt="avatar">
+                            </div>
+                        </div>
+                    </div>
+                    <form class="dropdown-footer d-flex bt-1 b-gray py-1">
+                        <input type="text" placeholder="Type a message here …" class="input-normal text-left py-2 px-3 c-dark">
+                        <div class="d-flex align-items-center">
+                            <button type="button" class="px-1">
+                                <img src="img/paper-clip.svg" alt="paper clip" width="18px" height="17px">
+                            </button>
+                            <button type="button" class="px-1">
+                                <img src="img/smile.svg" alt="smile" width="18px" height="18px">
+                            </button>
+                        </div>
+                        <button type="submit" class="px-3">
+                            <svg class="svg-sprite-icon c-green" width="18px" height="16px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#paper-plane"></use>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+            
             </div>
-            <div class="d-flex align-items-center">
-                <button class="btn-expand py-0" type="button">
-                    <svg class="svg-sprite-icon c-white" width="12px" height="12px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
-                    </svg>
-                </button>
-                <button class="btn-close" type="button">
-                    <svg class="svg-sprite-icon c-white" width="10px" height="10px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
-                    </svg>
-                </button>
+            <div class="chat-fixed-link dropdown-toggle d-flex align-items-center justify-content-between collapsed" data-toggle="collapse" data-target="#dropdownChat" aria-expanded="false" aria-controls="dropdownChat">
+                <div class="d-flex align-items-center">
+                    <p class="c-white">Anton Ivanov</p>
+                    <div class="chat_count-message">2</div>
+                </div>
+                <div class="d-flex align-items-center">
+                    <button class="btn-expand py-0" type="button">
+                        <svg class="svg-sprite-icon c-white" width="12px" height="12px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                        </svg>
+                    </button>
+                    <button class="btn-close" type="button">
+                        <svg class="svg-sprite-icon c-white" width="10px" height="10px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                </div>
             </div>
         </div>
     </div>

@@ -1725,7 +1725,28 @@ button {
       height: 15px; }
     .calc__btn-minus:after {
       content: none; }
-
+.calc.calc__light {
+  border: solid 0.5px rgba(36, 177, 255, 0.18);
+  max-width: 164px;}
+.calc.calc__light .calc__btn{
+  flex-shrink: 0;
+  background: #e7f5fe;
+  width: 39px;
+  height: 34px;}
+.calc.calc__light .calc__btn:before {
+  height: 1px;
+  width: 10px;}
+.calc.calc__light .calc__btn:after {
+  width: 1px;
+  height: 10px;}
+.calc.calc__light .calc__btn:before, .calc.calc__light .calc__btn:after {
+  background: #141515;}
+.calc.calc__light .calc__input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: none;
+}
 .table_v2 {
   margin: 0 -30px 0 -25px;
   width: calc(100% + 55px); }
@@ -1775,6 +1796,8 @@ button {
   background: rgba(183, 188, 214, 0.08);}
 .bg-gray_3 {
   background: rgba(183, 188, 214, 0.2);}
+.bg-gray_4 {
+  background: rgba(183, 188, 214, 0.82)!important;}
 .bg-green {
   background-color: #49ddaa; }
 .bg-green-light {
@@ -1790,16 +1813,13 @@ button {
 .active-orange-light:before {
   background-color: rgba(	249, 158, 4, 0.2)}
 .bg-orange {
-  background-color: #f99e04; }
-
+  background-color: #f99e04!important; }
 .bg-orange-light {
   background-color: rgba(	249, 158, 4, 0.2); }
 .bg-orange2 {
   background-color: rgba(	249, 158, 4, 0.67); }
-
 .bg-light-green {
   background-color: rgba(73, 221, 170, 0.15); }
-
 .bg-light-orange {
   background-color: rgba(249, 158, 4, 0.15); }
 .bg-light-blue {
@@ -1842,9 +1862,8 @@ button {
   background-color: #24b1ff;}
 .bg-blue-v2 {
   background-color: rgba(226, 243, 253, 0.47);}
-
 .bg-pale-azure {
-  background-color: #e7f5fe;}
+  background-color: #e7f5fe!important;}
 
 #files {
   display: none; }
@@ -2091,6 +2110,8 @@ button {
   border-top: 1px solid}
 .b-1 {
   border: solid 1px rgba(183, 188, 214, 0.48)!important;}
+.b-pale-azure {
+  border-color: #e7f5fe!important;}
 .b-green {
   border-color: #2acc46!important; }
 .b-green-2 {
@@ -8074,7 +8095,7 @@ padding-top: 15px;}
 .chat-fixed {
   position: fixed;
   bottom: 0;
-  z-index: 99;
+  z-index: 9999;
   right: 10%;}
 .chat-fixed-link {
   min-width: 280px;
@@ -8094,22 +8115,22 @@ padding-top: 15px;}
   font-weight: 500;
   margin-left: 10px;
   line-height: 15px;}
-#dropdownChat {
+.chat-popup__body {
   max-height: 500px;
   background-color: #fff;
   max-width: 385px;}
-#dropdownChat.show {
+.chat-popup__body.show {
   overflow-y: auto;}
-#dropdownChat .d-grid {
+.chat-popup__body .d-grid {
   min-height: 350px;}
-.dropdownChat_message {
+.chat-popup_message {
   border-radius: 10px;
   padding: 10px 15px;}
 .dropdown-footer {
   position: sticky;
   bottom: 0;
   margin-top: auto;}
-#dropdownChat .dropdown-header {
+.chat-popup__body .dropdown-header {
   height: fit-content;s}
 .chat-content_b .emoji-picker {
   margin: 10px;}
@@ -8117,6 +8138,48 @@ padding-top: 15px;}
   position: absolute;
   bottom: 100%;
   right: 0;}
+.switch-yn {
+  border: solid 1px #109cf1;
+  border-radius: 9.5px;}
+.switch-yn span {
+  font-size: 10px;
+  width: 33px;
+  text-align: center;
+  line-height: 17px;
+  display: block;}
+.switch-y {
+  color: #fff!important;
+  position: relative;
+  z-index: 2}
+.switch-n {
+  position: relative;
+  z-index: 2}
+.switch-yn_circle {
+  height: 100%;
+  width: 50%!important;
+  border-radius: 9.5px;
+  background: #109cf1;
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateX(0);
+  z-index: 1}
+.b-pale-azure .switch-y {
+ color: #141515!important;}
+.checkbox:checked ~ span .switch-yn_circle  {
+  transform: translateX(100%);}
+.checkbox:checked ~ span .switch-n  {
+  color: #fff!important;}
+.checkbox:checked ~ span .switch-y  {
+  color: #141515!important;}
+.checkbox:checked ~ span.b-pale-azure .switch-n  {
+  color: #141515!important;}
+.w-25 {
+  width: 25px!important;}
+.min-w-55 {
+  min-height: 55px;}
+.pl-40 {
+  padding-left: 40px!important;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

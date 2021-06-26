@@ -603,20 +603,27 @@
 
                         <div id="contents" class="contents">
                             <div class="contents__item contents__order-no mx-0 active">
-                                <div class="d-flex">
-                                    <div class="d-flex align-items-center block_resize-input mr-5 mb-4">
-                                        <p class="pr-3">Quantity</p>
-                                        <div class="table__span" style="display: none;"></div>
-                                        <input type="text" placeholder="..." class="input-resize underline c-blue-light" value="18">
-                                    </div> 
-
-                                    <label  class="d-flex align-items-center mb-4">
-                                        <input type="checkbox" class="checkbox">
-                                        <span>Custom orders</span>
-                                        <span class="checkbox__icon-blue"></span>
-                                    </label>
-                                 
-                                </div>
+                                <div class="d-flex align-items-center mr-5 mb-4"> 
+                                    <div class="mr-lg-5 pr-4">
+                                        <p class="mb-2 fs-14">Custom No.</p>
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="switch-yn d-flex">
+                                                <span class="switch-y">Yes</span>
+                                                <span class="switch-n">No</span>
+                                                <span class="switch-yn_circle"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div>
+                                        <p class="text-14">Quantity</p>
+                                        <div class="calc calc__light">
+                                            <button class="calc__btn calc__btn-minus"></button>
+                                            <input type="number" class="calc__input" value="0">
+                                            <button class="calc__btn calc__btn-plus"></button>
+                                        </div>
+                                    </div>
+                                </div> 
                                 <div class="table max-725 pb-3">
                                     <div class="table__head d-none d-md-block">
                                         <div class="row justify-content-between">
@@ -768,27 +775,26 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="contents__item contents__product">
+                            <div class="contents__item contents__product ">
                                 <div class="table">
                                     <div class="table__head d-lg-block d-none">
                                         <div class="row">
-                                            <div class="col-4"><p>PRODUCT NAME</p></div>
+                                            <div class="col-4 pl-4"><p class="pl-4">Product</p></div>
                                             <div class="col-8">
                                                 <div class="row justify-content-between">
-                                                    <div class="col-2"><p>ORDERS</p></div>
-                                                    <div class="col-2"><p>PACKING</p></div>
-                                                    <div class="col-2"><p>PRICE</p></div>
-                                                    <div class="col-2"><p>QUANTITY</p></div>
-                                                    <div class="col-2"><p>PALLETS</p></div>
+                                                    <div class="col-2"><p>Packing type</p></div>
+                                                    <div class="col-2"><p>Quantity</p></div>
+                                                    <div class="col-4"><p>Temperature control</p></div>
+                                                    <div class="col-2 pl-0"><p>ADR</p></div>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <ul class="table__body">
-                                        <li class="table__body-item">
-                                            <div class="row table__item">
+                                    <ul class="table__body ">
+                                        <li class="px-4 bb-1 b-gray2">
+                                            <div class="row table__item align-items-center min-w-55">
                                                 <div class="col-lg-4 col-12">
-                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT NAME</span></p>
+                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT</span></p>
                                                     <div class="d-flex align-items-center">
                                                         <label class="mr-3">
                                                             <input type="checkbox" class="checkbox">
@@ -799,245 +805,58 @@
                                                     </div>
                                                 </div>
                                                 <div class="col-lg-8 col-12">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-md-2 col-sm-4 col-6"><p class="d-lg-none d-block mb-2 mt-3"><span>ORDERS</span></p><p class="d-flex">15 x</p> </div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PACKING</span>360 LTR</p></div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PRICE</span>3650,80 EUR</p></div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>180</p></div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span>10 HT</p></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="table__drop collapse pt-1">
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
-                                                        <div class="fs-14 c-blue-gray d-flex">1. OR-835782149872984  
-                                                            <button type="button" class="close-small_2 ml-3">
-                                                                <img src="img/gray__cancel.svg" alt="close">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>180</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
-                                                     
-                                                        <div class="fs-14 c-blue-gray d-flex">2. OR-764794812090218
-                                                            <button type="button" class="close-small_2 ml-3">
-                                                                <img src="img/gray__cancel.svg" alt="close">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span</p>
-                                                     
-                                                        <div class="select h-auto b-0 max-204 mt-1 mb-0">
-                                                            <input type="text" class="select__item fs-14 lh-1 px-0 text-italic c-blue-gray underline" placeholder="+ Add new order">
-                                                            <div class="select__drop">
-                                                                <ul class="select__menu">
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-74128408373</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840777</li>
-                                                                </ul>
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-2 col-sm-4 col-6"><p class="d-lg-none d-block mb-2 mt-3"><span>Packing type</span></p><p class="d-flex">360 LTR</p> </div>
+                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Quantity</span>180</p></div>
+                                                        <div class="col-md-4 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p>
+                                                            <div class="d-flex">
+                                                                <label class="mr-3">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex">
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-n">No</span>
+                                                                        <span class="switch-yn_circle"></span>
+                                                                    </span>
+                                                                </label>
+                                                                <label class="mr-3">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex b-orange">
+                                                                        <span class="switch-y w-25">°C</span>
+                                                                        <span class="switch-n w-25">°F</span>
+                                                                        <span class="switch-yn_circle bg-orange"></span>
+                                                                    </span>
+                                                                </label>
                                                             </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="table__body-item">
-                                            <div class="row table__item">
-                                                <div class="col-lg-4 col-12">
-                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT NAME</span></p>
-                                                    <div class="d-flex align-items-center pl-lg-4 ml-lg-2 block_resize-input">
-                                                        <div class="table__span" style="display: none;"></div>
-                                                        <input type="text" placeholder=" . . . . . " class="input-resize text-left w-min-35" value="">
-                                                        <img src="img/arrow-drop-down-24-px.svg" alt="arrow drop" class="table__arrow mr-xl-5">
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <ul class="table__drop collapse pt-1">
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
-                                                        <div class="fs-14 c-blue-gray d-flex">1. OR-835782149872984  
-                                                            <button type="button" class="close-small_2 ml-3">
-                                                                <img src="img/gray__cancel.svg" alt="close">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>180</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
-                                                     
-                                                        <div class="fs-14 c-blue-gray d-flex">2. OR-764794812090218
-                                                            <button type="button" class="close-small_2 ml-3">
-                                                                <img src="img/gray__cancel.svg" alt="close">
-                                                            </button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                                <li class="row">
-                                                    <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span</p>
-                                                     
-                                                        <div class="select h-auto b-0 max-204 mt-1 mb-0">
-                                                            <input type="text" class="select__item fs-14 lh-1 px-0 text-italic c-blue-gray underline" placeholder="+ Add new order">
-                                                            <div class="select__drop">
-                                                                <ul class="select__menu">
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-74128408373</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840888</li>
-                                                                    <li class="select__option">OR-7412840777</li>
-                                                                </ul>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-lg-8 col-12">
-                                                        <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
-                                                    </div>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                        <li class="table__body-item">
-                                            <div class="row table__item">
-                                                <div class="col-lg-4 col-12">
-                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT NAME</span></p>
-                                                    <div class="d-flex align-items-center">
-                                                        <label class="mr-3">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checkbox__icon-blue ml-0"></span>
-                                                        </label>
-                                                        <p>QTS 0-20 White Peat, WA, pH 5.5-6.0</p>
-                                                        <img src="img/arrow-drop-down-24-px.svg" alt="arrow drop" class="table__arrow mr-xl-5">
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg-8 col-12">
-                                                    <div class="row justify-content-between">
-                                                        <div class="col-md-2 col-sm-4 col-6"><p class="d-lg-none d-block mb-2 mt-3"><span>ORDERS</span></p>
-                                                            <p>15 x</p>
-                                                        </div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p>
-                                                            <div class="d-flex align-items-center block_resize-input">
-                                                                <div class="select h-auto b-0 w-fit-content  mb-0">
-                                                                    <div class="select__item lh-1 c-dark">
-                                                                        <div class="c-blue-gray" >  . . . . . </div>
-                                                                    </div>
-                                                                  <div class="select__drop">
-                                                                        <ul class="select__menu">
-                                                                            <li class="select__option">360 LTR</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p>
-                                                            <div class="d-flex align-items-center ">
-                                                                <div class="block_resize-input">
-                                                                    <div class="table__span" style="display: none;"></div>
-                                                                    <input type="text" placeholder=". . . . ." class="input-resize text-left px-0 w-min-35" value="">
-                                                                </div>
-                                                                <div class="select h-auto b-0 w-fit-content  mb-0">
-                                                                    <div class="select__item lh-1 pl-1 c-dark"></div>
-                                                                    <div class="select__drop">
-                                                                        <ul class="select__menu">
-                                                                            <li class="select__option">EUR</li>
-                                                                            <li class="select__option">USD</li>
-                                                                            <li class="select__option">RUB</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span></p>
-                                                            <div class="block_resize-input">
+                                                            <div class="d-flex block_resize-input pt-2">
+                                                                <p class="c-blue-gray fs-14 mr-3">°C</p>
                                                                 <div class="table__span" style="display: none;"></div>
-                                                                <input type="text" placeholder=". . . . ." class="input-resize text-left w-min-35" value="">
+                                                                <input type="text" class="input-text " value="" placeholder=". . . . .">
+
                                                             </div>
                                                         </div>
-                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p>
-                                                            <div class="d-flex align-items-center">
-                                                                <div class="block_resize-input">
-                                                                    <div class="table__span" style="display: none;"></div>
-                                                                    <input type="text" placeholder=". . . . ." class="input-resize text-left px-0 w-min-35" value="">
-                                                                </div>
-                                                                <div class="select h-auto b-0 w-fit-content  mb-0">
-                                                                    <div class="select__item lh-1 pl-1 c-dark"></div>
-                                                                    <div class="select__drop right">
-                                                                        <ul class="select__menu">
-                                                                            <li class="select__option">HT</li>
-                                                                        </ul>
-                                                                    </div>
-                                                                </div>
+                                                        <div class="col-md-2 col-sm-4 col-6 pl-0"><p><span class="d-lg-none d-block mb-2 mt-3">ADR</span></p>
+                                                            <label>
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex">
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-n">No</span>
+                                                                    <span class="switch-yn_circle"></span>
+                                                                </span>
+                                                            </label>
+                                                            <div class="d-flex block_resize-input pt-2">
+                                                                <p class="c-blue-gray fs-14 mr-3">IMO class</p>
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-text " value="" placeholder=". . . . .">
+
                                                             </div>
                                                         </div>
-                                                    </div>
+                                                   </div>
                                                 </div>
                                             </div>
                                             <ul class="table__drop collapse pt-1">
-                                                <li class="row">
+                                                 <li class="row">
                                                     <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
                                                         <div class="fs-14 c-blue-gray d-flex">1. OR-835782149872984  
                                                             <button type="button" class="close-small_2 ml-3">
                                                                 <img src="img/gray__cancel.svg" alt="close">
@@ -1046,23 +865,16 @@
                                                     </div>
                                                     <div class="col-lg-8 col-12">
                                                         <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6">
-                                                                <p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span></p>
-                                                                <div class="block_resize-input">
-                                                                    <div class="table__span" style="display: none;"></div>
-                                                                    <input type="text" placeholder=". . . . ." class="input-resize text-left w-min-35" value="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>180</p></div>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="row">
                                                     <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span></p>
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
                                                      
                                                         <div class="fs-14 c-blue-gray d-flex">2. OR-764794812090218
                                                             <button type="button" class="close-small_2 ml-3">
@@ -1072,17 +884,16 @@
                                                     </div>
                                                     <div class="col-lg-8 col-12">
                                                         <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
                                                         </div>
                                                     </div>
                                                 </li>
                                                 <li class="row">
                                                     <div class="col-lg-4 pl-lg-5">
-                                                        <p><span class="d-lg-none d-flex mb-2">ORDER NO:</span</p>
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span</p>
                                                      
                                                         <div class="select h-auto b-0 max-204 mt-1 mb-0">
                                                             <input type="text" class="select__item fs-14 lh-1 px-0 text-italic c-blue-gray underline" placeholder="+ Add new order">
@@ -1100,16 +911,248 @@
                                                     </div>
                                                     <div class="col-lg-8 col-12">
                                                         <div class="row justify-content-between">
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ORDERS</span></p> </div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PACKING</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PRICE</span></p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">QUANTITY</span>50</p></div>
-                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">PALLETS</span></p></div>
-                                                        </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
+                                                       </div>
                                                     </div>
                                                 </li>
                                             </ul>
                                         </li>
+                                           <li class="px-4 bb-1 b-gray2">
+                                            <div class="row table__item align-items-center min-w-55">
+                                                <div class="col-lg-4 col-12">
+                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT</span></p>
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="mr-3">
+                                                            <input type="checkbox" class="checkbox">
+                                                            <span class="checkbox__icon-blue ml-0"></span>
+                                                        </label>
+                                                        <p>QTS 0-20 White Peat, WA, pH 5.5-6.0</p>
+                                                        <img src="img/arrow-drop-down-24-px.svg" alt="arrow drop" class="table__arrow mr-xl-5">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-12">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-2 col-sm-4 col-6"><p class="d-lg-none d-block mb-2 mt-3"><span>Packing type</span></p><p class="d-flex">360 LTR</p> </div>
+                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Quantity</span>180</p></div>
+                                                        <div class="col-md-4 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p>
+                                                            <div class="d-flex">
+                                                                <label class="mr-3">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex b-gray">
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-n">No</span>
+                                                                        <span class="switch-yn_circle bg-gray_4"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-sm-4 col-6 pl-0"><p><span class="d-lg-none d-block mb-2 mt-3">ADR</span></p>
+                                                            <label>
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex">
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-n">No</span>
+                                                                    <span class="switch-yn_circle"></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                            <ul class="table__drop collapse pt-1">
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
+                                                        <div class="fs-14 c-blue-gray d-flex">1. OR-835782149872984  
+                                                            <button type="button" class="close-small_2 ml-3">
+                                                                <img src="img/gray__cancel.svg" alt="close">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>180</p></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
+                                                     
+                                                        <div class="fs-14 c-blue-gray d-flex">2. OR-764794812090218
+                                                            <button type="button" class="close-small_2 ml-3">
+                                                                <img src="img/gray__cancel.svg" alt="close">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span</p>
+                                                     
+                                                        <div class="select h-auto b-0 max-204 mt-1 mb-0">
+                                                            <input type="text" class="select__item fs-14 lh-1 px-0 text-italic c-blue-gray underline" placeholder="+ Add new order">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-74128408373</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840777</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
+                                                       </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        <li class="px-4 bb-1 b-gray2">
+                                            <div class="row table__item align-items-center min-w-55">
+                                                <div class="col-lg-4 col-12">
+                                                    <p><span class="d-lg-none d-block mb-2">PRODUCT</span></p>
+                                                    <div class="d-flex align-items-center">
+                                                        <label class="mr-3">
+                                                            <input type="checkbox" class="checkbox">
+                                                            <span class="checkbox__icon-blue ml-0"></span>
+                                                        </label>
+                                                        <p>QTS 0-20 White Peat, WA, pH 5.5-6.0</p>
+                                                        <img src="img/arrow-drop-down-24-px.svg" alt="arrow drop" class="table__arrow mr-xl-5">
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-8 col-12">
+                                                    <div class="row justify-content-between align-items-center">
+                                                        <div class="col-md-2 col-sm-4 col-6"><p class="d-lg-none d-block mb-2 mt-3"><span>Packing type</span></p><p class="d-flex">360 LTR</p> </div>
+                                                        <div class="col-md-2 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Quantity</span>180</p></div>
+                                                        <div class="col-md-4 col-sm-4 col-6"><p><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p>
+                                                            <div class="d-flex">
+                                                                <label class="mr-3">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex">
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-n">No</span>
+                                                                        <span class="switch-yn_circle"></span>
+                                                                    </span>
+                                                                </label> 
+                                                                <label class="mr-3">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex b-pale-azure">
+                                                                        <span class="switch-y w-25">°C</span>
+                                                                        <span class="switch-n w-25">°F</span>
+                                                                        <span class="switch-yn_circle bg-pale-azure"></span>
+                                                                    </span>
+                                                                </label>
+                                                            </div>
+                                                            <div class="pt-2">
+                                                                <p class="fs-14">-10; +5</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-2 col-sm-4 col-6 pl-0"><p><span class="d-lg-none d-block mb-2 mt-3">ADR</span></p>
+                                                            <label>
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex">
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-n">No</span>
+                                                                    <span class="switch-yn_circle"></span>
+                                                                </span>
+                                                            </label>
+                                                            <div class="pt-2">
+                                                                <p class="fs-14 mr-3">IMO class   AA-1</p>
+                                                            </div>
+                                                        </div>
+                                                   </div>
+                                                </div>
+                                            </div>
+                                            <ul class="table__drop collapse pt-1">
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
+                                                        <div class="fs-14 c-blue-gray d-flex">1. OR-835782149872984  
+                                                            <button type="button" class="close-small_2 ml-3">
+                                                                <img src="img/gray__cancel.svg" alt="close">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>180</p></div>
+                                                         </div>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span></p>
+                                                     
+                                                        <div class="fs-14 c-blue-gray d-flex">2. OR-764794812090218
+                                                            <button type="button" class="close-small_2 ml-3">
+                                                                <img src="img/gray__cancel.svg" alt="close">
+                                                            </button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p> </div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p></div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="row">
+                                                    <div class="col-lg-4 pl-lg-5">
+                                                        <p><span class="d-lg-none d-flex mb-2">Product:</span</p>
+                                                     
+                                                        <div class="select h-auto b-0 max-204 mt-1 mb-0">
+                                                            <input type="text" class="select__item fs-14 lh-1 px-0 text-italic c-blue-gray underline" placeholder="+ Add new order">
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-74128408373</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840888</li>
+                                                                    <li class="select__option">OR-7412840777</li>
+                                                                </ul> 
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-lg-8 col-12">
+                                                        <div class="row justify-content-between">
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Packing type</span></p></div>      
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Quantity</span></p> </div>
+                                                            <div class="col-md-4 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">Temperature control</span></p></div>
+                                                            <div class="col-md-2 col-sm-4 col-6"><p class="fs-14"><span class="d-lg-none d-block mb-2 mt-3">ADR</span>50</p></div>
+                                                         </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
                                     </ul>
                                 </div>
 
@@ -5375,6 +5418,7 @@
 </div>
 
 <script src="vendor/jquery/jquery.min.js"></script>
+<!-- <script src="js/momeny.min.js"></script> -->
 <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 <script src="js/admin.js"></script>

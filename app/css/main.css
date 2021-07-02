@@ -2134,7 +2134,6 @@ button {
   border-color: rgba(183, 188, 214, 0.47) !important; }
 .b-light {
   border-color: #eff8fe !important; }
-
 .c-blue-v1 {
   color: #24b1ff;
   fill: #24b1ff;  }
@@ -2155,8 +2154,10 @@ button {
   color: #222222}
 .c-black {
   color: #141515; }
+.c-gray3 {
+  color: #67758d;}
 .c-gray {
-  color: #b7bcd6 !important; 
+  color: #b7bcd6 !important;
   fill: #b7bcd6;}
 .c-gray2 {
   color: #8992a7;
@@ -2176,7 +2177,6 @@ button {
 .c-orange {
   color: #f99e04!important;
   fill: #f99e04!important;}
-
 .c-green {
   color: #49ddaa;
   fill: #49ddaa; }
@@ -7389,6 +7389,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-height: 300px;}
 .min-h-300 {
   min-height: 300px;}
+.min-h-100 {
+  min-height: 100px;}
 .h-table {
   max-height: calc(100vh - 73px - 1rem - 61px - 92px - 18px - 1.5vw );}
 .way2-content {
@@ -8033,7 +8035,7 @@ padding-top: 15px;}
   max-width: 363px}
 .chat-message {
   border-radius: 10px;
-  padding: 10px 12px 5px 12px;}
+  padding: 10px 12px 0 12px;}
 .chat-window {
   padding: 35px 40px 70px;}
 .chat-content {
@@ -8209,6 +8211,53 @@ padding-top: 15px;}
   min-height: 55px;}
 .pl-40 {
   padding-left: 40px!important;}
+.cout-message {
+  font-size: 10px;
+  color: #fff;
+  width: 18px;
+  height: 18px;
+  background-color: #109cf1;
+  text-align: center;
+  line-height: 18px;
+  position: absolute;
+  right: 0px;
+  bottom: 10px;
+  border-radius: 50%;}
+.ticks {
+  position: absolute;
+  top: 0;
+  right: 0;}
+.ml--6 {
+  margin-left: -6px;}
+.chat-message_screen {
+  padding-bottom: 5px;
+  height: 85px;
+  width: 172px;
+  background-color: #dfe2f2;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;}
+.chat-message_download {
+  min-width: 172px;}
+.chat-files {
+  position: absolute;
+  left: 0;
+  bottom: 100%;}
+.chat-file {
+  margin-right: 12px;
+  margin-bottom: 4px;
+  padding: 6px 7px 13px 13px;
+  border: solid 0.5px rgba(183, 188, 214, 0.43);
+  border-radius: 2px;
+  background-color: #FFFFFF;
+  min-height: 67px;
+  width: 121px;}
+.chat-file_screen {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-color: #dfe2f2;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -8463,24 +8512,20 @@ padding-top: 15px;}
     -ms-flex-pack: center;
     justify-content: center; } 
     .calendar__tables {
-      overflow-x: auto;
-    }
+      overflow-x: auto;}
     .calendar__container table{
       width: 1070px!important;}
     .timetables li {
       font-size: 12px;}
       .calendar__container .td-day {
         height: 100px;
-        padding: 25px 5px 5px 5px;
-      }
+        padding: 25px 5px 5px 5px;}
       .calendar__container .td-day__num {
         font-size: 13px;
         right: 5px;
-        top: 5px;
-      }
+        top: 5px; }
       .base-li li {
-        max-width: 100%;
-      }
+        max-width: 100%;}
       .row__to-do-list .select__drop{
         left: auto;
         right: 0;
@@ -8667,8 +8712,9 @@ padding-top: 15px;}
     padding: 0 15px 15px;}
   .avatar {
     width: 35px;
-    height: 35px;
-  }}
+    height: 35px;}
+  .chat_tab svg {
+    transform: scale(0.7);}}
 
 @media only screen and (max-width: 768px) {
   .popup__booking-detail {

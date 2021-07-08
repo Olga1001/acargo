@@ -820,6 +820,8 @@ button {
   right: 36px;}
 .arrow-right-0:before {
   right: 0;}
+.arrow-r-13:before {
+  right: 13px}
 .arrow-drop {
   width: 0;
   height: 0;
@@ -7288,6 +7290,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   display: block;}
 .max-w-170 {
   max-width: 170px!important;}
+.max-w-100 {
+  max-width: 100px!important;}
 .min-w-100px{
   min-width: 100px!important;}
 .max-725 {
@@ -7826,8 +7830,9 @@ padding-top: 15px;}
 .points-from-to .relative{
   min-height: initial;
   display: grid;}
+  .points-from-to .circle {
+    background-color: #109cf1;}
 .circle  {
-  /* background-color: #109cf1; */
   border-radius: 50%;}
 .w-9 {
   width: 9px;
@@ -8311,6 +8316,41 @@ padding-top: 15px;}
   max-height: 340px;}
 .dropdown-menu .chat-list li:hover {
   background-color: #e2f3fd;}
+.check-type {
+  width: 144px;
+  text-align: center;
+  display: block;
+  position: relative;
+  padding: 16px 0 12px 0;
+  border-radius: 6px;
+  border: solid 0.5px #b7bcd6;}
+.check-type:before {
+  content: none;
+  position: absolute;
+  right: -3px;
+  top: -6px;
+  z-index: 1;
+  background: #156ce4 url("../img/check-white.svg") no-repeat center / 50%;
+  border-radius: 50%;
+  width: 17px;
+  height: 17px;}
+  .check-type .fs-13 {
+    position: absolute;
+    left: 19px;
+    top: -7px;
+    padding: 0 5px 0 6px;
+    background-color: #ffffff;
+    z-index: 1;
+  }
+  .checbox:checked ~ .check-type {
+    border-color: #156ce4;
+    border-width: 1px;
+  }
+  .checkbox:checked ~ span.check-type svg {
+    fill: #156ce4!important;
+  }
+.checbox:checked ~ span.check-type:before {
+  content: '';}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

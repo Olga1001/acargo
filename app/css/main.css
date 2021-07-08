@@ -1830,6 +1830,8 @@ button {
   background-color: #eff8fe61!important;}
 .bg-white {
   background-color: #ffffff; }
+.bg-white-op-8 {
+  background-color: rgba(255, 255, 255, 0.8); }
 .bg-blue {
   background-color: #156ce4!important; }
 .bg-blue-bright {
@@ -8044,7 +8046,7 @@ padding-top: 15px;}
   scrollbar-width: thin;
   scrollbar-color: rgba(183, 188, 214, 0.37) #f5fcff;
   overflow-y: auto;
-  max-height: calc(100vh - 369px);
+  max-height: calc(100vh - 361px);
   padding: 35px 40px 15px;}
 .chat-content {
   display: flex;
@@ -8062,6 +8064,10 @@ padding-top: 15px;}
   .chat-window::-webkit-scrollbar-button {
     display: none; }
   .dropdown-body {
+    overflow-y: auto;
+    min-height: 280px;
+    max-height: 410px;
+    position: relative;
     scrollbar-color: rgba(183, 188, 214, 0.37) #ffffff;
     scrollbar-width: thin;}
   .dropdown-body::-webkit-scrollbar {
@@ -8074,7 +8080,24 @@ padding-top: 15px;}
     background: rgba(183, 188, 214, 0.37);}
   .dropdown-body::-webkit-scrollbar-button {
     display: none; }
+    .b-2 {
+      border: 2px solid rgba(183, 188, 214, 0.48);}
+    .drop-file-absolute {
+      display: none;
+      z-index: 1;
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;}
+      .drop-file-absolute .b-2{
+        border-style: dashed!important;
+      }
+      .drop-file-absolute.active{
+        display: block;
+      }
 .chat-content_b {
+  z-index: 2;
   padding: 15px 40px 35px;
   position: absolute;
   background-color: #f5fcff;
@@ -8157,10 +8180,6 @@ padding-top: 15px;}
 .chat-popup__body {
   background-color: #fff;
   max-width: 385px;}
-.dropdown-body {
-  overflow-y: auto;
-  min-height: 280px;
-  max-height: 410px;}
 .chat-popup_message {
   border-radius: 10px;
   padding: 10px 15px;}

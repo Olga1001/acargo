@@ -397,6 +397,13 @@ button {
   height: 42px;
   border-radius: 4px;
   border: solid 1px #b7bcd6; }
+  .select.small {
+    height: 33px; }
+    .select.small:before {
+      right: 6px; }
+  .select.small .select__item {
+    padding: 0 22px 0 10px;
+    line-height: 31px;}
   .select:before {
     content: '';
     position: absolute;
@@ -618,12 +625,27 @@ button {
   background-position-x: 0;}
 .input-date.right-0 {
   background-position-x: 99%}
+.input-date.small {
+  font-size: 14px;
+  background-position: left 10px center;
+  background-size: 13px;
+  height: auto;
+  line-height: 1;
+  padding: 5px 10px 5px 30px;}
 .input-time {
   background: url("../img/wall-clock.svg") no-repeat right 2px center/ 17px;}
   .input-time.right {
     background-position-x: calc(100% - 15px);}
   .input-time.left {
-    background-position-x: 0;}
+    padding-left: 30px;
+    background-position-x: 10px;}
+    .input-time.small {
+      font-size: 14px;
+      background-position: left 10px center;
+      background-size: 13px;
+      height: auto;
+      line-height: 1;
+      padding: 5px 10px 5px 30px;}
 .input-search {
   padding: 13px 20px 13px 53px;
   border-radius: 4px;
@@ -1828,6 +1850,8 @@ button {
   background-color: rgba(231, 245, 254, 0.51); }
 .bg-light-white {
   background-color: #f6f9fc;}
+.bg-light-white2 {
+  background-color: rgba(16, 156, 241, 0.03);}
 .bg-light_05 {
   background-color: #eff8fe61!important;}
 .bg-white {
@@ -3990,8 +4014,8 @@ button {
 
 .pre-carriage__card_v2 {
   background: rgba(16, 156, 241, 0.03);
-  padding: 0 25px 40px 25px;
-  max-height: 220px;
+  padding: 0 25px 30px 25px;
+  max-height: 250px;
   height: 100%;
   overflow-y: auto;
   scrollbar-color: #b7bcd6 #fff;
@@ -6738,8 +6762,6 @@ button {
   left: 50%;
   top: 50%;
   transform: translate(-50%,-50%);}
-.min-w-auto {
-  min-width: auto;}
 .min-w-80 {
   min-width: 80px;}
 .min-w-90 {
@@ -7288,6 +7310,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   height: calc(100vh - 532px);} */
 .btn-notes:hover .notes-window {
   display: block;}
+.max-w-130 {
+  max-width: 130px;}
+.max-w-140 {
+  max-width: 140px;}
 .max-w-170 {
   max-width: 170px!important;}
 .max-w-100 {
@@ -8374,14 +8400,18 @@ padding-top: 15px;}
   .checbox:checked ~ .check-type {
     border-color: #156ce4;
     border-width: 1px;}
-  .checkbox:checked ~ span.check-type svg {
+  .checkbox:checked ~ .check-type svg {
     fill: #156ce4!important;}
-.checbox:checked ~ span.check-type:before {
+.checkbox:checked ~ .check-type:before {
   content: '';}
 .chat-head {
   min-height: 144px;
   display: flex;
   align-items: center;}
+  .btns .btn-aquamarine.small {
+    width: 36px;
+    height: 36px;
+  }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

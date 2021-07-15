@@ -398,7 +398,7 @@
                             <div class="table__head px-0 py-3 d-none d-lg-block">
                                 <div class="row justify-content-between mx-0">
                                     <div class="col-3 pl-3">
-                                        <p class="ml-5 pl-4 weight-medium text-initial">Order No.</p>
+                                        <p class="ml-5 pl-3 weight-medium text-initial">Order No.</p>
                                     </div>
                                     <div class="col-2 "><p class="weight-medium text-initial">Ready date</p></div>
                                     <div class="col-4 "><p class="weight-medium text-initial">Loading date</p></div>
@@ -410,12 +410,11 @@
                                     <div class="row justify-content-between align-items-lg-center mx-0">
                                         <div class="col-md-3 col-12">
                                             <p><span class="d-lg-none d-block mb-2 mt-3">Order No.:</span></p>
-                                            <div class="d-flex align-items-center">
-                                                <button class="close close-small ml-3">
-                                                    <img src="img/cancel.svg" alt="close">
-                                                </button>
-                                                <p class="ml-lg-5 ml-2">P20-8508-735-5828</p>
-                                            </div>
+                                            <label class="checkbox__blue d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checkbox__icon-blue ml-4 mr-lg-4"></span>
+                                                <span>P20-8508-735-5828</span>
+                                            </label>
                                         </div>
                                         <div class="col-lg-2 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">READY DATE:</span>15 Apr.</p> </div>
                                         <div class="col-lg-4 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3 ">LOADING DATE:</span></p>
@@ -456,12 +455,11 @@
                                     <div class="row justify-content-between align-items-lg-center mx-0">
                                         <div class="col-md-3 col-12">
                                             <p><span class="d-lg-none d-block mb-2 mt-3">Order No.:</span></p>
-                                            <div class="d-flex align-items-center">
-                                                <button class="close close-small ml-3">
-                                                    <img src="img/cancel.svg" alt="close">
-                                                </button>
-                                                <p class="ml-lg-5 ml-2">P20-8508-735-5828</p>
-                                            </div>
+                                            <label class="checkbox__blue d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checkbox__icon-blue ml-4 mr-lg-4"></span>
+                                                <span>P20-8508-735-5828</span>
+                                            </label>
                                         </div>
                                         <div class="col-lg-2 col-6"><p><span class="d-lg-none d-flex mb-2 mt-3">READY DATE:</span></p> 
                                             <div class="block_resize-input ">
@@ -528,29 +526,29 @@
                                 </div>
                                 <div class="col-md-8 col-6">
                                     <div class="row">
-                                        <div class="col-xl-3 mb-3 pr-xl-3">
+                                        <div class="col-xl-3 mb-3 pr-xl-0">
                                             <p class="text-14">Loading date </p>
-                                            <input type="text" class=" input-date pr-3" value="Apr. 15:00 - Apr. 18">
+                                            <input type="text" class=" input-date pr-3 small-icon" value="Apr. 15:00 - Apr. 18">
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3 pr-xl-5">
+                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3 pr-xl-3 pl-xl-4">
                                             <p class="text-14">Loading time </p>
-                                            <input type="text" class=" input-time left " value="15:00 - 18:00">
+                                            <input type="text" class=" input-time left small-icon" value="15:00 - 18:00">
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                                        <div class="col-xl-4 col-sm-6 mb-3 pl-xl-5">
                                             <p class="text-14">GPS coordinate</p>
                                             <input type="text" class="" value="45’ 578, 32’75">
                                         </div>
                                     </div>
                                     <div class="row">
-                                        <div class="col-xl-3 mb-3 pr-xl-3">
+                                        <div class="col-xl-3 mb-3 pr-xl-0">
                                             <p class="text-14">Delivery date  </p>
-                                            <input type="text" class=" input-date pr-3" value="Apr. 15:00 - Apr. 18">
+                                            <input type="text" class=" input-date pr-3 small-icon" value="Apr. 15:00 - Apr. 18">
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3 pr-xl-5">
+                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3 pr-xl-3 pl-xl-4">
                                             <p class="text-14">Delivery time </p>
-                                            <input type="text" class=" input-time left " value="15:00 - 18:00">
+                                            <input type="text" class=" input-time left small-icon" value="15:00 - 18:00">
                                         </div>
-                                        <div class="col-xl-3 col-lg-4 col-sm-6 mb-3">
+                                        <div class="col-xl-4 col-sm-6 mb-3 pl-xl-5">
                                             <p class="text-14">GPS coordinate</p>
                                             <input type="text" class="" value="45’ 578, 32’75">
                                         </div>
@@ -661,12 +659,15 @@
                                         </span>
                                     </label>
                                     <label class="mr-4 pr-1 mt-3">
-                                        <input type="radio" name="type"  class="checkbox">
-                                        <span class="check-type">
-                                            <span class="fs-13">Road train</span>
-                                            <svg class="svg-sprite-icon c-gray" width="70px" height="17px">
-                                                <use xlink:href="img/sprite/symbol/sprite.svg#road-train"></use>
-                                              </svg>
+                                        <span class="relative">
+                                            <input type="radio" name="type" class="checkbox">
+                                            <span class="check-type">
+                                                <img src="img/check2.svg" alt="check" class="check-date_icon">
+                                                <span class="fs-13">Road train</span>
+                                                <svg class="svg-sprite-icon c-gray" width="70px" height="17px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#road-train"></use>
+                                                  </svg>
+                                            </span>
                                         </span>
                                     </label>
                                 </div>

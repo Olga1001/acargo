@@ -632,6 +632,7 @@ button {
   height: auto;
   line-height: 1;
   padding: 5px 10px 5px 30px;}
+
 .input-time {
   background: url("../img/wall-clock.svg") no-repeat right 2px center/ 17px;}
   .input-time.right {
@@ -646,6 +647,11 @@ button {
       height: auto;
       line-height: 1;
       padding: 5px 10px 5px 30px;}
+.input-time.small-icon, .input-date.small-icon  {
+  background-size: 13px;
+  padding-left: 37px;
+  background-position: left 14px center;
+}
 .input-search {
   padding: 13px 20px 13px 53px;
   border-radius: 4px;
@@ -6812,7 +6818,7 @@ button {
   position: relative;
   padding-right: 70px;}
 .base-border.bg-gray {
-  background-color: rgba(183, 188, 214, 0.2);
+  background-color: rgba(183, 188, 214, 0.2)!important;
   border-color: transparent;}
 .base-border:before {
   content: '';
@@ -8374,9 +8380,9 @@ padding-top: 15px;}
   text-align: center;
   display: block;
   position: relative;
-  padding: 16px 0 12px 0;
+  border: 0.5px solid #b7bcd6;
   border-radius: 6px;
-  border: solid 0.5px #b7bcd6;}
+  padding: 16px 0 12px 0;}
 .check-type:before {
   content: none;
   position: absolute;
@@ -8387,28 +8393,29 @@ padding-top: 15px;}
   border-radius: 50%;
   width: 17px;
   height: 17px;}
-  .check-type .fs-13 {
-    position: absolute;
-    left: 19px;
-    top: -7px;
-    padding: 0 5px 0 6px;
-    background-color: #ffffff;
-    z-index: 1;}
-  .checbox:checked ~ .check-type {
-    border-color: #156ce4;
-    border-width: 1px;}
-  .checkbox:checked ~ .check-type svg {
-    fill: #156ce4!important;}
+.check-type .fs-13 {
+  position: absolute;
+  left: 19px;
+  top: -7px;
+  padding: 0 5px 0 6px;
+  background-color: #ffffff;
+  z-index: 1;}
+.checkbox:checked ~ span.check-type {
+  border-color: #156ce4!important;
+  border-width: 1px;}
+.checkbox:checked ~ .check-type img {
+  display: block;}
+.checkbox:checked ~ .check-type svg {
+  fill: #156ce4!important;}
 .checkbox:checked ~ .check-type:before {
   content: '';}
 .chat-head {
   min-height: 144px;
   display: flex;
   align-items: center;}
-  .btns .btn-aquamarine.small {
-    width: 36px;
-    height: 36px;
-  }
+.btns .btn-aquamarine.small {
+  width: 36px;
+  height: 36px;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

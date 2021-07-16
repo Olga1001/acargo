@@ -632,7 +632,11 @@ button {
   height: auto;
   line-height: 1;
   padding: 5px 10px 5px 30px;}
+.input-date.big {
+  background-position-x: 17px;
+  background-size: 19px;
 
+}
 .input-time {
   background: url("../img/wall-clock.svg") no-repeat right 2px center/ 17px;}
   .input-time.right {
@@ -1854,12 +1858,16 @@ button {
   background-color: rgba(249, 158, 4, 0.15); }
 .bg-light-blue {
   background-color: rgba(231, 245, 254, 0.51); }
+.bg-light-blue1 {
+  background-color: #e7f5fe; }
 .bg-light-white {
   background-color: #f6f9fc;}
 .bg-light-white2 {
   background-color: rgba(16, 156, 241, 0.03);}
 .bg-light_05 {
   background-color: #eff8fe61!important;}
+.bg-light_06 {
+  background-color: #eff8fe!important;}
 .bg-white {
   background-color: #ffffff; }
 .bg-white-op-8 {
@@ -7324,6 +7332,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   max-width: 140px;}
 .max-w-170 {
   max-width: 170px!important;}
+.max-w-210 {
+  max-width: 210px!important;}
 .max-w-100 {
   max-width: 100px!important;}
 .max-w-610 {
@@ -7338,6 +7348,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   max-height: 107px;}
 .max-204 {
   max-width: 204px!important;}
+.max-w-fit-content {
+  max-width: fit-content;}
   .way_3 {
     padding: 0 0 30px 0;}
 .way_3 .way__line {
@@ -7489,6 +7501,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-width: 1210px;}
 .min-w-900 {
   min-width: 900px;}
+.min-w-440 {
+  min-width: 440px;}
 .scroll-x {
   overflow-x: auto;
   scrollbar-color: #b7bcd6 #ffffff;
@@ -7597,6 +7611,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   display: -ms-inline-flexbox;
   display: inline-flex;
   padding: 15px;}
+.popup-h {
+  min-height: calc(100vh - 71px)}
 .popup_v3 .box-white {
   max-width: 800px;
   width: 100%;
@@ -8421,13 +8437,10 @@ padding-top: 15px;}
   width: 36px;
   height: 36px;}
 .btn-arrow2 {
-  padding: 0 10px;
-}
+  padding: 0 10px;}
 .btn-arrow2-prev {
-  margin-left: -26px;
   transform: scaleX(-1);
-}
-.btn-arrow2-next {
+  margin-left: -24px;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -8560,6 +8573,8 @@ padding-top: 15px;}
     padding: 0 10px;
     font-size: 12px; }}
 @media only screen and (max-width: 1199px) {
+  .popup-h {
+    min-height: calc(100vh - 60px)}
   .search-calendar {
     width: 100%;}
   .table_v3 {
@@ -8702,6 +8717,8 @@ padding-top: 15px;}
         right: 0;
       }}
 @media only screen and (max-width: 991px) {
+  .btn-arrow2 {
+    display: none;}
   .check-tabs label {
     width: 33.33%;}
   .line-broad {
@@ -9098,6 +9115,7 @@ padding-top: 15px;}
     min-width: 640px; }}
 
 @media only screen and (max-width: 575px) {
+
   .check-tabs label {
     width: 50%;}
   .base-border {

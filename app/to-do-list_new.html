@@ -225,55 +225,64 @@
                     </button>
                   </div>
                 </div>
-                <div class="d-flex flex-wrap filters">
-                  <div class="select bg-white mr-3 mb-3">
+                <div class="d-flex flex-wrap justify-content-between">
+                  <div class="d-flex flex-wrap filters">
+                    <div class="select bg-white mr-3 mb-3">
                       <div class="select__item">All tasks</div>
                       <div class="select__drop">
-                          <ul class="select__menu">
-                              <li class="select__option active">All tasks</li>
-                              <li class="select__option">All tasks</li>
-                          </ul>
+                        <ul class="select__menu">
+                          <li class="select__option active">All tasks</li>
+                          <li class="select__option">All tasks</li>
+                        </ul>
                       </div>
-                  </div>
-               
-                  <div class="select bg-white disabled mr-3 mb-3">
+                    </div>
+
+                    <div class="select bg-white disabled mr-3 mb-3">
                       <div class="select__item text-italic">Time left</div>
                       <div class="select__drop">
-                          <ul class="select__menu">
-                              <li class="select__option active">Time left</li>
-                              <li class="select__option">Time left</li>
-                          </ul>
-                      </div>
-                  </div>
-                  <div class="select bg-white disabled mr-3 mb-3">
-                    <div class="select__item text-italic">View tasks</div>
-                    <div class="select__drop">
                         <ul class="select__menu">
-                            <li class="select__option active">View tasks</li>
-                            <li class="select__option">View tasks</li>
+                          <li class="select__option active">Time left</li>
+                          <li class="select__option">Time left</li>
                         </ul>
+                      </div>
+                    </div>
+                    <div class="select bg-white disabled mr-3 mb-3">
+                      <div class="select__item text-italic">View tasks</div>
+                      <div class="select__drop">
+                        <ul class="select__menu">
+                          <li class="select__option active">View tasks</li>
+                          <li class="select__option">View tasks</li>
+                        </ul>
+                      </div>
                     </div>
                   </div>
+                  <div class="d-flex mb-3 max-w-610 w-100">
+                    <input type="text">
+                    <button type="button" class="bg-green btn-search br-4 b-0 py-2 ml--1  px-3 h-auto">
+                      <img src="img/search-white.svg" alt="search" class="icon-search mx-auto">
+                    </button>
+                  </div>
                 </div>
+
               </div>
               <div class="row py-2 px-sm-3 bg-blue-v1 mx-0 d-xl-flex d-none">
                 <div class="col-4"><p class="fs-18 c-white weight-medium text-up">To-do</p></div>
                 <div class="col-4"><p class="fs-18 c-white weight-medium text-up">risk</p></div>
                 <div class="col-4"><p class="fs-18 c-white weight-medium text-up">Late</p></div>
               </div>
-              <div class="row my-4 px-sm-3 mx-0 justify-content-between row__to-do-list">
+              <div class="row pb-4 px-sm-3 mx-0 justify-content-between row__to-do-list">
                 <div class="col-xl-4 col-lg-6 pt-3 ">
                   <p class="fs-18 c-white weight-medium text-up d-xl-none py-2 px-3 bg-blue-v1 mb-3">To-do</p>
                   <ul class="max-360">
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">3</span>
+                    <li class="shadow3 d-flex mb-2">
+                      <div class="p-3 bg-light-blue d-inline-flex">
+                        <p class="fs-14 c-dark text-center m-auto">
+                          <span class="weight-medium c-blue ">3</span>
                           Days
                         </p>
                       </div>
                       <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-between">
                           <p>Missing booking</p>
                           <div class="select select-normal select-noarrow b-0 h-auto w-min">
                             <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
@@ -323,285 +332,12 @@
                             </div>
                           </div>
                         </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13 mr-2">K.H</p>
-                            <p class="fs-13 mr-2">A.H</p>
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13 mr-2">K.H</p>
-                            <p class="fs-13 mr-2">A.H</p>
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13 mr-2">K.H</p>
-                            <p class="fs-13 mr-2">A.H</p>
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13 mr-2">K.H</p>
-                            <p class="fs-13 mr-2">A.H</p>
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13 mr-2">K.H</p>
-                            <p class="fs-13 mr-2">A.H</p>
-                            <p class="fs-13">V.H</p>
-                          </div>
+                        <p class="fs-14 c-blue-gray pb-1 bb-1">OR - AA378239844</p>
+                        <div class="d-flex flex-wrap pt-1 fs-13 c-blue-gray">
+                          <p class="mr-2 pt-1">K.H</p>
+                          <p class="mr-2 pt-1">A.H</p>
+                          <p class="mr-2 pt-1">V.H</p>
+                          <p class="mr-2 pt-1">K.H</p>
                         </div>
                       </div>
                     </li>
@@ -610,318 +346,74 @@
                 <div class="col-xl-4 col-lg-6 pt-3 ">
                   <p class="fs-18 c-white weight-medium text-up d-xl-none py-2 px-3 bg-blue-v1 mb-3">risk</p>
                   <ul class="max-360">
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">8</span>
-                          Hours
+                    <li class="shadow3 d-flex mb-2">
+                      <div class="p-3 bg-light-blue d-inline-flex">
+                        <p class="fs-14 c-dark text-center m-auto">
+                          <span class="weight-medium c-blue ">3</span>
+                          Days
                         </p>
                       </div>
                       <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-between">
                           <p>Missing booking</p>
                           <div class="select select-normal select-noarrow b-0 h-auto w-min">
                             <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
+                            <div class="select__drop bg-white">
+                              <div class="select__menu mxh-auto px-2">
+                                <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
+                                  <input type="text" class="select__item lh-1" value="">
                                 </div>
+                                <div class="dropdown-menu__content">
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="">
-                          <p class="fs-13 c-blue-gray">Order: 4394368</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">8</span>
-                          Hours
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p class="fs-13 c-blue-gray">Order: 4394368</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">8</span>
-                          Hours
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p class="fs-13 c-blue-gray">Order: 4394368</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">8</span>
-                          Hours
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p class="fs-13 c-blue-gray">Order: 4394368</p>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-navy-blue text-center">
-                          <span class="weight-medium c-blue-gray">8</span>
-                          Hours
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="">
-                          <p class="fs-13 c-blue-gray">Order: 4394368</p>
+                        <p class="fs-14 c-blue-gray pb-1 bb-1">OR - AA378239844</p>
+                        <div class="d-flex flex-wrap pt-1 fs-13 c-blue-gray">
+                          <p class="mr-2 pt-1">K.H</p>
+                          <p class="mr-2 pt-1">A.H</p>
+                          <p class="mr-2 pt-1">V.H</p>
+                          <p class="mr-2 pt-1">K.H</p>
+                          <p class="mr-2 pt-1">K.H</p>
+                          <p class="mr-2 pt-1">A.H</p>
+                          <p class="mr-2 pt-1">V.H</p>
+                          <p class="mr-2 pt-1">K.H</p>
                         </div>
                       </div>
                     </li>
@@ -930,333 +422,70 @@
                 <div class="col-xl-4 col-lg-6 pt-3 ">
                   <p class="fs-18 c-white weight-medium text-up d-xl-none py-2 px-3 bg-blue-v1 mb-3">Late</p>
                   <ul class="max-360">
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-orange text-center">
-                          <span class="weight-medium">- 3</span>
+                    <li class="shadow3 d-flex mb-2">
+                      <div class="p-3 bg-light-blue d-inline-flex">
+                        <p class="fs-14 c-dark text-center m-auto">
+                          <span class="weight-medium c-orange">- 3</span>
                           Days
                         </p>
                       </div>
                       <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
+                        <div class="d-flex align-items-center justify-content-between">
                           <p>Missing booking</p>
                           <div class="select select-normal select-noarrow b-0 h-auto w-min">
                             <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white right">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
+                            <div class="select__drop bg-white">
+                              <div class="select__menu mxh-auto px-2">
+                                <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
+                                  <input type="text" class="select__item lh-1" value="">
                                 </div>
+                                <div class="dropdown-menu__content">
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                  <label class="d-flex align-items-center mb-3">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="checkbox__icon-blue ml-0 mr-3"></span>
+                                    <span class="fs-14 c-dark">Anna Semenkova</span>
+                                  </label>
+                                </div>
+                              </div>
                             </div>
                           </div>
                         </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-orange text-center">
-                          <span class="weight-medium">- 3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white right">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-orange text-center">
-                          <span class="weight-medium">- 3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white right">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-orange text-center">
-                          <span class="weight-medium">- 3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white right">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13">V.H</p>
-                          </div>
-                        </div>
-                      </div>
-                    </li>
-                    <li class="shadow3 d-flex mb-3">
-                      <div class="p-3 bg-light-blue">
-                        <p class="fs-14 c-orange text-center">
-                          <span class="weight-medium">- 3</span>
-                          Days
-                        </p>
-                      </div>
-                      <div class="p-2 pl-3 w-100">
-                        <div class="d-flex align-items-center justify-content-between mb-2">
-                          <p>Missing booking</p>
-                          <div class="select select-normal select-noarrow b-0 h-auto w-min">
-                            <div class="select__item lh-1 fs-14 p-0"> <img src="img/add-user.svg" alt="add-user" width="15px" height="15px" class="ml-auto"></div>
-                              <div class="select__drop bg-white right">
-                                <div class="select__menu mxh-auto px-2">
-                                    <div class="select select-search select-noarrow py-2 b-0 h-auto bg-light-blue w-100 mb-3">
-                                      <input type="text" class="select__item lh-1" value="">
-                                    </div>
-                                    <div class="dropdown-menu__content">
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                      <label class="d-flex align-items-center mb-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue ml-0 mr-3"></span>
-                                        <span class="fs-14 c-dark">Anna Semenkova</span>
-                                      </label>
-                                    </div>
-                                </div>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="d-flex flex-wrap align-items-center justify-content-between">
-                          <p class="fs-13 c-blue-gray mr-2">Order: 4394368</p>
-                          <div class="d-flex">
-                            <p class="fs-13">V.H</p>
-                          </div>
+                        <p class="fs-14 c-blue-gray pb-1 bb-1">OR - AA378239844</p>
+                        <div class="d-flex flex-wrap pt-1 fs-13 c-blue-gray">
+                          <p class="mr-2 pt-1">K.H</p>
+                          <p class="mr-2 pt-1">A.H</p>
+                          <p class="mr-2 pt-1">V.H</p>
+                          <p class="mr-2 pt-1">K.H</p>
                         </div>
                       </div>
                     </li>

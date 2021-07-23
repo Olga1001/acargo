@@ -254,9 +254,11 @@ $(document).ready(function () {
       if ($(window).scrollTop() > 1) {
         $(".sticky").addClass('active');
         $(".topbar").slideUp(0);
+        $(".box-head").addClass('fixed-top');
       } else {
         $(".sticky").removeClass('active');
         $(".topbar").slideDown(0);
+        $(".box-head").removeClass('fixed-top');
       }
     }
     if ($(window).scrollTop() > 1) {

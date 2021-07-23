@@ -267,7 +267,6 @@ $(document).ready(function () {
     } else {
       $(".popup__booking-detail").removeClass('top-0');
       $(".popup__company-info").removeClass('top-0');
-
     }
   });
 }); 
@@ -282,44 +281,44 @@ $(document).ready(function () {
   $(".input__clear").click(function (e) {
     $(this).find(".drop").toggleClass('active').parents().siblings().find(".drop").removeClass('active');
   });
-  if (document.querySelectorAll('[data-slider]')) {
-    $("input.range-way").bootstrapSlider({
-      value: [1, 6],
-      ticks: [1, 2, 3, 4, 5, 6],
-      ticks_labels: [' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>', '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LI</p><p class="text-13 c-dark">Liner out</p>', '<img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon way__item-icon__boat"><p class="text-16">CY-CY</p><p class="text-13 c-dark">Ocean freight</p>', '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LO</p><p class="text-13 c-dark">Liner out</p>', '<img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon way__item-icon__car"><p class="text-16">FOT</p><p class="text-13 c-dark">Free on truck</p>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>'],
-      look_to_sticks: true
-    });
-    $("input.range-way2").bootstrapSlider({
-      value: [1, 4],
-      ticks: [1, 2, 3, 4],
-      ticks_labels: [' <img src="img/buildings.svg" alt="icon" class="way__item-icon"> <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_1</p>', '<img src="img/buildings.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_2</p>', '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>', '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><p class="text-14 c-gray">Delivery_2</p>'],
-      look_to_sticks: true
-    });
-    $("input.range-way3").bootstrapSlider({
-      value: [1, 6],
-      ticks: [1, 2, 3, 4, 5, 6],
-      ticks_labels: [' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"> <img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-center"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'],
-      look_to_sticks: true
-    });
-    $("input.range-way4").bootstrapSlider({
-      value: [1, 7],
-      ticks: [1, 2, 3, 4, 5, 6, 7],
-      ticks_labels: ['<img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-train"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'],
-      look_to_sticks: true
-    }); //click on arrow in page order table sea
-    $("input.range-way5").bootstrapSlider({
-      value: [1, 4],
-      ticks: [1, 2, 3, 4],
-      ticks_labels: [' <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">UAODS</p> ', '<img src="img/boat.svg" alt="icon" class="way__item-truck" height="22px"><p class="text-14 c-gray">UAODS</p>', '<img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>'],
-      look_to_sticks: true
-    }); 
-    $("input.range-way6").bootstrapSlider({
-      value: [1, 4],
-      ticks: [1, 2, 3, 4],
-      ticks_labels: ['<img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> ', '<p class="fs-14 text-center">POL <span class="fs-14 d-block">RUCAVA, LV</span></p>', '<img src="img/boat.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">POD <span class="fs-14 d-block">RUCAVA, LV</span></p>',' <img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> '],
-      look_to_sticks: true
-    }); 
-  }
+  // if (document.querySelectorAll('[data-slider]') != '') {
+  //   $("input.range-way").bootstrapSlider({
+  //     value: [1, 6],
+  //     ticks: [1, 2, 3, 4, 5, 6],
+  //     ticks_labels: [' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>', '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LI</p><p class="text-13 c-dark">Liner out</p>', '<img src="img/icon-ocean-3.svg" alt="icon" class="way__item-icon way__item-icon__boat"><p class="text-16">CY-CY</p><p class="text-13 c-dark">Ocean freight</p>', '<img src="img/icon-ocean-2.svg" alt="icon" class="way__item-icon"><p class="text-16">LO</p><p class="text-13 c-dark">Liner out</p>', '<img src="img/icon-ocean-4.svg" alt="icon" class="way__item-icon way__item-icon__car"><p class="text-16">FOT</p><p class="text-13 c-dark">Free on truck</p>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon"><p class="text-16">DO</p><p class="text-13 c-dark">Haulage</p>'],
+  //     look_to_sticks: true
+  //   });
+  //   $("input.range-way2").bootstrapSlider({
+  //     value: [1, 4],
+  //     ticks: [1, 2, 3, 4],
+  //     ticks_labels: [' <img src="img/buildings.svg" alt="icon" class="way__item-icon"> <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_1</p>', '<img src="img/buildings.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Loading_2</p>', '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>', '<img src="img/holidays.svg" alt="icon" class="way__item-icon"><p class="text-14 c-gray">Delivery_2</p>'],
+  //     look_to_sticks: true
+  //   });
+  //   $("input.range-way3").bootstrapSlider({
+  //     value: [1, 6],
+  //     ticks: [1, 2, 3, 4, 5, 6],
+  //     ticks_labels: [' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"> <img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-center"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'],
+  //     look_to_sticks: true
+  //   });
+  //   $("input.range-way4").bootstrapSlider({
+  //     value: [1, 7],
+  //     ticks: [1, 2, 3, 4, 5, 6, 7],
+  //     ticks_labels: ['<img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox" ><span class="checkbox__icon-blue m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-6.svg" alt="icon" class="way__item-icon way__item-icon-train"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/icon-ocean-5.svg" alt="icon" class="way__item-icon way__item-icon-forklift way__item-icon-rotate"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', '<img src="img/architecture-and-city-1.svg" alt="icon" class="way__item-icon way__item-icon-house"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox"  ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>', ' <img src="img/icon-ocean-1.svg" alt="icon" class="way__item-icon way__item-icon-point"><label class="d-flex justify-content-center checkbox__range"><input type="checkbox" class="checkbox " ><span class="checkbox__icon-blue  m-0 mr-2"></span><span class="text-16">DO</span></label>'],
+  //     look_to_sticks: true
+  //   }); //click on arrow in page order table sea
+  //   $("input.range-way5").bootstrapSlider({
+  //     value: [1, 4],
+  //     ticks: [1, 2, 3, 4],
+  //     ticks_labels: [' <img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">UAODS</p> ', '<img src="img/boat.svg" alt="icon" class="way__item-truck" height="22px"><p class="text-14 c-gray">UAODS</p>', '<img src="img/delivery-truck-1.svg" alt="icon" class="way__item-truck"><p class="text-14 c-gray">Delivery_1</p>'],
+  //     look_to_sticks: true
+  //   });
+  //   $("input.range-way6").bootstrapSlider({
+  //     value: [1, 4],
+  //     ticks: [1, 2, 3, 4],
+  //     ticks_labels: ['<img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> ', '<p class="fs-14 text-center">POL <span class="fs-14 d-block">RUCAVA, LV</span></p>', '<img src="img/boat.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">POD <span class="fs-14 d-block">RUCAVA, LV</span></p>',' <img src="img/delivery-truck-1.svg" alt="icon" height="22px" width="22px"><p class="fs-14 text-center">DOOR <span class="fs-14 d-block">RUCAVA, LV</span></p> '],
+  //     look_to_sticks: true
+  //   });
+  // }
  
   $(".click__more").click(function (e) {
     e.preventDefault();

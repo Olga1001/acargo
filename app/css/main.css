@@ -1824,6 +1824,8 @@ button {
   background-color: #f5e943;}
 .bg-gray {
   background-color: #b7bcd6!important; }
+.bg-gray-03 {
+  background-color: rgba(183, 188, 214,0.3); }
 .bg-gray-light {
   background-color: #d8dfed;}
 .bg-gray_2 {
@@ -5069,15 +5071,15 @@ button {
   display: block;
   position: relative;}
 .check-date_icon {
-  display: none;
+  display: none!important;
   z-index: 2;
   position: absolute;
   top: -7px;
   right: -7px;
-  width: 17px;
+  width: 17px!important;
   height: 17px;}
 .checkbox:checked ~ .check-date .check-date_icon {
-  display: block;}
+  display: block!important;}
 .checkbox:checked ~ .check-date {
   border-color: #156ce4}
 .checkbox:checked ~ .check-icon-edit {
@@ -7751,7 +7753,7 @@ padding-top: 15px;}
   -webkit-transform: translate(-50%, -50%) rotate(90deg);
   -ms-transform: translate(-50%, -50%) rotate(90deg);
   transform: translate(-50%, -50%) rotate(90deg);}
-.collapsed .btn-plus:after {
+.collapsed .btn-plus:after, .collapsed.btn-plus:after{
   -webkit-transform: translate(-50%, -50%) rotate(0deg);
   -ms-transform: translate(-50%, -50%) rotate(0deg);
   transform: translate(-50%, -50%) rotate(0deg);}
@@ -8449,8 +8451,32 @@ padding-top: 15px;}
   width: 18px;
   height: 18px;}
 .br-50 {
-  border-radius: 50%;
-}
+  border-radius: 50%;}
+.way2-line.small {
+  height: 2px;}
+.way2-pin.small {
+  width: 6px;
+  height: 6px;}
+.owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev {
+  background: url('https://acargo.click/test/img/acargo/arrow-point-to-right.svg') no-repeat center / 6px;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  top: 24px;}
+.owl-carousel .owl-nav button.owl-next span, .owl-carousel .owl-nav button.owl-prev span {
+  display: none;} 
+.owl-carousel .owl-nav button.owl-next {
+  right: -21px;}
+.owl-carousel .owl-nav button.owl-prev {
+  transform: scaleX(-1);
+  left: -21px;}
+.owl-carousel .owl-stage {
+  display: flex;}
+.owl-carousel .item .fs-16 {
+  white-space: nowrap;}
+.email-list_item .shadow2.bg-white {
+  overflow: hidden}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

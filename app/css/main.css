@@ -907,7 +907,14 @@ button {
   font-size: 12px;
   line-height: 1.58;
   color: #67758d; }
-
+.check-action {
+  width: 29px;
+  height: 29px;
+  background-color: #49ddaa;
+  border-radius: 50%;
+  display: inline-flex;}
+.check-action svg {
+  margin: auto;}
 .checkbox {
   display: none;
   position: absolute;
@@ -980,6 +987,8 @@ button {
     fill: #109cf1; }
   .checkbox:checked ~ .check__text {
     color: #109CF1; }
+  .checkbox:checked ~ .check-action{
+    opacity: 0.33; }
 
   
 .checkbox-absolute {
@@ -8495,11 +8504,13 @@ padding-top: 15px;}
   padding: 12px;
   background-color: #e6f4fd;}
   .table_internal-access td {
-    /* max-width: 429px; */
+    width: 429px;
     padding: 9px 22px 20px;
     border-right: 1px solid rgba(16, 156, 241, 0.1);
     border-bottom: 1px solid rgba(16, 156, 241, 0.1);
     background-color: #fff;}
+    .table_internal-access td:first-child {
+      width: 136px;}
   .step-item {
     overflow: hidden;}
 .selected__tags {

@@ -880,6 +880,11 @@ button {
   z-index: 6;
   padding-top: 45px;
   display: none; }
+  .drop.top {
+    padding: 0 0 56px 0;
+    top: auto;
+    bottom: 0;
+  }
   .drop.active {
     display: block; }
   .drop__menu {
@@ -3246,7 +3251,7 @@ button {
     width: 56px;
     padding-left: 15px !important; }
   .table__order .table__item__week {
-    width: 93px; }
+    width: 110px; }
   .table__order .table__item__routing {
     width: 295px!important; }
   .table__order .table__item__schedule {
@@ -5156,7 +5161,7 @@ button {
 
 .nav-link_v3, .nav-tabs_v3 .nav-link {
   padding: 10px 55px;
-  border-bottom: 3px solid rgba(183, 188, 214, 0.19);
+  border-bottom: 4px solid transparent;
   color: #282e3b;
   font-size: 16px;
   cursor: pointer;
@@ -5165,7 +5170,8 @@ button {
   display: block; }
   .nav-link_v3.active, .nav-tabs_v3 .nav-link.active {
     border-color: #156ce4;
-    color: #156ce4; }
+    /* color: #156ce4;  */
+  }
 
 .nav-link.active {
   border-color: #156ce4;
@@ -5377,7 +5383,7 @@ button {
 .fs-13 {
   font-size: 13px!important;}
 .fs-14 {
-  font-size: 14px; }
+  font-size: 14px!important; }
 .fs-15 {
   font-size: 15px!important;}
 .btn-aquamarine_normal {
@@ -7240,6 +7246,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   width: -webkit-fit-content;
   width: -moz-fit-content;
   width: fit-content;}
+.w-max-content {
+  width: max-content;
+}
 .bl-1 {
   border-left-width: 1px;}
 .collapse_v2 {
@@ -8566,24 +8575,25 @@ padding-top: 15px;}
 
 }
 .chat-fixed-link {
-  /*animation-name: blinker;
-  animation-iteration-count: infinite;
-  animation-duration: 2s;
-  animation-timing-function: ease;
-  */
-
   animation: 2s linear 2s infinite blinker;
 }
+.icon-transfer {
+  opacity: 0.755;
+  cursor: pointer;
+}
+.icon-transfer.active {
+  opacity: 1;
+  stroke-width: 0.5px;
+  stroke: #ffffff;
+}
+
+.btn-add:focus ~ .drop, .btn-add:active ~ .drop, .drop:hover {
+  display: block;
+}
 @keyframes blinker {
-  /* 0% {
-    background-color: #006eb1;
-  } */
   50% {
     background-color: #006eb1;
   }
-  /* 100% {
-    background-color: #109cf1;
-  } */
 } 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

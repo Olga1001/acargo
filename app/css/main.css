@@ -2226,7 +2226,7 @@ button {
   color: rgba(183, 188, 214, 0.3)!important; 
   fill:  rgba(183, 188, 214, 0.3);}
 .c-navy-blue {
-  color: #37517e; 
+  color: #37517e!important; 
   fill:  #37517e;}
 .c-white {
   color: #ffffff!important;
@@ -6813,6 +6813,8 @@ button {
   min-width: 160px;}
 .min-w-175 {
   min-width: 175px;}
+.min-w-275 {
+  min-width: 275px;}
 .min-w-auto {
   min-width: auto;}
 .min-w-1320 {
@@ -7943,7 +7945,6 @@ padding-top: 15px;}
   max-width: 659px;
   padding: 0;
   width: 100%;
-  border: solid 0.5px #d9effd;
   overflow: hidden;
   border-radius: 4px;}
 .check-tab {
@@ -7956,12 +7957,19 @@ padding-top: 15px;}
   padding: 1px 5px;
   border-right: solid 0.5px #d9effd;
   margin-right: -1px;
+  cursor: pointer;
   line-height: 33px;}
   .check-tabs label {
     width: 100%; }
 .checkbox:checked ~ .check-tab {
   margin-right: 0px;
   background-color: rgba(16, 156, 241, 0.16);}
+.checkbox:checked ~ .check-tab.green {
+  margin-right: 0px;
+  color: #fff!important;
+  font-weight: 500;
+  background-color: #49ddaa;}
+
 .py-7 {
   padding-top: 7px;
   padding-bottom: 7px;}
@@ -7974,15 +7982,25 @@ padding-top: 15px;}
   z-index: 7;}
 .calendar__head-th {
   min-width: 159px;
-  width: 100%;
+  border: 0.5px solid transparent;
+  background-color: #d9effd;
+  width: 13.85%;
   text-align: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;}
 .calendar__head-th:first-child {
+  flex-shrink: 0;
+  background-color: transparent;
+  padding-right: 20px;
+  color: transparent;
   width: 3%;
   min-width: 35px;}
+.calendar__head-week {
+  margin: 0 -55px 0 -35px;
+  padding: 20px 55px 0 35px;
+}
 .calendar__box-item {
   min-width: 159px;
   padding: 8px 6px 8px 21px;}
@@ -8002,7 +8020,7 @@ padding-top: 15px;}
   padding: 0 55px 0 35px;}
 .calendar__box td {
   position: relative;
-  width: 10.7%;}
+  width: 13.85%;}
 .calendar__box td:first-child {
   min-width: 35px;
   width: 3%}
@@ -8553,7 +8571,7 @@ padding-top: 15px;}
   animation-duration: 2s;
   animation-timing-function: ease;
   */
-  
+
   animation: 2s linear 2s infinite blinker;
 }
 @keyframes blinker {

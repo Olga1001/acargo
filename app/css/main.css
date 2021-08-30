@@ -1446,6 +1446,7 @@ button {
 
 .topbar.navbar-light .navbar-nav .nav-item .nav-link {
   min-width: 80px;
+  position: relative;
   padding: 0 15px; }
 
 .nav-link.disabled {
@@ -8278,7 +8279,7 @@ padding-top: 15px;}
   background-color: #109cf1;}
   .chat-fixed-link.dropdown-toggle:after {
     content: none;}
-.chat_count-message {
+.chat_count-message, .nav-link-count {
   border-radius: 50%;
   text-align: center;
   width: 20px;
@@ -8289,6 +8290,15 @@ padding-top: 15px;}
   font-weight: 500;
   margin-left: 10px;
   line-height: 20px;}
+.nav-link-count {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  line-height: 18px;
+  font-size: 11px;
+  right: 20px;
+  top: 20px;
+}
 .chat-popup__body {
   background-color: #fff;
   max-width: 385px;}
@@ -8594,6 +8604,7 @@ padding-top: 15px;}
 .btn-add:focus ~ .drop, .btn-add:active ~ .drop, .drop:hover {
   display: block;
 }
+
 @keyframes blinker {
   50% {
     background-color: #006eb1;
@@ -8734,6 +8745,8 @@ padding-top: 15px;}
     padding: 0 10px;
     font-size: 12px; }}
 @media only screen and (max-width: 1199px) {
+  .nav-link-count {
+    top: 14px;}
   .popup-h {
     min-height: calc(100vh - 60px)}
   .search-calendar {
@@ -8878,6 +8891,8 @@ padding-top: 15px;}
         right: 0;
       }}
 @media only screen and (max-width: 991px) {
+  .nav-link-count {
+    right: 10px;}
   .btn-arrow2 {
     display: none;}
   .check-tabs label {

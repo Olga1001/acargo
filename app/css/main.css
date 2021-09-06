@@ -2489,8 +2489,8 @@ button {
     background: #109CF1 !important;
     padding: 0 !important;
     margin: 2.5px 6.5px !important;
-    height: 34px !important;
-    width: 34px !important; }
+    height: 35px !important;
+    width: 35px !important; }
   .calendar-table tbody td.weekend, .calendar-table tbody td.end-date.weekend, .calendar-table tbody td.start-date.weekend {
     color: #ff5b5b !important; }
     .daterangepicker {
@@ -8612,6 +8612,39 @@ padding-top: 15px;}
 .supbar .nav-link-count {
   right: 10px;
   top: 2px;
+}
+.available {
+  position: relative;
+}
+.top-right {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  transform: scaleY(-1);
+}
+
+.active_v3:before, .active_v4:before {
+  color: #fff;
+  font-size: 12px;
+  line-height: 17px;
+  border-radius: 8.5px;
+  background-color: #109cf1;
+  padding: 0 10px;
+  position: absolute;
+  left: calc(100% + 2px);
+}
+.active_v3:before{
+  content: 'Export';
+  bottom: calc(100% - 4px);
+}
+.right-bottom {
+  position: absolute;
+  right: 3px;
+  bottom: 3px;
+}
+.active_v4:before  {
+  content: 'Import';
+  top: calc(100% - 4px);
 }
 @keyframes blinker {
   50% {

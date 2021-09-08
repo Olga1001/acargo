@@ -8655,6 +8655,9 @@ padding-top: 15px;}
 
 .right-bottom:before, .top-right:before {
   color: #fff;
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
   font-size: 12px;
   line-height: 17px;
   border-radius: 8.5px;
@@ -8680,6 +8683,9 @@ padding-top: 15px;}
 .right-bottom:before  {
   content: 'Import';
   top: calc(100% - 2px);
+}
+.available:hover .right-bottom:before, .available:hover .top-right:before {
+  opacity: 1;
 }
 .table-finance-sales li.row{
   border-left: solid 0.5px rgba(183, 188, 214, 0.26);

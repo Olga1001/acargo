@@ -6724,6 +6724,8 @@ button {
 .calendar-customer .available {
   cursor: pointer;
   border-width: 1px;
+  border-style: solid;
+  border-color: transparent;
   height: 34px;
 }
 .calendar-customer .calendar-table .available.active{
@@ -8645,10 +8647,13 @@ padding-top: 15px;}
   position: absolute;
   right: 3px;
   top: 3px;
+}
+.top-right svg {
   transform: scaleY(-1);
+  display: block;
 }
 
-.active_v3:before, .active_v4:before {
+.right-bottom:before, .top-right:before {
   color: #fff;
   font-size: 12px;
   line-height: 17px;
@@ -8656,20 +8661,21 @@ padding-top: 15px;}
   background-color: #109cf1;
   padding: 0 10px;
   position: absolute;
-  left: calc(100% + 2px);
+  left: calc(100% + 6px);
+  z-index: 3;
 }
-.active_v3:before{
+.top-right:before{
   content: 'Export';
-  bottom: calc(100% - 4px);
+  bottom: calc(100% - 2px);
 }
 .right-bottom {
   position: absolute;
   right: 3px;
   bottom: 3px;
 }
-.active_v4:before  {
+.right-bottom:before  {
   content: 'Import';
-  top: calc(100% - 4px);
+  top: calc(100% - 2px);
 }
 .table-finance-sales li.row{
   border-left: solid 0.5px rgba(183, 188, 214, 0.26);

@@ -302,6 +302,9 @@ input, textarea {
   input:focus, textarea:focus {
     border-color: #109cf1;
   }
+  input:active, textarea:active {
+    background-color: #f5fbff;
+  }
 textarea {
   border: none;
   width: 100%;
@@ -1413,9 +1416,26 @@ button {
 
 .text-italic {
   font-style: italic; }
-
+.error input{
+  border-color: #dc0b04;
+}
+.error-message {
+  display: none;
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  color: #c60903;
+  margin-top: 5px;
+}
+.error .error-message{
+  display: block
+}
+.valid {
+  background: url('../img/check-green.svg') no-repeat right 12px center / 16px;
+  border-color:#49ddaa
+}
 .disabled {
-  opacity: 0.3;
+  opacity: 0.51;
   pointer-events: none; }
   .disabled .card__way-point:before, .card__way-point.disabled:before {
     content: none; }

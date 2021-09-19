@@ -300,10 +300,16 @@ input, textarea {
   min-width: 35px;
   background: transparent; }
   input:focus, textarea:focus {
-    border-color: #109cf1;
+    border-color: #109cf1!important;
   }
   input:active, textarea:active {
     background-color: #f5fbff;
+  }
+  input:active ~ .name, input:focus ~ .name, input:valid ~ .name {
+    bottom: 24px;
+  }
+  input.input-normal.bb-1:focus, input.input-normal.bb-1:active{
+
   }
 textarea {
   border: none;
@@ -1417,7 +1423,7 @@ button {
 .text-italic {
   font-style: italic; }
 .error input{
-  border-color: #dc0b04;
+  border-color: #dc0b04!important;
 }
 .error-message {
   display: none;
@@ -8802,6 +8808,14 @@ padding-top: 15px;}
 .nav-tabs_filter a.active {
   border-color: #109cf1;
   color: #109cf1;
+}
+.name {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  padding: 5px 0;
+  transition: all 0.3s ease;
+  pointer-events: none;
 }
 @keyframes blinker {
   50% {

@@ -298,15 +298,15 @@
             <div id="box"> 
               <div class="d-flex justify-content-between bg-white">
                 <ul class="nav nav-tabs_v3 pt-4">
-                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-4 mx-5 ">Sales</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-4 mx-5 ">purchasES</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-4 mx-5 active">sales orders</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-4 mx-5">purchases orders</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-2 mx-5 active">Sales</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-2 mx-5 ">purchasES</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-2 mx-5">sales orders</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 text-up fs-14 px-2 mx-5 ">purchases orders</a></li>
                 </ul>
               </div>
               <div class="box-white rate ml-3 mt-3 px-0">
                 <div class="contents pt-0" id="contents">
-                  <div class="contents__item_v3">
+                  <div class="contents__item_v3 active">
                     <div class="px-1 mb-3">
                       <div class="d-flex flex-wrap pt-1 justify-content-between align-items-end px-4">
                         <ul class="nav nav-tabs_v8 mt-3 ">
@@ -1481,7 +1481,7 @@
                       </ul>
                     </div>
                   </div>
-                  <div class="contents__item_v3 active">
+                  <div class="contents__item_v3">
                     <div class="px-1 mb-3">
                       <div class="d-flex flex-wrap pt-1 justify-content-between align-items-end px-4">
                         <ul class="nav nav-tabs_v8 mt-3 ">
@@ -1791,7 +1791,7 @@
                             </div>
                           </div>
                       
-                          <div class="collapse show" id="salesOrdersDrop1">
+                          <div class="collapse" id="salesOrdersDrop1">
                             <ul>
                               <li class="d-flex flex-wrap justify-content-between bb-1 b-white bg-light_v10">
                                 <div class="d-flex align-items-center mr-3 pl-4">
@@ -2294,6 +2294,443 @@
                               <a href="#" class="underline fs-14 weight-medium c-blue-light">Confirmed all invoices</a>
                             </div>
                           </div>
+                        </li>
+                     
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="contents__item_v3 ">
+                    <div class="px-1 mb-3">
+                      <div class="d-flex flex-wrap pt-1 justify-content-between align-items-end px-4">
+                        <ul class="nav nav-tabs_v8 mt-3 ">
+                          <li class="nav-item">
+                            <a class="nav-link active">
+                              All
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">
+                              Open
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">
+                              Overdue
+                            </a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link">
+                              Paid
+                            </a>
+                          </li>
+                        </ul>
+                        <div class="d-flex align-items-center justify-content-end arrows-row w-fit-content">
+                            
+                          <div class="select mr-3 mt-3 min-w-175 w-fit-content">
+                            <div class="select__item">Service type</div>
+                            <div class="select__drop">
+                              <ul class="select__menu">
+                                <li class="select__option active">Service type</li>
+                                <li class="select__option">Service type</li>
+                              </ul>
+                            </div>
+                          </div>
+                          <input type="text" class="input-search b-gray mt-3 mr-3 min-w-340">
+                          <div class="d-flex btns">
+                            <button class="tool mt-3 collapsed" type="button" data-toggle="collapse" href="#collapseFilter4" role="button" aria-expanded="false" aria-controls="collapseFilter4"><img src="img/filter.svg" alt="filter"></button>
+                            
+                            <div class="relative">
+                              <a class="btn-aquamarine btn-add ml-2 mt-3" href="#">+</a>
+                              <div class="drop top w-max-content r-0">
+                                <div class="drop__menu px-0">
+                                    <a href="#" class="d-flex px-3 align-items-center mb-1 hover-bg-light">
+                                      <span class="mr-2">
+                                        <img src="img/shopping-cart.svg" alt="icon" width="14px" height="14px">
+                                      </span>
+                                      <span class="fs-13 c-navy-blue">Purchase order</span>
+                                    </a>
+                                    <a href="#" class="d-flex px-3 align-items-center hover-bg-light">
+                                      <span class="mr-2">
+                                        <img src="img/delivery-truck-blue2.svg" alt="icon" width="14px" height="11px">
+                                      </span>
+                                      <span class="fs-13 c-navy-blue">Transport order</span>
+                                    </a>
+                                </div>
+                              </div>
+          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="px-1 bg-light-white3 pt-2 pb-3 collapse" id="collapseFilter4">
+                      <div class="px-4">
+                        <div class="d-flex justify-content-between">
+                          <ul class="nav nav-tabs_filter b-0">
+                            <li class="nav-item"><a class="nav-link active">This month</a></li>
+                            <li class="nav-item"><a class="nav-link ">This quarter</a></li>
+                            <li class="nav-item"><a class="nav-link ">Last quarter</a></li>
+                            <li class="nav-item"><a class="nav-link ">This year</a></li>
+                          </ul>
+                          <button type="button" class="d-flex align-items-center">
+                            <span class="underline c-gray fs-14 pr-3">Сlear filter</span>
+                            <svg class="svg-sprite-icon c-gray ml-1" width="13px" height="13px">
+                              <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                          </svg>
+                          </button>
+                        </div>
+                        <div class="d-flex flex-wrap align-items-end">
+                          <div class="mr-3 max-w-170 mt-3">
+                            <p class="text-14">From</p>
+                            <input type="text" class="input-date right" value="15 Apr.  2021">
+                          </div>
+                          <div class="mr-3 max-w-170 mt-3">
+                            <p class="text-14">From</p>
+                            <div class="relative">
+                              <input type="text" class="bg-white" value="18 Apr.  2021">
+                              <button type="button" class="close-small_2 absolute t-center r-0 mx-2"><img src="img/cancel.svg" alt="cancel"></button>
+                            </div>
+                          </div>
+                          <div class="px-4 mr-3 d-flex">
+                              <label class="mr-3"> 
+                                <input class="checkbox" type="radio" name="radio" checked>
+                                <span class="check-btn__blue py-2 px-4"> 
+                                      <svg class="svg-sprite-icon icon-boat mx-1">
+                                      <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                      </svg>
+                                  </span>
+                              </label>
+                              <label class=""> 
+                                <input class="checkbox" type="radio" name="radio">
+                                <span class="check-btn__blue py-2 px-4"> 
+                                  <svg class="svg-sprite-icon icon-delivery-truck mx-1">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                  </svg>
+                                </span>
+                              </label>
+                          
+                          </div>
+                          <div class="select max-550">
+                            <div type="text" class="select__item bg-white d-flex align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="px-2 d-flex align-items-center bg-light-blue1 h-22 w-fit-content br-12 mr-2">
+                                        <span class=" fs-13 lh-1 c-navy-blue">A.H.</span>  
+                                        <a href="#">
+                                            <svg class="svg-sprite-icon c-navy-blue ml-2" width="9px" height="9px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                     
+                                    </div>
+                                    <div class="px-2 d-flex align-items-center bg-light-blue1 h-22 w-fit-content br-12 mr-2">
+                                        <span class=" fs-13 lh-1 c-navy-blue"> R.H.</span>  
+                                        <a href="#">
+                                            <svg class="svg-sprite-icon c-navy-blue ml-2" width="9px" height="9px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="px-2 d-flex align-items-center bg-light-blue1 h-22 w-fit-content br-12 mr-2">
+                                        <span class="fs-13 lh-1 c-navy-blue">O.H.</span>  
+                                        <a href="#">
+                                            <svg class="svg-sprite-icon c-navy-blue ml-2" width="9px" height="9px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                     
+                                    </div>
+                                    <div class="px-2 d-flex align-items-center bg-light-blue1 h-22 w-fit-content br-12 mr-2">
+                                        <span class="fs-13 lh-1 c-navy-blue">A.H.</span>  
+                                        <a href="#">
+                                            <svg class="svg-sprite-icon c-navy-blue ml-2" width="9px" height="9px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                     
+                                    </div>
+                                    <div class="px-2 d-flex align-items-center bg-light-blue1 h-22 w-fit-content br-12 mr-2">
+                                        <span class="fs-13 lh-1 c-navy-blue">R.H.</span>  
+                                        <a href="#">
+                                            <svg class="svg-sprite-icon c-navy-blue ml-2" width="9px" height="9px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                     
+                                    </div>
+                                </div>
+                                <p class="fs-13 weight-medium c-gray ml-auto pl-2"> ...</p>
+                                <div class="br-50 fs-11 lh-19 bg-light-blue1 min-w-19 text-center ml-3">5</div>
+                            </div>
+                            <div class="select__drop">
+                                <div class="select__menu p-3 max-h-215">
+                                    <label class="d-flex align-items-center mb-3">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox__icon-blue mr-2"></span>
+                                        <span class="fs-14">Select all</span>
+                                    </label>
+                                    <ul class="pl-4">
+                                        <li class="pb-2">
+                                            <p class="fs-14 mb-2">Export</p>
+                                            <div class="pl-2">
+                                                <label class="d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue mr-2"></span>
+                                                    <span class="fs-14 c-gray3 ">Sea</span>
+                                                </label>
+                                                <label class="d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue mr-2"></span>
+                                                    <span class="fs-14 c-gray3 ">Road</span>
+                                                </label>
+                                            </div>
+                                        </li>
+                                        <li class="">
+                                            <p class="fs-14 mb-2">Import</p>
+                                            <div class="pl-2">
+                                                <label class="d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue mr-2"></span>
+                                                    <span class="fs-14 c-gray3 ">Sea</span>
+                                                </label>
+                                                <label class="d-flex align-items-center mb-2">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checkbox__icon-blue mr-2"></span>
+                                                    <span class="fs-14 c-gray3 ">Road</span>
+                                                </label>
+
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+  
+                        </div>
+                      </div>
+                    </div>
+                    <div class=" scroll-x pb-5">
+                      <ul class="min-w-1210 table-finance-sales">
+                        <li class="row bg-blue-v1 mx-0 py-3 ">
+                            <div class="col-7">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="d-flex align-items-center">
+                                    <label>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="checkbox__icon b-white mr-4"></span>
+                                    </label>
+                                    <p class="c-white weight-medium">Order</p>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="c-white weight-medium ">Service </p>
+                                </div>
+                                <div class="col-3">
+                                  <p class="c-white weight-medium">Company</p>
+                                </div>
+                                <div class="col-2"><p class="c-white weight-medium">Price</p></div>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="row">
+                                  <div class="col-3"><p class="c-white weight-medium">Invoice</p></div>
+                                  <div class="col-3"><p class="c-white weight-medium">Status</p></div>
+                                  <div class="col-3"><p class="c-white weight-medium">Saved by</p></div>
+                                  <div class="col-3"></div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hover-b">
+                          <div class="row mx-0 py-3">
+                            <div class="col-7">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="d-flex align-items-center">
+                                    <label>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="checkbox__icon-blue mr-4"></span>
+                                    </label>
+                                    <div>
+                                      <p class="weight-medium">OR-37298488</p>
+                                      <p class="c-gray fs-14">Anton Zaytsev</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="weight-light">Sea freight</p>
+                                </div>
+                                <div class="col-3">
+                                  <a href="#" class="weight-medium">Acargo Company</a>
+                                  <p class="c-gray fs-14">Waybill  74847736</p>
+                                </div>
+                                <div class="col-2">
+                                  <p class="weight-medium">1300 EUR</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                              <div class="row">
+                                <div class="col-3">
+                                  <a href="#" class="weight-medium underline c-blue">62487488</a>
+                                </div>
+                                <div class="col-3">
+                                  <div class="c-blue-light bg-light-white3 block br-4 w-fit-content lh-1 py-2">Loading</div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="weight-light">Anton Ivanov</p>
+                                </div>
+                                <div class="col-3">
+                                  <div class="d-flex align-items-center justify-content-center h-100 hover">
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#create"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#download"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#bin"></use>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </li>
+                        <li class="hover-b bg-light_v10 hover-static">
+                          <div class="row mx-0 py-3">
+                            <div class="col-7">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="d-flex align-items-center">
+                                    <label>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="checkbox__icon-blue mr-4"></span>
+                                    </label>
+                                    <div>
+                                      <p class="weight-medium">OR-37298488</p>
+                                      <p class="c-gray fs-14">Anton Zaytsev</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="weight-light">Sea freight</p>
+                                </div>
+                                <div class="col-3">
+                                  <a href="#" class="weight-medium">Acargo Company</a>
+                                  <p class="c-gray fs-14">Waybill  74847736</p>
+                                </div>
+                                <div class="col-2">
+                                  <p class="weight-medium">1300 EUR</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                              <div class="row">
+                                <div class="col-3">
+                                  <a href="#" class="weight-medium underline c-blue">62487488</a>
+                                </div>
+                                <div class="col-3">
+                                  <div class="c-blue-light bg-light-white3 block br-4 w-fit-content lh-1 py-2">Loading</div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="weight-light">Anton Ivanov</p>
+                                </div>
+                                <div class="col-3">
+                                  <div class="d-flex align-items-center justify-content-center h-100 hover">
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#create"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#download"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#bin"></use>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
+                        </li>
+                        <li class="hover-b">
+                          <div class="row mx-0 py-3">
+                            <div class="col-7">
+                              <div class="row">
+                                <div class="col-4">
+                                  <div class="d-flex align-items-center">
+                                    <label>
+                                      <input type="checkbox" class="checkbox">
+                                      <span class="checkbox__icon-blue mr-4"></span>
+                                    </label>
+                                    <div>
+                                      <p class="weight-medium">OR-37298488</p>
+                                      <p class="c-gray fs-14">Anton Zaytsev</p>
+                                    </div>
+                                  </div>
+                                </div>
+                                <div class="col-3">
+                                  <p class="weight-light">Sea freight</p>
+                                </div>
+                                <div class="col-3">
+                                  <a href="#" class="weight-medium">Acargo Company</a>
+                                  <p class="c-gray fs-14">Waybill  74847736</p>
+                                </div>
+                                <div class="col-2">
+                                  <p class="weight-medium">1300 EUR</p>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="col-5">
+                              <div class="row">
+                                <div class="col-3 block_resize-input">
+                                  <div class="table__span" style="display: none;">. . . .</div>
+                                  <input type="text" class="input-resize input-normal c-dark" placeholder=". . . . .">
+                                </div>
+                                <div class="col-3 block_resize-input">
+                                  <div class="table__span" style="display: none;">. . . .</div>
+                                  <input type="text" class="input-resize input-normal c-dark" placeholder=". . . . .">
+                                </div>
+                                <div class="col-3 block_resize-input">
+                                  <div class="table__span" style="display: none;">. . . .</div>
+                                  <input type="text" class="input-resize input-normal c-dark" placeholder=". . . . .">
+                                </div>
+                                <div class="col-3">
+                                  <div class="d-flex align-items-center justify-content-center h-100 hover">
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#create"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#download"></use>
+                                      </svg>
+                                    </a>
+                                    <a href="#">
+                                      <svg class="svg-sprite-icon c-gray mr-3" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#bin"></use>
+                                      </svg>
+                                    </a>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                    
                         </li>
                      
                       </ul>

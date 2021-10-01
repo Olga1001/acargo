@@ -7099,7 +7099,7 @@ button {
   .select-arrow_right:before {
     right: -20px;}
   .b-white {
-    border-color: #fff;}
+    border-color: #fff!important;}
   .min-h-23 {
     min-height: 23px;}
   .way2 {
@@ -8760,6 +8760,10 @@ padding-top: 15px;}
   height: 100%;
   z-index: 1;
   pointer-events: none;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
 }
 .hover-b:hover:before {
   border-color: rgba(16, 156, 241, 0.82);
@@ -8767,11 +8771,11 @@ padding-top: 15px;}
 .hover-static:before {
   border-color: rgba(16, 156, 241, 0.82)!important;
 }
-.table-finance-sales .mx-0.row:hover .hover{
+.hover-b:hover .hover{
   opacity: 1;
   pointer-events: auto;
 }
-.table-finance-sales li.row .hover {
+.hover-b .hover {
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s ease;

@@ -510,7 +510,11 @@
                     <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center ml-2">
                         <img src="img/white-bin.svg" alt="garbage" class="garbage">
                     </a>
+                    <a href="#" class="btn-aquamarine d-flex justify-content-center align-items-center ml-2">
+                      <img src="img/white-tag.svg" alt="tag">
+                  </a>
                 </div>
+                <button type="button" class="btn-add_v2 mt-3"></button>
                   <div class="d-flex flex-wrap mt-3">
                    
                     <label class="checkbox__label mr-sm-4 mr-3">
@@ -632,6 +636,14 @@
                     <span class="check-calendar">Week</span>
                   </label>
                 </div>
+                <div class="d-flex checkbox__notifaction p-1 py-2 px-sm-2 px-0">
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio3" checked=""><span class="check-btn__green fs-14 text-center weight-medium py-2 px-4">Month</span>
+                  </label>
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio3"><span class="check-btn__green fs-14 text-center weight-medium py-2 px-4">Today</span>
+                  </label>
+                </div>
                 <div class="row mt-4">
                   <div class="col-xl-4 col-sm-6">
                     <label for="drop-upload" class="bg-light-blue d-flex justify-content-center align-items-center py-3">
@@ -652,6 +664,29 @@
                       Comleted</span> 
                   </span>
                 </label>
+                <div class="d-flex checkbox__loading mt-3">
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio-pre-carriage" checked=""><span class="check-btn__green fs-14 text-center weight-medium py-2">All</span>
+                  </label>
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio-pre-carriage"><span class="check-btn__green fs-14 text-center weight-medium py-2"> 
+                      <svg class="svg-sprite-icon icon-boat">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                      </svg></span>
+                  </label>
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio-pre-carriage"><span class="check-btn__green fs-14 text-center weight-medium py-2"> 
+                      <svg class="svg-sprite-icon icon-delivery-truck">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                      </svg></span>
+                  </label>
+                  <label> 
+                    <input class="checkbox" type="radio" name="radio-pre-carriage"><span class="check-btn__green fs-14 text-center weight-medium py-2"> 
+                      <svg class="svg-sprite-icon icon-train">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#train"></use>
+                      </svg></span>
+                  </label>
+                </div>
                 </div>
                 <p class="fs-30 text-up bb-1 py-3">inputs</p>
                 <div class="row">
@@ -920,6 +955,20 @@
                       </div>
                   </div>
               </div>
+              
+              <div class="w-fit-content">
+                <div class="select mt-3 select__blue active">
+                  <div class="select__item">Mark as comleted</div>
+                  <div class="select__drop" style="display: block;">
+                    <ul class="select__menu">
+                      <li class="select__option active"></li>
+                      <li class="select__option"></li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+              
                 </div>
 
 
@@ -980,6 +1029,8 @@
                       <div class="block__blue-circle"></div>
                       <p class="text-13">Loading No</p>
                   </div>
+                  <div class="block bg-green fs-10 mt-3 w-fit-content">Arriving</div>
+                  <div class="block bg-orange px-3 w-min text-nowrap fs-15 mt-3">At delivery</div>
                 </div>
             </div>
           </div>

@@ -4347,11 +4347,11 @@ button {
   .table__rate p {
     width: 100%;
     color: #141515; }
-  .table__rate::-webkit-scrollbar {
+  .table__rate::-webkit-scrollbar, .overflow-y::-webkit-scrollbar {
     width: 6px;
     height: 6px;
     background: none; }
-  .table__rate::-webkit-scrollbar-thumb {
+  .table__rate::-webkit-scrollbar-thumb, .overflow-y::-webkit-scrollbar-thumb {
     background: rgba(183, 188, 214, 0.37); }
   .table__rate-item {
     padding: 14px 0;
@@ -7468,8 +7468,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .max-h-107{
   max-height: 107px;}
 .max-h-835 {
-  max-height: 835px;
-}
+  max-height: 835px;}
+.max-h-492 {
+  max-height: 492px;}
 .max-204 {
   max-width: 204px!important;}
 .max-w-fit-content {
@@ -7633,6 +7634,11 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   overflow-x: auto;
   scrollbar-color: #b7bcd6 #ffffff;
   scrollbar-width: thin; }
+.scroll-y {
+  overflow-y: auto;
+  scrollbar-color: #b7bcd6 #ffffff;
+  scrollbar-width: thin;
+}
 .scroll-xy {
   overflow: auto;
   scrollbar-color: #b7bcd6 #ffffff;

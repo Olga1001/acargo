@@ -307,7 +307,7 @@
                                 <img src="img/gray__cancel.svg" alt="close">
                             </a>
                         </div>
-                        <div class="px-sm-3">
+                        <div class="px-sm-3 pb-4">
                             <h2 class="fs-20 weight-medium text-center mb-4">Booking request</h2>
                             <div class="d-flex flex-wrap mb-4 pb-1">
                                 <label class="mr-4 pr-1 mt-3 pt-1">
@@ -437,12 +437,12 @@
                                 </div>
                                 <label class="d-flex align-items-center my-4 mr-xl-5 mr-4">
                                     <input type="checkbox" class="checkbox" checked>
-                                    <span class="checkbox__icon-blue mr-3 ml-0"></span>
+                                    <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
                                     <span class="text-italic c-blue-gray">Heavy tasted </span>
                                 </label>
                                 <label class="d-flex align-items-center my-4">
                                     <input type="checkbox" class="checkbox" checked>
-                                    <span class="checkbox__icon-blue mr-3 ml-0"></span>
+                                    <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
                                     <span class="text-italic c-blue-gray">Shipper owned</span>
                                 </label>
                             </div>
@@ -545,11 +545,154 @@
                                     </div>
                                 </div>
                             </div>
+                            <p class="fs-16 weight-medium mb-3">Parties</p>
                             <div class="d-flex flex-wrap py-4">
-
+                                <div class="max-290 w-100 mr-xl-5 mr-4 mb-3">
+                                    <p class="text-14">Shipper</p>
+                                    <input type="text" value="Logistic Company LTD.">
+                                </div>
+                                <div class="max-290 w-100 mb-3">
+                                    <p class="text-14">Consignee</p>
+                                    <input type="text" class="input-search b-1 b-gray">
+                                    <label class="d-flex align-items-center my-3">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
+                                        <span class="text-italic c-blue-gray">Same as shipper</span>
+                                    </label>
+                                </div>
                             </div>
-                          
-                            <button type="button" class="btn-aquamarine big mx-auto mt-5">Send booking request</button>
+                            <p class="fs-16 weight-medium mb-3">Payment detail</p>
+                            <div class="d-flex flex-wrap pb-4">
+                                <div class="max-260 w-100 mb-4">
+                                    <p class="fs-16 c-gray text-up pb-1">Origin</p>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Prepaid </span>
+                                    </label>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Collect</span>
+                                    </label>
+                                </div>
+                                <div class="max-260 w-100 mb-4">
+                                    <p class="fs-16 c-gray text-up pb-1">freight</p>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Prepaid </span>
+                                    </label>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Collect</span>
+                                    </label>
+                                </div>
+                                <div class="max-260 w-100 mb-4">
+                                    <p class="fs-16 c-gray text-up pb-1">destination</p>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox" checked>
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Prepaid </span>
+                                    </label>
+                                    <label class="d-flex align-items-center mt-3">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
+                                        <span class="">Collect</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <p class="fs-16 weight-medium my-3">Remarks</p>
+                            <div class="select max-550 mb-5">
+                                <div class="select__item">New logistic additional requirement</div>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option active"></li>
+                                        <li class="select__option"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <p class="fs-16 weight-medium my-3">Other service</p>
+                            <div class="row mb-5 pb-3">
+                                <div class="col-xl-8 b-1 b-light px-0">
+                                    <div class="row bg-light-blue1 py-3 mx-0">
+                                        <div class="col-6 px-4">
+                                            <p class="fs-14 weight-medium">Service type</p>
+                                        </div>
+                                        <div class="col-6 px-4">
+                                            <p class="fs-14 weight-medium">Price</p>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center bb-1 b-light mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6">
+                                                    <label class="">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check-action bg-gray">
+                                                            <svg class="svg-sprite-icon c-white" width="12px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center bb-1 b-light mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6">
+                                                    <label class="mr-3">
+                                                        <input type="checkbox" class="checkbox" checked>
+                                                        <span class="check-action bg-gray">
+                                                            <svg class="svg-sprite-icon c-white" width="12px" height="15px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <a href="#" class="text-italic fs-14 underline c-gray">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="fs-16 weight-medium mb-3 c-gray">Message</div>
+                            <div class="b-1 br-4 p-2 max-550 mb-3">
+                                <p class="c-blue-gray lh-1_4">The essential factor in warehouse management is the safety rules. Warehouses 
+                                    with safety as a priority would include wearing appropriate PPE as well. <br>
+                                    The essential factor in warehouse management is the safety rules. Warehouses 
+                                     with safety as a priority would include wearing…     
+                                     <a href="#" class="underline c-gray ml-3">Read more </a> 
+                                      </p>
+                            </div>
+                            <label class="d-flex align-items-center py-1">
+                                <input type="checkbox" class="checkbox">
+                                <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
+                                <span class="text-italic c-blue-gray">Create booking without sending email to carier </span>
+                            </label>
+                            <button type="button" class="btn-aquamarine big mx-auto mt-5 d-block px-4">Send booking request</button>
                             
                         </div>
                     </div>

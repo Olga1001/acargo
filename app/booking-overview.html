@@ -921,7 +921,7 @@
                                     <div class="relative mr-2">
                                         <div class="number mx-1 bg-gray_5">
                                             <svg class="svg-sprite-icon c-blue" width="18px" height="13px">
-                                                <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#car"></use>
                                             </svg>
                                         </div>
                                         <div class="line"></div>
@@ -929,7 +929,6 @@
                                     <div class="box-white py-4 px-0 w-100">
                                         <p class="c-blue fs-18 weight-medium mb-4 px-4">Pre-carriage</p>
                                         <div class="bb-1 b-light2 p-0">
-                                            
                                             <div class="row mx-0 align-items-center bt-1 b-light2 py-1">
                                                 <div class="col-2 my-1">
                                                     <label class="d-flex align-items-center">
@@ -1101,7 +1100,7 @@
                                         <div class="px-4">
                                             <a href="#" class="underline fs-14 py-3 text-right d-block c-dark">Cancel order</a>
                                             
-                                            <div class="pb-5 ">
+                                            <div class="pb-5 pl-3">
                                                 <div class="d-flex">
                                                     <div class="min-w-19 d-flex justify-content-center mr-3 relative">
                                                         <div class="bg-white pb-2 z-1 relative h-fit">
@@ -1110,7 +1109,7 @@
                                                         <div class="line-dashed_vertical"></div>
                                                     </div>
                                                     <div class="row w-100 pb-4 align-items-end">
-                                                        <div class="col-6 mb-3">
+                                                        <div class="col-6 mb-3 pr-3">
                                                             <p class="text-14">Origin </p>
                                                             <div class="select w-100 h-fit">
                                                                 <div class="relative pt-4 px-3 pb-1">
@@ -1128,25 +1127,24 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-3 mb-3">
+                                                        <div class="col-3 mb-3 px-3">
                                                             <p class="text-14">Loading date </p>
                                                             <input type="text" class="input-date right" value="15 Apr. 2021">
                                                         </div>
-                                                        <div class="col-3 mb-3">
+                                                        <div class="col-3 mb-3 pl-3">
                                                             <p class="text-14">Loading date </p>
                                                             <input type="text" class="input-time right max-w-150" value="15:00 - 18:00">
                                                         </div>
                                                     </div>
                                                 </div>
-                                            
-                                                <div class="d-flex relative bg-white">
+                                                <div class="d-flex">
                                                     <div class="min-w-19 d-flex justify-content-center mr-3 bg-white py-2 mt--10">
                                                         <svg class="svg-sprite-icon c-blue" width="11px" height="37px">
                                                             <use xlink:href="img/sprite/symbol/sprite.svg#pin"></use>
                                                         </svg>
                                                     </div>
                                                     <div class="row w-100 pb-4 align-items-end">
-                                                        <div class="col-6 mb-3">
+                                                        <div class="col-6 mb-3 pr-3">
                                                             <p class="text-14">Destination  </p>
                                                             <div class="select w-100 h-fit">
                                                                 <div class="relative pt-4 px-3 pb-1">
@@ -1164,16 +1162,77 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-3 mb-3">
+                                                        <div class="col-3 mb-3 px-3">
                                                             <p class="text-14">Delivery date </p>
                                                             <input type="text" class="input-date right" value="15 Apr. 2021">
                                                         </div>
-                                                        <div class="col-3 mb-3">
+                                                        <div class="col-3 mb-3 pl-3">
                                                             <p class="text-14">Delivery date </p>
                                                             <input type="text" class="input-time right max-w-150" value="15:00 - 18:00">
                                                         </div>
                                                     </div>
                                                 </div>
+                                                <div class="d-flex">
+                                                    <div class="min-w-19 mr-3"></div>
+                                                    <div class="row w-100 pb-4 align-items-end">
+                                                        <div class="col-6 mb-3 pr-3">
+                                                            <p class="text-14">Cargo  </p>
+                                                            <input type="text" value="Vegetables">
+                                                        </div>
+                                                        <div class="col-3 mb-3 px-3">
+                                                            <p class="text-14">Weight, kg</p>
+                                                            <div class="calc calc__light big b-gray max-100">
+                                                                <button class="calc__btn calc__btn-minus"></button>
+                                                                <input type="number" class="calc__input" value="800">
+                                                                <button class="calc__btn calc__btn-plus"></button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <div class="min-w-19 mr-3"></div>
+                                                    <div class="row w-100 pb-4 align-items-end">
+                                                        <div class="col-6 mb-3 pr-3">
+                                                            <p class="text-14">Transport company  </p>
+                                                            <input type="text" value="Vegetables">
+                                                        </div>
+                                                        <div class="col-3 mb-3 px-3">
+                                                            <p class="text-14">Rate</p>
+                                                            <div class="d-flex">
+                                                                <input type="text" value="145.00" class="px-2">
+                                                                <div class="select w-fit-content br-4 ml--1 arrow-r-13 bg-light_v9">
+                                                                    <div class="select__item pl-3 fs-14 c-dark">EUR</div>
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                            <li class="select__option">USA</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="d-flex">
+                                                    <div class="min-w-19 mr-3"></div>
+                                                    <div class="d-flex w-100 pb-4 align-items-end">
+                                                        <div class="mr-5">
+                                                            <p class="fs-16 weight-medium c-blue pb-2">OR- AA74783888</p>
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checkbox__icon-blue mr-2"></span>
+                                                                <span class="text-italic">Back loading</span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="max-204">
+                                                            <p class="text-14">Container No.</p>
+                                                            <input type="text" value="AA458690996">
+                                                        </div>
+                                                    </div>
+                                                </div>
+
                                             </div>
                                         </div>
                                         <button class="btn-aquamarine big mx-auto d-block mt-2" type="button" >Confirm</button>

@@ -7264,6 +7264,15 @@ button {
   z-index: 1;
   border-right: 3px dashed rgba(183,188,214, 0.35);
 }
+.line-dashed_vertical {
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  border-right: dashed 1px #b7bcd6;
+  height: 100%;
+  width: 0;
+}
 .circle-small {
   width: 6px;
   height: 6px;
@@ -8930,6 +8939,25 @@ padding-top: 15px;}
   top: 10px;
   height: calc(100% - 20px);
   border-right: 1px dashed rgb(183 188 214 / 78%)}
+.oval {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  border: 2px solid #156ce4;
+  background-color: #fff;
+  position: relative;
+}
+.oval:before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  border-radius: 50%;
+  width: 6px;
+  height: 6px;
+  background-color: rgba(21, 108, 228, 0.39);
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

@@ -1936,6 +1936,8 @@ button {
   background-color: #f6f7fa;}
 .bg-green {
   background-color: #49ddaa; }
+.bg-green_41 {
+  background-color: rgba(73,221,170,0.41); }
 .bg-green-light {
   background-color: rgba(73,221,170,0.12);}
 .active-green-light:before, .active-orange-light:before {
@@ -7239,7 +7241,7 @@ button {
   position: relative;
   z-index: 1;
 }
-.circle-big img{
+.circle-big img, .circle-big svg{
   width: 15px;
   height: 100%;
   margin: 0 auto;
@@ -7678,8 +7680,14 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   margin-left: auto;}
 .min-w-1210 {
   min-width: 1210px;}
+.min-w-690 {
+  min-width: 690px;}
+.min-w-770 {
+  min-width: 770px;}
 .min-w-900 {
   min-width: 900px;}
+.min-w-960 {
+  min-width: 960px;}
 .min-w-340 {
   min-width: 340px;}
 .min-w-440 {
@@ -8847,7 +8855,15 @@ padding-top: 15px;}
   position: relative;
   border-bottom: solid 0.5px rgba(183, 188, 214, 0.26);
 }
-
+.hover-icons .hover{
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+.hover-icons:hover .hover{
+  opacity: 1;
+  pointer-events: auto;
+}
 .hover-b:before {
   content: '';
   position: absolute;
@@ -8964,6 +8980,13 @@ padding-top: 15px;}
   width: 6px;
   height: 6px;
   background-color: rgba(21, 108, 228, 0.39);
+}
+.collapsed .collapsed-arrow {
+  transform: scaleY(-1);
+}
+.collapsed-arrow {
+  transform: scaleY(1);
+  transition: all 0.3s ease;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

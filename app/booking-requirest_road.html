@@ -298,7 +298,7 @@
             <!-- Container-->
             <div class="container-fluid active" id="container-wrapper ">
                 <div id="box"></div>
-                <div class="popup py-4 active">
+                <div class="popup py-4 active max-1200 mx-auto">
                     <div class="box-white p-3 active">
                         <div class="d-flex justify-content-end mb-1">
                             <a href="#" class="close">
@@ -309,20 +309,20 @@
                             <h2 class="fs-20 weight-medium text-center mb-4">Booking request</h2>
                             <div class="d-flex flex-wrap mb-4 pb-1">
                                 <label class="mr-4 pr-1 mt-3 pt-1">
-                                    <input type="radio" name="type" class="checkbox" checked="">
+                                    <input type="radio" name="type1" class="checkbox" checked="">
                                     <span class="check-type py-2">
                                         Export
                                     </span>
                                 </label>
                                 <label class="mr-4 pr-1 mt-3 pt-1">
-                                    <input type="radio" name="type" class="checkbox">
+                                    <input type="radio" name="type1" class="checkbox">
                                     <span class="check-type py-2">
                                         Import
                                     </span>
                                 </label>
                                 
                                 <label class="mr-4 pr-1 mt-3 pt-1">
-                                    <input type="radio" name="type" class="checkbox">
+                                    <input type="radio" name="type1" class="checkbox">
                                     <span class="check-type py-2">
                                         Cross-shipment
                                     </span>
@@ -488,8 +488,8 @@
                                 </div>
                             </div>
                             <p class="fs-16 weight-medium pb-1">Vechicle type</p>
-                            <div class="row pb-3">
-                                <div class="col-xl-5 pb-3 pr-xl-4 ">
+                            <div class="d-flex flex-wrap pb-3">
+                                <div class="max-400 w-100 mr-xl-5 mr-4 mb-3">
                                     <div class="d-flex align-items-end ">
                                         <div class="check-type mb-3 mr-4 b-blue">
                                               <p class="fs-13">Trailer</p>
@@ -507,7 +507,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-xl-7 pb-3 pl-xl-4">
+                                <div class="">
                                     <p class="pb-2">Loading type</p>
                                     <div class="d-flex flex-wrap">
                                         <label class="mr-3 pr-1 mb-3 ">
@@ -526,12 +526,12 @@
                                 </div>
                             </div>
                             <p class="fs-16 weight-medium pb-3">Cargo</p>
-                            <div class="row">
-                                <div class="col-xl-5 pr-xl-4 pb-3">
+                            <div class="d-flex flex-wrap">
+                                <div class="max-400 w-100 mr-xl-5 mr-4 mb-3">
                                     <p class="pb-2">Product </p>
                                     <input type="text" value="Vegetables">
                                 </div>
-                                <div class="col-xl-7 pb-3 pl-xl-4 pb-3">
+                                <div class="max-w-170 pb-3 ">
                                     <p class="text-14">Weight, kg</p>
                                     <div class="calc calc__light small b-gray">
                                         <button class="calc__btn calc__btn-minus"></button>
@@ -540,77 +540,9 @@
                                     </div>
                                 </div>
                             </div>
-
-
-                            <div class="d-flex flex-wrap pb-5">
-                                <div class="max-w-170 mt-4 mr-4">
-                                    <p class="text-14">Earliest departure time</p>
-                                    <input type="text" class="input-date right" value="15 Apr.  2021">
-                                </div>
-                                <div class="max-w-170 mt-4 mr-xl-5 mr-4">
-                                    <p class="text-14">Loading time</p>
-                                    <input type="text" class="input-date right" value="15 Apr.  2021">
-                                </div>
-                                <div class="max-363 mr-4 mt-4 w-100 ml-xl-5">
-                                    <p class="text-14">Booking office</p>
-                                    <div class="select">
-                                        <div class="select__item">Lithvinia, LT</div>
-                                        <div class="select__drop">
-                                            <ul class="select__menu">
-                                                <li class="select__option active">Lithvinia, LT</li>
-                                                <li class="select__option">Lithvinia, LT</li>
-                                            </ul>
-                                        </div>
-                                     </div>
-                                </div>
-                                <div class="max-w-170 mt-4">
-                                    <p class="text-14">Quotation No.</p>
-                                    <input type="text" value="AA-734284815">
-                                </div>
-                            </div>
-                            <p class="fs-16 weight-medium">Container</p>
-                            <div class="d-flex align-items-center flex-wrap pb-5">
-                                <div class="bg-blue c-white fs-16 weight-medium px-3 lh-43 mr-4 h-fit-content br-4 mt-auto mb-4">35’ CLI</div>
-                                <div class="mr-4 mb-4">
-                                    <p class="text-14">Quantity</p>
-                                    <div class="calc calc__light small">
-                                        <button class="calc__btn calc__btn-minus"></button>
-                                        <input type="number" class="calc__input" value="0">
-                                        <button class="calc__btn calc__btn-plus"></button>
-                                    </div>
-                                </div>
-                                <div class="mr-4 pr-xl-5 mb-4">
-                                    <p class="text-14">Weight, kg</p>
-                                    <div class="calc calc__light small">
-                                        <button class="calc__btn calc__btn-minus"></button>
-                                        <input type="number" class="calc__input" value="0">
-                                        <button class="calc__btn calc__btn-plus"></button>
-                                    </div>
-                                </div>
-                                <label class="d-flex align-items-center my-4 mr-xl-5 mr-4">
-                                    <input type="checkbox" class="checkbox" checked>
-                                    <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
-                                    <span class="text-italic c-blue-gray">Heavy tasted </span>
-                                </label>
-                                <label class="d-flex align-items-center my-4">
-                                    <input type="checkbox" class="checkbox" checked>
-                                    <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
-                                    <span class="text-italic c-blue-gray">Shipper owned</span>
-                                </label>
-                            </div>
-                            <p class="fs-16 weight-medium mb-3">Cargo</p>
-                            <div class="d-flex flex-wrap pb-3">
-                                <div class="max-400 w-100 mr-xl-5 mr-4">
-                                    <p class="mb-2">Product </p>
-                                    <input type="text" value="Vegetables">
-                                </div>
-                                <div class="max-250 w-100">
-                                    <p class="mb-2">HS code </p>
-                                    <input type="text" value="Pallets">
-                                </div>
-                            </div>
-                            <div class="d-flex flex-wrap py-1">
-                                <div class="max-400 w-100 mr-xl-5 mr-4 mb-4">
+                            
+                            <div class="d-flex flex-wrap py-1 mb-4">
+                                <div class="max-400 w-100 mr-xl-5 mr-4 mb-3">
                                     <div class="d-flex align-items-center mb-3">
                                         <p class="fs-16 mr-3">ADR</p>
                                         <label>
@@ -632,7 +564,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="max-290 w-100 mr-xl-5 mr-4 mb-4">
+                                <div class="max-290 w-100 mr-xl-5 mr-4 mb-3">
                                     <div class="d-flex align-items-center mb-3">
                                         <p class="fs-16 mr-3">Temperature control</p>
                                         <label>
@@ -697,57 +629,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <p class="fs-16 weight-medium mb-3">Parties</p>
-                            <div class="d-flex flex-wrap py-4">
-                                <div class="max-290 w-100 mr-xl-5 mr-4 mb-3">
-                                    <p class="text-14">Shipper</p>
-                                    <input type="text" value="Logistic Company LTD.">
-                                </div>
-                                <div class="max-290 w-100 mb-3">
-                                    <p class="text-14">Consignee</p>
-                                    <input type="text" class="input-search b-1 b-gray">
-                                    <label class="d-flex align-items-center my-3">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="checkbox__icon-blue mr-3 ml-0 big"></span>
-                                        <span class="text-italic c-blue-gray">Same as shipper</span>
-                                    </label>
-                                </div>
-                            </div>
-                            <p class="fs-16 weight-medium mb-3">Payment detail</p>
+
+                            <p class="fs-16 weight-medium">Payment detail</p>
                             <div class="d-flex flex-wrap pb-4">
                                 <div class="max-260 w-100 mb-4">
-                                    <p class="fs-16 c-gray text-up pb-1">Origin</p>
+                                    <p class="fs-16 c-gray text-up mt-3">TRANSPORTER</p>
+                                </div>
+                                <div class="max-260 w-100 mb-4">
                                     <label class="d-flex align-items-center mt-3">
                                         <input type="checkbox" class="checkbox" checked>
                                         <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
                                         <span class="">Prepaid </span>
-                                    </label>
-                                    <label class="d-flex align-items-center mt-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
-                                        <span class="">Collect</span>
                                     </label>
                                 </div>
                                 <div class="max-260 w-100 mb-4">
-                                    <p class="fs-16 c-gray text-up pb-1">freight</p>
-                                    <label class="d-flex align-items-center mt-3">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
-                                        <span class="">Prepaid </span>
-                                    </label>
-                                    <label class="d-flex align-items-center mt-3">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
-                                        <span class="">Collect</span>
-                                    </label>
-                                </div>
-                                <div class="max-260 w-100 mb-4">
-                                    <p class="fs-16 c-gray text-up pb-1">destination</p>
-                                    <label class="d-flex align-items-center mt-3">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
-                                        <span class="">Prepaid </span>
-                                    </label>
                                     <label class="d-flex align-items-center mt-3">
                                         <input type="checkbox" class="checkbox">
                                         <span class="checkbox__icon-blue mr-4 ml-0 big"></span>
@@ -839,13 +734,12 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="fs-16 weight-medium mb-3 c-gray">Message</div>
+                            <div class="fs-16 weight-medium mb-3">Message</div>
                             <div class="b-1 br-4 p-2 max-550 mb-3">
                                 <p class="c-blue-gray lh-1_4">The essential factor in warehouse management is the safety rules. Warehouses 
                                     with safety as a priority would include wearing appropriate PPE as well. <br>
                                     The essential factor in warehouse management is the safety rules. Warehouses 
                                      with safety as a priority would include wearing…     
-                                     <a href="#" class="underline c-gray ml-3">Read more </a> 
                                       </p>
                             </div>
                             <label class="d-flex align-items-center py-1">

@@ -251,14 +251,16 @@ $(document).ready(function () {
 
   $(window).scroll(function () {
     if ($(window).width() > 768) {
-      if ($(window).scrollTop() > 1) {
+      if ($(window).scrollTop() > 0) {
         $(".sticky").addClass('active');
-        $(".topbar").slideUp(0);
+        $(".topbar").slideUp(200);
         $(".box-head").addClass('fixed-top');
+        $(".fix-top-tabs").addClass('active');
       } else {
         $(".sticky").removeClass('active');
-        $(".topbar").slideDown(0);
+        $(".topbar").slideDown(200);
         $(".box-head").removeClass('fixed-top');
+        $(".fix-top-tabs").removeClass('active');
       }
     }
     if ($(window).scrollTop() > 1) {

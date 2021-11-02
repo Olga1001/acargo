@@ -7288,6 +7288,7 @@ button {
 .circle-small {
   width: 6px;
   height: 6px;
+  flex-shrink: 0;
   border-radius: 50%;
 }
 .dashed-start .circle-small{
@@ -7694,6 +7695,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-width: 770px;}
 .min-w-900 {
   min-width: 900px;}
+.min-w-940 {
+  min-width: 940px;}
 .min-w-960 {
   min-width: 960px;}
 .min-w-340 {
@@ -8991,7 +8994,7 @@ padding-top: 15px;}
   z-index: 1;}
 .line-dashed-vertical {
   position: absolute;
-  left: 3.5px;
+  left: 4px;
   top: 10px;
   height: calc(100% - 20px);
   border-right: 1px dashed rgb(183 188 214 / 78%)}
@@ -9023,8 +9026,19 @@ padding-top: 15px;}
   width: 100px!important;}
 .map-w {
   max-width: calc(100% - 1045px);
-  width: 100%
-}
+  width: 100%}
+.fix-top-tabs {
+  position: fixed;
+  top: 72px;
+  left: 290px;
+  z-index: 999;
+  width: 100%;
+  transition: all 0.2s ease;}
+.fix-top-tabs.active {
+  transition: all 0.2s ease;
+  top: 0;}
+.sidebar-toggled .fix-top-tabs{
+  left: 72px;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -9090,6 +9104,25 @@ padding-top: 15px;}
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content; } }
+@media only screen and (max-width: 1890px) {
+  .left-content {
+    flex: 0 0 80%;
+    max-width: 80%;
+  }
+  .right-content {
+    flex: 0 0 20%;
+    max-width: 20%;
+  }
+}
+@media only screen and (max-width: 1624px) {
+  .left-content {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .right-content {
+    display: none;
+  }
+}
 @media only screen and (max-width: 1570px) {
   .base-w-53, .base-w-47, .base-w-59, .base-w-41 {
     max-width: 100%;} 

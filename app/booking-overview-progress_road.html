@@ -377,13 +377,14 @@
             <div id="box"> 
               <div class="d-flex justify-content-between bg-white fix-top-tabs">
                 <ul class="nav nav-tabs_v3 pt-2 px-xl-5 weight-medium text-up">
-                  <li class="nav-item"><a class="nav-link_v3 fs-15  px-0 mx-5 active">overview</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 fs-15 px-0 mx-5 ">Progress</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 fs-15 px-5">overview</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 fs-15 px-5 active">Progress</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 fs-15 px-5">chat</a></li>
                 </ul>
               </div>
               <div class="">
                 <div class="contents pt-5" id="contents">
-                    <div class="contents__item_v3 p-3 active">
+                    <div class="contents__item_v3 p-3 ">
                        <div class="p-3 box-white">
                            <div class="p-1">
                                <div class="d-md-flex justify-content-between pb-4">
@@ -621,66 +622,60 @@
                            </div>
                        </div>
                     </div>
-                    <div class="contents__item_v3 ">
+                    <div class="contents__item_v3 active">
                         <div class="row mx-0">
                             <div class="col-xl-8 py-3 pl-2 max-1045">
                                 <div class="d-flex mb-3">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-blue-bright wh-35">
-                                            <svg class="svg-sprite-icon c-white" width="11px" height="11px">
+                                            <svg class="svg-sprite-icon c-white" width="16px" height="15px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
                                             </svg>
                                         </div>
                                         <div class="line t-47"></div>
                                     </div>
-                                    <div class="box-white py-2 px-3 w-100-47 mb-0">
-                                        <div class="d-flex justify-content-between align-items-center pr-xl-4 pl-1">
-                                            <div class="w-100">
-                                                <div class="d-flex align-items-end">
-                                                    <p class="fs-18 weight-medium c-blue pr-4">Selected quote</p>
-                                                    <p class="c-gray">17Apr. 2021</p>
-                                                </div>
-                                                <div class="d-flex pb-2 pr-xl-4">
-                                                    <div class="d-flex align-items-start mt-3 pr-sm-3">
-                                                        <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="18px">
-                                                        <div>
-                                                            <p>Klaipeda, Lithvinia, LTKN</p>
-                                                            <p class="c-blue-gray fs-13 pt-2"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                            <p class="c-blue-gray fs-13">Searates Company</p>
-                                                        </div>
-                                                        <div class="mx-1 py-1">
-                                                            <img src="img/transfer-1.svg" alt="transfer" class="mx-auto">
-                                                            <p class="c-blue-light fs-12 pt-1">28 Days</p>
-                                                        </div>
-                                                        <img src="img/flag.svg" alt="flag" class="mr-2"  width="14px" height="18px">
-                                                        <div>
-                                                            <p>New York, USA, USLT</p>
-                                                            <p class="c-blue-gray fs-13 pt-2"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                            <p class="c-blue-gray fs-13">Acargo Company</p>
+                                    <div class="box-white p-4 w-100-47 mb-0">
+                                        <div class="d-flex align-items-center justify-content-between mb-3">
+                                            <p class="fs-20 weight-medium c-blue pb-2">Create quote</p>
+                                            <p class="c-gray fs-14 pb-2">Expired 15 Apr.  15:24</p>
+                                        </div>
+                                        <div class="d-flex ">
+                                            <p class="px-3 fs-16 weight-medium mr-4 mt-4 lh-43 ">35’ CHI</p>
+                                            <div class="max-204 mr-4 pr-1">
+                                                <p class="text-14">Rate</p>
+                                                <div class="d-flex">
+                                                    <input type="text" value="145.00" class="px-2">
+                                                    <div class="select w-fit-content br-4 ml--1 arrow-r-13 bg-light_v9">
+                                                        <div class="select__item pl-3 fs-14 c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">EUR</li>
+                                                                <li class="select__option">UAH</li>
+                                                                <li class="select__option">USA</li>
+                                                            </ul>
                                                         </div>
                                                     </div>
-                                                    <div class="mt-3 mx-auto pr-xl-2">
-                                                        <div class="d-flex align-items-center pb-2">
-                                                            <svg class="svg-sprite-icon c-blue mr-2" width="11px" height="13px">
-                                                                <use xlink:href="img/sprite/symbol/sprite.svg#leader"></use>
-                                                            </svg>
-                                                            <p>Acargo Company LTD</p>
-                                                        </div>
-                                                        <div class="d-flex align-items-center ">
-                                                            <svg class="svg-sprite-icon c-blue mr-2" width="13px" height="10px">
-                                                                <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                                            </svg>
-                                                            <p>8 x 35’CHI / FCL</p>
-                                                        </div>
-        
-                                                    </div>
-        
                                                 </div>
                                             </div>
-                                            <div class="bg-light-white3 p-2 br-4 h-fit py-3 px-4">
-                                                <p class="weight-medium fs-16 c-blue p-1 text-nowrap px-3">1200 EUR</p>
+                                            <div class="max-204 mr-4 pr-1">
+                                                <p class="text-14">Surcharges</p>
+                                                <div class="d-flex mb-2">
+                                                    <input type="text" value="145.00" class="px-2">
+                                                    <div class="select w-fit-content br-4 ml--1 arrow-r-13 bg-light_v9">
+                                                        <div class="select__item pl-3 fs-14 c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">EUR</li>
+                                                                <li class="select__option">UAH</li>
+                                                                <li class="select__option">USA</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="fs-14 text-italic underline c-gray">+ Add new origin</a>
                                             </div>
                                         </div>
+
                                     </div>
                                 </div>
                                 <div class="d-flex mb-3">

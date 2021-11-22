@@ -1972,7 +1972,7 @@ button {
   background-color: rgba(16, 156, 241, 0.03);}
 .bg-light-white3 {
   background-color: rgba(16, 156, 241, 0.12);}
-
+  
 .bg-light_05 {
   background-color: #eff8fe61!important;}
 .bg-light_06 {
@@ -8008,6 +8008,8 @@ padding-top: 15px;}
   transform: translateX(calc(-50% + 0.5px));
   height: calc(100% - 41px);
   background-color: #109cf1;}
+  .line.light {
+    background-color: #c4e6fb;}
 .line.t-47 {
   top: 47px;
   height: calc(100% - 44px)}
@@ -8100,7 +8102,7 @@ padding-top: 15px;}
   border: solid 1px #24b1ff;
   width: fit-content;
 }
-.nav-tabs_v8 .nav-link{
+.nav-tabs_v8 .nav-link {
   color: #282e3b;
   min-width: 80px;
   padding: 9px 15px;
@@ -8111,6 +8113,20 @@ padding-top: 15px;}
   border-radius: 5px;
   color: #fff;
   font-weight: 500;
+}
+.nav-tabs_small .nav-link{
+  color: #141515;
+  font-size: 13px;
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid transparent;
+  padding-bottom: 12px;
+}
+.nav-tabs_small .nav-link.active {
+  border-color: #156ce4
+}
+.nav-tabs_small .nav-link.active svg{
+  fill: #156CE4;
 }
 .btn-order {
   padding: 0 20px;
@@ -9028,12 +9044,13 @@ padding-top: 15px;}
   top: 72px;
   left: 290px;
   z-index: 999;
-  width: 100%;
+  width: calc(100% - 290px);
   transition: all 0.2s ease;}
 .fix-top-tabs.active {
   transition: all 0.2s ease;
   top: 0;}
 .sidebar-toggled .fix-top-tabs{
+  width: calc(100% - 72px);
   left: 72px;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

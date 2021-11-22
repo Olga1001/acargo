@@ -375,12 +375,29 @@
             </nav>
           <div class="container-fluid p-0" id="container-wrapper"> 
             <div id="box"> 
-              <div class="d-flex justify-content-between bg-white fix-top-tabs">
-                <ul class="nav nav-tabs_v3 pt-2 px-xl-5 weight-medium text-up">
+              <div class="row bg-white fix-top-tabs">
+                <ul class="nav nav-tabs_v3 pt-2 px-xl-5 weight-medium text-up col-8 max-1045">
                   <li class="nav-item"><a class="nav-link_v3 fs-15 px-5">overview</a></li>
                   <li class="nav-item"><a class="nav-link_v3 fs-15 px-5 active">Progress</a></li>
                   <li class="nav-item"><a class="nav-link_v3 fs-15 px-5">chat</a></li>
                 </ul>
+                <ul class="nav nav-tabs_small map-w justify-content-around align-items-end">
+                    <li class="nav-item">
+                        <a class="nav-link align-items-center">
+                            <svg class="svg-sprite-icon c-gray mr-2" width="9px" height="12px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#pin2"></use>
+                            </svg>
+                        Map</a></li>
+                    <li class="nav-item"><a class="nav-link active">
+                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="12px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notification "></use>
+                        </svg>
+                        Activities</a></li>
+                    <li class="nav-item"><a class="nav-link ">
+                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="12px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                        </svg>Parties</a></li>
+                  </ul>
               </div>
               <div class="">
                 <div class="contents pt-5" id="contents">
@@ -629,19 +646,19 @@
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-blue-bright wh-35">
                                             <svg class="svg-sprite-icon c-white" width="16px" height="15px">
-                                                <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#auction"></use>
                                             </svg>
                                         </div>
-                                        <div class="line t-47"></div>
+                                        <div class="line t-47 light"></div>
                                     </div>
                                     <div class="box-white p-4 w-100-47 mb-0">
                                         <div class="d-flex align-items-center justify-content-between mb-3">
                                             <p class="fs-20 weight-medium c-blue pb-2">Create quote</p>
                                             <p class="c-gray fs-14 pb-2">Expired 15 Apr.  15:24</p>
                                         </div>
-                                        <div class="d-flex ">
-                                            <p class="px-3 fs-16 weight-medium mr-4 mt-4 lh-43 ">35’ CHI</p>
-                                            <div class="max-204 mr-4 pr-1">
+                                        <div class="d-flex pb-3">
+                                            <p class="px-3 fs-16 weight-medium mr-4 my-4 lh-43 ">35’ CHI</p>
+                                            <div class="max-204 mr-4 pr-1 mb-4">
                                                 <p class="text-14">Rate</p>
                                                 <div class="d-flex">
                                                     <input type="text" value="145.00" class="px-2">
@@ -657,7 +674,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="max-204 mr-4 pr-1">
+                                            <div class="max-204 mr-4 pr-1 mb-4">
                                                 <p class="text-14">Surcharges</p>
                                                 <div class="d-flex mb-2">
                                                     <input type="text" value="145.00" class="px-2">
@@ -674,7 +691,7 @@
                                                 </div>
                                                 <a href="#" class="fs-14 text-italic underline c-gray">+ Add new origin</a>
                                             </div>
-                                            <div class="select w-fit-content arrow-r-13 min-w-90 mt-4">
+                                            <div class="select w-fit-content arrow-r-13 min-w-90 my-4">
                                                 <div class="select__item pl-3 ">LOT</div>
                                                 <div class="select__drop">
                                                     <ul class="select__menu">
@@ -685,54 +702,142 @@
                                                 </div>
                                             </div>
                                         </div>
+                                        <div class="d-flex ">
+                                            <p class="px-3 fs-16 weight-medium mr-4 my-4 lh-43 ">45’ CHI</p>
+                                            <div class="max-204 mr-4 pr-1 mb-4">
+                                                <p class="text-14">Rate</p>
+                                                <div class="d-flex">
+                                                    <input type="text" value="145.00" class="px-2">
+                                                    <div class="select w-fit-content ml--1 arrow-r-13 bg-light_v9">
+                                                        <div class="select__item pl-3 fs-14 c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">EUR</li>
+                                                                <li class="select__option">UAH</li>
+                                                                <li class="select__option">USA</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="max-204 mr-4 pr-1 mb-4">
+                                                <p class="text-14">Surcharges</p>
+                                                <div class="d-flex mb-2">
+                                                    <input type="text" value="145.00" class="px-2">
+                                                    <div class="select w-fit-content ml--1 arrow-r-13 bg-light_v9">
+                                                        <div class="select__item pl-3 fs-14 c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">EUR</li>
+                                                                <li class="select__option">UAH</li>
+                                                                <li class="select__option">USA</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="fs-14 text-italic underline c-gray">+ Add new origin</a>
+                                            </div>
+                                            <div class="select w-fit-content arrow-r-13 min-w-90 my-4">
+                                                <div class="select__item pl-3 ">LOT</div>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active">EUR</li>
+                                                        <li class="select__option">UAH</li>
+                                                        <li class="select__option">USA</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="max-204 mb-5">
+                                            <p class="text-14">Valid time</p>
+                                            <input type="text" class="input-date right" value="15 Apr. -  17 Apr.">
+                                        </div>
+                                        <p class="fs-16 c-blue weight-medium mb-3">Available shedule</p>
+                                        <div class="d-flex flex-wrap pb-1">
+                                            <div class=" mr-4 max-w-180 mb-4">
+                                                <p class="text-14">CUT - OFF </p>
+                                                <input type="text" class="input-date right" value="15 Apr.">
+                                            </div>
+                                            <div class=" mr-4 max-w-150 mb-4">
+                                                <p class="text-14">Time </p>
+                                                <input type="text" class="input-time right" value="15:00">
+                                            </div>
+                                            <div class=" mr-4 max-w-180 mb-4">
+                                                <p class="text-14">ETD</p>
+                                                <input type="text" class="input-date right" value="15 Apr.">
+                                            </div>
+                                            <div class="max-w-180 mb-4">
+                                                <p class="text-14">ETD</p>
+                                                <input type="text" class="input-date right" value="15 Apr.">
+                                            </div>
+                                        </div>
+                                        <a href="#" class="d-flex align-items-center mb-5">
+                                            <span class="underline c-gray pr-2">Next available shedule</span>
+                                            <img src="img/arrow-point-to-right.svg" alt="arrow icon">
+                                        </a>
+                                        <div class="max-w-610 mx-auto">
+                                            <p class="c-blue weight-medium lh-1_47">Remarks</p>
+                                            <p class="lh-1_47">
+                                                The essential factor in warehouse management is the safety rules. Warehouses with safety 
+                                                as a priority would include wearing appropriate PPE as wel…    
+                                                <a href="" class="underline c-gray pl-3"> Read more </a> 
+                                            </p>
+                                            <label class="d-flex align-items-center justify-content-center py-3">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="">Confirm</span>
+                                                <span class="checkbox__icon-blue"></span>
+                                            </label>
+                                        </div>
+                                        <button type="button" class="btn-aquamarine big my-3 mx-auto d-block">Submit </button>
+
 
                                     </div>
                                 </div>
-                                <div class="d-flex mb-3">
+                                <div class="d-flex mb-2">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-gray_5 wh-35">
                                             <svg class="svg-sprite-icon c-blue" width="16px" height="16px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
                                             </svg>
                                         </div>
-                                        <div class="line t-47"></div>
+                                        <div class="line light"></div>
                                     </div>
-                                    <p class="p-2 fs-16 c-gray weight-medium">Booking </p>
+                                    <p class="p-2 fs-16 c-gray weight-medium pb-4 mb-2">Booking </p>
                                 </div>
-                                <div class="d-flex mb-3">
+                                <div class="d-flex mb-2">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-gray_5 wh-35">
                                             <svg class="svg-sprite-icon c-blue" width="15px" height="15px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#box2"></use>
                                             </svg>
                                         </div>
-                                        <div class="line t-47"></div>
+                                        <div class="line light"></div>
                                     </div>
-                                    <p class="p-2 fs-16 c-gray weight-medium">Provide loading time & assign transport </p>
+                                    <p class="p-2 fs-16 c-gray weight-medium pb-4 mb-2">Provide loading time & assign transport </p>
                                 </div>
-                                <div class="d-flex mb-3">
+                                <div class="d-flex mb-2">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-gray_5 wh-35">
                                             <svg class="svg-sprite-icon c-blue" width="13px" height="15px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#document-1"></use>
                                             </svg>
                                         </div>
-                                        <div class="line t-47"></div>
+                                        <div class="line light"></div>
                                     </div>
-                                    <p class="p-2 fs-16 c-gray weight-medium">Cargo loading </p>
+                                    <p class="p-2 fs-16 c-gray weight-medium pb-4 mb-2">Cargo loading </p>
                                 </div>
-                                <div class="d-flex mb-3">
+                                <div class="d-flex mb-2">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-gray_5 wh-35">
                                             <svg class="svg-sprite-icon c-blue" width="14px" height="14px">
                                                 <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
                                             </svg>
                                         </div>
-                                        <div class="line t-47"></div>
+                                        <div class="line light"></div>
                                     </div>
-                                    <p class="p-2 fs-16 c-gray weight-medium">Trucking </p>
+                                    <p class="p-2 fs-16 c-gray weight-medium pb-4 mb-2">Trucking </p>
                                 </div>
-                                <div class="d-flex mb-3">
+                                <div class="d-flex mb-2">
                                     <div class="relative mr-3 pr-1">
                                         <div class="number mx-1 bg-gray_5 wh-35">
                                             <svg class="svg-sprite-icon c-blue" width="13px" height="15px">
@@ -740,7 +845,7 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <p class="p-2 fs-16 c-gray weight-medium">Attached documents  </p>
+                                    <p class="p-2 fs-16 c-gray weight-medium pb-4 mb-2">Attached documents  </p>
                                 </div>
                             </div>
                             <div class="map-w">map</div>

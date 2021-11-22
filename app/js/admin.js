@@ -4,7 +4,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 (function ($) {
   "use strict"; // Start of use strict
-
+  
+  $('.h-calc').height($('#quote-box').height())
+  
   function chtaTab(el) {
     $(`${el} .chat_tab`).on('click', function () {
       let index = $(this).index();
@@ -28,8 +30,6 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     if ($(".sidebar").hasClass("toggled")) {
       $('.sidebar .collapse').collapse('hide');
     }
-
-    ;
   
   }); // Close any open menu accordions when window is resized below 768px
   if (window.matchMedia("(max-width: 768px)").matches) { 
@@ -92,7 +92,6 @@ $(document).ready(function () {
     $('.active').removeClass('active');
     $el.addClass('active');
   });
-
 
   $("#myBtn").click(function () {
     $('.modal').modal('show');

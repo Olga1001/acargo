@@ -4,9 +4,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 (function ($) {
   "use strict"; // Start of use strict
-  
-  $('.h-calc').height($('#quote-box').height())
-  
+
   function chtaTab(el) {
     $(`${el} .chat_tab`).on('click', function () {
       let index = $(this).index();
@@ -238,10 +236,13 @@ $(document).ready(function () {
     $(this).addClass('active').parent().siblings().find(".nav-link_v3").removeClass('active');
     var index = $(this).parent().index();
     $(".contents__item_v3").eq(index).addClass('active').siblings().removeClass('active');
+    if ($(this).html() === 'Progress') {
+      $('.toggle-tabs').show()
+    } else {
+      $('.toggle-tabs').hide()
+    }
   });
-}); 
-
-
+});
 
 //STICKY
 $(document).ready(function () {

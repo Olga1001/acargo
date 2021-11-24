@@ -453,9 +453,9 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="bg-light-white3 p-3 mt-3 collapse" id="collapseFilter1">
-                            <div class="px-1">
-                                <div class="d-flex">
+                        <div class="bg-light-white3 p-3 mt-3 collapse relative" id="collapseFilter1">
+                            <div class="px-1 ">
+                                <div class="d-flex ">
                                     <div class="mr-4">
                                         <p class="text-14 pb-1">All</p>
                                         <label class="pt-2">
@@ -538,7 +538,7 @@
                                         </div>
                                     </div>
                                  
-                                    <div class="ml-auto d-flex">
+                                    <div class="ml-auto d-flex absolute t-0 r-0 p-2">
                                         <a href="#" class="underline c-gray fs-14">Select all</a>
                                         <button type="button" class="d-flex align-items-center h-fit ml-4">
                                             <span class="underline c-gray fs-14 pr-3">Сlear filter</span>
@@ -550,117 +550,98 @@
                                 </div>
                             </div>
                         </div>
-                        <ul class="pb-5">
-                            <li class="mt-3 px-3 py-2 b-light2 br-4 b-1 w-100">
-                                <div class="d-lg-flex justify-content-between">
-                                    <div class="w-100 pr-xl-5">
-                                        <div class="d-flex align-items-end">
-                                            <p class="weight-medium mr-4">OR - AA753875985</p>
-                                            <a href="#" class="c-gray fs-13 mr-3">Invoice</a>
-                                            <a href="#" class="c-gray fs-13 mr-3">CMR</a>
-                                            <a href="#" class="c-gray fs-13 mr-3">VGM </a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-between">
-                                            <div class="d-flex align-items-start mt-3 pr-sm-3">
-                                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
-                                                <div>
-                                                    <p>Klaipeda, Lithvinia, LTKN (DO)</p>
-                                                    <p class="c-blue-gray pt-1">Logistic Company</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">СUT - OFF </span>  28 Apr. 9:00</p>
-                                                </div>
-                                                <div class="mx-1 py-1">
-                                                    <img src="img/transfer-1.svg" alt="transfer" class="mx-auto">
-                                                    <p class="c-blue-light fs-12 pt-2">28 Days</p>
-                                                </div>
-                                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
-                                                <div>
-                                                    <p>New York, USA, USLT (LI)</p>
-                                                    <p class="c-blue-gray pt-1">Searates Company</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                </div>
+                        <ul class="pb-5 pt-1">
+                            <li class="base-li active relative d-flex pr-lg-5 pr-4 mt-3">
+                                <div class="d-flex absolute l-20 t--50 z-1">
+                                    <div class="block bg-gray_7 c-blue mr-2">W 12</div>
+                                    <div class="block bg-blue-bright c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="p-4 base-border b-white w-100">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex">
+                                            <div class="mr-3 pr-1">
+                                                <label class="mb-4">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <svg class="svg-sprite-icon c-blue d-block" width="10px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
                                             </div>
-                                            <div class="pr-3">
-                                                <div class="d-flex align-items-center mt-3">
+                                            <div>
+                                                <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="11px" height="14px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="11px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#bin"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </li>
+                            <li class="base-li relative d-flex pr-lg-5 pr-4 mt-3">
+                                <div class="p-3 base-border b-white bg-light_v11 w-100">
+                                    <div class="d-lg-flex align-items-center justify-content-between px-1">
+                                        <div class="w-100 pr-xl-5">
+                                            <div class="d-flex align-items-end">
+                                                <p class="weight-medium mr-3">OR - AA753875985</p>
+                                                <div class="block c-green w-fit-content bg-light-green br-4 mr-3">Urgently</div>
+                                                <p class="fs-12 text-italic c-blue-gray">12 Apr. 2020</p>
+                                            </div>
+                                            <div class="d-flex flex-wrap justify-content-between">
+                                                <div class="d-flex align-items-start mt-3 pr-sm-3">
+                                                    <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                    <div>
+                                                        <p>Klaipeda, Lithvinia, LTKN (DO)</p>
+                                                        <p class="c-blue-gray">Logistic Company</p>
+                                                    </div>
+                                                    <div class="mx-3 py-1">
+                                                        <img src="img/transfer-1.svg" alt="transfer">
+                                                    </div>
+                                                    <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                    <div>
+                                                        <p>New York, USA, USLT (LI)</p>
+                                                        <p class="c-blue-gray">Searates Company</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex align-items-center mt-3 pr-3">
                                                     <svg class="svg-sprite-icon c-blue-light mr-2" width="13px" height="15px">
                                                         <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
                                                     </svg>
                                                     <p>8 x 35’CHI / FCL</p>
                                                 </div>
-                                                <p class="fs-14">Fruit & vegetables</p>
-                                            </div>
-                                            <div class="pr-3">
-                                                <div class="d-flex align-items-center mt-3">
+                                                <div class="d-flex align-items-center mt-3 pr-3">
                                                     <svg class="svg-sprite-icon c-blue-light mr-2" width="13px" height="15px">
                                                         <use xlink:href="img/sprite/symbol/sprite.svg#office-building3"></use>
                                                     </svg>
                                                     <p>Acargo Company LTD</p>
                                                 </div>
-                                                <p class="fs-14"><span class="text-italic c-blue-light pr-1">Booking </span>  BV-4839828</p>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="text-right pl-xl-5 pl-3">
-                                        <div class="block bg-light-orange c-orange fs-12 br-4 px-3 mb-3 w-fit-content ml-auto">Urgently</div>
-                                        <p class="weight-medium c-blue-light">1200 EUR</p>
-                                        <p class="fs-13 c-blue-gray text-nowrap">Extra charge 80 EUR</p>
+                                        <button class="btn-green-light mx-4 my-2">Publish</button>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="mt-3 px-3 py-2 b-blue br-4 b-1 w-100">
-                                <div class="d-lg-flex justify-content-between">
-                                    <div class="w-100 pr-xl-5">
-                                        <div class="d-flex align-items-end">
-                                            <p class="weight-medium mr-4">OR - AA753875985</p>
-                                            <a href="#" class="c-gray fs-13 mr-3">Invoice</a>
-                                            <a href="#" class="c-gray fs-13 mr-3">CMR</a>
-                                            <a href="#" class="c-gray fs-13 mr-3">VGM </a>
-                                        </div>
-                                        <div class="d-flex flex-wrap justify-content-between">
-                                            <div class="d-flex align-items-start mt-3 pr-sm-3">
-                                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
-                                                <div>
-                                                    <p>Klaipeda, Lithvinia, LTKN (DO)</p>
-                                                    <p class="c-blue-gray pt-1">Logistic Company</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">СUT - OFF </span>  28 Apr. 9:00</p>
-                                                </div>
-                                                <div class="mx-1 py-1">
-                                                    <img src="img/transfer-1.svg" alt="transfer" class="mx-auto">
-                                                    <p class="c-blue-light fs-12 pt-2">28 Days</p>
-                                                </div>
-                                                <img src="img/flag.svg" alt="flag" class="flag_v3 mr-2">
-                                                <div>
-                                                    <p>New York, USA, USLT (LI)</p>
-                                                    <p class="c-blue-gray pt-1">Searates Company</p>
-                                                    <p class="c-blue-gray fs-13 pt-1"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
-                                                </div>
-                                            </div>
-                                            <div class="pr-3">
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <svg class="svg-sprite-icon c-blue-light mr-2" width="14px" height="11px">
-                                                        <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                                    </svg>
-                                                    <p>8 x 35’CHI / FCL</p>
-                                                </div>
-                                                <p class="fs-14">Fruit & vegetables</p>
-                                            </div>
-                                            <div class="pr-3">
-                                                <div class="d-flex align-items-center mt-3">
-                                                    <svg class="svg-sprite-icon c-blue-light mr-2" width="13px" height="15px">
-                                                        <use xlink:href="img/sprite/symbol/sprite.svg#office-building3"></use>
-                                                    </svg>
-                                                    <p>Acargo Company LTD</p>
-                                                </div>
-                                                <p class="fs-14"><span class="text-italic c-blue-light pr-1">Booking </span>  BV-4839828</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="text-right pl-xl-5 pl-4">
-                                        <div class="block bg-light-green c-green fs-12 br-4 px-3 mb-3 w-fit-content ml-auto">Urgently</div>
-                                        <p class="weight-medium c-blue-light">1200 EUR</p>
-                                        <p class="fs-13 c-blue-gray text-nowrap">Extra charge 80 EUR</p>
-                                    </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="11px" height="14px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="11px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#bin"></use>
+                                        </svg>
+                                    </a>
                                 </div>
                             </li>
                         </ul>

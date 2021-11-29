@@ -1,0 +1,801 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <!-- Sidebar-->
+
+      <div class="d-flex flex-column w-100" id="content-wrapper">
+        <div id="content">
+
+          <div class="container-fluid py-3 px-4" id="container-wrapper"> 
+            <div id="box">
+              <div class="box-white rate max-1580">
+                <ul class="nav nav-tabs_v3 pt-4 bb-1 b-gray2 pb-0 pl-1">
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark active">All</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Pending</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Booking</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Pre-carriage</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Loading</a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Documents  </a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">In transit  </a></li>
+                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Delivered  </a></li>
+              </ul>
+                <div class="contents pt-0 pl-1 pr-xl-5" id="contents">
+                    <div class="contents__item_v3 active">
+                        <div class="pr-4 mr-2">
+                          <div class="collapse pt-2" id="map-1">
+                            <div class="map w-100 h-250"> map</div>
+                          </div>
+                          <div class="d-flex flex-wrap justify-content-between align-items-center">
+                              <div class="d-flex checkbox__loading mt-4">
+                                  <label>
+                                      <input class="checkbox" type="radio" name="radio">
+                                      <span class="check-btn__green blue text-center py-2 h-100">
+                                          <svg class="svg-sprite-icon c-blue-light">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                          </svg>
+                                      </span>
+                                  </label>
+                                  <label>
+                                      <input class="checkbox" type="radio" name="radio" checked>
+                                      <span class="check-btn__green blue text-center py-2 h-100">
+                                          <svg class="svg-sprite-icon c-blue-light">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                          </svg>
+                                      </span>
+                                  </label>
+  
+                                  </div>
+                              <div class="d-flex justify-content-end arrows-row w-fit-content">
+                                  <div class="select mr-3 mt-4 min-w-175 w-fit-content">
+                                      <div class="select__item">All orders</div>
+                                      <div class="select__drop">
+                                          <ul class="select__menu">
+                                              <li class="select__option active">All orders</li>
+                                              <li class="select__option">All orders</li>
+                                          </ul>
+                                      </div>
+                                  </div>
+                                  <input type="text" class="input-search b-gray mt-4 min-w-340">
+                                  <div class="d-flex btns">
+                                     <div class="relative">
+                                          <a class="btn-aquamarine btn-add mt-4" href="#">+</a>
+                                          <div class="drop top w-max-content r-0">
+                                              <div class="drop__menu px-0">
+                                                  <a href="#" class="d-flex px-3 align-items-center mb-1 hover-bg-light">
+                                                    <span class="mr-2">
+                                                      <img src="img/shopping-cart.svg" alt="icon" width="14px" height="14px">
+                                                    </span>
+                                                      <span class="fs-13 c-navy-blue">Purchase order</span>
+                                                  </a>
+                                                  <a href="#" class="d-flex px-3 align-items-center hover-bg-light">
+                                                        <span class="mr-2">
+                                                          <img src="img/delivery-truck-blue2.svg" alt="icon" width="14px" height="11px">
+                                                        </span>
+                                                      <span class="fs-13 c-navy-blue">Transport order</span>
+                                                  </a>
+                                              </div>
+                                          </div>
+  
+                                      </div>
+                                      <button class="tool mt-4 ml-2" type="button" data-toggle="collapse" href="#map-1" role="button" aria-expanded="false" aria-controls="map-1">
+                                          <svg class="svg-sprite-icon c-gray" width="15px" height="20px">
+                                              <use xlink:href="img/sprite/symbol/sprite.svg#pin"></use>
+                                          </svg>
+                                      </button>
+                                      <button class="tool mt-4 collapsed ml-2" type="button" data-toggle="collapse" href="#collapseFilter1" role="button" aria-expanded="false" aria-controls="collapseFilter1">
+                                          <svg class="svg-sprite-icon c-gray" width="19px" height="19px">
+                                              <use xlink:href="img/sprite/symbol/sprite.svg#filter"></use>
+                                          </svg>
+                                      </button>
+                                  </div>
+                              </div>
+                          </div>
+                          <div class="bg-light-white3 p-3 mt-3 collapse relative" id="collapseFilter1">
+                              <div class="px-1 ">
+                                  <div class="d-flex ">
+                                      <div class="mr-4">
+                                          <p class="text-14 pb-1">All</p>
+                                          <label class="pt-2">
+                                              <input type="checkbox" class="checkbox" checked="">
+                                              <span class="checkbox__icon-blue ml-0"></span>
+                                          </label>
+                                      </div>
+                                      <div class="max-w-150 w-100 mr-3">
+                                          <p class="text-14">Status</p>
+                                          <div class="select bg-white">
+                                              <div class="select__item">New</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">New</li>
+                                                      <li class="select__option">New</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="max-w-130 w-100 mr-3">
+                                          <p class="text-14">Week</p>
+                                          <input type="text" class="input-date right" value="8 week">
+                                      </div>
+                                      <div class="max-w-130 w-100 mr-3">
+                                          <p class="text-14">ETD</p>
+                                          <div class="select bg-white">
+                                              <div class="select__item">7 Days</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">7 Days</li>
+                                                      <li class="select__option">6 Days</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="max-w-130 w-100 mr-4">
+                                          <p class="text-14">ETA</p>
+                                          <div class="select bg-white">
+                                              <div class="select__item">7 Days</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">7 Days</li>
+                                                      <li class="select__option">6 Days</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                      <div class="max-w-130 w-100 mr-4">
+                                          <p class="text-14">Cut-off</p>
+                                          <div class="select bg-white">
+                                              <div class="select__item">12 Days</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">7 Days</li>
+                                                      <li class="select__option">6 Days</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                   
+                                      <div class="d-flex relative max-500 w-100 h-fit mt-auto">
+                                          <div class="select bg-white b-r-0 br-r-0">
+                                              <div class="select__item">From</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">From</li>
+                                                      <li class="select__option">From</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          <div class="line-vertical"></div>
+                                          <div class="select bg-white b-l-0 br-l-0">
+                                              <div class="select__item">To</div>
+                                              <div class="select__drop">
+                                                  <ul class="select__menu">
+                                                      <li class="select__option active">To</li>
+                                                      <li class="select__option">To</li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                      </div>
+                                   
+                                      <div class="ml-auto d-flex absolute t-0 r-0 p-2">
+                                          <a href="#" class="underline c-gray fs-14">Select all</a>
+                                          <button type="button" class="d-flex align-items-center h-fit ml-4">
+                                              <span class="underline c-gray fs-14 pr-3">Сlear filter</span>
+                                              <svg class="svg-sprite-icon c-gray ml-1" width="13px" height="13px">
+                                                  <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                              </svg>
+                                          </button>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                        </div>
+
+                        <ul class="pb-5 pt-1 mt-3">
+                            <li class="base-li active relative d-flex pr-4 mb-4">
+                                <div class="d-flex absolute l-20 t--50 z-4">
+                                    <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
+                                    <div class="block bg-blue-bright c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="px-4 py-3 base-border b-blue-light2 w-100 mr-2 hover-b">
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="pt-2">
+                                            <div class="d-flex mb-2 pt-1">
+                                                <label class="mb-4 mr-3 hover">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <svg class="svg-sprite-icon c-blue d-block mr-3 hover" width="16px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
+                                                    <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3  hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-100 max-770 py-4 mt-2">
+                                            <div class="d-flex align-items-center py-1 relative">
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content l-0 t--30">
+                                                        <div class="d-flex">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin"></div>
+                                                    <div class="bg-green way2-line "></div>
+                                                    <div class="way2-content l-0 pt-1">
+                                                        <p class="fs-14 mb-1">
+                                                           <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="way2 d-flex align-items-center relative ">
+                                                    <div class="way2-content l-center l-10 text-center t--30 mt--5">
+                                                        <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                        <p class="fs-12 c-blue">28 Days left</p>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon c-green mx-1" width="16px" height="16px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                    </svg>
+                                                    <div class="bg-green way2-line "></div>
+                                                </div>
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content r-0 t--30">
+                                                        <div class="d-flex justify-content-end">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin"></div>
+                                                    <div class="way2-content r-0 text-right">
+                                                        <p class="fs-14 mb-1 pt-1">
+                                                            <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
+                                            <img src="img/ftl/icon-1.svg" class="py-1" alt="icon">
+                                            <p>FCL / 8 x 35’CHI</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#outside"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </li>
+                            <li class="base-li relative d-flex pr-4 mb-4">
+                                <div class="d-flex absolute l-20 t--50 z-4">
+                                    <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
+                                    <div class="block bg-blue c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="px-4 py-3 base-border w-100 b-blue-light2 mr-2 hover-b">
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="pt-2">
+                                            <div class="d-flex mb-2 pt-1">
+                                                <label class="mb-4 mr-3 hover">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <svg class="svg-sprite-icon c-blue d-block mr-3 hover" width="16px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
+                                                    <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3 hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-100 max-770 py-4 mt-2">
+                                          <div class="d-flex align-items-center py-1 relative">
+                                              <div class="way2 d-flex align-items-center relative">
+                                                  <div class="way2-content l-0 t--30">
+                                                      <div class="d-flex">
+                                                          <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                          <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="bg-green way2-pin"></div>
+                                                  <div class="bg-green way2-line "></div>
+                                                  <div class="way2-content l-0 pt-1">
+                                                      <p class="fs-14 c-blue-gray mb-1">
+                                                         <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center">
+                                                  <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                      <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                  </svg>
+                                                  <div class="bg-green way2-line "></div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative big">
+                                                  <div class="way2-content l-center text-center t--30">
+                                                      <p class="fs-14">LTCH</p>
+                                                  </div>
+                                                  <div class="bg-green way2-pin"></div>
+                                                  <div class="bg-blue-bright way2-line "></div>
+                                                  <div class="way2-content l-0 pt-1">
+                                                      <p class="fs-14 c-blue-gray mb-1">
+                                                         <span class="weight-medium">ETD  </span>   <span class="weight-light "> 20 Apr. 2020   </span>
+                                                      </p>
+                                                      <p class="fs-14 c-blue-gray ">
+                                                         <span class="weight-medium">Cut-off  19-20  </span>   <span class="weight-light "> Apr. 2020  </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative big">
+                                                  <div class="way2-content l-center l-10 text-center t--30 mt--5">
+                                                      <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                      <p class="fs-12 c-blue">28 Days left</p>
+                                                  </div>
+                                                  <svg class="svg-sprite-icon c-blue-light mx-1" width="16px" height="16px">
+                                                      <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
+                                                  </svg>
+                                                  <div class="bg-blue-bright way2-line "></div>
+                                                  <div class="way2-content r--10 text-right pt-1">
+                                                      <p class="fs-14 c-blue-gray mb-1">
+                                                         <span class="weight-medium">ETA   </span>   <span class="weight-light "> 28 Apr. 2020  </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative">
+                                                  <div class="way2-content l-center text-center t--30">
+                                                      <p class="fs-14">USAH</p>
+                                                  </div>
+                                                  <div class="bg-blue-bright way2-pin"></div>
+                                                  <div class="bg-gray way2-line "></div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center">
+                                                  <svg class="svg-sprite-icon c-gray mx-1" width="16px" height="16px">
+                                                      <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                  </svg>
+                                                  <div class="bg-gray way2-line "></div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative">
+                                                  <div class="way2-content r-0 t--30">
+                                                      <div class="d-flex justify-content-end">
+                                                          <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                          <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                      </div>
+                                                  </div>
+                                                  <div class="bg-gray way2-pin"></div>
+                                                  <div class="way2-content r-0 text-right">
+                                                      <p class="fs-14 c-blue-gray mb-1 pt-1">
+                                                          <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
+                                                       </p>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
+                                            <img src="img/ftl/icon-2.svg" class="py-1" alt="icon">
+                                            <p>FCL / 8 x 35’CHI</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#outside"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </li>
+                            <li class="base-li relative d-flex pr-4 mb-4">
+                                <div class="d-flex absolute l-20 t--50 z-4">
+                                    <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
+                                    <div class="block bg-green c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="px-4 py-3 base-border w-100 b-blue-light2 mr-2 hover-b">
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="pt-2">
+                                            <div class="d-flex mb-2 pt-1">
+                                                <label class="mb-4 mr-3 hover">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <svg class="svg-sprite-icon c-blue d-block mr-3 hover" width="16px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
+                                                    <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3 hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-100 max-770">
+                                            <!-- <div class="d-flex justify-content-between align-items-end">
+                                                <div class="d-flex">
+                                                    <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                    <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                </div>
+                                                <div class="text-center">
+                                                    <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                    <p class="fs-12 c-blue">28 Days left</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                    <p class="pl-2 c-blue-gray fs-14">Florida, US</p>
+                                                </div>
+                                            </div> -->
+                                          <div class="d-flex align-items-center pb-4 pt-5 mt-2">
+                                              <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-0 t--49">
+                                                    <div class="d-flex">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                    </div>
+                                                </div>
+                                                  <div class="bg-green way2-pin"></div>
+                                                  <div class="bg-green way2-line "></div>
+                                                  <div class="way2-content l-0 pt-1">
+                                                      <p class="fs-14 c-blue-gray mb-1">
+                                                         <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
+                                                      </p>
+                                                  </div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center text-center t--24">
+                                                    <p class="fs-14">LT</p>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+
+                                              <div class="way2 d-flex align-items-center">
+                                                  <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                      <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                  </svg>
+                                                  <div class="bg-green way2-line "></div>
+                                              </div>
+                                              <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center text-center t--24">
+                                                    <p class="fs-14">YT</p>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+                                            <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center l-10 text-center t--49 mt--5">
+                                                    <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                    <p class="fs-12 c-blue">28 Days left</p>
+                                                </div>
+                                                <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                </svg>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+                                            <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center text-center t--24">
+                                                    <p class="fs-14">NB</p>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+                                            <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center text-center t--24">
+                                                    <p class="fs-14">RY</p>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+
+                                            <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content l-center text-center t--24">
+                                                    <p class="fs-14">ET</p>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="bg-green way2-line "></div>
+                                            </div>
+                                            <div class="way2 d-flex align-items-center relative">
+                                                <div class="way2-content r-0 t--49">
+                                                    <div class="d-flex justify-content-end">
+                                                        <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                        <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-green way2-pin"></div>
+                                                <div class="way2-content r-0 text-right">
+                                                    <p class="fs-14 c-blue-gray mb-1 pt-1">
+                                                        <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
+                                            <img src="img/ftl/icon-3.svg" class="py-1" alt="icon">
+                                            <p>FCL / 8 x 35’CHI</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#outside"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="base-li relative d-flex pr-4 mb-4">
+                                <div class="d-flex absolute l-20 t--50 z-4">
+                                    <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
+                                    <div class="block bg-blue-bright c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="px-4 py-3 base-border b-blue-light2 w-100 mr-2 hover-b">
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="pt-2">
+                                            <div class="d-flex mb-2 pt-1">
+                                                <label class="mb-4 mr-3 hover">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <svg class="svg-sprite-icon c-blue d-block mr-3 hover" width="16px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
+                                                    <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3  hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-100 max-770 py-4 mt-2">
+                                            <div class="d-flex align-items-center py-1 relative">
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content l-0 t--30">
+                                                        <div class="d-flex">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin"></div>
+                                                    <div class="bg-green way2-line "></div>
+                                                    <div class="way2-content l-0 pt-1">
+                                                        <p class="fs-14 mb-1">
+                                                           <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="way2 d-flex align-items-center relative ">
+                                                    <div class="way2-content l-center l-10 text-center t--30 mt--5">
+                                                        <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                        <p class="fs-12 c-blue">28 Days left</p>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon c-green mx-1" width="16px" height="16px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                    </svg>
+                                                    <div class="bg-green way2-line "></div>
+                                                </div>
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content r-0 t--30">
+                                                        <div class="d-flex justify-content-end">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin"></div>
+                                                    <div class="way2-content r-0 text-right">
+                                                        <p class="fs-14 mb-1 pt-1">
+                                                            <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
+                                            <img src="img/ftl/icon-4.svg" class="py-1" alt="icon">
+                                            <p>FCL / 8 x 35’CHI</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#outside"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </li>
+                            <li class="base-li relative d-flex pr-4 mb-4">
+                                <div class="d-flex absolute l-20 t--50 z-4">
+                                    <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
+                                    <div class="block bg-orange c-white mr-2 px-4">Delayed</div>
+                                </div>
+                                <div class="px-4 py-3 base-border b-blue-light2 w-100 mr-2 hover-b">
+                                    <div class="d-flex justify-content-between ">
+                                        <div class="pt-2">
+                                            <div class="d-flex mb-2 pt-1">
+                                                <label class="mb-4 mr-3 hover">
+                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <span class="checkbox__icon-blue ml-0"></span>
+                                                </label>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <svg class="svg-sprite-icon c-blue d-block mr-3 hover" width="16px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                                </svg>
+                                                <div class="pl-1">
+                                                    <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
+                                                    <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3  hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                        <div class="w-100 max-770 py-4 mt-2">
+                                            <div class="d-flex align-items-center py-1 relative">
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content l-0 t--30">
+                                                        <div class="d-flex">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin"></div>
+                                                    <div class="bg-green way2-line "></div>
+                                                    <div class="way2-content l-0 pt-1">
+                                                        <p class="fs-14 mb-1">
+                                                           <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="way2 d-flex align-items-center relative ">
+                                                    <div class="way2-content l-center l-10 text-center t--30 mt--5">
+                                                        <p class="fs-12 weight-light">Transit time 38 Days</p>
+                                                        <p class="fs-12 c-blue">28 Days left</p>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon c-green mx-1" width="16px" height="16px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                    </svg>
+                                                    <div class="bg-green opacity-3 way2-line "></div>
+                                                </div>
+                                                <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2-content r-0 t--30">
+                                                        <div class="d-flex justify-content-end">
+                                                            <img src="img/flag.svg" alt="flag" class="flag_v3">
+                                                            <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="bg-green way2-pin opacity-3"></div>
+                                                    <div class="way2-content r-0 text-right">
+                                                        <p class="fs-14 mb-1 pt-1">
+                                                            <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
+                                                         </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
+                                            <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
+                                            <img src="img/ftl/icon-5.svg" class="py-1" alt="icon">
+                                            <p>FCL / 8 x 35’CHI</p>
+                                        </div>
+
+
+                                    </div>
+                                </div>
+                                <div class="base-settings absolute r-0 h-100 d-lg-flex flex-lg-column justify-content-center py-2">
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#outside"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="#">
+                                        <svg class="svg-sprite-icon c-white" width="14px" height="16px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

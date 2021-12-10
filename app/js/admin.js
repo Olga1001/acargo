@@ -18,44 +18,9 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
   $('.dropdown-list').on('click', function (e) {
     e.stopPropagation();
   });
-  // Toggle the side navigation
-
-  $("#sidebarToggle, #sidebarToggleTop, .overlay").on('click', function (e) {
-    $("body").toggleClass("sidebar-toggled");
-    $(".sidebar").toggleClass("toggled");
-    $("#sidebarToggleTop").toggleClass("toggled");
-
-    if ($(".sidebar").hasClass("toggled")) {
-      $('.sidebar .collapse').collapse('hide');
-    }
-  
-  }); // Close any open menu accordions when window is resized below 768px
-  if (window.matchMedia("(max-width: 768px)").matches) { 
-    $("body").removeClass("sidebar-toggled");
-    $(".sidebar").removeClass("toggled");
-  }
-  $(window).resize(function () {
-    if ($(window).width() < 768) {
-      $('.sidebar .collapse').collapse('hide');
-    }
-
-    ;
-  }); // Prevent the content wrapper from scrolling when the fixed side navigation hovered over
-
-  $('body.fixed-nav .sidebar').on('mousewheel DOMMouseScroll wheel', function (e) {
-    if ($(window).width() > 768) {
-      var e0 = e.originalEvent,
-          delta = e0.wheelDelta || -e0.detail;
-      this.scrollTop += (delta < 0 ? 1 : -1) * 30;
-      e.preventDefault();
-    }
-  });
-})(jQuery); // End of use strict
-// Modal Javascript
 
 
 $(document).ready(function () {
-
     $(".collapse_v2").each(function () {
       console.log("1");
       let height = $(this).height(); 
@@ -246,29 +211,29 @@ $(document).ready(function () {
 
 //STICKY
 $(document).ready(function () {
-  let topbarHeight = $(".topbar").height();
+  let topbarHeight = $(".header").height();
   $(".popup__booking-detail").css("top", topbarHeight);
 
   $(window).scroll(function () {
     if ($(window).width() > 768) {
       if ($(window).scrollTop() > 0) {
         $(".sticky").addClass('active');
-        $(".topbar").slideUp(200);
+        // $(".header").slideUp(200);
         $(".box-head").addClass('fixed-top');
         $(".fix-top-tabs").addClass('active');
       } else {
         $(".sticky").removeClass('active');
-        $(".topbar").slideDown(200);
+        // $(".header").slideDown(200);
         $(".box-head").removeClass('fixed-top');
         $(".fix-top-tabs").removeClass('active');
       }
     }
     if ($(window).scrollTop() > 1) {
-      $(".popup__booking-detail").addClass('top-0');
-      $(".popup__company-info").addClass('top-0');
+      // $(".popup__booking-detail").addClass('top-0');
+      // $(".popup__company-info").addClass('top-0');
     } else {
-      $(".popup__booking-detail").removeClass('top-0');
-      $(".popup__company-info").removeClass('top-0');
+      // $(".popup__booking-detail").removeClass('top-0');
+      // $(".popup__company-info").removeClass('top-0');
     }
   });
 }); 

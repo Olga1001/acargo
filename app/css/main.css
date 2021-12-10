@@ -1427,7 +1427,7 @@ button {
 .container-fluid {
   padding-right: 7vw;
   padding-bottom: 1.5vw;
-  min-height: calc(100% - 60px); }
+  min-height: calc(100vh - 60px); }
   .container-fluid.active {
     background-color: rgba(1, 51, 137, 0.48); }
     .container-fluid.active #box {
@@ -6963,7 +6963,7 @@ button {
   min-height: -moz-fit-content;
   top: 72px;
   position: fixed;
-  right: 1.5rem;
+  right: 0;
   z-index: 999;
   /* overflow-y: auto;
   scrollbar-color: #b7bcd6 #ffffff;
@@ -6973,7 +6973,7 @@ button {
   overflow-y: auto;
   scrollbar-color: #b7bcd6 #ffffff;
   scrollbar-width: thin;
-  height: calc(100vh - 285px);
+  height: calc(100vh - 343px);
   background: #ffffff;}
 .popup__booking-detail .contents::-webkit-scrollbar {
   width: 6px;
@@ -8904,17 +8904,15 @@ padding-top: 15px;}
   width: 100%}
 .fix-top-tabs {
   position: fixed;
-  top: 72px;
+  top: 60px;
   left: 0;
   z-index: 99;
   width: 100%;
   transition: all 0.2s ease;}
 .fix-top-tabs.active {
-  transition: all 0.2s ease;
-  top: 0;}
-
+  transition: all 0.2s ease;}
 .h-calc {
-  height: calc(100vh - 3rem - 66px)}
+  height: calc(100vh - 3rem - 60px - 50px)}
 .collapsed-rotate-90 {
   transform: rotate(90deg);}
 .collapsed.collapsed-rotate-90 {
@@ -9247,8 +9245,6 @@ padding-top: 15px;}
   .btn-arrow {
     width: 1.5vw;
     height: 1.5vw; }
-  .container-fluid {
-    min-height: calc(100% - 60px); }
   .rate-road__item:nth-child(2) {
     width: calc(34% - 23px); }
   .rate-road__item {

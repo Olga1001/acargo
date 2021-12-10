@@ -342,13 +342,13 @@ a:focus {
 }
 
 .header .dropdown {
-  position: static;
+  position: relative;
 }
 
 .header .dropdown .dropdown-menu {
   width: calc(100% - 1.5rem);
-  right: 0.75rem;
-  margin-top: 9px;
+  right: 0.75rem!important;
+  margin-top: 35px;
   max-height: 516px;
   overflow-y: auto;
   scrollbar-color: rgba(183, 188, 214, 0.37) #ffffff;
@@ -359,12 +359,12 @@ a:focus {
     -webkit-appearance: none;
     background: none; 
     appearance: none; }
-  .navbar .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
+  .header .dropdown .dropdown-menu::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: rgba(183, 188, 214, 0.37);}
-  .navbar .dropdown .dropdown-menu::-webkit-scrollbar-button {
+  .header .dropdown .dropdown-menu::-webkit-scrollbar-button {
     display: none; }
-.navbar .dropdown-list {
+.header .dropdown-list {
   padding: 0;
   border: none;
   overflow: hidden;
@@ -383,7 +383,7 @@ a:focus {
 }
 
 
-.navbar .dropdown-list .dropdown-item {
+.header .dropdown-list .dropdown-item {
   white-space: normal;
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -392,23 +392,23 @@ a:focus {
   border-bottom: 1px solid #e3e6f0;
   line-height: 1.3rem;
 }
-.navbar .dropdown-list .dropdown-item.text-gray-500 {
+.header .dropdown-list .dropdown-item.text-gray-500 {
   position: sticky;
   bottom: 0;
   background: #fff;
 }
-.navbar .dropdown-list .dropdown-item .dropdown-list-image {
+.header .dropdown-list .dropdown-item .dropdown-list-image {
   position: relative;
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.navbar .dropdown-list .dropdown-item .dropdown-list-image img {
+.header .dropdown-list .dropdown-item .dropdown-list-image img {
   height: 2.5rem;
   width: 2.5rem;
 }
 
-.navbar .dropdown-list .dropdown-item .dropdown-list-image .status-indicator {
+.header .dropdown-list .dropdown-item .dropdown-list-image .status-indicator {
   background-color: #eaecf4;
   height: 0.75rem;
   width: 0.75rem;
@@ -419,32 +419,34 @@ a:focus {
   border: 0.125rem solid #fff;
 }
 
-.navbar .dropdown-list .dropdown-item .text-truncate {
+.header .dropdown-list .dropdown-item .text-truncate {
   max-width: 10rem;
 }
 
-.navbar .dropdown-list .dropdown-item:active {
+.header .dropdown-list .dropdown-item:active {
   background-color: #eaecf4;
   color: #3a3b45;
 }
 
 @media (min-width: 576px) {
-  .navbar .dropdown {
+  .header .dropdown {
     position: relative;
   }
 
-  .navbar .dropdown .dropdown-menu {
+  .header .dropdown .dropdown-menu {
     width: -webkit-max-content;
     width: -moz-max-content;
     width: max-content;
-    right: 0;
+    right: 0!important;
+    left: auto!important;
+    transform: none!important
   }
 
-  .navbar .dropdown-list {
+  .header .dropdown-list {
     width: 20rem !important;
   }
 
-  .navbar .dropdown-list .dropdown-item .text-truncate {
+  .header .dropdown-list .dropdown-item .text-truncate {
     max-width: 13.375rem;
   }
 

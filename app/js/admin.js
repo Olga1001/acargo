@@ -12,6 +12,7 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
       $(`${el} .chat-list`).eq(index).addClass('active').siblings().removeClass('active');
     });
   }
+
   chtaTab('.chat');
   chtaTab('.dropdown-list');
 
@@ -19,24 +20,24 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
     e.stopPropagation();
   });
 
-
+});
 $(document).ready(function () {
-    $(".collapse_v2").each(function () {
-      console.log("1");
-      let height = $(this).height(); 
-      console.log(height);
-      $(this).find(".line__last").height(height - 53);
-    });
+  $(".collapse_v2").each(function () {
+    console.log("1");
+    let height = $(this).height();
+    console.log(height);
+    $(this).find(".line__last").height(height - 53);
+  });
 
-  $(window).on("load", function() {
+  $(window).on("load", function () {
     //Prevent having no "active" slide
     var $el = $('.calendar__item.active');
     if (!$el.length) {
       $('.calendar__item').first().addClass('active');
     }
   });
-  
-  $(".btn-prev_v2").click(function() {
+
+  $(".btn-prev_v2").click(function () {
     var $el = $('.active').prev('.calendar__item');
     if (!$el.length) //If no previous, s$elect last
     {
@@ -45,8 +46,8 @@ $(document).ready(function () {
     $('.active').removeClass('active');
     $el.addClass('active');
   });
-  
-  $(".btn-next_v2").click(function() {
+
+  $(".btn-next_v2").click(function () {
     var $el = $('.active').next('.calendar__item');
     if (!$el.length) //If no next, s$elect first
     {
@@ -86,14 +87,14 @@ $(document).ready(function () {
 
 $(document).ready(function () {
 
-  // dashed line start-finish  
+  // dashed line start-finish
   if (document.querySelector('.current-position')) {
     let segmentDashed = $(".line-vertical_shipment").height() - $(".current-position").position().top;
     let topStartDashed = $(".current-position").position().top;
-    $(".line-vertical_dashed").css({"top":(topStartDashed + 11), "height": (segmentDashed - 11)});
+    $(".line-vertical_dashed").css({"top": (topStartDashed + 11), "height": (segmentDashed - 11)});
   }
 
-  
+
   $(".table__item").click(function () {
     $(this).find(".table__arrow").toggleClass('active');
     $(this).closest("li").find(".table__drop").slideToggle(300);
@@ -106,7 +107,7 @@ $(document).ready(function () {
 
   $(".relative .tool").click(function (e) {
     e.stopPropagation();
-     $(this).closest('.relative').find(".select__drop").slideToggle(300);
+    $(this).closest('.relative').find(".select__drop").slideToggle(300);
   })
   $(".btn").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
@@ -236,7 +237,7 @@ $(document).ready(function () {
       // $(".popup__company-info").removeClass('top-0');
     }
   });
-}); 
+});
 
 $(document).ready(function () {
 
@@ -286,7 +287,7 @@ $(document).ready(function () {
   //     look_to_sticks: true
   //   });
   // }
- 
+
   $(".click__more").click(function (e) {
     e.preventDefault();
     $(this).closest(".table__order-list").toggleClass('active');
@@ -297,7 +298,7 @@ $(document).ready(function () {
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale');
   });
 
-  $(".collapsed-bg").click(function (e) { 
+  $(".collapsed-bg").click(function (e) {
     $(this).find(".last").toggleClass('active-scale');
     $(this).find(".popup2").removeClass('active');
     $(this).closest(".table__order-list").toggleClass('overflow-hidden');

@@ -5759,9 +5759,6 @@ button {
     font-size: 18px;}
   .fs-17 {
     font-size: 17px;}
-  .fs-14 {
-    font-size: 14px; }
-  
   .clients-list li {
     border: solid 1px rgba(183, 188, 214, 0.37);
     border-bottom: none; }
@@ -9055,8 +9052,8 @@ padding-top: 15px;}
   border: 1px solid rgba(183, 188, 214, 0.3);
   border-radius: 3px;}
 .dropdown.show .focus-orange, .dropdown.show .focus-orange svg, .dropdown.show .focus-orange span {
-  fill: #F99E04;
-  color: #F99E04;}
+  fill: #F99E04!important;
+  color: #F99E04!important;}
 .dropdown.show .focus-orange .circle-span {
   background-color: #F99E04!important;}
 .col-15_7 {
@@ -9196,6 +9193,8 @@ padding-top: 15px;}
     width: 100%!important;
     font-size: 13px;}  }
 @media only screen and (max-width: 1440px) {
+  .price {
+    padding: 8px 12px;}
   body {
     font-size: 14px; }
   .pl-0_1440 {
@@ -9228,6 +9227,12 @@ padding-top: 15px;}
   input, textarea {
     height: 32px;
     font-size: 14px;}
+  .form-search {
+    height: 32px; }
+  .form-search:hover button, .form-search input:focus ~ button {
+    right: calc(100% - 36px);}
+  .form-search input {
+    padding-left: 34px;}
   .btns .btn-aquamarine, .tool {
       width: 32px;
       height: 32px;}
@@ -9293,6 +9298,81 @@ padding-top: 15px;}
   .btns-block .btn_v3{
     padding: 0 10px;
     font-size: 12px; }}
+@media only screen and (max-width: 1280px) {
+  .icon-bxs-user {
+    height: 13px;}
+  .fs-12_1280 {
+    font-size: 12px!important;}
+  .wh-13_1280 {
+    width: 13px!important;
+    height: 13px!important;}
+  #wrapper {
+    padding-top: 51px;}
+  .nav-link_v3, .nav-tabs_v3 .nav-link {
+    padding: 7px 42px!important;}
+  .pt-1_1280 {
+    padding-top: 0.25rem!important;}
+  .p-2_1280 {
+    padding: 10px!important;}
+  .checkbox__loading .check-btn__green {
+    width: 47px;}
+  .checkbox__loading .svg-sprite-icon {
+    transform: scale(0.72);}
+  .collapseFilter {
+    padding-top: 8px!important;
+    padding-bottom: 8px!important;
+    margin-top: 7px!important;}
+  .p-1_1280 {
+    padding: .25rem!important;}
+  .pt-2_1280 {
+    padding-top: 0.5rem!important;}
+  .px-2_1280 {
+    padding-left: 0.5rem!important;
+    padding-right: 0.5rem!important;}
+  .px-3_1280 {
+    padding-left: 1rem!important;
+    padding-right: 1rem!important;}
+  .flag_v3 {
+    width: 13px;
+    height: 13px;}
+  .block {
+    font-size: 12px;
+    line-height: 11px;}
+  .icon-fcl {
+    width: 62px;}
+  .lh-1_4 {
+    line-height: 16px;}
+  .icon-arrow-right {
+    width: 12px;}
+  .min-w-110 {
+    min-width: 90px;}
+  .mb-3_1280 {
+    margin-bottom: 1rem!important;}
+  .pb-1_1280 {
+    padding-bottom: 0.25rem!important;}
+  .fs-13 {
+    font-size: 12px!important;}
+  body {
+    font-size: 13px;}
+  .logo {
+    margin-right: 22px;}
+  .logo img {
+    width: 78px;
+    height: 27px;}
+  .mune-item {
+    font-size: 13px;
+    line-height: 50px;}
+  .header {
+    min-height: 51px;}
+  .menu-list {
+    margin-right: 28px;}
+  .nav-menu ul li.relative:before {
+    height: 28px;}
+  .menu-dropdown a {
+    padding: 5px 0;}
+  .form-search_content {
+    width: 182px;}
+}
 @media only screen and (max-width: 1199px) {
   .fix-top-tabs {
     top: 60px;}
@@ -9604,7 +9684,6 @@ padding-top: 15px;}
     height: 35px;}
   .chat_tab svg {
     transform: scale(0.7);}}
-
 @media only screen and (max-width: 768px) {
   .popup__booking-detail {
     overflow-y: auto;
@@ -9773,9 +9852,7 @@ padding-top: 15px;}
       right: 0; }
   .chat {
     min-width: 640px; }}
-
 @media only screen and (max-width: 575px) {
-
   .check-tabs label {
     width: 50%;}
   .base-border {

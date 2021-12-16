@@ -8953,7 +8953,7 @@ padding-top: 15px;}
 .form-search {
   position: relative;
   width: 36px;
-  height: 39px;}
+  height: 40px;}
 .form-search button {
   transition: all 0.3s ease;
   position: absolute;
@@ -9003,13 +9003,13 @@ padding-top: 15px;}
   width: 376px;
   height: 100%;
   pointer-events: none;}
-.form-search:hover input, .form-search input:focus {
+.form-search:hover input, .form-search input:focus, .form-search.active input {
   width: 100%;
   opacity: 1;
   pointer-events: auto;}
-.form-search:hover .form-search_content, .form-search input:focus ~ .form-search_content {
+.form-search:hover .form-search_content, .form-search input:focus ~ .form-search_content, .form-search.active .form-search_content{
   pointer-events: auto;}
-.form-search:hover button, .form-search input:focus ~ button {
+.form-search:hover button, .form-search input:focus ~ button, .form-search.active button {
   right: calc(100% - 36px - 8px)}
 .menu-dropdown {
   opacity: 0;
@@ -9033,7 +9033,7 @@ padding-top: 15px;}
   display: block;
   border-bottom: 1px solid transparent;
   color: #FFFFFF;}
-.mune-item:hover {
+.mune-item:hover, .mune-item.active {
   color: #24B1FF;
   border-color: #24B1FF;}
 .menu-row li:hover .menu-dropdown, .menu-row li.relative:hover:before{
@@ -9207,9 +9207,14 @@ padding-top: 15px;}
     min-width: 100%;
     width: 100%!important;
     font-size: 13px;}  }
+@media only screen and (max-width: 1680px) {
+  .form-search_content {
+    width: 182px;}
+}
 @media only screen and (max-width: 1440px) {
+  
   .price {
-    padding: 8px 12px;}
+    padding: 6.5px 12px;}
   body {
     font-size: 14px; }
   .pl-0_1440 {
@@ -9244,7 +9249,7 @@ padding-top: 15px;}
     font-size: 14px;}
   .form-search {
     height: 32px; }
-  .form-search:hover button, .form-search input:focus ~ button {
+  .form-search:hover button, .form-search input:focus ~ button, .form-search.active button {
     right: calc(100% - 36px);}
   .form-search input {
     padding-left: 34px;}
@@ -9385,8 +9390,6 @@ padding-top: 15px;}
     height: 28px;}
   .menu-dropdown a {
     padding: 5px 0;}
-  .form-search_content {
-    width: 182px;}
 }
 @media only screen and (max-width: 1199px) {
   .fix-top-tabs {

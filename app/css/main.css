@@ -425,7 +425,7 @@ button {
       background-color: #b7bcd6; }
     .select__menu::-webkit-scrollbar-button {
       display: none; }
-  .select__option {
+  .select__option, .hover__option {
     color: #282e3b;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -435,7 +435,7 @@ button {
     min-height: 25px;
     list-style-type: none;
     padding: 0 15px; }
-    .select__option.active, .select__option:hover {
+    .select__option.active, .select__option:hover, .hover__option:hover, .hover__option.active {
       background-color: #f5fbff;
       color: #109cf1; }
     .select__option.c-white.active, .select__option.c-white:hover {
@@ -640,14 +640,14 @@ button {
 .input-normal {
   color: #b7bcd6;
   text-align: center; }
-  .input-normal::-webkit-input-placeholder {
-    color: #b7bcd6; }
-  .input-normal:-moz-placeholder {
-    color: #b7bcd6; }
-  .input-normal::-moz-placeholder {
-    color: #b7bcd6; }
-  .input-normal:-ms-input-placeholder {
-    color: #b7bcd6; }
+.input-normal::-webkit-input-placeholder, .placeholder-gray::-webkit-input-placeholder  {
+  color: #b7bcd6; }
+.input-normal:-moz-placeholder, .placeholder-gray:-moz-placeholder {
+  color: #b7bcd6; }
+.input-normal::-moz-placeholder, .placeholder-gray::-moz-placeholder {
+  color: #b7bcd6; }
+.input-normal:-ms-input-placeholder, .placeholder-gray:-ms-input-placeholder {
+  color: #b7bcd6; }
 
 .input-resize {
   min-width: 20px;
@@ -808,6 +808,8 @@ button {
 .add-order-no .select {
   border: none;
   max-width: 180px; }
+.select.no-arrow:before {
+  content: none;}
 .select__arrow-right-0:before {
   right: 0}
 .select__arrow-right-4:before {
@@ -7624,7 +7626,9 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   max-width: 870px;}
 .max-910 {
   max-width: 910px;}
-.max-250{
+.max-240 {
+  max-width: 240px;}
+.max-250 {
   width: 100%;
   max-width: 250px;}
 .max-260{
@@ -7910,12 +7914,12 @@ padding-top: 15px;}
   padding-right: 0;
   padding-top: 0;
   background-color: transparent;}
-
+.min-h-210 {
+  min-height: 210px;}
 .max-h-215 {
   max-height: 215px;}
 .max-h-250 {
   max-height: 250px;}
-
   .w-table {
     width: calc(100% + 55px + 1.5rem);}
   .datepicker{
@@ -7970,7 +7974,8 @@ padding-top: 15px;}
   width: fit-content;
 }
 .nav-tabs_v9 .nav-link {
-  border-bottom: 1px  solid transparent; 
+  border-bottom: 1px  solid transparent;
+  color: #37517E;
 }
 .nav-tabs_v9 .nav-link.active {
   border-color: #109CF1
@@ -9089,6 +9094,9 @@ padding-top: 15px;}
   width: 16.38%;}
 .col-17_38 {
   width: 17.38%;}
+.map__dropdown {
+  width: 400px;
+  height: 100%;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

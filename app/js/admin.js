@@ -191,7 +191,7 @@ $(document).ready(function () {
   $(".nav .nav-link").click(function (e) {
     e.preventDefault();
     $(this).addClass('active').parent().siblings().find(".nav-link").removeClass('active');
-    var index = $(this).parent().index();
+    let index = $(this).parent().index()
     $(".contents__item").eq(index).addClass('active').siblings().removeClass('active');
     $("input.range-way3").bootstrapSlider('refresh');
     $("input.range-way").bootstrapSlider('refresh');

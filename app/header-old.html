@@ -15,593 +15,186 @@
 <body id="page-top">
     <div id="wrapper">
         <div class="overlay"></div>
-        <header class="header d-flex justify-content-between align-items-center ">
-            <div class="d-flex align-items-center">
-                <a href="#" class="logo pb-1">
-                    <img src="img/logo/logo.svg" alt="logo Acargo">
-                </a>
-                <nav class="nav-menu ml-3">
-                    <ul class="menu-row d-flex">
-                        <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
-                        <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
-                        <li class="relative menu-list">
-                            <a href="#"  class="mune-item">Rate (18)</a>
-                            <div class="menu-dropdown">
-                                <ul class="d-flex">
-                                    <li><a href="#" class="mr-4">Rates (1134)</a></li>
-                                    <li><a href="#" class="mr-4">Transport rates (284) </a></li>
-                                    <li><a href="#" class="mr-4">Requests (858)</a></li>
-                                </ul>
+        <header class="header px-0">
+            <nav class="navbar navbar-expand navbar-light supbar pt-4 pb-xl-4 px-xl-5">
+                <div class="d-flex align-items-center justify-content-between w-100"><a class="sidebar-brand-icon" href="#"><img class="logo" src="img/logo/logo.png" srcset="img/logo/logo@2x.png 2x, img/logo/logo@3x.png 3x" alt="logo"></a>
+                    <div class="d-flex flex-wrap pr-xl-5 mr-xl-5 ovals__absolute">
+                        <div class="oval-block">
+                            <div class="select select-calendar">
+                                <svg class="svg-sprite-icon icon-calendar">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar"></use>
+                                </svg>
+                                <div class="select__item c-dark">3 Month</div>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option">3 Month  </li>
+                                        <li class="select__option">4 Month  </li>
+                                    </ul>
+                                </div>
                             </div>
-                        </li>
-                        <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
-                        <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
-                        <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
-                        <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="d-flex align-items-center">
-                <div class="d-flex align-items-center py-1">
-                    <form class="form-search ml-3 relative">
-                        <div class="form-search_content">
-                            <input type="text" placeholder="Search file">
-                            <button type="button">
-                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                        </div>
+                        <div class="oval-block oval-block__current">
+                            <div class="select select-current">
+                                <div class="select__item">USD </div>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option">USD </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <input class="input-normal" type="text" value="0,463 RUB">
+                        </div>
+                        <div class="oval-block">
+                            <p class="c-gray fs-14 w-100 text-center">Today:<span class="c-dark">Jan 31</span></p>
+                            <button class="btn-calendar" type="button">
+                                <svg class="svg-sprite-icon icon-calendar_2">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
                                 </svg>
                             </button>
                         </div>
-                    </form>
-                    <div class="currenty ml-3">
-                        <div class="select b-0 h-100">
-                            <div class="select__item c-white pl-3">USD</div>
-                            <div class="select__drop ">
-                                <ul class="select__menu bg-dark">
-                                    <li class="select__option c-white active">USD</li>
-                                    <li class="select__option c-white">EUR</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="price c-white">1,35 EUR</div>
                     </div>
+                    <ul class="d-flex">
+                        <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle h-100" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="20" viewBox="0 0 24 20">
+                                <defs>
+                                    <path id="prefix__a" d="M1.524 14.527V2.132l8.48 6.845 8.472-6.845v12.395H1.524zM17.143 1.49l-7.095 5.587-7.19-5.587h14.285zM18.182 0H1.818C.815 0 0 .797 0 1.778v12.444C0 15.202.815 16 1.818 16h16.364C19.185 16 20 15.203 20 14.222V1.778C20 .798 19.185 0 18.182 0z"></path>
+                                </defs>
+                                <g fill="none" fill-rule="evenodd">
+                                    <g transform="translate(0 4)">
+                                        <use fill="#B7BCD6" xlink:href="#prefix__a"></use>
+                                    </g>
+                                    <circle cx="4.5" cy="4.5" r="4.5" fill="#49DDAA" transform="translate(15)"></circle>
+                                </g>
+                            </svg></a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                                <h6 class="dropdown-header">Message Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/man.png" style="max-width: 60px" alt="">
+                                    <div class="status-indicator bg-success"></div>
+                                </div>
+                                <div class="font-weight-bold">
+                                    <div class="text-truncate">
+                                        Hi there! I am wondering if you can help me with a problem I've been
+                                        having.
+                                    </div>
+                                    <div class="small text-gray-500">Udin Cilok · 58m</div>
+                                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="dropdown-list-image mr-3"><img class="rounded-circle" src="img/girl.png" style="max-width: 60px" alt="">
+                                    <div class="status-indicator bg-default"></div>
+                                </div>
+                                <div>
+                                    <div class="text-truncate">
+                                        Am I a good boy? The reason I ask is because someone told me that people
+                                        say this to all dogs, even if they aren't good...
+                                    </div>
+                                    <div class="small text-gray-500">Jaenab · 2w</div>
+                                </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Read More Messages</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow mx-1"><a class="nav-link dropdown-toggle h-100" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="21" height="24" viewBox="0 0 21 22">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#B7BCD6" fill-rule="nonzero" d="M19.63 17.983c-2.372-1.056-2.462-5.588-2.464-5.702V9.24c0-2.927-1.813-5.443-4.39-6.514C12.77 1.222 11.527 0 10 0 8.473 0 7.23 1.222 7.225 2.727 4.647 3.798 2.834 6.314 2.834 9.24v3.04c-.002.115-.092 4.647-2.464 5.703-.27.12-.418.41-.356.696.063.286.319.49.615.49h6.012c.123.668.444 1.29.934 1.794C8.226 21.632 9.088 22 10 22c.912 0 1.774-.368 2.425-1.037.49-.504.81-1.126.934-1.794h6.012c.296 0 .552-.204.615-.49.062-.286-.086-.576-.356-.696zm-3.124-2.171c.25.745.602 1.493 1.103 2.116H2.39c.5-.623.854-1.37 1.103-2.116h13.012zM10 1.241c.69 0 1.275.457 1.458 1.081-.471-.096-.959-.147-1.458-.147-.5 0-.987.05-1.457.147.182-.624.766-1.081 1.457-1.081zM4.092 12.285V9.24c0-3.211 2.65-5.824 5.908-5.824 3.258 0 5.908 2.613 5.908 5.824v3.05c0 .093.016 1.074.266 2.281H3.826c.25-1.208.265-2.19.266-2.286zM10 20.759c-.96 0-1.799-.682-2.068-1.59h4.136c-.27.908-1.107 1.59-2.068 1.59z"></path>
+                                    <circle cx="4" cy="4" r="4" fill="#49DDAA" transform="translate(13)"></circle>
+                                </g>
+                            </svg></a>
+                            <div class="dropdown-list dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                                <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
+                                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 7, 2019</div>$290.29 has been deposited into your account!
+                                </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                                <div class="mr-3">
+                                    <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                                </div>
+                                <div>
+                                    <div class="small text-gray-500">December 2, 2019</div>Spending Alert: We've noticed unusually high spending for your account.
+                                </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown no-arrow"><a class="nav-link dropdown-toggle h-100 pr-sm-1 pr-0" id="userDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25">
+                                <g fill="#B7BCD6">
+                                    <path d="M24 12.5C24 5.591 18.633 0 12 0 5.368 0 0 5.59 0 12.5 0 19.347 5.322 25 12 25c6.65 0 12-5.621 12-12.5zM12 1.465c5.841 0 10.594 4.95 10.594 11.035 0 2.226-.636 4.365-1.814 6.178-4.733-5.304-12.818-5.313-17.56 0-1.178-1.813-1.814-3.952-1.814-6.178C1.406 6.415 6.16 1.465 12 1.465zM4.098 19.849c4.208-4.917 11.597-4.916 15.804 0-4.222 4.92-11.58 4.922-15.804 0z"></path>
+                                    <path d="M12.5 13.542c2.481 0 4.5-2.003 4.5-4.465V7.59c0-2.461-2.019-4.464-4.5-4.464S8 5.128 8 7.589v1.488c0 2.462 2.019 4.465 4.5 4.465zm-3-5.953c0-1.64 1.346-2.976 3-2.976s3 1.335 3 2.976v1.488c0 1.642-1.346 2.977-3 2.977s-3-1.335-3-2.977V7.59z"></path>
+                                </g>
+                            </svg><span class="ml-3 d-none d-lg-inline c-dark">Client</span><span class="d-sm-inline-flex ml-4 pl-2 d-none"><span class="settings__circle"></span><span class="settings__circle"></span><span class="settings__circle"></span></span></a>
+                            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown"><a class="dropdown-item" href="#"><i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>                                Profile</a><a class="dropdown-item" href="#"><i class="fas fa-cogs fa-sm fa-fw mr-2 text-gray-400"></i>                                Settings</a><a class="dropdown-item" href="#"><i class="fas fa-list fa-sm fa-fw mr-2 text-gray-400"></i>                                Activity Log</a>
+                                <div class="dropdown-divider"><a class="dropdown-item" href="login.html"></a><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>                                Logout</div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
-                <div class="d-flex align-items-center ml-3 pl-1 py-1">
-                    <div class="px-1">
-                        <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
-                        </svg>
-                    </div>
-                    <div class="px-3">
-                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
-                        </svg>
-                    </div>
-                    <div class="px-2 dropdown no-arrow">
-                        <a href="#" class="dropdown-toggle" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <svg class="svg-sprite-icon c-gray" width="20px" height="16px" >
-                                <use xlink:href="img/sprite/symbol/sprite.svg#mail"></use>
+            </nav>
+            <nav class="navbar navbar-expand navbar-light bg-navbar topbar static-top pr-xl-5 pr-3 p-0">
+                <button class="burger-mob" id="sidebarToggleTop"><span class="sidebarToggleTop-line sidebarToggleTop-top"></span><span class="sidebarToggleTop-line sidebarToggleTop-center"></span><span class="sidebarToggleTop-line sidebarToggleTop-bottom"></span></button>
+                <ul class="navbar-list navbar-list2 align-items-center d-md-flex d-none">
+                    <li class="navbar-item b-none active">
+                        <a href="https://acargo.click/app/customers/dashboard/" class="d-flex align-items-center">
+                            <svg class="svg-sprite-icon icon-dashboard navbar-item__svg mr-3">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#dashboard"></use>
                             </svg>
-                            <div class="bg-green count-message">4</div>
+                            <span class="fs-18 c-white">Dashboard</span>
                         </a>
-
-                        <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                            <div class="dropdown-header p-0">
-                                <button class="btn-expand ml-auto" type="button">
-                                    <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
-                                    </svg>
-                                </button>
-                                <div class="align-items-center justify-content-center d-flex">
-                                    <button class="chat_tab active mx-2" type="button">
-                                        <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#interface-2"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="chat_tab mx-2">
-                                        <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#people"></use>
-                                        </svg>
-                                    </button>
-                                    <button class="chat_tab mx-2" type="button">
-                                        <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#contacts"></use>
-                                        </svg>
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="w-100">
-                                <ul class="chat-list active">
-                                    <li class="pb-2 px-3 bg-light_v9">
-                                        <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex align-items-center">
-                                                <div class="avatar small mr-sm-3 mr-2">
-                                                    <img src="img/users.svg" alt="avatar">
-                                                    <div class="avatar-letters">AI</div>
-                                                    <div class="online-user"></div>
-                                                </div>
-                                                <div>
-                                                    <p class="mb-1">Anton Ivanov</p>
-                                                    <p class="fs-12 c-blue-gray">Online</p>
-                                                </div>
-                                            </div>
-                                            <p class="text-12">1 week ago</p>
-                                        </div>
-                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                        <div class="message-count">1</div>
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="avatar-letters">AI</div>
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                        <div class="message-count">2</div>
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="avatar-letters">AI</div>
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="avatar-letters">AI</div>
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                    </li>
-                                </ul>
-                                <ul class="chat-list pt-1">
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="avatar-letters">AI</div>
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                                <ul class="chat-list pt-1">
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="avatar-letters">AI</div>
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li class="py-2 px-3">
-                                        <div class="d-flex align-items-center">
-                                            <div class="avatar small mr-sm-3 mr-2">
-                                                <img src="img/users.svg" alt="avatar">
-                                                <div class="online-user"></div>
-                                            </div>
-                                            <div>
-                                                <p class="mb-1">Anton Ivanov</p>
-                                                <p class="fs-12 c-blue-gray">Online</p>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="px-2 dropdown no-arrow ml-1">
-                        <a href="#" class="dropdown-toggle" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
+                    </li>
+                    <li class="navbar-item b-none">
+                        <a href="https://acargo.click/app/customers/orders/" class="d-flex align-items-center">
+                            <svg class="svg-sprite-icon icon-supermarket navbar-item__svg mr-3">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#supermarket"></use>
                             </svg>
+                            <span class="fs-18 c-white">Orders</span>
                         </a>
-                        <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                            <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
-                            </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
-                            </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                            <div class="mr-3">
-                                <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                            </div>
-                            <div>
-                                <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
-                            </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
-                        </div>
-                    </div>
-                    <div class="px-2">
-                        <a href="#">
-                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#user"></use>
+                    </li>
+                    <li class="navbar-item b-none">
+                        <a href="https://acargo.click/app/customers/shipments/" class="d-flex align-items-center">
+                            <svg class="svg-sprite-icon icon-graph  navbar-item__svg mr-3">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#graph"></use>
                             </svg>
+                            <span class="fs-18 c-white text-nowrap">Shipments</span>
                         </a>
-                    </div>
-                    <div class="dropdown no-arrow">
-                        <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            <span class="circle-span bg-gray"></span>
-                            <span class="circle-span bg-gray"></span>
-                            <span class="circle-span bg-gray"></span>
-                        </div>
-                        <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
-                            <a class="dropdown-item mb-2" href="#">
-                                <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
-                                </svg>
-                                My profile
-                            </a>
-                            <a class="dropdown-item mb-2" href="#">
-                                <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
-                                </svg>
-                                Calendar
-                            </a>
-                            <a class="dropdown-item mb-2" href="#">
-                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#miscellaneous "></use>
-                                </svg>
-                                To-do list
-                            </a>
-                            <div class="row px-3 py-3 mt-1 mx-0">
-                                <div class="col-6 pr-2 mt-2">
-                                    <a href="#" class="d-flex align-items-center btn-manager active">
-                                        <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                        </svg>
-                                        Shipper
-                                    </a>
-                                </div>
-                                <div class="col-6 pl-2 mt-2">
-                                    <a href="#" class="d-flex align-items-center btn-manager ">
-                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                        </svg>
-                                        Shipper
-                                    </a>
-                                </div>
-                                <div class="col-6 pr-2 mt-2">
-                                    <a href="#" class="d-flex align-items-center btn-manager ">
-                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                        </svg>
-                                        Shipper
-                                    </a>
-                                </div>
-                                <div class="col-6 pl-2 mt-2">
-                                    <a href="#" class="d-flex align-items-center btn-manager">
-                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                        </svg>
-                                        .Client
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
+                    </li>
+                    <li class="navbar-item b-none">
+                        <a href="https://acargo.click/app/messages/?type=CLNT" class="d-flex align-items-center">
+                            <img src="https://acargo.click/app/img/acargo/sidebar/speech-bubble.svg" alt="icon" class="nav-link-img mr-3" width="17" height="20">
+                            <span class="fs-18 c-white text-nowrap">Messages</span>
+                        </a>
+                    </li>
+                    <li class="navbar-item b-none">
+                        <a href="https://acargo.click/app/customers/profile/" class="d-flex align-items-center">
+                            <svg class="svg-sprite-icon icon-user-1 navbar-item__svg mr-3">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#user-1"></use>
+                            </svg>
+                            <span class="fs-18 c-white text-nowrap">My account</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="d-flex ml-auto topbar-checkboxes">
+                    <label>
+                        <input class="checkbox" onchange="location.href='https://acargo.click/app/customers/dashboard/'" type="radio" value="CLNT" name="table_type" checked="">
+                        <span class="check-btn d-flex align-items-center justify-content-center">
+                          <svg class="svg-sprite-icon icon-manager mr-3">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#manager"></use>
+                            </svg><span>Сustomer</span>
+                        </span>
+                    </label>
                 </div>
-            </div>
-          </header>
+            </nav>
+        </header>
         <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
        
             <!-- Container-->
             <div class="container-fluid booking" id="container-wrapper">
                 <div id="box">
-                    <div class="sticky">
-                        <div class="breadcrumbs">
-                            <ul class="nav nav-pills pills-custom">
-                                <li class="nav-item">
-                                    <a class="nav-link active" href="#"><span></span><img src="img/check-white.svg" alt="check" class="nav-icon">Orders</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link focus" href="#"><img src="img/check-box-empty-blue.svg" alt="check" class="nav-icon">Bookings</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Trucking</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Loading</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Documents</a>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="first box-white">
-                            <div class="row align-items-center ">
-                                <div class="col-md-10 col-12">
-                                    <div class="row">
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-4">
-                                            <p class="text-15"> Order No.  P20-0047-LT06</p>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-4">
-                                            <div class="d-flex align-items-center ">
-                                                <img src="img/facebook-placeholder-for-locate-places-on-maps.svg" alt="wallet" class="first__icon">
-                                                <p class="text-15"> Busan, KR</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-4">
-                                            <div class="d-flex align-items-center ">
-                                                <img src="img/home-run-1.svg" alt="wallet" class="first__icon">
-                                                <p class="text-15"> Nongkyung. Co., LTD</p>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-sm-0 mb-4 ">
-                                            <div class="d-flex align-items-center ">
-                                                <img src="img/wallet.svg" alt="wallet" class="first__icon">
-                                                <div class="d-flex align-items-end">
-                                                    <p class="text-15">Payment terms:</p>
-                                                    <input type="number" value="30" class="first__input">
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-sm-0 mb-4">
-                                            <div class="d-flex align-items-center ">
-                                                <img src="img/icon-1.svg" alt="Estimated ready week" class="first__icon">
-                                                <div class="d-flex align-items-end">
-                                                    <p class="text-15">Estimated ready week:</p>
-                                                    <input type="number" value="7" class="first__input">
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="col-xl-4 col-sm-6 col-12 mb-sm-0 mb-4">
-                                            <div class="d-flex align-items-center ">
-                                                <img src="img/supermarket.svg" alt="supermarket" class="first__icon">
-                                                <div class="d-flex align-items-end">
-                                                    <p class="text-15">Quantity:</p>
-                                                    <input type="number" value="10" class="first__input">
-                                                </div>
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-2 col-12 d-flex justify-content-lg-end mt-md-0 mt-sm-4 mt-0">
-                                    <button type="button" class="btn active">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20">
-                                            <g fill="#FFF">
-                                                <path d="M15.833 11.382L13.54 10.05c-.165-.096-.387-.046-.488.109-.102.154-.048.365.115.46l2.293 1.333c.165.096.387.047.488-.109.101-.155.05-.364-.115-.46zM11.503 9c-.32 0-.563.304-.49.615.03.124.115.236.228.307.077.049.168.078.261.078.176 0 .337-.088.429-.237.196-.318-.05-.763-.428-.763zM7.946 10.152c-.1-.15-.332-.198-.491-.104l-2.29 1.345c-.164.097-.215.304-.111.457.062.093.183.147.302.15.067.002.134-.013.19-.046l2.289-1.345c.165-.097.215-.304.111-.457zM8.5 9c-.233 0-.437.163-.488.39-.07.308.174.61.488.61.232 0 .437-.163.488-.39.07-.31-.172-.61-.489-.61z"/>
-                                                <path d="M19.904 17.792c-.141-.163-.388-.18-.55-.038-.417.362-.803.738-1.35.889-.607.167-1.184.035-1.734-.24l2.034-6.845c.05-.17-.02-.354-.172-.446l-1.882-1.14v-3.33c0-.216-.175-.391-.39-.391h-.782V5.079c0-.216-.175-.391-.39-.391h-1.231V3.516c0-.216-.175-.39-.39-.39h-1.895V.39c0-.216-.175-.391-.39-.391H9.218c-.216 0-.39.175-.39.39v2.735H6.933c-.216 0-.391.175-.391.391v1.172h-1.23c-.216 0-.391.175-.391.39v1.173H4.14c-.216 0-.391.175-.391.39v3.33l-1.882 1.141c-.152.092-.223.275-.172.446l2.03 6.831c-.035-.117-.66-.193-.77-.208-1.138-.147-2.002.423-2.822 1.135-.162.142-.18.389-.038.552.135.155.386.181.55.038.845-.734 1.797-1.293 2.913-.735 1.01.506 2.056.722 3.109.168.848-.446 1.667-.832 2.614-.381l.974.464c.833.396 1.784.387 2.61-.025.508-.255 1.025-.593 1.605-.633.57-.04 1.12.173 1.62.423.661.33 1.435.397 2.145.194.653-.186 1.129-.602 1.63-1.038.162-.141.18-.388.038-.55zM15.47 7.032v2.466l-4.07-2.466h4.07zM9.609.782h.782v2.343h-.782V.781zM7.324 3.906h5.352v.78H7.324v-.78zM4.531 7.032h4.07l-4.07 2.466V7.032zM9.61 18.248c0-.069-.556-.197-.63-.213-.68-.147-1.409-.054-2.025.27-.448.236-.879.51-1.39.577H5.56c-.299.036-.605.014-.894-.07L2.53 11.624l7.078-4.29v10.914zM5.703 6.251v-.782h8.594v.782H5.703zm9.845 11.839c.004-.12-1.096-.12-1.17-.112-.677.072-1.264.42-1.862.72-.707.353-1.434.252-2.125-.078V7.335l7.078 4.29-1.921 6.465z"/>
-                                            </g>
-                                        </svg>
-                                        <span class="btn-text">Sea</span>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="booking__box-one box-white">
-                        <div class="row">
-                            <div class="col-sm-4 col-12 my-3">
-                                <p class="text-14">Origin</p>
-                                <input type="text" class="booking__box-input" value="Rucava, LV" disabled>
-                            </div>
-                            <div class="col-sm-4 col-12 my-3">
-                                <p class="text-14">Destination</p>
-                                <input type="text" class="booking__box-input" value="Busan, KR" disabled>
-                            </div>
-                            <div class="col-sm-4 col-12 my-3 ml-auto">
-                                <p class="text-14">Select booking</p>
-                                <div class="select booking__box-select">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">Select booking</li>
-                                            <li class="select__option">Select booking</li>
-                                            <li class="select__option">Select booking</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Terms</p>
-                                <input type="text" class="booking__box-input" value="LI-FO" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Booking No.</p>
-                                <input type="text" class="booking__box-input" value="YMFKLP0014418" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">BL No.</p>
-                                <input type="text" class="booking__box-input" value="YMFKLP0014418" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">BL Type</p>
-                                <div class="select disabled">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">BL Type</li>
-                                            <li class="select__option">BL Type</li>
-                                            <li class="select__option">BL Type</li>
-                                            <li class="select__option">BL Type</li>
-                                            <li class="select__option">BL Type</li>
-                                            <li class="select__option">BL Type</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Cut-off</p>
-                                <input type="text" class="booking__box-input" value="12.02.2020" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Time</p>
-                                <div class="select disabled">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">Time</li>
-                                            <li class="select__option">Time</li>
-                                            <li class="select__option">Time</li>
-                                            <li class="select__option">Time</li>
-                                            <li class="select__option">Time</li>
-                                            <li class="select__option">Time</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">ETD</p>
-                                <input type="text" class="booking__box-input" value="12.02.2020" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">ETA</p>
-                                <input type="text" class="booking__box-input" value="12.02.2020" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Demurrages</p>
-                                <div class="select disabled">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">Demurrages</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 my-3">
-                                <p class="text-14">Detention</p>
-                                <div class="select disabled">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">Detention</li>
-                                            <li class="select__option">Detention</li>
-                                            <li class="select__option">Detention</li>
-                                            <li class="select__option">Detention</li>
-                                            <li class="select__option">Detention</li>
-                                            <li class="select__option">Detention</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="sea-line box-white" >
-                        <div class="box-white__top d-flex align-items-center">
-                            <h2 class="title">SEA LINE</h2>
-                        </div>
-                        <div class="row mt-3">
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Sea Line</p>
-                                <input type="text" class="input" value="Yang ming" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Vessel</p>
-                                <input type="text" class="input" value="Frederik" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Voyage</p>
-                                <input type="text" class="input" value="Yang ming" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Transhipment</p>
-                                <div class="select disabled">
-                                    <div class="select__item">Humburg</div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">Humburg</li>
-                                            <li class="select__option">Humburg</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Containers Qty</p>
-                                <input type="text" class="input" value="15" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Terminal Pick-up</p>
-                                <input type="text" class="input" value="kkt" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">Terminal  Drop</p>
-                                <input type="text" class="input" value="kkt" disabled>
-                            </div>
-                            <div class="col-lg-3 col-sm-4 col-12 mt-4 mb-3">
-                                <p class="text-14">PTA</p>
-                                <div class="select disabled">
-                                    <div class="select__item"></div>
-                                    <div class="select__drop">
-                                        <ul class="select__menu">
-                                            <li class="select__option">PTA</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="notes box-white">
-                        <a href="#" class="text-16 d-flex align-items-center">+ Notes <img src="img/create-24-px.svg" alt="create" class="notes__icon"></a>
-                    </div>
-                    <label class="mark-stage w-100 d-flex justify-content-center">
-                        <input type="checkbox" class="checkbox" checked>
-                        <span class="mark-stage__check"></span>
-                        <span class="mark-stage__text">MARK STAGE AS COMPLETED </span>
-                    </label>
-                    <div class="d-flex justify-content-sm-center justify-content-around py-5 saves">
-                        <a href="#" class="btn-white mx-2">Save </a>
-                        <a href="#" class="btn-aquamarine mx-2">Save & Next  </a>
-                    </div>
                 </div>
 
                 

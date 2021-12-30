@@ -16,108 +16,168 @@
     <div id="wrapper">
       <div class="overlay"></div>
 
-      <header class="header d-flex justify-content-between align-items-center ">
-        <div class="d-flex align-items-center">
-            <a href="#" class="logo pb-1">
-                <img src="img/logo/logo.svg" alt="logo Acargo">
-            </a>
-            <nav class="nav-menu ml-3">
-                <ul class="menu-row d-flex">
-                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
-                    <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
-                    <li class="relative menu-list">
-                        <a href="#"  class="mune-item">Rate (18)</a>   
-                        <div class="menu-dropdown">
-                            <ul class="d-flex">
-                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
-                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
-                                <li><a href="#" class="mr-4">Requests (858)</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
-                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
-                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
-                    <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="d-flex align-items-center">
-            <div class="d-flex align-items-center py-1">
-                <form class="form-search ml-3 relative">
-                    <div class="form-search_content">
-                        <input type="text" placeholder="Search file">
-                        <button type="button">
-                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
-                            </svg>
-                        </button>
+        <header class="header d-flex justify-content-between align-items-center ">
+            <div class="d-flex align-items-center">
+                <a href="#" class="logo pb-1">
+                    <img src="img/logo/logo.svg" alt="logo Acargo">
+                </a>
+                <nav class="nav-menu ml-3">
+                    <ul class="menu-row d-flex">
+                        <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
+                        <li class="relative menu-list">
+                            <a href="#" class="mune-item">Rate (18)</a>
+                            <div class="menu-dropdown">
+                                <ul class="d-flex">
+                                    <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                    <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                    <li><a href="#" class="mr-4">Requests (858)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                    </ul>
+                </nav>
+                <div class="dropdown no-arrow ">
+                    <div class="py-3 py-2_1280 circle dropdown-toggle d-flex" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                        <span class="circle-span bg-white"></span>
+                        <span class="circle-span bg-white"></span>
+                        <span class="circle-span bg-white"></span>
                     </div>
-                </form>
-                <div class="currenty ml-3">
-                    <div class="select b-0 h-100">
-                        <div class="select__item c-white pl-3">USD</div>
-                        <div class="select__drop ">
-                            <ul class="select__menu bg-dark">
-                                <li class="select__option c-white active">USD</li>
-                                <li class="select__option c-white">EUR</li>
-                            </ul>
-                        </div>
+                    <div class="dropdown-menu animated--grow-in p-0 overflow-visible mt-5 mt-4_1280" aria-labelledby="menuDropdown">
+                        <ul class="dropdown-lv1 py-1">
+                            <li>
+                                <a href="#" class="dropdown-lv1_item">Public</a>
+                                <ul class="dropdown-lv2 pb-1">
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Public 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Public 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-lv1_item ">Finance</a>
+                                <ul class="dropdown-lv2 pb-1">
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Networks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Finance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Networks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Finance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-lv1_item ">Networks</a>
+                            </li>
+                        </ul>
+
                     </div>
-                    <div class="price c-white">1,35 EUR</div>
                 </div>
             </div>
-            <div class="d-flex align-items-center ml-3 pl-1 py-2">
-                <div class="px-1">
-                    <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
-                    </svg>
-                </div>
-                <div class="px-3">
-                    <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
-                    </svg>
-                </div>
-                <div class="px-2 dropdown no-arrow">
-                    <a href="#" class="dropdown-toggle" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px" >
-                            <use xlink:href="img/sprite/symbol/sprite.svg#mail"></use>
-                        </svg>
-                        <div class="bg-green count-message">4</div>
-                    </a>
-                
-                    <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
-                        <div class="dropdown-header p-0">
-                            <button class="btn-expand ml-auto" type="button">
-                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
-                                    <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center py-1">
+                    <form class="form-search ml-3 relative">
+                        <div class="form-search_content">
+                            <input type="text" placeholder="Search file">
+                            <button type="button">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
                                 </svg>
                             </button>
-                            <div class="align-items-center justify-content-center d-flex">
-                                <button class="chat_tab active mx-2" type="button">
-                                    <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#interface-2"></use>
-                                    </svg>
-                                </button>
-                                <button class="chat_tab mx-2">
-                                    <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#people"></use>
-                                    </svg>
-                                </button>
-                                <button class="chat_tab mx-2" type="button">
-                                    <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#contacts"></use>
-                                    </svg>
-                                </button>
+                        </div>
+                    </form>
+                    <div class="currenty ml-3">
+                        <div class="select b-0 h-100">
+                            <div class="select__item c-white pl-3">USD</div>
+                            <div class="select__drop ">
+                                <ul class="select__menu bg-dark">
+                                    <li class="select__option c-white active">USD</li>
+                                    <li class="select__option c-white">EUR</li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="w-100">
-                            <ul class="chat-list active">
-                                <li class="pb-2 px-3 bg-light_v9">
-                                    <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex justify-content-between">
+                        <div class="price c-white">1,35 EUR</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-3 pl-1 py-2">
+                    <div class="px-1">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
+                        </svg>
+                    </div>
+                    <div class="px-3">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                        </svg>
+                    </div>
+                    <div class="px-2 dropdown no-arrow">
+                        <a href="#" class="dropdown-toggle" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="16px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#mail"></use>
+                            </svg>
+                            <div class="bg-green count-message">4</div>
+                        </a>
+
+                        <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                            <div class="dropdown-header p-0">
+                                <button class="btn-expand ml-auto" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                                    </svg>
+                                </button>
+                                <div class="align-items-center justify-content-center d-flex">
+                                    <button class="chat_tab active mx-2" type="button">
+                                        <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#interface-2"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="chat_tab mx-2">
+                                        <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#people"></use>
+                                        </svg>
+                                    </button>
+                                    <button class="chat_tab mx-2" type="button">
+                                        <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#contacts"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="w-100">
+                                <ul class="chat-list active">
+                                    <li class="pb-2 px-3 bg-light_v9">
+                                        <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
+                                    </li>
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex justify-content-between">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-sm-3 mr-2">
+                                                    <img src="img/users.svg" alt="avatar">
+                                                    <div class="avatar-letters">AI</div>
+                                                    <div class="online-user"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="mb-1">Anton Ivanov</p>
+                                                    <p class="fs-12 c-blue-gray">Online</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-12">1 week ago</p>
+                                        </div>
+                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                        <div class="message-count">1</div>
+                                    </li>
+                                    <li class="py-2 px-3">
                                         <div class="d-flex align-items-center">
                                             <div class="avatar small mr-sm-3 mr-2">
                                                 <img src="img/users.svg" alt="avatar">
@@ -129,234 +189,217 @@
                                                 <p class="fs-12 c-blue-gray">Online</p>
                                             </div>
                                         </div>
-                                        <p class="text-12">1 week ago</p>
-                                    </div>
-                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                    <div class="message-count">1</div>
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="avatar-letters">AI</div>
-                                            <div class="online-user"></div>
+                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                        <div class="message-count">2</div>
+                                    </li>
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    </li>
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                    <div class="message-count">2</div>
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="avatar-letters">AI</div>
-                                            <div class="online-user"></div>
+                                        <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    </li>
+                                </ul>
+                                <ul class="chat-list pt-1">
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
+                                    </li>
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="avatar-letters">AI</div>
-                                            <div class="online-user"></div>
+                                    </li>
+                                </ul>
+                                <ul class="chat-list pt-1">
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
+                                    </li>
+                                    <li class="py-2 px-3">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
-                                </li>
-                            </ul>
-                            <ul class="chat-list pt-1">
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="avatar-letters">AI</div>
-                                            <div class="online-user"></div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="online-user"></div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                            <ul class="chat-list pt-1">
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="avatar-letters">AI</div>
-                                            <div class="online-user"></div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="py-2 px-3">
-                                    <div class="d-flex align-items-center">
-                                        <div class="avatar small mr-sm-3 mr-2">
-                                            <img src="img/users.svg" alt="avatar">
-                                            <div class="online-user"></div>
-                                        </div>
-                                        <div>
-                                            <p class="mb-1">Anton Ivanov</p>
-                                            <p class="fs-12 c-blue-gray">Online</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="px-2 dropdown no-arrow ml-1">
-                    <a href="#" class="dropdown-toggle" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
-                        </svg>
-                    </a>
-                    <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                        <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                    <div class="px-2 dropdown no-arrow ml-1">
+                        <a href="#" class="dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
+                            </svg>
+                        </a>
+                        <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                            <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
+                            </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
+                            </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                            <div class="mr-3">
+                                <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                            </div>
+                            <div>
+                                <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
+                            </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                         </div>
-                        <div>
-                            <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
-                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
-                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
-                        </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                     </div>
-                </div>
-                <div class="px-2">
-                    <a href="#">
-                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
-                            <use xlink:href="img/sprite/symbol/sprite.svg#user"></use>
-                        </svg>
-                    </a>
-                </div>
-                <div class="dropdown no-arrow">
-                    <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <span class="circle-span bg-gray"></span>
-                        <span class="circle-span bg-gray"></span>
-                        <span class="circle-span bg-gray"></span>
+                    <div class="px-2">
+                        <a href="#">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#user"></use>
+                            </svg>
+                        </a>
                     </div>
-                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
-                        <a class="dropdown-item mb-2" href="#">
-                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
-                            </svg>
-                            My profile
-                        </a>
-                        <a class="dropdown-item mb-2" href="#">
-                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
-                            </svg>
-                            Calendar
-                        </a>
-                        <a class="dropdown-item mb-2" href="#">
-                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
-                                <use xlink:href="img/sprite/symbol/sprite.svg#miscellaneous "></use>
-                            </svg>
-                            To-do list
-                        </a>
-                        <div class="row px-3 py-3 mt-1 mx-0">
-                            <div class="col-6 pr-2 mt-2">
-                                <a href="#" class="d-flex align-items-center btn-manager active">
-                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                    </svg>
-                                    Shipper
-                                </a>
-                            </div>
-                            <div class="col-6 pl-2 mt-2">
-                                <a href="#" class="d-flex align-items-center btn-manager ">
-                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                    </svg>
-                                    Shipper
-                                </a>
-                            </div>
-                            <div class="col-6 pr-2 mt-2">
-                                <a href="#" class="d-flex align-items-center btn-manager ">
-                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                    </svg>
-                                    Shipper
-                                </a>
-                            </div>
-                            <div class="col-6 pl-2 mt-2">
-                                <a href="#" class="d-flex align-items-center btn-manager">
-                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
-                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
-                                    </svg>
-                                    .Client
-                                </a>
+                    <div class="dropdown no-arrow">
+                        <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="circle-span bg-gray"></span>
+                            <span class="circle-span bg-gray"></span>
+                            <span class="circle-span bg-gray"></span>
+                        </div>
+                        <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                                </svg>
+                                My profile
+                            </a>
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
+                                </svg>
+                                Calendar
+                            </a>
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                                </svg>
+                                To-do list
+                            </a>
+                            <div class="row px-3 py-3 mt-1 mx-0">
+                                <div class="col-6 pr-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager active">
+                                        <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pl-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager ">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pr-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager ">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pl-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        .Client
+                                    </a>
+                                </div>
+
                             </div>
 
                         </div>
-
                     </div>
                 </div>
             </div>
-        </div>
-      </header>
+        </header>
 
-      <div class="d-flex flex-column w-100" id="content-wrapper">
+        <div class="d-flex flex-column w-100" id="content-wrapper">
         <div id="content">
 
-          <div class="container-fluid py-3 px-4" id="container-wrapper"> 
+          <div class="container-fluid py-3 px-4 p-2_1440" id="container-wrapper">
             <div id="box">
-              <div class="box-white rate max-1580">
-                <ul class="nav nav-tabs_v3 pt-4 bb-1 b-gray2 pb-0 ml-1">
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark active">All</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Pending</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Booking</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Pre-carriage</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Loading</a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Documents  </a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">In transit  </a></li>
-                  <li class="nav-item"><a class="nav-link_v3 px-5 c-dark">Delivered  </a></li>
-              </ul>
-                <div class="contents pt-0 pl-1 pr-xl-5" id="contents">
+              <div class="box-white mx-auto max-1485 px-4">
+                  <ul class="nav nav-tabs_v3 pt-3 bb-1 b-gray2 pb-0 px-1 pt-2_1440">
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark active px-4_1280">All</a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Pending</a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Booking</a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Pre-carriage</a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Loading</a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Documents  </a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">In transit  </a></li>
+                      <li class="nav-item"><a class="nav-link_v3 px-5 c-dark px-4_1280">Delivered  </a></li>
+                  </ul>
+                <div class="contents pt-0" id="contents">
                     <div class="contents__item_v3 active">
                         <div class="pr-4 mr-2">
-                            <div class="h-415 d-flex mt-2">
+                            <div class="h-415 d-flex mt-2 h-375_1440">
                                 <div class="overflow-y br-4 bg-light_v10 p-4 min-w-340 ">
                                 <div class="d-flex px-1">
                                     <div class="relative w-14">
@@ -394,53 +437,53 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="d-flex px-1">
-                                    <div class="relative w-14">
-                                        <div class="br-50 wh-8 b-2 b-gray bg-gray mx-auto"></div>
-                                        <div class="line small dashed b-1 bg-none"></div>
-                                    </div>
-                                    <div class="pb-4 pl-4">
-                                        <div class="pl-2 pb-2 fs-14">
-                                            <p class="weight-medium c-blue-gray">20 Apr. 2020  </p>
-                                            <p>  Delivery by shipment  </p>
+                                    <div class="d-flex px-1">
+                                        <div class="relative w-14">
+                                            <div class="br-50 wh-8 b-2 b-gray bg-gray mx-auto"></div>
+                                            <div class="line small dashed b-1 bg-none"></div>
+                                        </div>
+                                        <div class="pb-4 pl-4">
+                                            <div class="pl-2 pb-2 fs-14">
+                                                <p class="weight-medium c-blue-gray">20 Apr. 2020  </p>
+                                                <p>  Delivery by shipment  </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div class="d-flex px-1">
-                                    <div class="relative w-14">
-                                        <svg class="svg-sprite-icon c-gray" width="14px" height="20px">
-                                            <use xlink:href="img/sprite/symbol/sprite.svg#pin"></use>
-                                        </svg>
-                                    </div>
-                                    <div class="pb-4 pl-4">
-                                        <div class="pl-2 pb-2 fs-14">
-                                            <p class="weight-medium c-blue-gray">20 Apr. 2020  </p>
-                                            <p>  Delivery by shipment  </p>
+                                    <div class="d-flex px-1">
+                                        <div class="relative w-14">
+                                            <svg class="svg-sprite-icon c-gray" width="14px" height="20px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#pin"></use>
+                                            </svg>
+                                        </div>
+                                        <div class="pb-4 pl-4">
+                                            <div class="pl-2 pb-2 fs-14">
+                                                <p class="weight-medium c-blue-gray">20 Apr. 2020  </p>
+                                                <p>  Delivery by shipment  </p>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
                                 </div>
                                 <div class="w-100 map"> map</div>
                             </div>
                         </div>
                         <ul class="py-4">
-                            <li class="base-li active  b-r-0">
-                                <div class="d-flex pr-35 relative">
+                            <li class="base-li active b-r-0">
+                                <div class="d-flex relative">
                                     <div class="d-flex absolute l-20 t--50 z-4">
-                                        <div class="block bg-gray_7 c-blue mr-2 px-4">W 12</div>
-                                        <div class="block bg-blue-bright c-white mr-2 px-4">Delayed</div>
+                                        <div class="block bg-gray_7 c-blue mr-2 px-4 px-2_1280">W 12</div>
+                                        <div class="block bg-blue c-white mr-2 px-4 px-2_1280">Delayed</div>
                                     </div>
-                                    <div class="px-4 py-3  base-border b-blue-light2 w-100 hover-b">
+                                    <div class="pr-5 pl-4 py-3  base-border b-blue-light2 w-100 hover-b pb-2_1280">
                                         <div class="d-flex justify-content-between ">
-                                            <div class="pt-2">
+                                            <div class="pt-2 max-240 w-100 pt-0_1440">
                                                 <div class="d-flex mb-2 pt-1">
                                                     <label class="mb-4 mr-3 hover">
                                                         <input type="checkbox" class="checkbox" checked="">
                                                         <span class="checkbox__icon-blue ml-0"></span>
                                                     </label>
                                                     <div class="pl-1">
-                                                        <p> <span class="weight-medium c-gray4 mr-2">Order </span>   OR-647328474 <span class="ml-3 pl-1 weight-bold fs-14 c-blue"> 8/9</span></p>
-                                                        <p> <span class="weight-medium c-gray4 mr-2">Created </span>   15 Apr. 2020 </p>
+                                                        <p>  <span class="weight-bold c-blue"> OR-647328474  </span><span class="c-blue-dark pl-2"> 8/9</span> </p>
+                                                        <p> 15 Apr. 2020</p>
                                                     </div>
                                                 </div>
                                                 <div class="d-flex">
@@ -448,66 +491,95 @@
                                                         <use xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2"></use>
                                                     </svg>
                                                     <div class="pl-1">
-                                                        <p> <span class="weight-medium c-gray4 mr-2">Client   </span>    Acargo Company</p>
-                                                        <p class="pt-1"><a href="#" class="c-gray mr-3 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3  hover-l-blue">INV</a><a href="#" class="c-gray hover-l-blue">PCK</a></p>
+                                                        <p>  Acargo Company</p>
+                                                        <p class="pt-1"><a href="#" class="c-gray mr-3 mr-2_1280 hover-l-blue">CMR</a><a href="#" class="c-gray mr-3  hover-l-blue mr-2_1280">INV</a><a href="#" class="c-gray hover-l-blue mr-2_1280">PCK</a></p>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="w-100 max-770 py-4 mt-2 mx-2">
+                                            <div class="w-100 max-770 max-700_1280 py-4 py-3_1440 mt-2">
                                                 <div class="d-flex align-items-center py-1 relative">
                                                     <div class="way2 d-flex align-items-center relative">
                                                         <div class="way2-content l-0 t--30">
                                                             <div class="d-flex">
                                                                 <img src="img/flag.svg" alt="flag" class="flag_v3">
-                                                                <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
+                                                                <p class="pl-2 c-blue-gray fs-14 fs-13_1440 weight-bold fs-12_1280">Vilnius, LT</p>
                                                             </div>
                                                         </div>
                                                         <div class="bg-green way2-pin"></div>
                                                         <div class="bg-green way2-line "></div>
                                                         <div class="way2-content l-0 pt-1">
-                                                            <p class="fs-14 mb-1">
-                                                               <span class="weight-medium">Loading </span>   <span class="weight-light "> 18 Apr. 2020 </span>
-                                                            </p>
-                                                        </div>
-                                                        <div class="way2-content l-0 w-100 text-center t--30 pl-4">
-                                                            <p class="fs-14">LTCH</p>
+                                                            <p class="fs-14 mb-1 fs-13_1440 c-gray4 fs-11_1280">Loading 18 Apr. 2020</p>
                                                         </div>
                                                     </div>
-                                                    <div class="way2 d-flex align-items-center relative">
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1 wh-12_1440" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-green way2-line "></div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center relative big">
+                                                        <div class="way2-content l-center text-center t--30">
+                                                            <p class="fs-14 c-gray4 fs-12_1440 fs-11_1280">LTCH</p>
+                                                        </div>
+                                                        <div class="bg-green way2-pin"></div>
+                                                        <div class="bg-blue-bright way2-line "></div>
+                                                        <div class="way2-content l-0 pt-1">
+                                                            <p class="fs-14 mb-1 mb-0_1280 fs-13_1440 c-gray4 fs-11_1280">ETD  20 Apr. 2020 </p>
+                                                            <p class="fs-14 mb-1 fs-13_1440 c-gray4 fs-11_1280">Cut-off  19-20  Apr. 2020 </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center relative big">
                                                         <div class="way2-content l-center l-10 text-center t--30 mt--5">
                                                             <p class="fs-12 weight-light">Transit time 38 Days</p>
                                                             <p class="fs-12 c-blue">28 Days left</p>
                                                         </div>
-                                                        <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="16px" height="16px">
-                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        <svg class="svg-sprite-icon c-blue-light mx-1 wh-12_1440" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#boat"></use>
                                                         </svg>
-                                                        <div class="bg-green way2-line "></div>
-                                                        <div class="way2-content l-0 text-center t--30 w-100 pr-4">
-                                                            <p class="fs-14">USAH</p>
+                                                        <div class="bg-blue-bright way2-line "></div>
+                                                        <div class="way2-content r--10 text-right pt-1">
+                                                            <p class="fs-14 mb-1 fs-13_1440 c-gray4 fs-11_1280">ETA 28 Apr. 2020  </p>
                                                         </div>
                                                     </div>
                                                     <div class="way2 d-flex align-items-center relative">
-
+                                                        <div class="way2-content l-center text-center t--30">
+                                                            <p class="fs-14 fs-12_1440 fs-11_1280">USAH</p>
+                                                        </div>
+                                                        <div class="bg-blue-bright way2-pin"></div>
+                                                        <div class="bg-gray way2-line "></div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-gray mx-1 wh-12_1440" width="16px" height="16px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                        </svg>
+                                                        <div class="bg-gray way2-line "></div>
+                                                    </div>
+                                                    <div class="way2 d-flex align-items-center relative">
                                                         <div class="way2-content r-0 t--30">
                                                             <div class="d-flex justify-content-end">
+                                                                <p class="pr-2 c-blue-gray fs-14 fs-13_1440 weight-bold fs-12_1280">Vilnius, LT</p>
                                                                 <img src="img/flag.svg" alt="flag" class="flag_v3">
-                                                                <p class="pl-2 c-blue-gray fs-14">Vilnius, LT</p>
                                                             </div>
                                                         </div>
-                                                        <div class="bg-green way2-pin"></div>
-                                                        <div class="way2-content r-0 text-right">
-                                                            <p class="fs-14 mb-1 pt-1">
-                                                                <span class="weight-medium">Delivery  </span>   <span class="weight-light "> 30 Apr. 2020  </span>
-                                                             </p>
+                                                        <div class="bg-gray way2-pin"></div>
+                                                        <div class="way2-content r-0 text-right pt-1">
+                                                            <p class="fs-14 mb-1 fs-13_1440 c-gray4 fs-11_1280">Delivery  30 Apr. 2020  </p>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div>
-                                                <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Transporter </span>   Logistic Company</p>
-                                                <p class="mb-2"> <span class="weight-medium c-gray4 mr-2">Booking    </span>   AA647328474</p>
-                                                <img src="img/ftl/icon-1.svg" class="py-1" alt="icon">
-                                                <p>FCL / 8 x 35’CHI</p>
+                                            <div class="max-215 w-100 pl-2">
+                                                <p class="mb-1">Logistic Company</p>
+                                                <div class="hover-underline d-flex align-items-center mb-1">
+                                                    <p class="mr-3 py-1"> AA647328474</p>
+                                                    <button class="btn-action ml-2 bg-light_v13 hover" type="button">
+                                                        <svg class="svg-sprite-icon c-gray m-auto" width="10px" height="12px">
+                                                            <use xlink:href="img/sprite/symbol/sprite.svg#document"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                                <img src="img/ftl/icon-1.svg" class="py-1 mb-1 mb-0_1440 max-h-24_1280" alt="icon">
+                                                <p>FTL / 8 x 35’CHI</p>
                                             </div>
                                         </div>
                                     </div>
@@ -524,53 +596,53 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="pr-35">
-                                    <div class="collapse bg-light_v5 b-1 bt-0 b-blue mt--5" id="collapseDrop1">
-                                        <ul class="nav nav-tabs_v3 pt-2 pb-0 px-4 mx-xl-3">
-                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark active">Booking  </a></li>
-                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark">Cargo </a></li>
-                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark">Client </a></li>
-                                            <li class="nav-item"><a class="nav-link px-4 c-dark">Documents   </a></li>
+                                <div>
+                                    <div class="collapse bg-light_v5 b-1 bt-0 b-blue mt--5 show" id="collapseDrop1">
+                                        <ul class="nav nav-tabs_v3 pt-2 pb-0 px-4 mx-xl-3 mx-0_1440">
+                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark active fs-14_1440 px-2_1440 mr-5_1440">Booking  </a></li>
+                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark fs-14_1440 px-2_1440 mr-5_1440">Cargo </a></li>
+                                            <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark fs-14_1440 px-2_1440 mr-5_1440">Client </a></li>
+                                            <li class="nav-item"><a class="nav-link px-4 c-dark fs-14_1440 px-2_1440">Documents   </a></li>
                                         </ul>
                                         <div class="contents pt-0">
                                             <div class="contents__item active">
-                                                <div class="row mx-0 bg-blue-bright c-white p-3 mt-3">
+                                                <div class="row mx-0 bg-blue-bright c-white p-3 mt-3 fs-14 fs-13_1440 weight-medium">
                                                     <div class="col-6">
                                                         <div class="row">
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Order</p>
+                                                                <p>Order</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Ready / Loading</p>
+                                                                <p>Ready / Loading</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Truck</p>
+                                                                <p>Truck</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Trailer</p>
+                                                                <p>Trailer</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="col-6">
                                                         <div class="row">
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Weight</p>
+                                                                <p>Weight</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Transporter</p>
+                                                                <p>Transporter</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Driver</p>
+                                                                <p>Driver</p>
                                                             </div>
                                                             <div class="col-3">
-                                                                <p class="fs-14 weight-medium">Phone</p>
+                                                                <p>Phone</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                                <div class="b-1 b-blue-light2">
-                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                        <div class="col-6">
+                                                <div class="b-1 b-blue-light2 fs-13_1440">
+                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>OR-526177868</p>
@@ -586,7 +658,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>1 800 kg</p>
@@ -603,8 +675,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                        <div class="col-6">
+                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>OR-526177868</p>
@@ -620,7 +692,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>1 800 kg</p>
@@ -637,8 +709,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                        <div class="col-6">
+                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>OR-526177868</p>
@@ -654,7 +726,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>1 800 kg</p>
@@ -671,8 +743,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                        <div class="col-6">
+                                                    <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>OR-526177868</p>
@@ -688,7 +760,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>1 800 kg</p>
@@ -705,8 +777,8 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mx-0 p-3">
-                                                        <div class="col-6">
+                                                    <div class="row mx-0 p-3 py-2_1440">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>OR-526177868</p>
@@ -722,7 +794,7 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="col-6">
+                                                        <div class="col-6 py-1_1440">
                                                             <div class="row">
                                                                 <div class="col-3">
                                                                     <p>1 800 kg</p>
@@ -743,37 +815,37 @@
                                             </div>
                                             <div class="contents__item ">
                                                 <div class="max-1250 mt-3">
-                                                    <div class="row mx-0 bg-blue-bright c-white p-3 ">
+                                                    <div class="row mx-0 bg-blue-bright c-white p-3 fs-14 fs-13_1440 weight-medium">
                                                         <div class="col-7">
                                                             <div class="row">
                                                                 <div class="col-3">
-                                                                    <p class="fs-14 weight-medium">Order</p>
+                                                                    <p>Order</p>
                                                                 </div>
                                                                 <div class="col-3">
-                                                                    <p class="fs-14 weight-medium">Loading</p>
+                                                                    <p>Loading</p>
                                                                 </div>
                                                                 <div class="col-5">
-                                                                    <p class="fs-14 weight-medium">Product</p>
+                                                                    <p>Product</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="col-5">
                                                             <div class="row">
                                                                 <div class="col-3">
-                                                                    <p class="fs-14 weight-medium">Packing</p>
+                                                                    <p>Packing</p>
                                                                 </div>
                                                                 <div class="col-3">
-                                                                    <p class="fs-14 weight-medium">Quantity</p>
+                                                                    <p>Quantity</p>
                                                                 </div>
                                                                 <div class="col-3">
-                                                                    <p class="fs-14 weight-medium">Weight</p>
+                                                                    <p>Weight</p>
                                                                 </div>
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <div class="b-1 b-blue-light2">
-                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                            <div class="col-7">
+                                                    <div class="b-1 b-blue-light2 fs-13_1440">
+                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                            <div class="col-7 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>OR-526177868</p>
@@ -786,7 +858,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col-5 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>Pallets</p>
@@ -806,8 +878,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                            <div class="col-7">
+                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                            <div class="col-7 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>OR-526177868</p>
@@ -820,7 +892,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col-5 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>Pallets</p>
@@ -840,8 +912,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                            <div class="col-7">
+                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                            <div class="col-7 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>OR-526177868</p>
@@ -854,7 +926,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-5">
+                                                            <div class="col-5 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>Pallets</p>
@@ -874,8 +946,8 @@
                                                                 </div>
                                                             </div>
                                                         </div>
-                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                            <div class="col-7">
+                                                        <div class="row mx-0 p-3 py-2_1440">
+                                                            <div class="col-7 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>OR-526177868</p>
@@ -888,41 +960,7 @@
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="col-5">
-                                                                <div class="row">
-                                                                    <div class="col-3">
-                                                                        <p>Pallets</p>
-                                                                    </div>
-                                                                    <div class="col-3">
-                                                                        <p> 3 000</p>
-                                                                    </div>
-                                                                    <div class="col-3">
-                                                                        <p> 1800 kg</p>
-                                                                    </div>
-                                                                    <div class="col-3 d-flex align-items-center">
-                                                                        <img class="mr-3" src="img/danger-2.svg" alt="danger" width="13px" height="11px">
-                                                                        <img src="img/heat.svg" alt="heat"width="10px" height="11px">
-
-
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row mx-0 p-3 bb-1 b-blue-light2">
-                                                            <div class="col-7">
-                                                                <div class="row">
-                                                                    <div class="col-3">
-                                                                        <p>OR-526177868</p>
-                                                                    </div>
-                                                                    <div class="col-3">
-                                                                        <p>15 Apr. / 18 Apr.</p>
-                                                                    </div>
-                                                                    <div class="col-5">
-                                                                        <p class="text-truncate">Olive oil "Fabio Ferelli" unrefined, 500 ml Fabio Ferelli" unrefine</p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-5">
+                                                            <div class="col-5 py-1_1440">
                                                                 <div class="row">
                                                                     <div class="col-3">
                                                                         <p>Pallets</p>
@@ -946,29 +984,29 @@
                                                 </div>
                                             </div>
                                             <div class="contents__item">
-                                                <div class="row py-4 px-4 mx-xl-3">
+                                                <div class="row py-4 px-4 mx-xl-3 mx-0_1440 weight-medium fs-14_1440 fs-13_1280">
                                                     <div class="col-lg-4 col-md-6 pt-2 pl-0">
-                                                        <p class="fs-16 weight-medium pb-3">Parties</p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Shipper </span> Logistic Company </p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Consignee  </span> Acargo Company  </p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Customer   </span> Logistic Company   </p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Transporter    </span> Acargo Company   </p>
+                                                        <p class="fs-16 pb-3 fs-15_1440 fs-14_1280">Parties</p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Shipper </span> Logistic Company </p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Consignee  </span> Acargo Company  </p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Customer   </span> Logistic Company   </p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Transporter    </span> Acargo Company   </p>
                                                     </div>
                                                     <div class="col-lg-4 col-md-6 pt-2 pl-0">
-                                                        <p class="fs-16 weight-medium pb-3">Payment detail</p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Origin </span> Prepaid </p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Freight  </span> Prepaid </p>
-                                                        <p class=" mb-2"> <span  class="weight-medium c-blue-gray pr-3">Destination    </span> Collect  </p>
+                                                        <p class="fs-16 pb-3 fs-15_1440 fs-14_1280">Payment detail</p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Origin </span> Prepaid </p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Freight  </span> Prepaid </p>
+                                                        <p class=" mb-2"> <span  class="c-blue-gray pr-3">Destination    </span> Collect  </p>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="contents__item ">
-                                                <div class="py-4 px-4 mx-xl-3">
+                                                <div class="py-4 px-4 mx-xl-3 mx-0_1440">
                                                     <div class="row pb-3">
                                                         <div class="col-xl-3 col-lg-4 col-md-6">
                                                             <div class="d-flex pb-2 justify-content-between align-items-center max-250">
-                                                                <p>Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
-                                                                <div class="d-flex">
+                                                                <p class="pt-1">Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                                <div class="d-flex pt-1">
                                                                     <button class="btn-action ml-2" type="button">
                                                                         <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
@@ -982,8 +1020,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex pb-2 justify-content-between align-items-center max-250">
-                                                                <p>CMR<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
-                                                                <div class="d-flex">
+                                                                <p class="pt-1">CMR<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                                <div class="d-flex pt-1">
                                                                     <button class="btn-action ml-2" type="button">
                                                                         <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
@@ -997,8 +1035,8 @@
                                                                 </div>
                                                             </div>
                                                             <div class="d-flex pb-2 justify-content-between align-items-center max-250">
-                                                                <p>Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
-                                                                <div class="d-flex">
+                                                                <p class="pt-1">Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                                <div class="d-flex pt-1">
                                                                     <button class="btn-action ml-2" type="button">
                                                                         <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
@@ -1011,9 +1049,9 @@
                                                                     </button>
                                                                 </div>
                                                             </div>
-                                                            <div class="d-flex pb-2 justify-content-between align-items-center max-250">
-                                                                <p>CMR<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
-                                                                <div class="d-flex">
+                                                            <div class="d-flex pb- justify-content-between align-items-center max-250">
+                                                                <p class="pt-1">CMR<span class="fs-14 c-blue-gray pl-3 ">18.03.2020</span></p>
+                                                                <div class="d-flex pt-1">
                                                                     <button class="btn-action ml-2" type="button">
                                                                         <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
@@ -1028,69 +1066,69 @@
                                                             </div>
                                                         </div>
                                                         <div class="col-xl-3 col-lg-4 col-md-6">
-                                                            <div class="d-flex pb-2 align-items-center ">
-                                                                <p class="fs-14 pr-1">Users:</p>
-                                                                <div class="d-flex">
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">A.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                            <div class="d-flex pb-3 align-items-center ">
+                                                                <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                                <div class="d-flex fs-14 fs-12_1440">
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">A.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">T.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">T.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">E.R.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
-                                                                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
-                                                                        </svg>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                            <div class="d-flex pb-2 align-items-center ">
-                                                                <p class="fs-14 pr-1">Users:</p>
-                                                                <div class="d-flex">
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">A.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
-                                                                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
-                                                                        </svg>
-                                                                    </div>
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">T.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">E.R.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="d-flex pb-2 align-items-center ">
-                                                                <p class="fs-14 pr-1">Users:</p>
-                                                                <div class="d-flex">
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">A.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                            <div class="d-flex pb-3 align-items-center ">
+                                                                <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                                <div class="d-flex  fs-14 fs-12_1440">
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">A.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">T.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>
                                                                 </div>
                                                             </div>
-                                                            <div class="d-flex pb-2 align-items-center ">
-                                                                <p class="fs-14 pr-1">Users:</p>
-                                                                <div class="d-flex">
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">A.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                            <div class="d-flex pb-3 align-items-center ">
+                                                                <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                                <div class="d-flex  fs-14 fs-12_1440">
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">A.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>
-                                                                    <div class="br-12 px-2 b-1 mx-1 b-blue d-flex align-items-center">
-                                                                        <p class="px-1 lh-1_47">T.V.</p>
-                                                                        <svg class="svg-sprite-icon c-blue mx-1" width="7px" height="7px">
+                                                                </div>
+                                                            </div>
+                                                            <div class="d-flex pb-3 align-items-center ">
+                                                                <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                                <div class="d-flex  fs-14 fs-12_1440">
+                                                                    <div class="br-12 px-2  mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p class="py-1 lh-1">A.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                            <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                                        </svg>
+                                                                    </div>
+                                                                    <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                                        <p>T.V.</p>
+                                                                        <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
                                                                             <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
                                                                         </svg>
                                                                     </div>

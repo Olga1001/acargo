@@ -2149,6 +2149,8 @@ button {
   border-color: rgba(36, 177, 255, 0.12)!important;}
 .b-blue-light2 {
   border-color: rgba(16, 156, 241, 0.33)!important; /* #109CF1, 0.33*/}
+.b-blue-light3 {
+  border-color: #24B1FF!important;}
 .b-yellow {
   border-color: #f5e943!important;}
 .b-blue-navy {
@@ -2163,6 +2165,7 @@ button {
   border-color: #eff8fe !important; }
 .b-light2 {
   border-color: #cbeafc !important; }
+
 .c-blue-v1 {
   color: #24b1ff;
   fill: #24b1ff;  }
@@ -6302,6 +6305,9 @@ button {
     position: absolute;}
   .t-0 {
     top: 0;}
+  .t-1px {
+    top: 1px!important;
+  }
   .r-10 {
     right: 10px}
   .t-3 {
@@ -6899,9 +6905,9 @@ button {
   margin: 2.5px 6.5px !important;
   height: 34px !important;
   width: 34px !important;}
-.available.active_v3:before {
+/* .available.active_v3:before {
   content: ;
-}
+} */
 .available.active_v4 {
   padding: 0 !important;
   margin: 2.5px 6.5px !important;
@@ -8752,11 +8758,23 @@ padding-top: 15px;}
   right: 3px;
   top: 3px;
 }
-.top-right svg {
+.scale-x {
+  transform: scaleX(-1);
+  display: block;
+}
+.scale-y {
   transform: scaleY(-1);
   display: block;
 }
-
+.top-left {
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+.scale {
+  transform: scale(-1);
+  display: block;
+}
 .right-bottom:before, .top-right:before {
   color: #fff;
   opacity: 0;
@@ -8788,7 +8806,7 @@ padding-top: 15px;}
   content: 'Import';
   top: calc(100% - 2px);
 }
-.available:hover .right-bottom:before, .available:hover .top-right:before {
+.right-bottom:hover:before, .top-right:hover:before {
   opacity: 1;
 }
 .hover-b{
@@ -9231,6 +9249,7 @@ padding-top: 15px;}
   background-color: #b7bcd6; }
 .h-dropdown::-webkit-scrollbar-button {
   display: none; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -9245,21 +9264,38 @@ padding-top: 15px;}
 @media (min-width: 1200px) {   
   .min-w-xl-155 {
     min-width: 155px;}}
+@media (min-width: 1361px) {
+  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table th, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:nth-child(2) th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
+    width: 39px!important;
+    height: 39px!important;
+    margin: 3.5px 8px !important;}
+  .calendar_big .next {
+    right: -38px;}
+  .calendar_big .prev {
+    left: -38px;}
+} 
+@media only screen and (max-width: 1360px) {
+  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table th, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:nth-child(2) th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
+    width: 28px!important;
+    height: 28px!important;
+    margin: 1px 5px!important;}
+}
 @media (min-width: 1200px) and (max-width: 1599px) {
   .calendar-customer .prev, .calendar-customer .next {
     background-size: 90%;}
   .calendar-table thead tr:nth-child(2) th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
-    width: 34px !important;
+    width: 28px !important;
     margin: 2px 0 !important;}
   .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
     margin: 2.5px 1px!important;
-    width: 32px !important;}
+    width: 28px !important;}
   .available.active_v3, .available.active_v4 {
     margin: 2.5px 1px!important;
-    width: 32px !important;}
+    width: 28px !important;}
   .calendar-customer .calendar-table .available:hover {
     margin: 2.5px 1px!important;
-    width: 32px !important;}
+    width: 28px !important;}
+
   .quotes-requests__list li {
     min-width: 560px; }
   .orders-item img {

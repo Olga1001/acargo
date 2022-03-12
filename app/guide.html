@@ -111,10 +111,50 @@
                 </div>
             </div>
             <div class="d-flex align-items-center ml-3 pl-1 py-2">
-                <div class="px-1">
-                    <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
-                    </svg>
+                <div class="px-1 dropdown no-arrow">
+                    <a href="#" class=" dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
+                        </svg>
+                    </a>
+
+                    <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                        <h6 class="px-2 fs-14 weight-medium c-blue pt-2 my-1 lh-1">To-do list</h6>
+                        <div class="h-dropdown bb-1 b-blue-light2 p-0">
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-blue-dark weight-medium">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark bg-light_v10" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium">-2 days </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
                 </div>
                 <div class="px-3">
                     <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
@@ -129,7 +169,7 @@
                         <div class="bg-green count-message">4</div>
                     </a>
                 
-                    <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                    <div class="dropdown-list dropdown-menu w-385 animated--grow-in" aria-labelledby="messagesDropdown">
                         <div class="dropdown-header p-0">
                             <button class="btn-expand ml-auto" type="button">
                                 <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
@@ -284,26 +324,46 @@
                             <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
                         </svg>
                     </a>
-                    <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
-                        <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                    <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="px-2 fs-14 weight-medium c-blue pt-2 my-1 lh-1">Notifications</h6>
+                        <div class="h-dropdown bb-1 b-blue-light2 p-0">
+                            <a class="dropdown-item px-2 py-1 c-dark " href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 d-block lh-1_4">Acargo company</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray3">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 d-block lh-1_4">Acargo company</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray3">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark bg-light_v10" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 d-block lh-1_4">Acargo company</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray3">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 weight-medium c-blue-dark pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 d-block lh-1_4">Acargo company</span>
+                                <span class="fs-13 d-block lh-1_4">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 fs-12 text-italic">
+                                    <span class="c-gray3">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
                         </div>
-                        <div>
-                            <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
-                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
-                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
-                        <div class="mr-3">
-                            <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
-                        </div>
-                        <div>
-                            <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
-                        </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
                     </div>
                 </div>
                 <div class="px-2">

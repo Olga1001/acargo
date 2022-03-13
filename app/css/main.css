@@ -1837,7 +1837,10 @@ button {
   background-color: #156ce4!important; }
 .bg-blue-bright {
   background-color: #109CF1!important; }
-  
+.bg-blue_v3 {
+  background-color: rgba(16, 156, 241, 0.18626); }
+.bg-blue_v4 {
+  background-color: rgba(183, 188, 214, 0.06); }
 .bg-light_v2 {
   background-color: #e0f4ff}
 .bg-light_v4 {
@@ -2106,6 +2109,8 @@ button {
   text-transform: uppercase; }
 .text-initial {
   text-transform: initial!important; }
+.weight-extraBold {
+  font-weight: 800; }
 .weight-bold {
   font-weight: 700; }
 .weight-semi {
@@ -2147,6 +2152,10 @@ button {
   border-color: #109CF1!important; }
 .b-blue-light {
   border-color: rgba(36, 177, 255, 0.12)!important;}
+.b-blue-v2 {
+  border-color: rgba(36, 177, 255, 0.19)!important;}
+.b-blue-v3 {
+  border-color: rgba(16, 156, 241, 0.19)!important;}
 .b-blue-light2 {
   border-color: rgba(16, 156, 241, 0.33)!important; /* #109CF1, 0.33*/}
 .b-blue-light3 {
@@ -2177,12 +2186,12 @@ button {
 .c-blue-gray {
   color: #67758d!important; 
   fill: #67758d;}
-.c-blue-dark {
-  color: #37517E;
-  fill: #37517E;}
 .c-blue {
   color: #156ce4!important;
   fill: #156ce4!important;  }
+.c-blue_v3 {
+  color: rgba(16, 156, 241, 0.332195)!important;
+  fill: rgba(16, 156, 241, 0.332195)!important;  }
 .c-dark {
   color: #282e3b !important; }
 .c-dark_v2 {
@@ -2191,17 +2200,12 @@ button {
   color: #000000; }
 .c-black {
   color: #141515; }
-.c-gray3 {
-  color: #67758d;}
 .c-gray {
   color: #b7bcd6 !important;
   fill: #b7bcd6;}
 .c-gray2 {
   color: #8992a7;
   fill: #8992a7;}
-.c-gray4 {
-  color: #67758D;
-  fill: #67758D;}
 .c-gray-light {
   color: rgba(183, 188, 214, 0.3)!important; 
   fill:  rgba(183, 188, 214, 0.3);}
@@ -2399,7 +2403,7 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .calendar-table thead tr:nth-child(2) th {
+  .calendar-table thead tr:last-child th {
     width: 34px !important;
     height: 34px !important; }
 
@@ -5287,6 +5291,8 @@ button {
   font-size: 25px;}
 .fs-30 {
   font-size: 30px;}
+.fs-35 {
+  font-size: 35px;}
 .table__send-seles {
   width: calc(100% + 55px);}
 .textarea_notes {
@@ -5979,8 +5985,10 @@ button {
     display: block;
     cursor: pointer; }
 .check-btn__green.blue {
-  border-color: #24b1ff;
-}
+  border-color: #24b1ff;}
+.check-btn__green.blue2 {
+  font-weight: 400;
+  color: #37517E;}
   
   .checkbox:checked ~ .check-btn {
     background: #24b1ff; }
@@ -5992,6 +6000,10 @@ button {
     color: #ffffff; }
     .checkbox:checked ~ .check-btn__green.blue {
       background-color: #24b1ff; }
+    .checkbox:checked ~ .check-btn__green.blue2 {
+      color: #37517E;
+      font-weight: 500;
+      background-color: rgba(16, 156, 241, 0.18626); }
   .checkbox:checked ~ .check-btn__green svg {
     fill: #ffffff; }
   .checkbox__production .check-btn__green {
@@ -6157,7 +6169,7 @@ button {
     border-color: #156ce4; }
 
   .line-tracking {
-    height: 5px;
+    height: 4px;
     position: relative;
     background-color: rgba(183, 188, 214, 0.33);
     z-index: 1;
@@ -6937,12 +6949,15 @@ button {
   line-height: 1;}
   .lh-1_4 {
     line-height: 1.4;}
+  .lh-1_7 {
+    line-height: 1.7;}
 .lh-43 {
   line-height: 43px;}
 .lh-1_31 {
   line-height: 1.31;}
 .lh-1_47 {
   line-height: 1.47;}
+
 .br-4 {
   border-radius: 4px;}
 .br-6 {
@@ -9249,7 +9264,8 @@ padding-top: 15px;}
   background-color: #b7bcd6; }
 .h-dropdown::-webkit-scrollbar-button {
   display: none; }
-
+.calendar_big .calendar-table thead tr:not(:last-child) th {
+  opacity: 1;}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -9264,26 +9280,11 @@ padding-top: 15px;}
 @media (min-width: 1200px) {   
   .min-w-xl-155 {
     min-width: 155px;}}
-@media (min-width: 1361px) {
-  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table th, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:nth-child(2) th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
-    width: 39px!important;
-    height: 39px!important;
-    margin: 3.5px 8px !important;}
-  .calendar_big .next {
-    right: -38px;}
-  .calendar_big .prev {
-    left: -38px;}
-} 
-@media only screen and (max-width: 1360px) {
-  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table th, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:nth-child(2) th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
-    width: 28px!important;
-    height: 28px!important;
-    margin: 1px 5px!important;}
-}
+
 @media (min-width: 1200px) and (max-width: 1599px) {
   .calendar-customer .prev, .calendar-customer .next {
     background-size: 90%;}
-  .calendar-table thead tr:nth-child(2) th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+  .calendar-table thead tr:last-child th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
     width: 28px !important;
     margin: 2px 0 !important;}
   .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
@@ -9318,6 +9319,28 @@ padding-top: 15px;}
     min-width: 900px; }
   .trucking-list li {
     min-width: 555px; } }
+
+@media (min-width: 1361px) {
+  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:last-child th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
+    width: 39px!important;
+    height: 39px!important;
+    margin: 3.5px 8px !important;}
+    .calendar_big .calendar-table thead tr th {
+      margin: 3.5px 8px!important;}
+  /* .calendar_big .next {
+    right: -38px;}
+  .calendar_big .prev {
+    left: -38px;} */
+} 
+@media only screen and (max-width: 1360px) {
+  .calendar_big .calendar-table .available:hover, .calendar_big .calendar-table td, .calendar_big .calendar-table thead tr:last-child th, .calendar_big .calendar-table tbody td.active, .calendar_big .calendar-table tbody td.end-date.active, .calendar_big .calendar-table tbody td.start-date.active {
+    width: 28px!important;
+    height: 28px!important;
+    margin: 1px 5px!important;}
+  .calendar_big .calendar-table thead tr th {
+    margin: 1px 5px!important;
+  }
+}
 @media only screen and (min-width: 1890px) {
   .table__rate-table, .table__rate-table-road {
     width: calc(100% + 55px); }

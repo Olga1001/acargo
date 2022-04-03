@@ -1,0 +1,1753 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <link href="css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay active"></div>
+      <header class="header d-flex justify-content-between align-items-center ">
+        <div class="d-flex align-items-center">
+            <a href="#" class="logo pb-1">
+                <img src="img/logo/logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
+                    <li class="relative menu-list">
+                        <a href="#" class="mune-item">Rate (18)</a>   
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                <li><a href="#" class="mr-4">Requests (858)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                </ul>
+
+            </nav>
+            <div class="dropdown no-arrow ">
+                <div class="py-3 py-2_1280 circle dropdown-toggle d-flex" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                    <span class="circle-span bg-white"></span>
+                    <span class="circle-span bg-white"></span>
+                    <span class="circle-span bg-white"></span>
+                </div>
+                <div class="dropdown-menu animated--grow-in p-0 overflow-visible mt-5 mt-4_1280" aria-labelledby="menuDropdown">
+                    <ul class="dropdown-lv1 py-1">
+                        <li>
+                            <a href="#" class="dropdown-lv1_item">Public</a>
+                            <ul class="dropdown-lv2 pb-1">
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Public 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Public 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-lv1_item ">Finance</a>
+                            <ul class="dropdown-lv2 pb-1">
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Networks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Finance</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Networks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Finance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-lv1_item ">Networks</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-1">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="currenty ml-3">
+                    <div class="select b-0 h-100">
+                        <div class="select__item c-white pl-3">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-dark">
+                                <li class="select__option c-white active">USD</li>
+                                <li class="select__option c-white">EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price c-white">1,35 EUR</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center ml-3 pl-1 py-2">
+                <div class="px-1 dropdown no-arrow">
+                    <a href="#" class=" dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
+                        </svg>
+                    </a>
+
+                    <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                        <h6 class="px-2 fs-14 fs-13_1440 weight-medium c-blue pt-2 my-1 lh-1">To-do list</h6>
+                        <div class="h-dropdown bb-1 b-blue-light2 p-0">
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                    <span class="c-gray fs-10_1440">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium fs-11_1440">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                    <span class="c-gray fs-10_1440">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-navy-blue weight-medium fs-11_1440">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark bg-light_v10" href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                    <span class="c-gray fs-10_1440">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium fs-11_1440">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                    <span class="c-gray fs-10_1440">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium fs-11_1440">-2 days </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark " href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                    <span class="c-gray fs-10_1440">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-orange weight-medium fs-11_1440">-2 days </span>
+                                </span>
+                            </a>
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                    </svg>
+                </div>
+                <div class="px-2 dropdown no-arrow">
+                    <a href="#" class="dropdown-toggle" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#mail"></use>
+                        </svg>
+                        <div class="bg-green count-message">4</div>
+                    </a>
+                
+                    <div class="dropdown-list dropdown-menu w-385 animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="dropdown-header p-0">
+                            <button class="btn-expand ml-auto" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <button class="chat_tab active mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#interface-2"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2">
+                                    <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#people"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#contacts"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <ul class="chat-list active">
+                                <li class="pb-2 px-3 bg-light_v9">
+                                    <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-12">1 week ago</p>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">1</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">2</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 dropdown no-arrow ml-1">
+                    <a href="#" class="dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="px-2 fs-14 fs-13_1440 weight-medium c-blue pt-2 my-1 lh-1">Notifications</h6>
+                        <div class="h-dropdown bb-1 b-blue-light2 p-0">
+                            <a class="dropdown-item px-2 py-1 c-dark " href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">Acargo company</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 pb-0_1440 lh-1_4 fs-12 fs-11_1440 text-italic">
+                                    <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue " href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">Acargo company</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 pb-0_1440 lh-1_4 fs-12 fs-11_1440 text-italic">
+                                    <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark bg-light_v10 " href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">Acargo company</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 pb-0_1440 lh-1_4 fs-12 fs-11_1440 text-italic">
+                                    <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="fs-14 fs-13_1440 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">Acargo company</span>
+                                <span class="fs-13 fs-12_1440 d-block lh-1_3">OR-6318267383</span>
+                                <span class="d-flex justify-content-between py-1 pb-0_1440 lh-1_4 fs-12 fs-11_1440 text-italic">
+                                    <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                    <span class="c-gray">1day ago</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <a href="#">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="dropdown no-arrow">
+                    <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                    </div>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>
+                        <div class="row px-3 py-3 mt-1 mx-0">
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager active">
+                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    .Client
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+
+      <div class="d-flex flex-column w-100" id="content-wrapper">
+        <div id="content">
+
+          <div class="container-fluid p-3 p-2_1440" id="container-wrapper">
+            <div id="box">
+            </div>
+              <div class="popup_v2 d-flex">
+                  <div class="box-white max-1380 w-100 active m-auto p-3">
+                      <div class="d-flex justify-content-end">
+                          <a href="#" class="close mb-3">
+                              <img src="img/gray__cancel.svg" alt="icon close" class="wh-10_1280">
+                          </a>
+                      </div>
+                      <div class="px-4 mx-3 px-0_1280 mx-0_1440">
+                            <p class="fs-20 weight-medium pb-4 mb-3 text-center">Send request</p>
+                            <div class="max-450 mb-3">
+                                <p class="weight-medium pb-2 c-blue">Select company for request</p>
+                                <div class="select ">
+                                    <div class="select__item text-italic">Select company</div>
+                                    <div class="select__drop">
+                                        <ul class="select__menu">
+                                            <li class="select__option active">Select company</li>
+                                            <li class="select__option "> company</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex flex-wrap scroll-y max-h-107 mt-1 mb-4">
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                                <div class="w-20 d-flex align-items-center mb-2 pr-2">
+                                    <img src="img/flag.svg" alt="flag" width="20px" height="20px" class="mr-2">
+                                    <p>Acargo Company</p>
+                                </div>
+                               
+                            </div>
+                            <p class="weight-medium c-blue py-3">Past rates</p>
+                            <ul class="max-h-322 scroll-y b-1 b-blue-light2 mb-5">
+                                <li class="row bg-blue fs-14 weight-medium c-white py-2 sticky-top mx-0">
+                                    <div class="col-7 py-1">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Company</p>
+                                            <p class="col-4">Origin</p>
+                                            <p class="col-4">Destination</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 py-1 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Container</p>
+                                            <p class="col-3">Rate</p>
+                                            <p class="col-5 pr-0">Valid time</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2 bb-1 b-blue-light2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row mx-0 py-2">
+                                    <div class="col-7">
+                                        <div class="row mx-0">
+                                            <p class="col-4">Logistic Company LTD</p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                            <p class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                <span>Klaipeda, LTHL</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="col-5 px-0">
+                                        <div class="row mx-0">
+                                            <p class="col-4">35’ CHU</p>
+                                            <p class="col-3">1200 EUR </p>
+                                            <p class="col-5 pr-0">12 Apr. 20 / 18 Apr. 20 </p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="max-450 mb-3">
+                                <p class="weight-medium py-2 c-blue">Select sea line</p>
+                                <div class="select ">
+                                    <div class="select__item text-italic">Select company</div>
+                                    <div class="select__drop">
+                                        <ul class="select__menu">
+                                            <li class="select__option active">Select company</li>
+                                            <li class="select__option "> company</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <div class="d-flex align-items-center block_resize-input">            
+                                                     <div class="table__span" style="display: none;"></div>
+                                                    <input type="text" class="input-normal mr-1 c-dark" placeholder=". . .">
+                                                    <div class="select select__two">
+                                                        <div class="select__item c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">EUR</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option m-0 ">10 days</li>
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                            <li class="select__option m-0">18 days</li>
+                                                            <li class="select__option m-0">20 days</li>
+                                                            <li class="select__option m-0">25 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">18 - 20 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option m-0 active">18 - 20 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                <div class="d-flex">
+                                                    <p class="bb-1 c-gray mr-2 p-0">Monday</p>
+                                                    <svg class="svg-sprite-icon c-gray" width="12px" height="18px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <div class="d-flex align-items-center block_resize-input">            
+                                                     <div class="table__span" style="display: none;"></div>
+                                                    <input type="text" class="input-normal mr-1 c-dark" placeholder=". . .">
+                                                    <div class="select select__two">
+                                                        <div class="select__item c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">EUR</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option m-0 ">10 days</li>
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                            <li class="select__option m-0">18 days</li>
+                                                            <li class="select__option m-0">20 days</li>
+                                                            <li class="select__option m-0">25 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">15 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">18 - 20 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">18 - 20 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                <div class="d-flex">
+                                                    <p class="bb-1 c-gray mr-2 p-0">Monday</p>
+                                                    <svg class="svg-sprite-icon c-gray" width="12px" height="18px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <div class="d-flex align-items-center block_resize-input">            
+                                                     <div class="table__span" style="display: none;"></div>
+                                                    <input type="text" class="input-normal mr-1 c-dark" placeholder=". . .">
+                                                    <div class="select select__two">
+                                                        <div class="select__item c-dark">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">EUR</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option  m-0">10 days</li>
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                            <li class="select__option m-0">18 days</li>
+                                                            <li class="select__option m-0">20 days</li>
+                                                            <li class="select__option m-0">25 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">15 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">18 - 20 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">18 - 20 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                <div class="d-flex">
+                                                    <p class="bb-1 c-gray mr-2 p-0">Monday</p>
+                                                    <svg class="svg-sprite-icon c-gray" width="12px" height="18px">
+                                                        <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                    </svg>
+                                                </div>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex flex-wrap mb-5 pb-3">
+                                <div class="max-w-210 mr-4 pt-3">
+                                    <p class="pb-2">Valid time</p>
+                                    <input type="text" class="input-date right">
+                                </div>
+                                <div class="max-w-180 mr-4 pt-3">
+                                    <p class="pb-2">Max weight, kg</p>
+
+                                    <div class="calc calc__light big b-gray ">
+                                        <button class="calc__btn calc__btn-minus"></button>
+                                        <input type="number" class="calc__input" value="0">
+                                        <button class="calc__btn calc__btn-plus"></button>
+                                    </div>
+                                </div>
+                                <div class="pt-3 fs-13_1440">
+                                    <a href="#" class="c-blue weight-medium py-1 d-block underline">Currenсy sea rates</a>
+                                    <p class="pb-1">Central bank сurrency   EUR 1 = USD  1,0897</p>
+                                    <div class="d-flex">
+                                        <p class="pr-2">Currency cinversation   EUR 1 = USD</p>
+                                        <div class="d-flex align-items-center">
+                                            <button class="px-2 c-blue_v3 fs-16">-</button>
+                                            <p>  1,0897</p>
+                                            <button class="px-2 c-blue_v3 fs-16">+</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/flag.svg" alt="flag" class="mr-2" width="20px">
+                                <p class="weight-medium">Acargo Company</p>
+                            </div>
+
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <p>100 EUR</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <p>15 days</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <p>20 days</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="d-flex pb-1">
+                                                    <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                    <p>15-20 days</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                    <p>20 days</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="pr-2">
+                                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#create"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0 bg-light_v14">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <div class="d-flex align-items-center block_resize-input">            
+                                                     <div class="table__span" style="display: none;"></div>
+                                                    <input type="text" class="input-normal mr-1 c-dark" placeholder=". . .">
+                                                    <div class="select select__two">
+                                                        <div class="select__item c-gray">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">EUR</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option  m-0">10 days</li>
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                            <li class="select__option m-0">18 days</li>
+                                                            <li class="select__option m-0">20 days</li>
+                                                            <li class="select__option m-0">25 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">15 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 d-flex align-items-center justify-content-between">
+                                            <div>
+                                                <div class="d-flex pb-1">
+                                                    <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                    <p>15-20 days</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                    <p>20 days</p>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="pr-2">
+                                                <svg class="svg-sprite-icon c-blue" width="15px" height="12px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-1">
+                                <div class="col-xl-6 mb-4">
+                                    <ul class="b-1 b-blue-light2">
+                                        <li class="row weight-medium py-2 bg-light-white3 mx-0 px-1 fs-14">
+                                            <p class="col-5 py-1">Valid time</p>
+                                            <p class="col-4 py-1">Origin</p>
+                                            <p class="col-3 py-1">Price</p>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 px-1">
+                                           
+                                            <div class="col-5 block_resize-input d-flex align-items-center">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <input type="text" class="input-normal mr-3 c-dark min-w-110 text-left" placeholder=". . . . .  ">
+                                                <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                </svg>
+                                             </div>
+                                            <div class="col-4 d-flex align-center-center block_resize-input">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <div class="select select__two max-w-130">
+                                                    <input type="text" class="select__item " placeholder=". . . . .  ">
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 block_resize-input d-flex align-items-center">          
+                                                    <div class="table__span" style="display: none;"></div>
+                                                   <input type="text" class="input-normal mr-1" placeholder=". . .">
+                                                   <div class="select select__two">
+                                                       <div class="select__item c-dark">EUR</div>
+                                                       <div class="select__drop">
+                                                           <ul class="select__menu">
+                                                               <li class="select__option">EUR</li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                            </div>
+                                         </li>
+                                    </ul>
+                                    <a href="#" class="c-gray d-block underline text-italic py-3">+ Add new origin</a>
+                                </div>
+                                <div class="col-xl-6 mb-4">
+                                    <ul class="b-1 b-blue-light2">
+                                        <li class="row weight-medium py-2 bg-light-white3 mx-0 px-1 fs-14">
+                                            <p class="col-5 py-1">Valid time</p>
+                                            <p class="col-4 py-1">Origin</p>
+                                            <p class="col-3 py-1">Price</p>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 px-1">
+                                           
+                                            <div class="col-5 block_resize-input d-flex align-items-center">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <input type="text" class="input-normal mr-3 c-dark min-w-110 text-left" placeholder=". . . . .  ">
+                                                <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                </svg>
+                                             </div>
+                                            <div class="col-4 d-flex align-center-center block_resize-input">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <div class="select select__two max-w-130">
+                                                    <input type="text" class="select__item " placeholder=". . . . .  ">
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 block_resize-input d-flex align-items-center">          
+                                                    <div class="table__span" style="display: none;"></div>
+                                                   <input type="text" class="input-normal mr-1" placeholder=". . .">
+                                                   <div class="select select__two">
+                                                       <div class="select__item c-dark">EUR</div>
+                                                       <div class="select__drop">
+                                                           <ul class="select__menu">
+                                                               <li class="select__option">EUR</li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                            </div>
+                                         </li>
+                                    </ul>
+                                    <a href="#" class="c-gray d-block underline text-italic py-3">+ Add new origin</a>
+                                </div>
+                            </div>
+
+                            <div class="d-flex align-items-center mb-3">
+                                <img src="img/flag.svg" alt="flag" class="mr-2" width="20px">
+                                <p class="weight-medium">Acargo Company</p>
+                            </div>
+
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <p>100 EUR</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <p>15 days</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <p>20 days</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                <p>15-20 days</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                <p>20 days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="b-1 br-4 b-blue row py-2 mb-2 mx-0 bg-light_v14">
+                                <div class="col-8">
+                                    <div class="row align-items-center">
+                                        <div class="col-4 d-flex">
+                                            <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="12px" height="18px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building"></use>
+                                            </svg>
+                                            <div>
+                                                <p class="pb-1">Maersk Freight</p>
+                                                <p>15 Apr. 20 / 18 Apr. 20</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3">35’CHI / FCL</div>
+                                        <div class="col-5">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Rate</p>
+                                                <p>1 500 EUR  + BL 30 EUR</p>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Margin</p>
+                                                <div class="d-flex align-items-center block_resize-input">            
+                                                     <div class="table__span" style="display: none;"></div>
+                                                    <input type="text" class="input-normal mr-1 c-dark" placeholder=". . .">
+                                                    <div class="select select__two">
+                                                        <div class="select__item c-gray">EUR</div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option">EUR</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="row">
+                                        <div class="col-6 pl-0">
+                                            <div class="d-flex pb-1">
+                                                <p class="c-blue weight-medium mr-2">Demurrages</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item  bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option  m-0">10 days</li>
+                                                            <li class="select__option m-0 active">15 days</li>
+                                                            <li class="select__option m-0">18 days</li>
+                                                            <li class="select__option m-0">20 days</li>
+                                                            <li class="select__option m-0">25 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex">
+                                                <p class="c-blue weight-medium mr-2">Detentions</p>    
+                                                <div class="select select__two">
+                                                    <div class="select__item bb-1 br-0 c-gray">15 days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active m-0">15 days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6">
+                                            
+                                                <div class="d-flex pb-1">
+                                                    <p class="c-blue weight-medium mr-2">Transit</p>    
+                                                    <p>15-20 days</p>
+                                                </div>
+                                                <div class="d-flex">
+                                                    <p class="c-blue weight-medium mr-2">Cut-off</p>    
+                                                    <p>20 days</p>
+                                                </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row py-1">
+                                <div class="col-xl-6 mb-4">
+                                    <ul class="b-1 b-blue-light2">
+                                        <li class="row weight-medium py-2 bg-light-white3 mx-0 px-1 fs-14">
+                                            <p class="col-5 py-1">Valid time</p>
+                                            <p class="col-4 py-1">Origin</p>
+                                            <p class="col-3 py-1">Price</p>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 px-1">
+                                           
+                                            <div class="col-5 block_resize-input d-flex align-items-center">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <input type="text" class="input-normal mr-3 c-dark min-w-110 text-left" placeholder=". . . . .  ">
+                                                <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                </svg>
+                                             </div>
+                                            <div class="col-4 d-flex align-center-center block_resize-input">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <div class="select select__two max-w-130">
+                                                    <input type="text" class="select__item " placeholder=". . . . .  ">
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 block_resize-input d-flex align-items-center">          
+                                                    <div class="table__span" style="display: none;"></div>
+                                                   <input type="text" class="input-normal mr-1" placeholder=". . .">
+                                                   <div class="select select__two">
+                                                       <div class="select__item c-dark">EUR</div>
+                                                       <div class="select__drop">
+                                                           <ul class="select__menu">
+                                                               <li class="select__option">EUR</li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                            </div>
+                                         </li>
+                                    </ul>
+                                    <a href="#" class="c-gray d-block underline text-italic py-3">+ Add new origin</a>
+                                </div>
+                                <div class="col-xl-6 mb-4">
+                                    <ul class="b-1 b-blue-light2">
+                                        <li class="row weight-medium py-2 bg-light-white3 mx-0 px-1 fs-14">
+                                            <p class="col-5 py-1">Valid time</p>
+                                            <p class="col-4 py-1">Origin</p>
+                                            <p class="col-3 py-1">Price</p>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 relative hover-icons px-1">
+                                            <div class="col-5">12 Apr. 20 / 18 Apr. 20 </div>
+                                            <div class="col-4 d-flex align-center-center">
+                                                <img src="img/flag.svg" alt="flag" class="mr-3 " width="14px" height="14px">
+                                                <p>Klaipeda, LTHL</p>
+                                            </div>
+                                            <div class="col-3">200 EUR </div>
+                                            <button type="button" class="close-small absolute r-10 t-center hover"><img class="ml-auto" src="img/gray__cancel.svg" alt="close"></button>
+                                        </li>
+                                        <li class="row py-2 bb-1 b-blue-light2 mx-0 px-1">
+                                           
+                                            <div class="col-5 block_resize-input d-flex align-items-center">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <input type="text" class="input-normal mr-3 c-dark min-w-110 text-left" placeholder=". . . . .  ">
+                                                <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                    <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                </svg>
+                                             </div>
+                                            <div class="col-4 d-flex align-center-center block_resize-input">
+                                                <div class="table__span" style="display: none;"></div>
+                                                <div class="select select__two max-w-130">
+                                                    <input type="text" class="select__item " placeholder=". . . . .  ">
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option"></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-3 block_resize-input d-flex align-items-center">          
+                                                    <div class="table__span" style="display: none;"></div>
+                                                   <input type="text" class="input-normal mr-1" placeholder=". . .">
+                                                   <div class="select select__two">
+                                                       <div class="select__item c-dark">EUR</div>
+                                                       <div class="select__drop">
+                                                           <ul class="select__menu">
+                                                               <li class="select__option">EUR</li>
+                                                           </ul>
+                                                       </div>
+                                                   </div>
+                                            </div>
+                                         </li>
+                                    </ul>
+                                    <a href="#" class="c-gray d-block underline text-italic py-3">+ Add new origin</a>
+                                </div>
+                            </div>
+
+                            
+
+                            <button type="button" class="btn-aquamarine max-250 big fs-16 px-2 mx-auto my-2 d-block"> Send request</button>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="js/scripts.js"></script>
+    <script src="js/admin.js"></script>
+  </body>
+</html>

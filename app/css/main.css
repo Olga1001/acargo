@@ -106,6 +106,11 @@ img {
   background: #18263C;
   padding: 0 20px;
   min-height: 60px;}
+  .header-container {
+    max-width: 1215px;
+    width: 100%;
+    margin: 0 auto;
+  }
 .overlay {
   position: absolute;
   top: 0;
@@ -122,6 +127,31 @@ img {
 .overlay.active {
   opacity: 1;
   pointer-events: auto;}
+  .breadcrumbs-nav {
+    line-height: 1;
+    padding-bottom: 15px;
+  }
+.breadcrumbs-nav a, .breadcrumbs-nav p {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #2A5082;
+}
+.breadcrumbs-nav a {
+  position: relative;
+  margin-right: 30px;
+}
+.breadcrumbs-nav a:after {
+  content: '';
+  position: absolute;
+  left: calc(100% + 13px);
+  top: 0;
+  width: 5px;
+  height: 16px;
+  pointer-events: none;
+  background: url('../img/arrow-point-to-right.svg') no-repeat center / contain;
+}
 .breadcrumbs {
   position: relative; }
   .breadcrumbs:before {
@@ -935,6 +965,20 @@ button {
   }
   .checkbox__private-check .checkbox__text {
     font-weight: 500; }
+    .check_freight-type {
+      border: 0.5px solid #FFFFFF;
+      box-sizing: border-box;
+      border-radius: 2px;
+      width: 26px;
+      height: 22px;
+      display: inline-flex;
+    }
+  .checkbox:checked ~ .check_freight-type svg {
+    fill: #156CE4!important;
+  }
+  .checkbox:checked ~ .check_freight-type {
+    background: #FFFFFF;
+  }
   .checkbox:checked ~ .checkbox__check {
     background: #109CF1; }
     .checkbox:checked ~ .checkbox__check .checkbox__text {
@@ -5300,7 +5344,7 @@ button {
   .dots-transit:last-child {
     margin-right: 0; }
 .fs-16 {
-  font-size: 16px;}
+  font-size: 16px!important;}
 .fs-25 {
   font-size: 25px;}
 .fs-30 {
@@ -6300,6 +6344,8 @@ button {
   max-height: 810px; }
   .max-1200 {
     max-width: 1200px;}
+  .max-1215 {
+    max-width: 1215px;}
   .max-1250 {
     max-width: 1250px;}
   .max-1380 {
@@ -9567,6 +9613,25 @@ padding-top: 15px;}
     background: #FFFFFF;
     box-shadow: 0px 0px 10px rgba(16, 156, 241, 0.332195);
   }
+  .btn-navy {
+    border: 1px solid #FFFFFF;
+    border-radius: 4px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 38px;
+    color: #FFFFFF;
+    width: 150px;
+    text-align: center;
+  }
+  .left-menu {
+    background: #18263C;
+    box-shadow: 1px 1px 8px 1px rgba(103, 117, 141, 0.1);
+    border-radius: 4px;
+    max-width: 238px;
+    width: 100%;
+    padding: 20px 12px;
+  }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

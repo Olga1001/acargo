@@ -279,9 +279,7 @@ input, textarea {
   input:active ~ .name, input:focus ~ .name, input:valid ~ .name {
     bottom: 24px;
   }
-  input.input-normal.bb-1:focus, input.input-normal.bb-1:active{
 
-  }
 textarea {
   border: none;
   width: 100%;
@@ -621,12 +619,12 @@ button {
   padding: 11px 45px 11px 13px; }
 .input-date.right {
   padding: 11px 30px 11px 15px; 
-  background-position-x: calc(100% - 15px)}
+  background-position-x: calc(100% - 15px)!important;}
 .input-date.left {
   padding: 11px 30px 11px 30px; 
   background-position-x: 0;}
 .input-date.right-0 {
-  background-position-x: 99%}
+  background-position-x: 99%!important;}
 .input-date.small {
   font-size: 14px;
   background-position: left 10px center;
@@ -634,11 +632,16 @@ button {
   height: auto;
   line-height: 1;
   padding: 5px 10px 5px 30px;}
+.input-date.normal {
+  border: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.53);
+  padding: 8px 0;
+  border-radius: 0;
+  height: auto;
+}
 .input-date.big {
   background-position-x: 17px;
-  background-size: 19px;
-
-}
+  background-size: 19px;}
 .input-time {
   background: url("../img/wall-clock.svg") no-repeat right 2px center/ 17px;}
   .input-time.right {
@@ -2184,6 +2187,9 @@ button {
 .bl-3 {
   border-style: solid;
   border-left-width: 3px!important;}
+  
+.b-0 {
+  border-width: 0!important;}
 .bb-1 {
   border-bottom: solid 1px rgba(183, 188, 214, 0.52)!important;
   padding: 4px 0;}
@@ -2194,6 +2200,8 @@ button {
   border-top: 1px solid}
 .b-1 {
   border: solid 1px rgba(183, 188, 214, 0.48)!important;}
+.b-white-v2 {
+  border-color: rgba(255, 255, 255, 0.53);}
 .b-pale-azure {
   border-color: #e7f5fe!important;}
 .b-transparent {
@@ -6674,9 +6682,9 @@ button {
   padding: 0;
 }
 .h-fit {
-  height: fit-content;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
+  height: fit-content!important;
+  height: -webkit-fit-content!important;
+  height: -moz-fit-content!important;
 }
 .card-company {
   border-radius: 10px;
@@ -7195,8 +7203,6 @@ button {
   max-width: 59%;}
 .base-w-47 {
   max-width: 47%;}
-.b-0 {
-  border-width: 0!important;}
 
 .b-before-0:before {
   content: none!important;

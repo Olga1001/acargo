@@ -1023,6 +1023,9 @@ button {
   .checkbox:checked ~ .checkbox__icon-blue {
     border-color: #109CF1;
     background: url("../img/blue__check-box-empty-copy-6.svg") no-repeat center/16px; }
+  .checkbox:checked ~ .checkbox__icon-blue.white {
+    border-color: #fff;
+    background: #fff url("../img/check-box-empty-copy-6.svg") no-repeat center/16px; }
   .checkbox:checked ~ .checkbox__transport-check {
     background: #109CF1 url("../img/check-white.svg") no-repeat center/80%;
     border: 1px solid #109CF1; }
@@ -2278,6 +2281,9 @@ button {
 .c-navy-blue {
   color: #37517e!important; 
   fill:  #37517e;}
+.c-navy {
+  color:  #2A5082!important; 
+  fill: #2A5082;}
 .c-white {
   color: #ffffff!important;
   fill: #ffffff; }
@@ -7034,7 +7040,7 @@ button {
 .lh-1_31 {
   line-height: 1.31;}
 .lh-1_47 {
-  line-height: 1.47;}
+  line-height: 1.47!important;}
 .br-4 {
   border-radius: 4px;}
 .br-6 {
@@ -7151,6 +7157,33 @@ button {
     border-radius: 50%;
     margin: 0;
     flex-shrink: 0;}
+  .way3-pin {
+    width: 10px;
+    height: 10px;
+    background: rgba(73, 221, 170, 0.35);
+    flex-shrink: 0;
+    border-radius: 50%;
+    position: relative;
+  }
+  .way3-pin:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    z-index: 1;
+    background: #49DDAA;
+  }
+  
+  .way3-pin.blue {
+    background: rgba(16, 156, 241, 0.332195);
+  }
+  .way3-pin.blue:before {
+    background: #109CF1;
+  }
   .way2-line {
     width: 100%;
     height: 4px;
@@ -7642,6 +7675,11 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   top: calc(100% + 8px); 
   left: -40px;
   min-width: 160px;}
+.way3-content {
+  position: absolute;
+  left: 0;
+  bottom: calc(100% + 6px)
+}
 .w-300 {
   width: 300%;}
 .way-two-points {
@@ -9636,6 +9674,10 @@ padding-top: 15px;}
     max-width: 238px;
     width: 100%;
     padding: 20px 12px;
+  }
+  .right-table {
+    width: calc(100% - 238px);
+    padding-left: 12px;
   }
 
 /*==========  Desktop First  ==========*/

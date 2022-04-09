@@ -136,11 +136,12 @@ img {
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
-  color: #2A5082;
+  color: #B7BCD6;
 }
 .breadcrumbs-nav a {
   position: relative;
   margin-right: 30px;
+  color: #2A5082;
 }
 .breadcrumbs-nav a:after {
   content: '';
@@ -2243,7 +2244,8 @@ button {
   border-color: #eff8fe !important; }
 .b-light2 {
   border-color: #cbeafc !important; }
-
+.strocke-blue {
+  stroke: #156ce4!important}
 .c-blue-v1 {
   color: #24b1ff;
   fill: #24b1ff;  }
@@ -8222,6 +8224,17 @@ padding-top: 15px;}
   line-height: 33px;}
   .check-tabs label {
     width: 100%; }
+  .check-tab_v2 {
+    font-size: 12px;
+    line-height: 14px;
+    color: #156CE4;
+    padding: 2px 10px;
+    background: rgba(255, 255, 255, 0.58);
+    border: 0.5px solid #156CE4;
+    border-radius: 3px 3px 0 0;}
+.checkbox:checked ~ .check-tab_v2 {
+  background: #156CE4;
+  color: #fff;}
 .checkbox:checked ~ .check-tab {
   margin-right: 0px;
   background-color: rgba(16, 156, 241, 0.16);}
@@ -8230,7 +8243,10 @@ padding-top: 15px;}
   color: #fff!important;
   font-weight: 500;
   background-color: #49ddaa;}
-
+.py-2_5 {
+  padding-top: 2.5px;
+  padding-bottom: 2.5px;
+}
 .py-7 {
   padding-top: 7px;
   padding-bottom: 7px;}
@@ -9674,12 +9690,35 @@ padding-top: 15px;}
     max-width: 238px;
     width: 100%;
     padding: 20px 12px;
+    /* height: calc(100vh - 60px - 2rem - 31px); */
   }
   .right-table {
     width: calc(100% - 238px);
     padding-left: 12px;
   }
-
+.placeholder-small {
+  font-size: 13px;
+}
+.placeholder-small::-webkit-input-placeholder  {
+  font-style: italic;
+  font-size: 13px;
+  color: #B7BCD6;
+}
+.placeholder-small:-moz-placeholder {
+  font-style: italic;
+  font-size: 13px;
+  color: #B7BCD6;
+}
+.placeholder-small::-moz-placeholder {
+  font-style: italic;
+  font-size: 13px;
+  color: #B7BCD6;
+}
+.placeholder-small:-ms-input-placeholder {
+  font-style: italic;
+  font-size: 13px;
+  color: #B7BCD6;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -9837,6 +9876,13 @@ padding-top: 15px;}
     width: 182px;}
 }
 @media only screen and (max-width: 1440px) {
+  .left-menu, .right-table {
+    height: calc(100vh - 60px - 1rem - 22px);}
+  .breadcrumbs-nav a, .breadcrumbs-nav p {
+    font-size: 12px;
+    line-height: 14px;}
+  .breadcrumbs-nav {
+    padding-bottom: 8px}
   .logistick-info {
     min-width: 100px;}
   .h_100vh-325 {
@@ -10111,6 +10157,7 @@ padding-top: 15px;}
   .select__item {
     font-size: 14px;
     line-height: 30px;}
+
   .select {
     height: 32px;}
   .select.mr-3 {

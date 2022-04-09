@@ -51,254 +51,905 @@
                             <li><p>Rates</p>  </li>
                         </ul>
                     </nav>
-                    <div class="d-flex">
-                        <div class="left-menu c-white">
-                            <div class="d-flex align-items-center justify-content-between pb-1">
-                                <p class="fs-14">Freight type</p>
-                                <div class="d-flex">
-                                    <label class="">
-                                        <input type="radio" name="radio-freight-type" class="checkbox" checked>
-                                        <span class="check_freight-type">
-                                            <svg class="svg-sprite-icon c-white m-auto" width="11px" height="11px">
-                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
-                                            </svg>
-                                        </span>
-                                    </label>
-                                    <label class=" ml-2">
-                                        <input type="radio" name="radio-freight-type" class="checkbox">
-                                        <span class="check_freight-type">
-                                            <svg class="svg-sprite-icon c-white m-auto" width="11px" height="9px">
-                                                <use xlink:href="../img/sprite/symbol/sprite.svg#train"></use>
-                                            </svg>
-                                        </span>
-                                    </label>
-                                    <label class="ml-2">
-                                        <input type="radio" name="radio-freight-type" class="checkbox" >
-                                        <span class="check_freight-type">
-                                            <svg class="svg-sprite-icon c-white m-auto" width="11px" height="10px">
+                    <form class="br-4 bg-light px-1 py-3 row mx-0">
+                        <div class="col-9 pr-0">
+                            <div class="d-flex align-items-end">
+                                <div class="w-100">
+                                    <div class="d-flex">
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio-tab" class="checkbox" checked>
+                                            <span class="check-tab_v2">Parcel</span>
+                                        </label>
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio-tab" class="checkbox">
+                                            <span class="check-tab_v2">Partial load</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio-tab" class="checkbox">
+                                            <span class="check-tab_v2">Full load</span>
+                                        </label>
+                                    </div>
+                                    <div class="relative">
+                                        <input type="text" name="" placeholder="City, port" class="bg-white placeholder-small b-blue-light2">
+                                        <p class="fs-12 weight-medium c-blue-light br-4 py-1 px-2 bg-light absolute t-center r-0 mr-2">Port</p>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <svg class="svg-sprite-icon c-blue mr-1 strocke-blue mx-xl-4" width="16px" height="43px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                    </svg>
+                                </div>
+                                <div class="w-100">
+                                    <div class="relative">
+                                        <input type="text" name="" placeholder="City, port" class="bg-white placeholder-small b-blue-light2">
+                                        <p class="fs-12 weight-medium c-blue-light br-4 py-1 px-2 bg-light absolute t-center r-0 mr-2">Port</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3 d-flex align-items-end">
+                            <input type="text" name="" class="input-date right mr-3 b-blue-light2">
+                            <button type="submit" class="br-4 bg-blue h-auto b-0 py-1">
+                                <svg class="svg-sprite-icon c-white mx-4 my-2 d-flex align-items-center" width="17px" height="17px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <ul class="w-100">
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
                                                 <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
                                             </svg>
-                                        </span>
-                                    </label>
-                                    <label class=" ml-2">
-                                        <input type="radio" name="radio-freight-type" class="checkbox">
-                                        <span class="check_freight-type">
-                                            <svg class="svg-sprite-icon c-white m-auto" width="12px" height="12px">
-                                                <use xlink:href="../img/sprite/symbol/sprite.svg#airplane"></use>
-                                            </svg>
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="mb-2">
-                                <p class="fs-13 py-2 c-blue-v1">Origin</p>
-                                <div class="relative">
-                                    <img src="../img/flag.svg" alt="flag" class="flag_v3 flag-absolute l-0">
-                                    <input class="pl-4 input-normal text-left bb-1 br-0 c-white b-white-v2" type="text" value="Klaipeda, Lithvinia, LTKT">
-                                </div>
-                                <p class="py-1 text-italic fs-13">Port KLUH</p>
-                            </div>
-                            <div class="mb-2">
-                                <p class="fs-13 py-2 c-blue-v1">Destination</p>
-                                <div class="relative">
-                                    <img src="../img/flag.svg" alt="flag" class="flag_v3 flag-absolute l-0">
-                                    <input class="pl-4 input-normal text-left bb-1 br-0 c-white b-white-v2" type="text" value="Klaipeda, Lithvinia, LTKT">
-                                </div>
-                                <p class="py-1 text-italic fs-13">City KLUH</p>
-                            </div>
-                            <div class="select h-fit b-0 br-0 bb-1 b-white-v2 select__arrow-right-0 mb-3">
-                                <div class="select__item input-normal text-left c-white py-1">Shipment type</div>
-                                <div class="select__drop">
-                                    <ul class="select__menu">
-                                        <li class="select__option active">1</li>
-                                        <li class="select__option">2</li>
-                                    </ul>
-                                </div>
-                             </div>
-                             <div class="select h-fit b-0 br-0 bb-1 b-white-v2 select__arrow-right-0 mb-3">
-                                 <div class="select__item input-normal text-left c-white py-1">Weight</div>
-                                 <div class="select__drop">
-                                     <ul class="select__menu">
-                                         <li class="select__option active">1</li>
-                                         <li class="select__option">2</li>
-                                     </ul>
-                                 </div>
-                            </div>
-                            <div class="select h-fit b-0 br-0 bb-1 b-white-v2 select__arrow-right-0 mb-3">
-                                <div class="select__item input-normal text-left c-white py-1">Volume</div>
-                                <div class="select__drop">
-                                    <ul class="select__menu">
-                                        <li class="select__option active">1</li>
-                                        <li class="select__option">2</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <input type="text" class="input-date small fs-13 normal bg-none right-0 c-white mb-4" value="From date">
-                            <p class="fs-13 pb-1">Cargo size</p>
-                            <div class="row mx-0 mb-4">
-                                <div class="col-4 pr-1 pl-0">
-                                    <div class="relative">
-                                        <p class="absolute t-center l-2 fs-13">W</p>
-                                        <input type="text" value="" class="b-white-v2 c-white h-fit p-2 fs-13 lh-1 pl-4">
-                                    </div>
-                                </div>
-                                <div class="col-4 px-1">
-                                    <div class="relative">
-                                        <p class="absolute t-center l-2 fs-13">L</p>
-                                        <input type="text" value="" class="b-white-v2 c-white h-fit p-2 fs-13 lh-1 pl-4">
-                                    </div>
-                                </div>
-                                <div class="col-4 pl-1 pr-0">
-                                    <div class="relative">
-                                        <p class="absolute t-center l-2 fs-13">H</p>
-                                        <input type="text" value="" class="b-white-v2 c-white h-fit p-2 fs-13 lh-1 pl-4">
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="pb-3">
-                                <p class="fs-14 mb-2 c-blue-v1">Included services </p>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox" >
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <svg class="svg-sprite-icon c-white mr-2" width="16px" height="16px">
-                                        <use xlink:href="../img/sprite/symbol/sprite.svg#truck"></use>
-                                        </svg>
-                                    <span>Pick up </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox">
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <svg class="svg-sprite-icon c-white mr-2" width="13px" height="16px">
-                                        <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
-                                    </svg>
-                                    <span>Origin port </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox">
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <svg class="svg-sprite-icon c-white mr-2" width="11px" height="16px">
-                                        <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
-                                    </svg>
-                                    <span>Ocean freigt </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox">
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <svg class="svg-sprite-icon c-white mr-2" width="11px" height="16px">
-                                        <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
-                                        </svg>
-                                    <span>Ocean freigt </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox">
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <svg class="svg-sprite-icon c-white mr-2" width="11px" height="16px">
-                                        <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
-                                        </svg>
-                                    <span>Destination port </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                        <input type="checkbox" name="" class="checkbox" >
-                                        <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                        <svg class="svg-sprite-icon c-white mr-2" width="16px" height="16px">
-                                            <use xlink:href="../img/sprite/symbol/sprite.svg#truck"></use>
-                                        </svg>
-                                        <span>Delivery </span>
-                                    </label>
-                            </div>
-                            
-                            <div class="pb-3">
-                                <p class="fs-14 mb-2 c-blue-v1">Shipping line </p>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox" >
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <span>Cargo shipment </span>
-                                </label>
-                                <label class="d-flex align-items-center mb-2">
-                                    <input type="checkbox" name="" class="checkbox">
-                                    <span class="checkbox__icon-blue white ml-0 mr-3"></span>
-                                    <span>Ocean shipment  </span>
-                                </label>
-                            </div>
-                              
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
 
-                        </div>
-                        <div class="right-table">
-                            <div class="b-1 br-4 bg-white relative b-blue-light2">
-                                <div class="d-flex absolute px-2 t--50 z-4">
-                                    <div class="block bg-blue-v1 fs-12 ">Cheapest</div>
-                                </div>
-                                <div class="d-flex p-2">
-                                    <div class="max-650 w-100">
-                                        <div class="d-flex align-items-center py-1">
-                                            <svg class="svg-sprite-icon mr-2 c-blue_v3" width="13px" height="13px">
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
                                                 <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
                                             </svg>
-                                            <p class="pr-3">Ocean Freight </p>
-                                            <div class="d-flex">
-                                                <a href="#" class="link-item mr-1">FCL</a>
-                                                <a href="#" class="link-item mr-1">550 kg</a>
-                                                <a href="#" class="link-item">8 pll</a>
-                                            </div>
+                                            <div class="bg-blue-v1 way2-line small"></div>
                                         </div>
-                                        <div class="d-flex align-items-center pt-4">                                            
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content d-flex align-items-center text-nowrap">
-                                                    <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
-                                                    <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
-                                                    <p class="fs-13 text-italic c-gray">(Port)</p>
-                                                </div>
-                                                <div class="way3-pin"></div>
-                                                <div class="bg-green way2-line small "></div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
                                             </div>
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
-                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                                </svg>
-                                                <div class="bg-green way2-line small"></div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
                                             </div>
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content l-center text-center">
-                                                    <p class="fs-11 c-blue-gray">LTCH</p>
-                                                </div>
-                                                <div class="way3-pin blue"></div>
-                                                <div class="bg-blue-v1 way2-line small "></div>
-                                            </div>
-
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
-                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
-                                                </svg>
-                                                <div class="bg-blue-v1 way2-line small"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content l-center text-center">
-                                                    <p class="fs-11 c-blue-gray">USAH</p>
-                                                </div>
-                                                <div class="way3-pin blue"></div>
-                                                <div class="bg-blue-v1 way2-line small "></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
-                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                                </svg>
-                                                <div class="bg-green way2-line small"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
-                                                    <p class="fs-14 c-navy pr-1">Florida, US </p>
-                                                    <p class="fs-13 text-italic c-gray">(Port)</p>
-                                                    <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
-                                                </div>
-                                                <div class="way3-pin"></div>
-                                            </div>
+                                            <div class="way3-pin"></div>
                                         </div>
                                     </div>
                                 </div>
-
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
                             </div>
-                        </div>
-                    </div>
+                            <div class="bg-light px-3 py-1">
+                                <p class="fs-14 fs-13_1440 text-italic c-navy">Dangerous cargo</p>
+                            </div>
+
+                        </li>
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-light px-3 py-1">
+                                <p class="fs-14 fs-13_1440 text-italic c-navy">Dangerous cargo</p>
+                            </div>
+
+                        </li>
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="bg-light px-3 py-1">
+                                <p class="fs-14 fs-13_1440 text-italic c-navy">Dangerous cargo</p>
+                            </div>
+
+                        </li>
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="b-1 br-4 bg-white relative b-blue-light2 mb-3 mb-2_1440">
+                            <div class="d-flex absolute px-3 t--50 z-4">
+                                <div class="block bg-blue-v1 fs-12 fs-10_1440 lh-1_4 py-0 px-2">Cheapest</div>
+                            </div>
+                            <div class="d-flex py-2 px-3 justify-content-between align-items-end">
+                                <div class="max-650 w-100">
+                                    <div class="d-flex align-items-center py-1">
+                                        <svg class="svg-sprite-icon mr-2 c-blue_v3 wh-12_1440" width="13px" height="13px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <p class="pr-3 fs-14_1440">Ocean Freight </p>
+                                        <div class="d-flex">
+                                            <a href="#" class="link-item mr-1">FCL</a>
+                                            <a href="#" class="link-item mr-1">550 kg</a>
+                                            <a href="#" class="link-item">8 pll</a>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center pt-4">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="mr-2">
+                                                <p class="fs-14 c-navy pr-1">Vilnius, LT </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                        </div>
+
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="fs-14 c-navy pr-1">Florida, US </p>
+                                                <p class="fs-13 text-italic c-gray">(Port)</p>
+                                                <img src="../img/flag.svg" alt=" flag" width="13px" height="13px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="mx-2">
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102 lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 " width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                        </svg>
+                                        25 days
+                                    </div>
+                                    <div class="bg-light d-flex align-items-center justify-content-center min-w-102  lh-1_4 mt-2 fs-14 fs-12_1440 c-blue br-4">
+                                        <svg class="svg-sprite-icon c-blue mr-1 strocke-blue wh-10_1440" width="12px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#transfers"></use>
+                                        </svg>
+                                        1 transfers
+                                    </div>
+                                </div>
+                                <div class="text-center min-w-100px">
+                                    <p class="fs-12 text-italic mb-1">Valid 15 Apr. 2021</p>
+                                    <button class="br-4 bg-green c-white w-100 py-1">
+                                        <span class="fs-13 weight-semi d-block">1200 EUR</span>
+                                        <span class="fs-12">Booking</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
             </div>
           </div>

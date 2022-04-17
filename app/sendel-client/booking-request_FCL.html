@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="../css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <header class="header d-flex justify-content-between align-items-center ">
+        <div class="d-flex align-items-center">
+            <a href="#" class="logo pb-1">
+                <img src="../img/logo/logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
+                    <li class="relative menu-list">
+                        <a href="#"  class="mune-item">Rate (18)</a>   
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                <li><a href="#" class="mr-4">Requests (858)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-1">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="currenty ml-3">
+                    <div class="select b-0 h-100">
+                        <div class="select__item c-white pl-3">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-dark">
+                                <li class="select__option c-white active">USD</li>
+                                <li class="select__option c-white">EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price c-white">1,35 EUR</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center ml-3 pl-1 py-1">
+                <div class="px-1">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                        <use xlink:href="../img/sprite/symbol/sprite.svg#notepad"></use>
+                    </svg>
+                </div>
+                <div class="px-3">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                        <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                    </svg>
+                </div>
+                <div class="px-2 dropdown no-arrow">
+                    <a href="#" class="dropdown-toggle" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px" >
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#mail"></use>
+                        </svg>
+                        <div class="bg-green count-message">4</div>
+                    </a>
+                
+                    <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="dropdown-header p-0">
+                            <button class="btn-expand ml-auto" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <button class="chat_tab active mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#interface-2"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2">
+                                    <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#people"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#contacts"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <ul class="chat-list active">
+                                <li class="pb-2 px-3 bg-light_v9">
+                                    <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="../img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-12">1 week ago</p>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">1</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">2</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 dropdown no-arrow ml-1">
+                    <a href="#" class="dropdown-toggle" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#notification-2"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
+                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
+                        </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <a href="#">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="dropdown no-arrow">
+                    <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                    </div>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>
+                        <div class="row px-3 py-3 mt-1 mx-0">
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager active">
+                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    .Client
+                                </a>
+                            </div>
+  
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+   
+          <div class="container-fluid p-2" id="container-wrapper"> 
+            <div id="box"> 
+                <div class="d-flex justify-content-between max-1500 mx-auto">
+                    <div class="">
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="pb-2 bg-light_06">
+                                    <div class="br-50 wh-24 bg-blue_v3 wh-18_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block" width="8px" height="24px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class=" w-1 bg-blue-bright absolute l-center opacity-3 h-100"> </div>
+                            </div>
+                            <div class="mt-4 pt-2 mt-0_1440">
+                                <p class="fs-14 weight-medium mb-2 fs-11_1440">Mode</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Road / FTL</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="py-2 bg-light_06">
+                                    <div class="br-50 wh-24 b-2 b-gray bg-light_06"> </div>
+                                </div>
+                                <div class=" w-1 bg-blue-bright absolute l-center opacity-3 h-100"> </div>
+                            </div>
+                            <div class="mt-4 py-2">
+                                <p class="fs-14 weight-medium mb-2 fs-11_1440">Route </p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Origin - Destination</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Loading date</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Delivery date</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="py-2 bg-light_06">
+                                    <div class="br-50 wh-24 b-2 b-gray bg-light_06"> </div>
+                                </div>
+                                <div class=" w-1 bg-blue-bright absolute l-center opacity-3 h-100"> </div>
+                            </div>
+                            <div class="mt-4 py-2">
+                                <p class="fs-14 weight-medium mb-2 fs-11_1440">Container </p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Container type</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Quantity</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Weight</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="py-2 bg-light_06">
+                                    <div class="br-50 wh-24 b-2 b-gray bg-light_06"> </div>
+                                </div>
+                                <div class=" w-1 bg-blue-bright absolute l-center opacity-3 h-100"> </div>
+                            </div>
+                            <div class="mt-4 py-2">
+                                <p class="fs-14 weight-medium mb-2 fs-11_1440">Cargo </p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Product name</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Weight</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Cargo type</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Temperature control</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">ADR</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="py-2 bg-light_06">
+                                    <div class="br-50 wh-24 b-2 b-gray bg-light_06"> </div>
+                                </div>
+                                <div class=" w-1 bg-blue-bright absolute l-center opacity-3 h-100"> </div>
+                            </div>
+                            <div class="mt-4 py-2">
+                                <p class="fs-14 weight-medium mb-2 fs-11_1440">Remarks </p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Additional requirements</p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="mr-3 relative">
+                                <div class="py-2 bg-light_06">
+                                    <div class="br-50 wh-24 b-2 b-gray bg-light_06"> </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 py-2">
+                                <p class="fs-14 weight-medium mb-2  fs-11_1440">PUBLISHING </p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Target price</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Expering time</p>
+                                <p class="ç-blue-gray pb-2 fs-12_1440">Public market</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="box-white py-4 px-0 max-1200 w-100 ">
+                        <h2 class="text-center pt-2 mb-4 fs-20 weight-medium c-navy">Create order</h2>
+                        <div class="px-5 fs-13_1440">
+                            <p class="fs-17 c-blue weight-medium mb-3 fs-16_1440">Route</p>
+                            <div class="d-flex w-100">
+                                <div class="min-w-19 d-flex justify-content-center mr-3 relative mt-2">
+                                    <div class="bg-white pb-2 z-1 relative h-fit">
+                                        <div class="oval"></div>
+                                    </div>
+                                    <div class="line-dashed_vertical"></div>
+                                </div>
+                                <div class="d-flex w-100 pb-5">
+                                    <div class="w-100">
+                                        <div class="d-flex">
+    
+                                            <div class="max-330 mr-3 mb-3">
+                                                <p class="pb-1">Origin </p>
+                                                <div class="relative">
+                                                    <img src="../img/flag.svg" alt="flag" class="flag-absolute flag_v3">
+                                                    <input type="text" class="pl-40">
+                                                    <p class="fs-12 weight-medium c-blue-light br-4 py-1 px-2 bg-light absolute t-center r-0 mr-2">Port</p>
+                                                </div>
+                                            </div>
+                                            <div class="max-330 mr-3 mb-3">
+                                                <div class="">
+                                                    <p class="pb-1">Shipper  </p>
+                                                    <div class="select w-100 h-fit pl-1">
+                                                        <div class="select__item lh-1_2 py-1 pl-2">
+                                                            <div class="relative pt-3">
+                                                                <p class="weight-medium c-blue-gray absolute t-0 fs-13">Acargo Company</p>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class=" mr-2" width="14px" height="14px">
+                                                                    <p class="fs-14 c-blue-gray lh-1_2">Klaipeda, Lithvinia, LTKT</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">OR - 7638279327497</li>
+                                                                <li class="select__option">OR - 7638279327498</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="max-w-180 mb-3">
+                                                <p class="pb-1">Loading date </p>
+                                                <input type="text" class="input-date right" value="15 Apr. -  17 Apr.">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="max-204 mr-3">
+                                                <p class="text-14">Contact name </p>
+                                                <input type="text" class="mb-3" value="Alexey Ivanov">
+                                                <a href="#" class="c-gray underline">+ Add new origin</a>
+                                            </div>
+                                            <div class="max-204 mr-3">
+                                                <p class="text-14">Contact phone  </p>
+                                                <input type="text" class="" value="+7 495 882 88 77">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex w-100 mb-3">
+                                
+                                <div class="min-w-19 mr-3 mt-2">
+                                    <svg class="svg-sprite-icon bg-white c-blue " width="16px" height="19px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                    </svg>
+                                </div>
+                                <div class="d-flex w-100 ">
+                                    <div class="w-100">
+                                        <div class="d-flex">
+                                            <div class="max-330 mr-3 mb-3">
+                                                <p class="pb-1">Destination  </p>
+                                                <div class="relative">
+                                                    <img src="../img/flag.svg" alt="flag" class="flag-absolute flag_v3">
+                                                    <input type="text" class="pl-40">
+                                                    <p class="fs-12 weight-medium c-blue-light br-4 py-1 px-2 bg-light absolute t-center r-0 mr-2">Port</p>
+                                                </div>
+                                            </div>
+                                            <div class="max-330 mr-3 mb-3">
+                                                <div class="">
+                                                    <p class="pb-1">Consigneer   </p>
+                                                    <div class="select w-100 h-fit pl-1">
+                                                        <div class="select__item lh-1_2 py-1 pl-2">
+                                                            <div class="relative pt-3">
+                                                                <p class="weight-medium c-blue-gray absolute t-0 fs-13">Acargo Company</p>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class=" mr-2" width="14px" height="14px">
+                                                                    <p class="fs-14 c-blue-gray lh-1_2">Klaipeda, Lithvinia, LTKT</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">OR - 7638279327497</li>
+                                                                <li class="select__option">OR - 7638279327498</li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="max-w-180 mb-3">
+                                                <p class="pb-1">Delivery date  </p>
+                                                <input type="text" class="input-date right" value="15 Apr. -  17 Apr.">
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="max-204 mr-3">
+                                                <p class="text-14">Contact name </p>
+                                                <input type="text" class="mb-3" value="Alexey Ivanov">
+                                                <a href="#" class="c-gray underline">+ Add new origin</a>
+                                            </div>
+                                            <div class="max-204 mr-3">
+                                                <p class="text-14">Contact phone  </p>
+                                                <input type="text" class="" value="+7 495 882 88 77">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="map" class="h-250 mb-4">map</div>
+                        <div class="px-5">
+                            <p class="c-blue fs-17 weight-medium mb-4">Сontainer</p>
+                            <div class="d-flex flex-wrap pb-4">
+                                <label class="mb-2 mr-4 mr-3_1440">
+                                    <input type="radio" name="radio" class="checkbox" checked="">
+                                    <span class="check-date py-3 py-2_1440">
+                                        <img src="../img/check2.svg" alt="check" class="check-date_icon">
+                                        <span class="fs-16 fs-14_1440">45’ CHI</span>
+                                    </span>
+                                </label>
+                                <label class="mb-2 mr-4 mr-3_1440">
+                                    <input type="radio" name="radio" class="checkbox">
+                                    <span class="check-date py-3 py-2_1440">
+                                        <img src="../img/check2.svg" alt="check" class="check-date_icon">
+                                        <span class="fs-16 fs-14_1440">35 CHI</span>
+                                    </span>
+                                </label>
+                                <label class="mb-2 mr-4 mr-3_1440">
+                                    <input type="radio" name="radio" class="checkbox">
+                                    <span class="check-date py-3 py-2_1440">
+                                        <img src="../img/check2.svg" alt="check" class="check-date_icon">
+                                        <span class="fs-16 fs-14_1440">45’ CHI</span>
+                                    </span>
+                                </label>
+                            </div>
+                            
+                            <div class="d-flex align-items-end pb-4">
+                                <p class="lh-43 fs-16 weight-medium mr-5 fs-14_1440 mr-3_1440">35’ CLI</p>
+                                <div class="max-w-165 mx-3 mx-2_1440">
+                                    <p class="text-14">Quantity</p>
+                                    <div class="calc calc__light big b-gray ">
+                                        <button class="calc__btn calc__btn-minus"></button>
+                                        <input type="number" class="calc__input" value="8">
+                                        <button class="calc__btn calc__btn-plus"></button>
+                                    </div>
+                                </div>
+                                <div class="max-w-165 mx-3 mx-2_1440">
+                                    <p class="text-14">Weight, kg</p>
+                                    <div class="calc calc__light big b-gray ">
+                                        <button class="calc__btn calc__btn-minus"></button>
+                                        <input type="number" class="calc__input" value="800">
+                                        <button class="calc__btn calc__btn-plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-end pb-5">
+                                <p class="lh-43 fs-16 weight-medium mr-5 fs-14_1440 mr-3_1440">45 CLI</p>
+                                <div class="max-w-165 mx-3 mx-2_1440">
+                                    <p class="text-14">Quantity</p>
+                                    <div class="calc calc__light big b-gray ">
+                                        <button class="calc__btn calc__btn-minus"></button>
+                                        <input type="number" class="calc__input" value="8">
+                                        <button class="calc__btn calc__btn-plus"></button>
+                                    </div>
+                                </div>
+                                <div class="max-w-165 mx-3 mx-2_1440">
+                                    <p class="text-14">Weight, kg</p>
+                                    <div class="calc calc__light big b-gray ">
+                                        <button class="calc__btn calc__btn-minus"></button>
+                                        <input type="number" class="calc__input" value="800">
+                                        <button class="calc__btn calc__btn-plus"></button>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fs-16 weight-medium c-blue my-3 fs-14_1440">Cargo</p>
+                            <div class="d-flex pb-3">
+                                <div class=" max-400 mr-5 mb-4">
+                                    <p class="mb-2">Product </p>
+                                    <input type="text" value="Vegetables">
+                                </div>
+                                <div class="max-240 mb-4">
+                                    <p class="mb-2">HS code </p>
+                                    <input type="text" value="Pallets">
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="max-400 mr-xl-5 mb-3">
+                                    <div class="d-flex align-items-center mb-3">
+                                        <p class="fs-16 pr-4 fs-13_1440">ADR</p>
+                                        <label class="">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="switch-yn d-flex b-blue-v4">
+                                                <span class="switch-y">Yes</span>
+                                                <span class="switch-n">No</span>
+                                                <span class="switch-yn_circle bg-blue"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="select ">
+                                        <div class="select__item">IMO class</div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">1</li>
+                                                <li class="select__option">2</li>
+                                            </ul>
+                                        </div>
+                                     </div>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center mb-3">
+                                        <p class="fs-16 pr-4 fs-13_1440">Temperature control</p>
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="switch-yn d-flex b-blue-v4">
+                                                <span class="switch-y">Yes</span>
+                                                <span class="switch-n ">No</span>
+                                                <span class="switch-yn_circle bg-blue"></span>
+                                            </span>
+                                        </label>
+                                        <label class="ml-2">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="switch-yn d-flex b-orange">
+                                                <span class="switch-y w-25px">°C</span>
+                                                <span class="switch-n w-25px">°F</span>
+                                                <span class="switch-yn_circle bg-orange"></span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="select w-70 arrow-r-8 mb-3">
+                                            <div class="select__item pr-4">- 5</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">- 5</li>
+                                                    <li class="select__option">- 5</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <hr class="mx-3 w-9">
+                                        <div class="select w-70 arrow-r-8 mb-3">
+                                            <div class="select__item pr-4">+ 10</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">+ 10</li>
+                                                    <li class="select__option">+ 10</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+    
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="fs-16 weight-medium c-blue my-3 fs-14_1440">Other service</p>
+                            <div class="row mb-5 pb-3 mx-0">
+                                <div class="col-xl-8 b-1 b-light px-0">
+                                    <div class="row bg-light-blue1 py-3 mx-0">
+                                        <div class="col-6 px-4">
+                                            <p class="fs-14 weight-medium">Service type</p>
+                                        </div>
+                                        <div class="col-6 px-4">
+                                            <p class="fs-14 weight-medium">Price</p>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center bb-1 b-light mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6">
+                                                    <label class="">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check-action bg-gray">
+                                                            <svg class="svg-sprite-icon c-white" width="12px" height="15px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center bb-1 b-light mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6">
+                                                    <label class="mr-3">
+                                                        <input type="checkbox" class="checkbox" checked="">
+                                                        <span class="check-action bg-gray">
+                                                            <svg class="svg-sprite-icon c-white" width="12px" height="15px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                    <a href="#" class="text-italic fs-14 underline c-gray">Reject</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row align-items-center mx-0">
+                                        <div class="col-6 px-4 py-2">
+                                            <p>+  Customs import  formalities </p>
+                                        </div>
+                                        <div class="col-6 px-4 py-2">
+                                            <div class="row">
+                                                <p class="col-6">138 EUR</p>
+                                                <div class="col-6">
+                                                    <label class="mr-3">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check-action bg-gray">
+                                                            <svg class="svg-sprite-icon c-white" width="12px" height="15px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                </div>
+                            </div>
+                            <p class="fs-17 c-blue weight-medium my-3">Remarks</p>
+                            <div class="select max-550 mb-5">
+                                <div class="select__item">New logistic additional requirement</div>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option active"></li>
+                                        <li class="select__option"></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <button class="btn-aquamarine pt-2 pb-1 lh-1_3 mx-auto d-block big">
+                                1800 EUR<br>
+                                    Booking
+                            </button>
+                            <a href="#" class="text-center d-block c-gray underline py-2">Save as template</a>
+                            
+                            
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

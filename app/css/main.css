@@ -9636,10 +9636,6 @@ padding-top: 15px;}
     width: 42px;
     background: rgba(36, 177, 255, 0.116368);
   }
-  .data-calendar td.action {
-    display: block;
-    line-height: 1!important;
-  }
   .data-calendar td.start {
     padding-left: 0;
     margin-left: 9px;
@@ -9694,7 +9690,11 @@ padding-top: 15px;}
     border-radius: 2px;
   }
   .data-calendar_table table td.action {
-    line-height: 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 15.5px;
   }
   .action .arrow[data-title]:before {
     content: attr(data-title);

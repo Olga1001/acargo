@@ -803,16 +803,56 @@
                         </div>
                         <div class="map h-250 mb-4">map</div>
                         <div class="px-5 px-4_1440">
-                            <p class="c-blue fs-17 weight-medium mb-1 fs-14_1440">Сontainer</p>
-                            <div class="d-flex flex-wrap pb-4 align-items-end">
-                                <label class="mb-2 mr-3">
-                                    <input type="radio" name="radio" class="checkbox" checked="">
-                                    <span class="check-date py-2 ">
-                                        <img src="../img/check2.svg" alt="check" class="check-date_icon">
-                                        <span class="fs-16 fs-14_1440 lh-1_5">45’ CHI</span>
-                                    </span>
-                                </label>
-                                <div class="max-w-165 mx-3 mb-2 mx-2_1440">
+                            <p class="c-blue fs-16 weight-medium my-2 fs-14_1440">Cargo</p>
+                            <div class="d-flex align-items-end">
+                                <div class=" max-w-180 mr-4 mb-2">
+                                    <p class="fs-13 text-14">Packing</p>
+                                    <div class="select max-w-180">
+                                        <div class="select__item">Euro pallet 120*80 </div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">Euro pallet 120*80 </li>
+                                                <li class="select__option">Euro pallet 120*80 </li>
+                                                <li class="select__option">Euro pallet 120*80 </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex b-1 br-4 b-gray max-350 mr-4 mb-2">
+                                    <div class="relative">
+                                        <div class="d-none_1440">
+                                            <p class="absolute l-0 ml-2 t-0 pt-1 fs-11 c-gray">Height </p>
+                                            <input type="text" value="15 800" class="b-0 pb-0 pt-3 px-2 fs-14 h-auto lh-1_7">
+                                        </div>
+                                        <input type="text" value="15 800" class="b-0 d-none d-block_1440" placeholder="Height  ...">
+                                    </div>
+                                    <div class="relative bl-1 br-1 b-gray">
+                                        <div class="d-none_1440">
+                                            <p class="absolute l-0 ml-2 t-0 pt-1 fs-11 c-gray">Lenth  </p>
+                                            <input type="text" value="15 800" class="b-0 pb-0 pt-3 px-2 fs-14 h-auto lh-1_7">
+                                        </div>
+                                        <input type="text" value="15 800" class="b-0 d-none d-block_1440" placeholder="Lenth  ...">
+                                    </div>
+                                    <div class="relative">
+                                        <div class="d-none_1440">
+                                            <p class="absolute l-0 ml-2 t-0 pt-1 fs-11 c-gray">Width   </p>
+                                            <input type="text" value="15 800" class="b-0 pb-0 pt-3 px-2 fs-14 h-auto lh-1_7">
+                                        </div>
+                                        <input type="text" value="15 800" class="b-0 d-none d-block_1440" placeholder="Width  ...">
+                                    </div>
+                                    <div class="select w-fit-content br-4 ml--1 arrow-r-13 bg-light_v9 h-auto by-0 b-r-0">
+                                        <div class="select__item fs-14 pl-2">mm</div>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">mm</li>
+                                                <li class="select__option">mm</li>
+                                                <li class="select__option">mm</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                
+                                <div class="max-w-165 mr-4 mb-2 mr-3_1440">
                                     <p class="text-14">Quantity</p>
                                     <div class="calc calc__light big b-gray ">
                                         <button class="calc__btn calc__btn-minus"></button>
@@ -820,7 +860,7 @@
                                         <button class="calc__btn calc__btn-plus"></button>
                                     </div>
                                 </div>
-                                <div class="max-w-165 mx-3 mb-2 mx-2_1440">
+                                <div class="max-w-165 mr-4 mb-2 mr-3_1440">
                                     <p class="text-14">Weight, kg</p>
                                     <div class="calc calc__light big b-gray ">
                                         <button class="calc__btn calc__btn-minus"></button>
@@ -828,8 +868,14 @@
                                         <button class="calc__btn calc__btn-plus"></button>
                                     </div>
                                 </div>
+                                <button type="button" class="mb-2">
+                                    <svg class="svg-sprite-icon c-gray h-32_1440 w-10_1440" width="14px" height="42px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#save"></use>
+                                    </svg>
+                                </button>
                             </div>
-                            <div class="col-6 d-flex justify-content-between px-0">
+                            <a href="#" class="text-italic c-gray underline">+ Add new packing</a>
+                            <div class="col-6 d-flex justify-content-between px-0 my-4 mb-2_1440">
                                 <div class="max-204 mb-3">
                                     <p class="text-14 mb-2">Order No. </p>
                                     <input type="text" value="AA-1234567890">
@@ -840,64 +886,12 @@
                                         <span class="checkbox__icon-blue ml-0 mr-2"></span>
                                         <span class="fs-13_1440">Сustoms loading No. </span>
                                     </label>
-                                    <!-- <div class="relative"> -->
-                                        <!-- <p class="absolute t-center l-0 ml-3 c-gray fs-16 fs-13_1440 ml-2_1440">No.</p> -->
-                                        <input type="text" value="AA-1234567890" class="" placeholder="No.">
-                                    <!-- </div> -->
+                                    <input type="text" value="AA-1234567890" class="" placeholder=". . . . . ">
                                 </div>
                             </div>
-                            <div class="d-flex flex-wrap scroll-y max-h-115 mb-5 fs-14 fs-12_1440">
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                                <div class="w-20">
-                                    <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
-                                </div>
-                            </div>
-                            <p class="fs-16 weight-medium c-blue my-3 fs-14_1440">Cargo</p>
-                            <div class="d-flex fs-13_1440 align-items-center mb-3 mb-0_1440">
+
+
+                            <div class="d-flex fs-13_1440 align-items-center mb-3">
                                 <div class=" max-400 mr-3">
                                     <p class="text-14">Product </p>
                                     <input type="text" value="Vegetables">
@@ -919,7 +913,27 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex py-3">
+                            <div class="d-flex flex-wrap">
+                                <label class="mb-2 mr-3">
+                                    <input type="radio" name="radio" class="checkbox" checked>
+                                    <span class="check-type py-3">
+                                        <svg class="svg-sprite-icon c-gray mr-1 wh-16_1440" width="21px" height="20px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#not-stakable"></use>
+                                        </svg>
+                                        <span class="fs-14">Not stakable</span>
+                                    </span>
+                                </label>
+                                <label class="mb-2 mr-3">
+                                    <input type="radio" name="radio" class="checkbox">
+                                    <span class="check-type py-3">
+                                        <svg class="svg-sprite-icon c-gray mr-1 wh-16_1440" width="21px" height="20px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#fragile"></use>
+                                        </svg>
+                                        <span class="fs-14">Fragile</span>
+                                    </span>
+                                </label>
+                            </div>
+                            <div class="d-flex pb-3">
                                 <div class="max-350 w-100 fs-16 fs-13_1440 ">
                                     <div class="row align-items-center py-3">
                                         <p class="col-6">Temperature control</p>

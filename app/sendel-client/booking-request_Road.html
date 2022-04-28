@@ -803,33 +803,160 @@
                         </div>
                         <div class="map h-250 mb-4">map</div>
                         <div class="px-5 px-4_1440">
-                            <p class="c-blue fs-17 weight-medium mb-1 fs-14_1440">Сontainer</p>
-                            <div class="d-flex flex-wrap pb-4 align-items-end">
-                                <label class="mb-2 mr-3">
-                                    <input type="radio" name="radio" class="checkbox" checked="">
-                                    <span class="check-date py-2 ">
-                                        <img src="../img/check2.svg" alt="check" class="check-date_icon">
-                                        <span class="fs-16 fs-14_1440 lh-1_5">45’ CHI</span>
-                                    </span>
-                                </label>
-                                <div class="max-w-165 mx-3 mb-2 mx-2_1440">
-                                    <p class="text-14">Quantity</p>
-                                    <div class="calc calc__light big b-gray ">
-                                        <button class="calc__btn calc__btn-minus"></button>
-                                        <input type="number" class="calc__input" value="8">
-                                        <button class="calc__btn calc__btn-plus"></button>
+                            <p class="c-blue fs-17 weight-medium my-2 fs-14_1440">Shipment</p>
+                            <p class="fs-13_1440">Vechicle type</p>
+                            <div class="row">
+                                <div class="col-xl-10">
+                                    <div class="d-flex flex-wrap">
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox" checked="">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Platform</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#platform"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Trailer</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#trailer"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Frigo</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#frigo"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Grain truck</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#grain-truck"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <span class="relative">
+                                                <input type="radio" name="type" class="checkbox">
+                                                <span class="check-type py-2_1440">
+                                                    <img src="../imgcheck2.svg" alt="check" class="check-date_icon">
+                                                    <span class="fs-13">Road train</span>
+                                                    <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                        <use xlink:href="../img/sprite/symbol/sprite.svg#road-train"></use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Platform</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#platform"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <label class="mr-4 mr-3_1440 mt-3">
+                                            <input type="radio" name="type" class="checkbox" checked="">
+                                            <span class="check-type py-2_1440">
+                                                <span class="fs-13">Trailer</span>
+                                                <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#trailer"></use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    
+                                    <div class="collapse" id="moreDetail">
+                                        <div class="d-flex flex-wrap">
+                                            <label class="mr-4 mr-3_1440 mt-3">
+                                                <input type="radio" name="type" class="checkbox">
+                                                <span class="check-type py-2_1440">
+                                                    <span class="fs-13">Frigo</span>
+                                                    <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                        <use xlink:href="../img/sprite/symbol/sprite.svg#frigo"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="mr-4 mr-3_1440 mt-3">
+                                                <input type="radio" name="type" class="checkbox">
+                                                <span class="check-type py-2_1440">
+                                                    <span class="fs-13">Grain truck</span>
+                                                    <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                        <use xlink:href="../img/sprite/symbol/sprite.svg#grain-truck"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="mr-4 mr-3_1440 mt-3">
+                                                <span class="relative">
+                                                    <input type="radio" name="type" class="checkbox">
+                                                    <span class="check-type py-2_1440">
+                                                        <img src="../imgcheck2.svg" alt="check" class="check-date_icon">
+                                                        <span class="fs-13">Road train</span>
+                                                        <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#road-train"></use>
+                                                        </svg>
+                                                    </span>
+                                                </span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="d-flex align-items-center mx-auto py-3 my-1 collapsed"  type="button"  data-toggle="collapse" href="#moreDetail" role="button" aria-expanded="false" aria-controls="moreDetail">
+                                        <span class="c-blue pr-1 underline">More option</span>
+                                        <svg class="svg-sprite-icon c-blue ml-2" width="10px" height="10px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#arrow-down-2"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xl-6 d-flex align-items-end py-3">
+                                    <label class="mr-3 mb-2">
+                                        <input type="radio" name="type2" class="checkbox">
+                                        <span class="check-type py-2_1440">
+                                            <span class="fs-13">Trailer</span>
+                                            <svg class="svg-sprite-icon c-gray h-12_1440" width="70px" height="17px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#trailer"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <div class="max-w-165 mx-3 mb-2">
+                                        <p class="text-14 mb-2">Quantity</p>
+                                        <div class="calc calc__light big b-gray">
+                                            <button class="calc__btn calc__btn-minus"></button>
+                                            <input type="number" class="calc__input" value="8">
+                                            <button class="calc__btn calc__btn-plus"></button>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="max-w-165 mx-3 mb-2 mx-2_1440">
-                                    <p class="text-14">Weight, kg</p>
-                                    <div class="calc calc__light big b-gray ">
-                                        <button class="calc__btn calc__btn-minus"></button>
-                                        <input type="number" class="calc__input" value="800">
-                                        <button class="calc__btn calc__btn-plus"></button>
+                                <div class="col-xl-6 py-3">
+                                    <p class="mb-2">Loading type</p>
+                                    <div class="d-flex flex-wrap">
+                                        <label class="mr-3 pr-1 mb-2">
+                                            <input type="radio" name="type3" class="checkbox" checked="">
+                                            <span class="check-type py-2 w-100px ">Back </span>
+                                        </label>
+                                        <label class="mr-3 pr-1 mb-2 ">
+                                            <input type="radio" name="type3" class="checkbox">
+                                            <span class="check-type py-2 w-100px ">Top</span>
+                                        </label>
+                                        <label class="mr-3 pr-1 mb-2 ">
+                                            <input type="radio" name="type3" class="checkbox">
+                                            <span class="check-type py-2 w-100px ">Lateral</span>
+                                        </label>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-6 d-flex justify-content-between px-0">
+                            <div class="col-6 d-flex justify-content-between px-0 pt-2">
                                 <div class="max-204 mb-3">
                                     <p class="text-14 mb-2">Order No. </p>
                                     <input type="text" value="AA-1234567890">
@@ -840,60 +967,65 @@
                                         <span class="checkbox__icon-blue ml-0 mr-2"></span>
                                         <span class="fs-13_1440">Сustoms loading No. </span>
                                     </label>
-                                    <!-- <div class="relative"> -->
-                                        <!-- <p class="absolute t-center l-0 ml-3 c-gray fs-16 fs-13_1440 ml-2_1440">No.</p> -->
-                                        <input type="text" value="AA-1234567890" class="" placeholder="No.">
-                                    <!-- </div> -->
+                                    <input type="text" value="AA-1234567890" class="" placeholder=". . . . . .">
                                 </div>
                             </div>
-                            <div class="d-flex flex-wrap scroll-y max-h-115 mb-5 fs-14 fs-12_1440">
+                            <div class="d-flex flex-wrap scroll-y max-h-118 mb-5 fs-14 fs-12_1440">
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center ">1</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                                 <div class="w-20">
                                     <div class="w-100 bg-light text-center">2</div>
-                                    <div class="b-1 py-2 px-3 fs-16 c-blue-gray lh-1_4 fs-13_1440">AA-2345678458</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
+                                </div>
+                                <div class="w-20">
+                                    <div class="w-100 bg-light text-center ">1</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
+                                </div>
+                                <div class="w-20">
+                                    <div class="w-100 bg-light text-center">2</div>
+                                    <input type="text" placeholder=". . . . ." class="br-0 b-gray">
                                 </div>
                             </div>
                             <p class="fs-16 weight-medium c-blue my-3 fs-14_1440">Cargo</p>

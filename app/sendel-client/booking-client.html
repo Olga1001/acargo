@@ -1,0 +1,2509 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="../css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <header class="header d-flex justify-content-between align-items-center ">
+        <div class="d-flex align-items-center">
+            <a href="#" class="logo pb-1">
+                <img src="../img/logo/logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Orders</a></li>
+                    <li class="relative menu-list">
+                        <a href="#"  class="mune-item">Rate (18)</a>   
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                <li><a href="#" class="mr-4">Requests (858)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-1">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="currenty ml-3">
+                    <div class="select b-0 h-100">
+                        <div class="select__item c-white pl-3">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-dark">
+                                <li class="select__option c-white active">USD</li>
+                                <li class="select__option c-white">EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price c-white">1,35 EUR</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center ml-3 pl-1 py-1">
+                <div class="px-1">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                        <use xlink:href="../img/sprite/symbol/sprite.svg#notepad"></use>
+                    </svg>
+                </div>
+                <div class="px-3">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                        <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                    </svg>
+                </div>
+                <div class="px-2 dropdown no-arrow">
+                    <a href="#" class="dropdown-toggle" id="messagesDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px" >
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#mail"></use>
+                        </svg>
+                        <div class="bg-green count-message">4</div>
+                    </a>
+                
+                    <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="dropdown-header p-0">
+                            <button class="btn-expand ml-auto" type="button">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <button class="chat_tab active mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#interface-2"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2">
+                                    <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#people"></use>
+                                    </svg>
+                                </button>
+                                <button class="chat_tab mx-2" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#contacts"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <ul class="chat-list active">
+                                <li class="pb-2 px-3 bg-light_v9">
+                                    <input type="text" placeholder="Search" class="input-search lh-1 h-auto py-2">
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex justify-content-between">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-sm-3 mr-2">
+                                                <img src="../img/users.svg" alt="avatar">
+                                                <div class="avatar-letters">AI</div>
+                                                <div class="online-user"></div>
+                                            </div>
+                                            <div>
+                                                <p class="mb-1">Anton Ivanov</p>
+                                                <p class="fs-12 c-blue-gray">Online</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-12">1 week ago</p>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">1</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                    <div class="message-count">2</div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                    <p class="text-truncate fs-14 pt-2 c-blue-gray lh-1">Analysis of foreign experience, as it is common</p>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <ul class="chat-list pt-1">
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="avatar-letters">AI</div>
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="py-2 px-3">
+                                    <div class="d-flex align-items-center">
+                                        <div class="avatar small mr-sm-3 mr-2">
+                                            <img src="../img/users.svg" alt="avatar">
+                                            <div class="online-user"></div>
+                                        </div>
+                                        <div>
+                                            <p class="mb-1">Anton Ivanov</p>
+                                            <p class="fs-12 c-blue-gray">Online</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 dropdown no-arrow ml-1">
+                    <a href="#" class="dropdown-toggle" id="alertsDropdown" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#notification-2"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu shadow animated--grow-in" aria-labelledby="alertsDropdown">
+                        <h6 class="dropdown-header">Alerts Center</h6><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-primary"><i class="fas fa-file-alt text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 12, 2019</div><span class="font-weight-bold">A new monthly report is ready to download!</span>
+                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-success"><i class="fas fa-donate text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 7, 2019</div>                                    $290.29 has been deposited into your account!
+                        </div></a><a class="dropdown-item d-flex align-items-center" href="#">
+                        <div class="mr-3">
+                            <div class="icon-circle bg-warning"><i class="fas fa-exclamation-triangle text-white"></i></div>
+                        </div>
+                        <div>
+                            <div class="small text-gray-500">December 2, 2019</div>                                    Spending Alert: We've noticed unusually high spending for your account.
+                        </div></a><a class="dropdown-item text-center small text-gray-500" href="#">Show All Alerts</a>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <a href="#">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="dropdown no-arrow">
+                    <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                    </div>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>
+                        <div class="row px-3 py-3 mt-1 mx-0">
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager active">
+                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    .Client
+                                </a>
+                            </div>
+  
+                        </div>
+  
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+      <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+   
+          <div class="container-fluid p-0" id="container-wrapper"> 
+            <div id="box"> 
+              <div class="d-flex align-items-center bg-white fix-top-tabs pl-3 ">
+                <nav class="breadcrumbs-customs flex-73">
+                    <ul class="d-flex py-2">
+                        <li>
+                            <a class="active" href="#">Booking</a>
+                        </li>
+                        <li>
+                            <a href="#">Create booking</a>
+                        </li>
+                        <li>
+                            <a href="#">Order</a>
+                        </li>
+                        <li>
+                            <a href="#">Pre-carriage</a>
+                        </li>
+                    </ul>
+                </nav>
+                  <div class="toggle-tabs flex-27 relative">
+                      <div class="d-flex">
+                            <ul class="nav nav-tabs_small justify-content-around w-100">
+                                <li class="nav-item">
+                                    <a class="nav-link  py-2 px-0">
+                                        <svg class="svg-sprite-icon c-gray mr-2" width="9px" height="12px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                        </svg>
+                                        Map
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link py-2 px-0">
+                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="12px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#notification"></use>
+                                        </svg>
+                                        Activities
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link active py-2 px-0">
+                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="12px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                        </svg>
+                                        Parties
+                                    </a>
+                                </li>
+                            </ul>
+                          <div class="contents absolute t-100 py-0 w-100 l-0">
+                              <div class="contents__item">
+                                  <div class="h-calc"><img src="../img/world-map-large.png" alt="map" width="100%"></div>
+                              </div>
+                              <div class="contents__item ">
+                                  <div class="box-white p-4 my-4 my-2_1440 overflow-y h-calc">
+                                      <div class="d-flex mb-2">
+                                          <div class="relative mr-3 pr-1">
+                                              <div class="number bg-none b-blue-light b-1 d-flex align-items-center justify-content-center">
+                                                  <svg class="svg-sprite-icon c-blue-light " width="14px" height="14px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                                  </svg>
+                                              </div>
+                                              <div class="line "></div>
+                                          </div>
+                                          <div class="py-7 pb-3">
+                                              <p>Start of loading Klaipeda, LTTH …</p>
+                                              <div class="fs-14 c-gray mt-1">05 May 2020</div>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex mb-2">
+                                          <div class="relative mr-3 pr-1">
+                                              <div class="number bg-none b-blue-light b-1 d-flex align-items-center justify-content-center">
+                                                  <svg class="svg-sprite-icon c-blue-light " width="12px" height="13px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                  </svg>
+                                              </div>
+                                              <div class="line "></div>
+                                          </div>
+                                          <div class="py-7 pb-3">
+                                              <p>Start of loading Klaipeda, LTTH …</p>
+                                              <div class="fs-14 c-gray mt-1">05 May 2020</div>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex mb-2">
+                                          <div class="relative mr-3 pr-1">
+                                              <div class="number bg-none b-blue-light b-1 d-flex align-items-center justify-content-center">
+                                                  <svg class="svg-sprite-icon c-blue-light " width="11px" height="13px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                  </svg>
+                                              </div>
+                                              <div class="line "></div>
+                                          </div>
+                                          <div class="py-7 pb-3">
+                                              <p>Start of loading Klaipeda, LTTH …</p>
+                                              <div class="fs-14 c-gray mt-1">05 May 2020</div>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex mb-2">
+                                          <div class="relative mr-3 pr-1">
+                                              <div class="number bg-none b-blue-light b-1 d-flex align-items-center justify-content-center">
+                                                  <svg class="svg-sprite-icon c-blue-light " width="9px" height="13px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                                  </svg>
+                                              </div>
+                                              <div class="line "></div>
+                                          </div>
+                                          <div class="py-7 pb-3">
+                                              <p>Start of loading Klaipeda, LTTH …</p>
+                                              <div class="fs-14 c-gray mt-1">05 May 2020</div>
+                                          </div>
+                                      </div>
+                                      <div class="d-flex">
+                                          <div class="relative mr-3 pr-1">
+                                              <div class="number bg-none b-blue-light b-1 d-flex align-items-center justify-content-center">
+                                                  <svg class="svg-sprite-icon c-blue-light " width="12px" height="13px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#home"></use>
+                                                  </svg>
+                                              </div>
+                                          </div>
+                                          <div class="py-7 pb-3">
+                                              <p>Start of loading Klaipeda, LTTH …</p>
+                                              <div class="fs-14 c-gray mt-1">05 May 2020</div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                              <div class="contents__item active">
+                                  <div class="box-white p-4 my-4 my-2_1440 overflow-y h-calc">
+                                      <div class="py-2 px-3">
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Logistic company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Acargo company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">New cargo</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Logistic company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Acargo company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">New cargo</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="mb-4">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Acargo company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                          <div class="">
+                                              <p class="fs-14 weight-medium mb-3 text-up">Acargo company</p>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon mr-3 c-gray" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">Pushkina Elena</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#call"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">+7 495 4637-8873</p>
+                                              </div>
+                                              <div class="d-flex align-items-center pb-2">
+                                                  <svg class="svg-sprite-icon c-gray mr-3" width="11px" height="11px">
+                                                      <use xlink:href="../img/sprite/symbol/sprite.svg#interface-3"></use>
+                                                  </svg>
+                                                  <p class="c-blue-gray">elena@gmail.com</p>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="row mx-0 pr-xl-4 pt-5 pl-3">
+                <div class="flex-73">
+                    <nav class="breadcrumbs-group pb-3 pb-2_1440 d-flex align-items-center">
+                        <ul class="d-flex">
+                            <li>
+                                <a class="active d-flex" href="#">
+                                    <span>
+                                        <svg class="svg-sprite-icon mr-2" width="11px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                        Orders
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="focus d-flex" href="#"><span>Pre-carriage</span> </a>
+                            </li>
+                            <li>
+                                <a class=" d-flex" href="#"><span>Loading</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-flex"><span>In-transit</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="d-flex"><span>Documents</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class="d-flex"><span>Delivered</span></a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="box-white pt-3 pl-5 pr-4 mb-4 fs-13_1440">
+                        <div class="d-flex justify-content-between  pb-1">
+                            <div class="">
+                                <div class="d-flex align-items-center mb-3">
+                                    <p class="_1441_fs-18 weight-medium _1441_mr-4 pr-3">OR-3456789678</p>
+                                    <p class="c-gray ">17Apr. 2021</p>
+                                </div>
+                                <div class="d-flex align-items-start">
+                                    <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                    <div class="min-w-175">
+                                        <p>Klaipeda, LT <span class="c-blue-gray"></span> (Port) </span></p>
+                                        <p class="fs-14 collapse moreOrder py-2 fs-12_1440">P.O.Box 17000 | 409 Jafza 17, <br>
+                                            Dubai, United Arab Emirates
+                                        </p>
+                                        <p class="c-blue-gray fs-13 pt-1 fs-11_1440"><span class="weight-medium">ETD </span>  29 Apr. 2021</p>
+                                   </div>
+                                    <div class="mr-5 text-center">
+                                        <svg class="svg-sprite-icon c-gray" width="13px" height="15px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#arrow-right"></use>
+                                        </svg>
+                                        <p class="c-blue fs-12 fs-11_1440 text-italic">28 Days</p> 
+                                    </div>
+                                    <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                    <div>
+                                        <p>New York, USA <span class="c-blue-gray">(City)</span></p>
+                                        <p class="fs-14 collapse moreOrder py-2 fs-12_1440">P.O.Box 17000 | 409 Jafza 17, <br>
+                                            Dubai, United Arab Emirates
+                                        <p>
+                                        <p class="c-blue-gray fs-13 pt-1 fs-11_1440"><span class="weight-medium">ETA </span>  29 Apr. 2021</p>
+                                    </div>
+                                </div>
+    
+                            </div>
+                            <div>
+                                <div class="d-flex alig-items-center py-1">
+                                    <svg class="svg-sprite-icon c-blue_v3 mr-2 wh-10_1440" width="13px" height="13px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#leader"></use>
+                                    </svg>
+                                    <p>Acargo Company LTD</p>
+                                </div>
+                                <p>
+                                    <span class="c-blue-gray">Ready  </span>  18 Apr. 2020
+                                </p>
+                                <div class="d-flex flex-wrap mt-3 mt-2_1440">
+                                    <a href="#" class="link-item big mr-1">
+                                        <svg class="svg-sprite-icon c-blue mr-2 wh-10_1440" width="10px" height="11px">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        FCL
+                                    </a>
+                                    <a href="#" class="link-item big mr-1">2 x 45 CHI</a>
+                                    <a href="#" class="link-item big">2 550 kg</a>
+                                </div>
+                            </div>
+                            <p class="_1441_fs-16 weight-medium py-2 px-5 px-4_1440 br-4 bg-light-white3 c-blue mt-4 h-fit w-fit-content">1200 EUR</p>
+                        </div>
+                        <div class="collapse pt-3 _1441_pb-3 moreOrder">
+                            <p class="_1441_fs-16 fs-14 weight-medium c-blue my-2">Cargo</p>
+                            <div class="row pb-3">
+                                <div class="col-xl-6 mb-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">Product</p>
+                                                <p class="c-blue-gray">Vegetables</p>
+                                            </div>
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">Weight</p>
+                                                <p class="c-blue-gray">1200 kg</p>
+                                            </div>
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">Referance number</p>
+                                                <p class="c-blue-gray">AA-23456789</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">ADR</p>
+                                                <p class="c-blue-gray">Oil category</p>
+                                            </div>
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">Temperature control</p>
+                                                <p class="c-blue-gray">+5 C</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="_1441_fs-16 fs-14 weight-medium c-blue mb-2">Extra service </p>
+                            <div class="row pb-3">
+                                <div class="col-xl-6 mb-3">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <div class="d-flex pb-2">
+                                                <p class="pr-2">Cargo insurance  </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="_1441_fs-16 fs-14 weight-medium c-blue mb-2">Remarks </p>
+                            <p class="lh-1_5 max-w-610 pb-4">
+                                Remarks The essential factor in warehouse management is the safety rules. Warehouses with safety as a priority would include wearing appropriate PPE as wel…
+                                <a href="#" class="c-gray underline d-inline">Read more</a> 
+                            </p>
+                            <button class="btn-aquamarine big mx-auto d-block max-204 w-100 mt-1" type="button">Reject order</button>
+                        </div>
+                        <button type="button" class="py-3 w-100 collapsed" data-toggle="collapse" data-target=".moreOrder"> 
+                            <svg class="svg-sprite-icon collapsed-arrow c-gray" width="15px" height="15px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                            </svg>
+                        </button>
+
+                    </div>
+                    <div class="box-white pt-3 px-2 mb-4">
+                        <div class="d-flex">
+                            <div class="relative mr-2">
+                                <div class="bg-white pb-3 relative z-1">
+                                    <div class="wh-35 br-50 bg-gray_8 wh-26_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block w-14_1440" width="16px" height="100%">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 absolute l-center t-0 h-100 bg-light-white3"></div>
+                            </div>
+                            <div class="w-100"> 
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Booking confirmed</p>
+                                <p class="weight-mediu py-1">OR - AA763827997</p>
+                                <div class="row pr-xl-5 mr-xl-5 mb-4 fs-13_1440">
+                                    <div class="col-4">
+                                        <p class="pt-1">Booking <span class="c-blue-gray pl-4">AA-7638273-1209888</span></p>
+                                        <p class="pt-1">Sea line <span class="c-blue-gray pl-4">AA-7638273-1209888</span></p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="pt-1">Terminal pick-up <span class="c-blue-gray pl-4">Open terminal</span></p>
+                                        <p class="pt-1">Terminal drop <span class="c-blue-gray pl-4">Open terminal</span></p>
+                                    </div>
+                                    <div class="col-4">
+                                        <p class="pt-1">Demurrages <span class="c-blue-gray pl-4">14 days</span></p>
+                                        <p class="pt-1">Detensions <span class="c-blue-gray pl-4">14 days</span></p>
+                                    </div>
+                                </div>
+                                
+                                <div class="collapse show _1441_py-3 " id="moreAddBookingInformation">
+                                    <p class="_1441_fs-16 weight-medium c-blue mb-2">Remarks </p>
+                                    <p class="lh-1_5 max-w-610 pb-4 fs-13_1440"> Remarks The essential factor in warehouse management is the safety rules. Warehouses with safety as a priority would include wearing appropriate PPE as wel…
+                                        <a href="#" class="c-gray underline d-inline">Read more</a>
+                                    </p>
+                                    <div class="mt-5 relative fs-13_1440">
+                                        <div class="line-vertical_shipment l-2 small bg-blue_v5"></div>
+                                        <div class="d-flex">
+                                            <div class="min-w-19 d-flex justify-content-center  mr-4 z-1 ">
+                                                <svg class="svg-sprite-icon bg-white c-blue pb-2 w-10_1440" width="16px" height="30px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#home"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100 pb-3">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Origin loading place</p>
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>284905, Klaipeda, LT</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="min-w-19 d-flex justify-content-center  mr-4 z-1 mt--10">
+                                                <svg class="svg-sprite-icon bg-white c-blue w-10_1440" width="14px" height="37px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100 pb-3">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Loading port</p>
+                                                        <div class="d-flex align-items-center pb-1">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>Klaipeda, Lithvinia, LTKN  </p>
+                                                        </div>
+                                                        <p class="pt-1">Vessel <span class="c-blue-gray pl-3">328979281</span></p>
+                                                        <p class="pt-1">Voyage <span class="c-blue-gray pl-3">328979281</span></p>
+
+                                                    </div>
+                                                    <div class="mb-2 max-240 w-100 mr-4">
+                                                        <p class="pt-1">CUT - OFF <span class="c-blue-gray pl-3">18 Apr. 15:00 - 16:00</span></p>
+                                                    </div>
+                                                    <div class="mb-2 max-w-165 mr-4 w-100">
+                                                        <p class="pt-1">ETD <span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="min-w-19 d-flex justify-content-center mr-4 z-1 mt--10">
+                                                <svg class="svg-sprite-icon bg-white c-blue w-10_1440" width="14px" height="37px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100 pb-3">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Transhipment 1</p>
+                                                        <div class="d-flex align-items-center pb-1">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>Klaipeda, Lithvinia, LTKN  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-2 max-240 w-100 mr-4">
+                                                        <p class="pt-1">ETA <span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                    <div class="mb-2 max-w-165 mr-4 w-100">
+                                                        <p class="pt-1">ETD <span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="min-w-19 d-flex justify-content-center mr-4 z-1 mt--10">
+                                                <svg class="svg-sprite-icon bg-white c-blue w-10_1440" width="14px" height="37px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100 pb-3">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Transhipment 1</p>
+                                                        <div class="d-flex align-items-center pb-1">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>Klaipeda, Lithvinia, LTKN  </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-2 max-240 w-100 mr-4">
+                                                        <p class="pt-1">ETA<span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex">
+                                            <div class="min-w-19 d-flex justify-content-center mr-4 z-1 mt--10">
+                                                <svg class="svg-sprite-icon bg-white c-blue w-10_1440" width="14px" height="37px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100 pb-3">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Transhipment 1</p>
+                                                        <div class="d-flex align-items-center pb-1">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>Klaipeda, Lithvinia, LTKN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-2 max-240 w-100 mr-4">
+                                                        <p class="pt-1">ETA<span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex relative bg-white">
+                                            <div class="min-w-19 d-flex justify-content-center mr-4 bg-white z-1 mt--10 py-2">
+                                                <svg class="svg-sprite-icon c-blue w-10_1440" width="11px" height="37px">
+                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                                </svg>
+                                            </div>
+                                            <div class="w-100">
+                                                <div class="d-flex">
+                                                    <div class="mb-2 max-240 mr-4 w-100">
+                                                        <p class="pb-2 c-gray">Transhipment 1</p>
+                                                        <div class="d-flex align-items-center pb-1">
+                                                            <img src="../img/flag.svg" alt="flag" class="flag_v3 mr-2">
+                                                            <p>Klaipeda, Lithvinia, LTKN</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="mb-2 max-240 w-100 mr-4">
+                                                        <p class="pt-1">ETA<span class="c-blue-gray pl-3">28 Apr.  2020</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="btn-aquamarine big mx-auto d-block my-4 max-204 w-100" type="button">Confirm</button>
+                                </div>
+                            </div>
+
+                        </div>
+                       
+                    </div>
+                    <div class="box-white pt-3 px-2 mb-4">
+                        <div class="d-flex">
+                            <div class="relative mr-2">
+                                <div class="bg-white pb-3 relative z-1">
+                                    <div class="wh-35 br-50 bg-gray_8 wh-26_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block w-14_1440" width="16px" height="100%">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 absolute l-center t-0 h-100 bg-light-white3"></div>
+                            </div>
+                            <div class="w-100 pr-4">
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Pre-carriage</p>
+                                <div class="collapse show fs-13_1440 py-2" id="moreCarriage">
+                                    <div class="b-1 b-blue-light2 bb-0 p-0 scroll-y max-h-361 fs-14 fs-13_1440 mb-2">
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                        <div class="row mx-0 align-items-center bb-1 b-blue-light2 py-0_1440 pl-3">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-4 my-1 d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-2"></div>
+                                                        <p class="c-green _1441_fs-14">Planned</p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pl-0">
+                                                        <p class="pb-2">OR-6787938942855</p>
+                                                        <p class="_1441_fs-14">
+                                                            <span class="c-navy text-italic pr-1">Loading  </span> 
+                                                            17 Apr. 2021
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-4 my-1 pr-0">
+                                                        <div class="relative w-100 d-flex ">
+                                                            <div class="mr-2">
+                                                                <svg class="svg-sprite-icon bg-white z-1" width="9px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#oval"></use>
+                                                                </svg>
+                                                                <div class="line-dashed-vertical"></div>
+                                                                <svg class="svg-sprite-icon c-blue bg-white d-flex z-1 mt-2 mx-auto" width="7px" height="14px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#loc-small"></use>
+                                                                </svg>
+                                                            </div>
+                                                            <div>
+                                                                <div class="d-flex align-items-center">
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Klaipeda, LTKN</p>
+                                                                </div>
+                                                                <div class="d-flex align-items-center mt-2">
+            
+                                                                    <img src="../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                                                    <p class="fs-13">Shangai, CHUN</p>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14 ">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Track</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Trailer</span>
+                                                            <span>AA546378</span> 
+                                                        </p>
+                                                    </div>
+                                                    <div class="col-6 my-1 pr-0 _1441_fs-14">
+                                                        <p class="mb-2">
+                                                            <span class="c-navy text-talic pr-1 ">Driver</span>
+                                                            <span>Alexey Ivanov</span> 
+                                                        </p>
+                                                        <p>
+                                                            <span class="c-navy text-talic pr-1 ">Phone</span>
+                                                            <span>+ 467 748 78 65</span> 
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="box-white pt-3 px-2 mb-4">
+                        <div class="d-flex">
+                            <div class="relative mr-2">
+                                <div class="bg-white pb-3 relative z-1">
+                                    <div class="wh-35 br-50 bg-gray_8 wh-26_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block w-14_1440" width="16px" height="100%">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 absolute l-center t-0 h-100 bg-light-white3"></div>
+                            </div>
+                            <div class="w-100 pr-1">
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Cargo loading</p>
+                                <div class="scroll-y max-h-361 b-1 b-blue-light2 mt-2 fs-13_1440">
+                                    <div class="row bg-light mx-0 py-2 sticky-top fs-14 fs-12_1440 weight-medium pl-1">
+                                        <div class="col-5 py-1">
+                                            <div class="row"> 
+                                                <div class="col-4">
+                                                    <p class="">Status</p>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <p class="">Order</p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="">Loading date</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 py-1">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p class="">Truck</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="">Trailer</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="">Container</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p class="">Volume, m3</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 align-items-center pl-1 w-100 py-3 bb-1 b-blue-light2">
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-1"></div>
+                                                        <div class="fs-14 c-green fs-12_1440">Planned</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <a href="#" class="underline c-dark">OR-5213878873</a>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+                                                    <p>24 Apr. 2021 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <p>AA5369888   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>288</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 align-items-center pl-1 w-100 py-3 bb-1 b-blue-light2">
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-1"></div>
+                                                        <div class="fs-14 c-green fs-12_1440">Planned</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <a href="#" class="underline c-dark">OR-5213878873</a>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+                                                    <p>24 Apr. 2021 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <p>AA5369888   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>288</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 align-items-center pl-1 w-100 py-3 bb-1 b-blue-light2">
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-1"></div>
+                                                        <div class="fs-14 c-green fs-12_1440">Planned</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <a href="#" class="underline c-dark">OR-5213878873</a>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+                                                    <p>24 Apr. 2021 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <p>AA5369888   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>288</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 align-items-center pl-1 w-100 py-3">
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-4">
+                                                    <div class="d-flex align-items-center">
+                                                        <div class="circle-small bg-green mr-1"></div>
+                                                        <div class="fs-14 c-green fs-12_1440">Planned</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 pl-0">
+                                                    <a href="#" class="underline c-dark">OR-5213878873</a>
+                                                </div>
+                                                <div class="col-4 d-flex align-items-center">
+                                                    <p>24 Apr. 2021 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7">
+                                            <div class="row align-items-center">
+                                                <div class="col-3">
+                                                    <p>AA5369888   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348   </p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>163757348</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>288</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row py-3 my-1">
+                                    <div class="col-4 d-flex align-items-center">
+                                        <p class="pr-3">Ordered</p>
+                                        <a href="#" class="link-item mr-2">FCL</a>
+                                        <a href="#" class="link-item mr-2">15 750 kg</a>
+                                        <a href="#" class="link-item mr-2">7.5 m3</a>
+                                    </div>
+                                    <div class="col-4 d-flex align-items-center">
+                                        <p class="pr-3">Loaded</p>
+                                        <a href="#" class="link-item mr-2">FCL</a>
+                                        <a href="#" class="link-item mr-2">15 750 kg</a>
+                                        <a href="#" class="link-item mr-2">7.5 m3</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                                                                             
+                    </div>
+                    <div class="box-white pt-3 px-2 mb-4">
+                        <div class="d-flex">
+                            <div class="relative mr-2">
+                                <div class="bg-white pb-3 relative z-1">
+                                    <div class="wh-35 br-50 bg-gray_8 wh-26_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block w-14_1440" width="16px" height="100%">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 absolute l-center t-0 h-100 bg-light-white3"></div>
+                            </div>
+                            <div class="w-100 pr-1">
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Documents</p>
+                                <div class="scroll-y max-h-361 fs-13_1440 mt-2">
+                                    <div class="row bg-light mx-0 py-3 px-3 sticky-top fs-14 weight-medium fs-12_1440">
+                                        <div class="col-7">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p>Status</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <p>Document</p>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p>Date</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row b-light2 mx-0 py-2 px-3 hover-icons hover-b align-items-center">
+                                        <div class="col-7">
+                                            <div class="row ">
+                                                <div class="col-3">
+                                                    <p class="c-blue-gray">Open</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <a href="#" class="c-blue-gray underline">Shipping instruction</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="c-blue-gray">12 Apr. 2020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button class="bg-light btn-aquamarine fs-13 fs-12_1440 c-navy-blue">Upload</button>
+                                                </div>
+                                                <div class="col-6 d-flex align-items-center justify-content-end hover">
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray wh-12_1440" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#create"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray wh-12_1440" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#bin"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray wh-12_1440" width="14px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#share"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray wh-12_1440" width="14px" height="13px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#print"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#">
+                                                        <svg class="svg-sprite-icon c-gray wh-12_1440" width="15px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#chat"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row b-light2 mx-0 py-2 px-3 hover-icons hover-b align-items-center">
+                                        <div class="col-7">
+                                            <div class="row ">
+                                                <div class="col-3">
+                                                    <p class="c-blue-gray">Open</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <a href="#" class="c-blue-gray underline">Booking VGM</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="c-blue-gray">12 Apr. 2020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button class="btn-aquamarine fs-13 fs-12_1440 ">Generate</button>
+                                                </div>
+                                                <div class="col-6 d-flex align-items-center justify-content-end hover">
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#create"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#bin"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#share"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="13px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#print"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#chat"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row b-light2 mx-0 py-2 px-3 hover-icons hover-b align-items-center">
+                                        <div class="col-7">
+                                            <div class="row ">
+                                                <div class="col-3">
+                                                    <p class="c-blue-gray">Open</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <a href="#" class="c-blue-gray underline">Shipping instruction</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="c-blue-gray">12 Apr. 2020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button class="bg-green_41 btn-aquamarine fs-13 fs-12_1440 ">Confirm</button>
+                                                </div>
+                                                <div class="col-6 d-flex align-items-center justify-content-end hover">
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#create"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#bin"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#share"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="13px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#print"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#chat"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row b-light2 mx-0 py-2 px-3 hover-icons hover-b align-items-center">
+                                        <div class="col-7">
+                                            <div class="row ">
+                                                <div class="col-3">
+                                                    <p class="c-blue-gray">Open</p>
+                                                </div>
+                                                <div class="col-5">
+                                                    <a href="#" class="c-blue-gray underline">Shipping instruction</a>
+                                                </div>
+                                                <div class="col-4">
+                                                    <p class="c-blue-gray">12 Apr. 2020</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-6">
+                                                    <button class="btn-aquamarine fs-13 fs-12_1440 ">
+                                                        <svg class="svg-sprite-icon c-white mr-1" width="12px" height="9px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                                            </svg>
+                                                            Confirmed
+                                                    </button>
+                                                </div>
+                                                <div class="col-6 d-flex align-items-center justify-content-end hover">
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#create"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="15px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#bin"></use>
+                                                        </svg>
+                                                    </a>
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#share"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#" class="mr-3">
+                                                        <svg class="svg-sprite-icon c-gray" width="14px" height="13px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#print"></use>
+                                                        </svg>
+                                                    </a>
+                                                    
+                                                    <a href="#">
+                                                        <svg class="svg-sprite-icon c-gray" width="15px" height="14px">
+                                                            <use xlink:href="../img/sprite/symbol/sprite.svg#chat"></use>
+                                                        </svg>
+                                                    </a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 px-3 bb-1 b-light2 hover-b">
+                                        <div class="select b-0 w-fit-content pr-4 ">
+                                            <div class="select__item text-italic underline c-gray fs-12_1440">+ Add another document</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option ">1</li>
+                                                    <li class="select__option">2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                               
+                                <label for="drop-upload" class=" max-290 mx-4 my-3 bg-light-blue1 d-flex justify-content-center align-items-center p-3 p-2_1440">
+                                    <input type="file" id="drop-upload" name="files[]" multiple="">
+                                    <img src="../img/upload.svg" alt="upload" class="mr-sm-3 mr-2 wh-16_1440" width="20px" height="18px">
+                                    <span class="c-gray fs-12_1440 py-1_1440">Drop or upload file </span>
+                                </label>
+                                <button type="button" class="btn-white big mb-4 d-block mx-auto px-2"><span class="_1441_px-4">Mark as сompleted</span>  </button>   
+
+                            </div>
+                        </div>                                                                             
+                    </div>
+                    <div class="box-white pt-3 px-2 mb-4">
+                        <div class="d-flex">
+                            <div class="relative mr-2">
+                                <div class="bg-white pb-3 relative z-1">
+                                    <div class="wh-35 br-50 bg-gray_8 wh-26_1440">
+                                        <svg class="svg-sprite-icon c-blue mx-auto d-block w-14_1440" width="16px" height="100%">
+                                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 absolute l-center t-0 h-100 bg-light-white3"></div>
+                            </div>
+                            <div class="w-100 pr-1">
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Trucking</p>
+
+                                <div class="max-780">
+
+                                    <div class="d-flex justify-content-between text-nowrap fs-13_1440">
+                                        <div class="mb-4">
+                                            <div class="row pb-1">
+                                                <p class="col-6 ">Booking</p>
+                                                <p class="c-blue-gray col-6"> AA-3679377</p>
+                                            </div>
+        
+                                            <div class="row pb-1">
+                                                <p class="col-6 ">Sea line</p>
+                                                <p class="c-blue-gray col-6">Marsl Line</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row pb-1">
+                                                <p class="col-6 ">Waybill</p>
+                                                <p class="c-blue-gray col-6">81598838</p>
+                                            </div>
+        
+                                            <div class="row pb-1">
+                                                <p class="col-6">B/L type</p>
+                                                <p class="c-blue-gray col-6">51628783</p>
+                                            </div>
+                                        </div>
+                                        <div class="mb-4">
+                                            <div class="row pb-1">
+                                                <p class="col-6">Demurrages</p>
+                                                <p class="c-blue-gray col-6">14 days</p>
+                                            </div>
+        
+                                            <div class="row pb-1">
+                                                <p class="col-6">Detensions</p>
+                                                <p class="c-blue-gray col-6">14 days</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    
+                                    <div class="d-flex align-items-center fs-14 py-5">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap mb-1">
+                                                <img src="../img/flag.svg" alt=" flag" width="18px" height="18px" class="mr-2 wh-13_1440">
+                                                <p class=" weight-bold c-navy pr-1">Vilnius, LT </p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                            <div class="way2-content l-0 fs-14 fs-11_1440">
+                                                <p class="c-blue-gray">Loading 18 Apr. 2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center ml--25 text-center mb-1">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-blue-v1 way2-line small "></div>
+                                            
+                                            <div class="way2-content l-center fs-14 fs-11_1440">
+                                                <p class="c-blue-gray">ETD 20 Apr. 2020</p>
+                                                <p class="c-blue-gray ">CUT-OFF  19-20 Apr. 2020</p>
+                                            </div>
+                                        </div>
+        
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center text-nowrap fs-12 mb-1">
+                                                <p class="weight-light">Transit time 38 Days</p>
+                                                <p class="c-blue fs-10_1440">28 Days left</p>
+                                            </div>
+                                            <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                            </svg>
+                                            <div class="bg-blue-v1 way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center mb-1 mr--25">
+                                                <p class="fs-11 c-blue-gray fs-10_1440">USAH</p>
+                                            </div>
+                                            <div class="way3-pin blue"></div>
+                                            <div class="bg-green way2-line small "></div>
+                                            <div class="way2-content l-center fs-14 fs-11_1440">
+                                                <p class="c-blue-gray text-center">ETA  28 Apr. 2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
+                                                <use xlink:href="../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                            </svg>
+                                            <div class="bg-green way2-line small"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative text-right">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="weight-bold c-navy pr-1">Florida, US </p>
+                                                <img src="../img/flag.svg" alt=" flag" width="18px" height="18px" class="ml-2 wh-13_1440">
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="way2-content r-0 fs-14 fs-11_1440">
+                                                <p class="c-blue-gray ">Delivery 30 Apr. 2020 </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                
+                                </div>
+
+                                <div class="my-4">
+                                    <div class="row mx-0 fs-14 fs-13_1440 weight-medium bb-1 b-blue-light2 py-0">
+                                        <div class="col-7 bg-light">
+                                            <div class="row"> 
+                                                <div class="col-4 col-3_1440 py-1">
+                                                    <p class=""># Container</p>
+                                                </div>
+                                                <div class="col-4 col-5_1440 py-1 pl-0">
+                                                    <p class="">Order</p>
+                                                </div>
+                                                <div class="col-4 py-1 px-0_1440">
+                                                    <p class="">Destination</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5">
+                                            <div class="row">
+                                                <div class="col-6 py-1 bg-light">
+                                                    <p class="">Free time</p>
+                                                </div>
+                                                <div class="col-6 bg-light-orange py-1">
+                                                    <p class="">Over  time</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <ul class="b-1 b-blue-light2 py-0 scroll-y max-h-492 fs-13_1440">
+                                        <li>
+                                            <div class="row mx-0 bb-1 b-blue-light2 align-items-center w-100 py-2 hover-bg-light" >
+                                                <div class="col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-4 col-3_1440 d-flex">
+                                                            <p class="c-blue mr-2">1</p>
+                                                            <p>VV-2345678/ 40’CHI</p>
+                                                        </div>
+                                                        <div class="col-4 col-5_1440 pl-0 fs-14 fs-13_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Empty pick-up </span> 12 Apr. 2020
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Full return </span> 15 Apr. 2020
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4 fs-14 fs-13_1440 px-0_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Fully pick-up</span> 12 Apr. 2020
+                                                            </p>
+                                                            <p class="d-flex">
+                                                                <span class="c-gray text-nowrap pr-2 ">Empty return </span>  <input type="text" class="input-normal text-left" placeholder=". . . . .">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 fs-14 fs-13_1440">
+                                                    <div class="row align-items-center" >
+                                                        <div class="col-6">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Demurages </span> 12 days
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Detentions</span>  8 days
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-6 d-flex align-items-center justify-content-between">
+                                                            <div>
+                                                                <p class="pb-1">
+                                                                    <span class="c-gray pr-2 pr-1_1440">Demurages </span> <span class="c-orange"> + 2 days</span>
+                                                                </p>
+                                                                <p>
+                                                                    <span class="c-gray pr-2 pr-1_1440">Detentions </span>  
+                                                                </p>
+                                                            </div>
+                                                            <button type="button" class="btn-plus collapsed"  data-toggle="collapse" data-target="#truckingDrop1"></button>       
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="collapse p-3" id="truckingDrop1">
+                                                <div class="relative m-1 fs-14 fs-13_1440">
+                                                    <div class="line-vertical_shipment small "></div>
+                                                    <div class="line-vertical_dashed small "></div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light mx-auto w-10_1440" width="12px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#building"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light w-10_1440" width="10px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 d-flex mx-auto">
+                                                                <div class="circle-small bg-blue-bright m-auto "></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 mx-auto">
+                                                                <svg class="svg-sprite-icon c-blue-light w-8_1440" width="10px" height="12px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-gray w-8_1440" width="10px" height="14px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row mx-0 bb-1 b-blue-light2 align-items-center w-100 py-2 hover-bg-light" >
+                                                <div class="col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-4 col-3_1440 d-flex">
+                                                            <p class="c-blue mr-2">1</p>
+                                                            <p>VV-2345678/ 40’CHI</p>
+                                                        </div>
+                                                        <div class="col-4 col-5_1440 pl-0 fs-14 fs-13_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Empty pick-up </span> 12 Apr. 2020
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Full return </span> 15 Apr. 2020
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4 fs-14 fs-13_1440 px-0_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Fully pick-up</span> 12 Apr. 2020
+                                                            </p>
+                                                            <p class="d-flex">
+                                                                <span class="c-gray text-nowrap pr-2 ">Empty return </span>  <input type="text" class="input-normal text-left" placeholder=". . . . .">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 fs-14 fs-13_1440">
+                                                    <div class="row align-items-center" >
+                                                        <div class="col-6">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Demurages </span> 12 days
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Detentions</span>  8 days
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-6 d-flex align-items-center justify-content-between">
+                                                            <div>
+                                                                <p class="pb-1">
+                                                                    <span class="c-gray pr-2 pr-1_1440">Demurages </span> <span class="c-orange"> + 2 days</span>
+                                                                </p>
+                                                                <p>
+                                                                    <span class="c-gray pr-2 pr-1_1440">Detentions </span>  
+                                                                </p>
+                                                            </div>
+                                                            <button type="button" class="btn-plus collapsed" data-toggle="collapse" data-target="#truckingDrop2"></button>       
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="collapse p-3" id="truckingDrop2">
+                                                <div class="relative m-1 fs-14 fs-13_1440">
+                                                    <div class="line-vertical_shipment small "></div>
+                                                    <div class="line-vertical_dashed small "></div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light mx-auto w-10_1440" width="12px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#building"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light w-10_1440" width="10px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 d-flex mx-auto">
+                                                                <div class="circle-small bg-blue-bright m-auto "></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 mx-auto">
+                                                                <svg class="svg-sprite-icon c-blue-light w-8_1440" width="10px" height="12px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-gray w-8_1440" width="10px" height="14px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="row mx-0 bb-1 b-blue-light2 align-items-center w-100 py-2 hover-bg-light" >
+                                                <div class="col-7">
+                                                    <div class="row align-items-center">
+                                                        <div class="col-4 col-3_1440 d-flex">
+                                                            <p class="c-blue mr-2">1</p>
+                                                            <p>VV-2345678/ 40’CHI</p>
+                                                        </div>
+                                                        <div class="col-4 col-5_1440 pl-0 fs-14 fs-13_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Empty pick-up </span> 12 Apr. 2020
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Full return </span> 15 Apr. 2020
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-4 fs-14 fs-13_1440 px-0_1440">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Fully pick-up</span> 12 Apr. 2020
+                                                            </p>
+                                                            <p class="d-flex">
+                                                                <span class="c-gray text-nowrap pr-2 ">Empty return </span>  <input type="text" class="input-normal text-left" placeholder=". . . . .">
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 fs-14 fs-13_1440">
+                                                    <div class="row align-items-center" >
+                                                        <div class="col-6">
+                                                            <p class="pb-1">
+                                                                <span class="c-gray pr-2 pr-1_1440">Demurages </span> 12 days
+                                                            </p>
+                                                            <p>
+                                                                <span class="c-gray pr-2 pr-1_1440">Detentions</span>  8 days
+                                                            </p>
+                                                        </div>
+                                                        <div class="col-6 d-flex align-items-center justify-content-between">
+                                                            <div>
+                                                                <p class="pb-1">
+                                                                    <span class="c-gray pr-2 pr-1_1440">Demurages </span> <span class="c-orange"> + 2 days</span>
+                                                                </p>
+                                                                <p>
+                                                                    <span class="c-gray pr-2 pr-1_1440">Detentions </span>  
+                                                                </p>
+                                                            </div>
+                                                            <button type="button" class="btn-plus collapsed" data-toggle="collapse" data-target="#truckingDrop3"></button>       
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="collapse p-3" id="truckingDrop3">
+                                                <div class="relative m-1 fs-14 fs-13_1440">
+                                                    <div class="line-vertical_shipment small "></div>
+                                                    <div class="line-vertical_dashed small "></div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light mx-auto w-10_1440" width="12px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#building"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-blue-light w-10_1440" width="10px" height="12px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#anchor"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 d-flex mx-auto">
+                                                                <div class="circle-small bg-blue-bright m-auto "></div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="bg-white py-1 z-1 relative h-fit wh-24">
+                                                            <div class="circle-big bg-light wh-24 wh-18_1440 mx-auto">
+                                                                <svg class="svg-sprite-icon c-blue-light w-8_1440" width="10px" height="12px">
+                                                                    <use xlink:href="../img/sprite/symbol/sprite.svg#boat"></use>
+                                                                </svg>
+                                                            </div>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="d-flex">
+                                                        <div class="circle-big bg-white wh-24">
+                                                            <svg class="svg-sprite-icon c-gray w-8_1440" width="10px" height="14px">
+                                                                <use xlink:href="../img/sprite/symbol/sprite.svg#pin"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="pl-5 w-100 row max-860 max-700_1440 pb-4 _1441_mb-2 align-items-center">
+                                                            <div class="col-3 pl-0"> 24 Apr. 2020</div>
+                                                            <div class="col-5 d-flex align-items-center">
+                                                                <img src="../img/flag.svg" alt="flag" class="wh-18 mr-2 wh-13_1440">
+                                                                <p>Klaipeda,  Lithvinia,  LTKN</p>
+                                                            </div>
+                                                            <div class="col-4">
+                                                                <div class="block bg-light-green c-green text-nowrap _1441_fs-15">Empty return</div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>  
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <button class="btn-aquamarine big mx-auto d-block my-4" type="button">Confirm as delivery</button>     
+                                
+                            </div>
+                        </div>                  
+                    </div>
+
+                    <div class="box-white pt-3 pb-4 px-2">
+                        <div class="d-flex">
+                            <div class="wh-35 br-50 bg-green mr-3 wh-26_1440">
+                                <svg class="svg-sprite-icon c-white mx-auto d-block w-10_1440" width="14px" height="100%">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#check"></use>
+                                </svg>
+                            </div>
+                            <div class="max-770 w-100">
+                                <p class="c-blue _1441_fs-18 weight-medium py-2 lh-1">Feedback</p>
+                                <div class="d-flex justify-content-between _1441_mb-4 fs-13_1440">
+                                    <div class="d-flex align-items-center">
+                                        <p class="mr-3">Service</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating" id="rating-5">
+                                            <label for="rating-5"></label>
+                                            <input type="radio" name="rating" id="rating-4" checked>
+                                            <label for="rating-4"></label>
+                                            <input type="radio" name="rating" id="rating-3">
+                                            <label for="rating-3"></label>
+                                            <input type="radio" name="rating" id="rating-2">
+                                            <label for="rating-2"></label>
+                                            <input type="radio" name="rating" id="rating-1">
+                                            <label for="rating-1"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mr-3">Communication</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating" id="rating-10">
+                                            <label for="rating-10"></label>
+                                            <input type="radio" name="rating" id="rating-9">
+                                            <label for="rating-9"></label>
+                                            <input type="radio" name="rating" id="rating-8">
+                                            <label for="rating-8"></label>
+                                            <input type="radio" name="rating" id="rating-7">
+                                            <label for="rating-7"></label>
+                                            <input type="radio" name="rating" id="rating-6">
+                                            <label for="rating-6"></label>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center">
+                                        <p class="mr-3">Price</p>
+                                        <div class="rating">
+                                            <input type="radio" name="rating" id="rating-15">
+                                            <label for="rating-15"></label>
+                                            <input type="radio" name="rating" id="rating-14">
+                                            <label for="rating-14"></label>
+                                            <input type="radio" name="rating" id="rating-13">
+                                            <label for="rating-13"></label>
+                                            <input type="radio" name="rating" id="rating-12">
+                                            <label for="rating-12"></label>
+                                            <input type="radio" name="rating" id="rating-11">
+                                            <label for="rating-11"></label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <textarea  cols="30" rows="4" class="textarea_v2 b-blue-light2 my-1 my-3_1440"></textarea>
+                            </div>
+                        </div>
+                        <button class="btn-aquamarine big mx-auto d-block _1441_mt-4" type="button">Submit</button>    
+                    </div>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

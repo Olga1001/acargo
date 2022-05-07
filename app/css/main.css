@@ -1476,7 +1476,11 @@ button {
 
 .text-t-up {
   text-transform: uppercase;}
-
+.link-castomer {
+  color: #282E3B;}
+.link-castomer:hover {
+  text-decoration: underline;
+  color: #156ce4;}
 .link {
   color: #156ce4;
   font-size: 15px;
@@ -1906,6 +1910,8 @@ button {
   background-color: rgba(	249, 158, 4, 0.2); }
 .bg-orange2 {
   background-color: rgba(	249, 158, 4, 0.67); }
+.bg-orange_v3 {
+  background-color: #FFEED0; }
 .bg-light-green {
   background-color: rgba(73, 221, 170, 0.15); }
 .bg-light-green2 {
@@ -1988,6 +1994,8 @@ button {
   background-color: rgba(226, 243, 253, 0.47);}
 .bg-blue-v3 {
   background-color: #C5EAFF!important;}
+.bg-blue-v4 {
+  background-color: #BED8FD!important;}
 .bg-pale-azure {
   background-color: #e7f5fe!important;}
 
@@ -2300,8 +2308,8 @@ button {
 .stroke-white {
   stroke: #fff!important}
 .c-blue-v1 {
-  color: #24b1ff;
-  fill: #24b1ff;  }
+  color: #24b1ff!important;
+  fill: #24b1ff!important;  }
 .c-blue-light {
   color: #109CF1!important; 
   fill: #109CF1!important;}
@@ -9739,6 +9747,9 @@ padding-top: 15px;}
   .h_100vh-427 {
     height: calc(100vh - 427px);
   }
+  .h_100vh-435 {
+    height: calc(100vh - 435px);
+  }
   .h_100vh-480 {
     height: calc(100vh - 480px);
   }
@@ -10209,6 +10220,8 @@ input.fs-14:-ms-input-placeholder  {
   .w_lg_55_1-5 {
     width: calc(100% + 55px + 1.5rem);}} 
 @media only screen and (max-width: 1500px) {
+  .h_100vh-435 {
+    height: calc(100vh - 411px);}
   .h_100vh-427 {
     height: calc(100vh - 403px);}
   .calendar__arrow_prev {
@@ -10432,6 +10445,8 @@ input.fs-14:-ms-input-placeholder  {
     min-width: 100px;}
   .h_100vh-325 {
     height: calc(100vh - 238px);}
+  .h_100vh-435 {
+    height: calc(100vh - 375px);}
   .h_100vh-480 {
     height: calc(100vh - 431px);}
   .h_100vh-472 {
@@ -10480,6 +10495,9 @@ input.fs-14:-ms-input-placeholder  {
   }
   .pl-4_1440 {
     padding-left: 1.5rem!important;
+  }
+  .pr-0_1440 {
+    padding-right: 0!important;
   }
   .pr-2_1440 {
     padding-right: 0.5rem!important;
@@ -10725,7 +10743,7 @@ input.fs-14:-ms-input-placeholder  {
     padding-top: 10px!important;
     margin-top: 11px!important;}
   input, textarea {
-    height: auto;
+    height: fit-content;
     /* height: 32px; */
     padding: 6.5px 13px;
     font-size: 14px;}

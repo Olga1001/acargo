@@ -1226,6 +1226,9 @@ button {
 .btn-action.small {
   width: 12px;
   height: 12px;}
+.btn-action.big {
+  width: 27px;
+  height: 27px;}
 .btn-action {
   border-radius: 50%;
   flex-shrink: 0;
@@ -3205,6 +3208,7 @@ button {
 .tool {
   width: 42px;
   height: 42px;
+  flex-shrink: 0;
   border-radius: 4px;
   background-color: rgba(16, 156, 241, 0.1);
   position: relative;
@@ -5275,6 +5279,7 @@ button {
 
 .nav-link_v3, .nav-tabs_v3 .nav-link {
   padding: 10px 55px;
+  border: none;
   border-bottom: 4px solid transparent;
   color: #282e3b;
   font-size: 16px;
@@ -5282,10 +5287,11 @@ button {
   height: 100%;
   text-align: center;
   display: block; }
-  .nav-link_v3.active, .nav-tabs_v3 .nav-link.active {
+  .nav-link_v3.active, .nav-tabs_v3 .nav-link.active, .nav-tabs_v3 .active .nav-link {
     border-color: #156ce4;
     font-weight: 500;
     color: #156ce4; 
+    background-color: transparent;
   }
 .nav-tabs_v3.b-blue-light2 .nav-link_v3.active, .nav-tabs_v3.b-blue-light2 .nav-link.active {
   border-color: #109CF1;
@@ -5933,7 +5939,7 @@ button {
     width: 18px;
     height: 12px; }
   .fs-18 {
-    font-size: 18px;}
+    font-size: 18px!important;}
   .fs-17 {
     font-size: 17px;}
   .clients-list li {
@@ -10052,6 +10058,20 @@ input.fs-14:-ms-input-placeholder  {
 }
 .w-61 {
   width: 61%;
+}
+.h-100-225 {
+  height: calc(100vh - 225px);
+}
+.nav-tabs a {
+  font-size: 18px;
+  line-height: 21px;
+  color: #282E3B;
+  display: block;
+  border-bottom: 3px solid transparent;
+}
+.nav-tabs a.active {
+  font-weight: 500;
+  border-color: #156CE4;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

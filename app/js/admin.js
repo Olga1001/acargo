@@ -22,6 +22,14 @@ function _defineProperty(obj, key, value) { if (key in obj) { Object.definePrope
 
 });
 $(document).ready(function () {
+  $('.nav-tabs a[data-toggle="tab"]').on('show.bs.tab', function(e) {
+    let target = $(e.target).data('target');
+    $(target)
+      .addClass('active')
+      .siblings('.tab-pane.active')
+      .removeClass('active')
+  });
+
   $(".collapse_v2").each(function () {
     console.log("1");
     let height = $(this).height();

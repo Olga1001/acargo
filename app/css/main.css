@@ -424,6 +424,9 @@ button {
     left: auto;
     right: 15px;
     pointer-events: none; }
+    .select.not-arrow:before {
+      content: none;
+    }
     .select.arrow-blue:before {
       width: 0;
       height: 0;
@@ -8971,8 +8974,9 @@ padding-top: 15px;}
   width: 29px;
   height: 29px;}
 .wh-23 {
-  width: 23px;
-  height: 23px;}
+  min-width: auto;
+  width: 23px!important;
+  height: 23px!important;}
 .table_internal-access {
   border-left: 1px solid rgba(16, 156, 241, 0.1);}
 .table_internal-access th {

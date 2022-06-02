@@ -448,6 +448,286 @@
             </div>
         </div>
       </header>
+      <header class="header d-flex justify-content-between align-items-center position-static mt-5" style="border:2px solid red;">
+        <div class="d-flex align-items-center" id="top_ex_menu_links" data-static="1">
+            <a href="https://acargo.click/test/customers/dashboard/" class="logo pb-1">
+                <img src="img/logo/logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/dashboard/" class="mune-item">
+                            Dashboard
+                        </a>
+                    </li>
+    <!--                <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/orders/"  class="mune-item">
+                            Orders
+                        </a>
+                    </li>-->
+                    <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/bookings/" class="mune-item">
+                            Orders
+                            <!--Bookings-->
+                        </a>
+                    </li>
+    <!--                <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/shipments/"  class="mune-item">
+                            Shipments
+                        </a>
+                    </li>-->
+                    
+                    <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/sales/" class="mune-item">
+                            Transport Rate
+                        </a>
+                    </li>
+    <!--                <li class="menu-list">
+                        <a href="https://acargo.click/test/customers/company/settings/"  class="mune-item">
+                            My company
+                        </a>
+                    </li>-->
+                                        <li class="menu-list">
+                            <a class="mune-item" style="font-weight: bold;color:red;">TEST</a>
+                        </li>
+                                </ul>
+            </nav>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-2">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                            <div class="currenty ml-3">
+                    <div class="select b-0 h-100" inited="1">
+                        <input type="hidden" name="defaultcurrency" value="2">
+                        <div class="select__item c-white pl-3 c-dark">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-dark">
+                                                                                                                                                                                                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="USD" data-rate="1.1012" data-from-rate="1.0000" data-to-rate="0.9035" class="select__option c-white">
+                                                    EUR-&gt;USD                                        </li>
+                                                                                                                                                    <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="GBP" data-rate="0.8816" data-from-rate="1.0000" data-to-rate="1.1442" class="select__option c-white">
+                                                    EUR-&gt;GBP                                        </li>
+                                                                                                                                                                                                                                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="USD" data-to-code="EUR" data-rate="0.9635" data-from-rate="0.9635" data-to-rate="1.0000" class="select__option c-white active">
+                                                    USD-&gt;EUR                                        </li>
+                                                                                                                                                                                                                                                                                                                                                                                        <li onclick="showCurrencyDefRate(event, this)" data-from-code="GBP" data-to-code="EUR" data-rate="1.2042" data-from-rate="1.2042" data-to-rate="1.0000" class="select__option c-white">
+                                                    GBP-&gt;EUR                                        </li>
+                                                                                                                                                                                                                                                                                                    </ul>
+                        </div>
+                    </div>
+                    <!--<div class="price c-white">1,35 EUR</div>-->
+                    <div class="price c-white" id="default_currency_rate">
+                        0.9635 EUR                </div>
+                </div>
+            </div>
+            <script>
+                function showCurrencyDefRate(event, input){
+                    $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    event.stopPropagation();
+                    event.preventDefault();
+                    $('#default_currency_rate').html($(input).attr('data-rate') +' '+$(input).attr('data-to-code'));
+                    setTimeout(function(){
+                        $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    }, 10);
+                  }
+            </script>
+            <div class="d-flex align-items-center ml-3 pl-1 py-2">
+    <!--            <div class="px-1">
+                    <a href="https://acargo.click/test/todolist/">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#notepad"></use>
+                    </svg>
+                    </a>
+                </div>-->
+                <div class="px-3 dropdown no-arrow">
+                    
+                    
+    <!--                <div class="relative">
+                        <a class="dropdown-toggle" href="javascript:void(0)" id="calendars_list" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu w-max-content l-center" aria-labelledby="calendars_list">
+                            <div class="drop__menu px-3">
+                                <a href="https://acargo.click/test/customers/calendar/" class="d-flex align-items-center dropdown-item mb-2">
+                                  <span class="fs-13 c-navy-blue">Freight schedule</span>
+                                </a>
+                                <a href="https://acargo.click/test/production-plan/" class="d-flex align-items-center dropdown-item mb-2">
+                                  <span class="fs-13 c-navy-blue">Production planning</span>
+                                </a>
+                                <a href="https://acargo.click/test/orders-loading/" class="d-flex align-items-center dropdown-item">
+                                  <span class="fs-13 c-navy-blue">Loading plan</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>-->
+                    
+                    <a href="https://acargo.click/test/customers/calendar/">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#calendar-3"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="px-2 dropdown no-arrow">
+                    <a class="dropdown-toggle" onclick="loadUserMessages(this, 'dialogs')" href="javascript:void(0)" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" token="0">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#mail"></use>
+                        </svg>
+                        <div class="bg-green count-message hide" id="is_new_messages">0</div>
+                    </a>
+                    <div class="dropdown-list dropdown-menu w-385 shadow animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="dropdown-header p-0">
+                            <button class="btn-expand ml-auto" type="button" onclick="location.href='https://acargo.click/test/messages/'">
+                                <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#art"></use>
+                                </svg>
+                            </button>
+                            <div class="align-items-center justify-content-center d-flex">
+                                <button class="chat_tab active mx-2" data-tab="dialogs" onclick="loadUserMessages(this, 'dialogs')" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="19px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#interface-2"></use>
+                                    </svg>
+                                </button>
+    <!--                            <button class="chat_tab mx-2">
+                                    <svg class="svg-sprite-icon c-gray" width="22px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#people"></use>
+                                    </svg>
+                                </button>-->
+    
+                                <button class="chat_tab mx-2" data-tab="contacts" onclick="loadUserMessages(this, 'contacts')" type="button">
+                                    <svg class="svg-sprite-icon c-gray" width="15px" height="17px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#contacts"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="w-100">
+                            <ul class="chat-list active" id="top_messages">
+                                <li class="pb-2 px-3 bg-light_v9">
+                                    <input type="text" autocomplete="off" placeholder="Search" onkeyup="searchTopChat(this)" name="q" id="top_chat_q" class="input-search lh-1 h-auto py-2">
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 dropdown no-arrow ml-1">
+                    <a class="dropdown-toggle" onclick="loadCompanyNotifications(this)" href="javascript:void(0)" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#notification-2"></use>
+                        </svg>
+                        <div class="bg-green count-message hide" data-value="0" id="is_new_nootification"></div>
+                    </a>
+                    <div class="dropdown-list dropdown-menu shadow animated--grow-in" id="notifications_list" aria-labelledby="alertsDropdown">
+                        <div class="pt-3 pb-3 text-center">
+                            <div class="spinner-border text-info" role="status">
+                                <span class="sr-only">Loading...</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2">
+    <!--                <a href="https://acargo.click/test/" title="">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#user"></use>
+                        </svg>
+                    </a>-->
+                </div>
+                <div class="dropdown no-arrow">
+                    <div class="pl-2 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                    </div>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown" x-placement="bottom-start" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-114px, 15px, 0px);">
+                        <a class="dropdown-item mb-2" href="https://acargo.click/test/customers/profile/">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="https://acargo.click/test/customers/company/settings/">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My company
+                        </a>
+    
+                        <a class="dropdown-item mb-2" href="https://acargo.click/test/customers/calendar/">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+    <!--                    <a class="dropdown-item mb-2" href="https://acargo.click/test/todolist/">
+                            <svg class="svg-sprite-icon icon-miscellaneous  mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>-->
+                        <div class="row p-3 mt-1 mx-0">
+                            <div class="col-12 px-2 mt-2">
+                                <a href="https://acargo.click/test/customers/dashboard/" class="d-flex align-items-center btn-manager active"> 
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Client 
+                                </a>
+                            </div>
+                            <div class="col-12 px-2 mt-2">
+                                <a class="d-flex align-items-center btn-manager" href="https://acargo.click/test/logout/">
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                                    </svg>
+                                    Logout
+                                </a>
+                            </div>
+                            <div class="col-6 px-2 mt-2">
+                                <a href="https://acargo.click/test/customers/dashboard/" class="d-flex align-items-center btn-manager active"> 
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Client 
+                                </a>
+                            </div>
+                            <div class="col-6 px-2 mt-2">
+                                <a class="d-flex align-items-center btn-manager" href="https://acargo.click/test/logout/">
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                                    </svg>
+                                    Logout
+                                </a>
+                            </div>
+                            <div class="col-6 px-2 mt-2">
+                                <a href="https://acargo.click/test/customers/dashboard/" class="d-flex align-items-center btn-manager active"> 
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Client 
+                                </a>
+                            </div>
+                            <div class="col-6 px-2 mt-2">
+                                <a class="d-flex align-items-center btn-manager" href="https://acargo.click/test/logout/">
+                                    <svg class="svg-sprite-icon mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#user-4"></use>
+                                    </svg>
+                                    Logout
+                                </a>
+                            </div>
+                        </div>
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
       <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
         

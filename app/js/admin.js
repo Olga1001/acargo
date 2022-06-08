@@ -352,4 +352,11 @@ $(document).ready(function () {
     var $this = $(this);
     resizeForText.call($this, $this.val());
   });
+
+  //init sticky
+  if (window.matchMedia("(min-width: 1281px)").matches) {
+    $('.sticky-js_v1').sticky({topSpacing:94});
+  } else {
+    $('.sticky-js_v1').sticky({topSpacing:85});
+  }
 });

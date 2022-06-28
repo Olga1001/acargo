@@ -7529,6 +7529,10 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 .t-center {
   top: 50%; 
   transform: translateY(-50%);}
+.xy-center {
+  left: 50%!important;
+  top: 50%!important; 
+  transform: translate(-50%,-50%);}
 .l-center {
   left: 50%!important;
   transform: translateX(-50%);}
@@ -10147,7 +10151,27 @@ input.fs-14:-ms-input-placeholder  {
 .btns_arrow svg:hover path {
   fill: #156CE4;
 }
+.pulse_animation {
+  background: rgba(36, 177, 255, 0.17);
+  animation: pulse 1s infinite;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+}
 
+@keyframes pulse {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.2);
+    opacity: 0;
+  }
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

@@ -1966,7 +1966,7 @@ button {
 .bg-blue_v4 {
   background-color: rgba(183, 188, 214, 0.06); }
 .bg-blue_v5 {
-  background-color: rgba(16, 156, 241, 0.33); }
+  background-color: rgba(16, 156, 241, 0.33)!important; }
 .bg-light_v2 {
   background-color: #e0f4ff}
 .bg-light_v4 {
@@ -2005,14 +2005,16 @@ button {
   background-color: #049dbd!important;}
 .bg-blue-v1 {
   background-color: #24b1ff;}
-.bg-blue-v5 {
-  background-color: rgba(36, 177, 255, 0.17);}
 .bg-blue-v2 {
   background-color: rgba(226, 243, 253, 0.47);}
 .bg-blue-v3 {
   background-color: #C5EAFF!important;}
 .bg-blue-v4 {
   background-color: #BED8FD!important;}
+.bg-blue-v5 {
+  background-color: rgba(36, 177, 255, 0.17);}
+.bg-blue-v6 {
+  background-color: #EDF9FF!important;}
 .bg-pale-azure {
   background-color: #e7f5fe!important;}
 
@@ -8537,6 +8539,17 @@ padding-top: 15px;}
   border-radius: 50%;
   width: 16px;
   height: 16px;}
+.avatar.small {
+  width: 31px;
+  height: 31px;}
+.avatar.small .avatar-letters {
+  font-size: 21px;
+  line-height: 31px;}
+.avatar.small .online-user {
+  width: 9px;
+  height: 9px;
+  bottom: 0;
+  border-width: 1px;}
 .chat {
   /*min-height: calc(100vh - 125px);*/
 }
@@ -8683,12 +8696,7 @@ padding-top: 15px;}
 .dropdown-list.w-385 {
   width: 385px!important;
   max-width: none;}
-  .avatar.small {
-    width: 37px;
-    height: 37px;}
-    .avatar.small .avatar-letters {
-    font-size: 21px;
-    line-height: 35px;}
+
 .header .chat-list {
   max-height: none;}
 .btn-expand {
@@ -9554,19 +9562,18 @@ padding-top: 15px;}
   margin-top: 0;
 }
 .h-dropdown {
-  max-height: calc(100vh - 60px);
+  max-height: calc(100vh - 60px - 33px);
   overflow-y: auto;
-  scrollbar-color: #b7bcd6 #ffffff;
+  scrollbar-color: #B7BCD6 #ffffff;
   scrollbar-width: thin; 
 }
 
 .h-dropdown::-webkit-scrollbar {
-  width: 3px;
+  width: 7px;
   -webkit-appearance: none;
   appearance: none; }
 .h-dropdown::-webkit-scrollbar-thumb {
-  border-radius: 4px;
-  background-color: #b7bcd6; }
+  background: linear-gradient(0deg, rgba(183, 188, 214, 0.157233), rgba(183, 188, 214, 0.157233)), linear-gradient(0deg, rgba(183, 188, 214, 0.157233), rgba(183, 188, 214, 0.157233)), rgba(183, 188, 214, 0.157233); }
 .h-dropdown::-webkit-scrollbar-button {
   display: none; }
 .calendar_big .calendar-table thead tr:not(:last-child) th {

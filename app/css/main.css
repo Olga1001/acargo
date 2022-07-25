@@ -9564,12 +9564,12 @@ padding-top: 15px;}
   margin-top: 0;
 }
 .h-dropdown {
-  max-height: calc(100vh - 60px - 33px);
+  height: calc(100vh - 60px - 33px);
   overflow-y: auto;
   scrollbar-color: #B7BCD6 #ffffff;
-  scrollbar-width: thin; 
+  scrollbar-width: thin;
+  padding-bottom: 4px;
 }
-
 .h-dropdown::-webkit-scrollbar {
   width: 7px;
   -webkit-appearance: none;
@@ -10180,6 +10180,12 @@ input.fs-14:-ms-input-placeholder  {
     transform: scale(1.2);
     opacity: 0;
   }
+}
+.dropdown.right-sticky {
+  position: inherit!important;
+}
+.dropdown.right-sticky .dropdown-menu {
+  margin-top: 60px;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -11018,6 +11024,10 @@ input.fs-14:-ms-input-placeholder  {
     height: 30px;}
   }
 @media only screen and (max-width: 1280px) {
+  .h-dropdown {
+    height: calc(100vh - 52px - 33px);}
+  .dropdown.right-sticky .dropdown-menu {
+    margin-top: 52px;}
   .fix-top-tabs {
     top: 51px;}
   .navbar-list2 .navbar-item a {

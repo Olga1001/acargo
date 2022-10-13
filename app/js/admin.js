@@ -195,28 +195,23 @@ $(document).ready(function () {
     $(this).closest(".box-white").removeClass('active');
     $(".container-fluid, .popup").removeClass('active');
   }); //popup - rate
-
-  $(".nav .nav-link").click(function (e) {
-    e.preventDefault();
-    $(this).addClass('active').parent().siblings().find(".nav-link").removeClass('active');
-    let index = $(this).parent().index()
-    $(".contents__item").eq(index).addClass('active').siblings().removeClass('active');
-    $("input.range-way3").bootstrapSlider('refresh');
-    $("input.range-way").bootstrapSlider('refresh');
-    $("input.range-way4").bootstrapSlider('refresh');
-  });
-  $(".nav-link_v3").click(function (e) {
-    e.preventDefault();
-    $(this).addClass('active').parent().siblings().find(".nav-link_v3").removeClass('active');
-    var index = $(this).parent().index();
-    $(".contents__item_v3").eq(index).addClass('active').siblings().removeClass('active');
-    if ($(this).html() === 'Progress') {
-      $('.toggle-tabs').show()
-    } else {
-      $('.toggle-tabs').hide()
-    }
-  });
 });
+
+document.querySelectorAll('.nav').forEach((nav, index) => {
+  let childs = [...nav.children];
+  childs.forEach((item, i) => {
+    item.addEventListener('click', (e) => {
+      let target = e.target;
+      nav.querySelector(`a.active`).classList.remove('active');
+      target.classList.add('active');
+
+      let contentsElement = document.querySelectorAll(`.contents`)[index];
+      let childsContents =  [...contentsElement.children];
+      childsContents.forEach((a,b) => a.classList.contains('active') ? a.classList.remove('active') : '');
+      contentsElement.children[i].classList.add('active');
+    })
+  })
+})
 
 //STICKY
 $(document).ready(function () {

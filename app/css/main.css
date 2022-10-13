@@ -7331,6 +7331,8 @@ button {
   box-shadow: 0 1px 14px 0 rgba(40, 46, 59, 0.13);}
 .shadow3 {
   box-shadow: 0 1px 5px 0 rgba(103, 117, 141, 0.25);}
+.shadow4 {
+  box-shadow: 0 1px 5px rgba(40, 46, 59, 0.18);}
 .h-7 {
   height: 7px}
 .h-calc_79 {
@@ -9165,15 +9167,20 @@ padding-top: 15px;}
   border-color: rgba(16, 156, 241, 0.82);}
 .hover-static:before {
   border-color: rgba(16, 156, 241, 0.82)!important;}
-.hover-b:hover .hover{
+.hover-b:hover .hover, .hover-bg-light:hover .hover {
   opacity: 1;
   pointer-events: auto;}
-.hover-b .hover {
+.hover-b .hover, .hover-bg-light .hover {
   opacity: 0;
   pointer-events: none;
   transition: all 0.1s ease;}
+.hover-bg-light:hover {
+  background-color: rgba(36, 177, 255, 0.12);}
 .hover-bg {
   border: none!important}
+.hover-l-blue-2:hover, .hover-l-blue-2:hover svg {
+  fill: #156CE4!important;
+  color: #156CE4!important;}
 .hover-l-blue:hover {
   fill: #109CF1!important;
   color: #109CF1!important;}
@@ -9219,9 +9226,6 @@ padding-top: 15px;}
   transition: all 0.3s ease;
 }
 
-.hover-bg-light:hover {
-  background-color: #f5fbff;
-}
 .nav-tabs_filter {
   position: relative;
   z-index: 1;
@@ -10012,6 +10016,21 @@ input.fs-14:-ms-input-placeholder  {
   border-color: transparent transparent transparent rgba(183, 188, 214, 0.29);
 }
 
+.breadcrumbs_v2 li {
+  width: 155px;
+  height: 35px;
+  margin-left: -22px;
+}
+.breadcrumbs_v2 li:not(.bg-blue) {
+  background: url("../img/border.svg") no-repeat center / 100%;
+
+}
+.breadcrumbs_v2 p {
+  position: relative;
+  z-index: 2;
+  padding-left: 8px;
+}
+
 .rating {
   display: flex;
   justify-content: center;
@@ -10032,7 +10051,6 @@ input.fs-14:-ms-input-placeholder  {
   cursor: pointer;
   width: 16px;
   height: 15px;
-  margin-top: auto;
   background: url('../img/star-gray.svg') no-repeat center / 100%;
   transition: .3s;
   margin: 0 1.5px;

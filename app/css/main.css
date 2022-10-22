@@ -280,6 +280,9 @@ input, textarea {
   input:active ~ .name, input:focus ~ .name, input:valid ~ .name {
     bottom: 24px;
   }
+  .name.top {
+    bottom: 24px;
+  }
 
 textarea {
   border: none;
@@ -487,7 +490,7 @@ button {
       background-color: #b7bcd6; }
     .select__menu::-webkit-scrollbar-button {
       display: none; }
-  .select__option, .hover__option {
+  .select__option, .hover__option, .select__menu li {
     color: #282e3b;
     -webkit-transition: all 0.25s ease;
     -o-transition: all 0.25s ease;
@@ -497,7 +500,7 @@ button {
     /* min-height: 25px; */
     list-style-type: none;
     padding: 0 15px; }
-    .select__option.active, .select__option:hover, .hover__option:hover, .hover__option.active {
+    .select__option.active, .select__option:hover, .hover__option:hover, .hover__option.active, .select__menu .active , .select__menu li:hover {
       background-color: #f5fbff;
       color: #109cf1; }
     .select__option.c-white.active, .select__option.c-white:hover {
@@ -893,6 +896,8 @@ button {
   right: 13px}
 .arrow-r-8:before {
   right: 8px}
+.arrow-r-0:before {
+  right: 0px}
 .arrow-drop {
   width: 0;
   height: 0;
@@ -11126,6 +11131,12 @@ input.fs-14:-ms-input-placeholder  {
     height: 30px;}
   .nav-tabs_v3 .nav-link {
     padding: 6px 0;
+    font-size: 14px;}
+  .select__item.input-normal {
+    padding-right: 0;
+    padding-left: 0;}
+  .input-normal {
+    line-height: normal;
     font-size: 14px;}
   }
 @media only screen and (max-width: 1280px) {

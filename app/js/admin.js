@@ -176,9 +176,17 @@ $(document).ready(function () {
   $("#drop-upload, #drop-upload1").on('change', function () {
     var $this = $(this).closest(".drop-upload");
     var files = $(this)[0].files[0];
-    $this.find(".text-16").text(files.name);
+    var reader  = new FileReader();
+
+    $this.find(".upload-img").attr('src', reader.result);
+    $this.find(".text-16, .upload-text").text(files.name);
     $this.addClass('active');
   });
+  $('.upload-close').click(function () {
+    var $this = $(this).closest(".drop-upload");
+    $this.removeClass('active');
+    $this.find(".text-16, .upload-text").text('Drop or upload logo icon');
+  })
   $(".loading__file-icon").click(function () {
     $(this).closest(".drop-upload").removeClass('active');
   });

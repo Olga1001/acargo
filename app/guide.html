@@ -2923,7 +2923,7 @@
                     <div class="pt-3">
                         <div class="mt-4 select not-arrow h-fit">
                             <div class="select__item d-flex justify-content-between py-2_5 px-2">
-                                <div class="d-flex flex-wrap fs-14 fs-13_1440 lh-1_4 block_resize-input">
+                                <div class="d-flex fs-14 fs-13_1440 lh-1_4 w-100">
                                     <div class="d-flex br-4 b-1 b-light3 mr-3">
                                         <div class="bg-light fs-14 weight-medium p-2">Сustomer:</div>
                                         <div class="p-2 d-flex align-items-center">
@@ -2933,10 +2933,16 @@
                                             </svg>
                                         </div>
                                     </div>
-                                    <div class="p-2">
-                                        <div class="table__span fs-14 fs-13_1440" style="display: none;">. . . . .</div>
-                                        <input type="text" class="input-normal c-dark lh-1_4 fs-14 fs-13_1440 " placeholder=". . . . .">
+                                    <div class="d-flex br-4 b-1 b-light3 mr-3">
+                                        <div class="bg-light fs-14 weight-medium p-2">Сustomer:</div>
+                                        <div class="p-2 d-flex align-items-center">
+                                            Aсargo Company
+                                            <svg class="svg-sprite-icon c-gray ml-2" width="10px" height="10px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </div>
                                     </div>
+                                    <input type="text" class="input-normal c-dark lh-1_4 fs-14 fs-13_1440 text-left" >
                                 </div>
                                 <svg class="svg-sprite-icon c-gray" width="22px" height="37px">
                                     <use xlink:href="img/sprite/symbol/sprite.svg#search"></use>
@@ -2944,27 +2950,21 @@
                             </div>
                             <p class="c-blue-gray fs-13 name top weight-medium">Category</p>
                             <div class="select__drop">
-                                <ul class="select__menu">
-                                    <li class="hover-bg-light py-1">
-                                        <label class="d-flex align-items-center ">
-                                            <input type="checkbox" class="checkbox" checked>
-                                            <span class="checkbox__icon-blue mr-2"></span>
-                                            <span class="fs-14 ">Cargo</span>
-                                        </label>
+                                <ul class="select__menu lh-1_4">
+                                    <li class="hover-bg-light py-1 px-3">
+                                        <p class="pl-3">Opportunity: <span class="c-blue-gray">Marketing</span> </p>
                                     </li>
-                                    <li class="hover-bg-light py-1">
-                                        <label class="d-flex align-items-center ">
-                                            <input type="checkbox" class="checkbox" checked>
-                                            <span class="checkbox__icon-blue mr-2 "></span>
-                                            <span class="fs-14 ">Logistic</span>
-                                        </label>
-                                    </li>
-                                    <li class="hover-bg-light py-1">
-                                        <label class="d-flex align-items-center ">
-                                            <input type="checkbox" class="checkbox" checked>
-                                            <span class="checkbox__icon-blue mr-2"></span>
-                                            <span class="fs-14  ">Marketing</span>
-                                        </label>
+                                    <li class="hover-bg-light py-1 px-3">
+                                        <div class="d-flex align-items-center collapsed" data-toggle="collapse" data-target="#openCompany">
+                                            <div class="arrow-customer"></div>
+                                            <p class="pl-2">Сompany (3): <span class="c-blue-gray">Marketing</span> </p>
+                                        </div>
+                                        <div class="collapse pl-3 fs-14" id="openCompany">
+                                            <p class="pl-3 c-blue-gray">Logistic Company</p>
+                                            <p class="pl-3 c-blue-gray">Acargo Company</p>
+                                            <p class="pl-3 c-blue-gray">Shipping Company</p>
+                                            
+                                        </div>
                                     </li>
                                 </ul>
                             </div>

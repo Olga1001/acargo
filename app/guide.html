@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="css/libs.min.css" rel="stylesheet">
-    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
     <link href="css/style.css" rel="stylesheet">
 
     <link href="css/main.css" rel="stylesheet">
@@ -958,9 +958,10 @@
                 <div class="flex flex-wrap bb-1">
                     <a href="#inputs">inputs</a>
                     <a href="#buttons">buttons</a>
-                    <a href="" id="calendars">calendars</a>
+                    <a href="#calendars">calendars</a>
                 </div>
                 <p class="fs-30 text-up bb-1 py-3">components</p>
+                
                 <nav class="breadcrumbs-group py-2 d-flex align-items-center bg-light_06">
                     <button type="button" class="pr-4">
                         <img src="img/arrow_v2.svg" alt="arrow">
@@ -993,7 +994,8 @@
                         </li>
                     </ul>
                 </nav>
-                <ul class="nav nav-tabs_v9 mt-4">
+                <br><br>
+                <ul class="nav nav-tabs_v9">
                   <li class="nav-item">
                       <a class="nav-link px-4 d-flex align-items-center active">
                           <svg class="svg-sprite-icon c-gray mr-2" width="12px" height="12px">
@@ -1019,7 +1021,6 @@
                       </a>
                   </li>
               </ul>
-                <div class="pt-4">
                   <div class="d-flex flex-wrap btns">
                     <a class="tool mt-3" href="#"><img src="img/orientation.svg" alt="orientation"></a>
                     <a class="tool ml-2 mt-3" href="#"><img src="img/merge.svg" alt="merge"></a>
@@ -1048,8 +1049,7 @@
   
                     </div>
                   </div>
-                </div>
-                <div class="pt-4">
+                <br><br>
                   <div class="d-flex flex-wrap mt-4 tools">
                     <a class="tool" href="#">
                       <span class="tool-span">Split</span>
@@ -1060,22 +1060,18 @@
                       <div class="d-flex ml-4"><a class="arrows arrows__prev" href="#"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"></a><a class="arrows arrows__prev" href="#"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"></a><a class="arrows arrows__next" href="#"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"></a><a class="arrows arrows__next" href="#"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"><img class="arrows-icon" src="img/arrow-point-to-right.svg" alt="arrow"></a></div>
                     </div>
                   </div>
-                </div>
+               <br><br>
                 <div id="calendars">
-
-                    <div class="col-transfer d-flex flex-wrap align-items-start pb-5">
-                        <div class="mt-sm-5 mt-4 make-booking__col align-items-center">
-                            <p class="text-14">Earlest  departure time </p>
-                            <input type="text" class="input input-date datepicker" value="" name="start">
-                        </div>
-                        <div class="mt-sm-5 mt-4 make-booking__col align-items-center">
-                            <p class="text-14">Loading from and till </p>
-                            <input type="text" class="input input-date datepicker" value="" name="end">
-                        </div>
+                    <br><br>
+                    <input type="text" name="datefilter" value="" />
+                    <br><br>
+                    <input type="text" name="datefilter" value="" />
+                    <br><br>
+                    <div class="calendars_parent">
+                        <input type="text" name="calendar-v1" value="" >
                     </div>
-
-                    <input type="text" name="daterange" value="01/01/2018 - 01/15/2018" />
-                    <input type="text" class="datepicker" value="" name="dates">
+                    
+                    
                 <br><br>
                 <div class="row">
                     <div class="bg-white w-fit-content p-3 ">
@@ -1222,7 +1218,8 @@
                                           <td class="available active_v3" data-title="r1c3">
                                               <div class="top-right">
                                                   <svg class="scale-y" xmlns="http://www.w3.org/2000/svg" width="8" height="8" viewBox="0 0 20 20">
-                                                      <g fill="#156CE4" stroke="#156CE4" transform="scaleY(-1)">
+                                                    <!-- transform="scaleY(-1)" -->
+                                                      <g fill="#156CE4" stroke="#156CE4" >
                                                           <path d="M17.5 4c-.276 0-.5.224-.5.5V17H4.5c-.276 0-.5.224-.5.5s.224.5.5.5h13c.276 0 .5-.224.5-.5v-13c0-.276-.224-.5-.5-.5z" transform="translate(1 1)"/>
                                                           <path d="M17.854 17.147l-17-17C.657-.05.34-.05.145.146c-.195.194-.195.511 0 .706l17 17.001c.099.097.227.146.355.146.128 0 .256-.049.353-.146.195-.195.195-.512 0-.707z" transform="translate(1 1)"/>
                                                       </g>
@@ -3201,7 +3198,8 @@
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
-    <script src="js/bootstrap-datepicker.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="js/scripts.js"></script>
     <script src="js/admin.js"></script>
   </body>

@@ -359,11 +359,16 @@ $(document).ready(function () {
     resizeForText.call($this, $this.val());
   });
 
-  //init sticky
-  if (window.matchMedia("(min-width: 1281px)").matches) {
-    $('.sticky-js_v1').sticky({topSpacing:94});
-  } else {
-    $('.sticky-js_v1').sticky({topSpacing:85});
-  }
-
 });
+
+//init Sticky
+let isSticky = setInterval(() => {
+  if(typeof sticky == 'function') {
+    clearInterval(isSticky)
+    if (window.matchMedia("(min-width: 1281px)").matches) {
+      $('.sticky-js_v1').sticky({topSpacing:94});
+    } else {
+      $('.sticky-js_v1').sticky({topSpacing:85});
+    }
+  }
+}, 100)

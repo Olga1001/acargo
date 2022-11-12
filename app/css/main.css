@@ -2481,9 +2481,9 @@ button {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.datepicker-dropdown, .drp-calendar {
+.calendar-customer .datepicker-dropdown, .calendar-customer .drp-calendar {
   padding: 25px 50px 20px; }
-  .datepicker-dropdown .prev, .datepicker-dropdown .next, .datepicker-dropdown th.prev, .datepicker-dropdown th.next, .drp-calendar .prev, .drp-calendar .next, .drp-calendar th.prev, .drp-calendar th.next {
+  .calendar-customer .datepicker-dropdown .prev, .calendar-customer .datepicker-dropdown .next, .calendar-customer .datepicker-dropdown th.prev, .calendar-customer .datepicker-dropdown th.next, .calendar-customer .drp-calendar .prev, .calendar-customer .drp-calendar .next, .calendar-customer .drp-calendar th.prev, .calendar-customer .drp-calendar th.next {
     position: absolute;
     top: 50%;
     -webkit-transform: translateY(-50%);
@@ -2496,12 +2496,12 @@ button {
     -webkit-box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1) !important;
     box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.1) !important;
     opacity: 1 !important; }
-    .datepicker-dropdown .prev span, .datepicker-dropdown .next span, .datepicker-dropdown th.prev span, .datepicker-dropdown th.next span, .drp-calendar .prev span, .drp-calendar .next span, .drp-calendar th.prev span, .drp-calendar th.next span {
+    .calendar-customer .datepicker-dropdown .prev span, .calendar-customer .datepicker-dropdown .next span, .calendar-customer .datepicker-dropdown th.prev span, .calendar-customer .datepicker-dropdown th.next span, .calendar-customer .drp-calendar .prev span, .calendar-customer .drp-calendar .next span, .calendar-customer .drp-calendar th.prev span, .calendar-customer .drp-calendar th.next span {
       display: none !important; }
-  .datepicker-dropdown .prev, .drp-calendar .prev {
+  .calendar-customer .datepicker-dropdown .prev, .calendar-customer .drp-calendar .prev {
     left: -25px;
     background: url('../img/left-arrow.svg') no-repeat center/100%; }
-  .datepicker-dropdown .next, .drp-calendar .next {
+  .calendar-customer .datepicker-dropdown .next, .calendar-customer .drp-calendar .next {
     right: -25px;
     background: url('../img/right-arrow.svg') no-repeat center/100%; }
 
@@ -2566,7 +2566,7 @@ button {
   justify-content: center;
   padding: 4px; }
 
-.calendar-table th.month, .calendar-table .month {
+.calendar-customer .calendar-table th.month, .calendar-customer .calendar-table .month {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
@@ -2585,15 +2585,15 @@ button {
   margin-bottom: 13px;
   opacity: 1 !important; }
 
-.calendar-table thead tr {
+.calendar-customer .calendar-table thead tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
-  .calendar-table thead tr:last-child th {
+  .calendar-customer .calendar-table thead tr:last-child th {
     width: 34px !important;
     height: 34px !important; }
 
-.calendar-table thead th {
+.calendar-customer .calendar-table thead th {
   width: auto !important;
   opacity: 0.5;
   font-family: "Roboto", sans-serif;
@@ -2616,12 +2616,12 @@ button {
   -ms-flex-pack: center;
   justify-content: center; }
 
-.calendar-table tbody tr {
+.calendar-customer .calendar-table tbody tr {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-.calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date {
+.calendar-customer .calendar-table tbody td, .calendar-customer .calendar-table tbody td.end-date, .calendar-customer .calendar-table tbody td.start-date {
   width: 47px !important;
   height: 34px !important;
   border-radius: 50% !important;
@@ -2644,7 +2644,7 @@ button {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center; }
-  .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
+  .calendar-customer .calendar-table tbody td.active, .calendar-customer .calendar-table tbody td.end-date.active, .calendar-customer .calendar-table tbody td.start-date.active {
     color: #ffffff !important;
     font-weight: bold;
     background: #109CF1 !important;
@@ -2652,24 +2652,23 @@ button {
     margin: 2.5px 6.5px !important;
     height: 34px !important;
     width: 34px !important; }
-  .calendar-table tbody td.weekend, .calendar-table tbody td.end-date.weekend, .calendar-table tbody td.start-date.weekend {
+  .calendar-customer .calendar-table tbody td.weekend, .calendar-customer .calendar-table tbody td.end-date.weekend, .calendar-customer .calendar-table tbody td.start-date.weekend {
     color: #ff5b5b !important; }
     .daterangepicker {
-      z-index: 99999!important;
-    }
-.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+      z-index: 99999!important;}
+.daterangepicker.calendar-customer td.available:hover, .daterangepicker.calendar-customer th.available:hover {
   background-color: transparent !important;
   border-color: transparent;
   color: inherit; }
 
-.daterangepicker td.in-range {
+.daterangepicker.calendar-customer td.in-range {
   background-color: rgba(72, 141, 255, 0.1) !important; }
 
-.daterangepicker .drp-calendar {
+.daterangepicker.calendar-customer .drp-calendar {
   max-width: 100% !important;
   padding: 25px 38px 20px !important; }
 
-.daterangepicker td.in-range {
+.daterangepicker.calendar-customer td.in-range {
   background-color: rgba(72, 141, 255, 0.1);
   border-radius: 0 !important; }
 
@@ -2695,7 +2694,7 @@ button {
 .drp-selected, .cancelBtn {
   display: none !important; }
 
-.daterangepicker .drp-calendar.left .calendar-table {
+.daterangepicker.calendar-customer .drp-calendar.left .calendar-table {
   padding: 0 !important; }
 
 .off {
@@ -2707,7 +2706,7 @@ button {
 .highlighted, .weekend {
   color: #ff5b5b !important; }
 
-.daterangepicker.auto-apply .drp-buttons {
+.daterangepicker.calendar-customer.auto-apply .drp-buttons {
   display: block !important; }
 
 .slider-tick-label .way__item-icon {
@@ -10296,6 +10295,153 @@ input.fs-14:-ms-input-placeholder  {
   border-width: 5px 0 5px 7px;
   border-color: transparent transparent transparent rgba(16, 156, 241, 0.332195);
 }
+.daterangepicker.calendar-v1 {
+  box-shadow: none!important;
+  border: 1px solid rgba(16, 156, 241, 0.332195);
+  border-radius: 2px;
+  width: 430px!important;
+  padding-bottom: 10px;
+}
+.daterangepicker.calendar-v1 .drp-calendar {
+  padding: 0!important;
+}
+.daterangepicker.calendar-v1 .calendar-table .month, .daterangepicker.calendar-v1 .calendar-table .month select {
+  display: block;
+  width: 100%!important;
+  margin: 0!important;
+  border: none;
+  outline: none;
+  appearance: none;
+}
+.daterangepicker.calendar-v1 .drp-calendar.left .calendar-table {
+  padding: 0 40px!important;
+  width: 430px!important;
+}
+.daterangepicker.calendar-v1 .calendar-table .month {
+  display: flex;
+  flex-direction: column;
+  padding: 0!important;
+  width: 430px!important;
+  position: absolute;
+  top: -55px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.daterangepicker.calendar-v1 .table-condensed {
+  margin-top: 87px;
+  position: relative;
+  border-collapse: separate;
+  border-spacing: 0px 6px;
+}
+.daterangepicker.calendar-v1 .calendar-table {
+  background-color: transparent!important;
+}
+.daterangepicker.calendar-v1:after {
+  border-bottom: 6px solid #e8f6ff;
+}
+.daterangepicker.calendar-v1 .calendar-table thead tr:first-child > th:first-child {
+  display: none;
+}
+.daterangepicker.calendar-v1 .calendar-table .month select.monthselect {
+  order: 2;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 120%;
+  text-align: center;
+  padding: 10.5px;
+  color: #156CE4;
+  background-color: transparent!important;
+}
+.daterangepicker.calendar-v1 .yearselect {
+  background: rgba(36, 177, 255, 0.116368);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 120%;
+  text-align: center;
+  color: #156CE4;
+  padding: 16px;
+}
+.daterangepicker.calendar-v1 .calendar-table thead tr:nth-child(2) th, .daterangepicker.calendar-v1 .calendar-table tbody tr td {
+  width: 24px;
+  line-height: 24px;
+  height: 24px;
+  border: none;
+}
+.daterangepicker.calendar-v1 td:hover, .daterangepicker.calendar-v1 td.active:hover, .daterangepicker td.active {
+  background-color: transparent!important;
+}
+.daterangepicker.calendar-v1 td:before {
+  position: absolute;
+  z-index: -1;
+  pointer-events: none;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  width: 24px;
+  height: 24px;
+}
+.daterangepicker.calendar-v1 td:not(.active):hover:before { 
+  content: '';
+  border: 1px solid  #156CE4;
+  border-radius: 3px;
+}
+.daterangepicker.calendar-v1 td.active:before, .daterangepicker.calendar-v1 td.active:hover:before {
+  content: '';
+  background: #156CE4;
+  border-radius: 8px;
+}
+.daterangepicker.calendar-v1 td.active, .daterangepicker.calendar-v1 td.active:hover {
+  color: #fff!important;
+}
+.daterangepicker td.available:hover, .daterangepicker th.available:hover {
+  
+}
+.daterangepicker.calendar-v1 .calendar-table thead tr:nth-child(2) th {
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 12px;
+  color: #9E9EB0;
+  font-size: 12px;
+  margin-bottom: 6px;
+}
+.daterangepicker.calendar-v1 .calendar-table .week {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+  color: #156CE4!important;
+}
+.daterangepicker.calendar-v1 .calendar-table tbody tr .week {
+  font-weight: 700;
+}
+.daterangepicker.calendar-v1 .calendar-table tbody tr {
+  margin-bottom: 12px;
+}
+.daterangepicker.calendar-v1 thead th.available {
+  position: absolute;
+  top: -28px;
+  z-index: 3;
+  padding: 0;
+}
+.daterangepicker.calendar-v1 thead th.available span {
+  border: none;
+  border-radius: 50%;
+  width: 20px!important;
+  height: 20px;
+  background: rgba(36, 177, 255, 0.116368) no-repeat center / 50%;
+  transform: none;
+}
+.daterangepicker.calendar-v1 th.prev.available {
+  left: -33px
+}
+.daterangepicker.calendar-v1 th.prev.available span {
+  background-image: url('../img/arrows/arrow-left.svg');
+}
+.daterangepicker.calendar-v1 th.next.available {
+  right:-33px;
+}
+.daterangepicker.calendar-v1 th.next.available span {
+  background-image: url('../img/arrows/arrow-right.svg');
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -10314,10 +10460,10 @@ input.fs-14:-ms-input-placeholder  {
 @media (min-width: 1200px) and (max-width: 1599px) {
   .calendar-customer .prev, .calendar-customer .next {
     background-size: 90%;}
-  .calendar-table thead tr:last-child th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+  .calendar-customer .calendar-table thead tr:last-child th, .calendar-customer .calendar-table tbody td, .calendar-customer .calendar-table tbody td.end-date, .calendar-customer .calendar-table tbody td.start-date, .calendar-customer.daterangepicker .calendar-table th, .calendar-customer.daterangepicker .calendar-table td {
     width: 28px !important;
     margin: 2px 0 !important;}
-  .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
+  .calendar-customer .calendar-table tbody td.active, .calendar-customer .calendar-table tbody td.end-date.active, .calendar-customer .calendar-table tbody td.start-date.active {
     margin: 2.5px 1px!important;
     width: 28px !important;}
   .available.active_v3, .available.active_v4 {
@@ -10936,11 +11082,11 @@ input.fs-14:-ms-input-placeholder  {
     border-bottom-width: 1px;
     padding: 0 0 3px;
   }
-  .calendar-table th.month, .calendar-table .month, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date {
+  .calendar-customer .calendar-table th.month, .calendar-customer .calendar-table .month, .calendar-customer .calendar-table tbody td, .calendar-customer .calendar-table tbody td.end-date, .calendar-customer .calendar-table tbody td.start-date {
     font-size: 12px!important;
   }
   
-  .calendar-table thead th {
+  .calendar-customer .calendar-table thead th {
     font-size: 10px;}
   .diagonal-arrow {
     width: 6px;
@@ -11780,7 +11926,7 @@ input.fs-14:-ms-input-placeholder  {
     background: #f6f7f8; }
   .vgm-weight {
     padding: 40px 15px; }
-  .datepicker-dropdown .prev, .datepicker-dropdown .next, .datepicker-dropdown th.prev, .datepicker-dropdown th.next, .drp-calendar .prev, .drp-calendar .next, .drp-calendar th.prev, .drp-calendar th.next {
+  .calendar-customer .datepicker-dropdown .prev, .calendar-customer .datepicker-dropdown .next, .calendar-customer .datepicker-dropdown th.prev, .calendar-customer .datepicker-dropdown th.next, .calendar-customer .drp-calendar .prev, .calendar-customer .drp-calendar .next, .calendar-customer .drp-calendar th.prev, .calendar-customer .drp-calendar th.next {
     width: 30px !important;
     height: 30px !important; }
   .datepicker-dropdown .prev, .drp-calendar .prev {
@@ -11849,10 +11995,10 @@ input.fs-14:-ms-input-placeholder  {
     right: -20px;}
   .calendar-customer.white .prev { 
     left: -20px;}
-    .calendar-table thead tr:nth-child(2) th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+    .calendar-customer .calendar-table thead tr:nth-child(2) th, .calendar-customer .calendar-table tbody td, .calendar-customer .calendar-table tbody td.end-date, .calendar-customer .calendar-table tbody td.start-date, .daterangepicker.calendar-customer .calendar-table th, .calendar-customer.daterangepicker .calendar-table td {
       height: 32px!important;;
     }
-  .calendar-table tbody td.active, .calendar-table tbody td.end-date.active, .calendar-table tbody td.start-date.active {
+  .calendar-customer .calendar-table tbody td.active, .calendar-customer .calendar-table tbody td.end-date.active, .calendar-customer .calendar-table tbody td.start-date.active {
     margin: 2px 1px!important;
     height: 32px!important;
     width: 32px !important;}
@@ -12019,7 +12165,7 @@ input.fs-14:-ms-input-placeholder  {
     width: calc(100% + 30px); }
   .daterangepicker {
     width: auto !important; }
-  .calendar-table thead tr:nth-child(2) th, .calendar-table tbody td, .calendar-table tbody td.end-date, .calendar-table tbody td.start-date, .daterangepicker .calendar-table th, .daterangepicker .calendar-table td {
+  .calendar-customer .calendar-table thead tr:nth-child(2) th, .calendar-customer .calendar-table tbody td, .calendar-customer .calendar-table tbody td.end-date, .calendar-customer .calendar-table tbody td.start-date, .calendar-customer.daterangepicker .calendar-table th, .calendar-customer.daterangepicker .calendar-table td {
     height: 34px !important;
     width: 34px !important;
     margin: 2px 0 !important; }

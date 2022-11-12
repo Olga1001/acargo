@@ -48,9 +48,16 @@ $(document).ready(function () {
 
     $('input[name="datefilter"]').daterangepicker({
         autoUpdateInput: false,
+        showWeekNumbers: true,
+        autoApply: true,
+        showDropdowns: true,
         locale: {
-            cancelLabel: 'Clear'
+          weekLabel: "WK",
+          firstDay: 1,
+          cancelLabel: 'Clear',
         }
+    }).on('show.daterangepicker', function (ev, picker) {
+      picker.container.addClass('calendar-v1 big');
     });
   
     $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {

@@ -35,14 +35,14 @@ $(document).ready(function () {
       // } ,
       locale: {
         weekLabel: "WK",
-        firstDay: 1
+        firstDay: 1,
+        format: "MM.DD.YYYY",
       }
-    }, function (start, end, label) {
-      console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1');
+    }).on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM.DD.YYYY'));
     });
-
   });
   $(function() {
 
@@ -52,22 +52,18 @@ $(document).ready(function () {
         autoApply: true,
         showDropdowns: true,
         locale: {
+          format: "MM.DD.YYYY",
           weekLabel: "WK",
           firstDay: 1,
           cancelLabel: 'Clear',
         }
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1 big');
-    });
-  
-    $('input[name="datefilter"]').on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM/DD/YYYY') + ' - ' + picker.endDate.format('MM/DD/YYYY'));
-    });
-  
-    $('input[name="datefilter"]').on('cancel.daterangepicker', function(ev, picker) {
+    }).on('apply.daterangepicker', function(ev, picker) {
+        $(this).val(picker.startDate.format('MM.DD.YYYY') + ' - ' + picker.endDate.format('MM.DD.YYYY'));
+    }).on('cancel.daterangepicker', function(ev, picker) {
         $(this).val('');
     });
-  
   });
 
   $(function () {

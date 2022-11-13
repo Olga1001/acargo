@@ -10399,8 +10399,11 @@ input.fs-14:-ms-input-placeholder  {
   height: 24px;
   border: none;
 }
-.daterangepicker.calendar-v1 td:hover, .daterangepicker.calendar-v1 td.active:hover, .daterangepicker td.active {
+.daterangepicker.calendar-v1 td:not(.in-range):hover, .daterangepicker.calendar-v1 td.active:hover, .daterangepicker td.active {
   background-color: transparent!important;
+}
+.daterangepicker.calendar-v1 td.in-range {
+  background-color: rgba(36, 177, 255, 0.116368);
 }
 .daterangepicker.calendar-v1 td:before {
   position: absolute;
@@ -10412,9 +10415,9 @@ input.fs-14:-ms-input-placeholder  {
   width: 24px;
   height: 24px;
 }
-.daterangepicker.calendar-v1 td:not(.active):hover:before { 
+.daterangepicker.calendar-v1 td.today:before { 
   content: '';
-  border: 1px solid  #156CE4;
+  border: 1px solid #156CE4;
   border-radius: 3px;
 }
 .daterangepicker.calendar-v1 td.active:before, .daterangepicker.calendar-v1 td.active:hover:before {
@@ -10424,9 +10427,6 @@ input.fs-14:-ms-input-placeholder  {
 }
 .daterangepicker.calendar-v1 td.active, .daterangepicker.calendar-v1 td.active:hover {
   color: #fff!important;
-}
-.daterangepicker td.available:hover, .daterangepicker th.available:hover {
-  
 }
 .daterangepicker.calendar-v1 .calendar-table thead tr:nth-child(2) th {
   text-transform: uppercase;

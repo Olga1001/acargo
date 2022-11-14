@@ -10486,7 +10486,7 @@ input.fs-14:-ms-input-placeholder  {
   left: 0;
   background-color: rgba(36, 177, 255, 0.116368);
 }
-.daterangepicker.calendar-v1 tr td.in-range:last-child:after, .daterangepicker.calendar-v1 tr td.end-date:after {
+.daterangepicker.calendar-v1 tr td.in-range:last-child:after, .daterangepicker.calendar-v1 tr td.end-date:after, .daterangepicker.calendar-v1.big tr td.start-date:after {
   width: 34.5px;
 }
 .daterangepicker.calendar-v1.big tr td.end-date:after, .daterangepicker.calendar-v1.big tr td.end-date:before {
@@ -10495,9 +10495,15 @@ input.fs-14:-ms-input-placeholder  {
 .daterangepicker.calendar-v1.big tr td.start-date:after, .daterangepicker.calendar-v1.big tr td.start-date:before {
   border-radius: 10px 0 0 10px;
 }
+.daterangepicker.calendar-v1.big tr td:last-child.start-date:after {
+  width: 0;
+}
 .daterangepicker.calendar-v1 tr td.in-range:nth-child(2):after, .daterangepicker.calendar-v1.big tr td.start-date:after {
   left: auto;
   right: 0;
+  width: 34.5px;
+}
+.daterangepicker.calendar-v1.big tr td.end-date:after {
   width: 34.5px;
 }
 /*==========  Desktop First  ==========*/

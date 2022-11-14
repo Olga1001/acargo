@@ -60,9 +60,9 @@ $(document).ready(function () {
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1 big');
     }).on('apply.daterangepicker', function(ev, picker) {
-        $(this).val(picker.startDate.format('MM.DD.YYYY') + ' - ' + picker.endDate.format('MM.DD.YYYY'));
+      $(this).val(picker.startDate.format('MM.DD.YYYY') + ' - ' + picker.endDate.format('MM.DD.YYYY'));
     }).on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
+      $(this).val('');
     });
   });
 

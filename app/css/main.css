@@ -10322,6 +10322,7 @@ input.fs-14:-ms-input-placeholder  {
   width: 430px!important;
 }
 .daterangepicker.calendar-v1.big .drp-calendar .calendar-table {
+  border: none;
   padding: 0;
 }
 .daterangepicker.calendar-v1 .calendar-table .month {
@@ -10330,9 +10331,11 @@ input.fs-14:-ms-input-placeholder  {
   padding: 0!important;
   width: 430px!important;
   position: absolute;
-  top: -55px;
-  left: 50%;
-  transform: translateX(-50%);
+  top: -54px;
+  left: 0;
+}
+.daterangepicker.calendar-v1:not(.big) .calendar-table .month {
+  left: -40px;
 }
 .daterangepicker.calendar-v1.big .table-condensed {
   margin-top: 61px;
@@ -10340,8 +10343,11 @@ input.fs-14:-ms-input-placeholder  {
   padding: 0 15px;
 }
 .daterangepicker.calendar-v1.big .calendar-table .month {
-  top: -30px;
+  top: -28px;
   width: 100%!important;
+}
+.daterangepicker.calendar-v1.big .calendar-table .month:before {
+  left: 106%;
 }
 .daterangepicker.calendar-v1 .calendar-table .month:before {
   content: '';
@@ -10350,9 +10356,14 @@ input.fs-14:-ms-input-placeholder  {
   top: -11px;
   width: 0;
   height: 100%;
+  z-index: 3;
   border-style: solid;
   border-width: 4px 4px 0 4px;
   border-color: #007bff transparent transparent transparent;
+}
+.daterangepicker.calendar-v1.big .calendar-table .month .yearselect {
+  width: 200%!important;
+  transform: translateX(25%);
 }
 .daterangepicker.calendar-v1 .table-condensed {
   margin-top: 87px;
@@ -10384,7 +10395,7 @@ input.fs-14:-ms-input-placeholder  {
   background-color: transparent!important;
 }
 .daterangepicker.calendar-v1 .yearselect {
-  background: rgba(36, 177, 255, 0.116368);
+  background: rgb(232, 246, 255);
   font-weight: 700;
   font-size: 14px;
   line-height: 120%;
@@ -10546,6 +10557,10 @@ input.fs-14:-ms-input-placeholder  {
 }
 .daterangepicker.calendar-v1.big tr td.end-date:after {
   width: 34.5px;
+}
+.daterangepicker.calendar-v1.big > .drp-calendar.right .calendar-table select.yearselect, .daterangepicker.calendar-v1.big .drp-calendar.right .calendar-table .month:before {
+  opacity: 0;
+  pointer-events: none;
 }
 .block-all * {
   display: block;

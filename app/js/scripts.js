@@ -37,6 +37,20 @@ $(document).ready(function () {
         weekLabel: "WK",
         firstDay: 1,
         format: "MM.DD.YYYY",
+        monthNames: [
+          "January",
+          "February",
+          "March",
+          "April",
+          "May",
+          "June",
+          "July",
+          "August",
+          "September",
+          "October",
+          "November",
+          "December"
+        ],
       }
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1');
@@ -56,6 +70,20 @@ $(document).ready(function () {
           weekLabel: "WK",
           firstDay: 1,
           cancelLabel: 'Clear',
+          monthNames: [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+          ],
         }
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1 big');

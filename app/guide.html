@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
-    <link href="css/libs.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
+    <link href="css/libs.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
     <link href="css/main.css" rel="stylesheet">
   </head>
   <body id="page-top">
@@ -1062,18 +1061,15 @@
                   </div>
                <br><br>
                 <div id="calendars">
-                    <br><br>
-                    <input type="text" name="datefilter" value="" />
-                    <br><br>
+                    <p class="fs-18">daterangepicker calendar:</p>
+                    <br>
                     <input type="text" name="datefilter" value="" />
                     <br><br>
                     <div class="calendars_parent">
                         <input type="text" name="calendar-v1" value="" >
                     </div>
-                    
-                    
-                <br><br>
-                <div class="row">
+                    <br><br>
+                    <div class="row">
                     <div class="bg-white w-fit-content p-3 ">
                        <div class="data-calendar my-4">
                           <div class="select select_year">
@@ -1563,7 +1559,7 @@
                         </span>
                     </label>
                       </div>
-                  </div>
+                    </div>
                   </div>
                 </div>
                 <div class="bg-white w-fit-content p-3 ">
@@ -2983,20 +2979,53 @@
                                 </div>
                                 <p class="c-blue-gray fs-13 name top weight-medium">Category</p>
                                 <div class="select__drop">
-                                    <ul class="select__menu lh-1_4">
-                                        <li class="hover-bg-light py-1 px-3">
+                                    <ul class="select__menu lh-1_5 min-h-210">
+                                        <li class="py-2_5 px-3">
                                             <p class="pl-3">Opportunity: <span class="c-blue-gray">Marketing</span> </p>
                                         </li>
-                                        <li class="hover-bg-light py-1 px-3">
-                                            <div class="d-flex align-items-center collapsed" data-toggle="collapse" data-target="#openCompany">
-                                                <div class="arrow-customer"></div>
-                                                <p class="pl-2">Сompany (3): <span class="c-blue-gray">Marketing</span> </p>
+
+                                        <li class=" py-2_5 px-3">
+                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openCountry">
+                                                <span class="arrow-customer"></span>
+                                                <span class="pl-2">Country (18):<span class="c-blue-gray">Marketing</span> </span>
+                                            </button>
+                                            <div id="openCountry" class="collapse pl-3 fs-14 block-all">
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
                                             </div>
-                                            <div class="collapse pl-3 fs-14" id="openCompany">
-                                                <p class="pl-3 c-blue-gray">Logistic Company</p>
-                                                <p class="pl-3 c-blue-gray">Acargo Company</p>
-                                                <p class="pl-3 c-blue-gray">Shipping Company</p>
-                                                
+                                        </li>
+                                        <li class="py-2_5 px-3">
+                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openCity">
+                                                <span class="arrow-customer"></span>
+                                                <span class="pl-2">City (113): <span class="c-blue-gray">Marketing</span> </span>
+                                            </button>
+                                            <div id="openCity" class="collapse pl-3 fs-14 block-all">
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
+                                            </div>
+                                        </li>
+                                        <li class="py-2_5 px-3">
+                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openPeriod">
+                                                <spna class="arrow-customer"></spna>
+                                                <span class="pl-2">Period: <span class="c-blue-gray">Marketing</span> </span>
+                                            </button>
+                                            <div id="openPeriod" class="collapse pl-3 fs-14 block-all">
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
+                                            </div>
+                                        </li>
+                                        <li class=" py-2_5 px-3">
+                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openCompany">
+                                                <span class="arrow-customer"></span>
+                                                <span class="pl-2">Сompany (3): <span class="c-blue-gray">Marketing</span> </span>
+                                            </button>
+                                            <div id="openCompany" class="collapse pl-3 fs-14 block-all">
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
+                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
                                             </div>
                                         </li>
                                     </ul>
@@ -3195,8 +3224,8 @@
       </div>
     </div>
     <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>

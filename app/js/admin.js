@@ -112,7 +112,11 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-
+  $('[data-toggle="collapse"]').click(function (e) {
+    $(this).toggleClass('collapsed');
+    let target = $(this).attr('data-target');
+    $(target).toggleClass('show');
+  })
   $(".relative .tool").click(function (e) {
     e.stopPropagation();
     $(this).closest('.relative').find(".select__drop").slideToggle(300);

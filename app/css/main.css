@@ -10301,12 +10301,6 @@ input.fs-14:-ms-input-placeholder  {
   border-radius: 2px;
   padding-bottom: 10px;
 }
-.daterangepicker.calendar-v1:not(.big) {
-  width: 430px!important;
-}
-.daterangepicker.calendar-v1.big {
-  width: 797px;
-}
 .daterangepicker.calendar-v1 .drp-calendar {
   padding: 0!important;
   max-width: none;
@@ -10324,11 +10318,7 @@ input.fs-14:-ms-input-placeholder  {
   width: 430px!important;
 }
 .daterangepicker.calendar-v1.big .drp-calendar .calendar-table {
-  padding: 0 15px!important;
-  width: 390px!important;
-}
-.daterangepicker.calendar-v1.big .calendar-table .month {
-  /* width: 797px!important; */
+  padding: 0;
 }
 .daterangepicker.calendar-v1 .calendar-table .month {
   display: flex;
@@ -10342,7 +10332,8 @@ input.fs-14:-ms-input-placeholder  {
 }
 .daterangepicker.calendar-v1.big .table-condensed {
   margin-top: 61px;
-  width: 360px;
+  width: 390px;
+  padding: 0 15px;
 }
 .daterangepicker.calendar-v1.big .calendar-table .month {
   top: -30px;
@@ -10357,9 +10348,6 @@ input.fs-14:-ms-input-placeholder  {
 .daterangepicker.calendar-v1 .calendar-table {
   background-color: transparent!important;
   padding: 0;
-}
-.daterangepicker.calendar-v1.big .drp-calendar .calendar-table {
-  padding: 0 15px;
 }
 .daterangepicker.calendar-v1:after {
   border-bottom: 6px solid #e8f6ff;
@@ -10482,6 +10470,35 @@ input.fs-14:-ms-input-placeholder  {
 }
 .daterangepicker.calendar-v1 th.next.available span {
   background-image: url('../img/arrows/arrow-right.svg');
+}
+.daterangepicker.calendar-v1 tr td.in-range {
+  background-color: transparent;
+}
+.daterangepicker.calendar-v1 tr td.in-range:after, .daterangepicker.calendar-v1.big tr td.start-date:after  {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  transform: none;
+  pointer-events: none;
+  z-index: 2;
+  width: 100%;
+  left: 0;
+  background-color: rgba(36, 177, 255, 0.116368);
+}
+.daterangepicker.calendar-v1 tr td.in-range:last-child:after, .daterangepicker.calendar-v1 tr td.end-date:after {
+  width: 34.5px;
+}
+.daterangepicker.calendar-v1.big tr td.end-date:after, .daterangepicker.calendar-v1.big tr td.end-date:before {
+  border-radius: 0 10px 10px 0;
+}
+.daterangepicker.calendar-v1.big tr td.start-date:after, .daterangepicker.calendar-v1.big tr td.start-date:before {
+  border-radius: 10px 0 0 10px;
+}
+.daterangepicker.calendar-v1 tr td.in-range:nth-child(2):after, .daterangepicker.calendar-v1.big tr td.start-date:after {
+  left: auto;
+  right: 0;
+  width: 34.5px;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

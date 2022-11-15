@@ -1083,6 +1083,26 @@ button {
     .checkbox:checked ~ .check-action.bg-gray {
       background-color: #49DDAA!important;
     }
+    .radio-calendar .check { 
+      border: 1px solid rgba(16, 156, 241, 0.332195);
+      border-right-width: 0;
+      height: auto;
+      line-height: 40px;
+      width: 83px;
+      display: block;
+    }
+    .radio-calendar label:first-child .check { 
+      border-radius: 4px 0 0 4px;
+    }
+    .radio-calendar label:last-child .check { 
+      border-right-width: 1px;
+      border-radius: 0 4px 4px 0;
+    }
+    .radio-calendar .checkbox:checked ~ .check { 
+      background: rgba(36, 177, 255, 0.116368);
+      color: #156CE4;
+      border-color: rgba(36, 177, 255, 0.116368);
+    }
 
 .checkbox-absolute {
   position: absolute;
@@ -1969,6 +1989,8 @@ button {
   background-color: rgba(255, 255, 255, 0.8); }
 .bg-blue {
   background-color: #156ce4!important; }
+.bg-blue_19 {
+  background-color: rgba(21, 108, 228, 0.19)!important; }
 .bg-blue-bright {
   background-color: #109CF1!important; }
 .bg-blue_v3 {
@@ -7898,6 +7920,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
 
 .min-w-1210 {
   min-width: 1210px;}
+.min-w-570 {
+  min-width: 570px;}
 .min-w-690 {
   min-width: 690px;}
 .min-w-770 {
@@ -9303,6 +9327,8 @@ padding-top: 15px;}
     background-color: #006eb1;
   }
 }
+.z--1 {
+  z-index: -1;}
 .z-1 {
   z-index: 1;}
 .z-4 {
@@ -10565,6 +10591,7 @@ input.fs-14:-ms-input-placeholder  {
 .block-all * {
   display: block;
 }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

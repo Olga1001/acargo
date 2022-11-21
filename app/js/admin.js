@@ -217,7 +217,7 @@ document.querySelectorAll('.nav').forEach((nav, index) => {
   childs.forEach((item, i) => {
     item.addEventListener('click', (e) => {
       let target = e.target;
-      target.closest('.nav').querySelector(`a.active`).classList.remove('active');
+      target.closest('.nav').querySelector(`.active`).classList.remove('active');
       target.classList.add('active');
 
       let contentsElement = document.querySelectorAll(`.contents`)[index];

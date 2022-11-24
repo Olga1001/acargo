@@ -90,9 +90,6 @@ body {
   letter-spacing: normal;
   background-color: #eff8fe;
   color: #282e3b; }
-body.dark {
-  background-color: #37517E;
-}
 img {
   display: block;
   -o-object-fit: contain;
@@ -1092,6 +1089,10 @@ button {
       line-height: 40px;
       width: 83px;
       display: block;
+      color: #282E3B;
+    }
+    .radio-calendar.dark .check {
+      background: #fff;
     }
     .radio-calendar li:first-child .check { 
       border-radius: 4px 0 0 4px;
@@ -1104,6 +1105,10 @@ button {
       background: rgba(36, 177, 255, 0.116368);
       color: #156CE4;
       border-color: rgba(36, 177, 255, 0.116368);
+    }
+    .radio-calendar.dark .checkbox:checked ~ .check { 
+      background-color: #24B1FF;
+      color: #fff;
     }
 
 .checkbox-absolute {
@@ -10631,6 +10636,9 @@ input.fs-14:-ms-input-placeholder  {
 }
 .arrow.down.orange {
   border-color: #F99E04 transparent transparent transparent;
+}
+.min-h-100vh-hedaer2 {
+  min-height: calc(100vh - 103px);
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

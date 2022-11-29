@@ -45,7 +45,7 @@ $(document).ready(function () {
       ],
     }
   }
-  document.querySelector
+
   //init new single-calendars
   $(function () {
     $('input[name="calendar-v1"]').daterangepicker(optionCalendarOne

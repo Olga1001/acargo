@@ -55,12 +55,12 @@ $(document).ready(function () {
       $(this).val(picker.startDate.format('MM.DD.YYYY'));
     });
   });
-  //init new single-calendars with week hover
+  //init new single-calendars with week choose
   $(function () {
     $('input[name="calendar-week"]').daterangepicker(optionCalendarOne
     ).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1 calendar-week');
-      $('.calendar-v1.calendar-week').find('.active').parent().addClass('active-week') //add class for week
+      $('.calendar-v1.calendar-week').find('.active').parent().addClass('active-week') //add class for week row
     }).on('apply.daterangepicker', function(ev, picker) {
       $(this).val(picker.startDate.format('MM.DD.YYYY'));
     });

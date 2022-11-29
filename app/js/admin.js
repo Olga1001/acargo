@@ -112,7 +112,7 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
-  $('[data-toggle="collapse"]').click(function (e) {
+  $('.select__drop [data-toggle="collapse"]').click(function (e) {
     $(this).toggleClass('collapsed');
     let target = $(this).attr('data-target');
     $(target).toggleClass('show');

@@ -10627,23 +10627,44 @@ input.fs-14:-ms-input-placeholder  {
   pointer-events: none;
 }
 
-.daterangepicker.calendar-v1.calendar-week tbody tr:hover {
-  background-color: rgba(36, 177, 255, 0.116368);
+.daterangepicker.calendar-v1.calendar-week tbody tr td:after {
+  content: '';
+  position: absolute;
+  height: 100%;
+  top: 0;
+  transform: none;
+  pointer-events: none;
+  width: 100%;
+  left: 0;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr:hover td:after {
+  background-color: rgba(36, 177, 255, 0.116368)!important;
 }
 .daterangepicker.calendar-v1.calendar-week tbody tr:hover td, .daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
   border-radius: 0;
 }
-.daterangepicker.calendar-v1.calendar-week tbody tr.active-week {
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:after {
+  content: '';
+  z-index: -1;
   background-color: #156CE4!important;
 }
-.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
+.daterangepicker.calendar-v1.calendar-week tbody tr td {
+  position: relative;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr td {
   background-color: transparent!important;
+  position: relative;
 }
-.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:first-child {
+
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:first-child:after, .daterangepicker.calendar-v1.calendar-week tbody tr:hover td:first-child:after {
   border-radius: 8px 0 0 8px;
+  width: 34.5px;
+  right: 0;
+  left: auto
 }
-.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:last-child {
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:last-child:after, .daterangepicker.calendar-v1.calendar-week tbody tr:hover td:last-child:after {
   border-radius: 0 8px 8px 0;
+  width: 34.5px;
 }
 .daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
   color: #fff!important;

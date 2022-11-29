@@ -15,51 +15,58 @@ let isDatepicker = setInterval(() => {
 }, 100)
 
 $(document).ready(function () {
-  //new calendar
+  //option new calendars
+  let optionCalendarOne = {
+    singleDatePicker: true,
+    showWeekNumbers: true,
+    autoApply: true,
+    showDropdowns: true,
+    inline: true,
+    autoUpdateInput: false,
+    alwaysOpen: true,
+    weekStart: 1,
+    locale: {
+      weekLabel: "WK",
+      firstDay: 1,
+      format: "MM.DD.YYYY",
+      monthNames: [
+        "January",
+        "February",
+        "March",
+        "April",
+        "May",
+        "June",
+        "July",
+        "August",
+        "September",
+        "October",
+        "November",
+        "December"
+      ],
+    }
+  }
+  document.querySelector
+  //init new single-calendars
   $(function () {
-    $('input[name="calendar-v1"]').daterangepicker({
-      singleDatePicker: true,
-      // opens: 'center',
-      // daysOfWeekHighlighted: "0.6",
-      showWeekNumbers: true,
-      autoApply: true,
-      showDropdowns: true,
-      // autoUpdateInput: true,
-      inline: true,
-      // showCustomRangeLabel: true,
-      // alwaysShowCalendars: true,
-      alwaysOpen: true,
-      weekStart: 1,
-      // maxSpan: {
-      //   days: 8
-      // } ,
-      locale: {
-        weekLabel: "WK",
-        firstDay: 1,
-        format: "MM.DD.YYYY",
-        monthNames: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-          "August",
-          "September",
-          "October",
-          "November",
-          "December"
-        ],
-      }
-    }).on('show.daterangepicker', function (ev, picker) {
+    $('input[name="calendar-v1"]').daterangepicker(optionCalendarOne
+    ).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1');
     }).on('apply.daterangepicker', function(ev, picker) {
       $(this).val(picker.startDate.format('MM.DD.YYYY'));
     });
   });
+  //init new single-calendars with week hover
+  $(function () {
+    $('input[name="calendar-week"]').daterangepicker(optionCalendarOne
+    ).on('show.daterangepicker', function (ev, picker) {
+      picker.container.addClass('calendar-v1 calendar-week');
+      $('.calendar-v1.calendar-week').find('.active').parent().addClass('active-week') //add class for week
+    }).on('apply.daterangepicker', function(ev, picker) {
+      $(this).val(picker.startDate.format('MM.DD.YYYY'));
+    });
+  });
+  //init new calendars big
   $(function() {
-
     $('input[name="datefilter"]').daterangepicker({
         autoUpdateInput: false,
         showWeekNumbers: true,

@@ -10625,6 +10625,29 @@ input.fs-14:-ms-input-placeholder  {
   opacity: 0;
   pointer-events: none;
 }
+
+.daterangepicker.calendar-v1.calendar-week tbody tr:hover {
+  background-color: rgba(36, 177, 255, 0.116368);
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr:hover td, .daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
+  border-radius: 0;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week {
+  background-color: #156CE4!important;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
+  background-color: transparent!important;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:first-child {
+  border-radius: 8px 0 0 8px;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td:last-child {
+  border-radius: 0 8px 8px 0;
+}
+.daterangepicker.calendar-v1.calendar-week tbody tr.active-week td {
+  color: #fff!important;
+ }
+
 .block-all * {
   display: block;
 }
@@ -10635,21 +10658,21 @@ input.fs-14:-ms-input-placeholder  {
   color: #fff!important;
   fill: #fff!important;
 }
-.arrow {
+.arrow-r {
   width: 0;
   height: 0;
   border-style: solid;
   border-width: 0 3.5px 4px 3.5px;
   border-color: transparent transparent #282E3B transparent;
 }
-.arrow.down {
+.arrow-r.down {
   border-width: 4px 3.5px 0 3.5px;
   border-color: #282E3B transparent transparent transparent;
 }
-.arrow.green {
+.arrow-r.green {
   border-color: transparent transparent #49DDAA transparent;
 }
-.arrow.down.orange {
+.arrow-r.down.orange {
   border-color: #F99E04 transparent transparent transparent;
 }
 .min-h-100vh-hedaer2 {

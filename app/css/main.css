@@ -2921,10 +2921,12 @@ button {
 
 .contents {
   padding: 30px 0 0; }
-  .contents__item {
-    display: none; }
+  .contents__item, .contents__item.d-grid {
+    display: none!important; }
     .contents__item.active {
-      display: block; }
+      display: block!important; }
+    .contents__item.active.d-grid {
+      display: grid!important;}
     .contents__item .fields {
       padding-left: 30px; }
     .contents__item .fields__item, .contents__item .fields__item:nth-child(3n+3) {
@@ -7893,8 +7895,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   min-height: 558px;}
 .min-h-100 {
   min-height: 100px;}
-.min-h-100-p {
-  min-height: 100%;}
+/* .min-h-100-p {
+  min-height: 100%;} */
 .h-250 {
   height: 250px;}
 .h-table {
@@ -10710,6 +10712,7 @@ input.fs-14:-ms-input-placeholder  {
 .min-h-100vh-hedaer2 {
   min-height: calc(100vh - 103px);
 }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -10771,6 +10774,9 @@ input.fs-14:-ms-input-placeholder  {
     margin: 3.5px 8px !important;}
     .calendar_big .calendar-table thead tr th {
       margin: 3.5px 8px!important;}
+    ._1441_vertical-lr {
+      writing-mode: vertical-lr;
+    }
     ._1441_d-flex {
       display: flex;
     }
@@ -10982,6 +10988,9 @@ input.fs-14:-ms-input-placeholder  {
     width: 182px;}
 }
 @media only screen and (max-width: 1440px) {
+  .d-flex_1440 {
+    display: flex!important;
+  }
   .mx--1_1440 {
     margin-left: -0.5rem!important;
     margin-right: -0.5rem!important;

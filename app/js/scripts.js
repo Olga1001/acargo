@@ -1,3 +1,8 @@
+
+let round = document.querySelectorAll('.pr_price > span > span');
+round.forEach(item => {
+    let price = (+item.innerHTML.replace('$','')).toFixed(2)
+})
 //init datepicker
 let isDatepicker = setInterval(() => {
   if(typeof datepicker == 'function') {

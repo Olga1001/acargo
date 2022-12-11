@@ -375,6 +375,10 @@ button {
   padding: 4.5px 11.5px;
   min-width: 74px;
 }
+.select__date .select__item {
+  background: url('../img/calendar-gray.svg') no-repeat left 15px center/21px;
+  padding-left: 40px;
+}
 .select__time .select__item {
   background: url('../img/wall-clock.svg') no-repeat left 15px center/21px;
   padding-left: 40px; }
@@ -388,11 +392,17 @@ button {
   .select__time.right .select__item {
     background-position: right 15px center;
   }
-  .select__time.right.small .select__item {
+  .select.right.small .select__item {
     background-position: right 8px center;
   }
   .select__time.small .select__item {
     background-size: 16px;
+  }
+  .select__date.small .select__item {
+    background-size: 12px;
+  }
+  .select.small.center .select__item {
+    background-position: right calc(50% - 30px) center;
   }
 .line-between__time {
   position: relative; }
@@ -9326,9 +9336,11 @@ padding-top: 15px;}
 .hover-s-blue:hover, .hover-s-blue:hover svg {
   stroke: #156CE4!important;
   color: #156CE4!important;}
-.hover-l-blue-2:hover, .hover-l-blue-2:hover svg, .hover-l-blue-2:hover * {
+.hover-l-blue-2:hover, .hover-l-blue-2:hover svg, .hover-l-blue-2:hover *{
   fill: #156CE4!important;
   color: #156CE4!important;}
+.select__time .hover-l-blue-2.select__item:hover {
+  background-image: url('../img/wall-clock_blue.svg');}
 .hover-l-blue:hover {
   fill: #109CF1!important;
   color: #109CF1!important;}

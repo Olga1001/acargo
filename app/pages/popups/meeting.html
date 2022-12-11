@@ -583,7 +583,7 @@
                         <div class="">
                             <ul class="py-2 fs-14">
                                 <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#addToMyDay">
+                                    <div class="d-flex align-items-center py-2">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon c-gray mx-auto d-block" width="16px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#sun"></use>
@@ -591,7 +591,7 @@
                                         </div>
                                         <p class="">Add to my day</p>
                                     </div>
-                                    <div class="absolute t-100 l-0 ml-3 max-310 w-100 collapse z-4" id="addToMyDay">
+                                    <div class="absolute t-100 l-0 ml-3 max-310 w-100 hover z-4">
                                         <div class="mb-3 br-4 b-1 p-3 bg-white">
                                             <label class="d-flex align-items-center mb-3"> 
                                                 <input class="checkbox" type="checkbox" checked>
@@ -655,7 +655,7 @@
                                     </div>
                                 </li>
                                 <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#remindMe">
+                                    <div class="d-flex align-items-center py-2">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon c-gray mx-auto d-block" width="14px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#alarm"></use>
@@ -663,16 +663,13 @@
                                         </div>
                                         <p class="">Remind me</p>
                                     </div>
-                                    <div class="absolute t-100 l-0 ml-3 max-330 collapse" id="remindMe">
+                                    <div class="absolute t-100 l-0 ml-3 max-330 hover z-4">
                                         <div class="br-4 b-1 p-3 bg-white">
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Tomorrow</p>
-                                                <div class="select ml-2 not-arrow max-w-170 h-auto select__time small right">
-                                                    <div class="d-flex align-items-center justify-content-center hover-bg-light hover-l-blue-2">
-                                                        <span class=" c-gray fs-14 w-fit-content pr-2 w-100 select__item lh-1 py-2">10: 00</span>
-                                                        <!-- <svg class="svg-sprite-icon c-gray" width="16px" height="16px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
-                                                        </svg> -->
+                                                <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
+                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                        10: 00
                                                     </div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
@@ -684,12 +681,82 @@
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Next week</p>
-                                                <div class="select ml-2 not-arrow max-w-170 h-auto">
-                                                    <div class="d-flex align-items-center justify-content-center ">
-                                                        <div class="select__item c-gray fs-14 w-fit-content pr-2 w-100">10: 00</div>
-                                                        <svg class="svg-sprite-icon c-gray" width="16px" height="16px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
-                                                        </svg>
+                                                <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
+                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                        10: 00
+                                                    </div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">10: 00</li>
+                                                            <li class="select__option">10: 00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                            <div class="d-flex align-items-center justify-content-between"> 
+                                                <p class="fs-14">Pick a day & time</p>
+                                                <div class="d-flex max-w-170 w-100">
+                                                    <div class="w-50 pr-1">
+                                                        <div class="select not-arrow h-auto select__time small right">
+                                                            <div class="hover-bg-light hover-l-blue-2 c-gray fs-14 select__item lh-1 py-2">
+                                                                10: 00
+                                                            </div>
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option active">10: 00</li>
+                                                                    <li class="select__option">10: 00</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="w-50 pl-1">
+                                                        <div class="select not-arrow select__date h-auto small right">
+                                                            <div class="hover-bg-light hover-l-blue-2 pr-0 c-gray fs-14 select__item lh-1 py-2">
+                                                                28 Sep.
+                                                            </div>
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option active">28 Sep.</li>
+                                                                    <li class="select__option">29 Sep.</li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
+                                    <div class="d-flex align-items-center py-2">
+                                        <div class="br-50 bg-light wh-31 mr-3">
+                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="14px" height="31px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-4"></use>
+                                            </svg>
+                                        </div>
+                                        <p class="">Add due date</p>
+                                    </div>
+                                    <div class="absolute t-100 l-0 ml-3 max-330 hover z-4">
+                                        <div class="br-4 b-1 p-3 bg-white">
+                                            <div class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <p class="fs-14">Tomorrow</p>
+                                                <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
+                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                        10: 00
+                                                    </div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">10: 00</li>
+                                                            <li class="select__option">10: 00</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <p class="fs-14">Next week</p>
+                                                <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
+                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                        10: 00
                                                     </div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
@@ -703,12 +770,9 @@
                                                 <p class="fs-14">Pick a day & time</p>
                                                 <div class="d-flex max-w-170 w-100">
                                                     <div class="w-50 pr-1">
-                                                        <div class="select not-arrow h-auto">
-                                                            <div class="d-flex align-items-center justify-content-center">
-                                                                <div class="select__item c-gray fs-14 w-fit-content pr-2">10: 00</div>
-                                                                <svg class="svg-sprite-icon c-gray mr-2" width="16px" height="16px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
-                                                                </svg>
+                                                        <div class="select not-arrow h-auto select__time small right">
+                                                            <div class="hover-bg-light hover-l-blue-2 c-gray fs-14 select__item lh-1 py-2">
+                                                                10: 00
                                                             </div>
                                                             <div class="select__drop">
                                                                 <ul class="select__menu">
@@ -719,38 +783,30 @@
                                                         </div>
                                                     </div>
                                                     <div class="w-50 pl-1">
-                                                        <div class="select not-arrow h-auto">
-                                                            <div class="d-flex align-items-center justify-content-center">
-                                                                <div class="select__item c-gray fs-14 w-fit-content pr-2">28 Sep.</div>
-                                                                <svg class="svg-sprite-icon c-gray mr-2" width="16px" height="16px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar"></use>
-                                                                </svg>
+                                                        <div class="select not-arrow select__date h-auto small right">
+                                                            <div class="hover-bg-light hover-l-blue-2 pr-0 c-gray fs-14 select__item lh-1 py-2">
+                                                                28 Sep.
                                                             </div>
                                                             <div class="select__drop">
                                                                 <ul class="select__menu">
-                                                                    <li class="select__option active">28</li>
-                                                                    <li class="select__option">29</li>
+                                                                    <li class="select__option active">28 Sep.</li>
+                                                                    <li class="select__option">29 Sep.</li>
                                                                 </ul>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="btn-white min-w-auto mr-4 w-100">Cancel</a>
+                                                <a href="#" class="btn-aquamarine big min-w-auto w-100">Save</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <div class="d-flex align-items-center py-2 collapsed">
-                                        <div class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="14px" height="31px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-4"></use>
-                                            </svg>
-                                        </div>
-                                        <p class="">Add due date</p>
-                                    </div>
-                                </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <div class="d-flex align-items-center py-2 collapsed">
+                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
+                                    <div class="d-flex align-items-center py-2">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon c-gray mx-auto d-block" width="12px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#content-copy-rounded"></use>
@@ -758,9 +814,72 @@
                                         </div>
                                         <p class="">Repeat</p>
                                     </div>
+
+                                    <div class="absolute t-100 l-0 ml-3 max-310 w-100 hover z-4">
+                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Daily</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Weekly</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Monthly</span>
+                                            </label>
+                                            <label class="d-flex align-items-center"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Customs</span>
+                                            </label>
+                                        </div>
+                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Daily</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Weekly</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-2"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Monthly</span>
+                                            </label>
+                                            <div class="d-flex align-items-center mb-3">
+                                                <label class="d-flex align-items-center"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                    <span class="pl-1">Customs</span>
+                                                </label>
+                                                <input type="text" value="30" class="max-w-65 text-center ml-auto">
+                                                <div class="select ml-2 max-w-90 h-auto">
+                                                    <div class="select__item bg-light c-blue fs-14 text-center">Days</div>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Days</li>
+                                                            <li class="select__option">Days</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex justify-content-between">
+                                                <a href="#" class="btn-white min-w-auto mr-4 w-100">Cancel</a>
+                                                <a href="#" class="btn-aquamarine big min-w-auto w-100">Save</a>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <div class="d-flex align-items-center py-2 collapsed">
+                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
+                                    <div class="d-flex align-items-center py-2 ">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon c-gray mx-auto d-block" width="16px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#user-plus"></use>
@@ -768,9 +887,29 @@
                                         </div>
                                         <p class="">Assign to</p>
                                     </div>
+
+                                    <div class="absolute t-100 l-0 ml-3 max-310 w-100 hover z-4">
+                                        <div class="br-4 b-1 p-3 bg-white">
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Alexey Ivanov</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Irina Ivanova</span>
+                                            </label>
+                                            <label class="d-flex align-items-center mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="pl-1">Lisa Ivanova</span>
+                                            </label>
+                                        </div>
+                                    </div>
                                 </li>
                                 <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <div class="d-flex align-items-center py-2 collapsed">
+                                    <div class="d-flex align-items-center py-2">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon stroke-gray mx-auto d-block" width="10px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#download2"></use>
@@ -780,7 +919,7 @@
                                     </div>
                                 </li>
                                 <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <div class="d-flex align-items-center py-2 collapsed">
+                                    <div class="d-flex align-items-center py-2">
                                         <div class="br-50 bg-light wh-31 mr-3">
                                             <svg class="svg-sprite-icon c-gray mx-auto d-block" width="10px" height="31px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>

@@ -1031,6 +1031,12 @@ button {
       height: 22px;
       display: inline-flex;
     }
+    .radio-custom .checkbox:checked ~ svg {
+      fill: #156CE4!important;
+    }
+    .radio-custom .checkbox:checked ~ span {
+      color: #156CE4!important;
+    }
     .checkbox:checked ~ .radio-active {
       background-color: #156CE4;
       color: #fff!important;
@@ -1128,6 +1134,10 @@ button {
     }
     .radio-calendar .checkbox:checked ~ .check svg {
       fill: #156CE4!important;
+      opacity: 1!important;
+    }
+    .radio-calendar .checkbox:checked ~ .check svg.stroke-blue-light {
+      stroke: #156CE4!important;
     }
     .radio-calendar.dark .checkbox:checked ~ .check { 
       background-color: #24B1FF;
@@ -8636,6 +8646,9 @@ padding-top: 15px;}
 .wh-24 {
   width: 24px;
   height: 24px;}
+.wh-27 {
+  width: 27px;
+  height: 27px;}
 .wh-48 {
   width: 48px;
   height: 48px;}
@@ -9346,6 +9359,9 @@ padding-top: 15px;}
 .hover-l-blue-2:hover, .hover-l-blue-2:hover svg, .hover-l-blue-2:hover *{
   fill: #156CE4!important;
   color: #156CE4!important;}
+.hover-l-red:hover, .hover-l-red:hover svg, .hover-l-red:hover * {
+  fill: #db5151!important;
+  color: #db5151!important;}
 .select__time .hover-l-blue-2.select__item:hover {
   background-image: url('../img/wall-clock_blue.svg');}
 .hover-l-blue:hover {
@@ -10782,6 +10798,18 @@ input.fs-14:-ms-input-placeholder  {
   transform: scale(1.1);
   box-shadow: 0px 0px 18px 2px rgba(21, 108, 228, 0.35);
 }
+.popup-filter {
+  position: fixed;
+  top: 60px;
+  right: 0;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  background: #F4FBFF;
+  box-shadow: 0px 0px 15px 5px rgba(103, 117, 141, 0.12);
+  max-width: 336px;
+  z-index: 9;
+  width: 100%;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -11650,6 +11678,8 @@ input.fs-14:-ms-input-placeholder  {
   .input-search {
     padding: 6.5px 13px 6.5px 30px;
     background-size: 11px;}
+  .min-w-150-1440 {
+    min-width: 150px;}
   .min-w-183_1440 {
     min-width: 183px;}
   .input-search.right {

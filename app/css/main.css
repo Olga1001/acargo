@@ -10809,6 +10809,16 @@ input.fs-14:-ms-input-placeholder  {
   max-width: 336px;
   z-index: 9;
   width: 100%;
+  display: block!important;
+  opacity: 0;
+  transition: all 0.25s ease;
+  transform: translateX(100px);
+  pointer-events: none;
+}
+.popup-filter.show {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -10936,6 +10946,10 @@ input.fs-14:-ms-input-placeholder  {
     }
     ._1441_pl-4 {
       padding-left: 1.5rem!important;
+    }
+    ._1441_py-1 {
+      padding-top: 0.25rem!important;
+      padding-bottom: 0.25rem!important;
     }
     ._1441_py-3 {
       padding-top: 1rem!important;
@@ -11778,6 +11792,9 @@ input.fs-14:-ms-input-placeholder  {
     font-size: 14px;}
   }
 @media only screen and (max-width: 1280px) {
+  .popup-filter {
+    top: 52px;
+    height: calc(100vh - 52px);}
   .h-100vh_60 {
     height: calc(100vh - 51px);}
   .container-fluid {

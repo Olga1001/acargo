@@ -659,52 +659,11 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <button type="sumbit" class="btn-aquamarine ml-2 p-1 collapsed" data-toggle="collapse" data-target="#todolist_search_panel">
+                                            <button type="sumbit" class="btn-aquamarine ml-2 p-1" data-toggle="collapse" data-target=".popup-filter">
                                                 <svg class="svg-sprite-icon c-white wh-13_1440" alt="icon" width="16px" height="18px">
                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#filter"></use>
                                                 </svg>
                                             </button>
-                                        </div>
-                                    </div>
-                                    <div class="px-3 bg-light-white3 mt-3 py-2 collapse show" id="todolist_search_panel">
-                                        <div class="d-flex justify-content-between">
-                                            <div class="d-flex py-1">
-                                                <input type="text" class="input-search b-blue-light2 mr-3 w-200px">
-                                                <div class="mr-3">
-                                                    <div class="select bg-white b-blue-light2 w-200px">
-                                                        <div class="select__item">All company</div>
-                                                        <div class="select__drop">
-                                                            <ul class="select__menu">
-                                                                <li class="select__option active">company</li>
-                                                                <li class="select__option">company</li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex b-1 b-blue-light2 radio-custom br-3 bg-white w-385 fs-13 lh-1">
-                                                    <label class="w-80 d-flex align-items-center justify-content-center c-gray br-1 b-blue-light2">
-                                                        <input type="radio" name="radio-filter" class="checkbox" checked>
-                                                        <svg class="svg-sprite-icon c-gray mr-2 wh-11_1440" width="13px" height="15px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat"></use>
-                                                        </svg>
-                                                        <span class="">Sea </span>
-                                                    </label>
-                                                    <label class="w-80 d-flex align-items-center justify-content-center c-gray ">
-                                                        <input type="radio" name="radio-filter" class="checkbox">
-                                                        <svg class="svg-sprite-icon c-gray mr-2 wh-11_1440" width="13px" height="11px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                                        </svg>
-                                                        <span class=" ">Road  </span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                            <a href="#" class="d-flex align-items-center justify-content-center hover-l-red h-fit">
-                                                <svg class="svg-sprite-icon c-gray mr-2 wh-13_1440" width="12px" height="16px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                </svg>
-                                                <span class="underline c-gray fs-14 fs-13_1440">Clear filter</span>
-                                            </a>
-
                                         </div>
                                     </div>
                                     <div class="contents pt-4">
@@ -1337,6 +1296,48 @@
                     </div>
                 </div>
 
+                <div class="popup-filter px-3 py-2 collapse show">
+                    <a href="#" class=" mb-3 collapsed" data-toggle="collapse" data-target=".popup-filter">
+                        <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto wh-12_1440" width="14px" height="14px">
+                    </a>
+                    <h2 class="fs-16 weight-medium text-center">Filter</h2>
+                    <div class="py-1">
+                        <input type="text" class="input-search my-3 b-blue-light2">
+                    </div>
+                    <div class="pb-1">
+                        <div class="select mb-3 bg-white b-blue-light2">
+                            <div class="select__item">All company</div>
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option active">company</li>
+                                    <li class="select__option">company</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex b-1 b-blue-light2 radio-custom br-3 bg-white mb-1">
+                        <label class="w-100 d-flex align-items-center justify-content-center c-gray br-1 b-blue-light2 py-2">
+                            <input type="radio" name="radio-filter" class="checkbox" checked>
+                            <svg class="svg-sprite-icon c-gray mr-2 wh-12_1440" width="13px" height="15px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat"></use>
+                            </svg>
+                            <span class="fs-13 _1441_py-1">Sea </span>
+                        </label>
+                        <label class="w-100 d-flex align-items-center justify-content-center c-gray py-2">
+                            <input type="radio" name="radio-filter" class="checkbox">
+                            <svg class="svg-sprite-icon c-gray mr-2 wh-12_1440" width="13px" height="11px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                            </svg>
+                            <span class="fs-13 _1441_py-1">Road  </span>
+                        </label>
+                    </div>
+                    <a href="#" class="d-flex align-items-center justify-content-center py-3 hover-l-red">
+                        <svg class="svg-sprite-icon c-gray mr-2 wh-13_1440" width="12px" height="16px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
+                        </svg>
+                        <span class="underline c-gray fs-14 fs-13_1440">Clear filter</span>
+                    </a>
+                </div>
             </div>
         </div>
     </div>

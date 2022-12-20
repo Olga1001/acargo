@@ -130,17 +130,20 @@ img {
     line-height: 1;
     padding-bottom: 15px;
   }
-.breadcrumbs-nav a, .breadcrumbs-nav p {
+.breadcrumbs-nav:not(.text-normal) a, .breadcrumbs-nav:not(.text-normal) p {
   font-style: italic;
   font-weight: 400;
   font-size: 14px;
   line-height: 16px;
   color: #B7BCD6;
 }
-.breadcrumbs-nav a {
-  position: relative;
-  margin-right: 30px;
+
+.breadcrumbs-nav:not(.text-normal) a {
   color: #2A5082;
+}
+.breadcrumbs-nav a {
+  margin-right: 30px;
+  position: relative;
 }
 .breadcrumbs-nav a:after {
   content: '';
@@ -1576,7 +1579,8 @@ button {
 }
 .text-decoration-none {
   text-decoration: none; }
-
+.text-normal {
+  font-style: normal!important; }
 .text-italic {
   font-style: italic; }
 .error input, .error .select{
@@ -6577,6 +6581,8 @@ button {
     max-width: 1215px;}
   .max-1250 {
     max-width: 1250px;}
+  .max-1290 {
+    max-width: 1290px;}
   .max-1380 {
     max-width: 1380px;}
   .max-1485 {

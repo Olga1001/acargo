@@ -731,63 +731,203 @@
                             </div>
                         </div>
                         <div class="d-flex">
-                            <div class="d-flex radio-custom br-4 b-1 b-blue-light2 bg-white lh-1_3 overflow-hidden ml-3 w-160 ">
-                                <label class="d-flex align-items-center justify-content-center p-2 min-w-80 collapsed" data-toggle="collapse" data-target="#dropSea">
-                                    <input type="radio" name="radio" class="checkbox">
-                                    <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="16px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat"></use>
-                                    </svg>
-                                    <span>Sea</span>
-                                </label>
-                                <label class="d-flex align-items-center justify-content-center b-blue-light2 bl-1 p-2 min-w-80 collapsed"  data-toggle="collapse" data-target="#dropRoad">
-                                    <input type="radio" name="radio" class="checkbox">
-                                    <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="16px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                    </svg>
-                                    <span>Road</span>
-                                </label>
-                                <div class="collapse absolute show t-100 r-0 pt-3 z-4 w-290px" id="dropSea">
-                                    <div class="bg-white p-3 shadow7 b-1 b-blue-light">
-                                        <p class="fs-16 weight-semi c-navy-blue mb-2">Road detail</p>
+                            <div id="accordion" class="accordion-radio d-flex br-4 b-1 b-blue-light2 bg-white lh-1_3 overflow-hidden ml-3 w-160">
+                                <div class="accordion-head">
+                                    <label id="headingSea" class="d-flex align-items-center justify-content-center p-2 min-w-80 br-1 b-blue-light2 collapsed" data-toggle="collapse" data-target="#collapseSea" aria-expanded="true" aria-controls="collapseSea">
+                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat"></use>
+                                        </svg>
+                                        <span>Sea</span>
+                                    </label>
+                              
+                                    <div id="collapseSea" class="collapse absolute t-100 r-0 z-4 bg-white p-3 shadow7 b-1 b-blue-light w-290px" aria-labelledby="headingSea" data-parent="#accordion">
+                                        <p class="_1441_fs-16 weight-semi c-navy-blue _1441_mb-2">Sea detail</p>
                                         <div class="d-flex align-items-center justify-content-between">
-                                            <p class="fs-16 pr-2">Container type</p>
-                                            <div class="d-flex fs-14 c-gray">
+                                            <p class="_1441_fs-16 pr-2 ">Container type</p>
+                                            <div class="d-flex fs-14 c-gray fs-13_1440">
                                                 <a href class="c-gray">Select all</a> 
                                                 /
                                                 <a href class="c-gray">Clear all</a>
                                             </div>
                                         </div>
-                                        <label class="mt-2 d-flex align-items-center">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue big ml-0 mr-3 "></span>
-                                            <span>25’ CHI</span>
-                                        </label>
-                                        <label class="mt-2 d-flex align-items-center">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue big ml-0 mr-3 "></span>
-                                            <span>25’ CHI</span>
-                                        </label>
-                                        <label class="mt-2 d-flex align-items-center">
-                                            <input type="checkbox" class="checkbox">
-                                            <span class="checkbox__icon-blue big ml-0 mr-3 "></span>
-                                            <span>25’ CHI</span>
-                                        </label>
-                                        <div class="collapse" id="showMore">
+                                        <div class="fs-13_1440">
                                             <label class="mt-2 d-flex align-items-center">
                                                 <input type="checkbox" class="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-3"></span>
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
                                                 <span>25’ CHI</span>
                                             </label>
                                             <label class="mt-2 d-flex align-items-center">
                                                 <input type="checkbox" class="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-3"></span>
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
                                                 <span>25’ CHI</span>
                                             </label>
+                                            <label class="mt-2 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                <span>25’ CHI</span>
+                                            </label>
+
+                                            <div class="collapse" id="showMoreSea">
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>25’ CHI</span>
+                                                </label>
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>25’ CHI</span>
+                                                </label>
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>25’ CHI</span>
+                                                </label>
+                                            </div>
                                         </div>
-                                        <button type="button" class="underline c-blue-gray collapsed" data-toggle="collapse" data-target="#showMore">Show more</button>
+                                        <a href="#" class="collapsed underline c-blue-gray mt-2 d-block fs-13_1440" data-toggle="collapse" data-target="#showMoreSea">Show more</a>
+                                        
+                                        <p class="pb-1 pt-4 fs-13_1440">Weight, kg</p>
+                                        <div class="calc calc__light big b-gray max-204 mb-3">
+                                            <button class="calc__btn calc__btn-minus"></button>
+                                            <input type="number" class="calc__input" value="800">
+                                            <button class="calc__btn calc__btn-plus"></button>
+                                        </div>
+                                        <div class="fs-13_1440">
+                                            <div class="row pt-2">
+                                                <p class="col-5">ADR</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="row pt-2">
+                                                <p class="col-5">Temperature</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="row pt-2">
+                                                <p class="col-5">SENT</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                  </div>
+                                </div>
+                                <div class="accordion-head">
+                                    <label id="headingRoad" class="d-flex align-items-center justify-content-center p-2 min-w-80 collapsed" data-toggle="collapse" data-target="#collapseRoad" aria-expanded="false" aria-controls="collapseRoad">
+                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                        </svg>
+                                        <span>Road</span>
+                                    </label>
+                                    <div id="collapseRoad" class="collapse absolute t-100 r-0 z-4 bg-white p-3 shadow7 b-1 b-blue-light w-290px" aria-labelledby="headingRoad" data-parent="#accordion">
+                                        <p class="_1441_fs-16 weight-semi c-navy-blue _1441_mb-2">Road detail</p>
+                                        <div class="d-flex align-items-center justify-content-between">
+                                            <p class="_1441_fs-16 pr-2 ">Truck type</p>
+                                            <div class="d-flex fs-14 c-gray fs-13_1440">
+                                                <a href class="c-gray">Select all</a> 
+                                                /
+                                                <a href class="c-gray">Clear all</a>
+                                            </div>
+                                        </div>
+                                        <div class="fs-13_1440">
+                                            <label class="mt-2 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                <span>Trailer</span>
+                                            </label>
+                                            <label class="mt-2 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                <span>Megatrailer</span>
+                                            </label>
+                                            <label class="mt-2 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                <span>Platform</span>
+                                            </label>
+
+                                            <div class="collapse" id="showMoreRoad">
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>Trailer</span>
+                                                </label>
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>Megatrailer</span>
+                                                </label>
+                                                <label class="mt-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-3 mr-2_1440"></span>
+                                                    <span>Platform</span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="collapsed underline c-blue-gray mt-2 d-block fs-13_1440" data-toggle="collapse" data-target="#showMoreRoad">Show more</a>
+                                        
+                                        <p class="pb-1 pt-4 fs-13_1440">Weight, kg</p>
+                                        <div class="calc calc__light big b-gray max-204 mb-3">
+                                            <button class="calc__btn calc__btn-minus"></button>
+                                            <input type="number" class="calc__input" value="800">
+                                            <button class="calc__btn calc__btn-plus"></button>
+                                        </div>
+                                        <div class="fs-13_1440">
+                                            <div class="row pt-2">
+                                                <p class="col-5">ADR</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="row pt-2">
+                                                <p class="col-5">Temperature</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="row pt-2">
+                                                <p class="col-5">SENT</p>
+                                                <label class="h-fit">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="switch-yn d-flex green">
+                                                        <span class="switch-n">No</span>
+                                                        <span class="switch-y">Yes</span>
+                                                        <span class="switch-yn_circle"></span>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
+                              </div>
                             <button type="submit" class="p-2 bg-blue ml-3 br-4">
                                 <svg class="svg-sprite-icon c-white mx-1" width="14px" height="16px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#search"></use>

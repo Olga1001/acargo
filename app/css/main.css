@@ -8990,6 +8990,10 @@ padding-top: 15px;}
  color: #141515!important;}
  .checkbox:checked ~ span {
   border-color: #109cf1;}
+  .checkbox:checked ~ span.green {
+   border-color: #49DDAA;}
+  .checkbox:checked ~ span.green .switch-yn_circle {
+    background-color: #49DDAA;}
 .checkbox:checked ~ span .switch-yn_circle {
   background: #109cf1;}
 .checkbox:checked ~ span .switch-yn_circle  {
@@ -10845,6 +10849,18 @@ input.fs-14:-ms-input-placeholder  {
   pointer-events: auto;
   transform: translateX(0);
 }
+.accordion-head .collapsed[data-toggle="collapse"] svg {
+  fill: #b7bcd6;
+}
+.accordion-head [data-toggle="collapse"] svg {
+  fill: #156CE4;
+}
+.accordion-head .collapsed[data-toggle="collapse"] * {
+  color: #b7bcd6;
+}
+.accordion-head [data-toggle="collapse"] * {
+  color: #156CE4;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -11133,6 +11149,9 @@ input.fs-14:-ms-input-placeholder  {
     width: 182px;}
 }
 @media only screen and (max-width: 1440px) {
+  .check_custom {
+    width: 18px;
+    height: 18px;}
   .h-100-232 {
     height: calc(100vh - 199px);
   }

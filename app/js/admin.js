@@ -114,9 +114,10 @@ $(document).ready(function () {
 $(document).ready(function () {
   $('.select__drop [data-toggle="collapse"], .relative > [data-toggle="collapse"]').click(function (e) {
     console.log(this)
-    $(this).toggleClass('collapsed');
+
+    $(this).toggleClass('collapsed').parent().siblings().find('[data-toggle="collapse"]').removeClass('collapsed');
     let target = $(this).attr('data-target');
-    $(target).toggleClass('show');
+    $(target).toggleClass('show').parent().siblings().find('.collapse').removeClass('show');
   })
   $(".relative .tool").click(function (e) {
     e.stopPropagation();

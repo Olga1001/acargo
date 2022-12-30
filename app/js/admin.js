@@ -146,8 +146,8 @@ $(document).ready(function () {
     }
     $(this).closest(".select").find(".select__item__color").append("<div></div>");
     $(this).closest(".select").find(".select__item__color").find("div").addClass(colorOption);
-    $(".select__drop").slideUp(300);
-    $(".select").removeClass('active');
+    $(this).closest(".select__drop").slideUp(300);
+    $(this).closest(".select").removeClass('active');
   });
   $(".select__option-check").click(function () {
     $(this).toggleClass('active');

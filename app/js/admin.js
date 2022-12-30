@@ -127,7 +127,7 @@ $(document).ready(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
   $(".select__item").click(function () {
-    $(this).closest(".select").toggleClass('active').find(".select__drop").slideToggle(300).parents().siblings().find(".select").removeClass('active').find(".select__drop").slideUp(300);
+    $(this).closest(".select").toggleClass('active').find(".select__drop").first().slideToggle(300).parents().siblings().find(".select").removeClass('active').find(".select__drop").slideUp(300);
   });
   $(".link-share").click(function (e) {
     e.preventDefault();

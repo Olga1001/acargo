@@ -368,16 +368,19 @@ $(document).ready(function () {
 });
 
 //init Sticky
-let isSticky = setInterval(() => {
-  if(typeof sticky == 'function') {
-    clearInterval(isSticky)
+// let isSticky = setInterval(() => {
+//   if(typeof sticky == 'function') {
+//     clearInterval(isSticky)
+//     console.log('true')
     if (window.matchMedia("(min-width: 1281px)").matches) {
       $('.sticky-js_v1').sticky({topSpacing:94});
+      $('.sticky-js_v2').sticky({topSpacing:98});
     } else {
       $('.sticky-js_v1').sticky({topSpacing:85});
+      $('.sticky-js_v2').sticky({topSpacing:90});
     }
-  }
-}, 100)
+//   }
+// }, 100)
 
 //change width last element
 let widthParent = [];

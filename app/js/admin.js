@@ -394,9 +394,9 @@ function changeWidthLastElement() {
 
       let paddingParent = +window.getComputedStyle(parents[i], null).getPropertyValue('padding-left').replace(/\D/g, "") + +window.getComputedStyle(parents[i], null).getPropertyValue('padding-right').replace(/\D/g, "")
 
-      let lastItem = children[children.length - 2];
-      let distanceLastItem = lastItem.offsetLeft + lastItem.clientWidth + paddingParent + +window.getComputedStyle(lastItem, null).getPropertyValue('margin-right').replace(/\D/g, "");
-      let widthInput = widthParent[i] - distanceLastItem;
+      let penultElement = children[children.length - 2];
+      let distancepenultElement = penultElement.offsetLeft + penultElement.clientWidth + paddingParent + +window.getComputedStyle(penultElement, null).getPropertyValue('margin-right').replace(/\D/g, "");
+      let widthInput = widthParent[i] - distancepenultElement;
 
       if (widthInput <= 35) {
         children[children.length - 1].style.width = '100%';

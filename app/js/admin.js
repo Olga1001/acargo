@@ -378,3 +378,32 @@ let isSticky = setInterval(() => {
     }
   }
 }, 100)
+
+//change width last element
+let widthParent = [];
+
+document.querySelectorAll('.elements').forEach(item => {
+  widthParent.push(item.clientWidth)
+})
+
+function changeWidthLastElement() {
+  if (widthParent.length > 0) {
+    let parents = document.querySelectorAll('.elements');
+    for (let i = 0; i < parents.length; i++) {
+      let children = [...parents[i].children];
+
+      let paddingParent = +window.getComputedStyle(parents[i], null).getPropertyValue('padding-left').replace(/\D/g, "") + +window.getComputedStyle(parents[i], null).getPropertyValue('padding-right').replace(/\D/g, "")
+
+      let lastItem = children[children.length - 2];
+      let distanceLastItem = lastItem.offsetLeft + lastItem.clientWidth + paddingParent + +window.getComputedStyle(lastItem, null).getPropertyValue('margin-right').replace(/\D/g, "");
+      let widthInput = widthParent[i] - distanceLastItem;
+
+      if (widthInput <= 35) {
+        children[children.length - 1].style.width = '100%';
+      } else {
+        children[children.length - 1].style.width = widthInput + 'px';
+      }
+    }
+  }
+}
+changeWidthLastElement()

@@ -366,7 +366,6 @@ $(document).ready(function () {
   });
 
 });
-
 //init Sticky
 let isSticky = setInterval(() => {
   if(typeof sticky == 'function') {

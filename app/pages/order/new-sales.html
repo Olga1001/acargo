@@ -859,10 +859,36 @@
                                             <div class="px-0 c-dark select__item input-normal text-left _1441_fs-16 d-flex ">Export declaration   <p class="weight-medium c-blue ml-3"> 450 EUR</p> </div>
                                             <p class="c-blue-gray fs-13 name top weight-medium">Extra service</p>
                                             <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option active">Lithvinia</li>
-                                                    <li class="select__option">New York</li>
-                                                </ul>
+                                                <div class="select__menu">
+                                                    <label class=" d-flex align-items-center hover__option py-1">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check_custom blue big mr-2"></span>
+                                                        <span class="">Select all</span>
+                                                    </label>
+                                                    <label class=" d-flex align-items-center hover__option py-1">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check_custom blue big mr-2"></span>
+                                                        <span class="">Export declaration  <span class="c-blue weight-medium"> 450 EUR</span> </span>
+                                                    </label>
+                                                    <label class=" d-flex align-items-center hover__option py-1">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check_custom blue big mr-2"></span>
+                                                        <span class="">Import declaration   <span class="c-blue weight-medium"> 150 EUR</span> </span>
+                                                    </label>
+                                                    <label class=" d-flex align-items-center hover__option py-1">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check_custom blue big mr-2"></span>
+                                                        <span class="">Cargo waybill  <span class="c-blue weight-medium"> 650 EUR</span> </span>
+                                                    </label>
+                                                    <label class=" d-flex align-items-center hover__option py-1">
+                                                        <input type="checkbox" class="checkbox">
+                                                        <span class="check_custom blue big mr-2"></span>
+                                                        <span class="">Cargo declaration <span class="c-blue weight-medium"> 890 EUR</span> </span>
+                                                    </label>
+                                                    <div class="px-3 py-1">
+                                                        <a href="#" class="br-4 text-center d-block c-blue p-2 bg-gray_8">+ Add new extra service </a>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="pt-3">
@@ -923,50 +949,981 @@
                                         <a class="nav-link fs-15 b-0 blue">Documents</a>
                                     </li>
                                 </ul>
-                                <div id="contents" class="contents pt-2">
+                                <div id="contents" class="contents py-2">
                                     <div class="contents__item active">
-                                        <div class="row bg-blue_05">
-                                            <div class="col-5">
+                                        <div class="row bg-blue_05 py-2 mx-0 sticky-js_v3">
+                                            <div class="col-6">
                                                 <div class="row">
-                                                    <div class="col-7">Product name</div>
-                                                    <div class="col-5">Price</div>
+                                                    <div class="col-8 pl-5">Product name</div>
+                                                    <div class="col-4">Price</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="row">
+                                                    <div class="col-3">Packing</div>
+                                                    <div class="col-2">Quantity</div>
+                                                    <div class="col-4">Temperature control</div>
+                                                    <div class="col-3">ADR</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row fs-14">
-                                            <div class="col-5">
-                                                <div class="row">
-                                                    <div class="col-8">
-                                                        <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
-                                                    </div>
-                                                    <div class="col-4">
-                                                        <div class="d-flex ">
-                                                            <div class="block_resize-input">
-                                                                <input type="text" class="input-normal text-left c-dark" value="1200">
+                                        <ul class="b-1 b-blue-light2 mb-4">
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                            <ul>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                            </ul>
+                                                            <a href="#" class="underline text-italic c-blue-gray">+ Add new order</a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="1200">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
                                                             </div>
-                                                            
-                                                            <div class="select h-fit b-0 br-0 pb-1 arrow-r-0 absolute r-0 bot-0 w-50p">
-                                                                <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                            <ul>
+                                                                <li class="pb-1">90</li>
+                                                                <li class="pb-1">10</li>
+                                                                <li class="pb-1">18</li>
+                                                            </ul>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="Pallet">
                                                                 <div class="select__drop">
                                                                     <ul class="select__menu">
-                                                                        <li class="select__option active">EUR</li>
-                                                                        <li class="select__option">USD</li>
-                                                                        <li class="select__option">UAH</li>
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
                                                         </div>
-                
+                                                        <div class="col-2">
+                                                            <p>118</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox" checked>
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                      
+                                                            <a href="#" class="underline text-italic c-blue-gray">Select order    </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="" placeholder=". . . . .">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                           
+                                                            <div class=" d-flex block_resize-input pb-2">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check_custom blue mr-2"></span>
+                                                                <span class="fs-14 c-gray">All the same orders</span>
+                                                            </label>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="" placeholder=". . . . .">
+                                                          
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                            <ul>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                            </ul>
+                                                            <a href="#" class="underline text-italic c-blue-gray">+ Add new order</a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="1200">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                            <ul>
+                                                                <li class="pb-1">90</li>
+                                                                <li class="pb-1">10</li>
+                                                                <li class="pb-1">18</li>
+                                                            </ul>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="Pallet">
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p>118</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox" checked>
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                      
+                                                            <a href="#" class="underline text-italic c-blue-gray">Select order    </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="" placeholder=". . . . .">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                           
+                                                            <div class=" d-flex block_resize-input pb-2">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check_custom blue mr-2"></span>
+                                                                <span class="fs-14 c-gray">All the same orders</span>
+                                                            </label>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="" placeholder=". . . . .">
+                                                          
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                            <ul>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                            </ul>
+                                                            <a href="#" class="underline text-italic c-blue-gray">+ Add new order</a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="1200">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                            <ul>
+                                                                <li class="pb-1">90</li>
+                                                                <li class="pb-1">10</li>
+                                                                <li class="pb-1">18</li>
+                                                            </ul>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="Pallet">
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p>118</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox" checked>
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                      
+                                                            <a href="#" class="underline text-italic c-blue-gray">Select order    </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="" placeholder=". . . . .">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                           
+                                                            <div class=" d-flex block_resize-input pb-2">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check_custom blue mr-2"></span>
+                                                                <span class="fs-14 c-gray">All the same orders</span>
+                                                            </label>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="" placeholder=". . . . .">
+                                                          
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 bb-1 b-blue-light2 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                            <ul>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                                <li class="pb-1">OR - AA45678905678   </li>
+                                                            </ul>
+                                                            <a href="#" class="underline text-italic c-blue-gray">+ Add new order</a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="1200">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                            <ul>
+                                                                <li class="pb-1">90</li>
+                                                                <li class="pb-1">10</li>
+                                                                <li class="pb-1">18</li>
+                                                            </ul>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="Pallet">
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <p>118</p>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox" checked>
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox" checked>
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row fs-14 mx-0 hover-b relative">
+                                                <button type="button" class="absolute t-0 r-0 py-2 px-3 hover z-1">
+                                                    <span class="bg-light-white3 br-2 wh-29 d-flex">
+                                                        <svg class="svg-sprite-icon c-blue m-auto" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                                        </svg>
+                                                    </span>
+                                                </button>
+                                                <div class="col-6">
+                                                    <div class="row py-2">
+                                                        <div class="col-8">
+                                                            <p class="weight-medium">Apple iPhone 11 64GB / MHDC3 Smartphone (White)</p>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Order</p>
+                                                      
+                                                            <a href="#" class="underline text-italic c-blue-gray">Select order    </a>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark mr-3" value="" placeholder=". . . . .">
+                                                                <div class="select h-fit b-0 arrow-r-8 w-50p">
+                                                                    <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                                                    <div class="select__drop">
+                                                                        <ul class="select__menu">
+                                                                            <li class="select__option active">EUR</li>
+                                                                            <li class="select__option">USD</li>
+                                                                            <li class="select__option">UAH</li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <br>
+                                                            <p class="weight-semi c-navy-blue pb-1">Quantity</p>
+                                                           
+                                                            <div class=" d-flex block_resize-input pb-2">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                            <label class="d-flex align-items-center">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="check_custom blue mr-2"></span>
+                                                                <span class="fs-14 c-gray">All the same orders</span>
+                                                            </label>
+                    
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6">
+                                                    <div class="row py-2 align-items-center">
+                                                        <div class="col-3">
+                                                            <div class="select h-fit b-0 arrow-r-0 block_resize-input w-fit-content">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="select__item input-normal text-left c-dark min-w-55" value="" placeholder=". . . . .">
+                                                          
+                                                                <div class="select__drop">
+                                                                    <ul class="select__menu">
+                                                                        <li class="select__option active">Pallet</li>
+                                                                        <li class="select__option">Pallet</li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-2">
+                                                            <div class=" d-flex block_resize-input">
+                                                                <div class="table__span" style="display: none;"></div>
+                                                                <input type="text" class="input-normal text-left c-dark" value="" placeholder=". . . . .">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4">
+                                                            <label class="h-fit">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="switch-yn d-flex green">
+                                                                    <span class="switch-n ">No</span>
+                                                                    <span class="switch-y">Yes</span>
+                                                                    <span class="switch-yn_circle "></span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                        <div class="col-3 pr-5">
+                                                            <div class="d-flex">
+                                                                <label class="mr-3 h-fit">
+                                                                    <input type="checkbox" class="checkbox">
+                                                                    <span class="switch-yn d-flex green">
+                                                                        <span class="switch-n ">No</span>
+                                                                        <span class="switch-y">Yes</span>
+                                                                        <span class="switch-yn_circle "></span>
+                                                                    </span>
+                                                                </label>
+                                                                <p>+ 5</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="contents__item ">
+                                        
+                                        <div class="row justify-content-between">
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Client
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
                                             </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Agent
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Consignee
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="row justify-content-between">
+
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Shipper
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Customs broker
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Transporter
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                        <div class="b-1 b-blue-light2 bg-light_v6 p-3 text-center lh-1 mb-4">
+                                            <p><span class="fs-18 c-blue weight-medium mr-2">Total amount</span> <span>13 000 EUR</span></p>
                                         </div>
                                     </div>
                                     <div class="contents__item ">
-                                     
-                                    </div>
-                                    <div class="contents__item ">
-                                     
+                                        <div class="row justify-content-between">
+                                            <div class="col-4 max-350 my-4">
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox" checked>
+                                                    <span>Sea Waybill</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span>Packing list</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span>Invoice</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span>Sea Waybill</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span>Packing list</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                                <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                    <input class="checkbox" type="checkbox">
+                                                    <span>Invoice</span>
+                                                    <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                        <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 my-4">
+                                                <div class="relative h-fit mt-4">
+                                                    <div class="absolute r-0 bot-0 bg-green c-white br-4 px-3 py-2">Add</div>
+                                                    <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="Cargo invoice">
+                                                    <p class="c-blue-gray fs-13 name weight-medium">New document</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="b-1 b-blue-light2 bg-light_v6 p-3 text-center lh-1 mb-4">
+                                            <p><span class="fs-18 c-blue weight-medium mr-2">Total amount</span> <span>13 000 EUR</span></p>
+                                        </div>
                                     </div>
                                 </div>
 

@@ -2013,6 +2013,8 @@ button {
   background-color: rgba(	249, 158, 4, 0.67); }
 .bg-orange_v3 {
   background-color: #FFEED0; }
+.bg-orange_v4  {
+  background: #FFF1D9;}
 .bg-light-green {
   background-color: rgba(73, 221, 170, 0.15); }
 .bg-light-green2 {
@@ -2435,6 +2437,8 @@ button {
   stroke: #fff!important}
 .stroke-gray {
   stroke: #B7BCD6;}
+.stroke-black {
+  stroke: #000000;}
 .c-blue-v1 {
   color: #24b1ff!important;
   fill: #24b1ff!important;  }
@@ -5418,6 +5422,10 @@ button {
   cursor: pointer;
   text-transform: uppercase; }
 
+  .nav-tabs_v2 .nav-link.active svg.c-black {
+    fill: #156CE4!important;}
+  .nav-tabs_v2 .nav-link.active svg.stroke-black {
+    stroke: #156CE4!important;}
 .nav-tabs_v3 .nav-link, .nav-link_v3 {
   padding: 10px 55px;
   border: none;
@@ -5432,11 +5440,9 @@ button {
     border-color: #156ce4!important;
     font-weight: 500;
     color: #156ce4; 
-    background-color: transparent;
-  }
+    background-color: transparent;}
   .nav-link.active.blue {
-    background-color: #156CE4!important;
-  }
+    background-color: #156CE4!important;}
  .nav-tabs_v3.b-blue-light2 .nav-link.active, .nav-tabs_v3.b-blue-light2 .nav-link_v3.active {
   border-color: #109CF1;
   color: #282E3B;
@@ -9055,12 +9061,16 @@ padding-top: 15px;}
   width: 18%!important;}
 .w-20 {
   width: 20%!important;}
+.w-22w {
+  width: 22%!important;}
 .w-30 {
   width: 30%!important;}
 .w-45 {
   width: 45%!important;}
 .w-55 {
   width: 55%!important;}
+.w-78w {
+  width: 78%!important;}
 .min-w-55 {
   min-width: 55px;}
 .pl-40 {
@@ -10326,7 +10336,42 @@ input.fs-14:-ms-input-placeholder  {
   z-index: 2;
   padding-left: 8px;
 }
-
+.breadcrumbs_v3 a {
+  width: 200px;
+  position: relative;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  line-height: 16px;
+  color: #67758D;
+  z-index: 2;
+}
+.breadcrumbs_v3 a:not(.active) {
+  margin-left: -30px;
+}
+.breadcrumbs_v3 a:not(.active):hover {
+  color: #156CE4;
+}
+.breadcrumbs_v3 a:before {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: url("../img/border_v3.svg") no-repeat center / 100%;
+}
+.breadcrumbs_v3 a.active {
+  color: #fff;
+  fill: #fff;
+  z-index: 3;
+}
+.breadcrumbs_v3 a.active:before {
+  background-image: url("../img/border_v3-green.svg") 
+}
 .rating {
   display: flex;
   justify-content: center;
@@ -10444,7 +10489,7 @@ input.fs-14:-ms-input-placeholder  {
 }
 .nav-tabs a.active {
   font-weight: 500;
-  border-color: #156CE4;
+  border-color: #156CE4!important;
 }
 .loaded-logo {
   background: #FFFFFF;
@@ -10947,6 +10992,21 @@ input.fs-14:-ms-input-placeholder  {
 }
 .line-through {
   text-decoration: line-through;
+}
+
+.nav-tabs_v12 a {
+  border-bottom: 3px solid rgba(183, 188, 214, 0.59);
+  color: #000000;
+}
+.nav-tabs_v12 a.active {
+  font-weight: 500;
+  color: #000000;
+}
+.nav-tabs_v12 a.active svg.stroke-black{
+  stroke: #156CE4!important;
+}
+.nav-tabs_v12 a.active svg.c-black{
+  fill: #156CE4!important;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

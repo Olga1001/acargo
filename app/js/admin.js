@@ -365,23 +365,20 @@ $(document).ready(function () {
     resizeForText.call($this, $this.val());
   });
 
+
 });
-//init Sticky
-let isSticky = setInterval(() => {
-  // console.log(isSticky)
-  // console.log(typeof )
-  if(typeof sticky == 'function') {
-    clearInterval(isSticky)
-    console.log('true')
-    if (window.matchMedia("(min-width: 1281px)").matches) {
-      $('.sticky-js_v1').sticky({topSpacing:94});
-      $('.sticky-js_v2').sticky({topSpacing:98});
-      $('.sticky-js_v3').sticky({topSpacing:60});
-    } else {
-      $('.sticky-js_v1').sticky({topSpacing:85});
-      $('.sticky-js_v2').sticky({topSpacing:90});
-    }
-  }
+$(document).ready(function() {
+  //init Sticky
+  // let isSticky = setInterval(() => {
+    // if(typeof sticky == 'Function') {
+      // clearInterval(isSticky)   
+      console.log(typeof sticky)
+        $('.sticky-js_v1').sticky({topSpacing: $('.header').height() + $('.menu-dropdown').height()});
+        $('.sticky-js_v2').sticky({topSpacing: $('.header').height() + $('.fix-top-tabs').height()});
+        $('.sticky-js_v3').sticky({topSpacing: $('.header').height()});
+     
+    // }
+  // })
 })
 
 //change width last element

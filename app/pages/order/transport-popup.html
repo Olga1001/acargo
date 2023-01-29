@@ -14,7 +14,7 @@
 </head>
 <body id="page-top">
 <div id="wrapper">
-    <div class="overlay"></div>
+    <div class="overlay show" data-toggle="collapse" data-target=".popup-item, .overlay"></div>
     <header class="header d-flex justify-content-between align-items-center ">
         <div class="d-flex align-items-center">
             <a href="#" class="logo pb-1">
@@ -627,10 +627,6 @@
                                                 <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
                                                 <p class=" text-truncate">Klaipeda, LT, 12/3 New Sovetskaya street, 345678 ...</p>
                                             </div>
-                                            <div class="d-flex align-items-center mb-2">
-                                                <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                <p class=" text-truncate">Klaipeda, LT, 12/3 New Sovetskaya street, 345678 ...</p>
-                                            </div>
                                             <p class="fs-13 c-blue-gray mb-1"><span class="weight-medium">ETD  </span> 29 Apr. 2021</p>
                                             <p class="fs-13 c-blue-gray"><span class="weight-medium">CUT-OFF </span> 19 Apr. 2021</p>
                                         </div>
@@ -642,10 +638,6 @@
                                         </div>
                                         <div class="col-5 pr-0">
                                             <div class="d-flex align-items-center mb-2 ">
-                                                <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                <p class=" text-truncate">Klaipeda, LT, 12/3 New Sovetskaya street, 345678 ...</p>
-                                            </div>
-                                            <div class="d-flex align-items-center mb-2">
                                                 <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
                                                 <p class=" text-truncate">Klaipeda, LT, 12/3 New Sovetskaya street, 345678 ...</p>
                                             </div>
@@ -703,10 +695,10 @@
                                 <ul class="nav nav-tabs_v12 text-center sticky-js_v2">
                                     <li class="nav-item w-50">
                                         <a class="nav-link active">
-                                            <svg class="svg-sprite-icon c-black mr-2" alt="icon" width="17px" height="17px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boxes"></use>
+                                            <svg class="svg-sprite-icon c-black mr-2" alt="icon" width="13px" height="13px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#road-line"></use>
                                             </svg>
-                                            Products  
+                                            Transport order  
                                         </a>
                                     </li>
                                     <li class="nav-item w-50">
@@ -714,156 +706,167 @@
                                             <svg class="svg-sprite-icon stroke-black mr-2" alt="icon" width="12px" height="17px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#transaction-order2"></use>
                                             </svg>
-                                            Order No.
+                                            Order details
                                         </a>
                                     </li>
                                 </ul>
                                 <div id="contents" class="contents py-2">
                                     <div class="contents__item active">
                                         <div class="row bg-pale-azure py-2 px-1 fs-14 c-blue-gray weight-medium mx-0">
-                                            <div class="col-7">
-                                                <div class="row">
-                                                    <div class="col-6">Name</div>
-                                                    <div class="col-3">Price</div>
-                                                    <div class="col-3">Container type</div>
-                                                </div>
-                                            </div>
-                                            <div class="col-5">Quantity</div>
+                                            <div class="col-5">Name </div>
+                                            <div class="col-2">Price</div>
+                                            <div class="col-2">Container type</div>
+                                            <div class="col-3">Quantity</div>
                                         </div>
                                         <ul class="fs-14 b-1 b-blue-light2 lh-1_5">
-                                            <li class="row b-blue-light2 bb-1 py-2 align-items-center mx-0 px-1 relative">
-                                                <div class="col-7">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-6">Apple iPhone 11 256GB Restored Grade B Breezy White</div>
-                                                        <div class="col-3">1300 EUR</div>
-                                                        <div class="col-3">Pallet</div>
+                                            <li class="row b-blue-light2 bb-1 py-1 align-items-center mx-0 px-1 ">
+                                                <div class="col-12 pb-1">
+                                                    <p class="c-blue weight-medium fs-16">Transport amount</p>
+                                                </div>
+                                                <div class="col-12 pb-1">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">New York, USA</p>
+                                                                </div>
+                                                                <svg class="svg-sprite-icon c-gray stroke-gray mx-auto" alt="icon" width="13px" height="6px">
+                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
+                                                                </svg>
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">Klaipeda, LT </p>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
-                                                <div class="col-5">30</div>
-                                                <div class="absolute r-0 t-center fs-13 pr-4 mr-2 d-flex align-items-center">
-                                                    <svg class="svg-sprite-icon c-blue mr-2" alt="icon" width="16px" height="16px">
-                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#temperature"></use>
-                                                    </svg>
-                                                    +5 - +8
-                                                </div>
-                                            </li>
-                                            <li class="row b-blue-light2 bb-1 py-2 align-items-center mx-0 px-1 relative">
-                                                <div class="col-7">
-                                                    <div class="row align-items-center">
-                                                        <div class="col-6">Apple iPhone 11 256GB Restored Grade B Breezy White</div>
-                                                        <div class="col-3">1300 EUR</div>
-                                                        <div class="col-3">Pallet</div>
+                                                <div class="col-12 pb-1">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">New York, USA</p>
+                                                                </div>
+                                                                <svg class="svg-sprite-icon c-gray stroke-gray mx-auto" alt="icon" width="13px" height="6px">
+                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
+                                                                </svg>
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">Klaipeda, LT </p>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
-                                                <div class="col-5">30</div>
-                                                <div class="absolute r-0 t-center fs-13 pr-4 mr-2 d-flex align-items-center">
-                                                    <svg class="svg-sprite-icon c-blue mr-2" alt="icon" width="24px" height="24px">
-                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#adr-orange"></use>
-                                                    </svg>
-                                                    +5 - +8
+                                                <div class="col-12">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">
+                                                            <div class="row align-items-center">
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">New York, USA</p>
+                                                                </div>
+                                                                <svg class="svg-sprite-icon c-gray stroke-gray mx-auto" alt="icon" width="13px" height="6px">
+                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
+                                                                </svg>
+                                                                <div class="col-5 d-flex align-items-center pr-0">
+                                                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                                    <p class="fs-15">Klaipeda, LT </p>
+                                                                </div>
+                                                            </div>
+                                                         </div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
+                                                    </div>
                                                 </div>
                                             </li>
                                             <li class="row b-blue-light2 bb-1 py-1 align-items-center mx-0 px-1 ">
                                                 <div class="col-12 pb-1">
-                                                    <p class="c-blue weight-medium fs-15">Extra service</p>
+                                                    <p class="c-blue weight-medium fs-16">Pick up </p>
                                                 </div>
-                                                <div class="col-12">
+                                                <div class="col-12 pb-1">
                                                     <div class="row">
-                                                        <div class="col-7">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-6">
-                                                                    <p>Export declaration</p>
-                                                                </div>
-                                                                <div class="col-3">1300 EUR</div>
-                                                                <div class="col-3">Pallet</div>
-                                                            </div>
+                                                        <div class="col-5 d-flex align-items-center pr-0">
+                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                            <p class="fs-15">New York, USA</p>
                                                         </div>
-                                                        <div class="col-5">12</div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="row">
-                                                        <div class="col-7">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-6">
-                                                                    <p>Import declaration</p>
-                                                                </div>
-                                                                <div class="col-3">1300 EUR</div>
-                                                                <div class="col-3">Pallet</div>
-                                                            </div>
+                                                        <div class="col-5 d-flex align-items-center pr-0">
+                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                            <p class="fs-15">New York, 12/3 New Sovetskaya street, 345678 </p>
                                                         </div>
-                                                        <div class="col-5">12</div>
-                                                    </div>
-                                                </div><div class="col-12">
-                                                    <div class="row">
-                                                        <div class="col-7">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-6">
-                                                                    <p>Cargo tax</p>
-                                                                </div>
-                                                                <div class="col-3">1300 EUR</div>
-                                                                <div class="col-3">Pallet</div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-5">12</div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
-                                                
                                             </li>
                                             <li class="row b-blue-light2 bb-1 py-1 align-items-center mx-0 px-1 ">
                                                 <div class="col-12 pb-1">
-                                                    <p class="c-blue weight-medium fs-15">Transport amount</p>
+                                                    <p class="c-blue weight-medium fs-16">Delivery </p>
                                                 </div>
                                                 <div class="col-12 pb-1">
                                                     <div class="row">
-                                                        <div class="col-7">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-6 pr-0">
-                                                                    <div class="row align-items-center">
-                                                                        <div class="col-5 d-flex align-items-center pr-0">
-                                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                                            <p class="fs-15">New York, USA</p>
-                                                                        </div>
-                                                                        <svg class="svg-sprite-icon c-gray stroke-gray mx-auto" alt="icon" width="13px" height="6px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
-                                                                        </svg>
-                                                                        <div class="col-5 d-flex align-items-center pr-0">
-                                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                                            <p class="fs-15">Klaipeda, LT </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-3">900 EUR</div>
-                                                                <div class="col-3">Pallet</div>
-                                                            </div>
+                                                        <div class="col-5 d-flex align-items-center pr-0">
+                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                            <p class="fs-15">Klaipeda, LT </p>
                                                         </div>
-                                                        <div class="col-5">12</div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
                                                 <div class="col-12">
                                                     <div class="row">
-                                                        <div class="col-7">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-6 pr-0">
-                                                                    <div class="row align-items-center">
-                                                                        <div class="col-5 d-flex align-items-center pr-0">
-                                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                                            <p class="fs-15">New York, USA</p>
-                                                                        </div>
-                                                                        <svg class="svg-sprite-icon c-gray stroke-gray mx-auto" alt="icon" width="13px" height="6px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
-                                                                        </svg>
-                                                                        <div class="col-5 d-flex align-items-center pr-0">
-                                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
-                                                                            <p class="fs-15">Klaipeda, LT </p>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-3">900 EUR</div>
-                                                                <div class="col-3">Pallet</div>
-                                                            </div>
+                                                        <div class="col-5 d-flex align-items-center pr-0">
+                                                            <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                                            <p class="fs-15">Klaipeda, LT, 12/3 New Sovetskaya street, 345678  </p>
                                                         </div>
-                                                        <div class="col-5">12</div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="row b-blue-light2 bb-1 py-1 align-items-center mx-0 px-1 ">
+                                                <div class="col-12 pb-1">
+                                                    <p class="c-blue weight-medium fs-16">Extra service</p>
+                                                </div>
+                                                <div class="col-12 pb-1">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">Export declaration </div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pb-1">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">Import declaration </div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pb-1">
+                                                    <div class="row">
+                                                        <div class="col-5 pr-0">Cargo tax</div>
+                                                        <div class="col-2">900 EUR</div>
+                                                        <div class="col-2">Pallet</div>
+                                                        <div class="col-3">12</div>
                                                     </div>
                                                 </div>
                                             </li>
@@ -1473,6 +1476,140 @@
                         </div>
                       </div>
                     <!-- content -->
+                </div>
+
+                <div class="popup-item px-0 pt-5 collapse show max-450 bg-white">
+                    <div class="py-3 px-4 sticky">
+                        <a href="#" class="d-block mb-3 collapsed" data-toggle="collapse" data-target=".popup-item, .overlay">
+                            <svg class="svg-sprite-icon c-gray stroke-gray scale-x" alt="icon" width="16px" height="13px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right"></use>
+                            </svg>
+                        </a>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <a href="#" class="fs-18 weight-semi link-customer">Acargo Company</a>
+                            <div class="d-flex">
+                                <a href="#" class="wh-24 br-4 hover-bg-light d-flex ml-1 mt-1">
+                                    <svg class="svg-sprite-icon c-blue-gray m-auto blue" width="15px" height="15px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="wh-24 br-4 hover-bg-light d-flex ml-1 mt-1">
+                                    <svg class="svg-sprite-icon c-blue-gray m-auto blue" width="16px" height="16px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#share2"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="wh-24 br-4 hover-bg-light d-flex ml-1 mt-1">
+                                    <svg class="svg-sprite-icon c-blue-gray m-auto blue" width="16px" height="16px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="lh-1_7 fs-14">
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                </svg>
+                                <p>Acargo Logistic</p>
+                            </div> 
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#call-3"></use>
+                                </svg>
+                                <p>+ 495 458 88 88</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#alternate-email"></use>
+                                </svg>
+                                <p>acargo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-4 lh-1_7">
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">Сountry</p>
+                            <div class="col-6 d-flex align-items-center">
+                                <img src="../../img/flag.svg" alt="flag" class="mr-2" width="16px" height="16px">
+                                <p class="fs-14">Lithvinia</p>
+                            </div>
+                        </div>
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">City</p>
+                            <p class="col-6 fs-14">345678, Klaipeda</p>
+                        </div>
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">Address 1</p>
+                            <p class="col-6 fs-14">12/3 New Street, 345678</p>
+                        </div>
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">Address 2</p>
+                            <p class="col-6 fs-14">12/3 New Street, 345678</p>
+                        </div>
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">TAX ID</p>
+                            <p class="col-6 fs-14">AV-2345678906</p>
+                        </div>
+                        <div class="row py-1">
+                            <p class="weight-medium c-blue-gray col-6">Registration No.</p>
+                            <p class="col-6 fs-14">BB-3456700086</p>
+                        </div>
+                    </div>
+
+                    <hr class="bg-blue_05 py-1 b-0 m-0"> 
+                    <div class="p-4 lh-1_7">
+                        <p class="weight-medium ">
+                            <span class="c-blue">Irina Livinenko </span> <span class="c-blue-gray">(Manager)</span>
+                        </p>
+                        <div class="fs-14 pb-4 mb-2">
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#call-3"></use>
+                                </svg>
+                                <p>+ 495 458 88 88</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#alternate-email"></use>
+                                </svg>
+                                <p>acargo@gmail.com</p>
+                            </div>
+                        </div>
+                        <p class=" weight-medium ">
+                            <span class="c-blue">Irina Livinenko </span> <span class="c-blue-gray">(Transporter)</span>
+                        </p>
+                        <div class="fs-14 pb-4 mb-2">
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#call-3"></use>
+                                </svg>
+                                <p>+ 495 458 88 88</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#alternate-email"></use>
+                                </svg>
+                                <p>acargo@gmail.com</p>
+                            </div>
+                        </div>
+                        <p class=" weight-medium ">
+                            <span class="c-blue">Irina Livinenko </span> <span class="c-blue-gray">(Account)</span>
+                        </p>
+                        <div class="fs-14 pb-4 mb-2">
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#call-3"></use>
+                                </svg>
+                                <p>+ 495 458 88 88</p>
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <svg class="svg-sprite-icon mr-2" width="13px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#alternate-email"></use>
+                                </svg>
+                                <p>acargo@gmail.com</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

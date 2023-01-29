@@ -123,7 +123,7 @@ img {
   -webkit-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   transition: all 0.3s ease; }
-.overlay.active {
+.overlay.active, .overlay.show {
   opacity: 1;
   pointer-events: auto;}
   .breadcrumbs-nav {
@@ -1560,9 +1560,9 @@ button {
 
 .text-t-up {
   text-transform: uppercase;}
-.link-castomer {
+.link-customer {
   color: #282E3B;}
-.link-castomer:hover {
+.link-customer:hover {
   text-decoration: underline;
   color: #156ce4;}
 .link {
@@ -7755,6 +7755,8 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
     background-color: #ffffff!important;}
 .collapsed.collapsed-bg {
   background-color: #ffffff;}
+.collapsed-bg-light:not(.collapsed) {
+  background-color: rgba(36, 177, 255, 0.116368);}
 .table__order-main.collapsed.collapsed-bg .table__item, .table__order-main.collapsed.collapsed-bg .table__item__last{
   background-color: transparent;
   border-color: #b7bcd6 #fff #b7bcd6 transparent;}
@@ -8331,7 +8333,7 @@ button.collapsed[data-toggle="collapse"] .arrow-drop{
   width: 100%;
   max-width: 400px;}
 .max-450 {
-  max-width: 450px;}
+  max-width: 450px!important;}
 .max-455 {
   max-width: 455px;}
 .way6 .slider-tick-label:first-child img{
@@ -9428,7 +9430,7 @@ padding-top: 15px;}
   box-shadow: 0 0 12px 2px rgba(21, 108, 228, 0.33);}
 .hover-shadow-2:hover {
   box-shadow: 0px 0px 7px rgba(21, 108, 228, 0.56);}
-.hover-shadow-2:hover .link-castomer {
+.hover-shadow-2:hover .link-customer, .link-customer:hover {
   color: #156CE4!important;
   text-decoration-line: underline;}
 .hover-b .hover, .hover-bg-light .hover, .hover-shadow .hover {
@@ -9607,7 +9609,7 @@ padding-top: 15px;}
   position: fixed;
   top: 60px;
   left: 0;
-  z-index: 8;
+  z-index: 10;
   width: 100%;
   transition: all 0.2s ease;}
 .fix-top-tabs.active {
@@ -10944,7 +10946,7 @@ input.fs-14:-ms-input-placeholder  {
   transform: scale(1.1);
   box-shadow: 0px 0px 18px 2px rgba(21, 108, 228, 0.35);
 }
-.popup-filter {
+.popup-item {
   position: fixed;
   top: 60px;
   right: 0;
@@ -10961,7 +10963,7 @@ input.fs-14:-ms-input-placeholder  {
   transform: translateX(100px);
   pointer-events: none;
 }
-.popup-filter.show {
+.popup-item.show {
   opacity: 1;
   pointer-events: auto;
   transform: translateX(0);
@@ -12020,7 +12022,7 @@ input.fs-14:-ms-input-placeholder  {
     font-size: 14px;}
   }
 @media only screen and (max-width: 1280px) {
-  .popup-filter {
+  .popup-item {
     top: 52px;
     height: calc(100vh - 52px);}
   .h-100vh_60 {

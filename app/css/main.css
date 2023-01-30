@@ -928,7 +928,7 @@ button {
   border-color: #141515 transparent transparent transparent;
   margin-left: 5px; }
   .arrow-drop.b-gray {
-    border-color: #b7bcd6 transparent transparent transparent; }
+    border-color: #b7bcd6 transparent transparent transparent!important; }
 
 #box {
   width: 100%; }
@@ -7631,13 +7631,13 @@ button {
 .text-break-all p, .text-break-all{
   word-break: break-all;
 }
-button[data-toggle="collapse"] .arrow-drop.t-center{
+[data-toggle="collapse"] .arrow-drop.t-center{
   transform: translateY(-50%) scaleY(-1);}
-button.collapsed[data-toggle="collapse"] .arrow-drop.t-center{
+.collapsed[data-toggle="collapse"] .arrow-drop.t-center{
   transform: translateY(-50%) scaleY(1);}
-button[data-toggle="collapse"] .arrow-drop{
+[data-toggle="collapse"] .arrow-drop{
   transform: scaleY(-1);}
-button.collapsed[data-toggle="collapse"] .arrow-drop{
+.collapsed[data-toggle="collapse"] .arrow-drop{
   transform: scaleY(1);}
 .max-360 {
   max-width: 360px;
@@ -10361,10 +10361,13 @@ input.fs-14:-ms-input-placeholder  {
   font-size: 14px;
   line-height: 16px;
   color: #67758D;
-  z-index: 2;
+  z-index: 3;
 }
-.breadcrumbs_v3 a:not(.active) {
+.breadcrumbs_v3 a {
   margin-left: -30px;
+}
+.breadcrumbs_v3 li:first-child a {
+  margin-left: 0;
 }
 .breadcrumbs_v3 a:not(.active):hover {
   color: #156CE4;

@@ -260,6 +260,19 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
+  let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').height() : 0,
+      fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').height() : 0,
+      headerHeight = $('.header').length ? $('.header').height() : 0;
+
+  let sumHeight = headerHeight + fixTopHeight + menuDropdownHeight;
+
+  if ($('.sticky-js_v1').length){
+    console.log(sumHeight)
+    $('.sticky-js_v1').sticky({topSpacing:sumHeight});
+  }
+});
+
+$(document).ready(function () {
 
   $(".btn-filter").click(function (e) {
     e.preventDefault();
@@ -366,15 +379,9 @@ $(document).ready(function () {
   });
 
 
-  let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').height() : 0,
-      fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').height() : 0;
-
-  if ($('.sticky-js_v1').length){
-    console.log($('.header').height() + fixTopHeight + menuDropdownHeight)
-    $('.sticky-js_v1').sticky({topSpacing: $('.header').height() + fixTopHeight + menuDropdownHeight});
-  }
 
 });
+
 
 //change width last element
 let widthParent = [];

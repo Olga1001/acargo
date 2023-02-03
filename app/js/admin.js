@@ -366,20 +366,15 @@ $(document).ready(function () {
   });
 
 
+  let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').height() : 0,
+      fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').height() : 0;
+
+  if ($('.sticky-js_v1').length){
+    console.log($('.header').height() + fixTopHeight + menuDropdownHeight)
+    $('.sticky-js_v1').sticky({topSpacing: $('.header').height() + fixTopHeight + menuDropdownHeight});
+  }
+
 });
-$(document).ready(function() {
-  //init Sticky
-  // let isSticky = setInterval(() => {
-    // if(typeof sticky == 'Function') {
-      // clearInterval(isSticky)   
-      console.log(typeof sticky)
-        $('.sticky-js_v1').sticky({topSpacing: $('.header').height() + $('.menu-dropdown').height()});
-        $('.sticky-js_v2').sticky({topSpacing: $('.header').height() + $('.fix-top-tabs').height()});
-        $('.sticky-js_v3').sticky({topSpacing: $('.header').height()});
-     
-    // }
-  // })
-})
 
 //change width last element
 let widthParent = [];

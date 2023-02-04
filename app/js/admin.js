@@ -378,10 +378,22 @@ $(document).ready(function () {
     resizeForText.call($this, $this.val());
   });
 
+  //set height
+  function setHeight(el, head) {
+    let sumHeight = 0;
+    document.querySelectorAll(head).forEach(item => sumHeight += item.offsetHeight);
 
+    let elHeight = document.querySelector(el).offsetHeight,
+        heightToEl = window.innerHeight - elHeight + sumHeight;
+
+    document.querySelector(el).style.height = `calc(100vh - ${heightToEl}px)`
+  }
+
+  if (document.querySelector('.h-calc_1') != null && document.querySelector('.head') != null) {
+    setHeight('.h-calc_1', '.head')
+  }
 
 });
-
 
 //change width last element
 let widthParent = [];

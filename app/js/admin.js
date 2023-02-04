@@ -379,7 +379,7 @@ $(document).ready(function () {
   });
 
   //set height
-  function setHeight(el, head) {
+  function setHeight(el) {
     let sumHeight = 0;
     if (document.querySelector('.head') != null) {
       document.querySelectorAll('.head').forEach(item => sumHeight += item.offsetHeight);

@@ -7764,6 +7764,34 @@ button {
   width: 400px;}
 .w-500 {
   width: 500px;}
+.collapsed-v1 {
+  background-color: #F6FCFF;
+  border: 1px solid #156CE4;
+}
+.collapsed-v1 .hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+.collapsed.collapsed-v1 .hover {
+  opacity: 0;
+  pointer-events: none;
+}
+.collapsed-v1:hover .hover {
+  opacity: 1;
+  pointer-events: auto;
+}
+.collapsed.collapsed-v1:hover {
+  background-color: #F6FCFF;
+}
+.collapsed-v1 + .collapse {
+  border: 1px solid #156CE4;
+  border-top: none;
+}
+.collapsed.collapsed-v1 {
+  border: 1px solid rgba(16, 156, 241, 0.332195);
+  border-top: none;
+  background-color: transparent;
+}
   .collapsed-bg {
     background-color: #f8fcfe;}
   .collapsed-bg-white:not(.collapsed) {
@@ -7882,6 +7910,8 @@ button {
   max-width: 610px;}
 .min-w-100px{
   min-width: 100px!important;}
+.max-630 {
+  max-width: 630px;}
 .max-650 {
   max-width: 650px;}
 .max-725 {

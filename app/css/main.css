@@ -11079,9 +11079,6 @@ input.fs-14:-ms-input-placeholder  {
 .left-menu, .right-table, .h-calc_1 {
   overflow-y: auto;
   height: calc(100vh - 60px - 24px - 1rem - 1.5rem);}
-.elements > div {
-  height: 28px;
-}
 .elements.active > div {
   width: 50%;
 }
@@ -11090,6 +11087,10 @@ input.fs-14:-ms-input-placeholder  {
 }
 .elements.active > input, .elements > input.w-100 {
   display: block;
+}
+.elements.active > div {
+  height: 32px;
+  overflow: hidden;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -11403,8 +11404,9 @@ input.fs-14:-ms-input-placeholder  {
     width: 182px;}
 }
 @media only screen and (max-width: 1440px) {
-  .elements > div {
-    height: 26.2px;
+  .elements.active > div {
+    height: 30.2px;
+    overflow: hidden;
   }
   .h-100-317 {
     height: calc(100vh - 285px);

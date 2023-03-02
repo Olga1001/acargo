@@ -126,7 +126,7 @@ $(document).ready(function () {
   $(".btn").click(function () {
     $(this).addClass('active').siblings().removeClass('active');
   });
-  $(".select__item").click(function () {
+  $(".select__item").click(function (e) {
     $(this).closest(".select").toggleClass('active').find(".select__drop").first().slideToggle(300).parents().siblings().find(".select").removeClass('active').find(".select__drop").slideUp(300);
   });
   $(".link-share").click(function (e) {
@@ -159,6 +159,7 @@ $(document).ready(function () {
     $(".drop").removeClass('active');
     $(".select__drop").slideUp(300);
     $(".select").removeClass('active');
+    $(".elements").removeClass('active');
   });
   $(".transport__weight-item input").on("change keyup", function (e) {
     var $this = $(this),
@@ -396,33 +397,32 @@ $(document).ready(function () {
   }
 
 });
-
-
-//change width last element
-let widthParent = [];
-
-document.querySelectorAll('.elements').forEach(item => {
-  widthParent.push(item.clientWidth)
-})
-
-function changeWidthLastElement() {
-  if (widthParent.length > 0) {
-    let parents = document.querySelectorAll('.elements');
-    for (let i = 0; i < parents.length; i++) {
-      let children = [...parents[i].children];
-
-      let paddingParent = +window.getComputedStyle(parents[i], null).getPropertyValue('padding-left').replace(/\D/g, "") + +window.getComputedStyle(parents[i], null).getPropertyValue('padding-right').replace(/\D/g, "")
-
-      let penultElement = children[children.length - 2];
-      let distancepenultElement = penultElement.offsetLeft + penultElement.clientWidth + paddingParent + +window.getComputedStyle(penultElement, null).getPropertyValue('margin-right').replace(/\D/g, "");
-      let widthInput = widthParent[i] - distancepenultElement;
-
-      if (widthInput <= 35) {
-        children[children.length - 1].style.width = '100%';
-      } else {
-        children[children.length - 1].style.width = widthInput + 'px';
-      }
-    }
+//change width child elements
+function changeWidthInput(item) {
+  if (item.children[0].children.length > 0) {
+    item.children[0].classList.remove('w-0')
+    item.children[1].classList.add('w-50')
+  } else {
+    item.children[0].classList.add('w-0')
+    item.children[1].classList.add('w-100')
+    item.children[1].focus()
   }
 }
-changeWidthLastElement()
+//multiple selection
+document.querySelectorAll('.elements').forEach(item => {
+  changeWidthInput(item)
+  item.addEventListener('click', () => {
+      changeWidthInput(item)
+      item.classList.toggle('active')
+      item.children[1].focus()
+  })
+})
+//remove item elements
+document.querySelectorAll('.elements__close').forEach(closeItem => {
+  closeItem.addEventListener('click', (e) => {
+    e.stopImmediatePropagation();
+    let item = closeItem.closest('.elements')
+    closeItem.parentElement.remove();
+    changeWidthInput(item)
+  })
+})

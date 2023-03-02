@@ -9102,7 +9102,8 @@ padding-top: 15px;}
   color: #141515!important;}
 .w-25px {
   width: 25px!important;}
-
+.w-0 {
+  width: 0!important;}
 .w-10 {
   width: 10%!important;}
 .w-14w {
@@ -11077,6 +11078,18 @@ input.fs-14:-ms-input-placeholder  {
 .left-menu, .right-table, .h-calc_1 {
   overflow-y: auto;
   height: calc(100vh - 60px - 24px - 1rem - 1.5rem);}
+.elements {
+  min-height: 36px;
+}
+.elements.active > div {
+  width: 50%;
+}
+.elements > input {
+  display: none;
+}
+.elements.active > input, .elements > input.w-100 {
+  display: block;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -11977,7 +11990,8 @@ input.fs-14:-ms-input-placeholder  {
     /* height: 32px; */
     padding: 6.5px 13px;
     font-size: 14px;}
-    
+  .input-date {
+    padding: 7px 45px 7px 13px;}
   .form-search {
     height: 32px; }
   .form-search:hover button, .form-search input:focus ~ button, .form-search.active button {

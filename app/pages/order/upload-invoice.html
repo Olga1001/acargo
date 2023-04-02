@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+<head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="../../css/libs.min.css" rel="stylesheet">
+    <!--    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">-->
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+</head>
+<body id="page-top">
+<div id="wrapper">
+    <div class="overlay"></div>
+    <header class="header d-flex justify-content-between align-items-center ">
+        <div class="d-flex align-items-center">
+            <a href="#" class="logo pb-1">
+                <img src="../../img/logo/logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                    <li class="menu-list relative">
+                        <a href="#" class="mune-item">Orders</a>
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates </a></li>
+                                <li><a href="#" class="mr-4">Transport rates  </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list relative">
+                        <a href="#" class="mune-item">Rate (18)</a>
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                <li><a href="#" class="mr-4">Requests (858)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                </ul>
+
+            </nav>
+            <div class="dropdown no-arrow ">
+                <div class="py-3 py-2_1280 circle dropdown-toggle d-flex" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                    <span class="circle-span bg-white"></span>
+                    <span class="circle-span bg-white"></span>
+                    <span class="circle-span bg-white"></span>
+                </div>
+                <div class="dropdown-menu animated--grow-in p-0 overflow-visible mt-5 mt-4_1280" aria-labelledby="menuDropdown">
+                    <ul class="dropdown-lv1 py-1">
+                        <li>
+                            <a href="#" class="dropdown-lv1_item">Public</a>
+                            <ul class="dropdown-lv2 pb-1">
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Public 1</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Public 2</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-lv1_item ">Finance</a>
+                            <ul class="dropdown-lv2 pb-1">
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Networks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Finance</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Networks</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="dropdown-lv2_item">Finance</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#" class="dropdown-lv1_item ">Networks</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex align-items-center">
+            <div class="d-flex align-items-center py-1">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#search"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="currenty ml-3">
+                    <div class="select b-0 h-100">
+                        <div class="select__item c-white pl-3">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-dark">
+                                <li class="select__option c-white active">USD</li>
+                                <li class="select__option c-white">EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price c-white">1,35 EUR</div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center ml-3 pl-1 py-2">
+                <div class="px-1 dropdown no-arrow right-sticky">
+                    <a href="#" class=" dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#notepad"></use>
+                        </svg>
+                    </a>
+
+                    <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                        <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">To-do list</h6>
+                            <div class="d-flex align-items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="px-3">
+                    <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                        <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                    </svg>
+                </div>
+                <div class="px-2 dropdown no-arrow right-sticky">
+                    <a href="#" class="dropdown-toggle" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="16px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#mail"></use>
+                        </svg>
+                        <div class="bg-green count-message">4</div>
+                    </a>
+
+                    <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                            <div class="d-flex align-items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <div class="p-2">
+                                <div class="px-1">
+                                    <input type="text" class="input-search py-2 h-auto b-blue-v3">
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2 b-1 b-blue">
+                                    <div class="p-1 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small bg-gray"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small bg-gray"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 d-flex justify-content-between align-items-center">
+                                        <div class="d-flex align-items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2 dropdown no-arrow ml-1 right-sticky">
+                    <a href="#" class="dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#notification-2"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                        <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">Notifications</h6>
+                            <div class="d-flex align-items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <a class="dropdown-item p-2 c-dark " href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item p-2 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item p-2 c-dark bg-light_v10" href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="px-2">
+                    <a href="#">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="dropdown no-arrow">
+                    <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                        <span class="circle-span bg-gray"></span>
+                    </div>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>
+                        <div class="row px-3 py-3 mt-1 mx-0">
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager active">
+                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="d-flex align-items-center btn-manager">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    .Client
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="d-flex flex-column" id="content-wrapper">
+        <div id="content">
+            <div class="container-fluid p-0" id="container-wrapper">
+                <div id="box">
+                 
+                    <!-- content -->
+                </div>
+                <div class="popup-h d-flex py-3">
+                    <div class="box-white p-2 max-570 w-100 m-auto active">
+                        <a href="#" class="mb-4 d-block">
+                            <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto" width="18px" height="18px">
+                        </a>
+                        <div class="max-450 mx-auto py-1">
+                            <h3 class="weight-medium text-center mb-1">Upload invoice</h3>
+                            <div class="row pb-3">
+                                <div class="pt-3 col-6 pr-4">
+                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                        <input type="text" class="select__item input-normal text-left c-dark" value="OR - 2345678678">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Order</p>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">OR - 2345678678</li>
+                                                <li class="select__option">OR - 2345678678</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3 col-6 pl-4">
+                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                        <input type="text" class="select__item input-normal text-left c-dark" value="Cargo company">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Client</p>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">Acargo company</li>
+                                                <li class="select__option">Acargo company</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3 col-6 pr-4">
+                                    <div class="relative h-fit mt-4">
+                                        <input type="text" class="input-normal pl-0 input-date right bb-1 br-0 text-left c-dark py-1" value="17 April 2022">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Invoice date</p>
+                                    </div>
+                                </div>
+                                <div class="pt-3 col-6 pl-4">
+                                    <div class="relative h-fit mt-4">
+                                        <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="AA-4567898765">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Invoice No.</p>
+                                    </div>
+                                </div>
+                                <div class="col-6 pt-3 pr-4">
+                                    <div class="relative h-fit mt-4 ">
+                                        <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="1200">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Price</p>
+                                        <div class="select h-fit b-0 br-0 pb-1 arrow-r-0 absolute r-0 bot-0 w-46">
+                                            <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">EUR</li>
+                                                    <li class="select__option">USD</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3 col-6 pl-4">
+                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                        <input type="text" class="select__item input-normal text-left c-dark" value="Prepaid">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Payment terms</p>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">Prepaid</li>
+                                                <li class="select__option">Prepaid</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-3 col-12">
+                                    <div class="relative h-fit mt-4">
+                                        <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="4567890">
+                                        <p class="c-blue-gray fs-13 name weight-medium">Tax low article</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <label for="drop-upload1" class="drop-upload bg-light b-1 dashed b-blue p-2 min-h-auto mt-2 d-block text-center">
+                                <svg class="svg-sprite-icon c-blue drop-upload__icon mx-auto mb-1" width="15px" height="15px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                                </svg>
+                                <span class="text-16 fs-13 d-block">Drop or сlick to upload <span class="c-blue">Invoice</span> </span>
+                                <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
+                                <input type="file" id="drop-upload1" name="files[]" multiple="">
+                            </label>
+                            <label for="drop-upload1" class="drop-upload bg-light b-1 dashed b-blue p-2 min-h-auto mt-2 d-block text-center">
+                                <svg class="svg-sprite-icon c-blue drop-upload__icon mx-auto mb-1" width="15px" height="15px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                                </svg>
+                                <span class="text-16 fs-13 d-block">Drop or сlick to upload <span class="c-blue">Packing list </span> </span>
+                                <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
+                                <input type="file" id="drop-upload1" name="files[]" multiple="">
+                            </label>
+                            <div class="b-1 b-blue p-2 br-4 mt-2">
+                                <div class="br-50 mb-1 wh-17 d-flex mx-auto bg-gray_05">
+                                    <svg class="svg-sprite-icon c-white m-auto" width="7px" height="7px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                    </svg>
+                                </div>
+                                <p class="fs-13 text-center">Generate packing list </p>
+                            </div>
+                            <div class="b-1 b-blue p-2 br-4 mt-2">
+                                <div class="br-50 mb-1 wh-17 d-flex mx-auto bg-green">
+                                    <svg class="svg-sprite-icon c-white m-auto" width="7px" height="7px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                    </svg>
+                                </div>
+                                <p class="fs-13 text-center">Generate packing list </p>
+                            </div>
+                          
+                            <a href="#" class="btn-aquamarine w-100 big my-4 py-2">Save</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="../../vendor/jquery/jquery.min.js"></script>
+<script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+<script src="../../vendor/sticky/jquery.sticky.js"></script>
+<script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+<script src="../../js/admin.js"></script>
+</body>
+</html>

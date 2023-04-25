@@ -263,14 +263,18 @@ $(document).ready(function () {
 $(document).ready(function () {
   let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').height() : 0,
       fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').height() : 0,
-      headerHeight = $('.header').length ? $('.header').height() : 0;
+      headerHeight = $('.header').length ? $('.header').height() : 0,
+      navHeight = 0;
 
-  let sumHeight = headerHeight + fixTopHeight + menuDropdownHeight;
+  $('.sticky-js_v1').each(function(index, item) {
+    if ($(this).hasClass('contents')) {
+      navHeight = $(this).parent().find('.nav').height() 
+    } 
 
-  if ($('.sticky-js_v1').length){
-    console.log(sumHeight)
-    $('.sticky-js_v1').sticky({topSpacing:sumHeight});
-  }
+    let sumHeight = headerHeight + fixTopHeight + menuDropdownHeight + navHeight;
+
+    $(this).sticky({topSpacing:sumHeight});
+  })
 });
 
 $(document).ready(function () {

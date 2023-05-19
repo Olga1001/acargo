@@ -10503,7 +10503,7 @@ input.fs-14:-ms-input-placeholder  {
 .breadcrumbs_v3 a:not(.active):hover {
   color: #156CE4;
 }
-.breadcrumbs_v3 a.item:before {
+.breadcrumbs_v3 a.item:before, .breadcrumbs_v3 a.active:before {
   content: '';
   position: absolute;
   z-index: -1;
@@ -10513,7 +10513,14 @@ input.fs-14:-ms-input-placeholder  {
   width: 100%;
   background: url("../img/border_v3.svg") no-repeat center / 100%;
 }
-.breadcrumbs_v3 li:first-child a:not(.active):before {
+.breadcrumbs_v3 li:first-child a:not(.active):after {
+  content: '';
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 40px;
   background: #eef3fd;
 }
 .breadcrumbs_v3 a.active {

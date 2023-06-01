@@ -1159,6 +1159,17 @@ button {
       background-color: #24B1FF;
       color: #fff;
     }
+    .radio-calendar.blue .checkbox:checked ~ .check { 
+      background: #156CE4;
+      color: #fff;
+      border-color: #156CE4!important;
+    }
+    .radio-calendar.blue .checkbox:checked ~ .check svg { 
+      fill: #fff!important;
+    }
+    .radio-calendar.blue .checkbox:checked ~ .check svg.stroke-dark {
+      stroke: #fff!important;
+    }
 
 .checkbox-absolute {
   position: absolute;
@@ -2402,7 +2413,7 @@ button {
   padding: 4px 0;}
 .bb-3 {
   border-style: solid;
-  border-bottom-width: 3!important;}
+  border-bottom-width: 3px!important;}
 .bx-1 {
   border-left: solid 1px rgba(183, 188, 214, 0.52);
   border-right: solid 1px rgba(183, 188, 214, 0.52);}
@@ -6640,6 +6651,8 @@ button {
     max-width: 1290px;}
   .max-1380 {
     max-width: 1380px;}
+  .max-1440 {
+    max-width: 1440px;}
   .max-1485 {
     max-width: 1485px;}
   .max-1500 {
@@ -7221,7 +7234,7 @@ button {
 .min-w-2155 {
   min-width: 2155px;}
 .w-80 {
-  width: 80px;}
+  width: 80px!important;}
 .w-88 {
   width: 88px!important;}
 .base-li {
@@ -7354,7 +7367,7 @@ button {
 .br-2 {
   border-radius: 2px;}
 .br-4 {
-  border-radius: 4px;}
+  border-radius: 4px!important;}
 .br-6 {
   border-radius: 6px;}
 .min-h-175 {
@@ -7948,6 +7961,8 @@ button {
   max-width: 180px!important;}
 .max-w-190 {
   max-width: 190px!important;}
+.max-w-195 {
+  max-width: 195px!important;}
 .max-w-210 {
   max-width: 210px!important;}
 .max-w-100 {
@@ -9310,10 +9325,15 @@ padding-top: 15px;}
 .checkbox:checked ~ span.check-type .weight-medium {
   font-weight: 600!important;
   color: #156ce4!important;}
+.checkbox:checked ~ span.check-type.medium {
+  font-weight: 500!important;
+  color: #156ce4!important;}
 .checkbox:checked ~ .check-type img {
   display: block;}
 .checkbox:checked ~ .check-type svg {
   fill: #156ce4!important;}
+.checkbox:checked ~ .check-type svg.stroke-black {
+  stroke: #156ce4!important;}
 .checkbox:checked ~ .check-type:before {
   content: '';}
 .chat-head {
@@ -11193,6 +11213,9 @@ input.fs-14:-ms-input-placeholder  {
   height: 32px;
   overflow: hidden;
 }
+.active-step {
+  
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -11262,6 +11285,9 @@ input.fs-14:-ms-input-placeholder  {
     }
     ._1441_w-66 {
       width: 66%!important;
+    }
+    ._1441_w-80 {
+      width: 80px!important;
     }
     ._1441_w-34 {
       width: 34%!important;

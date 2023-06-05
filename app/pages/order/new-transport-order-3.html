@@ -544,7 +544,7 @@
 
                     <!-- content -->
                 </div>
-                <div class="popup bg-light-v15 px-2">
+                <div class="popup bg-light-v15 px-2 h-100vh_60 scroll-y">
                     <div class="py-3 max-1440 mx-auto ">
                         <div class="pb-3">
                             <div class="box-white py-3 px-0 active">
@@ -561,252 +561,240 @@
                                 </div>
                                
                                 <div class="max-1045 mx-auto pb-3">
-                                    <h4 class="fs-17 weight-medium pb-3 text-center letter-sp--002">New sales order</h4>
-                                    <div class="d-flex justify-content-between pb-4">
-                                        <div class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-blue">
-                                            <p class="weight-semi c-blue-gray">STEP 1</p>
-                                            <p class="">Container detail</p>
-                                        </div>
-                                        <div class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-gray4">
-                                            <p class="weight-semi c-blue-gray">STEP 2</p>
-                                            <p class="c-gray">Transport detail</p>
-                                        </div>
-                                        <div class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-gray4">
-                                            <p class="weight-semi c-blue-gray">STEP 3</p>
-                                            <p class="c-gray">Parties & Documents</p>
+                                    <h4 class="fs-17 weight-medium pb-3 text-center letter-sp--002">New transport order</h4>
+                                    <div class="d-flex justify-content-between pb-4 steps">
+                                        <a href="#" class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-green hover-bg-light c-dark">
+                                            <span class="weight-semi c-blue-gray d-block">STEP 1</span>
+                                            <span class="">Container detail
+                                                <svg class="svg-sprite-icon c-green ml-2" alt="icon" width="9px" height="7px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-green hover-bg-light c-dark">
+                                            <span class="weight-semi c-blue-gray d-block">STEP 2</span>
+                                            <span class="">Transport detail
+                                                <svg class="svg-sprite-icon c-green ml-2" alt="icon" width="9px" height="7px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                        </a>
+                                        <a href="#" class="w-100 max-330 letter-sp--002 lh-1_6 pb-2 bb-3 b-blue hover-bg-light c-dark">
+                                            <span class="weight-semi c-blue-gray d-block">STEP 3</span>
+                                            <span >Parties & Documents</span>
+                                        </a>
+                                    </div>
+                                    <div class="bb-2 b-blue my-3">
+                                        <p class="py-1 fs-16 letter-sp--002 weight-medium">Parties</p>
+                                        <div class="row justify-content-between pb-3">
+                                            <div class="col-4 max-350 mb-4 ">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Client
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 mb-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Agent
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 mb-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Consignee
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 mb-4 ">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Shipper
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 mb-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Customs broker
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 max-350 mb-4">
+                                                <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                    <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
+                                                    <p class="fs-14 name weight-medium d-flex align-items-center">
+                                                        <svg class="svg-sprite-icon c-blue_v3 mr-2" alt="icon" width="10px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#leader"></use>
+                                                        </svg>
+                                                        Transporter
+                                                    </p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">Logistic company</li>
+                                                            <li class="select__option">Logistic company</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                                <label class="pt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="check_custom blue mr-2"></span>
+                                                    <span class="fs-14 c-blue-gray">Notify </span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex justify-content-between flex-wrap pb-5">
-                                        <div class="pt-3 w-34 max-330 mr-auto">
-                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                                                <input type="text" class="select__item input-normal text-left c-dark" value="Logistic company">
-                                                <p class="c-blue-gray fs-13 name weight-medium">Company name</p>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active">Logistic company</li>
-                                                        <li class="select__option">Logistic company</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                    <p class="fs-16 letter-sp--002 weight-medium pt-3">Documents</p>
+                                    <div class="row justify-content-between mb-5">
+                                        <div class="col-4 max-350 mt-3">
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span>Sea Waybill</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span>Packing list</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span>Invoice</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
                                         </div>
-                                        <div class="pt-3 w-20 mr-auto">
-                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                                                <input type="text" class="select__item input-normal text-left c-dark" value="50 days credit">
-                                                <p class="c-blue-gray fs-13 name weight-medium">Payment terms</p>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active">50 days credit</li>
-                                                        <li class="select__option">50 days credit</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
+                                        <div class="col-4 max-350 mt-3">
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span>Sea Waybill</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span>Packing list</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
+                                            <label class="d-flex align-items-center justify-content-between mb-3"> 
+                                                <input class="checkbox" type="checkbox">
+                                                <span>Invoice</span>
+                                                <span class="check-btn__green b-0 wh-23 br-50 d-flex bg-gray_05 ">
+                                                    <svg class="svg-sprite-icon c-white m-auto" alt="icon" width="10px" height="10px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                            </label>
                                         </div>
-                                        <div class="pt-3 w-20 mr-auto">
+                                        <div class="col-4 max-350">
                                             <div class="relative h-fit mt-4">
-                                                <input type="text" class="input-normal pl-0 input-date right bb-1 br-0 text-left c-dark py-1" value="17 week">
-                                                <p class="c-blue-gray fs-13 name weight-medium">Ready estimated week</p>
-                                            </div>
-                                        </div>
-                                        <div class="pt-3 w-20">
-                                            <div class="relative h-fit mt-4">
-                                                <input type="text" class="input-normal pl-0 input-date right bb-1 br-0 text-left c-dark py-1" value="17 April 2022">
-                                                <p class="c-blue-gray fs-13 name weight-medium">Request delivery date</p>
-                                            </div>
-                                            <label class="d-flex align-items-center pt-2 fs-14 c-blue-gray">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="check_custom blue mr-2"></span>
-                                                <span>Delivery as soon as possible</span>
-                                            </label>
-                                        </div>
-                                    </div>
-                                  
-                                    <div class="row align-items-end pb-4">
-                                        <div class="col-6">
-                                            <p class="fs-16 pb-2">Freight type</p>
-                                            <div class="row radio-calendar blue letter-sp--002">
-                                                <label class="col-4 pr-2 max-w-190">
-                                                    <input type="radio" name="radio_1" class="checkbox" checked>
-                                                    <span class="check medium br-4 lh-1_6 py-2 b-1 b-gray w-100 d-flex align-items-center justify-content-center">
-                                                        <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
-                                                        </svg>
-                                                        <span class="px-2">Export</span>
-                                                    </span>
-                                                </label>
-                                                <label class="col-4 px-2 max-w-190">
-                                                    <input type="radio" name="radio_1" class="checkbox">
-                                                    <span class="check medium br-4 lh-1_6 py-2 b-1 b-gray w-100 d-flex align-items-center justify-content-center">
-                                                        <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-3"></use>
-                                                        </svg>
-                                                        <span class="px-2">Import</span>
-                                                    </span>
-                                                </label>
-                                                <label class="col-4 pl-2 max-w-190">
-                                                    <input type="radio" name="radio_1" class="checkbox">
-                                                    <span class="check medium br-4 lh-1_6 py-2 b-1 b-gray w-100 d-flex align-items-center justify-content-center">
-                                                        <svg class="svg-sprite-icon " alt="icon" width="22px" height="11px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-right"></use>
-                                                        </svg>
-                                                        <span class="px-2">Cross-traiding</span>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div class="d-flex justify-content-end fs-14 lh-1_7">
-                                                <div class="d-flex">
-                                                    <label class="ml-3">
-                                                        <input type="radio" name="radio_3" class="checkbox" checked>
-                                                        <span class="check-type w-100px py-2 medium br-4">
-                                                            <svg class="svg-sprite-icon stroke-black mr-2" alt="icon" width="18px" height="19px">
-                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#sea"></use>
-                                                            </svg>Sea 
-                                                        </span>
-                                                    </label>
-                                                    <label class="ml-3">
-                                                        <input type="radio" name="radio_3" class="checkbox">
-                                                        <span class="check-type w-100px py-2 medium br-4">
-                                                            <svg class="svg-sprite-icon  stroke-black  mr-2" alt="icon" width="18px" height="19px">
-                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
-                                                            </svg>Road
-                                                        </span>
-                                                    </label>
-                                                </div>
-                                                <div class="d-flex pl-4">
-                                                    <label class="ml-3">
-                                                        <input type="radio" name="radio_4" class="checkbox" checked>
-                                                        <span class="check-type w-80 py-2 medium br-4">
-                                                            <svg class="svg-sprite-icon c-black mr-2" alt="icon" width="19px" height="19px">
-                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#container3"></use>
-                                                            </svg>FCL 
-                                                        </span>
-                                                    </label>
-                                                    <label class="ml-3">
-                                                        <input type="radio" name="radio_4" class="checkbox">
-                                                        <span class="check-type w-80 py-2 medium br-4">
-                                                            <svg class="svg-sprite-icon c-black mr-2" alt="icon" width="19px" height="19px">
-                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#container-registry"></use>
-                                                            </svg>LCL
-                                                        </span>
-                                                    </label>
-                                                </div>
+                                                <div class="absolute r-0 bot-0 bg-green-19 c-green br-4 px-3 py-2">Add</div>
+                                                <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="Cargo invoice">
+                                                <p class="c-blue-gray fs-13 name weight-medium">New document</p>
                                             </div>
                                         </div>
                                     </div>
-
-                                    <p class="fs-16">Cargo detail</p>
-                                    <div class="d-flex align-items-end">
-                                        <div class="min-w-220 pt-2">
-                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                                                <input type="text" class="select__item input-normal text-left c-dark" value="Pallet">
-                                                <p class="c-blue-gray fs-13 name weight-medium">Cargo type</p>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active">Pallet</li>
-                                                        <li class="select__option">Pallet</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="b-1 br-4 b-blue-light2 d-flex h-fit mt-3 mx-auto">
-                                            <div class="w-100px relative br-1 b-blue-light2">
-                                                <div class="absolute l-0 pl-2 ml-1 t-center">L</div>
-                                                <input type="text" class="pl-4 b-0">
-                                            </div>
-                                            <div class="w-100px relative br-1 b-blue-light2">
-                                                <div class="absolute l-0 pl-2 ml-1 t-center">H</div>
-                                                <input type="text" class="pl-4 b-0">
-                                            </div>
-                                            <div class="w-100px relative br-1 b-blue-light2">
-                                                <div class="absolute l-0 pl-2 ml-1 t-center">W</div>
-                                                <input type="text" class="pl-4 b-0">
-                                            </div>
-                                            <div class="px-2 d-flex bg-light">
-                                                <p class="m-auto">mm</p>
-                                            </div>
-                                        </div>
-                                        <div class="pl-2">
-                                            <p class="fs-13 weight-medium c-blue-gray pb-1">Quantity</p>
-                                            <div class="calc calc__light max-w-150 h-fit b-blue-light2">
-                                                <button class="calc__btn calc__btn-minus"></button>
-                                                <input type="number" class="calc__input" value="800">
-                                                <button class="calc__btn calc__btn-plus"></button>
-                                            </div>
-                                        </div>
-                                        <div class="pl-3">
-                                            <p class="fs-13 weight-medium c-blue-gray pb-1">Weight, kg</p>
-                                            <div class="calc calc__light max-w-150 h-fit b-blue-light2">
-                                                <button class="calc__btn calc__btn-minus"></button>
-                                                <input type="number" class="calc__input" value="1500">
-                                                <button class="calc__btn calc__btn-plus"></button>
-                                            </div>
-                                        </div>
+    
+                                    <div class="bg-light letter-sp--002 d-flex align-items-center justify-content-center p-2 mt-2 lh-1_6">
+                                        <p class="fs-16 c-blue mr-3">Total amount</p>
+                                        <p class="">13 000 EUR</p>
                                     </div>
-
-                                    <a href="#" class="fs-14 underline letter-sp--002 c-blue-gray py-2 d-block">+ Add cargo type</a>
-                                    <p class="pt-5 fs-16 pb-2">Order No.</p>
-                                    <div class="d-flex">
-                                        <div class="d-flex flex-wrap pr-3 fs-13 pt-2 ">
-                                            <label class="mr-3">
-                                                <input type="radio" name="radio_4" class="checkbox" checked>
-                                                <span class="check-type py-1 min-w-215 lh-1_5">
-                                                    <span class="c-blue-gray d-block ">Sales order</span>
-                                                    <span class="fs-14 weight-medium ">OR - AA3456789</span>
-                                                </span>
-                                            </label>
-                                            <label class="mr-3">
-                                                <input type="radio" name="radio_4" class="checkbox" >
-                                                <span class="check-type py-1 min-w-215 lh-1_5">
-                                                    <span class="c-blue-gray d-block ">Shipper order</span>
-                                                    <span class="fs-14 weight-medium ">OR - AA3456789</span>
-                                                </span>
-                                            </label>
-                                            <label class="mr-3">
-                                                <input type="radio" name="radio_4" class="checkbox" >
-                                                <span class="check-type py-1 min-w-215 lh-1_5">
-                                                    <span class="c-blue-gray d-block ">Client order</span>
-                                                    <!-- <span class="fs-14 weight-medium ">. . . . .</span> -->
-                                                    <input type="text" placeholder=". . . . ." class="input-normal">
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <div class="">
-                                            <p class="pb-2">Custom order number</p>
-                                            <label>
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="switch-yn d-flex green">
-                                                    <span class="switch-n _1441_w-80">No</span>
-                                                    <span class="switch-y _1441_w-80">Yes</span>
-                                                    <span class="switch-yn_circle "></span>
-                                                </span>
-                                            </label>
-                                        </div>
-
-                                    </div>
-                                    <div class="d-flex flex-wrap pb-4">
-                                        <div class="relative h-fit mt-3 pt-3 min-w-215 mr-3">
-                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1 " value="AA-23456789">
-                                            <p class="c-blue-gray fs-13 name weight-medium">Order 1</p>
-                                        </div>
-                                        <div class="relative h-fit mt-3 pt-3 min-w-215 mr-3">
-                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1 " value="AA-23456789">
-                                            <p class="c-blue-gray fs-13 name weight-medium">Order 2</p>
-                                        </div>
-                                        <div class="relative h-fit mt-3 pt-3 min-w-215 mr-3">
-                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1 " value="AA-23456789">
-                                            <p class="c-blue-gray fs-13 name weight-medium">Order 3</p>
-                                        </div>
-                                        <div class="relative h-fit mt-3 pt-3 min-w-215 mr-3">
-                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1 " value="AA-23456789">
-                                            <p class="c-blue-gray fs-13 name weight-medium">Order 4</p>
-                                        </div>
-                                    </div>
-                                    <a href="#" class="w-100 br-4 bg-green-19 d-block my-3 py-2 lh-1_8 d-flex align-items-center justify-content-center c-green">Next
-                                        <svg class="svg-sprite-icon ml-2" width="10px" height="14px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
-                                        </svg>
-                                    </a>
+                                    <button type="button" class="btn-aquamarine big w-100 my-4 letter-sp--002">Create order</button>
                                 </div>
                             </div>
                         </div>

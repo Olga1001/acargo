@@ -289,6 +289,23 @@ input, textarea {
     /* bottom: 24px; */
     bottom: 100%;
   }
+  .name-placeholder {
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    font-size: 13px;
+    transform: translateY(50%);
+    pointer-events: none;
+  }
+  .name-placeholder+.name {
+    display: none;
+  }
+  input:active ~ .name-placeholder, input:focus ~ .name-placeholder,  input:valid ~ .name-placeholder {
+    display: none;
+  }
+  input:active ~ .name-placeholder+.name, input:focus ~ .name-placeholder+.name,input:valid ~ .name-placeholder+.name {
+    display: block;
+  }
 
 textarea {
   border: none;
@@ -2528,6 +2545,9 @@ button {
 .c-gray_06{
   color:rgba(232, 235, 250, 0.63);
   fill: rgba(232, 235, 250, 0.63);}
+.c-gray_07 {
+  color: rgba(183, 188, 214, 0.62)!important;
+  fill: rgba(183, 188, 214, 0.62)!important;}
 .c-dark-grayish-blue {
   color: #667080;}
 .c-navy-blue {
@@ -8865,8 +8885,8 @@ padding-top: 15px;}
   width: 31px;
   height: 31px;}
 .wh-35 {
-  width: 35px;
-  height: 35px;}
+  width: 35px!important;
+  height: 35px!important;}
 .wh-45 {
   width: 45px;
   height: 45px;}
@@ -9387,7 +9407,7 @@ padding-top: 15px;}
   width: 10px!important;
   height: 10px!important;}
 .br-50 {
-  border-radius: 50%;}
+  border-radius: 50%!important;}
 .br-50px {
   border-radius: 50px;}
 .way2-line.small {
@@ -9590,6 +9610,10 @@ padding-top: 15px;}
   border-color: rgba(16, 156, 241, 0.82);}
 .hover-static:before {
   border-color: rgba(16, 156, 241, 0.82)!important;}
+.hover-b.br-4:hover:before{
+  border-radius: 4px;}
+.hover-b.blue:hover:before{
+  border-color: #156CE4!important;}
 .hover-b:hover .hover, .hover-bg-light:hover .hover, .hover-shadow:hover .hover {
   opacity: 1;
   pointer-events: auto;}

@@ -547,97 +547,82 @@
                     <div class="box-white p-0 max-1000 w-100 m-auto active">
                         <div class="d-flex">
                             <div class="w-50 p-5 d-flex relative">
-                                <div class="absolute t-0 l-0 p-3 d-flex justify-content-between w-100">
-                                    <a href="#" class="c-gray fs-14 letter-sp--002 d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-gray mr-2" width="16px" height="15px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-alt-rounded"></use>
-                                        </svg>
-                                        <span class="pl-1">Location</span>
-                                    </a>
-                                    <a href="#">
-                                        <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto" width="17px" height="17px">
-                                    </a>
-                                </div>
+                                <a href="#" class="absolute t-0 r-0 p-3">
+                                    <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto" width="17px" height="17px">
+                                </a>
                                 <div class="my-auto w-100">
-                                    <p class="fs-16 weight-medium letter-sp--002 text-center pb-1">Working time</p>
-                                 
-                                    <div class="pt-3 letter-sp--002">
-                                        <p>Select working days:</p>
-                                        <div class="d-flex justify-content-between pb-4 radio-calendar blue">
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">M</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">T</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">W</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">T</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">W</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">S</span>
-                                                </span>
-                                            </label>
-                                            <label class="my-1">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="check br-50 wh-35 d-flex b-gray b-1">  
-                                                    <span class="m-auto ">S</span>
-                                                </span>
-                                            </label>
-                                        </div>
-                                        <p>Select workig hours:</p>
-                                        <div class="row">
-                                            <div class="col-6 pr-3 pt-3">
-                                                <div class="mt-3 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                                                    <input type="text" class="select__item input-normal text-left c-dark" value="08:00" required>
-                                                    <p class="c-blue-gray fs-13 name bottom weight-medium">From</p>
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu px-0 pb-0 lh-1_7 max-h-322">
-                                                            <li class="select__option">08:00 </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 pl-3 pt-3">
-                                                <div class="mt-3 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                                                    <input type="text" class="select__item input-normal text-left c-dark" value="08:00" required>
-                                                    <p class="c-blue-gray fs-13 name bottom weight-medium">to</p>
-                                                    <div class="select__drop">
-                                                        <ul class="select__menu px-0 pb-0 lh-1_7 max-h-322">
-                                                            <li class="select__option">08:00 </li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="pt-1 mt-3">
-                                            <button type="button" class="c-blue br-4 bg-blue_14 py-2 w-100 lh-1_6 letter-sp--002">+ Add new day</button>
-                                            <button type="button" class="c-green br-4 bg-green-24 py-2 w-100 lh-1_6 letter-sp--002 weight-medium mt-3">Save</button>
+                                    <p class="fs-16 weight-medium letter-sp--002 text-center pb-2">New loading place</p>
+                                    <div class="pt-3">
+                                        <div class="relative h-fit mt-3">
+                                            <input type="text" class="input-normal pl-0 bb-1 br-0 text-left c-dark py-1" value="" required>
+                                            <p class="name-placeholder"><span class="c-red">*</span> Loading place </p> 
+                                            <p class="c-blue-gray fs-13 name weight-medium">Company </p>
                                         </div>
                                     </div>
-                                 
+                                    <div class="pt-3">
+                                        <div class="mt-3 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                            <!-- <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px"> -->
+                                            <input type="text" class="select__item input-normal text-left c-dark" value="" required>
+                                            <p class="name-placeholder "><span class="c-red">*</span> Address</p> 
+
+                                            <p class="c-blue-gray fs-13 name bottom weight-medium">Address</p>
+                                            <div class="select__drop">
+                                                <div class="select__menu px-0 pb-0 lh-1_7 max-h-322">
+                                                    <div class="hover-bg-blue-light px-3 mb-3 letter-sp--002">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-1">
+                                                            <p class="pl-2">Lithvinia, Klaipeda</p>
+                                                        </div>
+                                                        <p class="fs-14 c-blue-gray">2311 North  Robles Avenue str. 18/5</p>
+                                                    </div>
+                                                    <div class="hover-bg-blue-light px-3 mb-3 letter-sp--002">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-1">
+                                                            <p class="pl-2">Lithvinia, Klaipeda</p>
+                                                        </div>
+                                                        <p class="fs-14 c-blue-gray">2311 North  Robles Avenue str. 18/5</p>
+                                                    </div>
+                                                    <div class="hover-bg-blue-light px-3 mb-3 letter-sp--002">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-1">
+                                                            <p class="pl-2">Lithvinia, Klaipeda</p>
+                                                        </div>
+                                                        <p class="fs-14 c-blue-gray">2311 North  Robles Avenue str. 18/5</p>
+                                                    </div>
+                                                    <div class="hover-bg-blue-light px-3 letter-sp--002">
+                                                        <div class="d-flex align-items-center">
+                                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-1">
+                                                            <p class="pl-2">Lithvinia, Klaipeda</p>
+                                                        </div>
+                                                        <p class="fs-14 c-blue-gray">2311 North  Robles Avenue str. 18/5</p>
+                                                    </div>
+                                                    <div class="bg-white p-3 sticky-bottom bt-0">
+                                                        <button type="button" class="c-blue br-4 bg-blue_14 py-2 w-100 lh-1_6 letter-sp--002">Enter address manually</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <div class="relative h-fit mt-3">
+                                            <input type="text" class="input-normal pl-0 bb-1 br-0 text-left c-dark py-1" value="" required>
+                                            <p class="name-placeholder ">GPS</p> 
+                                            <p class="c-blue-gray fs-13 name weight-medium">GPS coordinate </p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3">
+                                        <div class="relative h-fit mt-3">
+                                            <input type="text" class="input-normal pl-0 bb-1 br-0 text-left c-dark py-1" value="" required>
+                                          
+                                            <p class="name-placeholder"><span class="c-red">*</span> Working time</p> 
+                                            <p class="c-blue-gray fs-13 name weight-medium">Working time </p>
+                                        </div>
+                                        <p class="fs-13 pt-1 letter-sp--002 c-blue-gray lh-1_6">* Fields marked with an asterisk are required </p>
+                                    </div>
+                                    <div class="pt-1 mt-3">
+                                        <button type="button" class="c-blue br-4 bg-blue_14 py-2 w-100 lh-1_6 letter-sp--002">+ New contact</button>
+                                        <button type="button" class="btn-aquamarine_normal w-100 mt-2 py-2 lh-1_6 letter-sp--002">Add location</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="w-50">

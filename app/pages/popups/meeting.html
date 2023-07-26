@@ -543,43 +543,34 @@
                 </div>
                 <div class="popup position-fixed t-0 r-0 z-9999">
                     <div class="box-white p-0 right max-391 ml-auto active h-100vh mb-0 scroll-y">
-                        <div class="bg-dark p-3 relative c-white">
+                        <div class="bg-black-1e p-3 relative c-white">
                             <a href="#" class="absolute r-0 t-0 p-2">
-                                <img src="../../img/gray__cancel.svg" alt="close"  width="16px" height="16px">
+                                <svg class="svg-sprite-icon c-gray-92" width="16px" height="16px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
                             </a>
-                            <div class="d-flex align-items-center">
-                                <label class="d-flex align-items-center mb-3">
-                                    <input type="checkbox" class="checkbox">
-                                    <span class="fs-18 fs-15_1440 weight-semi mr-2 pr-1">Meeting</span>
-                                    <svg class="svg-sprite-icon c-gray_06 icon-star wh-12_1440" width="16px" height="16px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
-                                    </svg>
-                                </label>
-                                <div class="block bg-orange fs-12 fs-10_1440 w-fit-content ml-3 lh-1 mb-3">Delay</div>
+                            <div class="d-flex align-items-center mb-3">
+                                <svg class="svg-sprite-icon c-orange-f5 wh-12_1440 mr-2" width="16px" height="16px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                </svg>
+                                <span class="fs-17 fs-15_1440 weight-medium mr-3">Meeting</span>
+                                <div class="bg-orange-f5 fs-12 weight-medium fs-10_1440 w-fit-content px-3 lh-1_8">Delay</div>
+                               
                             </div>
-                            <label class="d-flex align-items-center mb-2">
-                                <input type="checkbox" class="checkbox">
-                                <span class="br-50 _1441_wh-18 bg-gray mr-2 check-action op-1"> 
-                                    <svg class="svg-sprite-icon c-white mx-auto d-block" width="8px" height="17px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                                <span class="pl-1">Mark as done</span>
-                            </label>
                             <div class="d-flex align-items-center mb-2">
-                                <svg class="svg-sprite-icon c-blue mr-2" width="13px" height="13px">
+                                <svg class="svg-sprite-icon c-orange-f5 mr-2" width="15px" height="13px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
                                 </svg>
                                 <p class="pl-1">Monday 18 Apr. 2022</p>
                             </div>
                             <div class="d-flex align-items-center mb-2">
-                                <svg class="svg-sprite-icon stroke-blue mr-2" width="13px" height="13px">
+                                <svg class="svg-sprite-icon stroke-orange-f5 mr-2" width="15px" height="12px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#building2"></use>
                                 </svg>
                                 <p class="pl-1">Acargo Company</p>
                             </div>
-                            <div class="d-flex align-items-center mb-2">
-                                <svg class="svg-sprite-icon c-blue mr-2" width="13px" height="13px">
+                            <div class="d-flex align-items-center ">
+                                <svg class="svg-sprite-icon c-orange-f5 mr-2" width="15px" height="13px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#user-check"></use>
                                 </svg>
                                 <p class="pl-1">Alexey Ivanenko</p>
@@ -587,74 +578,133 @@
                         </div>
                         <div class="">
                             <ul id="accordion" class="py-2 fs-14">
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div id="headingAddToMyDay" class=" d-flex align-items-center justify-content-between c-blue collapsed" data-toggle="collapse" data-target="#collapseAddToMyDay" aria-expanded="false" aria-controls="collapseAddToMyDay">
-                                        <div class="d-flex align-items-center py-2">
-                                            <div class="br-50 bg-light wh-31 mr-3">
-                                                <svg class="svg-sprite-icon c-gray mx-auto d-block" width="16px" height="31px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#sun"></use>
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2">
+                                    <label class="d-flex align-items-center pt-2 ">
+                                        <input type="checkbox" class="checkbox">
+                                        <span class="checked-mark wh-30 d-flex mr-2">
+                                            <span class="wh-16 br-50 m-auto">
+                                                <svg class="svg-sprite-icon c-white mx-auto d-block" width="11px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                                 </svg>
-                                            </div>
-                                            <p class="">Add to my day</p>
+                                            </span>
+                                        </span>
+                                        <span class="pl-1">  Mark as complete</span>
+                                      
+                                    </label>
+                                </li>
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2">
+                                    <a href="#" class="d-flex align-items-center pt-2 ">
+                                        <div class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="11px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
+                                            </svg>
                                         </div>
-                                        <button type="button">
-                                            <svg class="svg-sprite-icon c-gray" width="12px" height="12px">
+                                        <p class="pl-1 c-black-1e">  Edit</p>
+                                      
+                                    </a>
+                                </li>
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2 relative meeting_is">
+                                    <a href="#" id="headingAddToMyDay"  class="d-flex align-items-center pt-2 collapsed" data-toggle="collapse" data-target="#collapseAddToMyDay">
+                                        <span class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="16px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#sun"></use>
+                                            </svg>
+                                        </span>
+                                        <span class="pl-1 c-black-1e">  Add to my day</span>
+                                        <button type="button" class="ml-auto d-none">
+                                            <svg class="svg-sprite-icon c-gray-92" width="12px" height="12px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
                                             </svg>
                                         </button>
-                                    </div>
-                                    <div id="collapseAddToMyDay" class="absolute t-100 l-0 ml-3 max-310 w-100 collapse z-4" aria-labelledby="headingAddToMyDay" data-parent="#accordion">
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
-                                            <label class="d-flex align-items-center mb-3"> 
+                                      
+                                    </a>
+
+                                    <div id="collapseAddToMyDay" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingAddToMyDay" data-parent="#accordion">
+                                        
+                                        <div class="mb-3 br-4 b-1 p-3 bg-white mx-3">
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Daily</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Weekly</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Monthly</span>
                                             </label>
-                                            <label class="d-flex align-items-center"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center "> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Customs</span>
                                             </label>
                                         </div>
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
-                                            <label class="d-flex align-items-center mb-3"> 
+                                        <div class="mb-3 br-4 b-1 p-3 bg-white mx-3">
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Daily</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Weekly</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-2"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Monthly</span>
                                             </label>
+                                           
                                             <div class="d-flex align-items-center mb-3">
-                                                <label class="d-flex align-items-center"> 
-                                                    <input class="checkbox" type="checkbox">
-                                                    <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <label class="d-flex align-items-center "> 
+                                                    <input class="checkbox" type="checkbox" >
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
                                                     <span class="pl-1">Customs</span>
                                                 </label>
-                                                <input type="text" value="30" class="max-w-65 text-center ml-auto">
-                                                <div class="select ml-2 max-w-90 h-auto">
-                                                    <div class="select__item bg-light c-blue fs-14 text-center">Days</div>
+                                                <input type="text" value="30" class="max-w-51 b-gray-92 c-black-1e text-center ml-auto">
+                                                <div class="select ml-2 max-w-150 h-auto">
+                                                    <div class="select__item bg-orange-15 c-black-1e fs-14 text-center">Days</div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
                                                             <li class="select__option active">Days</li>
-                                                            <li class="select__option">Days</li>
+                                                            <li class="select__option c-gray-92">Days</li>
                                                         </ul>
                                                     </div>
                                                 </div>

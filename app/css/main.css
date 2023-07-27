@@ -92,7 +92,7 @@ body {
   line-height: normal;
   letter-spacing: normal;
   background-color: #eff8fe;
-  color: #282e3b; }
+  color: #1E1E1E; }
 img {
   display: block;
   -o-object-fit: contain;
@@ -301,7 +301,7 @@ input, textarea {
   /* border: solid 1px #b7bcd6; */
   border: 1px solid #E9E9E9;
   padding: 11px 13px;
-  color: #67758d;
+  color: #1e1e1e;
   line-height: 1;
   width: 100%;
   -webkit-appearance: none;
@@ -435,12 +435,18 @@ button {
   min-width: 74px;
 }
 .select__date .select__item {
-  background: url('../img/calendar-gray.svg') no-repeat left 15px center/21px;
+  background: url('../img/calendar-69.svg') no-repeat left 15px center/21px;
   padding-left: 40px;
+}
+.select__date.active .select__item {
+  background-image: url('../img/calendar-1e.svg')
 }
 .select__time > .select__item {
   background: url('../img/wall-clock.svg') no-repeat left 15px center/21px;
   padding-left: 40px; }
+  .select__time.active > .select__item {
+    background-image: url('../img/wall-clock-1e.svg')
+  }
   .line-between {
     height: 1px;
     width: 8px;
@@ -482,6 +488,9 @@ button {
   border: solid 1px #b7bcd6; }
   .select:focus, .select.active {
     border-color: #F54617;
+  }
+  .select:focus .select__item, .select.active .select__item {
+   color: #1E1E1E;
   }
   .select.small {
     height: 33px; }
@@ -558,8 +567,8 @@ button {
     left: auto!important;
     right: 0;}
   .select__menu {
-    border-radius: 4px;
-    border: solid 1px #b7bcd6;
+    /* border-radius: 4px; */
+    border: solid 1px #929292;
     overflow-y: auto;
     max-height: 250px;
     padding: 12px 0;
@@ -567,7 +576,7 @@ button {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
-    scrollbar-color: #b7bcd6 #ffffff;
+    scrollbar-color: #929292 #ffffff;
     scrollbar-width: thin;
     letter-spacing: -0.28px; }
     .select__menu.bg-dark {
@@ -619,6 +628,7 @@ button {
     min-width: 30px;
     min-height: 10px;
     color: #67758d;
+    color: #696969;
     font-size: 16px;
     border-radius: 4px;
     white-space: nowrap;
@@ -806,20 +816,10 @@ button {
   padding: 0;
   height: auto;
   font-size: 15px;
-  color: #282e3b;
   line-height: normal; }
 
 .input-normal {
-  color: #b7bcd6;
   text-align: center; }
-.input-normal::-webkit-input-placeholder, .placeholder-gray::-webkit-input-placeholder  {
-  color: #b7bcd6; }
-.input-normal:-moz-placeholder, .placeholder-gray:-moz-placeholder {
-  color: #b7bcd6; }
-.input-normal::-moz-placeholder, .placeholder-gray::-moz-placeholder {
-  color: #b7bcd6; }
-.input-normal:-ms-input-placeholder, .placeholder-gray:-ms-input-placeholder {
-  color: #b7bcd6; }
 
 .input-resize {
   min-width: 20px;
@@ -1267,6 +1267,15 @@ button {
 .checked-mark > span {
   background-color: #929292;
   display: block;
+}
+.change_text > span:last-child {
+  display: none;
+}
+.checkbox:checked ~ .change_text > span:first-child {
+  display: none;
+}
+.checkbox:checked ~ .change_text > span:last-child {
+  display: initial;
 }
 .checkbox:checked ~ .checked-mark {
   background-color: #EB5E13;
@@ -2627,6 +2636,8 @@ button {
   stroke: #fff!important}
 .stroke-69 {
   stroke: #696969;}
+.stroke-92 {
+  stroke: #929292;}
 .stroke-orange-f5 {
   stroke: #F54617;}
 .stroke-gray {
@@ -8378,7 +8389,6 @@ button {
   background-color: #49DDAA;}
 .checkbox:checked ~ .switch .switch-circle {
   margin-left: auto;}
-
 .min-w-1210 {
   min-width: 1210px;}
 .min-w-570 {

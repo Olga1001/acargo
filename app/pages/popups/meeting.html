@@ -588,8 +588,10 @@
                                                 </svg>
                                             </span>
                                         </span>
-                                        <span class="pl-1">  Mark as complete</span>
-                                      
+                                        <div class="change_text pl-1">
+                                            <span>Mark as complete</span>
+                                            <span>Completed</span>
+                                        </div>
                                     </label>
                                 </li>
                                 <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2">
@@ -599,8 +601,7 @@
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
                                             </svg>
                                         </div>
-                                        <p class="pl-1 c-black-1e">  Edit</p>
-                                      
+                                        <span class="pl-1 c-black-1e">  Edit</span>
                                     </a>
                                 </li>
                                 <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2 relative meeting_is">
@@ -621,7 +622,7 @@
 
                                     <div id="collapseAddToMyDay" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingAddToMyDay" data-parent="#accordion">
                                         
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white mx-3">
+                                        <div class="mb-2 b-1 p-3 bg-white mx-3">
                                             <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
                                                 <span class="checked-customer dark mr-2">
@@ -659,7 +660,7 @@
                                                 <span class="pl-1">Customs</span>
                                             </label>
                                         </div>
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white mx-3">
+                                        <div class="b-1 p-3 bg-white mx-3">
                                             <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
                                                 <span class="checked-customer dark mr-2">
@@ -709,38 +710,48 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#" class="btn-white min-w-auto mr-4 w-100">Cancel</a>
-                                                <a href="#" class="btn-aquamarine big min-w-auto w-100">Save</a>
+                                            <div class="row pt-1">
+                                                <div class="col-6 pr-2">
+                                                    <a href="#" class="bg-gray-15 c-gray-92 flex-center h-100">Cancel</a>
+                                                </div>
+                                                <div class="col-6 pl-2">
+                                                    <a href="#" class="btn-aquamarine big ">Save</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative ">
-                                    <div id="headingRemindMe" class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#collapseRemindMe" aria-expanded="false" aria-controls="collapseRemindMe">
-                                        <div class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="14px" height="31px">
+                                <li class="px-3 bb-1 b-gray_02 hover-bg-light py-2 relative ">
+                                    <a href="#" id="headingRemindMe" class="d-flex align-items-center pt-2 collapsed" data-toggle="collapse" data-target="#collapseRemindMe">
+                                        <span class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="14px" height="16px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#alarm"></use>
                                             </svg>
-                                        </div>
-                                        <p class="">Remind me</p>
-                                    </div>
-                                    <div id="collapseRemindMe" class="absolute t-100 l-0 ml-3 max-330 collapse z-4" aria-labelledby="headingRemindMe" data-parent="#accordion">
-                                        <div class="br-4 b-1 p-3 bg-white">
+                                        </span>
+                                        <span class="pl-1 c-black-1e">  Remind me</span>
+                                        <button type="button" class="ml-auto d-none">
+                                            <svg class="svg-sprite-icon c-gray-92" width="12px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                      
+                                    </a>
+                                    <div id="collapseRemindMe" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingRemindMe" data-parent="#accordion">
+                                        <div class="b-1 p-3 bg-white mx-3">
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Tomorrow</p>
                                                 <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
-                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                    <div class="hover-bg-light text-center fs-14 select__item lh-1 py-2">
                                                         10: 00
                                                     </div>
                                                     <div class="select__drop">
-                                                        <div class="select__menu bg-blue-bright overflow-visible">
+                                                        <div class="select__menu overflow-visible">
                                                             <div class="d-flex max-w-170 px-2">
                                                                 <div class="w-50 mr-2">
-                                                                    <p class="fs-13 c-white mb-1">Hour</p>
-                                                                    <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                    <p class="fs-13 mb-1">Hour</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                         <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
-                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
                                                                         <div class="select__drop">
                                                                             <ul class="select__menu small max-h-auto text-center">
                                                                                 <li class="select__option" data-value="06:00">06</li>
@@ -765,10 +776,10 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="w-50">
-                                                                    <p class="fs-13 c-white mb-1">Minute</p>
-                                                                    <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                    <p class="fs-13 mb-1">Minute</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                         <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
-                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
                                                                         <div class="select__drop">
                                                                             <ul class="select__menu small max-h-auto text-center">
                                                                                 <li class="select__option active" data-value="00:00">00</li>
@@ -796,17 +807,17 @@
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Next week</p>
                                                 <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
-                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                    <div class="hover-bg-light text-center fs-14 select__item lh-1 py-2">
                                                         10: 00
                                                     </div>
                                                     <div class="select__drop">
-                                                        <div class="select__menu bg-blue-bright overflow-visible">
+                                                        <div class="select__menu overflow-visible">
                                                             <div class="d-flex max-w-170 px-2">
                                                                 <div class="w-50 mr-2">
-                                                                    <p class="fs-13 c-white mb-1">Hour</p>
-                                                                    <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                    <p class="fs-13 mb-1">Hour</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                         <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
-                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
                                                                         <div class="select__drop">
                                                                             <ul class="select__menu small max-h-auto text-center">
                                                                                 <li class="select__option" data-value="06:00">06</li>
@@ -831,10 +842,10 @@
                                                                     </div>
                                                                 </div>
                                                                 <div class="w-50">
-                                                                    <p class="fs-13 c-white mb-1">Minute</p>
-                                                                    <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                    <p class="fs-13 mb-1">Minute</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                         <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
-                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
                                                                         <div class="select__drop">
                                                                             <ul class="select__menu small max-h-auto text-center">
                                                                                 <li class="select__option active" data-value="00:00">00</li>
@@ -858,23 +869,23 @@
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div> 
-                                            <div class="d-flex align-items-center justify-content-between"> 
+                                            </div>
+                                            <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Pick a day & time</p>
                                                 <div class="d-flex max-w-170 w-100">
                                                     <div class="w-50 pr-1">
                                                         <div class="select not-arrow h-auto select__time small right">
-                                                            <div class="hover-bg-light hover-l-blue-2 c-gray fs-14 select__item lh-1 py-2">
+                                                            <div class="hover-bg-light fs-14 select__item lh-1 py-2">
                                                                 10: 00
                                                             </div>
                                                             <div class="select__drop">
-                                                                <div class="select__menu bg-blue-bright overflow-visible">
+                                                                <div class="select__menu overflow-visible">
                                                                     <div class="d-flex max-w-170 px-2">
                                                                         <div class="w-50 mr-2">
-                                                                            <p class="fs-13 c-white mb-1">Hour</p>
-                                                                            <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                            <p class="fs-13 mb-1">Hour</p>
+                                                                            <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                                 <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
-                                                                                <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                                <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
                                                                                 <div class="select__drop">
                                                                                     <ul class="select__menu small max-h-auto text-center">
                                                                                         <li class="select__option" data-value="06:00">06</li>
@@ -899,10 +910,10 @@
                                                                             </div>
                                                                         </div>
                                                                         <div class="w-50">
-                                                                            <p class="fs-13 c-white mb-1">Minute</p>
-                                                                            <div class="select h-auto b-white select-noarrow" inited="1">
+                                                                            <p class="fs-13 mb-1">Minute</p>
+                                                                            <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
                                                                                 <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
-                                                                                <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 c-white px-2 text-center">
+                                                                                <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
                                                                                 <div class="select__drop">
                                                                                     <ul class="select__menu small max-h-auto text-center">
                                                                                         <li class="select__option active" data-value="00:00">00</li>
@@ -929,7 +940,7 @@
                                                     </div>
                                                     <div class="w-50 pl-1">
                                                         <div class="select not-arrow select__date h-auto small right">
-                                                            <div class="hover-bg-light hover-l-blue-2 pr-0 c-gray fs-14 select__item lh-1 py-2">
+                                                            <div class="hover-bg-light pr-0 fs-14 select__item lh-1 py-2">
                                                                 28 Sep.
                                                             </div>
                                                             <div class="select__drop">
@@ -942,67 +953,237 @@
                                                     </div>
                                                 </div>
                                             </div>
+                                            <div class="row pt-1">
+                                                <div class="col-6 pr-2">
+                                                    <a href="#" class="bg-gray-15 c-gray-92 flex-center h-100">Cancel</a>
+                                                </div>
+                                                <div class="col-6 pl-2">
+                                                    <a href="#" class="btn-aquamarine big ">Save</a>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div id="headingAddDueDate" class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#collapseAddDueDate" aria-expanded="false" aria-controls="collapseAddDueDate">
-                                        <div class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="14px" height="31px">
+                                <li class="px-3 bb-1 b-gray_02 hover-bg-light py-2 relative ">
+                                    <a href="#" id="headingAddDueDate" class="d-flex align-items-center pt-2 collapsed" data-toggle="collapse" data-target="#collapseAddDueDate">
+                                        <span class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="12px" height="16px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-4"></use>
                                             </svg>
-                                        </div>
-                                        <p class="">Add due date</p>
-                                    </div>
-                                    <div id="collapseAddDueDate" class="absolute t-100 l-0 ml-3 max-330 collapse z-4" aria-labelledby="headingAddDueDate" data-parent="#accordion">
-                                        <div class="br-4 b-1 p-3 bg-white">
+                                        </span>
+                                        <span class="pl-1 c-black-1e"> Add due date</span>
+                                        <button type="button" class="ml-auto d-none">
+                                            <svg class="svg-sprite-icon c-gray-92" width="12px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                      
+                                    </a>
+                                    <div id="collapseAddDueDate" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingAddDueDate" data-parent="#accordion">
+                                        <div class="b-1 p-3 bg-white mx-3">
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Tomorrow</p>
                                                 <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
-                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                    <div class="hover-bg-light text-center fs-14 select__item lh-1 py-2">
                                                         10: 00
                                                     </div>
                                                     <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option active">10: 00</li>
-                                                            <li class="select__option">10: 00</li>
-                                                        </ul>
+                                                        <div class="select__menu overflow-visible">
+                                                            <div class="d-flex max-w-170 px-2">
+                                                                <div class="w-50 mr-2">
+                                                                    <p class="fs-13 mb-1">Hour</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                        <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
+                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
+                                                                        <div class="select__drop">
+                                                                            <ul class="select__menu small max-h-auto text-center">
+                                                                                <li class="select__option" data-value="06:00">06</li>
+                                                                                <li class="select__option" data-value="07:00">07</li>
+                                                                                <li class="select__option active" data-value="08:00">08</li>
+                                                                                <li class="select__option" data-value="09:00">09</li>
+                                                                                <li class="select__option" data-value="10:00">10</li>
+                                                                                <li class="select__option" data-value="11:00">11</li>
+                                                                                <li class="select__option" data-value="12:00">12</li>
+                                                                                <li class="select__option" data-value="13:00">13</li>
+                                                                                <li class="select__option" data-value="14:00">14</li>
+                                                                                <li class="select__option" data-value="15:00">15</li>
+                                                                                <li class="select__option" data-value="16:00">16</li>
+                                                                                <li class="select__option" data-value="17:00">17</li>
+                                                                                <li class="select__option" data-value="18:00">18</li>
+                                                                                <li class="select__option" data-value="19:00">19</li>
+                                                                                <li class="select__option" data-value="20:00">20</li>
+                                                                                <li class="select__option" data-value="21:00">21</li>
+                                                                                <li class="select__option" data-value="22:00">22</li>
+                                                                        </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="w-50">
+                                                                    <p class="fs-13 mb-1">Minute</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                        <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
+                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
+                                                                        <div class="select__drop">
+                                                                            <ul class="select__menu small max-h-auto text-center">
+                                                                                <li class="select__option active" data-value="00:00">00</li>
+                                                                                <li class="select__option" data-value="05:00">05</li>
+                                                                                <li class="select__option" data-value="10:00">10</li>
+                                                                                <li class="select__option" data-value="15:00">15</li>
+                                                                                <li class="select__option" data-value="20:00">20</li>
+                                                                                <li class="select__option" data-value="25:00">25</li>
+                                                                                <li class="select__option" data-value="30:00">30</li>
+                                                                                <li class="select__option" data-value="35:00">35</li>
+                                                                                <li class="select__option" data-value="40:00">40</li>
+                                                                                <li class="select__option" data-value="45:00">45</li>
+                                                                                <li class="select__option" data-value="50:00">50</li>
+                                                                                <li class="select__option" data-value="55:00">55</li>
+                                                                                <li class="select__option" data-value="60:00">60</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
                                             </div>
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Next week</p>
                                                 <div class="select ml-2 not-arrow max-w-170 h-auto select__time small center">
-                                                    <div class="hover-bg-light hover-l-blue-2 text-center c-gray fs-14 select__item lh-1 py-2">
+                                                    <div class="hover-bg-light text-center fs-14 select__item lh-1 py-2">
                                                         10: 00
                                                     </div>
                                                     <div class="select__drop">
-                                                        <ul class="select__menu">
-                                                            <li class="select__option active">10: 00</li>
-                                                            <li class="select__option">10: 00</li>
-                                                        </ul>
+                                                        <div class="select__menu overflow-visible">
+                                                            <div class="d-flex max-w-170 px-2">
+                                                                <div class="w-50 mr-2">
+                                                                    <p class="fs-13 mb-1">Hour</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                        <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
+                                                                        <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
+                                                                        <div class="select__drop">
+                                                                            <ul class="select__menu small max-h-auto text-center">
+                                                                                <li class="select__option" data-value="06:00">06</li>
+                                                                                <li class="select__option" data-value="07:00">07</li>
+                                                                                <li class="select__option active" data-value="08:00">08</li>
+                                                                                <li class="select__option" data-value="09:00">09</li>
+                                                                                <li class="select__option" data-value="10:00">10</li>
+                                                                                <li class="select__option" data-value="11:00">11</li>
+                                                                                <li class="select__option" data-value="12:00">12</li>
+                                                                                <li class="select__option" data-value="13:00">13</li>
+                                                                                <li class="select__option" data-value="14:00">14</li>
+                                                                                <li class="select__option" data-value="15:00">15</li>
+                                                                                <li class="select__option" data-value="16:00">16</li>
+                                                                                <li class="select__option" data-value="17:00">17</li>
+                                                                                <li class="select__option" data-value="18:00">18</li>
+                                                                                <li class="select__option" data-value="19:00">19</li>
+                                                                                <li class="select__option" data-value="20:00">20</li>
+                                                                                <li class="select__option" data-value="21:00">21</li>
+                                                                                <li class="select__option" data-value="22:00">22</li>
+                                                                        </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="w-50">
+                                                                    <p class="fs-13 mb-1">Minute</p>
+                                                                    <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                        <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
+                                                                        <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
+                                                                        <div class="select__drop">
+                                                                            <ul class="select__menu small max-h-auto text-center">
+                                                                                <li class="select__option active" data-value="00:00">00</li>
+                                                                                <li class="select__option" data-value="05:00">05</li>
+                                                                                <li class="select__option" data-value="10:00">10</li>
+                                                                                <li class="select__option" data-value="15:00">15</li>
+                                                                                <li class="select__option" data-value="20:00">20</li>
+                                                                                <li class="select__option" data-value="25:00">25</li>
+                                                                                <li class="select__option" data-value="30:00">30</li>
+                                                                                <li class="select__option" data-value="35:00">35</li>
+                                                                                <li class="select__option" data-value="40:00">40</li>
+                                                                                <li class="select__option" data-value="45:00">45</li>
+                                                                                <li class="select__option" data-value="50:00">50</li>
+                                                                                <li class="select__option" data-value="55:00">55</li>
+                                                                                <li class="select__option" data-value="60:00">60</li>
+                                                                            </ul>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
                                                     </div>
                                                 </div>
-                                            </div> 
+                                            </div>
                                             <div class="d-flex align-items-center justify-content-between mb-3"> 
                                                 <p class="fs-14">Pick a day & time</p>
                                                 <div class="d-flex max-w-170 w-100">
                                                     <div class="w-50 pr-1">
                                                         <div class="select not-arrow h-auto select__time small right">
-                                                            <div class="hover-bg-light hover-l-blue-2 c-gray fs-14 select__item lh-1 py-2">
+                                                            <div class="hover-bg-light fs-14 select__item lh-1 py-2">
                                                                 10: 00
                                                             </div>
                                                             <div class="select__drop">
-                                                                <ul class="select__menu">
-                                                                    <li class="select__option active">10: 00</li>
-                                                                    <li class="select__option">10: 00</li>
-                                                                </ul>
+                                                                <div class="select__menu overflow-visible">
+                                                                    <div class="d-flex max-w-170 px-2">
+                                                                        <div class="w-50 mr-2">
+                                                                            <p class="fs-13 mb-1">Hour</p>
+                                                                            <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                                <input type="hidden" name="loading_time_from[]" onchange="setDayTime(this, 'from', '#loading_time_')" value="08:00">
+                                                                                <input type="text" name="loading_time_from_display[]" readonly="" value="08:00" class="select__item fs-13 px-2 text-center">
+                                                                                <div class="select__drop">
+                                                                                    <ul class="select__menu small max-h-auto text-center">
+                                                                                        <li class="select__option" data-value="06:00">06</li>
+                                                                                        <li class="select__option" data-value="07:00">07</li>
+                                                                                        <li class="select__option active" data-value="08:00">08</li>
+                                                                                        <li class="select__option" data-value="09:00">09</li>
+                                                                                        <li class="select__option" data-value="10:00">10</li>
+                                                                                        <li class="select__option" data-value="11:00">11</li>
+                                                                                        <li class="select__option" data-value="12:00">12</li>
+                                                                                        <li class="select__option" data-value="13:00">13</li>
+                                                                                        <li class="select__option" data-value="14:00">14</li>
+                                                                                        <li class="select__option" data-value="15:00">15</li>
+                                                                                        <li class="select__option" data-value="16:00">16</li>
+                                                                                        <li class="select__option" data-value="17:00">17</li>
+                                                                                        <li class="select__option" data-value="18:00">18</li>
+                                                                                        <li class="select__option" data-value="19:00">19</li>
+                                                                                        <li class="select__option" data-value="20:00">20</li>
+                                                                                        <li class="select__option" data-value="21:00">21</li>
+                                                                                        <li class="select__option" data-value="22:00">22</li>
+                                                                                </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="w-50">
+                                                                            <p class="fs-13 mb-1">Minute</p>
+                                                                            <div class="select h-auto b-orange_v2 select-noarrow" inited="1">
+                                                                                <input type="hidden" name="loading_time_till[]" onchange="setDayTime(this, 'to', '#loading_time_')" value="18:00">
+                                                                                <input type="text" name="loading_time_till_display[]" readonly="" value="18:00" class="select__item fs-13 px-2 text-center">
+                                                                                <div class="select__drop">
+                                                                                    <ul class="select__menu small max-h-auto text-center">
+                                                                                        <li class="select__option active" data-value="00:00">00</li>
+                                                                                        <li class="select__option" data-value="05:00">05</li>
+                                                                                        <li class="select__option" data-value="10:00">10</li>
+                                                                                        <li class="select__option" data-value="15:00">15</li>
+                                                                                        <li class="select__option" data-value="20:00">20</li>
+                                                                                        <li class="select__option" data-value="25:00">25</li>
+                                                                                        <li class="select__option" data-value="30:00">30</li>
+                                                                                        <li class="select__option" data-value="35:00">35</li>
+                                                                                        <li class="select__option" data-value="40:00">40</li>
+                                                                                        <li class="select__option" data-value="45:00">45</li>
+                                                                                        <li class="select__option" data-value="50:00">50</li>
+                                                                                        <li class="select__option" data-value="55:00">55</li>
+                                                                                        <li class="select__option" data-value="60:00">60</li>
+                                                                                    </ul>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                     <div class="w-50 pl-1">
                                                         <div class="select not-arrow select__date h-auto small right">
-                                                            <div class="hover-bg-light hover-l-blue-2 pr-0 c-gray fs-14 select__item lh-1 py-2">
+                                                            <div class="hover-bg-light pr-0 fs-14 select__item lh-1 py-2">
                                                                 28 Sep.
                                                             </div>
                                                             <div class="select__drop">
@@ -1015,142 +1196,219 @@
                                                     </div>
                                                 </div>
                                             </div>
-
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#" class="btn-white min-w-auto mr-4 w-100">Cancel</a>
-                                                <a href="#" class="btn-aquamarine big min-w-auto w-100">Save</a>
+                                            <div class="row pt-1">
+                                                <div class="col-6 pr-2">
+                                                    <a href="#" class="bg-gray-15 c-gray-92 flex-center h-100">Cancel</a>
+                                                </div>
+                                                <div class="col-6 pl-2">
+                                                    <a href="#" class="btn-aquamarine big ">Save</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div id="headingRepeat" class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#collapseRepeat" aria-expanded="false" aria-controls="collapseRepeat">
-                                        <div class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="12px" height="31px">
+                            
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2 relative">
+                                    <a href="#" id="headingRepeat"  class="d-flex align-items-center pt-2 collapsed" data-toggle="collapse" data-target="#collapseRepeat">
+                                        <span class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="13px" height="16px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#content-copy-rounded"></use>
                                             </svg>
-                                        </div>
-                                        <p class="">Repeat</p>
-                                    </div>
+                                        </span>
+                                        <span class="pl-1 c-black-1e">Repeat</span>
+                                        <button type="button" class="ml-auto d-none">
+                                            <svg class="svg-sprite-icon c-gray-92" width="12px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
 
-                                    <div id="collapseRepeat" class="absolute t-100 l-0 ml-3 max-310 w-100 collapse z-4" aria-labelledby="headingRepeat" data-parent="#accordion">
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
-                                            <label class="d-flex align-items-center mb-3"> 
+                                    <div id="collapseRepeat" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingRepeat" data-parent="#accordion">
+                                        
+                                        <div class="mb-2 b-1 p-3 bg-white mx-3">
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Daily</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Weekly</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Monthly</span>
                                             </label>
-                                            <label class="d-flex align-items-center"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center "> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Customs</span>
                                             </label>
                                         </div>
-                                        <div class="mb-3 br-4 b-1 p-3 bg-white">
-                                            <label class="d-flex align-items-center mb-3"> 
+                                        <div class="b-1 p-3 bg-white mx-3">
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Daily</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Weekly</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-2"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Monthly</span>
                                             </label>
+                                           
                                             <div class="d-flex align-items-center mb-3">
-                                                <label class="d-flex align-items-center"> 
-                                                    <input class="checkbox" type="checkbox">
-                                                    <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <label class="d-flex align-items-center "> 
+                                                    <input class="checkbox" type="checkbox" >
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
                                                     <span class="pl-1">Customs</span>
                                                 </label>
-                                                <input type="text" value="30" class="max-w-65 text-center ml-auto">
-                                                <div class="select ml-2 max-w-90 h-auto">
-                                                    <div class="select__item bg-light c-blue fs-14 text-center">Days</div>
+                                                <input type="text" value="30" class="max-w-51 b-gray-92 c-black-1e text-center ml-auto">
+                                                <div class="select ml-2 max-w-150 h-auto">
+                                                    <div class="select__item bg-orange-15 c-black-1e fs-14 text-center">Days</div>
                                                     <div class="select__drop">
                                                         <ul class="select__menu">
                                                             <li class="select__option active">Days</li>
-                                                            <li class="select__option">Days</li>
+                                                            <li class="select__option c-gray-92">Days</li>
                                                         </ul>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="d-flex justify-content-between">
-                                                <a href="#" class="btn-white min-w-auto mr-4 w-100">Cancel</a>
-                                                <a href="#" class="btn-aquamarine big min-w-auto w-100">Save</a>
+                                            <div class="row pt-1">
+                                                <div class="col-6 pr-2">
+                                                    <a href="#" class="bg-gray-15 c-gray-92 flex-center h-100">Cancel</a>
+                                                </div>
+                                                <div class="col-6 pl-2">
+                                                    <a href="#" class="btn-aquamarine big ">Save</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light relative">
-                                    <div id="headingAssignTo" class="d-flex align-items-center py-2 collapsed" data-toggle="collapse" data-target="#collapseAssignTo" aria-expanded="false" aria-controls="collapseAssignTo">
-                                        <div class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="16px" height="31px">
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2 relative">
+                                    <a href="#" id="headingAssignTo"  class="d-flex align-items-center pt-2 collapsed" data-toggle="collapse" data-target="#collapseAssignTo">
+                                        <span class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="16px" height="16px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#user-plus"></use>
                                             </svg>
-                                        </div>
-                                        <p class="">Assign to</p>
-                                    </div>
+                                        </span>
+                                        <span class="pl-1 c-black-1e">Assign to</span>
+                                        <button type="button" class="ml-auto d-none">
+                                            <svg class="svg-sprite-icon c-gray-92" width="12px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </a>
 
-                                    <div id="collapseAssignTo" class="absolute t-100 l-0 ml-3 max-310 w-100 collapse z-4" aria-labelledby="headingAssignTo" data-parent="#accordion">
-                                        <div class="br-4 b-1 p-3 bg-white">
-                                            <label class="d-flex align-items-center mb-3"> 
+                                    <div id="collapseAssignTo" class="absolute t-100 l-0 mt-1 w-100 collapse z-4" aria-labelledby="headingAssignTo" data-parent="#accordion">
+                                        
+                                        <div class="b-1 p-3 bg-white mx-3">
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
                                                 <input class="checkbox" type="checkbox" checked>
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                                 <span class="pl-1">Alexey Ivanov</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
-                                                <span class="pl-1">Irina Ivanova</span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" checked>
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">Anna Merc</span>
                                             </label>
-                                            <label class="d-flex align-items-center mb-3"> 
-                                                <input class="checkbox" type="checkbox">
-                                                <span class="checkbox__icon-blue big ml-0 mr-2"></span>
-                                                <span class="pl-1">Lisa Ivanova</span>
+                                            <label class="d-flex align-items-center mb-2 pb-1"> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">Liza Mercus</span>
+                                            </label>
+                                            <label class="d-flex align-items-center "> 
+                                                <input class="checkbox" type="checkbox" >
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">Andrei Ivanov</span>
                                             </label>
                                         </div>
                                     </div>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <a href="#" class="d-flex align-items-center py-2">
-                                        <span class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon stroke-gray mx-auto d-block" width="10px" height="31px">
+
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2">
+                                    <a href="#" class="d-flex align-items-center pt-2 ">
+                                        <div class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon stroke-92 m-auto " width="12px" height="12px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#download2"></use>
                                             </svg>
-                                        </span>
-                                        <span class="c-dark">Add file</span>
+                                        </div>
+                                        <span class="pl-1 c-black-1e">Add file</span>
                                     </a>
                                 </li>
-                                <li class="px-3 bb-1 b-gray_02 hover-bg-light">
-                                    <a href="#" class="d-flex align-items-center py-2">
-                                        <span class="br-50 bg-light wh-31 mr-3">
-                                            <svg class="svg-sprite-icon c-gray mx-auto d-block" width="10px" height="31px">
+                                <li class="px-3 bb-1 b-gray-b1 hover-bg-light py-2">
+                                    <a href="#" class="d-flex align-items-center pt-2 ">
+                                        <div class="bg-gray-15 wh-30 d-flex hover-item mr-2">
+                                            <svg class="svg-sprite-icon c-gray-92 m-auto " width="12px" height="13px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
                                             </svg>
-                                        </span>
-                                        <span class="c-dark">Delete</span>
+                                        </div>
+                                        <span class="pl-1 c-black-1e">Delete</span>
                                     </a>
                                 </li>
+
                             </ul>
-                            <div class="p-3">
-                                <p class="c-blue-gray fs-13 weight-medium">Task description</p>
-                                <textarea cols="10" rows="4" class="bb-1 b-gray_02 lh-1_6">Read and whisper it along the line. The last student writes it on the board. Let the students in each team organize their own position. It gives them a sense of authority and gets them invested.</textarea>
-                           
+                            <div class="px-3 py-4">
+                                <div class="relative h-fit mt-4">
+                                    <textarea cols="10" rows="4" class="letter-sp--03 input-normal bb-1 text-left lh-1_6" placeholder="Write feedback">Read and whisper it along the line. The last student writes it on the board. Let the students in each team organize their own position. It gives them a sense of authority and gets them invested.</textarea>
+                                    <p class="c-blue-gray name weight-medium c-gray-69 top">Task description</p>
+                                </div>
                             </div>
                         </div>
 

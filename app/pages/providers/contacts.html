@@ -11,7 +11,7 @@
     <link href="../../css/style.css" rel="stylesheet">
     <link href="../../css/main.css" rel="stylesheet">
 </head>
-<body id="page-top">
+<body id="page-top" class=" bg-gray-1">
 <div id="wrapper">
     <div class="overlay"></div>
     <header class="header d-flex justify-content-between align-items-center ">
@@ -539,17 +539,17 @@
         <div id="content">
             <div class="container-fluid p-0" id="container-wrapper">
                 <div id="box">
-                    <div class="py-3 pr-4 pl-5 bg-white min-h-100vh_60">
-                        <h2 class="fs-18 letter-sp--036 mb-2">Activities</h2>
+                    <div class="py-3 px-4 bg-white shadow10 sticky-js_v1">
+                        <h2 class="fs-18 letter-sp--036 mb-2 weight-medium">Contacts</h2>
                         <ul class="nav nav-tabs_v3" >
                             <li class="nav-item pr-2">
-                                <a class="nav-link c-dark px-0 mr-5  ">Pipelines (18)  </a>
+                                <a class="nav-link c-dark px-0 mr-5 active ">Pipelines </a>
                             </li>
                             <li class="nav-item pr-2">
-                                <a class="nav-link c-dark px-0 mr-5">Companies (112)  </a>
+                                <a class="nav-link c-dark px-0 mr-5">Companies</a>
                             </li>
                             <li class="nav-item pr-2">
-                                <a class="nav-link c-dark px-0 mr-5 active">Activities (12)  </a>
+                                <a class="nav-link c-dark px-0 mr-5 ">Activities</a>
                             </li>
                             <li class="nav-item pr-2">
                                 <a class="nav-link c-dark px-0 mr-5">Inventory   </a>
@@ -559,808 +559,736 @@
                             </li>
                         </ul>
                         <hr> 
+                        <div class="contact_filter d-flex flex-wrap">
+                            <form class="d-flex flex-wrap">
+                                <button type="button" class="d-flex align-items-center fs-14 c-gray-69 mr-3">
+                                    <svg class="svg-sprite-icon mr-2 c-gray-69" width="16px" height="17px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#document-add-outline"></use>
+                                    </svg>
+                                    New company
+                                </button>
 
-                        <div class="contents pt-3" >
-                            <div class="contents__item  pt-3 pt-2_1440 h-100 ">
-                                <div class="bg-white py-4 px-5 mt-4 px-3_1440 h-100">
-                                    <div class="d-flex justify-content-between align-items-center">
-                                        <h2 class="fs-20 fs-16_1440 weight-medium mr-4 mr-3_1440">Pipeline 2022</h2>
-                                            
-                                        <form class="d-flex">
-                                            <div class="select not-arrow h-fit mr-3 mr-2_1440 bg-white">
-                                                <div class="select__item d-flex justify-content-between py-2_5 px-2">
-                                                    <div class="d-flex fs-14 fs-13_1440 lh-1_4 w-100">
-                                                        <div class="d-flex br-4 b-1 b-light3 mr-3 mr-2_1440">
-                                                            <div class="bg-light weight-medium p-2 p-1_1440">Сustomer:</div>
-                                                            <div class="p-2 p-1_1440 d-flex align-items-center">
-                                                                Aсargo Company
-                                                                <svg class="svg-sprite-icon c-gray ml-2" width="10px" height="10px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                        <div class="d-flex br-4 b-1 b-light3 mr-3 mr-2_1440">
-                                                            <div class="bg-light weight-medium p-2 p-1_1440">Сustomer:</div>
-                                                            <div class="p-2 p-1_1440 d-flex align-items-center">
-                                                                Aсargo Company
-                                                                <svg class="svg-sprite-icon c-gray ml-2" width="10px" height="10px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                                                </svg>
-                                                            </div>
-                                                        </div>
-                                                        <input type="text" class="input-normal c-dark lh-1_4 fs-14 fs-13_1440 text-left">
-                                                    </div>
-                                                    <svg class="svg-sprite-icon c-gray my-auto" width="22px" height="30px">
-                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#search"></use>
-                                                    </svg>
-                                                </div>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu lh-1_5 min-h-210">
-                                                        <li class="py-2_5 px-3">
-                                                            <p class="pl-3">Opportunity: <span class="c-blue-gray">Marketing</span> </p>
-                                                        </li>
-                                                        <li class=" py-2_5 px-3">
-                                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openCountry">
-                                                                <span class="arrow-customer"></span>
-                                                                <span class="pl-2">Country (18):<span class="c-blue-gray">Marketing</span> </span>
-                                                            </button>
-                                                            <div id="openCountry" class="collapse pl-3 fs-14 block-all">
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
-                                                            </div>
-                                                        </li>
-                                                        <li class="py-2_5 px-3">
-                                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openCity">
-                                                                <span class="arrow-customer"></span>
-                                                                <span class="pl-2">City (113): <span class="c-blue-gray">Marketing</span> </span>
-                                                            </button>
-                                                            <div id="openCity" class="collapse pl-3 fs-14 block-all">
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
-                                                            </div>
-                                                        </li>
-                                                        <li class="py-2_5 px-3">
-                                                            <button type="button" class="d-flex align-items-center collapsed pl-0" data-toggle="collapse" data-target="#openPeriod">
-                                                                <spna class="arrow-customer"></spna>
-                                                                <span class="pl-2">Period: <span class="c-blue-gray">Marketing</span> </span>
-                                                            </button>
-                                                            <div id="openPeriod" class="collapse pl-3 fs-14 block-all">
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
-                                                            </div>
-                                                        </li>
-                                                        <li class=" py-2_5 px-3">
-                                                            <button type="button" class="d-flex align-items-center pl-0" data-toggle="collapse" data-target="#openCompany">
-                                                                <span class="arrow-customer"></span>
-                                                                <span class="pl-2">Сompany (3): <span class="c-blue-gray">Marketing</span> </span>
-                                                            </button>
-                                                            <div id="openCompany" class="collapse show pl-3 fs-14 block-all">
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Logistic Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Acargo Company</a>
-                                                                <a href="#" class=" c-blue-gray hover-l-blue">Shipping Company</a>
-                                                            </div>
-                                                        </li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <button type="sumbit" class="btn-aquamarine min-w-auto text-nowrap px-4 _1441_fs-15"><span class="_1441_px-2">+ Add column</span></button>
-                                        </form>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#building-office"></use>
+                                        </svg>
                                     </div>
-                                    <div class="d-flex pt-3 mx--2 mx--1_1440">
-                                        <div class="w-100 px-3 px-2_1440">
-                                            <div class="d-flex justify-content-between py-2 mb-1 ">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="_1441_fs-17 weight-semi mr-2">Leads</p>
-                                                    <p class="br-50px bg-pale-azure c-blue-gray px-2 lh-1_5 fs-14 fs-13_1440"> <span class="px-1">28</span></p>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value=" 2 companies">
+                                    <div class="select__drop w-320">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                            <div class="row mx-0 pb-2">
+                                                <div class="col-6 pr-1 pl-0">
+                                                    <div class="bg-orange-10 flex-center pl-2 fs-14">Acargo Сompany
+                                                        <button type="button" class="px-2">
+                                                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="22px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
                                                 </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="br-50 bg-green wh-20 text-center">
-                                                        <svg class="svg-sprite-icon c-white" width="10px" height="20px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus"></use>
-                                                        </svg>
-                                                    </a>
-                                                    <div class="circle pl-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                <div class="col-6 pl-1 pr-0">
+                                                    <div class="bg-orange-10 flex-center pl-2 fs-14">Logistic Сompany
+                                                        <button type="button" class="px-2">
+                                                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="22px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating mr-3">
-                                                            <input type="radio" name="item-1-rating" id="item-1-rating-5">
-                                                            <label for="item-1-rating-5" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-1-rating" id="item-1-rating-4" checked>
-                                                            <label for="item-1-rating-4" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-1-rating" id="item-1-rating-3" >
-                                                            <label for="item-1-rating-3" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-1-rating" id="item-1-rating-2" >
-                                                            <label for="item-1-rating-2" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-1-rating" id="item-1-rating-1" >
-                                                            <label for="item-1-rating-1" class="mx-0 op-015"></label>
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
+                                            <ul class="pt-1">
+                                                <li class=" hover__option mb-2">
+                                                    <div class="d-flex align-items-center ">
+                                                        <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                        <span> Cargo logistic</span>
                                                     </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                    <p class="">2311 North  Robles Ave ...</p>
+                                                </li>
+                                                <li class=" hover__option mb-2">
+                                                    <div class="d-flex align-items-center ">
+                                                        <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                        <span > Cargo</span>
                                                     </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating mr-3">
-                                                            <input type="radio" name="item-2-rating" id="item-2-rating-5">
-                                                            <label for="item-2-rating-5" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-2-rating" id="item-2-rating-4" >
-                                                            <label for="item-2-rating-4" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-2-rating" id="item-2-rating-3" >
-                                                            <label for="item-2-rating-3" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-2-rating" id="item-2-rating-2" checked>
-                                                            <label for="item-2-rating-2" class="mx-0 op-015"></label>
-                                                            <input type="radio" name="item-2-rating" id="item-2-rating-1" >
-                                                            <label for="item-2-rating-1" class="mx-0 op-015"></label>
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
+                                                    <p class="">2311 North  Robles Ave ...</p>
+                                                </li>
+                                                <li class=" hover__option mb-2">
+                                                    <div class="d-flex align-items-center ">
+                                                        <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                        <span> Cargo logistic</span>
                                                     </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
+                                                    <p class="">2311 North  Robles Ave ...</p>
+                                                </li>
+                                                <li class=" hover__option mb-2">
+                                                    <div class="d-flex align-items-center ">
+                                                        <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                        <span> Cargo logistic</span>
                                                     </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating d-flex justify-content-center mr-3">
-                                                            <img src="../../img/star-gray.svg" alt="star" class=" mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0" >
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 px-3 px-2_1440">
-                                            <div class="d-flex justify-content-between py-2 mb-1 ">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="_1441_fs-17 weight-semi mr-2">Сontacts</p>
-                                                    <p class="br-50px bg-pale-azure c-blue-gray px-2 lh-1_5 fs-14 fs-13_1440"> <span class="px-1">28</span></p>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="br-50 bg-green wh-20 text-center">
-                                                        <svg class="svg-sprite-icon c-white" width="10px" height="20px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus"></use>
-                                                        </svg>
-                                                    </a>
-                                                    <div class="circle pl-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating d-flex justify-content-center mr-3">
-                                                            <img src="../../img/star-gray.svg" alt="star" class=" mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0" >
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 px-3 px-2_1440">
-                                            <div class="d-flex justify-content-between py-2 mb-1 ">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="_1441_fs-17 weight-semi mr-2">Offers</p>
-                                                    <p class="br-50px bg-pale-azure c-blue-gray px-2 lh-1_5 fs-14 fs-13_1440"> <span class="px-1">28</span></p>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="br-50 bg-green wh-20 text-center">
-                                                        <svg class="svg-sprite-icon c-white" width="10px" height="20px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus"></use>
-                                                        </svg>
-                                                    </a>
-                                                    <div class="circle pl-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating d-flex justify-content-center mr-3">
-                                                            <img src="../../img/star-gray.svg" alt="star" class=" mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0" >
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 px-3 px-2_1440">
-                                            <div class="d-flex justify-content-between py-2 mb-1 ">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="_1441_fs-17 weight-semi mr-2">Negotiations</p>
-                                                    <p class="br-50px bg-pale-azure c-blue-gray px-2 lh-1_5 fs-14 fs-13_1440"> <span class="px-1">28</span></p>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="br-50 bg-green wh-20 text-center">
-                                                        <svg class="svg-sprite-icon c-white" width="10px" height="20px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus"></use>
-                                                        </svg>
-                                                    </a>
-                                                    <div class="circle pl-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating d-flex justify-content-center mr-3">
-                                                            <img src="../../img/star-gray.svg" alt="star" class=" mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0" >
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="w-100 px-3 px-2_1440">
-                                            <div class="d-flex justify-content-between py-2 mb-1 ">
-                                                <div class="d-flex align-items-center">
-                                                    <p class="_1441_fs-17 weight-semi mr-2">In progress</p>
-                                                    <p class="br-50px bg-pale-azure c-blue-gray px-2 lh-1_5 fs-14 fs-13_1440"> <span class="px-1">28</span></p>
-                                                </div>
-                                                <div class="d-flex align-items-center">
-                                                    <a href="#" class="br-50 bg-green wh-20 text-center">
-                                                        <svg class="svg-sprite-icon c-white" width="10px" height="20px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus"></use>
-                                                        </svg>
-                                                    </a>
-                                                    <div class="circle pl-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            
-                                            <div class="shadow6 py-2 pl-3 mb-2 d-flex justify-content-between br-12">
-                                                <div>
-                                                    <p class="weight-medium">Acargo Company</p>
-                                                    <p class="c-blue-gray fs-13_1440">Logistic</p>
-                                                    <div class="d-flex align-items-end pt-2_1440">
-                                                        <div class="rating d-flex justify-content-center mr-3">
-                                                            <img src="../../img/star-gray.svg" alt="star" class=" mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0" >
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                            <img src="../../img/star.svg" alt="star" class="active mx-0">
-                                                        </div>
-                                                        <svg class="svg-sprite-icon c-gray_05 wh-13_1440" width="19px" height="19px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#time"></use>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex flex-column align-items-end justify-content-between">
-                                                    <div class="circle px-2 ml-1">
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <span class="circle-span bg-gray"></span>
-                                                        <div class="menu right t-0 pt-4 r-0">
-                                                            <ul class="py-3 bg-white b-1 b-gray4 br-4">
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="14px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#contacts-fill"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">New contact</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="13px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Edit</span>    
-                                                                    </a>
-                                                                </li>
-                                                                <li class="menu__item mb-1">
-                                                                    <a href="#" class="hover-l-blue-2 c-dark d-flex align-items-center px-3">
-                                                                        <svg class="svg-sprite-icon c-gray mr-2" width="11px" height="22px">
-                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin"></use>
-                                                                        </svg>
-                                                                        <span class="px-1">Delete</span> 
-                                                                    </a>
-                                                                </li>
-                                                                <li class="d-flex flex-wrap px-3 pt-1">
-                                                                    <button class="bg-green wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-yellow wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-navy wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-gray wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-orange wh-17 mr-1 mt-1" type="button"></button>
-                                                                    <button class="bg-blue-bright wh-17 mt-1" type="button"></button>
-                                                                </li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                    <a href="#" class="wh-23_1440 b-1 br-50 fs-12 c-blue wh-31 b-blue-v4 d-flex align-items-center justify-content-center mx-2">
-                                                        B.V
-                                                    </a>
-                                                </div>
-                                            </div>
+                                                    <p class="">2311 North  Robles Ave ...</p>
+                                                </li>
+                                            </ul>
+                                            <button type="reset" class="c-gray-69 px-2 ml-1 sticky-bottom bg-white b-0 w-100 text-left">Clear filter</button>
                                         </div>
                                     </div>
                                 </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value=" Country">
+                                    <div class="select__drop w-320">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                            <div class="bg-orange-10 flex-center pl-2 fs-14 w-fit-content c-dark_v2 c-black-1e ">Lithvinia
+                                                <button type="button" class="px-2">
+                                                    <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                    </svg>
+                                                </button>
+                                            </div>
+                                            <ul>
+                                                <li class=" hover__option mt-2 d-flex align-items-center">
+                                                    <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                    <span class="pl-1"> USA</span>
+                                                </li>
+                                                <li class=" hover__option mt-2 d-flex align-items-center">
+                                                    <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                    <span class="pl-1"> Lithvinia</span>
+                                                </li>
+                                                <li class=" hover__option mt-2 d-flex align-items-center">
+                                                    <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                    <span class="pl-1"> USA</span>
+                                                </li>
+                                                <li class=" hover__option mt-2 d-flex align-items-center">
+                                                    <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                                    <span class="pl-1"> Lithvinia</span>
+                                                </li>
+                                            </ul>
+                                            <button type="reset" class="c-gray-69 px-2 ml-1 sticky-bottom bg-white b-0 w-100 text-left">Clear filter</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-gray-69 mx-auto" width="16px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#office-building4"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Category">
+
+                                    <div class="select__drop min-w-215">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <div class="fs-13 lh-1_5 text-center">
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="pl-1 weight-light">Client</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="pl-1 weight-light">Client</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="pl-1 weight-light">Client</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="pl-1 weight-light">Client</span>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn-aquamarine mt-2 w-100 py-2">
+                                                <span class="py-1 d-block">Save</span> 
+                                            </button>
+                                            <button type="reset" class="c-gray-69 w-100 pt-2">
+                                                <span class="px-2">Clear filter</span> 
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-gray-69 mx-auto" width="13px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Acargo@mail.com">
+
+                                    <div class="select__drop min-w-305">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                            <ul>
+                                                <li class="select__option active py-2_5 mb-1">Acargo@mail.com</li>
+                                                <li class="select__option py-2_5 mb-1">Acargo@mail.com</li>
+                                            </ul>
+                                            <button type="reset" class="c-gray-69 px-2 mt-1 ml-1 sticky-bottom bg-white b-0 w-100 text-left">Clear filter</button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-gray-69 mx-auto" width="11px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Phone">
+                                </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 relative select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Sales person">
+                                  
+                                    <div class="select__drop w-320">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                          
+                                            <label class=" hover__option mb-1 py-1 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked>
+                                                <span class="checked-customer_op">
+                                                    <svg class="svg-sprite-icon c-orange-eb mx-auto" width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-2 weight-light">Anna Merc</span>
+                                            </label>
+                                            <label class=" hover__option mb-1 py-1 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checked-customer_op">
+                                                    <svg class="svg-sprite-icon c-orange-eb mx-auto" width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-2 weight-light">Anna Merc</span>
+                                            </label>
+                                            <label class=" hover__option mb-1 py-1 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checked-customer_op">
+                                                    <svg class="svg-sprite-icon c-orange-eb mx-auto" width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-2 weight-light">Anna Merc</span>
+                                            </label>
+                                            <label class=" hover__option mb-1 py-1 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checked-customer_op">
+                                                    <svg class="svg-sprite-icon c-orange-eb mx-auto" width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-2 weight-light">Anna Merc</span>
+                                            </label>
+                                            <button type="reset" class="c-gray-69 px-4 sticky-bottom bg-white b-0 w-100 text-left">
+                                                <span class="px-2">Clear filter</span> 
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-none stroke-69 mx-auto" width="13px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Activity">
+
+                                    <div class="select__drop min-w-215">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <div class="fs-13 lh-1_5 text-center">
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                    </svg>
+                                                    <span class="pl-2 weight-light">Call</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                    </svg>
+                                                    <span class="pl-2 weight-light">Email</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                    </svg>
+                                                    <span class="pl-2 weight-light">Meeting</span>
+                                                </label>
+                                                <label class=" mb-2 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="13px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                    </svg>
+                                                    <span class="pl-2 weight-light">To-do list</span>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn-aquamarine mt-2 w-100 py-2">
+                                                <span class="py-1 d-block">Save</span> 
+                                            </button>
+                                            <button type="reset" class="c-gray-69 w-100 pt-2">
+                                                <span class="px-2">Clear filter</span> 
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center fs-14 c-gray-69 mr-2 select b-0 h-31 w-fit-content not-arrow">
+                                    <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                        <svg class="svg-sprite-icon c-gray-69 mx-auto" width="16px" height="29px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#tags"></use>
+                                        </svg>
+                                    </div>
+                                    <input type="text" class="px-2 input_customer w-120 select__item" value="Tags">
+
+                                    <div class="select__drop min-w-215 right">
+                                        <div class="select__menu max-h-340 px-2">
+                                            <input type="text" class="input-search small h-31 bg-gray-f8">
+                                          
+                                            <div class="fs-13 lh-1_5 text-center">
+                                                <label class=" mt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer dark">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="ml-2 weight-medium c-blue bg-blue_19 w-80">Agent</span>
+                                                </label>
+                                                <label class=" mt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="checked-customer gray">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="ml-2 weight-medium c-green bg-green-19 w-80">New client</span>
+                                                </label>
+                                                <label class=" mt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox" >
+                                                    <span class="checked-customer dark">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="ml-2 weight-medium c-yellow-d8 bg-yellow-ff w-80">New client</span>
+                                                </label>
+                                                <label class=" mt-3 d-flex align-items-center">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="checked-customer dark">
+                                                        <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="ml-2 weight-medium c-blue-3a bg-blue_v8 w-80">Transporter</span>
+                                                </label>
+                                            </div>
+                                            <button type="button" class="btn-aquamarine mt-3 w-100 py-2">
+                                                <span class="py-1 d-block">Save</span> 
+                                            </button>
+                                            <button type="reset" class="c-gray-69 w-100 pt-2">
+                                                <span class="px-2">Clear filter</span> 
+                                            </button>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <button type="reset" class="d-flex align-items-center c-gray-69 fs-14 letter-sp--03">
+                                    <svg class="svg-sprite-icon c-gray-69 mr-2" width="16px" height="29px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#filter2"></use>
+                                    </svg>
+                                    Clear filter
+                                </button>
+                                
+                            </form>
+                            <div class=" d-flex align-items-center justify-content-end ml-auto">
+                                <input type="text" class="input-search input_customer w-100px b-gray-e9 right small mr-2">
+                                <button type="button" class="wh-30 d-flex ml-1 hover-bg-light p-0">
+                                    <svg class="svg-sprite-icon stroke-69 m-auto c-none item-color" width="22px" height="22px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#grid-light"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="wh-30 d-flex ml-1 hover-bg-light p-0">
+                                    <svg class="svg-sprite-icon stroke-69 m-auto item-color" width="22px" height="22px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#menu2"></use>
+                                    </svg>
+                                </button>
+                                <button type="button" class="wh-30 d-flex ml-1 hover-bg-light p-0">
+                                    <svg class="svg-sprite-icon stroke-69 m-auto item-color" width="22px" height="22px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-6"></use>
+                                    </svg>
+                                </button>
+                                
+                                <p class="ml-4">1-10 / 200</p>
+                                <a href="#" class=" ml-2">
+                                    <svg class="svg-sprite-icon c-gray-69" width="6px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-slide"></use>
+                                    </svg> 
+                                </a>
+                                <a href="#" class=" ml-2">
+                                    <svg class="svg-sprite-icon c-gray-69" width="6px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-slide"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p-3">
+                        <div class="contents p-0" >
+                            <div class="contents__item active">
+                               <div class="d-flex flex-wrap letter-sp--03 fs-14">
+                                    <div class="_1441_w-25 px-2 w-33 mb-1">
+                                        <div class="b-1 b-gray4 bg-white p-2 d-flex hover-scale">
+                                            <div class="d-flex wh-108 mr-3 flex-shrink-0">
+                                                <img src="../../img/logo/logo-building.svg" alt="icon" class="m-auto">
+                                            </div>
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div>
+                                                    <p class="fs-16 weight-medium">Acargo Company</p>
+                                                    <div class="d-flex align-items-center py-1">
+                                                        <img class="mr-2" src="../../img/flag.svg" alt="flag" width="16px" height="16px">
+                                                        <p>Lithvinia, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                                        </svg>
+                                                        <p>Client</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                        </svg>
+                                                        <p>Acargo@mail.com</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                        </svg>
+                                                        <p>+7 490 567 78 88</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="bg-blue_v9 px-2 c-blue-3a lh-1_4 w-fit-content mb-2">Transporter</p>
+                                                    <p class="bg-green-19 px-2 c-green lh-1_4 w-fit-content mb-2">Agent</p>
+                                                    <div class="d-flex py-1">
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_1441_w-25 px-2 w-33 mb-1">
+                                        <div class="b-1 b-gray4 bg-white p-2 d-flex hover-scale">
+                                            <div class="d-flex wh-108 mr-3 flex-shrink-0">
+                                                <img src="../../img/logo/COSCO_logo.svg" alt="icon" class="m-auto">
+                                            </div>
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div>
+                                                    <p class="fs-16 weight-medium">Acargo Company</p>
+                                                    <div class="d-flex align-items-center py-1">
+                                                        <img class="mr-2" src="../../img/flag.svg" alt="flag" width="16px" height="16px">
+                                                        <p>Lithvinia, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                                        </svg>
+                                                        <p>Client</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                        </svg>
+                                                        <p>Acargo@mail.com</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                        </svg>
+                                                        <p>+7 490 567 78 88</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="bg-blue_v9 px-2 c-blue-3a lh-1_4 w-fit-content mb-2">Transporter</p>
+                                                    <p class="bg-green-19 px-2 c-green lh-1_4 w-fit-content mb-2">Agent</p>
+                                                    <div class="d-flex py-1">
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_1441_w-25 px-2 w-33 mb-1">
+                                        <div class="b-1 b-gray4 bg-white p-2 d-flex hover-scale">
+                                            <div class="d-flex wh-108 mr-3 flex-shrink-0">
+                                                <img src="../../img/logo/logo-building.svg" alt="icon" class="m-auto">
+                                            </div>
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div>
+                                                    <p class="fs-16 weight-medium">Acargo Company</p>
+                                                    <div class="d-flex align-items-center py-1">
+                                                        <img class="mr-2" src="../../img/flag.svg" alt="flag" width="16px" height="16px">
+                                                        <p>Lithvinia, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                                        </svg>
+                                                        <p>Client</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                        </svg>
+                                                        <p>Acargo@mail.com</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                        </svg>
+                                                        <p>+7 490 567 78 88</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="bg-blue_v9 px-2 c-blue-3a lh-1_4 w-fit-content mb-2">Transporter</p>
+                                                    <p class="bg-green-19 px-2 c-green lh-1_4 w-fit-content mb-2">Agent</p>
+                                                    <div class="d-flex py-1">
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_1441_w-25 px-2 w-33 mb-1">
+                                        <div class="b-1 b-gray4 bg-white p-2 d-flex hover-scale">
+                                            <div class="d-flex wh-108 mr-3 flex-shrink-0">
+                                                <img src="../../img/logo/logo-building.svg" alt="icon" class="m-auto">
+                                            </div>
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div>
+                                                    <p class="fs-16 weight-medium">Acargo Company</p>
+                                                    <div class="d-flex align-items-center py-1">
+                                                        <img class="mr-2" src="../../img/flag.svg" alt="flag" width="16px" height="16px">
+                                                        <p>Lithvinia, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                                        </svg>
+                                                        <p>Client</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                        </svg>
+                                                        <p>Acargo@mail.com</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                        </svg>
+                                                        <p>+7 490 567 78 88</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="bg-blue_v9 px-2 c-blue-3a lh-1_4 w-fit-content mb-2">Transporter</p>
+                                                    <p class="bg-green-19 px-2 c-green lh-1_4 w-fit-content mb-2">Agent</p>
+                                                    <div class="d-flex py-1">
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="_1441_w-25 px-2 w-33 mb-1">
+                                        <div class="b-1 b-gray4 bg-white p-2 d-flex hover-scale">
+                                            <div class="d-flex wh-108 mr-3 flex-shrink-0">
+                                                <img src="../../img/logo/logo-building.svg" alt="icon" class="m-auto">
+                                            </div>
+                                            <div class="d-flex justify-content-between w-100">
+                                                <div>
+                                                    <p class="fs-16 weight-medium">Acargo Company</p>
+                                                    <div class="d-flex align-items-center py-1">
+                                                        <img class="mr-2" src="../../img/flag.svg" alt="flag" width="16px" height="16px">
+                                                        <p>Lithvinia, LT</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2"></use>
+                                                        </svg>
+                                                        <p>Client</p>
+                                                    </div>
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                        </svg>
+                                                        <p>Acargo@mail.com</p>
+                                                    </div> 
+                                                    <div class="d-flex align-items-center mt-1">
+                                                        <svg class="svg-sprite-icon mr-2 c-dark" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                        </svg>
+                                                        <p>+7 490 567 78 88</p>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex flex-column align-items-end">
+                                                    <p class="bg-blue_v9 px-2 c-blue-3a lh-1_4 w-fit-content mb-2">Transporter</p>
+                                                    <p class="bg-green-19 px-2 c-green lh-1_4 w-fit-content mb-2">Agent</p>
+                                                    <div class="d-flex py-1">
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pencil-write"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-none stroke-orange-f5 ml-1" width="13px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#camera2"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#phone"></use>
+                                                            </svg>
+                                                        </a>
+                                                        <a href="#" class="ml-2">
+                                                            <svg class="svg-sprite-icon c-orange-f5 ml-1" width="12px" height="11px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#email2"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                               </div>
                             </div>
                             <div class="contents__item ">
                                 <div class="px-5 mt-4 px-3_1440 d-flex justify-content-between align-items-center py-2">
@@ -3244,7 +3172,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="contents__item d-grid active">
+                            <div class="contents__item d-grid px-2">
                                
                                 <div class="d-flex justify-content-between">
                                     <div class="d-flex flex-wrap align-items-center">
@@ -3436,7 +3364,7 @@
                                                     <div class="fs-13 lh-1_5 text-center">
                                                         <label class=" mt-3 d-flex align-items-center">
                                                             <input type="checkbox" class="checkbox" checked>
-                                                            <span class="checked-customer dark">
+                                                            <span class="checked-customer_op dark">
                                                                 <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
                                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                                                 </svg>
@@ -3445,7 +3373,7 @@
                                                         </label>
                                                         <label class=" mt-3 d-flex align-items-center">
                                                             <input type="checkbox" class="checkbox" checked>
-                                                            <span class="checked-customer gray">
+                                                            <span class="checked-customer_op gray">
                                                                 <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
                                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                                                 </svg>
@@ -3454,7 +3382,7 @@
                                                         </label>
                                                         <label class=" mt-3 d-flex align-items-center">
                                                             <input type="checkbox" class="checkbox" checked>
-                                                            <span class="checked-customer dark">
+                                                            <span class="checked-customer_op dark">
                                                                 <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
                                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                                                 </svg>
@@ -3462,8 +3390,8 @@
                                                             <span class="ml-2 weight-medium c-yellow-d8 bg-yellow-ff w-80">New client</span>
                                                         </label>
                                                         <label class=" mt-3 d-flex align-items-center">
-                                                            <input type="checkbox" class="checkbox" >
-                                                            <span class="checked-customer dark">
+                                                            <input type="checkbox" class="checkbox" checked>
+                                                            <span class="checked-customer_op dark">
                                                                 <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
                                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                                                 </svg>

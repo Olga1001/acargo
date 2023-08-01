@@ -430,3 +430,4 @@ document.querySelectorAll('.elements__close').forEach(closeItem => {
     changeWidthInput(item)
   })
 })
+

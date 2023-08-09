@@ -397,10 +397,6 @@ function setHeight(el, index) {
   el.style.height = `calc(100vh - ${Math.ceil(sumHeight)}px)`
 }
 
-document.querySelectorAll('.h-calc_1').forEach(el => {
-  setHeight(el, el.dataset.index)
-})
-
 //change width child elements
 function changeWidthInput(item) {
   if (item.children[0].children.length > 0) {
@@ -436,3 +432,21 @@ document.querySelectorAll('[data-script-padding]').forEach(item => {
     item.style = 'padding-top: ' + document.querySelector('.fix-top-tabs').clientHeight + 'px!important';
   }
 })
+
+
+let optionMut = {
+  childList: true,
+  subtree: true,
+  attributes: true
+};
+
+let mut = new MutationObserver(function (muts) {
+  if (document.querySelectorAll('.h-calc_1')) {
+      mut.disconnect()
+      document.querySelectorAll('.h-calc_1').forEach(el => {
+        setHeight(el, el.dataset.index)
+      })
+  }
+  mut.observe(document, optionMut);
+})
+mut.observe(document, optionMut);

@@ -382,25 +382,25 @@ $(document).ready(function () {
     var $this = $(this);
     resizeForText.call($this, $this.val());
   });
-
-  //set height
-  function setHeight(el) {
-    let sumHeight = 0;
-    if (document.querySelector('.head') != null) {
-      document.querySelectorAll('.head').forEach(item => sumHeight += item.offsetHeight);
-    }
-
-    let elHeight = document.querySelector(el).offsetHeight,
-        heightToEl = window.innerHeight - elHeight + sumHeight;
-
-    document.querySelector(el).style.height = `calc(100vh - ${heightToEl}px)`
-  }
-
-  if (document.querySelector('.h-calc_1') != null) {
-    setHeight('.h-calc_1')
-  }
-
 });
+
+//set height
+function setHeight(el, index) {
+  let sumHeight = 0;
+  if (document.querySelector(`.get-height[data-index="${index}"]`) != null) {
+    document.querySelectorAll(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
+  }
+
+  sumHeight += el.getBoundingClientRect().top;
+  
+  console.log(Math.ceil(sumHeight))
+  el.style.height = `calc(100vh - ${Math.ceil(sumHeight)}px)`
+}
+
+document.querySelectorAll('.h-calc_1').forEach(el => {
+  setHeight(el, el.dataset.index)
+})
+
 //change width child elements
 function changeWidthInput(item) {
   if (item.children[0].children.length > 0) {
@@ -429,4 +429,10 @@ document.querySelectorAll('.elements__close').forEach(closeItem => {
     closeItem.parentElement.remove();
     changeWidthInput(item)
   })
+})
+
+document.querySelectorAll('[data-script-padding]').forEach(item => {
+  if (document.querySelector('.fix-top-tabs')) {
+    item.style = 'padding-top: ' + document.querySelector('.fix-top-tabs').clientHeight + 'px!important';
+  }
 })

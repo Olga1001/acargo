@@ -489,7 +489,8 @@ button {
   width: 100%;
   height: 42px;
   /* border-radius: 4px; */
-  border: solid 1px #b7bcd6; }
+  border: solid 1px #b7bcd6;
+ }
   .select:focus, .select.active {
     border-color: #EB5E13;
   }
@@ -2795,8 +2796,7 @@ button {
   -ms-flex-pack: center;
   justify-content: center;
   padding: 20px;
-  border-radius: 4px;
-  min-height: 64px; }
+  min-height: 50px; }
   .drop-upload__icon:not(.svg-sprite-icon) {
     margin-right: 22px;
     width: 26px;
@@ -2805,6 +2805,8 @@ button {
     text-transform: inherit; }
   .drop-upload .loading__file-icon {
     display: none; }
+    .drop-upload.active {
+      background-color: rgba(235, 94, 19, 0.10);}
   .drop-upload.active .text-16 {
     color: #141515;
     font-size: 18px;
@@ -2813,7 +2815,8 @@ button {
     display: none; }
   .drop-upload.active .loading__file-icon {
     display: block; }
-
+    .drop-upload.active .upload-text {
+      color: #282E3B!important;}
 #drop-upload, #drop-upload1 {
   display: none; }
 
@@ -11013,21 +11016,21 @@ input.fs-14:-ms-input-placeholder  {
   border-color: #156CE4!important;
 }
 .loaded-logo {
-  background: #FFFFFF;
-  border-right: 1px solid #B7BCD6;
-  border-radius: 4px;
+  border-right: 0.5px solid #B7BCD6;
+  background: #FFF;
   z-index: 1;
   position: relative;
-  margin-right: -4px;
+  min-width: 113px;
 }
 .drop-upload .loaded-logo, .upload-close {
   display: none;
 }
 .drop-upload {
-  border-style: dashed!important;
+  border: 0.5px dashed #EB5E13;
+  border-width: thin;
 }
 .drop-upload.active {
-  border-style: solid!important;
+  border: 0.5px solid #B7BCD6;
 }
 .drop-upload.active .loaded-logo, .drop-upload.active .upload-close {
   display: flex;
@@ -11633,6 +11636,21 @@ input.input_customer, textarea.input_customer {
 }
 .cursor-all-scroll {
   cursor: all-scroll;
+}
+.text-truncate-all * {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.o_resize {
+  bottom: 0;
+  cursor: col-resize;
+  position: absolute;
+  left: 0px;
+  top: 0;
+  width: 10px;
+  z-index: 1;
+  height: 100%;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

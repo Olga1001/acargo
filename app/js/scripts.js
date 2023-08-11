@@ -100,7 +100,10 @@ $(document).ready(function () {
     }).on('show.daterangepicker', function (ev, picker) {
       picker.container.addClass('calendar-v1 big');
     }).on('apply.daterangepicker', function(ev, picker) {
-      $(this).val(picker.startDate.format('MM.DD.YYYY') + ' - ' + picker.endDate.format('MM.DD.YYYY'));
+      console.log(ev.currentTarget, picker)
+      let formatOne = ev.currentTarget.getAttribute('data-format-one') ? ev.currentTarget.getAttribute('data-format-one') : 'MM.DD.YYYY';
+      let formatTwo = ev.currentTarget.getAttribute('data-format-two') ? ev.currentTarget.getAttribute('data-format-two') : 'MM.DD.YYYY';
+      $(this).val(picker.startDate.format(formatOne) + ' - ' + picker.endDate.format(formatTwo));
     }).on('cancel.daterangepicker', function(ev, picker) {
       $(this).val('');
     });

@@ -443,6 +443,7 @@ let optionMut = {
 let mut = new MutationObserver(function (muts) {
   if (document.querySelectorAll('.h-calc_1')) {
       mut.disconnect()
+      console.log('mut detec')
       document.querySelectorAll('.h-calc_1').forEach(el => {
         setHeight(el, el.dataset.index)
       })

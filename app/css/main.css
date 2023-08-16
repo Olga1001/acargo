@@ -823,7 +823,7 @@ button {
   border: none;
   padding: 0;
   height: auto;
-  font-size: 15px;
+  font-size: 16px;
   line-height: normal; }
 
 .input-resize {
@@ -1295,6 +1295,7 @@ button {
 }
 .checkbox:checked ~ .checked-customer.dark {
   background-color: #1E1E1E;
+  border-color: #1E1E1E!important;
 }
 .checkbox:checked ~ .checked-customer.gray {
   background-color: rgba(146, 146, 146, 1);
@@ -2126,7 +2127,7 @@ button {
 .bg-gray-5 {
   background-color: rgba(177, 177, 177, 0.5);}
 .bg-gray-1 {
-  background-color: rgba(177, 177, 177, 0.10);}
+  background-color: rgba(177, 177, 177, 0.10)!important;}
 .bg-gray-15 {
   background-color: rgba(177, 177, 177, 0.15);}
 .bg-gray-b1 {
@@ -9612,8 +9613,7 @@ padding-top: 15px;}
   text-align: center;
   display: block;
   position: relative;
-  border: 0.5px solid #b7bcd6;
-  border-radius: 6px;
+  border: 0.5px solid rgba(177, 177, 177, 0.70);
   padding: 16px 0 12px 0;}
 
 .check-type:before {
@@ -9622,7 +9622,7 @@ padding-top: 15px;}
   right: -8px;
   top: -8px;
   z-index: 2;
-  background: #156ce4 url('../img/check-white.svg') no-repeat center / 50%;
+  background: #EB5E13 url('../img/check-white.svg') no-repeat center / 50%;
   border-radius: 50%;
   width: 17px;
   height: 17px;}
@@ -9636,8 +9636,7 @@ padding-top: 15px;}
   background-color: #ffffff;
   z-index: 1;}
 .checkbox:checked ~ span.check-type {
-  border-color: #156ce4!important;
-  border-width: 1px;}
+  border-color: #EB5E13!important;}
 .checkbox:checked ~ span.check-type.blue {
   border-color: #109CF1!important;}
 .checkbox:checked ~ span.check-type .weight-medium {
@@ -9648,8 +9647,8 @@ padding-top: 15px;}
   color: #156ce4!important;}
 .checkbox:checked ~ .check-type img {
   display: block;}
-.checkbox:checked ~ .check-type svg {
-  fill: #156ce4!important;}
+/* .checkbox:checked ~ .check-type svg {
+  fill: #156ce4!important;} */
 .checkbox:checked ~ .check-type svg.stroke-black {
   stroke: #156ce4!important;}
 .checkbox:checked ~ .check-type:before {
@@ -12006,6 +12005,10 @@ input.input_customer, textarea.input_customer {
     width: 182px;}
 }
 @media only screen and (max-width: 1440px) {
+
+  .py-1_25_1440 {
+    padding-top: 1.25px!important;
+    padding-bottom: 1.25px!important;}
   .elements > div {
     min-height: 30.2px;
   }

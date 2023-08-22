@@ -390,7 +390,7 @@ function setHeight(el, index) {
   if (document.querySelector(`.get-height[data-index="${index}"]`) != null) {
     document.querySelectorAll(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
   }
-
+ 
   sumHeight += el.getBoundingClientRect().top;
   
   console.log(Math.ceil(sumHeight))

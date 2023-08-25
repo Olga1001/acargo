@@ -224,6 +224,11 @@ document.querySelectorAll('.nav').forEach((nav, index) => {
       target.classList.add('active');
 
       let contentsElement = document.querySelectorAll(`.contents`)[index];
+
+      if (target.closest('.nav').dataset.index) {
+        contentsElement = document.querySelector(`.contents[data-index="${target.closest('.nav').dataset.index}"]`);
+      } 
+
       let childsContents =  [...contentsElement.children];
       childsContents.forEach((a,b) => a.classList.contains('active') ? a.classList.remove('active') : '');
       contentsElement.children[i].classList.add('active');
@@ -443,7 +448,6 @@ let optionMut = {
 let mut = new MutationObserver(function (muts) {
   if (document.querySelectorAll('.h-calc_1')) {
       mut.disconnect()
-      console.log('mut detec')
       document.querySelectorAll('.h-calc_1').forEach(el => {
         setHeight(el, el.dataset.index)
       })

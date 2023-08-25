@@ -607,7 +607,7 @@ button {
     /* min-height: 25px; */
     list-style-type: none;
     padding: 0 12px; }
-    .select__option.active, .select__option:hover, .hover__option:hover, .hover__option.active, .select__menu .active {
+    .select__option.active, .select__option:hover, .hover__option:hover, .hover__option.active, .select__menu .active:not(.contents__item) {
       /* background-color: #f5fbff; */
       background-color: rgba(235, 94, 19, 0.20);
       /* color: #109cf1; */
@@ -5794,7 +5794,12 @@ button {
     font-size: 15px;
     color: #EB5E13; 
     background-color: transparent;}
-    
+    .nav-tabs_v3 .nav-link.active svg.c-dark-1e {
+      fill: #EB5E13!important; 
+    }
+    .nav-tabs_v3 .nav-link.active svg.stroke-1e {
+      stroke: #EB5E13!important; 
+    }
   .nav-link.active.blue {
     color: #fff!important;
     background-color: #156CE4!important;}
@@ -8338,6 +8343,8 @@ button {
   max-height: 160px;}
 .max-204 {
   max-width: 204px!important;}
+.max-h-400 {
+  max-height: 400px;}
 .max-h-418 {
   max-height: 418px;}
 .max-h-492 {
@@ -8531,6 +8538,8 @@ button {
   min-width: 960px;}
 .min-w-340 {
   min-width: 340px;}
+.min-w-345 {
+  min-width: 345px;}
 .min-w-350 {
   min-width: 350px;}
 .min-w-440 {
@@ -9498,6 +9507,11 @@ padding-top: 15px;}
   text-align: center;
   line-height: 17px;
   display: block;}
+  .switch-yn.small span {
+    font-size: 7px;
+    width: 26px;
+    line-height: 14px;
+  }
 .switch-y {
   position: relative;
   color: #B7BCD6;
@@ -9524,6 +9538,10 @@ padding-top: 15px;}
    border-color: #49DDAA;}
   .checkbox:checked ~ span.green .switch-yn_circle {
     background-color: #49DDAA;}
+    .checkbox:checked ~ span.orange {
+      border-color: #EB5E13;}
+     .checkbox:checked ~ span.orange .switch-yn_circle {
+       background-color: #EB5E13;}
 .checkbox:checked ~ span .switch-yn_circle {
   background: #109cf1;}
 .checkbox:checked ~ span .switch-yn_circle  {
@@ -10361,7 +10379,7 @@ padding-top: 15px;}
 .map__dropdown {
   flex-shrink: 0;
   background-color: #fff;
-  width: 420px;
+  width: 385px;
   height: 100%;}
 .calc2 .calc__btn {
   width: 18px;

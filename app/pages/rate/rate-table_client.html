@@ -544,7 +544,7 @@
             <div id="box">
                 <div class="sticky-left px-3 pt-2">
                     <h2 class="fs-18 weight-medium mt-1">Rates</h2>
-                    <ul class="nav nav-tabs_v3" >
+                    <ul class="nav nav-tabs_v3" data-index="0" >
                         <li class="nav-item pr-2">
                             <a class="nav-link c-dark px-0 mr-4 active">Shipping rates  </a>
                         </li>
@@ -738,63 +738,135 @@
                             <div class="select__item d-flex align-items-center c-dark lh-1">35’ CHI / 45’ CHUTF </div>
                             <div class="select__drop min-w-200">
                                 <div class="select__menu max-h-340 px-2">
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox" checked="">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">35’ CHI</span>
-                                    </label>
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox" checked="">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">40’ CHI</span>
-                                    </label>
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox" checked="">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">35’ CHI</span>
-                                    </label>
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox" checked="">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">35’ CHI</span>
-                                    </label>
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox" checked="">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">35’ CHI</span>
-                                    </label>
-                                    <label class=" mb-3 d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="checked-customer dark mr-2">
-                                            <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                            </svg>
-                                        </span>
-                                        <span class="pl-1">35’ CHI</span>
-                                    </label>
-                                    <button type="button" class="btn-aquamarine w-100 py-1">
-                                        <span class="py-1 d-block">Save</span> 
-                                    </button>
+                                    <ul class="nav nav-tabs_v3 mb-3" data-index="1">
+                                        <li class="nav-item w-50">
+                                            <a class="nav-link c-dark px-0 b-gray-92 active">
+                                                <svg class="svg-sprite-icon c-dark-1e mr-2" width="16px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                                </svg>
+                                                Sea 
+                                            </a>
+                                        </li>
+                                        <li class="nav-item w-50">
+                                            <a class="nav-link c-dark px-0 b-gray-92">
+                                                <svg class="svg-sprite-icon stroke-1e mr-2" width="16px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                                </svg>
+                                                Road 
+                                            </a>
+                                        </li>
+                                    </ul>
+                                    <div class="contents p-0" data-index="1">
+                                        <div class="contents__item active">
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">40’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <button type="button" class="btn-aquamarine w-100 py-1">
+                                                <span class="py-1 d-block">Save</span> 
+                                            </button>
+                                        </div>
+                                        <div class="contents__item ">
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">40’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox" checked="">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <label class=" mb-3 d-flex align-items-center">
+                                                <input type="checkbox" class="checkbox">
+                                                <span class="checked-customer dark mr-2">
+                                                    <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
+                                                <span class="pl-1">35’ CHI</span>
+                                            </label>
+                                            <button type="button" class="btn-aquamarine w-100 py-1">
+                                                <span class="py-1 d-block">Save</span> 
+                                            </button>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -806,7 +878,7 @@
                         </button>
                     </form>
                 </div>
-                <div class="contents pt-2 " >
+                <div class="contents pt-2 "  data-index="0" >
                     <div class="contents__item active fs-14 ">
                         <ul class="nav nav-tabs_v3 flex-nowrap px-3" >
                             <li class="nav-item w-100">

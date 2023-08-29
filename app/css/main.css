@@ -1214,6 +1214,10 @@ button {
       color: #282E3B;
       font-size: 14px;
     }
+    .radio-calendar.dark .check {
+      border: 0.5px solid #1E1E1E!important;
+      font-size: 15px;
+    }
 
     .radio-calendar .check:hover {
       color: #EB5E13!important;
@@ -1228,6 +1232,11 @@ button {
       background: rgba(235, 94, 19, 0.35);
       color: #EB5E13!important;
       border-color: rgba(235, 94, 19, 0.40);
+    }
+    .radio-calendar.dark .checkbox:checked ~ .check {
+      background: #1E1E1E!important;
+      color: #fff!important;
+      border-color: #1E1E1E!important;
     }
     .radio-calendar .checkbox:checked ~ .check.medium { 
       font-weight: 500;
@@ -2015,12 +2024,14 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 4px;
+  border: 0.5px solid rgba(146, 146, 146, 0.70);
   overflow: hidden; }
   .calc__input {
-    min-width: 60px;
-    width: calc(100% - 59px - 59px);
+    min-width: 70px;
+    width: calc(100% - 42px - 42px);
     border-radius: 0;
+    height: 40px!important;
+    padding: 10px 13px;
     text-align: center; }
 .calc.calc__light {
   border: solid 0.5px rgba(36, 177, 255, 0.18);
@@ -2052,9 +2063,9 @@ button {
   .calc.big .calc__input {
     height: 40px;}
   .calc__btn {
-    width: 59px;
-    height: 42px;
-    background-color: #109CF1;
+    width: 52px;
+    height: auto;
+    background-color: rgba(177, 177, 177, 0.35);
     position: relative; }
     .calc__btn:before, .calc__btn:after {
       content: '';
@@ -2064,12 +2075,12 @@ button {
       -webkit-transform: translate(-50%, -50%);
       -ms-transform: translate(-50%, -50%);
       transform: translate(-50%, -50%);
-      background: #ffffff;
+      background: #282E3B;
       height: 2px;
-      width: 15px; }
+      width: 10px; }
     .calc__btn:after {
       width: 2px;
-      height: 15px; }
+      height: 10px; }
     .calc__btn-minus:after {
       content: none; }
 
@@ -2150,6 +2161,8 @@ button {
   background-color: #F2F1F1;}
 .bg-gray {
   background-color: #b7bcd6!important; }
+.bg-gray-df {
+  background-color: #DFDEDE;}
 .bg-gray-35 {
   background-color: rgba(177, 177, 177, 0.35);}
 .bg-gray-5 {
@@ -2644,7 +2657,7 @@ button {
   border-color: #e30c0c!important; }
 .b-orange {
   border-color: #f99e04!important; }
-.b-orange_v2 {
+.b-orange_v2, .b-orange-eb {
   border-color: #EB5E13!important;}
 .b-orange-40 {
   border-color: rgba(235, 94, 19, 0.40)!important;}
@@ -5413,7 +5426,10 @@ button {
   background: #fff url('../img/calendar-69.svg') no-repeat left 10px center/16px;
   padding-left: 30px; }
 .input-date.gray {
-  background: #fff url('../img/calendar-gray.svg') no-repeat left 8px center/15px!important;
+  background-image: url('../img/calendar-gray.svg')!important;
+  background-repeat: no-repeat!important;
+  background-size: 15px!important;
+  background-position: left 8px center;
 }
 .input-date.dark {
   background: #fff url('../img/calendar-dark.svg') no-repeat left 8px center/15px!important;
@@ -6958,6 +6974,8 @@ button {
     max-width: 1250px;}
   .max-1290 {
     max-width: 1290px;}
+  .max-1350 {
+    max-width: 1350px;}
   .max-1380 {
     max-width: 1380px;}
   .max-1440 {
@@ -8023,6 +8041,9 @@ button {
 .w-320 {
   width: 320px;
 }
+.w-340 {
+  width: 340px;
+}
 .w-380 {
   width: 380px;
 }
@@ -8293,6 +8314,8 @@ button {
   max-width: 140px;}
 .max-w-150 {
   max-width: 150px;}
+.max-w-156 {
+  max-width: 156px!important;}
 .max-w-165 {
   max-width: 165px!important;}
 .max-w-170 {
@@ -10194,6 +10217,8 @@ padding-top: 15px;}
   width: 100px!important;}
 .w-150 {
   width: 150px;}
+.w-185 {
+  width: 185px;}
 .w-200px {
   width: 200px;}
 .w-270px {
@@ -11795,6 +11820,9 @@ input.input_customer, textarea.input_customer {
 .table th {
   border: none;
 }
+.h-fill-available {
+  height: -webkit-fill-available;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {
@@ -12158,9 +12186,6 @@ input.input_customer, textarea.input_customer {
   .min-w-450_1440 {
     min-width: 450px;
   }
-  .radio-calendar .check {
-    line-height: 29px;
-  }
   .max-560_1440 {
     max-width: 560px;
   }
@@ -12330,8 +12355,8 @@ input.input_customer, textarea.input_customer {
   .max-1220_1440 {
     max-width: 1220px;
   }
-  .max-1200 {
-    max-width: 970px;}
+  /* .max-1200 {
+    max-width: 970px;} */
   .max-1500 {
     max-width: 1200px;}
   .max-290 {

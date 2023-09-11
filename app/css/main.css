@@ -417,27 +417,25 @@ button {
 .link-share {
   position: relative; }
 .link-item {
-  background: rgba(36, 177, 255, 0.116368);
-  border-radius: 2px;
-  font-weight: 600;
-  font-size: 10px;
-  line-height: 12px;
-  color: #156CE4;
-  padding: 3px 5px;
-  min-width: 33px;
+  background-color: rgba(177, 177, 177, 0.35);
+  font-size: 13px;
+  line-height: 15px;
+  color: #1E1E1E;
+  padding: 2px 8.5px;
+  min-width: 54px;
   text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
   white-space: nowrap;
 }
-.link-item.big {
+/* .link-item.big {
   font-weight: 500;
   font-size: 13px;
   line-height: 15px;
   padding: 4.5px 11.5px;
   min-width: 74px;
-}
+} */
 .select__date .select__item {
   background: url('../img/calendar-69.svg') no-repeat left 15px center/21px;
   padding-left: 40px;
@@ -1744,9 +1742,9 @@ button {
   color: #282E3B;}
 .link-customer:hover {
   text-decoration: underline;
-  color: #156ce4;}
+  color: #282E3B;}
 .link {
-  color: #156ce4;
+  color: #282E3B;
   font-size: 15px;
   font-weight: 500;
   text-decoration: underline;
@@ -2136,6 +2134,7 @@ button {
   color: #ffffff;
   font-weight: 600;
   padding: 0 9px;
+  z-index: 4;
   letter-spacing: -0.26px;
   background-color: rgba(177, 177, 177, 0.35);
   line-height: 19px; }
@@ -2149,6 +2148,8 @@ button {
   background-color: rgba(255, 218, 68, 0.30);}
 .bg-yellow-17 {
   background-color: rgba(255, 222, 1, 0.17);}
+.bg-gray-eb {
+  background-color: #EBE9E9;}
 .bg-gray-e9 {
   background-color: #E9E9E9!important;}
 .bg-gray-f8 {
@@ -9944,6 +9945,9 @@ padding-top: 15px;}
 .right-bottom:hover:before, .top-right:hover:before {
   opacity: 1;
 }
+.hover-black-1e:hover {
+  color: #1E1E1E!important;
+}
 .hover-b, .hover-b-scale {
   border-left: solid 0.5px rgba(177, 177, 177, 0.50);
   border-right: solid 0.5px rgba(177, 177, 177, 0.50);
@@ -10018,7 +10022,7 @@ padding-top: 15px;}
 .hover-shadow-2:hover {
   box-shadow: 0px 0px 7px rgba(21, 108, 228, 0.56);}
 .hover-shadow-2:hover .link-customer, .link-customer:hover {
-  color: #156CE4!important;
+  color: #F45617!important;
   text-decoration-line: underline;}
 .link-customer.blue:hover {
   color: #109CF1;}
@@ -10540,12 +10544,12 @@ padding-top: 15px;}
     font-size: 13px;
     line-height: 15px;
     border-bottom: 2px solid transparent;
-    color: #B7BCD6;
+    color: #696969;
   }
   .nav-tabs_v10 .nav-link.active {
     font-weight: 500;
-    color: #37517E;
-    border-bottom-color: #156CE4;
+    color: #282E3B;
+    border-bottom-color: #F45617;
   }
   .h-100-293 {
     height: calc(100vh - 293px);
@@ -11122,7 +11126,7 @@ input.fs-14:-ms-input-placeholder  {
   left: 50%;
   transform: translateX(-50%);
   border-radius: 6px;
-  background: #156CE4;
+  background: #F45617;
   line-height: 13px;
   font-size: 10px;
   color: #FFFFFF;
@@ -12196,11 +12200,17 @@ input.input_customer, textarea.input_customer {
   .min-w-450_1440 {
     min-width: 450px;
   }
+  .max-520_1440 {
+    max-width: 520px!important;
+  }
   .max-560_1440 {
     max-width: 560px;
   }
   .max-290_1440 {
     max-width: 290px;
+  }
+  .max-170_1440 {
+    max-width: 170px!important;
   }
   .max-960 {
     max-width: 808px;

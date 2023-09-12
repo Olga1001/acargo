@@ -1315,6 +1315,16 @@ button {
   border-color: #F45617!important;
   background-color: transparent;
 }
+.checkbox:checked ~ .checked-customer.painted {
+  border-color: #F45617!important;
+  background-color: #F45617!important;
+}
+.checkbox:checked ~ .checked-customer.painted svg:not(.stroke-92) {
+  fill: #fff!important;
+}
+.checkbox:checked ~ .checked-customer.painted svg.stroke-92 {
+  stroke: #fff!important;
+}
 .checkbox:checked ~ .checked-customer.big svg:not(.stroke-1e) {
   fill: #F45617!important;
 }
@@ -8036,6 +8046,9 @@ button {
   top: 50%;
   transform: translateY(-50%)
 }
+.w-37 {
+  width: 37px!important;
+}
 .w-120 {
   width: 120px;
 }
@@ -10058,10 +10071,10 @@ padding-top: 15px;}
   pointer-events: auto;}
 .hover-bg {
   border: none!important}
-.hover-icon-orange:hover, .hover-icon-orange:hover > svg {
+.hover-icon-orange:not(.stroke-1e, .stroke-69):hover, .hover-icon-orange:hover > svg:not(.stroke-1e, .stroke-69) {
   fill: #EB5E13!important;}
-  .hover-icon-orange:hover > svg.stroke-1e {
-    stroke: #EB5E13!important;}
+.hover-icon-orange:hover > svg.stroke-1e, .hover-icon-orange:hover > svg.stroke-69 {
+  stroke: #EB5E13!important;}
 .hover-white:hover {
   background-color: #fff!important;
   border-color: #EB5E13!important;
@@ -12123,7 +12136,7 @@ input.input_customer, textarea.input_customer {
       line-height: 24px;
       height: 24px;}
     .data-calendar_table table td p, .data-calendar_table table th p {
-      line-height: 20px;}
+      line-height: 22px;}
     .data-calendar_table table td, .data-calendar_table table th {
       margin: 3.5px 7px;}
     .data-calendar_table-container td:first-child:not(.active), .data-calendar_table-container th:first-child{
@@ -12800,7 +12813,7 @@ input.input_customer, textarea.input_customer {
     font-size: 14px;
     line-height: 30px;}
   .select {
-    height: 32px;}
+    height: 31px;}
   .select.mr-3 {
     margin-right: 10px!important;}
     .select__two {

@@ -540,10 +540,10 @@
       <div class="d-flex flex-column w-100 " id="content-wrapper">
         <div id="content">
 
-          <div class="container-fluid p-3 pb-0" id="container-wrapper">
+          <div class="container-fluid px-3 pt-3 pb-0" id="container-wrapper">
             <div id="box">
                 <h1 class="fs-18 weight-medium mb-1">Booking</h1>
-                <ul class="nav nav-tabs_v10 m-1" data-index="0">
+                <ul class="nav nav-tabs_v10 m-1 " data-index="0">
                     <li class="nav-item">
                         <a class="nav-link mr-5 active">All Bookings</a>
                     </li>
@@ -557,550 +557,979 @@
                         <a class="nav-link mr-5">Archive  </a>
                     </li>
                 </ul>
-              <div class="row mx-0">
-                  <div class="col-3 pl-0 pr-1">
-                      <h4 class="fs-16 weight-medium c-orange-eb bg-white p-2">Activities</h4>
-                      <ul class=" h-calc_1 fs-14 fs-12_1440" data-index="0">
-                        <li class="b-0 bl-3 b-orange bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
+                <div class=" d-flex flex-wrap">
+                    <div class="d-flex flex-wrap mb-2">
+                        <button type="button" class="d-flex align-items-center fs-14 c-gray-69 pr-4">
+                            <svg class="svg-sprite-icon mr-2 c-gray-69" width="12px" height="13px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#document-1"></use>
+                            </svg>
+                            Create new booking
+                        </button>
+                        <label class="ml-2">
+                            <input type="radio" name="radio_1" class="checkbox" checked="">
+                            <span class="checked-customer painted h-100 w-37">
+                                <svg class="svg-sprite-icon c-gray-92 m-auto" width="11px" height="13px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <label class="">
+                            <input type="radio" name="radio_1" class="checkbox">
+                            <span class="checked-customer painted h-100 w-37">
+                                <svg class="svg-sprite-icon stroke-92 m-auto" width="16px" height="16px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                </svg>
+                            </span>
+                        </label>
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2 select b-0 h-100 w-fit-content not-arrow">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon c-gray-69 mx-auto" width="16px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#tags"></use>
+                                </svg>
+                            </div>
+                            <input type="text" class="px-2 input_customer w-130 select__item" placeholder="Export">
+
+                            <div class="select__drop min-w-215 right">
+                                <div class="select__menu max-h-340 px-2">
+                                    <input type="text" class="input-search small h-31 bg-gray-f8">
+                                
+                                    <div class="fs-13 lh-1_5 text-center">
+                                        <label class=" mt-3 d-flex align-items-center">
+                                            <input type="checkbox" class="checkbox" checked="">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="ml-2 weight-medium c-blue bg-blue_19 w-80">Agent</span>
+                                        </label>
+                                        <label class=" mt-3 d-flex align-items-center">
+                                            <input type="checkbox" class="checkbox" checked="">
+                                            <span class="checked-customer gray">
+                                                <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="ml-2 weight-medium c-green bg-green-19 w-80">New client</span>
+                                        </label>
+                                        <label class=" mt-3 d-flex align-items-center">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="ml-2 weight-medium c-yellow-d8 bg-yellow-ff w-80">New client</span>
+                                        </label>
+                                        <label class=" mt-3 d-flex align-items-center">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-white mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                </svg>
+                                            </span>
+                                            <span class="ml-2 weight-medium c-blue-3a bg-blue_v8 w-80">Transporter</span>
+                                        </label>
                                     </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
+                                    <button type="button" class="btn-aquamarine mt-3 w-100 py-2">
+                                        <span class="py-1 d-block">Save</span> 
+                                    </button>
+                                    <button type="reset" class="c-gray-69 w-100 pt-2">
+                                        <span class="px-2">Clear filter</span> 
+                                    </button>
+
                                 </div>
                             </div>
-                        </li>
-                        <li class="b-0 bl-3 b-gray-92 bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-black-1e bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-orange-f4 bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-orange bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-gray-92 bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-black-1e bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                        <li class="b-0 bl-3 b-orange-f4 bg-white mb-2 mb-1_1440 hover-b px-2 py-1">
-                            <div class="d-flex justify-content-between lh-1_3">
-                                <div>
-                                    <p class="weight-medium fs-15 fs-13_1440">Сargo loaded at port Klaipeda</p>
-                                    <p class="">Acargo company</p>
-                                    <p class="weight-light "># 83728276</p>
-                                </div>
-                                <div class="pr-1 text-right">
-                                    <div class="d-flex align-items-center">
-                                        <svg class="svg-sprite-icon c-black-1e wh-10_1440 mr-2" width="13px" height="13px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                        </svg>
-                                        <p class="">3 x 35 CHI</p>
-                                    </div>
-                                    <p class="fs-13 fs-12_1440 weight-light">18 Apr. 2022 </p>
-                                </div>
-                            </div>
-                        </li>
-                      </ul>
-                      <div class="py-2 get-height" data-index="0">
-                        <div class="data-calendar my-1">
-                            <div class="bg-black-1e d-flex justify-content-between px-2 mb-1 c-white ">
-                                <div class="d-flex py-2 px-2 py-1_1440">
-                                    <div class="d-flex align-items-center mr-4">
-                                        <p class="fs-14 fs-13_1440 weight-bold mr-2">2021</p>
-                                        <div class="d-flex flex-column ">
-                                            <svg class="svg-sprite-icon c-white scale-y" width="7px" height="11px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-down-2"></use>
-                                            </svg>
-                                            <svg class="svg-sprite-icon c-white" width="7px" height="11px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-down-2"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <p class="fs-14 fs-13_1440 weight-bold mr-2">April</p>
-                                        <div class="d-flex flex-column">
-                                            <svg class="svg-sprite-icon c-white scale-y" width="7px" height="11px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-down-2"></use>
-                                            </svg>
-                                            <svg class="svg-sprite-icon c-white" width="7px" height="11px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-down-2"></use>
-                                            </svg>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="d-flex fs-11_1440 fs-14">
-                                    <label class="ml-3 ml-1_1440">
-                                        <input type="radio" name="radio-calendar" class="checkbox" checked>
-                                        <span class="radio-active c-gray px-1 h-100 d-flex">
-                                            <span class="m-auto d-block">CUT-OFF</span> 
-                                        </span>
-                                    </label>
-                                    <label class="ml-3 ml-1_1440">
-                                        <input type="radio" name="radio-calendar" class="checkbox">
-                                        <span class="radio-active c-gray px-1 h-100 d-flex ">
-                                            <span class="m-auto d-block">ETD</span>
-                                         </span>
-                                    </label>
-                                    <label class="ml-3 ml-1_1440">
-                                        <input type="radio" name="radio-calendar" class="checkbox">
-                                        <span class="radio-active c-gray px-1 h-100 d-flex">
-                                            <span class="m-auto d-block">ETD</span> 
-                                        </span>
-                                    </label>
-                                </div>
-                            </div>
-                            <table class="data-calendar_table mx-auto my-2">
-                                <tr>
-                                    <td>
-                                        <table class="wk">
-                                            <tr>
-                                                <th>WK</th>
-                                            </tr>
-                                            <tr>
-                                                <th><p>1</p></th>
-                                            </tr>
-                                            <tr>
-                                                <th><p>2</p></th>
-                                            </tr>
-                                            <tr>
-                                                <th><p>3</p></th>
-                                            </tr>
-                                            <tr>
-                                                <th><p>4</p></th>
-                                            </tr>
-                                            <tr>
-                                                <th><p>5</p></th>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                    <td>
-                                        <table class="data-calendar_table-container">
-                                            <tr>
-                                                <th>MO</th>
-                                                <th>TU</th>
-                                                <th>WD</th>
-                                                <th>TH</th>
-                                                <th>FR</th>
-                                                <th>ST</th>
-                                                <th>SN</th>
-                                            </tr>
-                                            <tr>
-                                                <td class="off"><p>28</p></td>
-                                                <td class="öff"><p>29</p></td>
-                                                <td class="öff"><p>30</p></td>
-                                                <td><p class="b-black-1e">1</p></td>
-                                                <td><p class="b-orange-eb">2</p></td>
-                                                <td class="relative">
-                                                    <div class="calendar-tooltip">Import</div>
-                                                    <p class="b-orange-eb">3</p>
-                                                </td>
-                                                <td><p class="b-gray-92">4</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="start active"><p>5</p></td>
-                                                <td class="active"><p>6</p></td>
-                                                <td class="active"><p class="b-orange-eb">7</p></td>
-                                                <td class="active"><p>8</p></td>
-                                                <td class="active"><p>9</p></td>
-                                                <td class="active "><p>10</p></td>
-                                                <td class="active "><p class="weight-extraBold">11</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td class="active "><p>12</p></td>
-                                                <td class="active "><p>13</p></td>
-                                                <td class="active"><p>14</p></td>
-                                                <td class="active"><p>15</p></td>
-                                                <td class="active"><p>16</p></td>
-                                                <td class="active"><p>17</p></td>
-                                                <td class="active end"><p>18</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td><p>19</p></td>
-                                                <td><p>20</p></td>
-                                                <td><p>21</p></td>
-                                                <td><p>22</p></td>
-                                                <td><p>23</p></td>
-                                                <td><p>24</p></td>
-                                                <td><p>25</p></td>
-                                            </tr>
-                                            <tr>
-                                                <td><p>26</p></td>
-                                                <td><p>27</p></td>
-                                                <td><p>28</p></td>
-                                                <td><p>29</p></td>
-                                                <td><p>30</p></td>
-                                                <td><p>31</p></td>
-                                                <td class="off"><p>1</p></td>
-                                            </tr>
-                                        </table>
-                                    </td>
-                                </tr>
-                            </table>
                         </div>
-                      </div>
-                  </div>
-                  <div class="col-9 pr-0 pl-1 ">
-                    <div class="px-2 bg-white">
-                        <div class="pt-3 d-flex justify-content-between flex-wrap pb-1">
-                            <div class="pb-3">
-                                <h2 class="fs-18 fs-16_1440 weight-semi c-black ">Wellcome , Logistic company !</h2>
-                                <p class="fs-14 fs-13_1440 weight-light">12  April 2021</p>
-                            </div>
-                            <div class="d-flex">
-                            <div class="select max-w-130 ml-2 mb-3 d-flex align-items-center pl-1">
-                                <svg class="svg-sprite-icon c-black-1e ml-2" width="13px" height="13px">
+
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2 b-0">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon c-gray-69 mx-auto" width="11px" height="29px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
                                 </svg>
-                                <div class="select__item fs-14 fs-13_1440 weight-light pl-2">7 days</div>
-                                <div class="select__drop ">
-                                    <ul class="select__menu">
-                                        <li class="select__option  active">Period</li>
-                                        <li class="select__option ">Period</li>
-                                    </ul>
-                                </div>
                             </div>
-                            <div class="select max-w-130 ml-2 mb-3">
-                                <div class="select__item fs-14 fs-13_1440 weight-light">All shipments</div>
-                                <div class="select__drop ">
-                                    <ul class="select__menu ">
-                                        <li class="select__option active">All shipments</li>
-                                        <li class="select__option">All shipments</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="select max-w-80 ml-2 mb-3">
-                                <div class="select__item fs-14 fs-13_1440  weight-light">Sea</div>
-                                <div class="select__drop ">
-                                    <ul class="select__menu">
-                                        <li class="select__option active">Sea</li>
-                                        <li class="select__option">Sea</li>
-                                    </ul>
-                                </div>
-                            </div>
-                                <input type="text" class="input-search max-w-170 mb-3 ml-2 b-gray-92-70">
-                            </div>
+                            <input type="text" class="px-2 input_customer w-130" placeholder="ETD">
                         </div>
-                        <div class="d-flex pt-3">
-                            <div class="d-flex align-items-center mb-3 mr-5 mr-4_1440 logistick-info text-center">
-                                <img src="../../img/client/of-loadings.svg" alt="shipments" class="mr-3 mr-2_1440 ">
-                                <div>
-                                    <p class="fs-25 fs-20_1440 weight-bold">3578</p>
-                                    <p class="fs-13 weight-light">Of loadings</p>
-                                </div>
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2 b-0">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon c-gray-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                </svg>
                             </div>
-                            <div class="d-flex align-items-center mb-3 mr-5 mr-4_1440 logistick-info text-center">
-                                <img src="../../img/client/arrivals.svg" alt="In transit" class="mr-3 mr-2_1440">
-                                <div>
-                                    <p class="fs-25 fs-20_1440 weight-bold">188</p>
-                                    <p class="fs-13 weight-light">Arrivals</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 mr-5 mr-4_1440 logistick-info text-center active">
-                                <img src="../../img/client/calendar-clock.svg" alt="Loads" class="mr-3 mr-2_1440">
-                                <div>
-                                    <p class="fs-25 fs-20_1440 weight-bold">370</p>
-                                    <p class="fs-13 weight-light">Cut-off</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 mr-5 mr-4_1440 logistick-info text-center">
-                                <img src="../../img/client/total-shipments.svg" alt="Suppliers" class="mr-3 mr-2_1440">
-                                <div>
-                                    <p class="fs-25 fs-20_1440 weight-bold">1208</p>
-                                    <p class="fs-13 weight-light">Total shipments</p>
-                                </div>
-                            </div>
-                            <div class="d-flex align-items-center mb-3 mr-5 mr-4_1440 logistick-info text-center">
-                                <img src="../../img/client/customers.svg" alt="Suppliers" class="mr-3 mr-2_1440">
-                                <div>
-                                    <p class="fs-25 fs-20_1440 weight-bold">128</p>
-                                    <p class="fs-13 weight-light">Customers</p>
-                                </div>
-                            </div>
-    
+                            <input type="text" class="px-2 input_customer w-130" placeholder="ETA">
                         </div>
-                       
-                        <ul class="h-calc_1 pt-3" data-index="1">
-                            <li class="b-gray-92-70 b-05 relative mb-3 px-3">
-                                <div class="d-flex absolute px-3 px-2_1440 ml-1_1440 l-0 t--50">
-                                    <div class="block fs-12 c-orange-eb bg-orange-f9 px-3">Chipest</div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center min-h-95">
-                                    <div class="">
-                                        <p class="fs-12_1440 mb-2">OR-63729747748</p>
-                                        <div class="d-flex align-items-center">
-                                            <svg class="svg-sprite-icon c-black-1e mr-1" width="13px" height="14px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#office-building4"></use>
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon c-gray-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                </svg>
+                            </div>
+                            <input type="text" class="px-2 input_customer w-130" placeholder="Cut-OFF">
+                        </div>
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2 select h-100 b-0 w-fit-content not-arrow">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                </svg>
+                            </div>
+                            <input type="text" class="px-2 input_customer w-130 select__item" value="" placeholder="Origin">
+                            <div class="select__drop w-320">
+                                <div class="select__menu max-h-340 px-2">
+                                    <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                    <div class="bg-orange-10 flex-center pl-2 fs-14 w-fit-content c-dark_v2 c-black-1e ">Lithvinia
+                                        <button type="button" class="px-2">
+                                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="22px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
                                             </svg>
-                                            <p class="weight-medium fs-13_1440">Acargo Company LTD</p>
+                                        </button>
+                                    </div>
+                                    <ul>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> USA</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> Lithvinia</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> USA</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> Lithvinia</span>
+                                        </li>
+                                    </ul>
+                                    <button type="reset" class="c-gray-69 px-2 ml-1 sticky-bottom bg-white b-0 w-100 text-left">Clear filter</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center fs-14 c-gray-69 ml-2 select b-0 h-31 w-fit-content not-arrow">
+                            <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                </svg>
+                            </div>
+                            <input type="text" class="px-2 input_customer w-130 select__item" value="" placeholder="Destination">
+                            <div class="select__drop w-320">
+                                <div class="select__menu max-h-340 px-2">
+                                    <input type="text" class="input-search small h-31 bg-gray-f8 mb-2">
+                                    <div class="bg-orange-10 flex-center pl-2 fs-14 w-fit-content c-dark_v2 c-black-1e ">Lithvinia
+                                        <button type="button" class="px-2">
+                                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="12px" height="22px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <ul>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> USA</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> Lithvinia</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> USA</span>
+                                        </li>
+                                        <li class=" hover__option mt-2 d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" width="16px" height="16px" class="mr-2">
+                                            <span class="pl-1"> Lithvinia</span>
+                                        </li>
+                                    </ul>
+                                    <button type="reset" class="c-gray-69 px-2 ml-1 sticky-bottom bg-white b-0 w-100 text-left">Clear filter</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class=" d-flex align-items-center justify-content-end ml-auto mb-2">
+                        <input type="text" class="input-search input_customer max-w-210 w-100 b-gray-e9 right small mr-2 b-gray-92">
+                        <button type="button" class="wh-30 d-flex ml-1 hover-bg-light p-0">
+                            <svg class="svg-sprite-icon m-auto stroke-69 item-color" width="20px" height="20px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                            </svg>
+                        </button>
+                      
+                        
+                        <p class="ml-4 fs-14 c-gray-69 text-nowrap">1-10 / 200</p>
+                        <a href="#" class=" ml-2">
+                            <svg class="svg-sprite-icon c-gray-69" width="6px" height="10px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-slide"></use>
+                            </svg> 
+                        </a>
+                        <a href="#" class=" ml-2">
+                            <svg class="svg-sprite-icon c-gray-69" width="6px" height="10px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-slide"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="map h-250">
+                    map
+                </div>
+                      
+                <ul class="h-calc_1 pt-3">
+                    <li class="b-gray-92-70 b-05 mb-3 hover-b ">
+                        <div class="relative pl-3 pr-5 hover-bg-light_02">
+                            <div class="d-flex justify-content-between align-items-center max-1485">
+                                <div class="d-flex align-items-center">
+                                    <svg class="svg-sprite-icon c-gray-92 d-block mr-3 collapsed-arrow collapsed" width="16px" height="16px" data-toggle="collapse" href="#collapseDrop1" role="button" aria-expanded="false" aria-controls="collapseDrop1">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                    </svg>
+                                    <div class="lh-1_4 d-flex">
+                                        <div>
+                                            <p class="_1441_fs-16">OR - AA34567890</p>
+                                            <div class="d-flex align-items-center mt-1">
+                                                <svg class="svg-sprite-icon c-black-1e mr-2" width="13px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                                                </svg>
+                                                <p class="fs-14 fs-13_1440">15 Apr. 2020</p>
+                                            </div>
+                                            <div class="d-flex align-items-center mt-1">
+                                                <svg class="svg-sprite-icon stroke-1e mr-2" width="13px" height="12px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#building-office"></use>
+                                                </svg>
+                                                <p class="fs-14 fs-13_1440">Acargo Company LTD</p>
+                                            </div>
+                                        </div>
+                                        <div class="block c-black-1e">Loaded</div>
+                                    </div>
+                                </div>
+                                <div class="w-100 px-3 max-770">
+                                    <div class="d-flex align-items-center fs-14 min-h-95 pb-3">                                            
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content d-flex align-items-center text-nowrap">
+                                                <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="mr-2 wh-13_1440">
+                                                <p class=" weight-medium  fs-12_1440">Vilnius, LT <span class="c-gray-69"> (Port)</span></p>
+                                            </div>
+                                            <div class="way3-pin orange"></div>
+                                            <div class="bg-orange-eb way2-line "></div>
+                                            <div class="way2-content l-0 fs-13 fs-11_1440">
+                                                <p class="weight-light"><span class="weight-medium">Loading</span>  18 Apr. 2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon stroke-orange-eb" width="12px" height="10px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                            </svg>
+                                            <div class="bg-orange-eb way2-line"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="way2-line "></div>
+                                            
+                                            <div class="way2-content l-center fs-13 fs-11_1440 d-flex">
+                                                <div class="mx-auto">
+                                                    <p class="weight-light mb-1"><span class="weight-medium">ETD</span> 20 Apr. 2020</p>
+                                                    <p class="weight-light"><span class="weight-medium">CUT-OFF</span> 30 Apr. 2020 </p>
+                                                </div>
+                                            </div>
+                                        </div>
+        
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <svg class="svg-sprite-icon icon-boat c-black-1e " width="11px" height="13px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                            </svg>
+                                            <div class="way2-line"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative">
+                                            <div class="way3-content l-center text-center">
+                                                <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
+                                            </div>
+                                            <div class="way3-pin"></div>
+                                            <div class="way2-line bg-orange-eb"></div>
+                                            <div class="way2-content l-center fs-14 fs-11_1440 d-flex">
+                                                <p class="weight-light mx-auto"><span class="weight-medium">ETA</span> 28 Apr. 2020</p>
+                                            </div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center">
+                                            <svg class="svg-sprite-icon stroke-orange-eb" width="12px" height="10px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                            </svg>
+                                            <div class="bg-orange-eb way2-line"></div>
+                                        </div>
+                                        <div class="way2 d-flex align-items-center relative text-right">
+                                            <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                                <p class="weight-medium fs-12_1440">Florida, US <span class="c-gray-69"> (Port)</span> </p>
+                                                <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="ml-2">
+                                            </div>
+                                            <div class="way3-pin orange"></div>
+                                            <div class="way2-content r-0 fs-14 fs-11_1440">
+                                                <p class="weight-light "><span class="weight-medium">Delivery</span> 30 Apr. 2020 </p>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="w-100 pb-5 pt-4 mt-2 px-3 max-770">
-                                        <div class="d-flex align-items-center fs-14">                                            
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content d-flex align-items-center text-nowrap">
-                                                    <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="mr-2 wh-13_1440">
-                                                    <p class=" weight-medium  fs-12_1440">Vilnius, LT <span class="c-gray-69"> (Port)</span></p>
+                                </div>
+                                <div>
+                                    <div class="d-flex align-items-center mb-2">
+                                        <svg class="svg-sprite-icon c-black-1e mr-1" width="11px" height="13px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                        </svg>
+                                        <p class="fs-14 ml-2">Shipping line</p>
+                                    </div>
+                                    <div class="d-flex flex-wrap">
+                                        <a href="#" class="link-item mr-2 mb-2">5 x 45’ HC </a>
+                                        <a href="#" class="link-item mr-2 mb-2">1800 EUR</a>
+                                        <a href="#" class="link-item mb-2 mb-2">25 days</a>
+                                    </div>
+                                    <div class="d-flex fs-12_1440">
+                                        <a href="#" class="c-gray-92 hover-black-1e mr-2">CMR</a>
+                                        <a href="#" class="c-gray-92 hover-black-1e mr-2">INV</a>
+                                        <a href="#" class="c-gray-92 hover-black-1e mr-2">PCK</a>
+                                        <a href="#" class="c-gray-92 hover-black-1e mr-2">BL</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="absolute t-center r-0 mr-3 hover">
+                                <a href="#" class="mb-3 d-block hover-icon-orange">
+                                    <svg class="svg-sprite-icon c-none stroke-69" alt="icon" width="16px" height="16px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#open"></use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="d-block hover-icon-orange">
+                                    <svg class="svg-sprite-icon c-gray-69 " alt="icon" width="20px" height="20px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy-line"></use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="collapse" id="collapseDrop1">
+                            <ul class="nav nav-tabs_v3 pt-2 pb-0 px-4 mx-xl-3 mx-0_1440">
+                                <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark active fs-14_1440 px-2_1440 mr-5_1440">Booking  </a></li>
+                                <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark fs-14_1440 px-2_1440 mr-5_1440">Cargo </a></li>
+                                <li class="nav-item"><a class="nav-link px-4 mr-xl-4 c-dark fs-14_1440 px-2_1440 mr-5_1440">Client </a></li>
+                                <li class="nav-item"><a class="nav-link px-4 c-dark fs-14_1440 px-2_1440">Documents   </a></li>
+                            </ul>
+                            <div class="contents pt-0">
+                                <div class="contents__item active">
+                                    <div class="row py-1 px-4 mx-xl-3 mx-0_1440 fs-14_1440">
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mt-4 pl-0 ">
+                                            <p class="mb-2"> <span class="weight-medium mr-4 c-gray4">Booking</span>AA-7638273-1209888</p>
+                                            <p> <span class="weight-medium mr-4 c-gray4">Sea line</span>Acargo Company LTD</p>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mt-4 pl-0">
+                                            <p class="mb-2"> <span class="weight-medium mr-4 c-gray4">Terminal pick-up</span>Open terminal</p>
+                                            <p> <span class="weight-medium mr-4 c-gray4">Terminal drop</span>Open terminal</p>
+                                        </div>
+                                        <div class="col-xl-3 col-lg-4 col-md-6 mt-4 pl-0">
+                                            <p class="mb-2"> <span class="weight-medium mr-4 c-gray4">Demurrages</span>14 days</p>
+                                            <p> <span class="weight-medium mr-4 c-gray4">Detensions</span>14 days</p>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-0 bg-blue-bright c-white p-3 mt-3 fs-14 fs-13_1440 weight-medium">
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p class="  ">Order</p>
                                                 </div>
-                                                <div class="way3-pin orange"></div>
-                                                <div class="bg-orange-eb way2-line "></div>
-                                                <div class="way2-content l-0 fs-13 fs-11_1440">
-                                                    <p class="weight-light"><span class="weight-medium">Loading</span>  18 Apr. 2020</p>
+                                                <div class="col-3">
+                                                    <p class="">Ready / Loading</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>Truck</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>Container</p>
                                                 </div>
                                             </div>
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon stroke-orange-eb" width="12px" height="10px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
-                                                </svg>
-                                                <div class="bg-orange-eb way2-line"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content l-center text-center">
-                                                    <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <div class="row">
+                                                <div class="col-3">
+                                                    <p>Weight</p>
                                                 </div>
-                                                <div class="way3-pin"></div>
-                                                <div class="way2-line "></div>
-                                                
-                                                <div class="way2-content l-center fs-13 fs-11_1440 d-flex">
-                                                    <div class="mx-auto">
-                                                        <p class="weight-light mb-1"><span class="weight-medium">ETD</span> 20 Apr. 2020</p>
-                                                        <p class="weight-light"><span class="weight-medium">CUT-OFF</span> 30 Apr. 2020 </p>
+                                                <div class="col-3">
+                                                    <p>Transporter</p>
+                                                </div>
+                                                <div class="col-3">
+                                                    <p>Origin gate time</p>
+                                                </div>
+                                                <div class="col-3 pr-0">
+                                                    <p>Destination gate time</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="b-1 b-blue-light2 fs-13_1440">
+                                        <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>OR-526177868</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
                                                     </div>
                                                 </div>
                                             </div>
-            
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <svg class="svg-sprite-icon icon-boat c-black-1e " width="11px" height="13px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                                </svg>
-                                                <div class="way2-line"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content l-center text-center">
-                                                    <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>1 800 kg</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Logistic Company</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
                                                 </div>
-                                                <div class="way3-pin"></div>
-                                                <div class="way2-line bg-orange-eb"></div>
-                                                <div class="way2-content l-center fs-14 fs-11_1440 d-flex">
-                                                    <p class="weight-light mx-auto"><span class="weight-medium">ETA</span> 28 Apr. 2020</p>
+                                            </div>
+                                        </div>  <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>OR-526177868</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon stroke-orange-eb" width="12px" height="10px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
-                                                </svg>
-                                                <div class="bg-orange-eb way2-line"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative text-right">
-                                                <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
-                                                    <p class="weight-medium fs-12_1440">Florida, US <span class="c-gray-69"> (Port)</span> </p>
-                                                    <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="ml-2">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>1 800 kg</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Logistic Company</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
                                                 </div>
-                                                <div class="way3-pin orange"></div>
-                                                <div class="way2-content r-0 fs-14 fs-11_1440">
-                                                    <p class="weight-light "><span class="weight-medium">Delivery</span> 30 Apr. 2020 </p>
+                                            </div>
+                                        </div>  <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>OR-526177868</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>1 800 kg</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Logistic Company</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>  <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>OR-526177868</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>1 800 kg</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Logistic Company</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div>
-                                        <div class="d-flex flex-wrap pb-1">
-                                            <a href="#" class="link-item mr-2 mb-2">
-                                                <svg class="svg-sprite-icon c-black-1e mr-1" width="11px" height="11px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                                </svg>
-                                                FCL
-                                            </a>
-                                            <a href="#" class="link-item mr-2 mb-2">3x 35 CHI’</a>
-                                            <a href="#" class="link-item mb-2 mb-2">2 550 kg</a>
-                                        </div>
-                                        <div class="d-flex fs-12_1440">
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">CMR</a>
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">INV</a>
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">PCK</a>
+                                        <div class="row mx-0 p-3 py-2_1440">
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>OR-526177868</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>AA63727688</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 py-1_1440">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>1 800 kg</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Logistic Company</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>15 Apr. / 18 Apr.</p>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <li class="b-gray-92-70 b-05 relative mb-3 px-3">
-                                <div class="d-flex absolute px-3 px-2_1440 ml-1_1440 l-0 t--50">
-                                    <div class="block fs-12 c-orange-eb bg-orange-f9 px-3">Chipest</div>
-                                </div>
-                                <div class="d-flex justify-content-between align-items-center min-h-95">
-                                    <div class="">
-                                        <p class="fs-12_1440 mb-2">OR-63729747748</p>
-                                        <div class="d-flex align-items-center">
-                                            <svg class="svg-sprite-icon c-black-1e mr-1" width="13px" height="14px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#office-building4"></use>
-                                            </svg>
-                                            <p class="weight-medium fs-13_1440">Acargo Company LTD</p>
-                                        </div>
-                                    </div>
-                                    <div class="w-100 py-4 px-3 max-770">
-                                        <div class="d-flex align-items-center fs-14">                                            
-                                            <div class="way2 d-flex align-items-center relative">
-                                                <div class="way3-content d-flex align-items-center text-nowrap">
-                                                    <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="mr-2 wh-13_1440">
-                                                    <p class=" weight-medium  fs-12_1440">Vilnius, LT <span class="c-gray-69"> (Port)</span></p>
-                                                </div>
-                                                <div class="way3-pin"></div>
-                                                <div class="way2-line "></div>
-                                                <div class="way2-content l-0 fs-13 fs-11_1440">
-                                                    <p class="weight-light"><span class="weight-medium">Loading</span>  18 Apr. 2020</p>
+                                <div class="contents__item ">
+                                    <div class="mt-3">
+                                        <div class="row mx-0 bg-blue-bright c-white p-3 fs-14 fs-13_1440 weight-medium">
+                                            <div class="col-7">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>Order</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Loading</p>
+                                                    </div>
+                                                    <div class="col-5">
+                                                        <p>Product</p>
+                                                    </div>
                                                 </div>
                                             </div>
-                                            <div class="way2 d-flex align-items-center">
-                                                <svg class="svg-sprite-icon stroke-1e" width="12px" height="10px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
-                                                </svg>
-                                                <div class="way2-line"></div>
-                                            </div>
-                                            <div class="way2 d-flex align-items-center relative text-right">
-                                                <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
-                                                    <p class="weight-medium fs-12_1440">Florida, US <span class="c-gray-69"> (Port)</span> </p>
-                                                    <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="ml-2">
-                                                </div>
-                                                <div class="way3-pin"></div>
-                                                <div class="way2-content r-0 fs-14 fs-11_1440">
-                                                    <p class="weight-light "><span class="weight-medium">Delivery</span> 30 Apr. 2020 </p>
+                                            <div class="col-5">
+                                                <div class="row">
+                                                    <div class="col-3">
+                                                        <p>Packing</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Quantity</p>
+                                                    </div>
+                                                    <div class="col-3">
+                                                        <p>Weight</p>
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                  
-                                    <div>
-                                        <div class="d-flex flex-wrap pb-1">
-                                            <a href="#" class="link-item mr-2 mb-2">
-                                                <svg class="svg-sprite-icon c-black-1e mr-1" width="11px" height="11px">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
-                                                </svg>
-                                                FCL
-                                            </a>
-                                            <a href="#" class="link-item mr-2 mb-2">3x 35 CHI’</a>
-                                            <a href="#" class="link-item mb-2 mb-2">2 550 kg</a>
-                                        </div>
-                                        <div class="d-flex fs-12_1440">
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">CMR</a>
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">INV</a>
-                                            <a href="#" class="c-gray-92 hover-black-1e mr-2">PCK</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    
-                    </div>
+                                        <div class="b-1 b-blue-light2 fs-13_1440">
+                                            <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                <div class="col-7 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>OR-526177868</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p>15 Apr. / 18 Apr.</p>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <p class="text-truncate">Olive oil "Fabio Ferelli" unrefined, 500 ml Fabio Ferelli" unrefine</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>Pallets</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 3 000</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 1800 kg</p>
+                                                        </div>
+                                                        <div class="col-3 d-flex align-items-center">
+                                                            <img class="mr-3" src="img/danger-2.svg" alt="danger" width="13px" height="11px">
+                                                            <img src="img/heat.svg" alt="heat"width="10px" height="11px">
 
-                    <div class="get-height pt-2" data-index="1">
-                        <div class="pt-1"></div>
-                    </div>
 
-                  </div>
-              </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div> <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                <div class="col-7 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>OR-526177868</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p>15 Apr. / 18 Apr.</p>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <p class="text-truncate">Olive oil "Fabio Ferelli" unrefined, 500 ml Fabio Ferelli" unrefine</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>Pallets</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 3 000</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 1800 kg</p>
+                                                        </div>
+                                                        <div class="col-3 d-flex align-items-center">
+                                                            <img class="mr-3" src="img/danger-2.svg" alt="danger" width="13px" height="11px">
+                                                            <img src="img/heat.svg" alt="heat"width="10px" height="11px">
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                <div class="col-7 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>OR-526177868</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p>15 Apr. / 18 Apr.</p>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <p class="text-truncate">Olive oil "Fabio Ferelli" unrefined, 500 ml Fabio Ferelli" unrefine</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>Pallets</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 3 000</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 1800 kg</p>
+                                                        </div>
+                                                        <div class="col-3 d-flex align-items-center">
+                                                            <img class="mr-3" src="img/danger-2.svg" alt="danger" width="13px" height="11px">
+                                                            <img src="img/heat.svg" alt="heat"width="10px" height="11px">
+
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row mx-0 p-3 bb-1 b-blue-light2 py-2_1440">
+                                                <div class="col-7 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>OR-526177868</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p>15 Apr. / 18 Apr.</p>
+                                                        </div>
+                                                        <div class="col-5">
+                                                            <p class="text-truncate">Olive oil "Fabio Ferelli" unrefined, 500 ml Fabio Ferelli" unrefine</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-5 py-1_1440">
+                                                    <div class="row">
+                                                        <div class="col-3">
+                                                            <p>Pallets</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 3 000</p>
+                                                        </div>
+                                                        <div class="col-3">
+                                                            <p> 1800 kg</p>
+                                                        </div>
+                                                        <div class="col-3 d-flex align-items-center">
+                                                            <img class="mr-3" src="img/danger-2.svg" alt="danger" width="13px" height="11px">
+                                                            <img src="img/heat.svg" alt="heat"width="10px" height="11px">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents__item">
+                                    <div class="row py-4 px-4 mx-xl-3 mx-0_1440 weight-medium fs-14_1440 fs-13_1280">
+                                        <div class="col-lg-4 col-md-6 pt-2 pl-0 ">
+                                            <p class="fs-16 pb-3 fs-15_1440 fs-14_1280">Parties</p>
+                                            <p class=" mb-2"> <span  class=" c-blue-gray pr-3">Shipper </span> Logistic Company </p>
+                                            <p class=" mb-2"> <span  class=" c-blue-gray pr-3">Consignee  </span> Acargo Company  </p>
+                                            <p class=" mb-2"> <span  class=" c-blue-gray pr-3">Customer   </span> Logistic Company   </p>
+                                            <p class=" mb-2"> <span  class="c-blue-gray pr-3">Transporter    </span> Acargo Company   </p>
+                                        </div>
+                                        <div class="col-lg-4 col-md-6 pt-2 pl-0">
+                                            <p class="fs-16 pb-3 fs-15_1440 fs-14_1280">Payment detail</p>
+                                            <p class=" mb-2"> <span  class="c-blue-gray pr-3">Origin </span> Prepaid </p>
+                                            <p class=" mb-2"> <span  class=" c-blue-gray pr-3">Freight  </span> Prepaid </p>
+                                            <p class=" mb-2"> <span  class="c-blue-gray pr-3">Destination    </span> Collect  </p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="py-4 px-4 mx-xl-3 mx-0_1440">
+                                        <div class="row pb-3">
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                                <div class="d-flex pb-2 justify-content-between align-items-center max-250">
+                                                    <p class="pt-1">Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                    <div class="d-flex pt-1">
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="10px" height="10px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center max-250">
+                                                    <p class="pt-1">CMR<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                    <div class="d-flex pt-1">
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="10px" height="10px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-2 justify-content-between align-items-center max-250">
+                                                    <p class="pt-1">Invoice<span class="fs-14 c-blue-gray pl-3">18.03.2020</span></p>
+                                                    <div class="d-flex pt-1">
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="10px" height="10px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb- justify-content-between align-items-center max-250">
+                                                    <p class="pt-1">CMR<span class="fs-14 c-blue-gray pl-3 ">18.03.2020</span></p>
+                                                    <div class="d-flex pt-1">
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="11px" height="11px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#share"></use>
+                                                            </svg>
+                                                        </button>
+                                                        <button class="btn-action ml-2" type="button">
+                                                            <svg class="svg-sprite-icon c-gray m-auto" width="10px" height="10px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-xl-3 col-lg-4 col-md-6">
+                                                <div class="d-flex pb-3 align-items-center ">
+                                                    <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                    <div class="d-flex fs-14 fs-12_1440">
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">A.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">T.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">E.R.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-3 align-items-center ">
+                                                    <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                    <div class="d-flex  fs-14 fs-12_1440">
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">A.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">T.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-3 align-items-center ">
+                                                    <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                    <div class="d-flex  fs-14 fs-12_1440">
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">A.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="d-flex pb-3 align-items-center ">
+                                                    <p class="fs-14 pr-1 fs-13_1280">Users:</p>
+                                                    <div class="d-flex  fs-14 fs-12_1440">
+                                                        <div class="br-12 px-2  mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p class="py-1 lh-1">A.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1" width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                        <div class="br-12 px-2 mx-1 d-flex align-items-center bg-gray_3 hover-b">
+                                                            <p>T.V.</p>
+                                                            <svg class="svg-sprite-icon c-blue ml-1 " width="7px" height="7px">
+                                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <label for="drop-upload" class="b-1 b-blue dashed bg-white py-3 w-100 max-490 mt-4">
+                                            <input type="file" id="drop-upload" name="files[]" multiple="">
+                                            <img src="img/upload-blue.svg" alt="upload" class="mx-auto my-2" width="20px" height="18px">
+                                            <span class="c-navy-blue mt-2 text-center d-block">Drop or сlick to upload file </span>
+                                        </label>
+                                        <div class="d-flex mt-3 py-4 align-items-center justify-content-center w-100 max-490 b-1 b-blue dashed bg-white">
+                                            <div class="mx-2 bg-green br-50 d-inline-flex wh-14">
+                                                <img src="img/check-white.svg" alt="check" class="m-auto" width="9px" height="10px">
+                                            </div>
+                                            <p class="c-green my-2 text-center d-block px-1">Completed</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="b-gray-92-70 b-05 relative mb-3 px-3">
+                        <div class="d-flex absolute px-3 px-2_1440 ml-1_1440 l-0 t--50">
+                            <div class="block fs-12 c-orange-eb bg-orange-f9 px-3">Chipest</div>
+                        </div>
+                        <div class="d-flex justify-content-between align-items-center min-h-95">
+                            <div class="">
+                                <p class="fs-12_1440 mb-2">OR-63729747748</p>
+                                <div class="d-flex align-items-center">
+                                    <svg class="svg-sprite-icon c-black-1e mr-1" width="13px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#office-building4"></use>
+                                    </svg>
+                                    <p class="weight-medium fs-13_1440">Acargo Company LTD</p>
+                                </div>
+                            </div>
+                            <div class="w-100 py-4 px-3 max-770">
+                                <div class="d-flex align-items-center fs-14">                                            
+                                    <div class="way2 d-flex align-items-center relative">
+                                        <div class="way3-content d-flex align-items-center text-nowrap">
+                                            <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="mr-2 wh-13_1440">
+                                            <p class=" weight-medium  fs-12_1440">Vilnius, LT <span class="c-gray-69"> (Port)</span></p>
+                                        </div>
+                                        <div class="way3-pin"></div>
+                                        <div class="way2-line "></div>
+                                        <div class="way2-content l-0 fs-13 fs-11_1440">
+                                            <p class="weight-light"><span class="weight-medium">Loading</span>  18 Apr. 2020</p>
+                                        </div>
+                                    </div>
+                                    <div class="way2 d-flex align-items-center">
+                                        <svg class="svg-sprite-icon stroke-1e" width="12px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                        </svg>
+                                        <div class="way2-line"></div>
+                                    </div>
+                                    <div class="way2 d-flex align-items-center relative text-right">
+                                        <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
+                                            <p class="weight-medium fs-12_1440">Florida, US <span class="c-gray-69"> (Port)</span> </p>
+                                            <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="ml-2">
+                                        </div>
+                                        <div class="way3-pin"></div>
+                                        <div class="way2-content r-0 fs-14 fs-11_1440">
+                                            <p class="weight-light "><span class="weight-medium">Delivery</span> 30 Apr. 2020 </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                          
+                            <div>
+                                <div class="d-flex flex-wrap pb-1">
+                                    <a href="#" class="link-item mr-2 mb-2">
+                                        <svg class="svg-sprite-icon c-black-1e mr-1" width="11px" height="11px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                        </svg>
+                                        FCL
+                                    </a>
+                                    <a href="#" class="link-item mr-2 mb-2">3x 35 CHI’</a>
+                                    <a href="#" class="link-item mb-2 mb-2">2 550 kg</a>
+                                </div>
+                                <div class="d-flex fs-12_1440">
+                                    <a href="#" class="c-gray-92 hover-black-1e mr-2">CMR</a>
+                                    <a href="#" class="c-gray-92 hover-black-1e mr-2">INV</a>
+                                    <a href="#" class="c-gray-92 hover-black-1e mr-2">PCK</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
             </div>
           </div>
         </div>

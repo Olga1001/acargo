@@ -180,7 +180,7 @@ $(document).ready(function () {
     $(".loader__files-name").addClass("font-style");
     $(".close-document").addClass("active");
   });
-  $("#drop-upload, #drop-upload1").on('change', function () {
+  $(".drop-upload input").on('change', function () {
     var $this = $(this).closest(".drop-upload");
     var files = $(this)[0].files[0];
     var img = $this.find(".upload-img");

@@ -438,6 +438,9 @@ document.querySelectorAll('[data-script-padding]').forEach(item => {
   }
 })
 
+document.querySelectorAll('.h-calc_1').forEach(el => {
+  setHeight(el, el.dataset.index)
+})
 
 let optionMut = {
   childList: true,

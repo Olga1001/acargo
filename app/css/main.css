@@ -11113,6 +11113,11 @@ input.fs-14:-ms-input-placeholder  {
   transition: .3s;
   margin: 0 1.5px;
 }
+.rating.orange > label {
+  background: url('../img/star-gray-2.svg') no-repeat center / 100%;
+  width: 17.5px;
+  height: 15px;
+}
 .op-015 {
   opacity: 0.15;
 }
@@ -11122,11 +11127,19 @@ input.fs-14:-ms-input-placeholder  {
   background-image: url('../img/star-gold.svg');
   opacity: 1;
 }
+.rating.orange > input:checked ~ label,
+.rating.orange > input:checked ~ label ~ label {
+  background-image: url('../img/star-orange.svg');
+}
 
 .rating > input:not(:checked) ~ label:hover,
 .rating > input:not(:checked) ~ label:hover ~ label {
   background-image: url('../img/star-gold.svg');
   opacity: 1;
+}
+.rating.orange > input:not(:checked) ~ label:hover,
+.rating.orange > input:not(:checked) ~ label:hover ~ label {
+  background-image: url('../img/star-orange.svg');
 }
 .h-100vh_60 {
   height: calc(100vh - 60px);

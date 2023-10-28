@@ -11948,6 +11948,19 @@ input.input_customer, textarea.input_customer {
 .table_info td {
   vertical-align: middle;
 }
+.table_info th {
+  position: relative;
+}
+.table_info th:before {
+  content: '';
+  position: absolute;
+  height: 100%;
+  width: 8px;
+  left: 0;
+  top: 0;
+  cursor: col-resize;
+  z-index: 1;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

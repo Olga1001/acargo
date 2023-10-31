@@ -543,13 +543,13 @@
                  
                     <!-- content -->
                 </div>
-                <div class="popup-h d-flex py-3">
-                    <div class="box-white p-2 max-570 w-100 m-auto active">
+                <div class="popup-h d-flex py-3 bg-gray-df ">
+                    <div class="box-white p-2 max-640 w-100 m-auto active">
                         <a href="#" class="mb-4 d-block">
                             <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto" width="18px" height="18px">
                         </a>
-                        <div class="max-450 mx-auto py-1">
-                            <h3 class="weight-medium text-center mb-1">Upload invoice</h3>
+                        <div class="max-455 mx-auto py-2">
+                            <h3 class="fs-18 weight-medium text-center mb-1">Upload invoice</h3>
                             <div class="row pb-3">
                                 <div class="pt-3 col-6 pr-4">
                                     <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
@@ -592,7 +592,7 @@
                                         <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="1200">
                                         <p class="name">Price</p>
                                         <div class="select h-fit b-0 br-0 pb-1 arrow-r-0 absolute r-0 bot-0 w-46">
-                                            <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
+                                            <input type="text" class="select__item input-normal" value="EUR">
                                             <div class="select__drop">
                                                 <ul class="select__menu">
                                                     <li class="select__option active">EUR</li>
@@ -621,40 +621,42 @@
                                     </div>
                                 </div>
                             </div>
-                            <label for="drop-upload1" class="drop-upload bg-light b-1 dashed b-blue p-2 min-h-auto mt-2 d-block text-center">
-                                <svg class="svg-sprite-icon c-blue drop-upload__icon mx-auto mb-1" width="15px" height="15px">
+                            <label for="drop-upload1" class="drop-upload bg-orange-f4_20 b-1 dashed b-orange-f4 p-2 min-h-auto mt-2 d-block text-center">
+                                <svg class="svg-sprite-icon c-orange-f4 drop-upload__icon mx-auto mb-1" width="15px" height="13px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
                                 </svg>
-                                <span class="text-16 fs-13 d-block">Drop or сlick to upload <span class="c-blue">Invoice</span> </span>
-                                <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
-                                <input type="file" id="drop-upload1" name="files[]" multiple="">
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="text-16 c-black-1e fs-13 d-block">Drop or сlick to upload <span class="weight-medium">Invoice</span> </span>
+                        
+                                    <svg class="svg-sprite-icon loading__file-icon c-black-1e m-2" width="10px" height="10px" >
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                    <input type="file" id="drop-upload1" name="files[]" multiple="">
+                                </div>
                             </label>
-                            <label for="drop-upload1" class="drop-upload bg-light b-1 dashed b-blue p-2 min-h-auto mt-2 d-block text-center">
-                                <svg class="svg-sprite-icon c-blue drop-upload__icon mx-auto mb-1" width="15px" height="15px">
+                            <label for="drop-upload1" class="drop-upload bg-orange-f4_20 b-1 dashed b-orange-f4 p-2 min-h-auto mt-2 d-block text-center">
+                                <svg class="svg-sprite-icon c-orange-f4 drop-upload__icon mx-auto mb-1" width="15px" height="13px">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
                                 </svg>
-                                <span class="text-16 fs-13 d-block">Drop or сlick to upload <span class="c-blue">Packing list </span> </span>
-                                <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
-                                <input type="file" id="drop-upload1" name="files[]" multiple="">
+
+                                <div class="d-flex justify-content-center align-items-center">
+                                    <span class="text-16 c-black-1e fs-13 d-block">Drop or сlick to upload <span class="weight-medium">Packing list</span> </span>
+                        
+                                    <svg class="svg-sprite-icon loading__file-icon c-black-1e m-2" width="10px" height="10px" >
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                    <input type="file" id="drop-upload1" name="files[]" multiple="">
+                                </div>
                             </label>
-                            <div class="b-1 b-blue p-2 br-4 mt-2">
-                                <div class="br-50 mb-1 wh-17 d-flex mx-auto bg-gray_05">
-                                    <svg class="svg-sprite-icon c-white m-auto" width="7px" height="7px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </div>
-                                <p class="fs-13 text-center">Generate packing list </p>
-                            </div>
-                            <div class="b-1 b-blue p-2 br-4 mt-2">
-                                <div class="br-50 mb-1 wh-17 d-flex mx-auto bg-green">
-                                    <svg class="svg-sprite-icon c-white m-auto" width="7px" height="7px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </div>
-                                <p class="fs-13 text-center">Generate packing list </p>
+                            <div class=" mt-2 bg-gray-69-20 py-2_5">
+                                <svg class="svg-sprite-icon c-orange-f4 mx-auto mb-1 d-block mt-2" width="13px" height="11px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                </svg>
+                                <p class="fs-13 text-center pb-2">Generate packing list </p>
                             </div>
                           
-                            <a href="#" class="btn-aquamarine w-100 big my-4 py-2">Save</a>
+                            <a href="#" class="btn-aquamarine w-100 big my-4 ">Save</a>
                         </div>
                     </div>
                 </div>

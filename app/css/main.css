@@ -4,6 +4,7 @@
   --Grey_3: #D6D6D6;
   --orange-new: #F45617;
   --Black: #1E1E1E;
+  --Grey_2: #696969;
 }
 
 * {
@@ -2291,7 +2292,7 @@ button {
 .bg-orange_v5, .bg-orange-f4-20 {
   background-color: rgba(235, 94, 19, 0.20);}
 .bg-orange-f4_20 {
-  background: var(--BG-orange, rgba(244, 86, 23, 0.20));}
+  background: var(--BG-orange);}
 .bg-light-green {
   background-color: rgba(73, 221, 170, 0.15); }
 .bg-light-green2 {
@@ -8406,6 +8407,8 @@ button {
   max-width: 590px;}
 .max-630 {
   max-width: 630px;}
+.max-640 {
+  max-width: 640px;}
 .max-650 {
   max-width: 650px;}
 .max-725 {
@@ -10115,7 +10118,10 @@ padding-top: 15px;}
   /* background-color: rgba(36, 177, 255, 0.25); */
 }
 .hover-bg-light_02:hover {
-  background-color: rgba(235, 94, 19, 0.2);
+  background-color:  var(--BG-orange, rgba(244, 86, 23, 0.20));
+  /* background-color: rgba(235, 94, 19, 0.2); */
+
+  
 }
 .hover-bg-blue-light:hover {
   cursor: pointer;
@@ -10245,6 +10251,7 @@ padding-top: 15px;}
   font-weight: 500;
   padding: 5px 0;
   color: #67758D;
+  color: var(--Grey_2, #696969);
   letter-spacing: -0.26px;
   transition: all 0.3s ease;
   pointer-events: none;}

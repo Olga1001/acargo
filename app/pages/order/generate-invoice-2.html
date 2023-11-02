@@ -538,162 +538,174 @@
     </header>
     <div class="d-flex flex-column" id="content-wrapper">
         <div id="content">
-            <div class="container-fluid p-0" id="container-wrapper">
+            <div class="container-fluid p-0 active" id="container-wrapper">
                 <div id="box">
                  
                     <!-- content -->
                 </div>
                 <div class="popup-h d-flex py-3">
-                    <div class="box-white p-2 max-910 w-100 m-auto active">
+                    <div class="box-white p-2 max-1045 w-100 m-auto active">
                         <a href="#" class="mb-4 d-block">
-                            <img src="../../img/gray__cancel.svg" alt="close" class="ml-auto" width="18px" height="18px">
+                            <svg class="svg-sprite-icon c-gray-d6 ml-auto d-block" width="17px" height="17px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>                        
                         </a>
-                        <div class="max-800 mx-auto pb-5">
-                            <h3 class="weight-medium text-center my-3">Generate  invoice</h3>
-                            <div class="d-flex flex-wrap">
-                                <div class="pt-3 mr-5">
-                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0  w-150">
-                                        <input type="text" class="select__item input-normal text-left c-dark" value="OR - 2345678678">
-                                        <p class="name">Order</p>
-                                        <div class="select__drop">
-                                            <ul class="select__menu">
-                                                <li class="select__option active">OR - 2345678678</li>
-                                                <li class="select__option">OR - 2345678678</li>
-                                            </ul>
+                        <div class="max-910 mx-auto pb-5 p-1">
+                            <h3 class="weight-medium text-center mb-2 fs-18">Generate  invoice</h3>
+                            <div class="row">
+                                <div class="col-6 pr-3">
+                                    <div class="row">
+                                        <div class="col-6 pt-3 pr-3">
+                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                                <input type="text" class="select__item input-normal text-left c-dark" value="OR - 2345678678">
+                                                <p class="name">Order</p>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active">OR - 2345678678</li>
+                                                        <li class="select__option">OR - 2345678678</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="pt-3 mr-5 pl-3">
-                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0  w-150">
-                                        <input type="text" class="select__item input-normal text-left c-dark" value="Cargo company">
-                                        <p class="name">Client</p>
-                                        <div class="select__drop">
-                                            <ul class="select__menu">
-                                                <li class="select__option active">Cargo company</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="pt-3  mr-5 pl-3">
-                                    <div class="relative h-fit mt-4 w-150">
-                                        <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="AA-4567898765">
-                                        <p class="name">Invoice No.</p>
-                                    </div>
-                                </div>
-                                <div class="pt-3 pl-3">
-                                    <div class="relative h-fit mt-4 w-150 ">
-                                        <input type="text" class="input-normal pl-0 input-date right bb-1 br-0 text-left c-dark py-1" value="17 April 2022">
-                                        <p class="name">Invoice date</p>
-                                    </div>
-                                </div>
-                                <div class="pt-3  mr-5">
-                                    <div class="relative h-fit mt-4 w-150 ">
-                                        <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="1200">
-                                        <p class="name">Price</p>
-                                        <div class="select h-fit b-0 br-0 pb-1 arrow-r-0 absolute r-0 bot-0 w-46">
-                                            <input type="text" class="select__item input-normal text-left c-blue-gray" value="EUR">
-                                            <div class="select__drop">
-                                                <ul class="select__menu">
-                                                    <li class="select__option active">EUR</li>
-                                                    <li class="select__option">USD</li>
-                                                </ul>
+                                        <div class="col-6 pt-3 pl-3">
+                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                                <input type="text" class="select__item input-normal text-left c-dark" value="Cargo company">
+                                                <p class="name">Client</p>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active">Cargo company</li>
+                                                    </ul>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pt-3 mr-5 pl-3">
-                                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 w-150 ">
-                                        <input type="text" class="select__item input-normal text-left c-dark" value="Prepaid">
-                                        <p class="name">Payment terms</p>
-                                        <div class="select__drop">
-                                            <ul class="select__menu">
-                                                <li class="select__option active">Prepaid</li>
-                                                <li class="select__option">Prepaid</li>
-                                            </ul>
+                                <div class="col-6 pl-3">
+                                    <div class="row">
+                                        <div class="col-6 pt-3 pr-3">
+                                            <div class="relative h-fit mt-4">
+                                                <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="AA-4567898765">
+                                                <p class="name">Invoice No.</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pt-3 pl-3">
+                                            <div class="relative h-fit mt-4">
+                                                <input type="text" class="input-normal pl-0 input-date right bb-1 br-0 text-left c-dark py-1" value="17 April 2022">
+                                                <p class="name">Invoice date</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="pt-3 pl-3 w-380">
+                            </div>
+                            <div class="row">
+                                <div class="col-6 pr-3">
+                                    <div class="row">
+                                        <div class="col-6 pt-3 pr-3">
+                                            <div class="relative h-fit mt-4">
+                                                <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="1200">
+                                                <p class="name">Price</p>
+                                                <div class="select h-fit b-0 br-0 pb-1 arrow-r-0 absolute r-0 bot-0 w-46">
+                                                    <input type="text" class="select__item input-normal text-left c-gray-69" value="EUR">
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">EUR</li>
+                                                            <li class="select__option">USD</li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 pt-3 pl-3">
+                                            <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
+                                                <input type="text" class="select__item input-normal text-left c-dark" value="Prepaid">
+                                                <p class="name">Payment terms</p>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active">Prepaid</li>
+                                                        <li class="select__option">Prepaid</li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 pt-3 pl-3">
                                     <div class="relative h-fit mt-4">
                                         <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="4567890">
                                         <p class="name">Tax low article</p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-flex align-items-center py-5 my-4 fs-14 fs-13_1440">                                            
-                                <div class="way2 d-flex align-items-center relative py-2">
+                        
+                            <div class="d-flex align-items-center fs-14 min-h-95 my-5 pr-1">                                            
+                                <div class="way2 d-flex align-items-center relative">
                                     <div class="way3-content d-flex align-items-center text-nowrap">
-                                        <img src="../../img/flag.svg" alt=" flag" width="18px" height="18px" class="mr-2">
-                                        <p class="c-navy weight-medium">Vilnius, LT </p>
+                                        <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="mr-2 wh-13_1440">
+                                        <p class="weight-medium">Vilnius, LT <span class="c-gray-69"> (Port)</span></p>
+                                    </div>
+                                    <div class="way3-pin orange"></div>
+                                    <div class="bg-orange-f4 way2-line "></div>
+                                    <div class="way2-content l-0 fs-12_1440">
+                                        <p><span class="weight-medium c-gray-69">Loading</span>  18 Apr. 2020</p>
+                                    </div>
+                                </div>
+                                <div class="way2 d-flex align-items-center">
+                                    <svg class="svg-sprite-icon stroke-orange-f4" width="13px" height="15px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                    </svg>
+                                    <div class="bg-orange-f4 way2-line"></div>
+                                </div>
+                                <div class="way2 d-flex align-items-center relative">
+                                    <div class="way3-content l-center text-center">
+                                        <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
                                     </div>
                                     <div class="way3-pin"></div>
-                                    <div class="bg-green way2-line "></div>
-                                    <div class="way2-content l-0">
-                                        <p><span class="c-blue-gray weight-medium">Loading</span>  18 Apr. 2020 </p>
-                                    </div>
-                                </div>
-                                <div class="way2 d-flex align-items-center">
-                                    <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
-                                    </svg>
-                                    <div class="bg-green way2-line"></div>
-                                </div>
-                                <div class="way2 d-flex align-items-center relative py-2">
-                                    <div class="way3-content l-center text-center">
-                                        <p>LTCH</p>
-                                    </div>
-                                    <div class="way3-pin blue"></div>
-                                    <div class="bg-blue-v1 way2-line"></div>
-                                    <div class="way2-content">
-                                        <p class="mb-1"><span class="c-blue-gray weight-medium">ETD </span>  20 Apr. 2020 </p>
-                                        <p><span class="c-blue-gray weight-medium">CUT-OFF  </span>  19-20 Apr. 2020 </p>
-                                    </div>
-                                </div>
-
-                                <div class="way2 d-flex align-items-center relative ">
-                                    <div class="way3-content l-center pl-2 text-center text-nowrap">
-                                        <p class="fs-12">Transit time 38 Days</p>
-                                        <p class="c-blue">28 Days left</p>
+                                    <div class="way2-line"></div>
                                     
+                                    <div class="way2-content l-center fs-12_1440 d-flex">
+                                        <div class="mx-auto">
+                                            <p class="mb-1"><span class="weight-medium c-gray-69">ETD</span> 20 Apr. 2020</p>
+                                            <p><span class="weight-medium c-gray-69">CUT-OFF</span> 30 Apr. 2020 </p>
+                                        </div>
                                     </div>
-                                    <svg class="svg-sprite-icon icon-boat c-blue-light mx-1" width="11px" height="12px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat"></use>
-                                    </svg>
-                                    <div class="bg-blue-v1 way2-line"></div>
                                 </div>
-                                <div class="way2 d-flex align-items-center relative py-2">
+        
+                                <div class="way2 d-flex align-items-center relative">
+                                 
+                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                    </svg>
+                                    <div class="way2-line"></div>
+                                </div>
+                                <div class="way2 d-flex align-items-center relative">
                                     <div class="way3-content l-center text-center">
-                                        <p>USAH</p>
+                                        <p class="fs-13 weight-medium c-gray-69 lh-1_4 fs-10_1440">LTCH</p>
                                     </div>
-                                    <div class="way3-pin blue"></div>
-                                    <div class="bg-green way2-line"></div>
-
-                                    <div class="way2-content">
-                                        <p><span class="c-blue-gray weight-medium">ETA </span>  28 Apr. 2020 </p>
+                                    <div class="way3-pin "></div>
+                                    <div class="way2-line bg-orange-f4"></div>
+                                    <div class="way2-content l-center fs-12_1440 d-flex">
+                                        <p class="mx-auto"><span class="weight-medium c-gray-69">ETA</span> 28 Apr. 2020</p>
                                     </div>
                                 </div>
                                 <div class="way2 d-flex align-items-center">
-                                    <svg class="svg-sprite-icon icon-delivery-truck c-green mx-1" width="13px" height="10px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck"></use>
+                                    <svg class="svg-sprite-icon stroke-orange-f4" width="13px" height="15px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
                                     </svg>
-                                    <div class="bg-green way2-line"></div>
+                                    <div class="way2-line bg-orange-f4"></div>
                                 </div>
-                                <div class="way2 d-flex align-items-center relative text-right py-2">
+                                <div class="way2 d-flex align-items-center relative text-right">
                                     <div class="way3-content l-auto r-0 d-flex align-items-center text-nowrap">
-                                        <p class="c-navy weight-medium">Florida, US </p>
-                                        <img src="../../img/flag.svg" alt=" flag" width="18px" height="18px" class="ml-2">
+                                        <p class="weight-medium fs-12_1440">Florida, US <span class="c-gray-69"> (Port)</span> </p>
+                                        <img src="../../img/flag.svg" alt=" flag" width="14px" height="14px" class="ml-2">
                                     </div>
-                                    <div class="way3-pin gray"></div>
-
-                                    <div class="way2-content r-0 l-auto">
-                                        <p><span class="c-blue-gray weight-medium">Delivery  </span>  30 Apr. 2020 </p>
+                                    <div class="way3-pin orange"></div>
+                                    <div class="way2-content r-0 fs-14 fs-11_1440">
+                                        <p><span class="weight-medium c-gray-69">Delivery</span> 30 Apr. 2020 </p>
                                     </div>
                                 </div>
                             </div>
-
-                            <ul class="fs-13 letter-sp--002 lh-1_4 py-3">
-                                <li class="py-1 weight-medium row bg-light-v15 lh-1_7 mx-0 c-navy-blue">
+                            <ul class="fs-14 lh-1_4 py-2">
+                                <li class="py-2 weight-medium row bg-gray-69-20 lh-22 mx-0">
                                     <div class="col-7">
                                         <div class="row">
                                             <div class="col-9">Product name</div>
@@ -708,7 +720,7 @@
                                         </div>
                                     </div>
                                 </li>
-                                <li class="row py-2 hover-b b-blue-light2 mx-0 align-items-center min-h-45 ">
+                                <li class="row py-2 hover-b hover-bg-light_02 mx-0 align-items-center min-h-45 ">
                                     <div class="col-7">
                                         <div class="row ">
                                             <div class="col-9">Apple iPhone 11 64GB / MHDC3 Smartphone ... </div>
@@ -721,8 +733,8 @@
                                             <div class="col-4">1</div>
                                             <div class="col-4 d-flex align-items-center justify-content-between">
                                                 1480
-                                                <a href="#" class="wh-24 br-4 hover-bg-light bg-light d-flex hover">
-                                                    <svg class="svg-sprite-icon c-blue-gray m-auto blue " width="13px" height="13px">
+                                                <a href="#" class="hover hover-icon-orange">
+                                                    <svg class="svg-sprite-icon c-gray-69" width="15px" height="15px">
                                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
                                                     </svg>
                                                 </a>
@@ -730,8 +742,29 @@
                                         </div>
                                     </div>
                                 </li>
-
-                                <li class="row py-2 hover-b b-blue-light2 mx-0 align-items-center min-h-45">
+                                <li class="row py-2 hover-b hover-bg-light_02 mx-0 align-items-center min-h-45 ">
+                                    <div class="col-7">
+                                        <div class="row ">
+                                            <div class="col-9">Apple iPhone 11 64GB / MHDC3 Smartphone ... </div>
+                                            <div class="col-3">Pallet</div>
+                                        </div>
+                                    </div>
+                                    <div class="col-5">
+                                        <div class="row align-items-center">
+                                            <div class="col-4">1480 </div>
+                                            <div class="col-4">1</div>
+                                            <div class="col-4 d-flex align-items-center justify-content-between">
+                                                1480
+                                                <a href="#" class="hover hover-icon-orange">
+                                                    <svg class="svg-sprite-icon c-gray-69" width="15px" height="15px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="row py-2 hover-b hover-bg-light_02 mx-0 align-items-center min-h-45">
                                     <div class="col-7">
                                         <div class="row align-items-center">
                                             <div class="col-9">
@@ -767,70 +800,8 @@
                                 </li>
                             </ul>
 
-                            <div class="row mb-3">
-                                <div class="col-6">
-                                    <div class="pt-3">
-                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0  max-310">
-                                            <input type="text" class="select__item input-normal text-left c-dark" value="Pre-carriage, loading, booking">
-                                            <p class="name">Remarks</p>
-                                            <div class="select__drop">
-                                                <div class="select__menu">
-                                                    <label class="hover__option d-flex align-items-center mb-1">
-                                                        <input type="checkbox" class="checkbox">
-                                                        <span class="check_custom blue mr-2"></span>
-                                                        <span class="pl-1">Pre-carriage</span>
-                                                    </label>
-                                                    <label class="hover__option d-flex align-items-center ">
-                                                        <input type="checkbox" class="checkbox">
-                                                        <span class="check_custom blue mr-2"></span>
-                                                        <span class="pl-1">loading</span>
-                                                    </label>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="pt-3 w-150">
-                                        <div class="relative h-fit mt-4 ">
-                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark py-1" value="7898765">
-                                            <p class="name">Customs post code</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row pb-4 align-items-end">
-                                <div class="col-6">
-                                    <label class="d-flex align-items-center mb-4">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="check_custom blue mr-2"></span>
-                                        <span class="pl-1">T2L Status</span>
-                                    </label>
-                                    <label class="d-flex align-items-center">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="check_custom blue mr-2"></span>
-                                        <span class="pl-1">Generate packing list</span>
-                                    </label>
-                                </div>
-                                <div class="col-6">
-                                    <div class="pt-3 w-150">
-                                        <div class="relative h-fit mt-4 ">
-                                            <div class="select h-fit b-0 bb-1 br-0 pb-1 arrow-r-0">
-                                                <input type="text" class="select__item input-normal text-left c-dark" value="Pallet">
-                                                <p class="name">Packing</p>
-                                                <div class="select__drop">
-                                                    <ul class="select__menu">
-                                                        <li class="select__option active">Pallet</li>
-                                                        <li class="select__option">Pallet</li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
                           
-                            <a href="#" class="btn-aquamarine w-100 big mx-auto d-block max-240 my-2">Save</a>
+                            <a href="#" class="btn-aquamarine w-100 big mx-auto d-block max-240 mt-4">Save</a>
                         </div>
                     </div>
                 </div>

@@ -220,6 +220,7 @@ document.querySelectorAll('.nav').forEach((nav, index) => {
   childs.forEach((item, i) => {
     item.addEventListener('click', (e) => {
       let target = e.target;
+
       target.closest('.nav').querySelector(`.active`).classList.remove('active');
       target.classList.add('active');
 
@@ -229,6 +230,7 @@ document.querySelectorAll('.nav').forEach((nav, index) => {
         contentsElement = document.querySelector(`.contents[data-index="${target.closest('.nav').dataset.index}"]`);
       } 
 
+      if (!contentsElement) return
       let childsContents =  [...contentsElement.children];
       childsContents.forEach((a,b) => a.classList.contains('active') ? a.classList.remove('active') : '');
       contentsElement.children[i].classList.add('active');
@@ -398,7 +400,6 @@ function setHeight(el, index) {
  
   sumHeight += el.getBoundingClientRect().top;
   
-  console.log(Math.ceil(sumHeight))
   el.style.height = `calc(100vh - ${Math.ceil(sumHeight)}px)`
 }
 

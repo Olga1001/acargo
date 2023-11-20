@@ -597,11 +597,14 @@ button {
     .select__menu.bg-dark {
       border-color: rgba(183, 188, 214, 0.3)
     }
+
+    *::-webkit-scrollbar {
+      width: 6px;}
     .select__menu::-webkit-scrollbar {
       width: 3px;
       -webkit-appearance: none;
       appearance: none; }
-    .select__menu::-webkit-scrollbar-thumb {
+    *::-webkit-scrollbar-thumb {
       border-radius: 4px;
       background-color: #b7bcd6; }
     .select__menu::-webkit-scrollbar-button {
@@ -10093,6 +10096,14 @@ padding-top: 15px;}
 .hover-b:hover .hover, .hover-bg-light:hover .hover, .hover-shadow:hover .hover, .show .hover-b:hover .hover2 {
   opacity: 1;
   pointer-events: auto;}
+.hover-block {
+  display: none!important;}
+.hover-block.collapsed[data-toggle="collapse"] {
+  display: none!important;}
+.hover-block[data-toggle="collapse"] {
+  display: block!important;}
+.hover-b:hover .hover-block {
+  display: block!important;}
 .hover-bg-light:hover .blue {
   fill: #156CE4!important;
   color: #156CE4!important;}

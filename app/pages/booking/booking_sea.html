@@ -1,0 +1,1593 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Acargo</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../../css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+
+    <link href="../../css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay"></div>
+        <header class="header d-flex justify-content-between align-items-center ">
+            <div class="d-flex align-items-center">
+                <a href="#" class="logo pb-1">
+                    <img src="../../img/logo/сargo4s-logo.svg" alt="logo Acargo">
+                </a>
+                <nav class="nav-menu ml-3">
+                    <ul class="menu-row d-flex">
+                        <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                        <li class="menu-list relative">
+                            <a href="#" class="mune-item">Orders</a>
+                            <div class="menu-dropdown">
+                                <ul class="d-flex">
+                                    <li><a href="#" class="mr-4">Rates </a></li>
+                                    <li><a href="#" class="mr-4">Transport rates  </a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list relative ">
+                            <a href="#" class="mune-item">Rate (18)</a>
+                            <div class="menu-dropdown">
+                                <ul class="d-flex">
+                                    <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                    <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                    <li><a href="#" class="mr-4">Requests (858)</a></li>
+                                </ul>
+                            </div>
+                        </li>
+                        <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                        <li class="menu-list"><a href="#" class="mune-item">Networks</a></li>
+                    </ul>
+
+                </nav>
+                <div class="dropdown no-arrow ">
+                    <div class="py-3 py-2_1280 circle dropdown-toggle d-flex" id="menuDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"  aria-expanded="false">
+                        <span class="circle-span bg-white"></span>
+                        <span class="circle-span bg-white"></span>
+                        <span class="circle-span bg-white"></span>
+                    </div>
+                    <div class="dropdown-menu animated--grow-in p-0 overflow-visible mt-5 mt-4_1280" aria-labelledby="menuDropdown">
+                        <ul class="dropdown-lv1 py-1">
+                            <li>
+                                <a href="#" class="dropdown-lv1_item">Public</a>
+                                <ul class="dropdown-lv2 pb-1">
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Public 1</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Public 2</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-lv1_item ">Finance</a>
+                                <ul class="dropdown-lv2 pb-1">
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Networks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Finance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Networks</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="dropdown-lv2_item">Finance</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-lv1_item ">Networks</a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex align-items-center">
+                <div class="d-flex align-items-center py-1">
+                    <form class="form-search ml-3 relative">
+                        <div class="form-search_content">
+                            <input type="text" placeholder="Search file">
+                            <button type="button">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#search"></use>
+                                </svg>
+                            </button>
+                        </div>
+                    </form>
+                    <div class="currenty ml-3">
+                        <div class="select h-100">
+                            <div class="select__item c-white pl-3">USD</div>
+                            <div class="select__drop ">
+                                <ul class="select__menu bg-black-1e">
+                                    <li class="select__option c-white active">USD</li>
+                                    <li class="select__option c-white">EUR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price c-white">1,35 EUR</div>
+                    </div>
+                </div>
+                <div class="d-flex align-items-center ml-3 pl-1 py-2">
+                    <div class="px-1 dropdown no-arrow right-sticky">
+                        <a href="#" class=" dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="19px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#notepad"></use>
+                            </svg>
+                        </a>
+
+                        <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                            <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                <h6 class="px-2 fs-14 weight-medium c-blue ">To-do list</h6>
+                                <div class="d-flex align-items-center px-2">
+                                    <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="h-dropdown">
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021  14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-3">
+                        <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3"></use>
+                        </svg>
+                    </div>
+                    <div class="px-2 dropdown no-arrow right-sticky">
+                        <a href="#" class="dropdown-toggle" id="messagesDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="16px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#mail"></use>
+                            </svg>
+                            <div class="bg-orange-f4 count-message">4</div>
+                        </a>
+
+                        <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="messagesDropdown">
+                            <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                                <div class="d-flex align-items-center px-2">
+                                    <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="h-dropdown">
+                                <div class="p-2">
+                                    <div class="px-1">
+                                        <input type="text" class="input-search py-2 h-auto b-blue-v3">
+                                    </div>
+                                </div>
+                                <ul>
+                                    <li class="dropdown-item p-2">
+                                        <div class="p-1 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-3">
+                                                    <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                    <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                    <div class="online-user small"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                    <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item p-2 b-1 b-blue">
+                                        <div class="p-1 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-3">
+                                                    <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                    <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                    <div class="online-user small bg-gray"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                    <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item p-2">
+                                        <div class="p-1 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-3">
+                                                    <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                    <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                    <div class="online-user small"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                    <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item p-2">
+                                        <div class="p-1 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-3">
+                                                    <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                    <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                    <div class="online-user small bg-gray"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                    <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                        </div>
+                                    </li>
+                                    <li class="dropdown-item p-2">
+                                        <div class="p-1 d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <div class="avatar small mr-3">
+                                                    <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                    <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                    <div class="online-user small"></div>
+                                                </div>
+                                                <div>
+                                                    <p class="fs-14 weight-medium c-navy">Sergey Ivanov  (1)</p>
+                                                    <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                </div>
+                                            </div>
+                                            <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-2 dropdown no-arrow ml-1 right-sticky">
+                        <a href="#" class="dropdown-toggle" id="alertsDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#notification-2"></use>
+                            </svg>
+                        </a>
+                        <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                            <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                <h6 class="px-2 fs-14 weight-medium c-blue ">Notifications</h6>
+                                <div class="d-flex align-items-center px-2">
+                                    <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="h-dropdown">
+                                <a class="dropdown-item p-2 c-dark " href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item p-2 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                                </a>
+                                <a class="dropdown-item p-2 c-dark bg-light_v10" href="#">
+                                <span class="px-1 d-block">
+                                      <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time selected ...</span>
+                                        <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                        <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                        <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                            <span class="c-blue-gray ">12 Apr. 2021  14:00 PM</span>
+                                            <span class="c-gray">1day ago</span>
+                                        </span>
+                                </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="px-2">
+                        <a href="#">
+                            <svg class="svg-sprite-icon c-gray" width="20px" height="18px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <div class="dropdown no-arrow">
+                        <div class="pl-3 circle dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span class="circle-span bg-gray"></span>
+                            <span class="circle-span bg-gray"></span>
+                            <span class="circle-span bg-gray"></span>
+                        </div>
+                        <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-4"></use>
+                                </svg>
+                                My profile
+                            </a>
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                                </svg>
+                                Calendar
+                            </a>
+                            <a class="dropdown-item mb-2" href="#">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                                </svg>
+                                To-do list
+                            </a>
+                            <div class="row px-3 py-3 mt-1 mx-0">
+                                <div class="col-6 pr-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager active">
+                                        <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pl-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager ">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pr-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager ">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        Shipper
+                                    </a>
+                                </div>
+                                <div class="col-6 pl-2 mt-2">
+                                    <a href="#" class="d-flex align-items-center btn-manager">
+                                        <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                        </svg>
+                                        .Client
+                                    </a>
+                                </div>
+
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+      <div class="d-flex flex-column w-100 " id="content-wrapper">
+        <div id="content">
+
+          <div class="container-fluid p-0 bg-gray-df" id="container-wrapper">
+            <div id="box">
+                <div class="px-3 py-2 bg-white d-flex align-items-center">
+                    <a href="#" class="mr-2">
+                        <svg class="svg-sprite-icon c-gray " width="16px" height="12px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-alt-rounded"></use>
+                        </svg>
+                    </a>
+                    <nav class="breadcrumbs_v3  pl-1">
+                          
+                        <ul class="d-flex">
+                            <li>
+                                <a href="#" class="item active">
+                                    <span>
+                                        <svg class="svg-sprite-icon mr-2" width="11px" height="11px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                        Orders
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item weight-semi"><span>Pre-carriage</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class="item active"><span>Loading</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class=""><span>In transit</span> </a>
+                            </li>
+                            <li>
+                                <a href="#" class=""><span>Documents</span> </a>
+                            </li>
+                            <li class="">
+                                <a href="#" class=""><span>Delivered</span> </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="hover-icon-orange ml-auto">
+                        <svg class="svg-sprite-icon c-gray-69" width="16px" height="16px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-3"></use>
+                        </svg>
+                    </a>
+                    <div class="fs-13 c-orange-f4 bg-orange-15 wh-16 text-center mx-1">3</div>
+                    <a href="#" class="wh-30 hover-bg-light d-flex ml-2">
+                        <svg class="svg-sprite-icon item-color c-gray-69 m-auto" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="wh-30 hover-bg-light d-flex ml-2">
+                        <svg class="svg-sprite-icon item-color c-gray-69 m-auto" width="16px" height="16px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                        </svg>
+                    </a>
+                    <a href="#" class="wh-30 hover-bg-light d-flex ml-2">
+                        <svg class="svg-sprite-icon item-color c-gray-69 m-auto" width="14px" height="17px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#lock-clock-outline"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="d-flex px-3">
+                    <div class="w-73w px-1 h-calc_1 py-2">
+                        <div class="mb-3 bg-white">
+                            <div class="py-3 px-2 relative">
+                                <p class="lh-22 mb-2 pb-1">
+                                    <span class="weight-medium">OR - AA34567890 </span>
+                                    <span class="mx-3">|</span> 
+                                    <span class="weight-light fs-14">Export</span> 
+                                    <span class="mx-3">|</span>
+                                    <span class="weight-light fs-14">Port to port</span>
+                                </p>
+                                <div class="d-flex align-items-center flex-wrap ">
+                                    <div class="d-flex pr-4 br-1 b-gray-92 mr-4">
+                                        <p>
+                                            <span class="weight-semi"> Klaipeda, LT</span> <span class="weight-medium c-gray-92">(Port)</span> <br>
+                                            <span class="weight-light">Acargo Company</span> 
+                                        </p>
+                                        <svg class="svg-sprite-icon mx-5 mx-4_1440 c-none stroke-92" width="10px" height="13px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-4"></use>
+                                        </svg>
+                                        <p class="_1441_mr-3">
+                                            <span class="weight-semi"> Klaipeda, LT</span> <span class="weight-medium c-gray-92">(Port)</span> <br>
+                                            <span class="weight-light">Sea Cargo</span> 
+                                        </p>
+                                        
+                                    </div>
+                                    <div class="pr-4 d-flex mr-4 _1441_pl-3 br-1 b-gray-92">
+                                        <p class="weight-semi _1441_mr-3">
+                                            СUT OFF<br>
+                                            <span class="weight-light fs-14">12 Apr.  10:00</span> 
+                                        </p>
+                                    </div>
+                                    <div class="pr-4 d-flex mr-4 _1441_pl-3 br-1 b-gray-92">
+                                        <p class="weight-semi mr-4 pr-1">
+                                            ETD<br>
+                                            <span class="weight-light fs-14">12 Apr.  10:00</span> 
+                                        </p>
+                                        <p class="weight-semi _1441_mr-3">
+                                            ETA<br>
+                                            <span class="weight-light fs-14">12 Apr.  10:00</span> 
+                                        </p>
+                                    </div>
+                                    <div class="pr-4 d-flex mr-4 _1441_pl-3 br-1 b-gray-92">
+                                        <svg class="svg-sprite-icon mr-2 c-black-1e" width="11px" height="13px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                        </svg>
+                                        <p class="weight-semi _1441_mr-3">
+                                            COSCO Sea line<br>
+                                            <span class="weight-light fs-14">5 x 35’ CHI</span> 
+                                        </p>
+                                    </div>
+                                    <div class="pr-4 d-flex mr-4 _1441_pl-3">
+                                        <p class="weight-semi _1441_mr-3">
+                                            1 800 EUR <br>
+                                            <span class="weight-light fs-14">Extra 800 eur</span> 
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="absolute t-center r-0">
+                                    <button type="button" class="hover-icon-orange p-3 collapsed-arrow collapsed"  data-toggle="collapse" href="#collapseDrop1">
+                                        <svg class="svg-sprite-icon stroke-69  " alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseDrop1">
+
+                            <div class="bg-gray-69-20 px-2 py-1 lh-1_5 d-flex align-items-center">
+                                <div>
+                                    <div class="d-flex block_resize-input">
+                                        <p class="min-w-80 weight-medium c-gray-69">Booking No.</p>
+                                        <div class="table__span" style="display: none;"></div>
+                                        <input type="text" class="input-text fs-14 ml-2" value="" placeholder=". . . . .">
+                                    </div>
+                                    <div class="d-flex block_resize-input">
+                                        <p class="min-w-80 weight-medium c-gray-69">Date</p>
+                                        <div class="table__span" style="display: none;"></div>
+                                        <input type="text" class="input-text fs-14 ml-2" value="18 Apr. 2023" placeholder=". . . . ." readonly>
+                                    </div>
+                                </div>
+                                <div class="min-w-200"></div>
+                                <div>
+                                    <div class="d-flex">
+                                        <p class="min-w-80 weight-medium c-gray-69">Demurages</p>
+                                        <p class="ml-2">15 days</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="min-w-80 weight-medium c-gray-69">Demurages</p>
+                                        <p class="ml-2">12 days</p>
+                                    </div>
+                                </div>
+                                <div class="min-w-200"></div>
+                                <div class="d-flex block_resize-input">
+                                    <p class="weight-medium c-gray-69">Quoted</p>
+                                    <div class="table__span" style="display: none;"></div>
+                                    <input type="text" class="input-text fs-14 ml-2" value="Svetlana Ivanova" placeholder=". . . . ." readonly>
+                                </div>
+                            </div>
+                            <ul class=" bg-white">
+                                <li class="b-05">
+                                    <div class="d-flex align-items-center  py-2 col-12">
+    
+                                        <div class="min-w-200 d-flex align-items-center">
+    
+                                            <div class="wh-30 bg-orange-f4-20 d-flex mr-3">
+                                                <svg class="svg-sprite-icon  c-orange-f4 m-auto" width="16px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#truck"></use>
+                                                </svg>
+                                            </div>
+                                            <p>Pick up </p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                            <p class="weight-semi">P.O.Box 17000 | 409 Jafza 17-456, Klaipeda, Lithvinia </p>
+                                        </div>
+                                        <div class=" fs-14 bg-black-1e px-2 py-1 c-white ml-auto min-w-90 text-center">
+                                            80 450 EUR 
+                                        </div>
+                                        <button type="button" class="hover-icon-orange p-1 ml-3 collapsed collapsed-arrow"   data-toggle="collapse" href="#collapseDrop11">
+                                            <svg class="svg-sprite-icon  stroke-69 " alt="icon" width="15px" height="25px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="collapse col-12 pr-5 fs-14 lh-1_7 bg-gray-69-20 py-1" id="collapseDrop11">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">BL</p>
+                                            <p class="min-w-100px text-right weight-medium">788 EUR / BL</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Documentation Free-Destination</p>
+                                            <p class="min-w-100px text-right weight-medium">834 EUR / TEU</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Destination Terminal Charge</p>
+                                            <p class="min-w-100px text-right weight-medium">188 EUR /CONT</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="b-05">
+                                    <div class="d-flex align-items-center  py-2 col-12">
+    
+                                        <div class="min-w-200 d-flex align-items-center">
+    
+                                            <div class="wh-30 bg-orange-f4-20 d-flex mr-3">
+                                                <svg class="svg-sprite-icon  c-orange-f4 m-auto" width="13px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                </svg>
+                                            </div>
+                                            <p>Origin port </p>
+                                        </div>
+                                        <p class="weight-semi">LTKH</p>
+                                        <div class=" fs-14 bg-black-1e px-2 py-1 c-white ml-auto min-w-90 text-center">
+                                            Included  
+                                        </div>
+
+                                        <button type="button" class="hover-icon-orange p-1 ml-3 collapsed collapsed-arrow"   data-toggle="collapse" href="#collapseDrop12">
+                                            <svg class="svg-sprite-icon  stroke-69 " alt="icon" width="15px" height="25px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                            </svg>
+                                        </button>
+                                    
+                                    </div>
+                                    <div class="collapse col-12 pr-5 fs-14 lh-1_7 bg-gray-69-20 py-1" id="collapseDrop12">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">BL</p>
+                                            <p class="min-w-100px text-right weight-medium">788 EUR / BL</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Documentation Free-Destination</p>
+                                            <p class="min-w-100px text-right weight-medium">834 EUR / TEU</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Destination Terminal Charge</p>
+                                            <p class="min-w-100px text-right weight-medium">188 EUR /CONT</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="b-05">
+                                    <div class="d-flex align-items-center  py-2 col-12">
+    
+                                        <div class="min-w-200 d-flex align-items-center">
+    
+                                            <div class="wh-30 bg-orange-f4-20 d-flex mr-3">
+                                                <svg class="svg-sprite-icon  c-orange-f4 m-auto" width="14px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat2"></use>
+                                                </svg>
+                                            </div>
+                                            <p>Ocean freight </p>
+                                        </div>
+                                        <p class="weight-semi">Cargo Shipping Line</p>
+                                        <div class=" fs-14 bg-black-1e px-2 py-1 c-white ml-auto min-w-90 text-center">
+                                            12 450 EUR   
+                                        </div>
+                                        <button type="button" class="hover-icon-orange p-1 ml-3 collapsed collapsed-arrow"   data-toggle="collapse" href="#collapseDrop13">
+                                            <svg class="svg-sprite-icon  stroke-69 " alt="icon" width="15px" height="25px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                            </svg>
+                                        </button>
+                                    
+                                    </div>
+                                    <div class="collapse col-12 pr-5 fs-14 lh-1_7 bg-gray-69-20 py-1" id="collapseDrop13">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">BL</p>
+                                            <p class="min-w-100px text-right weight-medium">788 EUR / BL</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Documentation Free-Destination</p>
+                                            <p class="min-w-100px text-right weight-medium">834 EUR / TEU</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Destination Terminal Charge</p>
+                                            <p class="min-w-100px text-right weight-medium">188 EUR /CONT</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="b-05">
+                                    <div class="d-flex align-items-center  py-2 col-12">
+    
+                                        <div class="min-w-200 d-flex align-items-center">
+    
+                                            <div class="wh-30 bg-orange-f4-20 d-flex mr-3">
+                                                <svg class="svg-sprite-icon  c-orange-f4 m-auto" width="13px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                </svg>
+                                            </div>
+                                            <p>Detination port  </p>
+                                        </div>
+                                        <p class="weight-semi">FUSA</p>
+                                        <div class=" fs-14 bg-black-1e px-2 py-1 c-white ml-auto min-w-90 text-center">
+                                            1 450 EUR   
+                                        </div>
+
+                                        <button type="button" class="hover-icon-orange p-1 ml-3 collapsed collapsed-arrow"   data-toggle="collapse" href="#collapseDrop12">
+                                            <svg class="svg-sprite-icon  stroke-69 " alt="icon" width="15px" height="25px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                            </svg>
+                                        </button>
+                                    
+                                    </div>
+                                    <div class="collapse col-12 pr-5 fs-14 lh-1_7 bg-gray-69-20 py-1" id="collapseDrop12">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">BL</p>
+                                            <p class="min-w-100px text-right weight-medium">788 EUR / BL</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Documentation Free-Destination</p>
+                                            <p class="min-w-100px text-right weight-medium">834 EUR / TEU</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Destination Terminal Charge</p>
+                                            <p class="min-w-100px text-right weight-medium">188 EUR /CONT</p>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="b-05">
+                                    <div class="d-flex align-items-center  py-2 col-12">
+    
+                                        <div class="min-w-200 d-flex align-items-center">
+    
+                                            <div class="wh-30 bg-orange-f4-20 d-flex mr-3">
+                                                <svg class="svg-sprite-icon  c-orange-f4 m-auto" width="16px" height="16px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#truck"></use>
+                                                </svg>
+                                            </div>
+                                            <p>Delivery </p>
+                                        </div>
+                                        <div class="d-flex align-items-center">
+                                            <img src="../../img/flag.svg" alt="flag" class="mr-2" width="14px" height="14px">
+                                            <p class="weight-semi">P.O.Box 17000 | 409 Jafza 17-456, Florida, USA </p>
+                                        </div>
+                                        <div class=" fs-14 bg-black-1e px-2 py-1 c-white ml-auto min-w-90 text-center">
+                                            2 450 EUR 
+                                        </div>
+                                        <button type="button" class="hover-icon-orange p-1 ml-3 collapsed collapsed-arrow"   data-toggle="collapse" href="#collapseDrop11">
+                                            <svg class="svg-sprite-icon  stroke-69 " alt="icon" width="15px" height="25px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                            </svg>
+                                        </button>
+                                    </div>
+                                    <div class="collapse col-12 pr-5 fs-14 lh-1_7 bg-gray-69-20 py-1" id="collapseDrop11">
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">BL</p>
+                                            <p class="min-w-100px text-right weight-medium">788 EUR / BL</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Documentation Free-Destination</p>
+                                            <p class="min-w-100px text-right weight-medium">834 EUR / TEU</p>
+                                        </div>
+                                        <div class="d-flex justify-content-end">
+                                            <p class="col-3">Destination Terminal Charge</p>
+                                            <p class="min-w-100px text-right weight-medium">188 EUR /CONT</p>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="py-2 col-12 bg-white mb-2">
+                                <p class="py-1 weight-medium pb-2 bb-05">Extra service</p>
+                                <div class="bb-05 py-1  lh-1_3">
+                                    <div class="d-flex justify-content-between">
+                                        <p>Cargo insurance </p>
+                                        <p class="fs-14 weight-medium">1 450 EUR </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between">
+                                        <p class="fs-14 weight-light">Сargo value </p>
+                                        <p class="fs-14 weight-light">4 300 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="bb-05 py-1 d-flex justify-content-between lh-1_6">
+                                    <p>Export declaration </p>
+                                    <p class="fs-14 weight-medium">1 450 EUR </p>
+                                </div>
+                                <div class="py-1 d-flex justify-content-between lh-1_6">
+                                    <p>Import declaration </p>
+                                    <p class="fs-14 weight-medium">1 450 EUR </p>
+                                </div>
+                            </div>
+                            <div class="py-2 col-12 bg-white mb-2">
+                                <p class="py-1 weight-medium">Parties</p>
+                                <div class="row mx--1 my-1">
+                                    <div class="col-3 px-1">
+                                        <div class="b-05 px-2 py-1 d-flex">
+                                            <svg class="svg-sprite-icon stroke-69 c-none mr-2 " alt="icon" width="11px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#office"></use>
+                                            </svg>
+                                            <div class="">
+                                                <p class="weight-medium">Consigner</p>
+                                                <p class="fs-14 weight-light">Acargo Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-1">
+                                        <div class="b-05 px-2 py-1 d-flex">
+                                            <svg class="svg-sprite-icon stroke-69 c-none mr-2 " alt="icon" width="11px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#office"></use>
+                                            </svg>
+                                            <div class="">
+                                                <p class="weight-medium">Shipper</p>
+                                                <p class="fs-14 weight-light">Acargo Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-1">
+                                        <div class="b-05 px-2 py-1 d-flex">
+                                            <svg class="svg-sprite-icon stroke-69 c-none mr-2 " alt="icon" width="11px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#office"></use>
+                                            </svg>
+                                            <div class="">
+                                                <p class="weight-medium">Notify</p>
+                                                <p class="fs-14 weight-light">Acargo Company</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-1">
+                                        <a href="#" class="fs-14 c-black h-100 d-flex align-items-center justify-content-center bg-gray-69-20">
+                                            Add new notify
+                                        </a>
+                                    </div>
+                                </div>
+                            
+                            </div>
+                            <div class="py-2 col-12 bg-white">
+                                <p class="py-1 weight-medium">Parties</p>
+                                <div class="b-05">
+
+                                    <div class="row mx--1 my-1">
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Name</p>
+                                                <p class="fs-14 weight-light">Vegetables, fruits</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">HS code</p>
+                                                <p class="fs-14 weight-light">AA-4567890678</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Weight</p>
+                                                <p class="fs-14 weight-light">12 380 kg</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="b-05">
+
+                                    <div class="row mx--1 my-1">
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Name</p>
+                                                <p class="fs-14 weight-light">Vegetables, fruits</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">HS code</p>
+                                                <p class="fs-14 weight-light">AA-4567890678</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Weight</p>
+                                                <p class="fs-14 weight-light">12 380 kg</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                                <div class="b-05">
+
+                                    <div class="row mx--1 my-1">
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Name</p>
+                                                <p class="fs-14 weight-light">Vegetables, fruits</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">HS code</p>
+                                                <p class="fs-14 weight-light">AA-4567890678</p>
+                                            </div>
+                                        </div>
+                                        <div class="col-3 px-1">
+                                            <div class=" px-2 py-1">
+                                                <p class="weight-medium">Weight</p>
+                                                <p class="fs-14 weight-light">12 380 kg</p>
+                                            </div>
+                                        </div>
+                                    
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-black-1e col-12 py-2 c-white d-flex ">
+                                <div class="py-1 px-2 bg-white-20 max-6 col-6">
+                                    <p class="weight-medium mb-2">Remarks</p>
+                                    <p class="fs-14 weight-light">The essential factor in warehouse management is the safety rules. Warehouses  with safety as a priority would include wearing appropriate PPE as wel…</p>
+                                </div>
+                                <div class="ml-auto text-right py-2">
+                                    <p class="fs-16 pb-1">Total price </p>
+                                    <p class="fs-20 weight-bold mb-3">355 788 EUR</p>
+                                    <a href="#" class="b-1 b-orange-f4 py-2 px-3 c-orange-f4 fs-13 d-block">Cancel booking</a>
+                                </div>  
+                            </div>
+                        </div>
+                        <div class="bg-white p-2 d-flex mb-3 pb-3">
+                            <div class="relative px-1 mr-2">
+                                <div class="bg-white pb-2 relative z-1">
+                                    <div class="wh-30 bg-orange-f4-20 d-flex">
+                                        <svg class="svg-sprite-icon m-auto c-orange-f4 " width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="w-1 h-100 bg-orange-f4-20 absolute l-center t-0 "></div>
+                            </div>
+                            <div class="w-100 fs-14 pb-2">
+                                <p class="weight-medium py-2">Booking</p>
+                                <div class="d-flex justify-content-between mx-0 pr-2 mb-4">
+                                    <div class="pt-3 max-w-195 w-100 mr-4 w-150_1440">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="AA2345678678">
+                                            <p class="name">Booking No. </p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 max-250 w-100 mr-4 w-150_1440">
+                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                            <input type="text" class="select__item input-normal text-left c-dark" value="OR - 2345678678">
+                                            <p class="name">Order No.</p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">OR - 2345678678</li>
+                                                    <li class="select__option">OR - 2345678678 </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 w-120 mr-4 w-100_1440">
+                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                            <input type="text" class="select__item input-normal text-left c-dark" value="15 days">
+                                            <p class="name">Demurages</p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">15 days</li>
+                                                    <li class="select__option">16 days </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 w-120 mr-4 w-100_1440">
+                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                            <input type="text" class="select__item input-normal text-left c-dark" value="15 days">
+                                            <p class="name">Detentions</p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">15 days</li>
+                                                    <li class="select__option">16 days </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 w-200px mr-4 w-150_1440">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="Open terminal">
+                                            <p class="name">Terminal pick-up </p>
+                                        </div>
+                                    </div>
+                                    <div class="pt-3 w-200px w-150_1440">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" value="Open terminal">
+                                            <p class="name">Terminal drop</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="max-850">
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto " width="15px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#home"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="absolute t-0 l-center bg-black-1e w-1 h-100"></div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="relative h-fit mt-4 col-8 px-0">
+                                                <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="P.O.Box 17000 | 409 Jafza 17-456, Klaipeda 94101, LT">
+                                                <p class="name">Loading place</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto " width="15px" height="16px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="absolute t-0 l-center bg-black-1e w-1 h-100"></div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="row">
+                                                <div class="col-4 pr-3">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                        <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="Klaipeda, LTKLJ ">
+                                                        <p class="name">Origin port</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">Cut-off</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-time py-1 h-fit right-0 b-0 bb-1 br-0 c-dark" value="10:00 - 18:00">
+                                                                <p class="name">Time</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETD</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 pr-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="345678978 ">
+                                                        <p class="name">Vessel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="88345678978 ">
+                                                        <p class="name">Voyage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto " width="15px" height="16px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="absolute t-0 l-center bg-black-1e w-1 h-100"></div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="row">
+                                                <div class="col-4 pr-3">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                        <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="Klaipeda, LTKLJ ">
+                                                        <p class="name">Transhipment port  1</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETA</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETD</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 pr-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="345678978 ">
+                                                        <p class="name">Vessel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="88345678978 ">
+                                                        <p class="name">Voyage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto " width="15px" height="16px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="absolute t-0 l-center bg-black-1e w-1 h-100"></div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="row">
+                                                <div class="col-4 pr-3">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                        <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="Klaipeda, LTKLJ ">
+                                                        <p class="name">Transhipment port  1</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">Cut-off</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETD</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 pr-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="345678978 ">
+                                                        <p class="name">Vessel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="88345678978 ">
+                                                        <p class="name">Voyage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <a href="#" class="mt-3 underline fs-14 c-gray-69 d-block">Add extra transshipment port</a>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto " width="15px" height="16px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                            <div class="absolute t-0 l-center bg-black-1e w-1 h-100"></div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="row">
+                                                <div class="col-4 pr-3">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                        <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="Klaipeda, LTKLJ ">
+                                                        <p class="name">Destination port</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-8">
+                                                    <div class="row">
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETA</p>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-4 px-3">
+                                                            <div class="relative h-fit mt-4 px-0">
+                                                                <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                                <p class="name">ETD</p>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-4 pr-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="345678978 ">
+                                                        <p class="name">Vessel</p>
+                                                    </div>
+                                                </div>
+                                                <div class="col-4 px-3 mt-2">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-normal bb-1 br-0 c-dark" value="88345678978 ">
+                                                        <p class="name">Voyage</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                    <div class="d-flex pb-2">
+                                        <div class="relative mr-4">
+                                            <div class="pb-2 bg-white relative z-1">
+                                                <div class="wh-24 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto c-orange-f4" width="11px" height="16px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#pin3"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="pl-1 w-100 pb-5">
+                                            <div class="row ">
+                                                <div class="col-8 pr-3">
+                                                    <div class="relative h-fit mt-4">
+                                                        <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center" width="16px" height="16px">
+                                                        <input type="text" class="input-normal bb-1 br-0 pl-4 c-dark" value="P.O.Box 17000 | 409 Jafza 17-456, Klaipeda 94101, LT">
+                                                        <p class="name">Delivery place</p>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="col-3 max-w-175 px-3">
+                                                    <div class="relative h-fit mt-4 px-0">
+                                                        <input type="text" class="input-date py-1 h-fit right-0 b-0 bb-1 br-0 c-dark pl-0" value="15 Apr.  2022">
+                                                        <p class="name">ETA</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="btn-aquamarine big w-100">Create booking</a>
+                              
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="w-27w px-1 pt-2">
+                        <ul class="nav nav-tabs_v3 border_nav flex-nowrap bg-white px-3 pt-3">
+                            <li class="nav-item w-100">
+                                <a class="nav-link c-dark px-0 active">Map </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="nav-link c-dark px-0 ">Task </a>
+                            </li>
+                            <li class="nav-item w-100">
+                                <a class="nav-link c-dark px-0">Message </a>
+                            </li>
+                        </ul>
+                        <div class="contents pt-2 h-calc_1 bg-white" data-index="1">
+                            <div class="contents__item h-100 active">
+                                <img src="../../img/map2.png" alt="map" height="100%" width="100%" style="object-fit: cover;" class="map">
+                            </div>
+                            <div class="contents__item ">
+                                <div class="px-3 hover-bg-light_02 fs-14">
+                                    <div class="d-flex justify-content-between bb-05 py-2">
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="svg-sprite-icon mr-1 c-dark " width="13px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#document-attachment"></use>
+                                                </svg>
+                                                <p>Generate or add invoice</p>
+                                            </div>
+                                            <p class="weight-light">Anna Merc</p>
+                                        </div>
+                                        <p class="fs-13 c-gray-69">12 Apr. 2023</p>
+                                    </div>
+                                </div>
+                                <div class="px-3 hover-bg-light_02 fs-14">
+                                    <div class="d-flex justify-content-between bb-05 py-2">
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="svg-sprite-icon mr-1 stroke-black " width="12px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                                </svg>
+                                                <p>Load order OR-34567</p>
+                                            </div>
+                                            <p class="weight-light">Anna Merc</p>
+                                        </div>
+                                        <p class="fs-13 c-gray-69">12 Apr. 2023</p>
+                                    </div>
+                                </div>
+                                <div class="px-3 hover-bg-light_02 fs-14">
+                                    <div class="d-flex justify-content-between bb-05 py-2">
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="svg-sprite-icon mr-1 stroke-black " width="12px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                                </svg>
+                                                <p class="weight-medium">Generate or add invoice</p>
+                                            </div>
+                                            <p class="weight-light">Anna Merc</p>
+                                        </div>
+                                        <p class="fs-13 c-gray-69">12 Apr. 2023</p>
+                                    </div>
+                                </div>
+                                <div class="px-3 hover-bg-light_02 fs-14">
+                                    <div class="d-flex justify-content-between bb-05 py-2">
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="svg-sprite-icon mr-1 stroke-black " width="12px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                                </svg>
+                                                <p class="weight-medium">Generate or add invoice</p>
+                                            </div>
+                                            <p class="weight-light">Anna Merc</p>
+                                        </div>
+                                        <div>
+                                            <p class="c-orange-f4 weight-medium">Delay 2 days</p>
+                                            <p class="fs-13 c-gray-69">12 Apr. 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="px-3 hover-bg-light_02 fs-14">
+                                    <div class="d-flex justify-content-between bb-05 py-2">
+                                        <div>
+                                            <div class="d-flex align-items-center">
+                                                <svg class="svg-sprite-icon mr-1 stroke-black " width="12px" height="13px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#delivery-truck-2"></use>
+                                                </svg>
+                                                <p class=" c-gray-69">Load order OR-34567</p>
+                                            </div>
+                                            <p class="weight-light">Anna Merc</p>
+                                        </div>
+                                        <div>
+                                            <p class="c-gray-69 weight-medium">Сompleted</p>
+                                            <p class="fs-13 c-gray-69">12 Apr. 2023</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="contents__item h-100">
+                                <div class="px-2 d-grid h-100">
+                                    <div class="pb-2 fs-14 letter-sp--normal">
+                                        <ul>
+                                            <li> <p class="text-center my-2">April 8, 2022</p></li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center mb-1">
+                                                    <div class="br-50 bg-orange_v5 wh-35 d-flex mr-2">
+                                                        <p class="fs-11 m-auto c-orange-f4">A C</p>
+                                                    </div>
+                                                    <p class="weight-semi">Anna Ivanova,  Acargo Company</p>
+                                                </div>
+                                                <p class="lh-1_4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...</p>
+                                                <div class="d-flex py-1">
+                                                    <button type="button" class="underline c-gray-92">Reply</button>
+                                                    <p class="fs-13 ml-auto weight-light">6:35 AM</p>
+                                                </div>
+                                            </li>
+                                            <li class="mb-3">
+                                                <p class="lh-1_4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...</p>
+                                                <div class="d-flex py-1">
+                                                    <button type="button" class="underline c-gray-92">Reply</button>
+                                                    <p class="fs-13 ml-auto weight-light">6:35 AM</p>
+                                                </div>
+                                            </li>
+                                            <li class="w-80vw bg-gray-b1-20 p-2 ml-auto mb-2">
+                                                <p class="px-1 lh-1_4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000</p>
+                                                <p class="text-right fs-13 weight-light">10:38 AM</p>
+                                            </li>
+                                            <li> <p class="text-center mb-2 mt-4">April 8, 2022</p></li>
+                                            <li class="mb-3">
+                                                <div class="d-flex align-items-center mb-1">
+                                                    <div class="br-50 bg-orange_v5 wh-35 d-flex mr-2">
+                                                        <p class="fs-11 m-auto c-orange-f4">A C</p>
+                                                    </div>
+                                                    <p class="weight-semi">Anna Ivanova,  Acargo Company</p>
+                                                </div>
+                                                <p class="lh-1_4">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old...</p>
+                                                <div class="d-flex py-1">
+                                                    <button type="button" class="underline c-gray-92">Reply</button>
+                                                    <p class="fs-13 ml-auto weight-light">6:35 AM</p>
+                                                </div>
+                                            </li>
+                                            <li class="w-80vw bg-gray-b1-20 p-2 ml-auto mb-2">
+                                                <div class="d-flex align-items-center mb-1">
+                                                    <div class="br-50 bg-blue-15 wh-35 d-flex mr-2">
+                                                        <p class="fs-11 m-auto c-blue-3a">A C</p>
+                                                    </div>
+                                                    <p class="weight-semi">Liza Merc, Manager</p>
+                                                </div>
+                                                <p class="px-1 lh-1_4">Contrary to popular belief, Lorem Ipsum is not  random text.</p>
+                                                <p class="text-right fs-13 weight-light">10:38 AM</p>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="sticky-bottom py-2 bg-white b-0 mt-auto">
+                                        <div class="b-1 p-2">
+                                            <div class="px-1">
+                                                <textarea cols="30" rows="4" placeholder="Write text ..." class="p-0 bb-1 fs-14 placeholder-light"></textarea>
+                                                <div class="d-flex align-items-center pt-1">
+                                                    <button type="button" class="mr-2">
+                                                        <svg class="svg-sprite-icon c-blue-gray " width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#smile"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mr-2">
+                                                        <svg class="svg-sprite-icon c-blue-gray " width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#clip"></use>
+                                                        </svg>
+                                                    </button>
+                                                    <button type="button" class="mr-2 btn-aquamarine ml-auto">Send</button>
+                                                    <button type="button" class="">
+                                                        <svg class="svg-sprite-icon stroke-blue-gray" width="16px" height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#open-outline"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="get-height pt-2" data-index="1"></div>
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../../vendor/jquery/jquery.min.js"></script>
+    <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="../../js/scripts.js"></script>
+    <script src="../../js/admin.js"></script>
+  </body>
+</html>

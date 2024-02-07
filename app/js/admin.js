@@ -1,5 +1,8 @@
 "use strict";
 
+const $$el = (selector) => document.querySelectorAll(selector)
+const $el = (selector) => document.querySelector(selector)
+
 function _defineProperty(obj, key, value) { if (key in obj) { Object.defineProperty(obj, key, { value: value, enumerable: true, configurable: true, writable: true }); } else { obj[key] = value; } return obj; }
 
 (function ($) {
@@ -96,7 +99,7 @@ $(document).ready(function () {
 $(document).ready(function () {
 
   // dashed line start-finish
-  if (document.querySelector('.current-position')) {
+  if ($el('.current-position')) {
     let segmentDashed = $(".line-vertical_shipment").height() - $(".current-position").position().top;
     let topStartDashed = $(".current-position").position().top;
     $(".line-vertical_dashed").css({"top": (topStartDashed + 11), "height": (segmentDashed - 11)});
@@ -215,7 +218,7 @@ $(document).ready(function () {
   }); //popup - rate
 });
 
-document.querySelectorAll('.nav').forEach((nav, index) => {
+$$el('.nav').forEach((nav, index) => {
   let childs = [...nav.children];
   childs.forEach((item, i) => {
     item.addEventListener('click', (e) => {
@@ -224,10 +227,10 @@ document.querySelectorAll('.nav').forEach((nav, index) => {
       target.closest('.nav').querySelector(`.active`).classList.remove('active');
       target.classList.add('active');
 
-      let contentsElement = document.querySelectorAll(`.contents`)[index];
+      let contentsElement = $$el(`.contents`)[index];
 
       if (target.closest('.nav').dataset.index) {
-        contentsElement = document.querySelector(`.contents[data-index="${target.closest('.nav').dataset.index}"]`);
+        contentsElement = $el(`.contents[data-index="${target.closest('.nav').dataset.index}"]`);
       } 
 
       if (!contentsElement) return
@@ -394,8 +397,8 @@ $(document).ready(function () {
 //set height
 function setHeight(el, index) {
   let sumHeight = 0;
-  if (document.querySelector(`.get-height[data-index="${index}"]`) != null) {
-    document.querySelectorAll(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
+  if ($el(`.get-height[data-index="${index}"]`) != null) {
+    $$el(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
   }
  
   sumHeight += el.getBoundingClientRect().top;
@@ -415,7 +418,7 @@ function changeWidthInput(item) {
   }
 }
 //multiple selection
-document.querySelectorAll('.elements').forEach(item => {
+$$el('.elements').forEach(item => {
   changeWidthInput(item)
   item.addEventListener('click', () => {
       changeWidthInput(item)
@@ -424,7 +427,7 @@ document.querySelectorAll('.elements').forEach(item => {
   })
 })
 //remove item elements
-document.querySelectorAll('.elements__close').forEach(closeItem => {
+$$el('.elements__close').forEach(closeItem => {
   closeItem.addEventListener('click', (e) => {
     e.stopImmediatePropagation();
     let item = closeItem.closest('.elements')
@@ -433,14 +436,23 @@ document.querySelectorAll('.elements__close').forEach(closeItem => {
   })
 })
 
-document.querySelectorAll('[data-script-padding]').forEach(item => {
-  if (document.querySelector('.fix-top-tabs')) {
-    item.style = 'padding-top: ' + document.querySelector('.fix-top-tabs').clientHeight + 'px!important';
+$$el('[data-script-padding]').forEach(item => {
+  if ($el('.fix-top-tabs')) {
+    item.style = 'padding-top: ' + $el('.fix-top-tabs').clientHeight + 'px!important';
   }
 })
 
-document.querySelectorAll('.h-calc_1').forEach(el => {
+$$el('.h-calc_1').forEach(el => {
   setHeight(el, el.dataset.index)
+})
+
+document.addEventListener('click', (e) => {
+  if (!e.target.closest('.people-group') && $el('.people-group')) {
+    $$el('.people-group .item').forEach(item => {
+      item.classList.add('collapsed')
+      item.nextElementSibling?.querySelector('.collapse')?.classList.remove('show')
+    })
+  }
 })
 
 let optionMut = {
@@ -450,9 +462,9 @@ let optionMut = {
 };
 
 let mut = new MutationObserver(function (muts) {
-  if (document.querySelectorAll('.h-calc_1')) {
+  if ($$el('.h-calc_1')) {
       mut.disconnect()
-      document.querySelectorAll('.h-calc_1').forEach(el => {
+      $$el('.h-calc_1').forEach(el => {
         setHeight(el, el.dataset.index)
       })
   }

@@ -2895,7 +2895,7 @@
                     <h3 class="fs-18 weight-medium mb-4 pb-2 text-center">Add People</h3>
                     <div class="d-flex align-items-end mb-3 ">
                         <div class="relative w-100 mr-3">
-                            <input type="text" class="b-0 bb-1 mr-3" placeholder="Email" required>
+                            <input type="text" class="b-0 bb-1 mr-3" required>
                             <ul class="autocomplete">
                                 <li>
                                     <a href="#" class="d-flex p-1 bb-1">
@@ -2925,6 +2925,7 @@
                                     </a>
                                 </li>
                             </ul>
+                            <p class="name">Email</p>
                         </div>
                         <button type="button" class="btn-light">Add</button>
                     </div>
@@ -3563,8 +3564,235 @@
                             </div>
                         </div>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100">Next</button>
+                    <p class="fs-13 c-gray-69 items-center">Temperature control
+                        <span class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4">
+                            <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="13px" height="13px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                            </svg>
+                            <span class="l-100 t-center p-3 tooltip-content ml-2">
+                                <span class="px-1">Lorem ipsum dolor .</span>
+                            </span>
+                        </span>
+                        <label class="ml-3">
+                            <input type="checkbox" class="checkbox" checked="">
+                            <span class="switch-yn d-flex orange">
+                                <span class="switch-n ">No</span>
+                                <span class="switch-y">Yes</span>
+                                <span class="switch-yn_circle "></span>
+                            </span>
+                        </label>
+                    </p>
+                    <div class="row pb-4">
+                        <div class="col-6 pt-3">
+                            <div class="select h-fit b-0 br-0 bb-1 arrow-r-0 mt-4">
+                                <input type="text" class="select__item input-normal text-left c-dark" value="+5  -  +10" required="">
+                                <p class="name">Required temperature </p>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option active">+5  -  +10</li>
+                                        <li class="select__option">+5  -  +10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 pt-3">
+                            <div class="select h-fit b-0 br-0 bb-1 arrow-r-0 mt-4">
+                                <input type="text" class="select__item input-normal text-left c-dark" value="- 15% ventiliate" required="">
+                                <p class="name">Ventilation</p>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option active">- 15% ventiliate</li>
+                                        <li class="select__option">- 15% ventiliate</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="fs-13 c-gray-69 items-center">ADR
+                        <span class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4">
+                            <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="13px" height="13px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                            </svg>
+                            <span class="l-100 t-center p-3 tooltip-content ml-2">
+                                <span class="px-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla volutpat cursus faucibus.</span>
+                            </span>
+                        </span>
+                        <label class="ml-3">
+                            <input type="checkbox" class="checkbox" checked="">
+                            <span class="switch-yn d-flex orange">
+                                <span class="switch-n ">No</span>
+                                <span class="switch-y">Yes</span>
+                                <span class="switch-yn_circle "></span>
+                            </span>
+                        </label>
+                    </p>
+
+                    <div class="row pb-2">
+                        <div class="col-6 pt-3">
+                            <div class="select h-fit b-0 br-0 bb-1 arrow-r-0 mt-4">
+                                <input type="text" class="select__item input-normal text-left c-dark" value="+5  -  +10" required="">
+                                <p class="name">Hazard category</p>
+                                <div class="select__drop">
+                                    <ul class="select__menu">
+                                        <li class="select__option active">+5  -  +10</li>
+                                        <li class="select__option">+5  -  +10</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-100 mt-4">
+                        <input type="text" class="b-0 bb-1 mr-3" required>
+                        <p class="name">Description</p>
+                    </div>
+
+                    <div class="row py-2">
+                        <div class="col-6 mt-4">
+                            <div class="relative">
+                                <input type="text" class="b-0 bb-1 mr-3" required>
+                                <p class="name">HS Code</p>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-4">
+                            <div class="relative">
+                                <input type="text" class="b-0 bb-1 mr-3" required>
+                                <p class="name">Packing</p>
+                                <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="relative w-100 mt-4">
+                        <input type="text" class="b-0 bb-1 mr-3" required>
+                        <p class="name">Remarks</p>
+                    </div>
+                    <button type="submit" class="btn-aquamarine big w-100 mt-5 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions,#collapseShippingLineInstructions2">Next</button>
                 </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup-collapse collapse" id="collapseShippingLineInstructions2">
+        <div class="popup-collapse-bg d-flex">
+            <div class="container max-925 p-4 m-auto bg-white relative" >
+                <div class="p-2">
+                    <button type="reset" class=" absolute r-0 t-0 p-4 m-2 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions2">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="fs-18 weight-medium pb-3 text-center">Shipping Line Instructions</h3>
+                    <div class="pt-3 fs-16 weight-medium pb-2">Parties</div>
+                
+                    <div class="row">
+                        <div class="col-6 mt-3">
+                            <div class="b-1">
+                                <div class="py-2 px-3 w-100 bg-light-ee">Shipper</div>
+                                <div class="p-3 relative">
+                                    <div class="relative mb-2">
+                                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="Compaqpeat SIA" required>
+                                        <!-- <p class="name">Compaqpeat SIA</p> -->
+                                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="fs-13 weight-medium c-gray-75">
+                                        Puces, Rucavas pag. <br>
+                                        Dienvidkurzemes nov., 3477, <br>
+                                        Latvia
+                                    </p>
+                                    <button type="button" class="absolute r-0 bot-0 p-3 hover-icon-orange">
+                                        <svg class="svg-sprite-icon" fill="#1e1e1e" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create3"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <div class="b-1">
+                                <div class="py-2 px-3 w-100 bg-light-ee">Consignee</div>
+                                <div class="p-3 relative">
+                                    <div class="relative mb-2">
+                                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="Cargo4S, UAB" required>
+                                        <!-- <p class="name">Company</p> -->
+                                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="fs-13 weight-medium c-gray-75">
+                                        Puces, Rucavas pag. <br>
+                                        Dienvidkurzemes nov., 3477, <br>
+                                        Latvia
+                                    </p>
+                                    <button type="button" class="absolute r-0 bot-0 p-3 ">
+                                        <span class="wh-31 d-flex">
+                                            <svg class="svg-sprite-icon m-auto c-orange-f4" width="19px" height="14px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check2"></use>
+                                            </svg>
+                                        </span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <div class="b-1">
+                                <div class="py-2 px-3 w-100 bg-light-ee">Notify Party 1</div>
+                                <div class="p-3 relative">
+                                    <div class="relative mb-2">
+                                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="Compaqpeat SIA" required>
+                                        <!-- <p class="name">Compaqpeat SIA</p> -->
+                                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="fs-13 weight-medium c-gray-75">
+                                        Puces, Rucavas pag. <br>
+                                        Dienvidkurzemes nov., 3477, <br>
+                                        Latvia
+                                    </p>
+                                    <button type="button" class="absolute r-0 bot-0 p-3">
+                                        <svg class="svg-sprite-icon" fill="#1e1e1e" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create3"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 mt-3">
+                            <div class="b-1">
+                                <div class="py-2 px-3 w-100 bg-light-ee">Notify Party 2</div>
+                                <div class="p-3 relative">
+                                    <div class="relative mb-2">
+                                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="Compaqpeat SIA" required>
+                                        <!-- <p class="name">Compaqpeat SIA</p> -->
+                                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                        </svg>
+                                    </div>
+                                    <p class="fs-13 weight-medium c-gray-75">
+                                        Puces, Rucavas pag. <br>
+                                        Dienvidkurzemes nov., 3477, <br>
+                                        Latvia
+                                    </p>
+                                    <button type="button" class="absolute r-0 bot-0 p-3">
+                                        <svg class="svg-sprite-icon" fill="#1e1e1e" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create3"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-6">
+                            <button type="button" class="btn-white  w-100 c-orange-f4 py-2 lh-22 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions2,#collapseShippingLineInstructions">Back</button>
+                        </div>
+                        <div class="col-6">
+                            <button type="button" class="btn-aquamarine big w-100 py-2 lh-22">Generate Document</button>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

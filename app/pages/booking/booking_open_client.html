@@ -2308,16 +2308,13 @@
 
                                 </ul>
                                
-                                <label for="drop-upload1" class="drop-upload bg-gray-f5 mt-3 p-2 b-gray-bd text-center">
-                                    <span class="py-1 d-block">
-                                        <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 d-block mb-1" width="20px" height="18px">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
-                                        </svg>
-                                        <span class="text-16 fs-14 c-black-1e">Drop or сlick to upload <b>document</b>  </span>
-                                        <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
-                                        <input type="file" id="drop-upload1" name="files[]" multiple="">
-                                    </span>
-                                </label>
+                                <button type="button" class="drop-upload bg-gray-f5 mt-3 p-2 b-gray-bd text-center animate-line w-100 flex-column" data-toggle="collapse" data-target="#collapseUploadDocument">
+                                    <span class="animate-line-item"><span></span></span>
+                                    <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 d-block my-1" width="20px" height="18px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                                    </svg>
+                                    <span class="text-16 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>document</b>  </span>
+                                </button>
                             </div>
                         </div>
                         <div class="box-white br-0 py-3 px-2 d-flex mb-3">
@@ -3409,7 +3406,7 @@
                             </svg>
                             <span class="text-16 fs-14 c-black-1e">Drop or сlick to upload  <b>Packing list </b>  </span>
                             <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
-                            <input type="file" id="drop-upload1" name="files[]" multiple="">
+                            <input type="file" id="drop-upload2" name="files[]" multiple="">
                         </span>
                     </label>
                    
@@ -3672,6 +3669,7 @@
             </div>
         </div>
     </div>
+
     <div class="popup-collapse collapse" id="collapseShippingLineInstructions2">
         <div class="popup-collapse-bg d-flex">
             <div class="container max-925 p-4 m-auto bg-white relative" >
@@ -3793,6 +3791,79 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-collapse collapse" id="collapseUploadDocument">
+        <div class="popup-collapse-bg d-flex">
+            <div class="container max-630 p-4 m-auto bg-white relative" >
+                <form class="p-2">
+                    <button type="reset" class=" absolute r-0 t-0 p-4 m-2" data-toggle="collapse" data-target="#collapseUploadDocument">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </button>
+                    <h3 class="fs-18 weight-medium pb-4 text-center">Upload document</h3>
+                   
+                    <button type="button" class="drop-upload bg-gray-f5 mt-3 p-2 b-gray-bd text-center w-100 flex-column">
+                        <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 d-block my-1" width="20px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                        </svg>
+                        <span class="text-16 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>document</b>  </span>
+                   
+                </button>
+                    <div class="b-1 p-1 flex-between-center mt-2 max-225">
+                        <p class="px-1">Contract_Cargo4S.pdf</p>
+                        <button type="button" class="p-1 hover-icon-orange d-flex">
+                            <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 pt-3">
+                        <input type="text" class="select__item input-normal text-left c-dark" value="Other document" required="">
+                        <p class="name">Document type</p>
+                        <div class="select__drop">
+                            <ul class="select__menu">
+                                <li class="select__option active">Other document</li>
+                                <li class="select__option">Other document</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="relative mt-4 pt-3">
+                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="" required>
+                        <div class="autocomplete">
+                            <ul>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">VGM</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Export declaration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Export declaration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Contract</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn-light w-100 p-2">
+                                <svg class="svg-sprite-icon mr-2 c-orange-f4" width="20px" height="20px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#plus2"></use>
+                                </svg>
+                                Other document
+                            </button>
+                        </div>
+                        
+                        <p class="name">Document type</p>
+                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                        </svg>
+                    </div>
+                   
+                    <button type="submit" class="btn-aquamarine big w-100 mt-5">Upload</button>
+                </form>
             </div>
         </div>
     </div>

@@ -4639,6 +4639,7 @@ button:focus {
 
 .drop-upload.active {
   background-color: rgba(235, 94, 19, 0.10);
+  flex-direction: row!important;
 }
 
 .drop-upload.active .text-16 {
@@ -17903,6 +17904,11 @@ textarea.input_customer {
   width: 100%;
   height: 100vh;
   overflow-y: auto;
+  transition: all 0.3s ease;
+  opacity: 0;
+}
+.popup-collapse.show .popup-collapse-bg{
+  opacity: 1;
 }
 
 .popup-collapse-bg .container {
@@ -18000,7 +18006,34 @@ input:required:valid:focus+.autocomplete {
 .mt-12 {
   margin-top: 12px;
 }
-
+.animate-line {
+  position: relative;
+  z-index: 1;
+}
+.animate-line-item,
+.animate-line-item span {
+  position: absolute;
+  left: 0;
+  height: 100%;
+  width: 0;
+  top: 0;
+  z-index: -1;
+  background-color: var(--surface-surface-brand-2, #FFE2DA);
+}
+.animate-line-item span {
+  background-color: var(--border-border-brand, #F54617);
+  transition: all 0.4s ease;
+}
+.animate-line:focus .animate-line-item {
+  width: 100%;
+}
+.animate-line:focus .animate-line-item span {
+  width: 100%;
+}
+.animate-line:focus * {
+  color: #fff!important;
+  fill: #fff!important;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

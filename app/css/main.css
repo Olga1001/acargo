@@ -11161,6 +11161,10 @@ p.c-green {
   min-width: 90px;
 }
 
+.min-w-95 {
+  min-width: 95px;
+}
+
 .min-w-102 {
   min-width: 102px !important;
 }
@@ -16686,12 +16690,11 @@ input.fs-14:-ms-input-placeholder {
   justify-content: center;
   font-size: 14px;
   line-height: 16px;
-  color: #282E3B;
   z-index: 3;
-}
-
-.breadcrumbs_v3 a {
   margin-left: -16px;
+}
+.breadcrumbs_v3 a:not(.item) {
+  color: var(--text-text-secondary, #757575);
 }
 
 .breadcrumbs_v3 li:first-child a {
@@ -18028,6 +18031,19 @@ input:required:valid:focus+.autocomplete {
 .animate-line:focus * {
   color: #fff!important;
   fill: #fff!important;
+}
+.collapse-bg:before {
+  position: absolute;
+  pointer-events: none;
+  z-index: -1;
+  width: 100%;
+  height: calc(100% + 100vw);
+  top: -100vw;
+  left: 0;
+  background: var(--Color-Gey-50, #FAFAFA);
+}
+.collapse-bg.show:before {
+  content: '';
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

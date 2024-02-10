@@ -271,18 +271,19 @@ $(document).ready(function () {
 });
 
 $(document).ready(function () {
-  let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').height() : 0,
-      fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').height() : 0,
-      headerHeight = $('.header').length ? $('.header').height() : 0,
+  let menuDropdownHeight = $('.menu-list.active .menu-dropdown').length ? $('.menu-list.active .menu-dropdown').innerHeight() : 0,
+      fixTopHeight = $('.fix-top-tabs').length ? $('.fix-top-tabs').innerHeight() : 0,
+      headerHeight = $('.header').length ? $('.header').innerHeight() : 0,
       navHeight = 0;
 
   $('.sticky-js_v1').each(function(index, item) {
     if ($(this).hasClass('contents')) {
-      navHeight = $(this).parent().find('.nav').height() 
+      navHeight = $(this).parent().find('.nav').innerHeight()
     } 
 
     let sumHeight = headerHeight + fixTopHeight + menuDropdownHeight + navHeight;
 
+    console.log(sumHeight)
     $(this).sticky({topSpacing:sumHeight});
   })
 });
@@ -471,3 +472,21 @@ let mut = new MutationObserver(function (muts) {
   mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
+
+
+$$el('.scrollTop').forEach(item => {
+  item.addEventListener('click', () => {
+    let selector = item.closest('.h-calc_1') ? '.h-calc_1' : 'html, body';
+    let scrollUpValue = 0;
+    if (item.dataset.top) {
+      scrollUpValue = +item.dataset.top
+    }
+    console.log(scrollUpValue)
+    $(selector).animate(
+      {
+        scrollTop: scrollUpValue
+      },
+      250
+    );
+  })
+})

@@ -11888,6 +11888,9 @@ p.c-green {
 .shadow14 {
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
+.shadow15 {
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.10);
+}
 
 .h-7 {
   height: 7px
@@ -16682,18 +16685,25 @@ input.fs-14:-ms-input-placeholder {
 }
 
 .breadcrumbs_v3 a {
-  width: 200px;
   position: relative;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   font-size: 14px;
   line-height: 16px;
   z-index: 3;
+  padding-right: 19px;
+  display: block;
   margin-left: -16px;
 }
-.breadcrumbs_v3 a:not(.item) {
+.breadcrumbs_v3 a span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #F5F5F5;
+  height: 30px;
+  width: 181px;
+  padding-left: 20px;
+  padding-right: 4px;
+}
+.breadcrumbs_v3 li:not(.item) a {
   color: var(--text-text-secondary, #757575);
 }
 
@@ -16701,58 +16711,74 @@ input.fs-14:-ms-input-placeholder {
   margin-left: 0;
 }
 
-.breadcrumbs_v3 a:not(.active):hover {
+.breadcrumbs_v3 li:not(.active) a:hover {
   color: #F54617;
+}
+.breadcrumbs_v3 li:last-child {
+  position: relative;
+}
+.breadcrumbs_v3 li:last-child:after,
+.breadcrumbs_v3 a:before,
+.breadcrumbs_v3 a:after  {
+  content: '';
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 0;
+	height: 0;
+  left: -3px;
+	border-width: 15px 0 15px 19px;
+	border-color: transparent transparent transparent #F5F5F5;
+	border-style: solid;
+}
+.breadcrumbs_v3 li:last-child:after {
+  left: auto;
+  right: 0;
+}
+.breadcrumbs_v3 li.item + li:not(.item) a:after {
+	border-color: transparent transparent transparent #E0E0E0;
 }
 
 .breadcrumbs_v3 a:before {
-  content: '';
-  position: absolute;
-  z-index: -1;
+  z-index: 0;
   left: 0;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  background: url("../img/border-gray-light.svg") no-repeat center / 100%;
+	border-color: transparent transparent transparent #ffffff;
+}
+.breadcrumbs_v3 li.item a span {
+  background-color: #E0E0E0;
+
+}
+.breadcrumbs_v3 li.item:not(.active2,.active) a:after {
+	border-color: transparent transparent transparent #E0E0E0;
 }
 
-.breadcrumbs_v3 a.item:before {
-  background-image: url("../img/border-gray.svg");
-}
-
-.breadcrumbs_v3 a.active2 {
+.breadcrumbs_v3 li.active2 a span {
   font-weight: 500;
   color: var(--text-text-brand, #F54617);
+  background-color: var(--surface-surface-brand-2, #FFE2DA);
+}
+.breadcrumbs_v3 li.active2 a svg {
+  fill: var(--text-text-brand, #F54617);
+}
+.breadcrumbs_v3 li.active2 + li:not(.active2) a:after,
+.breadcrumbs_v3 li.active2 + li a:after {
+	border-color: transparent transparent transparent #FFE2DA;
 }
 
-.breadcrumbs_v3 a.active2:before {
-  background-image: url("../img/border-light.svg");
+.breadcrumbs_v3 li.active a span {
+  color: var(--text-text-invert, #FAFAFA);
+  background-color: var(--surface-surface-brand, #F54617);
 }
-
-.breadcrumbs_v3 li:first-child a.item:not(.active):after {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  left: 0;
-  top: 0;
-  height: 100%;
-  width: 40px;
-  background: #efefef;
-}
-
-.breadcrumbs_v3 a.active {
-  color: #fff;
+.breadcrumbs_v3 li.active a svg {
   fill: #fff;
-  font-weight: 500;
-  /* z-index: 4; */
 }
-
-.breadcrumbs_v3 a.active:before {
-  background-image: url("../img/border-orange.svg")
+.breadcrumbs_v3 li.active + li:not(.active) a:after,
+.breadcrumbs_v3 li.active + li.active a:after {
+	border-color: transparent transparent transparent #F54617;
 }
-
-.breadcrumbs_v3 li:not(:first-child) a.active:before {
-  background-image: url("../img/border-orange_v1.svg")
+.breadcrumbs_v3 li:first-child a:before,
+.breadcrumbs_v3 li:first-child a:after {
+  content: none!important;
 }
 
 .rating {
@@ -18402,6 +18428,9 @@ input:required:valid:focus+.autocomplete {
   .right-content {
     display: none;
   }
+  .breadcrumbs_v3 a span {
+    width: 10.8vw;
+  }
 }
 
 @media only screen and (max-width: 1570px) {
@@ -18602,11 +18631,9 @@ input:required:valid:focus+.autocomplete {
 }
 
 @media only screen and (max-width: 1440px) {
-  .breadcrumbs_v3 a {
-    width: 160px;
-    margin-left: -12px;
+  .breadcrumbs_v3 a span {
+    width: 10.88vw;
   }
-
   .w-200px_1440 {
     width: 200px !important;
   }

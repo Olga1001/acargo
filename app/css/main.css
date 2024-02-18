@@ -4682,6 +4682,22 @@ button:focus {
   display: block;
   color: #282E3B !important;
 }
+.drop-upload.var-1.active {
+  border-color: var(--border-border-2, #757575)!important;
+  max-width: 173px;
+  background-color: #fff;
+  padding: 4px 8px!important;
+  min-height: auto;
+  width: fit-content;
+  flex-direction: row!important;
+}
+.drop-upload.var-1.active:hover {
+  background-color: #fff!important;
+  border-color: var(--border-border-2, #757575)!important;
+}
+.var-1-none {
+  display: none;
+}
 
 #drop-upload,
 #drop-upload1 {
@@ -17991,7 +18007,8 @@ input+.autocomplete {
   background-color: #fff;
 }
 
-input:required:valid:focus+.autocomplete {
+input:required:valid:focus+.autocomplete,
+input+.autocomplete:hover {
   display: block;
 }
 

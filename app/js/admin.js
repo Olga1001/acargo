@@ -193,6 +193,13 @@ $(document).ready(function () {
     $this.find(".text-16, .upload-text").text(files.name);
     $this.addClass('active');
 
+    if ($(this).closest('label').siblings('.var-1-none')) {
+      let label = $(this).closest('label')
+      label.siblings('.var-1-none').addClass('d-block');
+      label.parent().removeClass('col-12');
+      label.parent().addClass('col-6');
+    }
+
   });
   $('.upload-close').click(function () {
     var $this = $(this).closest(".drop-upload");
@@ -202,6 +209,13 @@ $(document).ready(function () {
   })
   $(".loading__file-icon").click(function () {
     $(this).closest(".drop-upload").removeClass('active');
+
+    if ($(this).closest('label').siblings('.var-1-none')) {
+      let label = $(this).closest('label')
+      label.siblings('.var-1-none').removeClass('d-block');
+      label.parent().removeClass('col-6');
+      label.parent().addClass('col-12');
+    }
   });
 }); //POPUPS
 

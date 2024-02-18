@@ -2940,7 +2940,7 @@
       </div>
     </div>
 
-    <div class="popup-collapse collapse show" id="collapseAddPeople">
+    <div class="popup-collapse collapse" id="collapseAddPeople">
         <div class="popup-collapse-bg d-flex">
             <div class="container max-630 p-4 m-auto bg-white relative" >
                 <div class="p-2 ">
@@ -3196,7 +3196,7 @@
                             <p class="name">Notify information</p>
                         </div>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-5">Save</button>
+                    <button type="submit" class="btn w-100 mt-5">Save</button>
                 </form>
             </div>
         </div>
@@ -3243,7 +3243,7 @@
                             <p class="name top">Notify information</p>
                         </div>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-5">Save</button>
+                    <button type="submit" class="btn w-100 mt-5">Save</button>
                 </form>
             </div>
         </div>
@@ -3316,7 +3316,7 @@
                             </button>
                         </div>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-3">Send</button>
+                    <button type="submit" class="btn w-100 mt-3">Send</button>
                 </form>
             </div>
         </div>
@@ -3347,13 +3347,13 @@
                             <span class="fs-13 c-gray-75 weight-medium d-block pt-1">Weighing cargo and adding container tare weight</span>
                         </span>
                     </label>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-5">Submit</button>
+                    <button type="submit" class="btn w-100 mt-5">Submit</button>
                 </form>
             </div>
         </div>
     </div>
     
-    <div class="popup-collapse collapse" id="collapseUploadInvoice">
+    <div class="popup-collapse collapse show" id="collapseUploadInvoice">
         <div class="popup-collapse-bg d-flex">
             <div class="container max-630 p-4 m-auto bg-white relative" >
                 <form class="p-2">
@@ -3364,215 +3364,141 @@
                     </button>
                     <h3 class="fs-18 weight-medium pb-3 text-center">Upload invoice</h3>
                     <div class="pt-3 ">
-                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                            <input type="text" class="select__item input-normal text-left c-dark" value="2 Orders" required="">
-                            <p class="name">Order</p>
-                            <div class="select__drop">
-                                <ul class="select__menu">
-                                    <li class="select__option active">2 Orders</li>
-                                    <li class="select__option">2 Orders</li>
-                                </ul>
+                        <button type="button" class="mt-4 h-fit bb-1 w-100 relative" data-toggle="collapse" data-target="#dropOrders">
+                            <input type="text" class="input-normal text-left c-dark" value="2 Orders" required="">
+                            <span class="name">Order</span>
+                            <span class="absolute t-center r-0">
+                                <svg class="svg-sprite-icon stroke-1e  collapsed-arrow" alt="icon" width="17px" height="21px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-3"></use>
+                                </svg>
+                            </span>
+                        </button>
+                    </div>
+                    <div class="collapse show" id="dropOrders">
+                        <div class="py-1 px-2 flex-between-center fs-13 underline weight-medium">
+                            <a href="#" class="c-gray-75">Clear</a>
+                            <a href="#" class="c-gray-75">Select all</a>
+                        </div>
+                        <div class="max-h-260 scroll-y var1 pr-1 mr--1">
+                            <div class="b-1">
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center bb-1">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
+                                <label class="p-2 w-100 flex-between-center">
+                                    <span class="fs-16">AA-4567898765 1/4</span>
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                </label>
                             </div>
                         </div>
                     </div>
-                    <div class="py-1 px-2 flex-between-center fs-13 underline weight-medium">
-                        <a href="#" class="c-gray-75">Clear</a>
-                        <a href="#" class="c-gray-75">Select all</a>
-                    </div>
-                    <div class="max-h-260 scroll-y var1 pr-1 mr--1 mb-3">
-                        <div class="b-1">
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
+                    <div class="row pt-3">
+                        <div class="col-12">
+                            <p class="fs-16 weight-medium pb-1 var-1-none lh-22">Invoice</p>
+                            <label for="drop-upload1" class="drop-upload var-1 bg-gray-f5 mb-3 p-2 b-gray-bd text-center flex-column lh-22">
+                                <input type="file" id="drop-upload1" name="files[]" multiple="">
+                                <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 my-1" width="20px" height="18px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                                </svg>
+                                <span class="drop-upload__icon w-100 m-0 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>Invoice</b>  </span>
+                                <span class="upload-text fs-14 c-black-1e text-truncate"></span>
+                                
+                                <div class="loading__file-icon ml-2 h-fit">
+                                    <button type="button" class="hover-icon-orange ">
+                                        <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center bb-1">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
-                            </label>
-                            <label class="p-2 w-100 flex-between-center">
-                                <span class="fs-16">AA-4567898765 1/4</span>
-                                <input type="checkbox" class="checkbox" checked="">
-                                <span class="checked-customer dark">
-                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
-                                    </svg>
-                                </span>
+                        </div>
+                        <div class="col-12">
+                            <p class="fs-16 weight-medium pb-1 var-1-none lh-22">Packing list</p>
+                            <label for="drop-upload2" class="drop-upload var-1 bg-gray-f5 mb-3 p-2 b-gray-bd text-center flex-column lh-22">
+                                <input type="file" id="drop-upload2" name="files[]" multiple="">
+                            
+                                <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 my-1" width="20px" height="18px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                                </svg>
+                                <span class="drop-upload__icon w-100 m-0 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>Packing list</b>  </span>
+                                <span class="upload-text fs-14 c-black-1e text-truncate"></span>
+                                
+                                <div class="loading__file-icon ml-2 h-fit">
+                                    <button type="button" class="hover-icon-orange ">
+                                        <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </button>
+                                </div>
                             </label>
                         </div>
                     </div>
-                    <button type="button" class="w-100 bg-gray-f5 mb-3 p-2 b-gray-bd b-1 dashed text-center collapsed" data-toggle="collapse" data-target="#collapseUploadInvoice2,#collapseUploadInvoice" data-target="">
-                        <svg class="svg-sprite-icon mx-auto c-orange-f4 d-block mb-1" width="20px" height="18px">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
-                        </svg>
-                        <span class="fs-14 lh-22">Drop or сlick to upload <b>document</b>  </span>
-                    </button>
-                    <label for="drop-upload2" class="drop-upload bg-gray-f5 mb-3 p-2 b-gray-bd text-center">
-                        <span class="py-1 d-block">
-                            <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 d-block mb-1" width="20px" height="18px">
-                                <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
-                            </svg>
-                            <span class="text-16 fs-14 c-black-1e">Drop or сlick to upload  <b>Packing list </b>  </span>
-                            <img src="../../img/cancel.svg" alt="delete" class="loading__file-icon">
-                            <input type="file" id="drop-upload2" name="files[]" multiple="">
-                        </span>
-                    </label>
                    
-                    <button type="submit" class="btn-aquamarine big w-100">Upload</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-collapse collapse " id="collapseUploadInvoice2">
-        <div class="popup-collapse-bg d-flex">
-            <div class="container max-630 p-4 m-auto bg-white relative" >
-                <form class="p-2">
-                    <button type="reset" class=" absolute r-0 t-0 p-4 m-2" data-toggle="collapse" data-target="#collapseUploadInvoice2">
-                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                        </svg>
-                    </button>
-                    <h3 class="fs-18 weight-medium pb-3 text-center">Upload invoice</h3>
-                    <div class="pt-3 ">
-                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                            <input type="text" class="select__item input-normal text-left c-dark" value="2 Orders" required="">
-                            <p class="name">Order</p>
-                            <div class="select__drop">
-                                <ul class="select__menu">
-                                    <li class="select__option active">2 Orders</li>
-                                    <li class="select__option">2 Orders</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3 justify-content-between">
-                        <div class="col-6">
-                            <p class="pt-3 fs-16 weight-medium">Invoice</p>
-                            <div class="b-1 p-1 flex-between-center mt-1 w-100 max-225">
-                                <p class="px-1">invoice.pdf</p>
-                                <button type="button" class="p-1 hover-icon-orange d-flex">
-                                    <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="button" class="w-100 bg-gray-f5 mb-3 p-2 b-gray-bd b-1 dashed text-center collapsed" data-toggle="collapse" data-target="#collapseUploadInvoice2,#collapseUploadInvoice3">
-                        <svg class="svg-sprite-icon mx-auto c-orange-f4 d-block mb-1" width="20px" height="18px">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
-                        </svg>
-                        <span class="fs-14 lh-22">Drop or сlick to upload <b>Packing list </b>  </span>
-                    </button>
-                   
-                    <button type="submit" class="btn-aquamarine big w-100">Upload</button>
-                </form>
-            </div>
-        </div>
-    </div>
-
-    <div class="popup-collapse collapse " id="collapseUploadInvoice3">
-        <div class="popup-collapse-bg d-flex">
-            <div class="container max-630 p-4 m-auto bg-white relative" >
-                <form class="p-2">
-                    <button type="reset" class=" absolute r-0 t-0 p-4 m-2" data-toggle="collapse" data-target="#collapseUploadInvoice3">
-                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                        </svg>
-                    </button>
-                    <h3 class="fs-18 weight-medium pb-3 text-center">Upload invoice</h3>
-                    <div class="pt-3 ">
-                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0 ">
-                            <input type="text" class="select__item input-normal text-left c-dark" value="2 Orders" required="">
-                            <p class="name">Order</p>
-                            <div class="select__drop">
-                                <ul class="select__menu">
-                                    <li class="select__option active">2 Orders</li>
-                                    <li class="select__option">2 Orders</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row mb-3 justify-content-between">
-                        <div class="col-6">
-                            <p class="pt-3 fs-16 weight-medium">Invoice</p>
-                            <div class="b-1 p-1 flex-between-center mt-1 w-100 max-225">
-                                <p class="px-1">invoice.pdf</p>
-                                <button type="button" class="p-1 hover-icon-orange d-flex">
-                                    <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <p class="pt-3 fs-16 weight-medium">Packing list</p>
-                            <div class="b-1 p-1 flex-between-center mt-1 w-100 max-225">
-                                <p class="px-1">Packing_list.pdf</p>
-                                <button type="button" class="p-1 hover-icon-orange d-flex">
-                                    <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                    </svg>
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn-aquamarine big w-100">Upload</button>
+                    <button type="submit" class="btn w-100">Upload</button>
                 </form>
             </div>
         </div>
@@ -3726,7 +3652,7 @@
                         <input type="text" class="b-0 bb-1 mr-3" required>
                         <p class="name">Remarks</p>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-5 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions,#collapseShippingLineInstructions2">Next</button>
+                    <button type="submit" class="btn w-100 mt-5 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions,#collapseShippingLineInstructions2">Next</button>
                 </form>
             </div>
         </div>
@@ -3849,7 +3775,7 @@
                             <button type="button" class="btn-white  w-100 c-orange-f4 py-2 lh-22 collapsed" data-toggle="collapse" data-target="#collapseShippingLineInstructions2,#collapseShippingLineInstructions">Back</button>
                         </div>
                         <div class="col-6">
-                            <button type="button" class="btn-aquamarine big w-100 py-2 lh-22">Generate Document</button>
+                            <button type="button" class="btn w-100 py-2 lh-22">Generate Document</button>
                         </div>
                     </div>
                 </div>
@@ -3857,7 +3783,7 @@
         </div>
     </div>
 
-    <div class="popup-collapse collapse" id="collapseUploadDocument">
+    <div class="popup-collapse collapse " id="collapseUploadDocument">
         <div class="popup-collapse-bg d-flex">
             <div class="container max-630 p-4 m-auto bg-white relative" >
                 <form class="p-2">
@@ -3868,13 +3794,86 @@
                     </button>
                     <h3 class="fs-18 weight-medium pb-4 text-center">Upload document</h3>
                    
-                    <button type="button" class="drop-upload bg-gray-f5 mt-3 p-2 b-gray-bd text-center w-100 flex-column">
+                    <!-- <label for="drop-upload3" class="drop-upload du_remove bg-gray-f5 mt-3 p-2 b-gray-bd text-center w-100 flex-column">
                         <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 d-block my-1" width="20px" height="18px">
                             <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
                         </svg>
                         <span class="text-16 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>document</b>  </span>
+                    </label> -->
+                    <label for="drop-upload3" class="drop-upload var-1 bg-gray-f5 mb-3 p-2 b-gray-bd text-center flex-column lh-22">
+                        <input type="file" id="drop-upload3" name="files[]" multiple="">
+                      
+                        <svg class="svg-sprite-icon drop-upload__icon mx-auto c-orange-f4 my-1" width="20px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#upload"></use>
+                        </svg>
+                        <span class="drop-upload__icon w-100 m-0 fs-14 c-black-1e pb-1">Drop or сlick to upload <b>document</b>  </span>
+                        <span class="upload-text fs-14 c-black-1e text-truncate"></span>
+                        
+                        <div class="loading__file-icon ml-2 h-fit">
+                            <button type="button" class="hover-icon-orange ">
+                                <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                    </label>
+                    <!-- <div class="b-1 p-1 flex-between-center mt-2 max-225">
+                        <p class="px-1">Contract_Cargo4S.pdf</p>
+                        <button type="button" class="p-1 hover-icon-orange d-flex">
+                            <svg class="svg-sprite-icon " fill="#1e1e1e" width="10px" height="10px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div> -->
+                
+                    <div class="relative mt-4 pt-3">
+                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="" required>
+                        <div class="autocomplete">
+                            <ul>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">VGM</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Export declaration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Export declaration</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">Contract</a>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn-light w-100 p-2 collapsed" data-toggle="collapse" data-target="#collapseUploadDocument2,#collapseUploadDocument">
+                                <svg class="svg-sprite-icon mr-2 c-orange-f4" width="20px" height="20px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#plus2"></use>
+                                </svg>
+                                Other document
+                            </button>
+                        </div>
+                        
+                        <p class="name">Document type</p>
+                        <svg class="svg-sprite-icon absolute r-0 t-center" fill="#757575" width="20px" height="20px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                        </svg>
+                    </div>
                    
+                    <button type="submit" class="btn w-100 mt-5">Upload</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="popup-collapse collapse " id="collapseUploadDocument2">
+        <div class="popup-collapse-bg d-flex">
+            <div class="container max-630 p-4 m-auto bg-white relative" >
+                <form class="p-2">
+                    <button type="reset" class=" absolute r-0 t-0 p-4 m-2" data-toggle="collapse" data-target="#collapseUploadDocument2">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
                     </button>
+                    <h3 class="fs-18 weight-medium pb-4 text-center">Upload document</h3>
+            
                     <div class="b-1 p-1 flex-between-center mt-2 max-225">
                         <p class="px-1">Contract_Cargo4S.pdf</p>
                         <button type="button" class="p-1 hover-icon-orange d-flex">
@@ -3885,7 +3884,7 @@
                     </div>
                 
                     <div class="relative mt-4 pt-3">
-                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="" required>
+                        <input type="text" class="input-normal b-0 bb-1 mr-3" value="Other document" required>
                         <div class="autocomplete">
                             <ul>
                                 <li>
@@ -3922,7 +3921,7 @@
                             <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
                         </svg>
                     </div>
-                    <button type="submit" class="btn-aquamarine big w-100 mt-5">Upload</button>
+                    <button type="submit" class="btn w-100 mt-5">Upload</button>
                 </form>
             </div>
         </div>

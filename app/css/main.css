@@ -2273,31 +2273,37 @@ button:focus {
 }
 
 .btn {
-  border-radius: 4px;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   transition: all 0.3s ease;
   position: relative;
-}
-
-.btn p,
-.btn svg,
-.btn svg g,
-.btn span {
-  display: block;
+  background: var(--surface-surface-brand, #F54617);
+  color: var(--text-text-invert, #FAFAFA);
   font-size: 14px;
-  color: #282e3b;
-  fill: #109CF1;
-  margin: 0 auto 5px;
-  -webkit-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; /* 157.143% */
+  letter-spacing: -0.28px;
+  padding: 9px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 0;
 }
-
+.btn.small {
+  padding: 1.5px;
+}
+.btn:focus {
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: -0.32px;
+}
 .btn.active,
 .btn:hover {
-  background-color: #109CF1;
+  background: var(--Color-Orange-shades-Orange-400, #C52D05);
+  color: #fff;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
   -webkit-appearance: none;
@@ -2316,6 +2322,10 @@ button:focus {
 .btn:hover span {
   fill: #ffffff;
   color: #ffffff;
+}
+.btn[disabled] {
+  background: var(--surface-surface-2, #E0E0E0);
+  color: var(--text-text-secondary, #757575);
 }
 
 .btn-arrow {
@@ -2350,12 +2360,9 @@ button:focus {
 .btn-text {
   margin-top: 4px;
 }
-
 .btn-aquamarine {
   min-width: 100px;
   line-height: 1;
-  /* border-radius: 4px; */
-  background-color: #49ddaa;
   background-color: var(--orange-new, #F45617);
   border: 1px solid #F45617;
   font-size: 14px;
@@ -2366,6 +2373,10 @@ button:focus {
   display: inline-block;
   letter-spacing: -0.3px;
   position: relative;
+}
+.btn.small {
+  line-height: 22px;
+  padding: 0 4px;
 }
 
 .btn-green-light {
@@ -2406,8 +2417,8 @@ button:focus {
 
 .btn-aquamarine:hover,
 .btn-aquamarine:focus {
-  text-decoration: none;
-  color: #ffffff;
+  border-color: var(--Color-Orange-shades-Orange-400, #C52D05);
+  background: var(--Color-Orange-shades-Orange-400, #C52D05);
 }
 
 .btn-aquamarine:hover .btn-item,

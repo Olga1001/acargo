@@ -16794,12 +16794,17 @@ input.fs-14:-ms-input-placeholder {
 
 .breadcrumbs_v3 li.item a span {
   background-color: #E0E0E0;
-
 }
 
-.breadcrumbs_v3 li.item:not(.active2, .active) a:after {
+.breadcrumbs_v3 li.item a:after,
+.breadcrumbs_v3 li.item + li.item a:after {
   border-color: transparent transparent transparent #E0E0E0;
 }
+.breadcrumbs_v3 li:not(.active,.item,.active2)+li:not(.item) a:after,
+.breadcrumbs_v3 li+li.item a:after {
+  border-color: transparent transparent transparent #F5F5F5;
+}
+
 
 .breadcrumbs_v3 li.active2 a span {
   font-weight: 500;
@@ -16833,6 +16838,16 @@ input.fs-14:-ms-input-placeholder {
 .breadcrumbs_v3 li:first-child a:before,
 .breadcrumbs_v3 li:first-child a:after {
   content: none !important;
+}
+
+.breadcrumbs_v3 li.item:last-child:after {
+  border-color: transparent transparent transparent #E0E0E0;
+}
+.breadcrumbs_v3 li.active:last-child:after {
+  border-color: transparent transparent transparent var(--surface-surface-brand, #F54617);
+}
+.breadcrumbs_v3 li.active2:last-child:after {
+  border-color: transparent transparent transparent var(--surface-surface-brand-2, #FFE2DA);
 }
 
 .rating {

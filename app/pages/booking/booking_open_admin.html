@@ -919,13 +919,13 @@
                                             </div>
                                             <div class="max-w-140 w-100 text-right pl-4">
                                                 <p class="weight-medium">40’HC
-                                                    <span class="fs-13">x15</span>
+                                                    <span class="fs-13 c-gray-75">x15</span>
                                                 </p>
                                             </div>
                                         </div>
                                         <div class="items-center max-250">
-                                            <p class="weight-medium mr-3">ETD <span class="fs-13 c-gray-75">12 Apr. 10:00</span></p>
-                                            <p class="weight-medium">ETA <span class="fs-13 c-gray-75">12 Apr. 10:00</span></p>
+                                            <p class="weight-medium mr-3">ETD <span class="fs-13 c-gray-75">—</span></p>
+                                            <p class="weight-medium">ETA <span class="fs-13 c-gray-75">—</span></p>
                                         </div>
                                     </div>
                                 </button>
@@ -1321,7 +1321,7 @@
                                 <div class="w-1 h-100 bg-orange-f4 absolute l-center t-0 "></div>
                             </div>
                             <div class="w-100 ">
-                                <p class="weight-medium fs-16 pb-2">Booking</p>
+                                <p class="weight-medium fs-16 pb-2">Add Booking Information</p>
                                 <div class="mt-4 select h-fit b-0 br-0 bb-1 not-arrow">
                                     <input type="text" class="select__item input-normal text-left c-dark" value="AS-234567890... / AS-234567890... / AS-234567890.." required="">
                                     <p class="name">Assign orders</p>
@@ -1438,42 +1438,82 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="bg-light-ee px-4 py-2 lh-22 flex-between-center fs-14 my-3">
-                                    <div>
-                                        <div class="d-flex block_resize-input">
-                                            <p class="min-w-80 weight-medium fs-13 c-gray-69">Booking No.</p>
-                                            <p class="pl-1">AS-2345678967</p>
-                                            <!-- <div class="table__span" style="display: none;"></div>
-                                            <input type="text" class="input-text fs-13 ml-1" value="AS-2345678967" placeholder=". . . . ."> -->
-                                        </div>
-                                        <div class="d-flex block_resize-input">
-                                            <p class="min-w-80 weight-medium fs-13 c-gray-69">Date</p>
-                                            <p class="pl-1">18 Apr. 2023</p>
-                                            <!-- <div class="table__span" style="display: none;"></div>
-                                            <input type="text" class="input-text fs-13 ml-1" value="18 Apr. 2023" placeholder=". . . . ." readonly> -->
+                                <div class="row">
+                                    <div class="col-3 pt-3">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" required="">
+                                            <p class="name">Booking No.*</p>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <p class="min-w-80 weight-medium fs-13 c-gray-69">Demurages</p>
-                                            <p class="pl-1">15 days</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="min-w-80 weight-medium fs-13 c-gray-69">Demurages</p>
-                                            <p class="pl-1">12 days</p>
+                                    <div class="col-3 pt-3">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" required="">
+                                            <p class="name">Therminal Pick-up*</p>
                                         </div>
                                     </div>
-                                    <div>
-                                        <div class="d-flex">
-                                            <p class="min-w-100px weight-medium fs-13 c-gray-69">Terminal pick-up</p>
-                                            <p class="pl-1 max-225 text-truncate">Klaipedos Smeltes terminalas Riga Baltic Terminal Riga Baltic Terminal</p>
-                                        </div>
-                                        <div class="d-flex">
-                                            <p class="min-w-100px weight-medium fs-13 c-gray-69">Terminal drop</p>
-                                            <p class="pl-1">Riga Baltic Termina</p>
+                                    <div class="col-6 pt-3">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" required="">
+                                            <p class="name">Therminal Drop*</p>
                                         </div>
                                     </div>
+                                    <div class="col-3 pt-3">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" required="">
+                                            <p class="name">Sea Line*</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                            <input type="text" class="select__item input-normal text-left c-dark" required="">
+                                            <p class="name">Demurrages*</p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Acargo Company</li>
+                                                    <li class="select__option">Acargo Compan </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <div class="mt-4 select h-fit b-0 br-0 bb-1 arrow-r-0">
+                                            <input type="text" class="select__item input-normal text-left c-dark" required="">
+                                            <p class="name">Detentions*</p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">Acargo Company</li>
+                                                    <li class="select__option">Acargo Compan </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <div class="relative h-fit mt-4">
+                                            <input type="text" class="input-normal bb-1 br-0 text-left c-dark" required="">
+                                            <p class="name">Quotation No.</p>
+                                        </div>
+                                    </div>
+                                    
                                 </div>
+                                
+                                <ul class="pt-4">
+                                    <li class="d-flex py-1">
+                                        <div class="relative mr-4">
+                                            <div class="pb-1 bg-white relative z-1">
+                                                <div class="wh-30 d-flex">
+                                                    <svg class="svg-sprite-icon m-auto c-orange-f4 " width="13px" height="11px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor2"></use>
+                                                    </svg>
+                                                </div>
+                                            </div>
+                                          
+                                            <div class="w-1 bg-orange-f4 absolute l-center t-0 h-100"></div>
+                                        </div>
+                                        <div>
+                                           
+                                        </div>
+                                    </li>
+                                </ul>
                                 <ul class="text-truncate-all">
                                     <li class="bb-1 py-2  items-center mx-0 lh-1_4">
                                         <p class="max-w-90 weight-medium w-100">ALT</p>
@@ -3841,10 +3881,11 @@
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
                                         </svg>
                                     </div>
-                                    <textarea name="" id="" cols="10" rows="3" class="fs-13 weight-medium c-gray-75 p-0 input-normal no-resize">Puces, Rucavas pag.
-Dienvidkurzemes nov., 3477,
-Latvia</textarea>
-
+                                    <p class="fs-13 weight-medium c-gray-75">
+                                        Puces, Rucavas pag. <br>
+                                        Dienvidkurzemes nov., 3477, <br>
+                                        Latvia
+                                    </p>
                                     <button type="button" class="absolute r-0 bot-0 p-3 ">
                                         <span class="wh-31 d-flex">
                                             <svg class="svg-sprite-icon m-auto c-orange-f4" width="19px" height="14px">

@@ -570,6 +570,14 @@ input:valid~.name {
   bottom: 100%;
 }
 
+.name.top svg,
+input:active~.name svg,
+input:focus~.name svg ,
+input:valid~.name svg {
+  width: 15px;
+  height: 15px;
+}
+
 .name-placeholder {
   position: absolute;
   left: 0;
@@ -1729,11 +1737,12 @@ button:focus {
   border-color: var(--orange-new, #F45617) !important;
 }
 
-.radio-custom .checkbox:checked~svg {
+.radio-custom .checkbox:checked~svg:not(.stroke-75) {
   fill: var(--orange-new, #F45617) !important;
 }
 
 .radio-custom .checkbox:checked~svg.stroke-gray,
+.radio-custom .checkbox:checked~svg.stroke-75,
 .radio-custom .checkbox:checked~svg.stroke-blue-gray {
   fill: none !important;
   stroke: var(--orange-new, #F45617) !important;
@@ -1869,7 +1878,10 @@ button:focus {
 }
 
 .checkbox:checked~.icon-star {
-  fill: #FFDA44 !important;
+  fill: var(--orange-new)!important;
+}
+.checkbox:checked~.icon-star.stroke-75 {
+  stroke: var(--orange-new)!important;
 }
 
 .radio-calendar .check {
@@ -2298,7 +2310,6 @@ button:focus {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  /* 157.143% */
   letter-spacing: -0.28px;
   padding: 9px;
   display: flex;
@@ -2306,6 +2317,8 @@ button:focus {
   align-items: center;
   text-align: center;
   border-radius: 0;
+  outline: none;
+  box-shadow: none;
 }
 
 .btn.small {
@@ -2316,9 +2329,11 @@ button:focus {
   font-size: 16px;
   font-weight: 700;
   letter-spacing: -0.32px;
+  outline: none;
+  box-shadow: none;
 }
 
-.btn.active,
+/* .btn.active, */
 .btn:hover {
   background: var(--Color-Orange-shades-Orange-400, #C52D05);
   color: #fff;
@@ -2329,19 +2344,20 @@ button:focus {
   appearance: none;
 }
 
-.btn.active p,
-.btn.active svg,
-.btn.active svg g,
-.btn.active svg,
-.btn.active span,
+/* .btn.active p,
+.btn.active svg, */
+/* .btn.active svg g, */
+/* .btn.active span, */
 .btn:hover p,
-.btn:hover svg,
-.btn:hover svg g,
+.btn:hover svg:not(.stroke-75),
+/* .btn:hover svg g, */
 .btn:hover span {
-  fill: #ffffff;
-  color: #ffffff;
+  fill: #ffffff!important;
+  color: #ffffff!important;
 }
-
+.btn:hover svg.stroke-75 {
+  stroke: #ffffff!important;
+}
 
 .btn.white {
   background-color: #fff;
@@ -2351,13 +2367,17 @@ button:focus {
 .btn.white:hover {
   background: var(--surface-surface-brand-2, #FFE2DA);
 }
-
+/* .btn.white.active svg:not(.stroke-75), */
 .btn.white:hover p,
-.btn.white:hover svg,
-.btn.white:hover svg g,
+.btn.white:hover svg:not(.stroke-75),
+/* .btn.white:hover svg g, */
 .btn.white:hover span {
-  fill: #F54617;
-  color: #F54617;
+  fill: #F54617!important;
+  color: #F54617!important;
+}
+/* .btn.white.active svg.stroke-75, */
+.btn.white:hover svg.stroke-75 {
+  stroke: #F54617!important;
 }
 
 
@@ -2365,6 +2385,7 @@ button:focus {
   background: var(--surface-surface-2, #E0E0E0);
   color: var(--text-text-secondary, #757575);
   border-color: #E0E0E0;
+  cursor: no-drop;
 }
 
 .btn-arrow {
@@ -4349,7 +4370,7 @@ button:focus {
 }
 
 .b-gray-75 {
-  border-color: var(--border-border-2, #757575);
+  border-color: var(--border-border-2, #757575)!important;
 }
 
 .b-gray2 {
@@ -15521,6 +15542,7 @@ p.c-green {
 }
 
 .hover-icon-orange:hover>svg.stroke-1e,
+.hover-icon-orange:hover>svg.stroke-75,
 .hover-icon-orange:hover>svg.stroke-69 {
   stroke: var(--orange-new, #F45617) !important;
 }
@@ -17990,10 +18012,8 @@ textarea.input_customer {
   cursor: col-resize;
   z-index: 1;
 }
-
 .people-group .item {
   transition: all 0.2s ease;
-  border: 2.5px solid #00E200;
   border-radius: 50%;
   margin: 0 0 0 -10px;
   background-color: var(--surface-surface-brand-2, #FFE2DA);
@@ -18005,9 +18025,12 @@ textarea.input_customer {
   font-weight: 700;
   line-height: normal;
 }
+.people-group .item.isOnline {
+  border: 2.5px solid #00E200;
+  margin-top: -1.25px!important;
+}
 
 .people-group .item.collapsed {
-  border: none;
   margin: 1.25px 0 1.25px -10px;
 }
 
@@ -18252,7 +18275,17 @@ input+.autocomplete {
 .collapse-bg.show:before {
   content: '';
 }
-
+.collapse.show.collapse-list {
+  display: block!important;
+  position: absolute;
+  left: 0;
+  top: 100%;
+}
+.collapse.show.collapse-list li {
+  padding: 9px 12px!important;
+  border-bottom: 1px solid #EEE;
+  width: 100%;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

@@ -1977,6 +1977,11 @@ button:focus {
   right: -7px;
   top: -7px;
 }
+.checked-customer.small {
+  width: 16px;
+  height: 16px;
+}
+.checked-customer.small svg,
 .checked-customer.side svg {
   width: 9px;
   height: 100%;
@@ -11325,7 +11330,7 @@ p.c-green {
 }
 
 .min-w-220 {
-  min-width: 220px;
+  min-width: 220px!important;
 }
 
 .min-w-250 {
@@ -14754,8 +14759,15 @@ p.c-green {
   width: 10% !important;
 }
 
+.w-12 {
+  width: 12% !important;
+}
+
 .w-14w {
   width: 14% !important;
+}
+.w-15w {
+  width: 15% !important;
 }
 
 .w-18 {
@@ -18277,14 +18289,30 @@ input+.autocomplete {
 }
 .collapse.show.collapse-list {
   display: block!important;
-  position: absolute;
-  left: 0;
-  top: 100%;
 }
-.collapse.show.collapse-list li {
+.collapse.show.collapse-list li a {
   padding: 9px 12px!important;
   border-bottom: 1px solid #EEE;
   width: 100%;
+}
+.arrow_abs:before,
+.arrow_abs:after {
+  content: '';
+  position: absolute;
+  right: 20px;
+  bottom: calc(100% - 1px);
+  width: 0;
+	height: 0;
+	border-width: 0 12px 12px 12px;
+	border-color: transparent transparent #fff transparent;
+	border-style: solid;
+
+}
+.arrow_abs:before {
+  right: 19px;
+  bottom: 100%;
+	border-width: 0 13px 13px 13px;
+	border-color: transparent transparent #eee transparent;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

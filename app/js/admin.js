@@ -504,3 +504,17 @@ $$el('.scrollTop').forEach(item => {
     );
   })
 })
+
+//change the state of a block to grid/line https://prnt.sc/v25He-4rnmPC
+$$el('input[name="gridLine-table"]').forEach(radio => {
+  radio.addEventListener('change', () => {
+    if (radio.checked) {
+      let id = '#'+radio.getAttribute('href')
+
+      $$el('[data-name="gridLine-table"]').forEach(item => {
+        item.classList.remove('show')
+      })
+      $el(id).classList.add('show')
+    }
+  })
+})

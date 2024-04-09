@@ -4411,7 +4411,7 @@ Latvia</textarea>
             </div>
         </div>
     </div>
-    <div class="popup-collapse collapse" id="collapseGenerateInvoice">
+    <div class="popup-collapse collapse show" id="collapseGenerateInvoice">
         <div class="popup-collapse-bg d-flex">
             <div class="container max-1000 p-4 m-auto bg-white relative" >
                 <form class="p-2">
@@ -4621,8 +4621,25 @@ Latvia</textarea>
                                 Booking No. 2705586800 <br>
                                 30 x 40'HC Containers CSNU7850705, CSNU6373589  <br>
                             </div>
-                            <div class="col-2">1480</div>
-                            <div class="col-2 mx-auto">1</div>
+                            <div class="col-2">
+                                <div class="bb-1 d-flex">
+                                    <input type="text" name="transport_price" class="input-normal" onchange="saveInvoiceServiceValue(this, 1, 0, 'transport_price')" value="">
+                                    <div class="select small h-fit b-0 br-0 arrow-r-0 max-w-46 lh-1" inited="1">
+                                        <input type="hidden" onchange="saveInvoiceServiceValue(this, 1, 0, 'transport_currency')" value="" name="transport_currency">
+                                        <input type="text" readonly="" class="select__item p-0" value="">
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option" data-value="1">EUR</li>
+                                                <li class="select__option" data-value="2">USD</li>
+                                                <li class="select__option" data-value="3">GBP</li>                        
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-2 mx-auto">
+                                <input type="text" name="transport_price" class="input-normal bb-1 br-0 text-left c-dark" onchange="saveInvoiceServiceValue(this, 1, 0, 'transport_price')" value="">
+                            </div>
                             <div class="w-70">1480</div>
                         </li>
                         <li class="row py-2 lh-22 mx-0 bb-1 align-items-center">
@@ -4635,8 +4652,94 @@ Latvia</textarea>
                             <div class="col-2 mx-auto">1</div>
                             <div class="w-70">1480</div>
                         </li>
+                        <li class="row py-2 lh-22 mx-0 bb-1 align-items-center">
+                            <div class="col-6 fs-14 ">
+                                Freight: Skrunda, 3326, LV - Riga LVRIX  <br>
+                                Booking No. 2705586800 <br>
+                                30 x 40'HC Containers CSNU7850705, CSNU6373589  <br>
+                            </div>
+                            <div class="col-2">1480</div>
+                            <div class="col-2 mx-auto">1</div>
+                            <div class="w-70">
+                                <p class="product-price__subtotal" data-price="100" data-currency="2" data-rate="0.9239">
+                                    <span class="d-lg-none d-block mb-2 mt-3 c-blue-gray text-up">subtotal</span>
+                                    92.39 EUR                    
+                                </p>
+                                <div class="items-center">
+                                    <a href="javascript:void(0)" class="btn white p-1 b-0 mr-2 mt-1">
+                                        <svg class="svg-sprite-icon " width="13px" height="13px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" class="btn white p-1 b-0 mt-1">
+                                        <svg class="svg-sprite-icon c-black-1e" width="16px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
                     </ul>
-              
+                    <div class="d-flex align-items-center justify-content-between py-2">
+                        <div class="select h-fit b-0 br-0 bb-1 arrow-r-0 w-150" id="add_service" inited="1">
+                            <input type="hidden" name="add_service" value="" onchange="addInvoiceService(this, 1)">
+                            <input type="text" class="select__item input-normal" onkeyup="onEnter(event, function(){addInvoiceService(this, 1)})" placeholder="Add additional service" value="">
+
+                            <div class="select__drop">
+                                <ul class="select__menu">
+                                    <li class="select__option">Select additional service</li>
+                                    <li class="select__option" data-value="1">Export declaration</li>
+                                    <li class="select__option" data-value="2">Import declaration</li>
+                                    <li class="select__option" data-value="3">Fumigation</li>
+                                    <li class="select__option" data-value="4">Downtime</li>
+                                    <li class="select__option" data-value="5">Late cancelation fee</li>
+                                    <li class="select__option" data-value="6">Loading extra hour</li>
+                                    <li class="select__option" data-value="7">Reloading cargo</li>
+                                    <li class="select__option" data-value="8">B/L Amendment</li>
+                                    <li class="select__option" data-value="9">Courier</li>
+                                    <li class="select__option" data-value="10">Storage</li>
+                                    <li class="select__option" data-value="11">Container lift on/off</li>
+                                    <li class="select__option" data-value="12">Weighting cargo</li>
+                            </ul>
+                            </div>
+                        </div>
+                        <p><span class="weight-medium pr-4">Total price</span>  <span class="c-blue" id="totalproductspricelabel">92.39 EUR</span></p>
+                    </div>
+                    <ul id="invoice_currency_rate" class="">
+                        <li class="items-center justify-content-end">
+                            <p class="fs-14 text-md-right pt-3 w-100 max-400 ">Central bank rate 1 USD = 0.9239 EUR</p>
+                            <div class="items-center max-400 w-100 justify-content-md-end pt-3 pl-md-2">
+                                <input type="hidden" id="currencyrate" data-step="0.005" name="currencyrate" onchange="recountOrderInvoiceProducts(this)" value="0.9539">
+                                <p class="fs-14 text-md-right">Our rate 1 USD = <span id="current_sale_rate">0.9539</span> EUR</p>
+                                <div class="d-flex pl-1 ">
+                                    <button type="button" class="btn white ml-2 wh-24 br-50" onclick="setCurrencyRate(this);">-</button>
+                                    <button type="button" class="btn white ml-2 wh-24 br-50" onclick="setCurrencyRate(this);">+</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="row mb-3">
+                        <div class="col-6 pt-3">
+                            <textarea cols="20" rows="5" name="notes" class="b-1 no-resize" placeholder="Notes"></textarea>
+                        </div>
+                        <div class="col-3 pt-3">
+                            <div class="relative h-fit mt-4 ">
+                                <input type="text" class="input-normal bb-1" autocomplete="off" name="customs_code" placeholder="Customs post code" value="">
+                                <p class="name">Customs post</p>
+                            </div>
+                        </div>
+                        <div class="col-3 pt-3">
+                            <label class="items-center mt-4 pt-1">
+                                <input type="checkbox" name="displayornum" value="1" class="checkbox">
+                                <span class="checked-customer dark">
+                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                    </svg>
+                                </span>
+                                <span class="pl-2">Add order numbers</span>
+                            </label>
+                        </div>
+                    </div>
                     <button type="submit" class="btn w-100 mt-5">Save</button>
                 </form>
             </div>

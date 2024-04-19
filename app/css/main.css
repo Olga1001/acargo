@@ -554,6 +554,9 @@ textarea:active {
 textarea.bg-white-20:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+textarea:active~.name,
+textarea:focus~.name,
+textarea:valid~.name,
 input:active~.name,
 input:focus~.name,
 input:valid~.name {
@@ -561,11 +564,7 @@ input:valid~.name {
   font-size: 13px;
   font-weight: 500;
 }
-/* textarea:active~.name,
-textarea:focus~.name,
-textarea:valid~.name {
-  display: none;
-} */
+
 .name.top {
   /* bottom: 24px; */
   font-size: 13px;

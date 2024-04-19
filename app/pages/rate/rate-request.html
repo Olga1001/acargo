@@ -807,14 +807,22 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex absolute r-0 t-center">
-                                        <a href="#" class="px-1 hover-icon-orange mr-1">
-                                            <svg class="svg-sprite-icon c-gray-69" width="17px" height="17px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
-                                            </svg>
-                                        </a>
-                                        <a href="#" class="px-2 hover-icon-orange mr-1 relative">
-                                            <div class="br-50 t--50 c-white bg-orange-f4 wh-14 text-center r-0 absolute fs-12">5</div>
+                                    <div class="d-flex relative ml-auto">
+                                        <div class="dropdown no-arrow ml-1">
+                                            <a href="javascript:void(0)" class="px-1 hover-icon-orange mr-1 " id="dropdownClock2828" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                <svg class="svg-sprite-icon c-gray-69" width="17px" height="17px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
+                                                </svg>
+                                            </a>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownClock2828" x-placement="bottom-end" style="position: absolute; will-change: transform; top: 0px; left: 0px; transform: translate3d(-115px, 18px, 0px);">
+                                                <a class="dropdown-item fs-14 c-black1" href="javascript:void(0)" onclick="setRequestProcessTime(this, 2828, 2)">2 hours</a>
+                                                <a class="dropdown-item fs-14 c-black1" href="javascript:void(0)" onclick="setRequestProcessTime(this, 2828, 4)">4 hours</a>
+                                                <a class="dropdown-item fs-14 c-black1" href="javascript:void(0)" onclick="setRequestProcessTime(this, 2828, 8)">8 hours</a>
+                                                <a class="dropdown-item fs-14 c-black1" href="javascript:void(0)" onclick="setRequestProcessTime(this, 2828, 24)">24 hours</a>
+                                                <a class="dropdown-item fs-14 c-black1" href="javascript:void(0)" onclick="setRequestProcessTime(this, 2828, 48)">48 hours</a>
+                                            </div>
+                                        </div>
+                                        <a href="javascript:void(0)" onclick="showRequestDialog(this, event, 2828)" class="px-2 hover-icon-orange mr-1 relative">
                                             <svg class="svg-sprite-icon c-gray-69" width="18px" height="15px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#note"></use>
                                             </svg>
@@ -823,10 +831,26 @@
                                             <span class="circle-span"></span>
                                             <span class="circle-span"></span>
                                             <span class="circle-span"></span>
-                                            <div class="menu right t-center pt-0">
+                                            <div class="menu right">
                                                 <ul class="menu__list">
                                                     <li class="menu__item text-left">
-                                                        <a href="#" class="hover-icon-orange c-black-1e hover-t-orange">
+                                                        <a href="javascript:void(0)" onclick="requestAction(this, 2828, 'reject')" class="hover-icon-orange c-black-1e hover-t-orange">
+                                                            <svg class="svg-sprite-icon c-gray-69 mr-2" width="13px" height="13px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
+                                                            </svg>
+                                                            Reject
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__item text-left">
+                                                        <a href="javascript:void(0)" onclick="requestAction(this, 2828, 'quote')" class="hover-icon-orange c-black-1e hover-t-orange">
+                                                            <svg class="svg-sprite-icon c-gray-69 mr-2" width="13px" height="13px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
+                                                            </svg>
+                                                            Quoted
+                                                        </a>
+                                                    </li>
+                                                    <li class="menu__item text-left">
+                                                        <a href="javascript:void(0)" onclick="requestAction(this, 2828, 'edit')" class="hover-icon-orange c-black-1e hover-t-orange">
                                                             <svg class="svg-sprite-icon c-gray-69 mr-2" width="13px" height="13px">
                                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#create2"></use>
                                                             </svg>
@@ -834,7 +858,7 @@
                                                         </a>
                                                     </li>
                                                     <li class="menu__item text-left">
-                                                        <a href="#" class="hover-icon-orange c-black-1e hover-t-orange">
+                                                        <a href="javascript:void(0)" onclick="requestAction(this, 2828, 'delete')" class="hover-icon-orange c-black-1e hover-t-orange">
                                                             <svg class="svg-sprite-icon c-gray-69 mr-2" width="13px" height="11px">
                                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
                                                             </svg>
@@ -898,7 +922,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex absolute r-0 t-center">
+                                    <div class="d-flex relative ml-auto">
                                         <a href="#" class="px-1 hover-icon-orange mr-1">
                                             <svg class="svg-sprite-icon c-gray-69" width="17px" height="17px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
@@ -989,7 +1013,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex absolute r-0 t-center">
+                                    <div class="d-flex relative ml-auto">
                                         <a href="#" class="px-1 hover-icon-orange mr-1">
                                             <svg class="svg-sprite-icon c-gray-69" width="17px" height="17px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>
@@ -1081,7 +1105,7 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="d-flex absolute r-0 t-center">
+                                    <div class="d-flex relative ml-auto">
                                         <a href="#" class="px-1 hover-icon-orange mr-1">
                                             <svg class="svg-sprite-icon c-gray-69" width="17px" height="17px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#wall-clock"></use>

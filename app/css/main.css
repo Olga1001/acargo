@@ -564,12 +564,17 @@ input:valid~.name {
   font-size: 13px;
   font-weight: 500;
 }
+textarea:active~.name,
+textarea:focus~.name,
+textarea:valid~.name {
+  bottom: calc(100% - 1px);
+}
 
 .name.top {
   /* bottom: 24px; */
   font-size: 13px;
   font-weight: 500;
-  bottom: 100%;
+  bottom: calc(100% - 1px);
 }
 
 .name.top svg,
@@ -829,6 +834,7 @@ button:focus {
   right: 7px;
   pointer-events: none;
 }
+
 .select.small:before {
   background-size: 12px;
 }
@@ -1107,6 +1113,7 @@ button:focus {
 
 .select__two:before {
   right: 5px;
+  background-size: 10px;
 }
 
 .select__search .select__item {

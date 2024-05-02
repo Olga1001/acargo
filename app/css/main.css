@@ -2494,15 +2494,15 @@ button:focus {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
-  /* 157.143% */
   letter-spacing: -0.28px;
   padding: 9px;
   min-width: 107px;
   text-align: center;
   box-shadow: none !important;
   border-radius: 0 !important;
+  border: none;
+  transition: all 0.2s ease;
 }
-
 .btn-light:hover {
   color: #fff;
   background: var(--surface-surface-brand, #F54617);
@@ -2510,6 +2510,16 @@ button:focus {
 
 .btn-light:hover svg {
   fill: #fff !important;
+}
+.btn-light:focus svg {
+  fill: #F54617 !important;
+}
+.btn-light:focus {
+  background: var(--surface-surface-brand-2, #FFE2DA)!important;
+  font-size: 16px!important;
+  font-weight: 700!important;
+  color: #F54617 !important;
+  letter-spacing: -0.32px!important;
 }
 
 .btn-aquamarine:hover,

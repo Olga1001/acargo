@@ -10,6 +10,8 @@
   --text-text-primary: #1E1E1E;
   --surface-surface-1: #EEE;
   --Status-Compieted: #00E200;
+  --Status-Warning: #FFB03D;
+  --Color-Status-Blue: #64D9FF;
   --text-text-secondary: #757575;
   --text-text-third: #BDBDBD;
   --border-border-0: #EEE;
@@ -212,6 +214,12 @@ a {
 
 a:hover {
   color: var(--orange-new, #F45617);
+}
+a:hover svg:not([class*="stroke"]) {
+  fill: var(--orange-new, #F45617)!important;
+}
+a:hover svg:has([class*="stroke"]) {
+  stroke: var(--orange-new, #F45617)!important;
 }
 
 a[href^="tel"] {
@@ -1110,7 +1118,7 @@ button:focus {
 .select__option.active svg {
   fill: #109cf1;
 }
-
+.select.arrow_small:before,
 .select__two:before {
   right: 5px;
   background-size: 10px;
@@ -4205,27 +4213,27 @@ button:focus {
 }
 
 .weight-extraBold {
-  font-weight: 800;
+  font-weight: 800!important;
 }
 
 .weight-bold {
-  font-weight: 700;
+  font-weight: 700!important;
 }
 
 .weight-semi {
-  font-weight: 600;
+  font-weight: 600!important;
 }
 
 .weight-medium {
-  font-weight: 500;
+  font-weight: 500!important;
 }
 
 .weight-normal {
-  font-weight: 400;
+  font-weight: 400!important;
 }
 
 .weight-light {
-  font-weight: 300;
+  font-weight: 300!important;
 }
 
 .bl-0 {
@@ -4327,12 +4335,20 @@ button:focus {
   border-color: var(--orange-new, #F45617) !important;
 }
 
+.b-orange-ffb {
+  border-color: var(--Status-Warning, #FFB03D);
+}
+
 .b-orange-40 {
   border-color: rgba(235, 94, 19, 0.40) !important;
 }
 
 .b-blue {
   border-color: #109CF1 !important;
+}
+
+.b-blue-64 {
+  border-color: var(--Color-Status-Blue, #64D9FF);
 }
 
 .b-blue_v2 {
@@ -11789,7 +11805,7 @@ p.c-green {
   position: relative;
   display: flex;
   align-items: center;
-  width: 100%
+  width: 100%;
 }
 
 .way2.big {
@@ -12071,6 +12087,9 @@ p.c-green {
 
 .shadow15 {
   box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.10);
+}
+.shadow16 {
+  box-shadow: 0px 0px 7px 0px rgba(0, 0, 0, 0.15);
 }
 
 .h-7 {
@@ -15452,7 +15471,6 @@ p.c-green {
   box-shadow: 0px 0px 17px rgba(21, 108, 228, 0.2);
   border-color: #156CE4;
 }
-
 .hover-b:hover:before {
   border-color: var(--orange-new, #F45617);
 }
@@ -15630,6 +15648,13 @@ p.c-green {
   background-color: #fff !important;
   border-color: var(--orange-new, #F45617) !important;
   color: var(--orange-new, #F45617) !important;
+}
+.hover-white:hover svg:not([class*="stroke"]) {
+  fill: var(--orange-new, #F45617) !important;
+}
+.hover-white:hover svg:has([class*="stroke"]) {
+  fill: none!important;
+  stroke: var(--orange-new, #F45617) !important;
 }
 
 .hover-gray:hover {
@@ -16482,7 +16507,7 @@ p.c-green {
 
 .data-calendar_table table td p,
 .data-calendar_table table th p {
-  border: 1px solid transparent;
+  border-left: 1px solid transparent;
   width: 100%;
   line-height: 26px;
 }
@@ -16708,14 +16733,14 @@ p.c-green {
 }
 
 .logistick-info {
-  padding: 2.5px 18px;
-  transition: all 0.3s ease;
-  min-width: 120px;
+  padding: 8px 16px;
+  transition: all 0.2s ease;
+  cursor: pointer;
 }
 
 .logistick-info:hover,
 .logistick-info.active {
-  background: #FFF;
+  background: var(--surface-surface-bg, #FFF);
   box-shadow: 0px 0px 8px 0px rgba(40, 46, 59, 0.16);
 }
 
@@ -19360,10 +19385,6 @@ input+.autocomplete {
     padding-bottom: 8px
   }
 
-  .logistick-info {
-    min-width: 100px;
-  }
-
   .h_100vh-325 {
     height: calc(100vh - 238px);
   }
@@ -20363,7 +20384,6 @@ input+.autocomplete {
 
   .block {
     font-size: 12px;
-    line-height: 11px;
   }
 
   .icon-fcl {

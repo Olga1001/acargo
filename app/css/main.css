@@ -803,9 +803,8 @@ button:focus {
   border: solid 1px #b7bcd6;
 }
 
-.select:focus,
-.select.active {
-  border-color: var(--orange-new, #F45617);
+.select:focus {
+  border-color: var(--orange-new, #F45617)!important;
 }
 
 .select:focus .select__item,
@@ -886,18 +885,56 @@ button:focus {
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
 }
-
-.select.active .select__icon {
+.select__icon {
+  flex-shrink: 0;
+}
+.select.isvalid .select__icon,
+.select.isfocus .select__icon {
   background-color: var(--orange-new, #F45617) !important;
 }
+.select.isfocus {
+  border-color: var(--orange-new, #F45617) !important;
+}
 
-.select.active .select__icon svg.stroke-69 {
+.select.isvalid .select__icon svg:has([class*="stroke"]),
+.select.isfocus .select__icon svg:has([class*="stroke"]) {
   stroke: #fff !important;
 }
 
-.select.active .select__icon svg.c-gray-69 {
+.select.isvalid .select__icon svg:not([class*="stroke"]),
+.select.isfocus .select__icon svg:not([class*="stroke"])  {
   fill: #fff !important;
 }
+.select.isvalid .hover {
+  opacity: 1;
+  pointer-events: auto;
+  color: var(--orange-new, #F45617) !important;
+}
+.select[disabled] {
+  cursor: no-drop;
+  opacity: 1;
+  border: var(--spacing-spacing-none, 1px) solid var(--border-border-0, #EEE)!important;
+}
+.select[disabled] * {
+  cursor: no-drop;
+  pointer-events: none;
+}
+
+.select[disabled] .select__icon {
+  background: var(--surface-surface-2, #E0E0E0)!important;
+}
+.select[disabled] .select__icon svg:has([class*="stroke"]) {
+  stroke: #BDBDBD !important;
+}
+
+.select[disabled] .select__icon svg:not([class*="stroke"]) {
+  fill: #BDBDBD !important;
+}
+
+.select[disabled] input::placeholder {
+  color: var(--text-text-third, #BDBDBD);
+}
+
 
 .select__drop {
   position: absolute;

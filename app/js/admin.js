@@ -132,6 +132,31 @@ $(document).ready(function () {
   $(".select__item").click(function (e) {
     $(this).closest(".select").toggleClass('active').find(".select__drop").first().slideToggle(300).parents().siblings().find(".select").removeClass('active').find(".select__drop").slideUp(300);
   });
+  $(".select__item").on('input change', function(e) {
+    console.log($(this).val())
+    if ($(this).closest(".select").find('.select__icon')) {
+      if ($(this).val() != '') {
+        $(this).closest(".select").addClass('isvalid')
+      } else {
+        $(this).closest(".select").removeClass('isvalid')
+      }
+    }
+  }).on('focus', function(e) {
+    if ($(this).closest(".select").find('.select__icon')) {
+      $(this).closest(".select").addClass('isfocus')
+    }
+  }).on('blur', function(e) {
+    if ($(this).closest(".select").find('.select__icon')) {
+      $(this).closest(".select").removeClass('isfocus')
+    }
+  })
+
+  $("form").on("reset", function() {
+    $(this).find(".select__item").each(function() {
+        $(this).closest(".select").removeClass('isvalid');
+    });
+  });
+
   $(".link-share").click(function (e) {
     e.preventDefault();
     $(this).find(".select-absolut").slideToggle(300).parents().siblings().find(".select-absolut").slideUp(300);

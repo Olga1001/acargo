@@ -302,7 +302,7 @@ textarea:-ms-input-placeholder {
   width: 100%;
   z-index: 9999;
   background: #1E1E1E;
-  padding: 0 20px;
+  padding: 0 24px;
   min-height: 60px;
 }
 
@@ -909,6 +909,9 @@ button:focus {
   opacity: 1;
   pointer-events: auto;
   color: var(--orange-new, #F45617) !important;
+}
+.select.isvalid:before {
+  content: none;
 }
 .select[disabled] {
   cursor: no-drop;
@@ -14994,6 +14997,24 @@ p.c-green {
   border-radius: 50%;
 }
 
+.count-message_2 {
+  border-radius: 100px;
+  background: var(--surface-surface-brand, #F54617);
+  padding: 0 3px;
+  color: var(--surface-surface-bg, #FFF);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 16px;
+  position: absolute;
+  left: 50%;
+  top: 3px;
+}
+.count-message_2.wh-10 {
+  left: calc(50% + 2px);
+  top: 5.5px;
+}
+
 .ticks {
   position: absolute;
   top: 0;
@@ -16049,7 +16070,7 @@ p.c-green {
 }
 
 .currenty .select .select__item {
-  padding-left: 11px !important;
+  padding-left: 11px;
   width: 70px;
   font-size: 14px;
   line-height: 33px;
@@ -16542,7 +16563,7 @@ p.c-green {
   line-height: 28px;
   text-align: center;
   padding: 0;
-  margin: 3.5px 8.5px;
+  margin: 2.5px 8.5px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -16554,9 +16575,13 @@ p.c-green {
 
 .data-calendar_table table td p,
 .data-calendar_table table th p {
-  border-left: 1px solid transparent;
+  border-left: 2px solid transparent;
   width: 100%;
   line-height: 26px;
+}
+.data-calendar_table table td p.bg-orange-f4,
+.data-calendar_table table th p.bg-orange-f4 {
+  border-right: 2px solid transparent!important;
 }
 
 .data-calendar_table table td.action p {
@@ -16628,6 +16653,7 @@ p.c-green {
   color: #fff !important;
   position: relative;
   z-index: 2;
+  border-right: 2px solid transparent;
 }
 
 .data-calendar td.start:before,
@@ -18942,7 +18968,7 @@ input+.autocomplete {
 
   .data-calendar_table table td,
   .data-calendar_table table th {
-    margin: 3.5px 7px;
+    margin: 2.5px 7px;
   }
 
   .data-calendar_table-container td:first-child:not(.active),

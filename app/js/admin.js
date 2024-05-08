@@ -176,6 +176,14 @@ $(document).ready(function () {
     $(this).closest(".select").find(".select__item__color").find("div").addClass(colorOption);
     $(this).closest(".select__drop").slideUp(300);
     $(this).closest(".select").removeClass('active');
+
+    if ($(this).closest(".select").find('.select__icon')) {
+      if ($(this).closest(".select").find('.select__item').val() != '') {
+        $(this).closest(".select").addClass('isvalid')
+      } else {
+        $(this).closest(".select").removeClass('isvalid')
+      }
+    }
   });
   $(".select__option-check").click(function () {
     $(this).toggleClass('active');

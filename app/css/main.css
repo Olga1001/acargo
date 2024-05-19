@@ -896,15 +896,17 @@ button:focus {
   border-color: var(--orange-new, #F45617) !important;
 }
 
-.select.isvalid .select__icon svg:has([class*="stroke"]),
-.select.isfocus .select__icon svg:has([class*="stroke"]) {
-  stroke: #fff !important;
-}
-
 .select.isvalid .select__icon svg:not([class*="stroke"]),
 .select.isfocus .select__icon svg:not([class*="stroke"])  {
-  fill: #fff !important;
+  fill: #fff!important;
 }
+
+.select.isvalid .select__icon svg[class*="stroke"],
+.select.isfocus .select__icon svg[class*="stroke"] {
+  fill: none!important;
+  stroke: #fff!important;
+}
+
 .select.isvalid .hover {
   opacity: 1;
   pointer-events: auto;
@@ -19052,6 +19054,9 @@ input+.autocomplete {
 
   .w-150_1440 {
     width: 150px !important;
+  }
+  .w-130_1440 {
+    width: 130px !important;
   }
 
   #dash_calendar .get-height {

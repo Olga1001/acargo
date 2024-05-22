@@ -1,0 +1,1238 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+  <head>
+    <meta charset="utf-8">
+    <title>Freight schedule</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="../css/libs.min.css" rel="stylesheet">
+    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <link href="../css/style.css" rel="stylesheet">
+
+    <link href="../css/main.css" rel="stylesheet">
+  </head>
+  <body id="page-top">
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <header class="header flex-between-center ">
+        <div class="items-center">
+            <a href="#" class="logo pb-1">
+                <img src="../img/logo/сargo4s-logo.svg" alt="logo Acargo">
+            </a>
+            <nav class="nav-menu ml-3">
+                <ul class="menu-row d-flex">
+                    <li class="menu-list"><a href="#" class="mune-item">Dashboard</a></li>
+                    <li class="menu-list relative">
+                        <a href="#" class="mune-item">Orders</a>
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates </a></li>
+                                <li><a href="#" class="mr-4">Transport rates </a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list relative ">
+                        <a href="#" class="mune-item">Rate (18)</a>
+                        <div class="menu-dropdown">
+                            <ul class="d-flex">
+                                <li><a href="#" class="mr-4">Rates (1134)</a></li>
+                                <li><a href="#" class="mr-4">Transport rates (284) </a></li>
+                                <li><a href="#" class="mr-4">Requests (858)</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="menu-list"><a href="#" class="mune-item">Shipment</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Public</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                    <li class="menu-list"><a href="#" class="mune-item">Finance</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="items-center">
+            <div class="items-center py-1">
+                <form class="form-search ml-3 relative">
+                    <div class="form-search_content">
+                        <input type="text" placeholder="Search file">
+                        <button type="button">
+                            <svg class="svg-sprite-icon c-white" width="16px" height="16px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#search3"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
+                <div class="currenty mx-4">
+                    <div class="select h-100 no-arrow">
+                        <div class="select__item c-white text-center px-0">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu bg-black-1e">
+                                <li class="select__option c-white active">USD</li>
+                                <li class="select__option c-white">EUR</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price c-white">1,35 EUR</div>
+                </div>
+            </div>
+            <div class="items-center">
+                <div class="dropdown no-arrow right-sticky mx-1">
+                    <a href="#" class="p-2 dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-white" width="18px" height="19px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                        </svg>
+                        <div class="count-message_2">99+</div>
+                    </a>
+
+                    <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                        <div class="flex-between-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">To-do list</h6>
+                            <div class="items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-orange weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                        assign ...</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                        <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-navy-blue weight-medium">-2 days </span>
+                                    </span>
+                                </span>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown no-arrow right-sticky mx-1">
+                    <a href="#" class="dropdown-toggle p-2" id="messagesDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-white" width="19px" height="19px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#chatTeardropDots2"></use>
+                        </svg>
+                        <div class="count-message_2">15</div>
+                    </a>
+                    
+
+                    <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="messagesDropdown">
+                        <div class="flex-between-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                            <div class="items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <div class="p-2">
+                                <div class="px-1">
+                                    <input type="text" class="input-search py-2 h-auto b-blue-v3">
+                                </div>
+                            </div>
+                            <ul>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 flex-between-center">
+                                        <div class="items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2 b-1 b-blue">
+                                    <div class="p-1 flex-between-center">
+                                        <div class="items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small bg-gray"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 flex-between-center">
+                                        <div class="items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 flex-between-center">
+                                        <div class="items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small bg-gray"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                                <li class="dropdown-item p-2">
+                                    <div class="p-1 flex-between-center">
+                                        <div class="items-center">
+                                            <div class="avatar small mr-3">
+                                                <!--                                                <img src="../img/users.svg" alt="avatar">-->
+                                                <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                <div class="online-user small"></div>
+                                            </div>
+                                            <div>
+                                                <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                            </div>
+                                        </div>
+                                        <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown no-arrow mx-1 right-sticky">
+                    <a href="#" class="dropdown-toggle p-2" id="alertsDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-white" width="18px" height="20px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#notification-3"></use>
+                        </svg>
+                        <div class="count-message_2 wh-10"></div>
+                    </a>
+                 
+                    <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                        <div class="flex-between-center px-1 py-2 bg-blue-v6">
+                            <h6 class="px-2 fs-14 weight-medium c-blue ">Notifications</h6>
+                            <div class="items-center px-2">
+                                <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                </svg>
+                                <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                    <use xlink:href="../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="h-dropdown">
+                            <a class="dropdown-item p-2 c-dark " href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                        selected ...</span>
+                                    <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                        <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-gray">1day ago</span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item p-2 c-dark b-1 b-blue" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                        selected ...</span>
+                                    <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                        <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-gray">1day ago</span>
+                                    </span>
+                                </span>
+                            </a>
+                            <a class="dropdown-item p-2 c-dark bg-light_v10" href="#">
+                                <span class="px-1 d-block">
+                                    <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                        selected ...</span>
+                                    <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                    <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                    <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                        <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                        <span class="c-gray">1day ago</span>
+                                    </span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown no-arrow ml-1">
+                    <a href="#" class="p-2 dropdown-toggle" id="userDropdown" role="button" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <svg class="svg-sprite-icon c-white" width="20px" height="20px">
+                            <use xlink:href="../img/sprite/symbol/sprite.svg#userCircle"></use>
+                        </svg>
+                    </a>
+                    <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#user-4"></use>
+                            </svg>
+                            My profile
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                            </svg>
+                            Calendar
+                        </a>
+                        <a class="dropdown-item mb-2" href="#">
+                            <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                <use xlink:href="../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                            </svg>
+                            To-do list
+                        </a>
+                        <div class="row px-3 py-3 mt-1 mx-0">
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="items-center btn-manager active">
+                                    <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px"
+                                        height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px"
+                                        height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pr-2 mt-2">
+                                <a href="#" class="items-center btn-manager ">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px"
+                                        height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    Shipper
+                                </a>
+                            </div>
+                            <div class="col-6 pl-2 mt-2">
+                                <a href="#" class="items-center btn-manager">
+                                    <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px"
+                                        height="12px">
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#manager  "></use>
+                                    </svg>
+                                    .Client
+                                </a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+      </header>
+      <div class="d-flex flex-column w-100 " id="content-wrapper">
+        <div id="content">
+          <div class="container-fluid px-3 pt-3 bg-gray-e0" id="container-wrapper">
+            <div id="box">
+                <div class="bg-white">
+                    <div class="p-3">
+                        <h1 class="fs-18 weight-medium mb-1 pt-3">Freight schedule</h1>
+                        
+                        <div class="d-flex justify-content-between fs-14">
+                            <div class="d-flex radio_v1 mt-1 mr-4">
+                                <label>
+                                    <input type="radio" name="radio" class="checkbox" checked>
+                                    <span>Month</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio" class="checkbox">
+                                    <span>Week</span>
+                                </label>
+                            </div>
+                            <div class="items-center mt-1 mr-auto">
+                                <button type="button" class="btn bg-none hover-bg-orange b-0 p-1 mx-2 br-4">
+                                    <svg class="svg-sprite-icon" width="4.5px" height="9px" >
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#arrow-left-6"></use>
+                                    </svg>
+                                </button>
+                                <p>May 2024</p>
+                                <button type="button" class="btn bg-none hover-bg-orange b-0 p-1 mx-2 br-4">
+                                    <svg class="svg-sprite-icon scale-x" width="4.5px" height="9px" >
+                                        <use xlink:href="../img/sprite/symbol/sprite.svg#arrow-left-6"></use>
+                                    </svg>
+                                </button>
+                            </div>
+                            <div class="d-flex radio_v1 mt-1 mr-4">
+                                <label>
+                                    <input type="radio" name="radio_v2" class="checkbox">
+                                    <span>Cut-off</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio_v2" class="checkbox">
+                                    <span>ETD</span>
+                                </label>
+                                <label>
+                                    <input type="radio" name="radio_v2" class="checkbox">
+                                    <span>ETA</span>
+                                </label>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="h-calc_1 px-3 pb-3" data-index="0">
+                        <table class="w-100 table-b-gray-eb valign-middle fs-14" style="table-layout: fixed;">
+                            <tr class="text-center sticky">
+                                <th class="p-2 bg-gray-f5 w-100px"></th>
+                                <th class="p-2 bg-gray-f5">
+                                    Monday
+                                    <p class="fs-12 c-gray-75">(29.04)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Tuesday
+                                    <p class="fs-12 c-gray-75">(30.04)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Wednesday
+                                    <p class="fs-12 c-gray-75">(01.05)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Thursday
+                                    <p class="fs-12 c-gray-75">(02.05)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Friday
+                                    <p class="fs-12 c-gray-75">(03.05)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Saturday
+                                    <p class="fs-12 c-gray-75">(04.05)</p>
+                                </th>
+                                <th class="p-2 bg-gray-f5">Sunday
+                                    <p class="fs-12 c-gray-75">(05.05)</p>
+                                </th>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">All day</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="px-1">
+                                        <p class="bl-3 mb-2 bg-light-ee b-blue-23 p-2 _1441_pl-3">Depart <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 mb-2 bg-light-ee b-blue-23 p-2 _1441_pl-3">Depart <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 mb-2 bg-light-ee b-blue-23 p-2 _1441_pl-3">Depart <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 mb-2 bg-light-ee b-blue-23 p-2 _1441_pl-3">Depart <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 mb-2 bg-light-ee b-blue-23 p-2 _1441_pl-3">Depart <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 mb-2 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 mb-2 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="px-1">
+                                        <p class="bl-3 bg-light-ee b-green-51 p-2 _1441_pl-3">Arrive <span class="fs-13 c-gray-75">(OR3615)</span> </p>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">8:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1">
+                                        <p class="bl-3 mb-2 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">SVN20029007/32801707</span>
+                                        </p>
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">SVN20029007/ 32801707</span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">9:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">10:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">11:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">12:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1">
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                     </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">13:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">14:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">15:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">16:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> 
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">17:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1">
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                     </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">18:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">19:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">20:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">21:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> 
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">22:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1">
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                     </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">23:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">24:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">01:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">02:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> 
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">03:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">04:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">05:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="p-2 bg-gray-f5 w-100px text-center h-35">06:00</td>
+                                <td class="p-2 b-1 b-gray-eb ">
+                                    <div class="_1441_px-1"></div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> 
+                                        <p class="bl-3 bg-light-ee b-orange-ffb p-2 _1441_pl-3">
+                                            Cut-off: <span class="c-gray-75 fs-13">YMFKLP0027353</span>
+                                        </p>
+                                    </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                                <td class="p-2 b-1 b-gray-eb">
+                                    <div class="_1441_px-1"> </div>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <div class="get-height pt-3" data-index="0"></div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <script src="../vendor/sticky/jquery.sticky.js"></script>
+    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <script src="../js/scripts.js"></script>
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

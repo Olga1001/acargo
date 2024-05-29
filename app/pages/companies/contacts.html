@@ -657,13 +657,13 @@
                     </div>
                </div>
                <div class="h-calc_1">
-                    <div class="collapse row p-3 mx-0 fs-14" id="gridTable" data-name="gridLine-table">
+                    <div class="collapse row p-3 mx-0 fs-14 show" id="gridTable" data-name="gridLine-table">
                         <div class="col-3 col-4_1440 col-6_1280 p-2">
                             <div class="py-2 px-3 bg-white relative h-100">
                                 <div class="items-center pb-2 text-truncate-all">
                                     <label class="d-flex mr-2 flex-shrink-0">
                                         <input type="checkbox" class="checkbox" checked>
-                                        <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                        <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="1px" height="14px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
                                         </svg>
                                     </label>
@@ -1100,20 +1100,37 @@
                             </div>
                         </div>
                     </div>
-                    <ul class="collapse bg-white show text-truncate-all" id="lineTable" data-name="gridLine-table">
+                    <ul class="collapse bg-white " id="lineTable" data-name="gridLine-table">
                         <li class="d-flex shadow15 sticky-top bg-gray-f5 bt-1 fs-16 weight-medium py-3">
                             <div class="px-4 px-2_1440 items-end max-350 w-100">
-                                <label class="_1441_mx-3 pr-3 flex-shrink-0">
+                                <label class="_1441_mx-3 px-3 flex-shrink-0 mr-1">
                                     <input type="checkbox" class="checkbox">
-                                    <span class="checked-customer dark small _1441_ml-3">
+                                    <span class="checked-customer dark small">
                                         <svg class="svg-sprite-icon c-white m-auto" width="12px" height="12px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                         </svg>
                                     </span>
                                 </label>
-                                <div class="pl-1 _1441_ml-2 w-100">
+                                <div class="_1441_ml-2 w-100 relative">
                                     <p class="mb-3">Company</p>
                                     <input type="text" placeholder="Name" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company3
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="px-4 px-2_1440 max-w-230 w-100">
@@ -1122,8 +1139,8 @@
                                     <input type="text" placeholder="Select" class="select__item input_customer bg-white placeholder-italic ">
                                     <div class="select__drop">
                                         <ul class="select__menu">
-                                            <li class="select__option active">">Select</li>
-                                            <li class="select__option">">Select 2</li>
+                                            <li class="select__option active">Select</li>
+                                            <li class="select__option">Select 2</li>
                                         </ul>
                                     </div>
                                 </div>
@@ -1141,31 +1158,126 @@
                                 </div>
                             </div>
                             <div class="px-4 px-2_1440 max-250 w-100">
-                                <p class="mb-3">Email</p>
-                                <input type="text" placeholder="Email" class="input_customer bg-white placeholder-italic">
+                                <div class="relative">
+                                    <p class="mb-3">Email</p>
+                                    <input type="text" placeholder="Email" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Company3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="px-4 px-2_1440 max-w-210 w-100">
-                                <p class="mb-3">Phone</p>
-                                <input type="text" placeholder="Phone" class="input_customer bg-white placeholder-italic">
+                                <div class="relative">
+                                    <p class="mb-3">Phone</p>
+                                    <input type="text" placeholder="Phone" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Phone
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Phone
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Phone
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="px-4 px-2_1440 max-310 w-100">
-                                <p class="mb-3">Adress</p>
-                                <input type="text" placeholder="Search address" class="input_customer bg-white placeholder-italic">
+                                <div class="relative">
+                                    <p class="mb-3">Adress</p>
+                                    <input type="text" placeholder="Search address" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                address
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                address2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                address3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="px-4 px-2_1440 max-w-210 w-100">
-                                <p class="mb-3">Contact Person</p>
-                                <input type="text" placeholder="Search person" class="input_customer bg-white placeholder-italic">
+                                <div class="relative">
+                                    <p class="mb-3">Contact Person</p>
+                                    <input type="text" placeholder="Search person" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Contact Person
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Contact Person3
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Contact Person3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                             <div class="px-4 px-2_1440 max-w-230 w-100">
-                                <p class="mb-3">Tags</p>
-                                <input type="text" placeholder="Search tags" class="input_customer bg-white placeholder-italic">
+                                <div class="relative">
+                                    <p class="mb-3">Tags</p>
+                                    <input type="text" placeholder="Search tags" class="input_customer bg-white placeholder-italic">
+                                    <ul class="autocomplete mt-2">
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Tags
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Tags2
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#" class="p-1 bb-1 d-block">
+                                                Tags3
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
                             </div>
                         </li>
-                        <li class="b-05 focus_row relative">
-                            <div class="items-center py-2 focus_row_item">
+                        <li class="b-05 focus_row relative text-truncate-all">
+                            <div class="items-center py-2 focus_row_item hover-bg-light">
                                 <div class="px-4 px-2_1440 items-center max-350 w-100">
-                                    <button type="buttin" class="collapsed-arrow collapsed" data-target="#dropCompany1" data-toggle="collapse">
-                                        <svg class="svg-sprite-icon c-gray-75 mr-3" width="16px" height="14px">
+                                    <button type="buttin" class="collapsed-arrow collapsed py-2 mr-3" data-target="#dropCompany1" data-toggle="collapse">
+                                        <svg class="svg-sprite-icon c-gray-75" width="16px" height="14px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"> </use>
                                         </svg>
                                     </button>
@@ -1220,7 +1332,7 @@
                                     </a>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-w-210 w-100">
-                                    <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-1">
+                                    <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
                                     <p class="fs-14 weight-medium c-gray-75">Julia Martinsartinsartins</p>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-w-230 w-100 fs-14 lh-1_5 c-gray-75 weight-medium">
@@ -1228,15 +1340,135 @@
                                     <p class="bg-light-ee px-1 my-1 mr-2">New Client</p>
                                 </div>
                             </div>
-                            <div class="collapse" id="dropCompany1">
-                                11
-                            </div>
+                            <ul class="collapse pb-4" id="dropCompany1">
+                                <li class="bb-1">
+                                    <div class="w-89vw row fs-13 weight-medium mx-auto">
+                                        <div class="col-10">
+                                            <div class="row py-2">
+                                                <div class="col-2">Name</div>
+                                                <div class="col-2">Company</div>
+                                                <div class="col-2">Email</div>
+                                                <div class="col-2">Phone</div>
+                                                <div class="col-2">Status</div>
+                                                <div class="col-2">Actions</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
+                                                <p>Julia Martinsartin</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:james@baltvia.com" class="underline fs-14 weight-medium">james@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">IT specialist</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
+                                                <p>James Powell</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:jauliamart@baltvia.com" class="underline fs-14 weight-medium">jauliamart@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">Consultant</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <div class="wh-20 br-50 b-1 b-gray-bd bg-light-ffe fs-8 c-orange-f4 weight-bold d-flex mr-2">
+                                                    <p class=" m-auto d-block">AD</p>
+                                                </div>
+                                                <p>Antanas Daunoravičius</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:jauliamart@baltvia.com" class="underline fs-14 weight-medium">jauliamart@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">Consultant</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
-                        <li class="b-05 focus_row relative">
-                            <div class="items-center py-2 focus_row_item">
+                        <li class="b-05 focus_row relative text-truncate-all">
+                            <div class="items-center py-2 focus_row_item hover-bg-light">
                                 <div class="px-4 px-2_1440 items-center max-350 w-100">
-                                    <button type="buttin" class="collapsed-arrow collapsed" data-target="#dropCompany2" data-toggle="collapse">
-                                        <svg class="svg-sprite-icon c-gray-75 mr-3" width="16px" height="14px">
+                                    <button type="buttin" class="collapsed-arrow collapsed py-2 mr-3" data-target="#dropCompany2" data-toggle="collapse">
+                                        <svg class="svg-sprite-icon c-gray-75" width="16px" height="14px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"> </use>
                                         </svg>
                                     </button>
@@ -1249,14 +1481,14 @@
                                         </span>
                                     </label>
                                     <label class="d-flex mr-2 flex-shrink-0">
-                                        <input type="checkbox" class="checkbox" checked="">
+                                        <input type="checkbox" class="checkbox">
                                         <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="16px" height="14px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
                                         </svg>
                                     </label>
-                                    <p class="mr-2 pl-1 fs-16 weight-medium">Compaqpeat SIA</p>
+                                    <p class="mr-2 pl-1 fs-16 weight-medium">Cargo4S UAB</p>
                                     <svg class="svg-sprite-icon c-gray-75" width="20px" height="20px">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#building-office-solid"></use>
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#office-building5"></use>
                                     </svg>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-w-230 w-100">
@@ -1267,7 +1499,7 @@
                                     <p>Client</p>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-250 w-100">
-                                    <a href="mailto:jhonmore@cargo4s.com" class="underline fs-14 weight-medium">jhonmore@cargo4s.com</a>
+                                    <a href="mailto:info@cargo4s.com" class="underline fs-14 weight-medium">info@cargo4s.com</a>
                                     <a href="#" class="ml-3 flex-shrink-0">
                                         <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
@@ -1283,7 +1515,7 @@
                                     </a>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-310 w-100">
-                                    <p>Taikos pr. 61, Klaipėda</p>
+                                    <p>Ukmergės g. 240, Vilnius</p>
                                     <a href="#" class="ml-3 flex-shrink-0">
                                         <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
                                             <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
@@ -1291,7 +1523,7 @@
                                     </a>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-w-210 w-100">
-                                    <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-1">
+                                    <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
                                     <p class="fs-14 weight-medium c-gray-75">Julia Martinsartinsartins</p>
                                 </div>
                                 <div class="px-4 px-2_1440 items-center max-w-230 w-100 fs-14 lh-1_5 c-gray-75 weight-medium">
@@ -1299,9 +1531,129 @@
                                     <p class="bg-light-ee px-1 my-1 mr-2">New Client</p>
                                 </div>
                             </div>
-                            <div class="collapse" id="dropCompany2">
-                                11
-                            </div>
+                            <ul class="collapse pb-4" id="dropCompany2">
+                                <li class="bb-1">
+                                    <div class="w-89vw row fs-13 weight-medium mx-auto">
+                                        <div class="col-10">
+                                            <div class="row py-2">
+                                                <div class="col-2">Name</div>
+                                                <div class="col-2">Company</div>
+                                                <div class="col-2">Email</div>
+                                                <div class="col-2">Phone</div>
+                                                <div class="col-2">Status</div>
+                                                <div class="col-2">Actions</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
+                                                <p>Julia Martinsartin</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:james@baltvia.com" class="underline fs-14 weight-medium">james@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">IT specialist</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <img src="../../img/avatars/avatar.png" alt="avatar" class="b-1 br-50 b-gray-75 wh-20 mr-2">
+                                                <p>James Powell</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:jauliamart@baltvia.com" class="underline fs-14 weight-medium">jauliamart@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">Consultant</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="w-89vw row mx-auto bb-1">
+                                    <div class="col-10">
+                                        <div class="row py-2">
+                                            <div class="col-2 items-center">
+                                                <div class="wh-20 br-50 b-1 b-gray-bd bg-light-ffe fs-8 c-orange-f4 weight-bold d-flex mr-2">
+                                                    <p class=" m-auto d-block">AD</p>
+                                                </div>
+                                                <p>Antanas Daunoravičius</p>
+                                            </div>
+                                            <div class="col-2">Baltvia UAB</div>
+                                            <div class="col-2 items-center">
+                                                <a href="mailto:jauliamart@baltvia.com" class="underline fs-14 weight-medium">jauliamart@baltvia.com</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2 items-center">
+                                                <a href="tel:74905677888" class="underline fs-14 weight-medium">+7 490 567 78 88</a>
+                                                <a href="#" class="ml-3 flex-shrink-0">
+                                                    <svg class="svg-sprite-icon c-black-1e " width="12px" height="12px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#copy2"></use>
+                                                    </svg>
+                                                </a>
+                                            </div>
+                                            <div class="col-2">Consultant</div>
+                                            <div class="col-2">
+                                                <button type="button" class="block c-orange-f4 items-center bg-light-ffe">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="22px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots"></use>
+                                                    </svg>Start Chat
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
                         </li>
                     </div>
                 </div>

@@ -498,8 +498,10 @@ $$el('[data-script-padding]').forEach(item => {
   }
 })
 
-$$el('.h-calc_1').forEach(el => {
-  setHeight(el, el.dataset.index)
+window.addEventListener('DOMContentLoaded', () => {
+  $$el('.h-calc_1').forEach(el => {
+    setHeight(el, el.dataset.index)
+  })
 })
 
 document.addEventListener('click', (e) => {

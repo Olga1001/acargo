@@ -115,6 +115,13 @@ $(document).ready(function () {
   });
 });
 $(document).ready(function () {
+  $('[data-toggle="collapse"]').click(function (e) {
+    console.log($(this).closest('.focus_row'))
+    if ( $(this).closest('.focus_row').length > 0) {
+      $(this).closest('.focus_row').find('.focus_row_item').toggleClass('bg-light-ffe')
+     
+    }
+  })
   $('.select__drop [data-toggle="collapse"], .relative > [data-toggle="collapse"]').click(function (e) {
     console.log(this)
 
@@ -177,7 +184,8 @@ $(document).ready(function () {
     $(this).closest(".select__drop").slideUp(300);
     $(this).closest(".select").removeClass('active');
 
-    if ($(this).closest(".select").find('.select__icon')) {
+    if ($(this).closest(".select").find('.select__icon').length > 0) {
+      console.log($(this).closest(".select").find('.select__icon'))
       if ($(this).closest(".select").find('.select__item').val() != '') {
         $(this).closest(".select").addClass('isvalid')
       } else {

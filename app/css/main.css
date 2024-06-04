@@ -2419,7 +2419,7 @@ button:focus {
   justify-content: center;
   align-items: center;
   text-align: center;
-  border-radius: 0;
+  border-radius: 4px;
   outline: none;
   box-shadow: none;
 }
@@ -2538,6 +2538,7 @@ button:focus {
   display: inline-block;
   letter-spacing: -0.3px;
   position: relative;
+  border-radius: 4px;
 }
 
 .btn.small {
@@ -2568,7 +2569,7 @@ button:focus {
   min-width: 107px;
   text-align: center;
   box-shadow: none !important;
-  border-radius: 0 !important;
+  border-radius: 4px !important;
   border: none;
   transition: all 0.2s ease;
 }
@@ -2635,6 +2636,7 @@ button:focus {
   font-size: 15px;
   line-height: 22px;
   letter-spacing: -0.3px;
+  border-radius: 4px;
 }
 
 .btn-blue {
@@ -2889,6 +2891,22 @@ button:focus {
 .valid {
   background: url('../img/check-green.svg') no-repeat right 12px center / 16px;
   border-color: #49ddaa
+}
+.nav.disabled {
+  opacity: 1;
+}
+.nav.disabled a.active {
+  border-color: #757575!important;
+}
+.nav.disabled a {
+  color: #BDBDBD!important;
+}
+.nav.disabled svg:not([class*="stroke"]) {
+  fill: #BDBDBD!important;
+}
+.nav.disabled svg:has([class*="stroke"]) {
+  fill: none!important;
+  stroke: #BDBDBD!important;
 }
 
 .disabled {

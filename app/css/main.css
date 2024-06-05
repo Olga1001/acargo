@@ -18531,6 +18531,19 @@ input+.autocomplete {
   border-color: var(--border-border-brand, #F54617)!important;
   box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
 }
+
+.hover-card_v2:hover {
+  box-shadow: none;
+  border: 1px solid var(--border-border-brand, #F54617)!important;
+  color: var(--text-text-brand, #F54617)!important;
+}
+.hover-card_v2:hover svg:not([class*="stroke"]) {
+  fill: var(--text-text-brand, #F54617)!important;
+}
+.hover-card_v2:hover svg:has([class*="stroke"]) {
+  stroke: var(--text-text-brand, #F54617)!important;
+}
+
 .radio_v1 label > span {
   border: 1px solid var(--border-border-1, #BDBDBD);
   color: var(--text-text-secondary, #757575);

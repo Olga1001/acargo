@@ -561,3 +561,8 @@ $$el('input[name="gridLine-table"]').forEach(radio => {
     }
   })
 })
+
+//auto changing the height of the text field
+function autoResize(textarea) {
+  textarea.style = `height: calc(${textarea.scrollHeight}px + 2px)!important`;
+}

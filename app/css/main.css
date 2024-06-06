@@ -562,6 +562,7 @@ textarea:active {
 textarea.bg-white-20:active {
   background-color: rgba(255, 255, 255, 0.2);
 }
+
 textarea:active~.name,
 textarea:focus~.name,
 textarea:valid~.name,
@@ -572,10 +573,43 @@ input:valid~.name {
   font-size: 13px;
   font-weight: 500;
 }
+
 textarea:active~.name,
 textarea:focus~.name,
 textarea:valid~.name {
   bottom: calc(100% - 1px);
+}
+
+input:active~.name.half,
+input:focus~.name.half,
+input:valid~.name.half,
+textarea:active~.name.half,
+textarea:focus~.name.half,
+textarea:valid~.name.half {
+  bottom: calc(100% + 2px);
+  transform: translateY(50%);
+}
+
+input:active~.name.half > span,
+input:focus~.name.half > span,
+input:valid~.name.half > span,
+textarea:active~.name.half > span,
+textarea:focus~.name.half > span,
+textarea:valid~.name.half > span {
+  background-color: #fff;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.name.half span ,
+.name.half {
+  transition: all 0.25s ease;
+  padding: 0 4px;
+  font-size: 16px;
+  font-weight: 400;
+}
+.name.half {
+  height: 100%;
 }
 
 .name.top {
@@ -884,6 +918,9 @@ button:focus {
   -webkit-transform: scale(1, -1);
   -ms-transform: scale(1, -1);
   transform: scale(1, -1);
+}
+.br-4 > .select__icon {
+  border-radius: 3px 0 0 3px;
 }
 .select__icon {
   flex-shrink: 0;
@@ -4499,10 +4536,6 @@ button:focus {
 
 .b-gray-92 {
   border-color: #929292 !important;
-}
-
-.b-gray-92-70 {
-  border-color: rgba(146, 146, 146, 0.7) !important;
 }
 
 .b-gray-b1 {
@@ -14371,7 +14404,7 @@ p.c-green {
 }
 
 .h-35 {
-  height: 35px;
+  height: 35px!important;
 }
 
 .wh-16 {
@@ -14407,6 +14440,11 @@ p.c-green {
 .wh-57 {
   width: 57px;
   height: 57px;
+}
+
+.wh-64 {
+  width: 64px;
+  height: 64px;
 }
 
 .wh-30 {
@@ -15671,6 +15709,7 @@ p.c-green {
 }
 .hover-bg-f5:hover {
   background: var(--surface-surface-0, #F5F5F5);
+  cursor: pointer;
 }
 
 .hover-shadow:hover {
@@ -15954,6 +15993,8 @@ p.c-green {
   letter-spacing: -0.26px;
   transition: all 0.3s ease;
   pointer-events: none;
+  display: flex;
+  align-items: center;
 }
 
 @keyframes blinker {
@@ -18076,13 +18117,13 @@ textarea.input_customer {
   line-height: 22px;
   /* 169.231% */
   letter-spacing: -0.26px;
-  padding: 2.5px 7px;
+  padding: 2.5px 8px;
   border-radius: 0;
   height: fit-content;
   min-width: 29px;
-  border: 1px solid #E9E9E9;
+  /* border: 1px solid #E9E9E9; */
   /* border: 1px solid #B1B1B1; */
-  border: 0.5px solid rgba(146, 146, 146, 0.70);
+  border: 1px solid #BDBDBD;
 }
 
 .meeting_is .hover-item {

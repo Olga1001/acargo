@@ -846,6 +846,10 @@ button:focus {
   color: #1E1E1E;
 }
 
+.select.active {
+  border-color: #F54617;
+}
+
 .select.small {
   height: 33px;
 }
@@ -1059,6 +1063,7 @@ button:focus {
   cursor: pointer;
   list-style-type: none;
   padding: 0 12px;
+  display: block;
 }
 
 .select__menu_2 .select__option {
@@ -1073,12 +1078,18 @@ button:focus {
 .select__option:hover,
 .hover__option:hover,
 .hover__option.active,
-.select__menu .active:not(.contents__item) {
+.select__menu .active:not(.contents__item, .btn) {
   /* background-color: #f5fbff; */
   background-color: rgba(235, 94, 19, 0.20);
   /* color: #109cf1; */
+  color: #1E1E1E;
 }
-
+.hover__option:hover svg:not([class*="stroke"]) {
+  fill: #1E1E1E!important;
+}
+.hover__option:hover svg:has([class*="stroke"]) {
+  stroke: #1E1E1E!important;
+}
 .select__menu_2 .select__option.active,
 .select__menu_2 .select__option:hover {
   background-color: var(--surface-surface-brand-2, #FFE2DA);

@@ -142,7 +142,7 @@ $(document).ready(function () {
   $(".select__item").on('input change', function(e) {
     console.log($(this).val())
     if ($(this).closest(".select").find('.select__icon')) {
-      if ($(this).val() != '') {
+      if ($(this).val() != '' || $(this).html() != '') {
         $(this).closest(".select").addClass('isvalid')
       } else {
         $(this).closest(".select").removeClass('isvalid')

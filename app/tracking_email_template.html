@@ -8,6 +8,49 @@
         <title>*|MC:SUBJECT|*</title>
         <style type="text/css">
             @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+            
+            
+            .btn {
+                transition: all 0.2s ease;
+                border-radius: 4px;
+                background: var(--surface-surface-brand, #F54617);
+                padding: 0 8px;
+                color: var(--text-text-invert, #FAFAFA);
+                font-family: Roboto;
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 17px;
+                letter-spacing: -0.26px;
+                text-decoration: none;
+                min-width: 100px;
+                display: block;
+                align-content: center;
+                box-sizing: border-box;
+            }
+            .btn.small {
+                min-width: 100px;
+                height: 25px;
+            }
+            
+            .btn[disabled] {
+                background-color: #F5F5F5!important;
+                color: #757575!important;
+                cursor: no-drop;
+            }
+            .btn:not([disabled]):hover {
+                background-color: #C52D05!important;
+            }
+            .btn:not([disabled]):focus {
+                background-color: #F54617!important;
+                font-size: 16px!important;
+                font-weight: 700!important;
+                letter-spacing: -0.32px!important;
+            }
+            .btn.small:not([disabled]):focus {
+                font-size: 14px!important;
+            }
+
             @media only screen and (max-width: 480px){
                 /* ===== TYPOGRAPHY ======== */
                 #bodyCell{padding: 0 !important;}
@@ -21,7 +64,6 @@
                 .w-25{width: 25px !important;}
                 .w-50{width: 50px !important;}
                 .w-75{width: 75px !important;}
-                .w-85{width: 85px !important;}
                 .w-100{width: 100px !important;}
                 .w-125{width: 125px !important;}
                 .w-140{width: 140px !important;}
@@ -232,6 +274,15 @@
                 .w-100{width: 100px !important;}                                    
                 .w-70{width: 70px !important;}                                    
                 /* ===== TYPOGRAPHY ======== */
+
+                /* ===== BTN ======== */
+                .btn.small {
+                    min-width: 85px;
+                    padding: 0 8px;
+                }
+                .btn.small:not([disabled]):focus {
+                    font-size: 12px!important;
+                }
             }
         </style>
     </head>
@@ -497,39 +548,8 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle"  class="w-85 f-11 h-18" width="100" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
-                                                                            Empty return
-                                                                        </a>
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                    </tr>
-                                                </table>
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
-                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
-                                                    <tr>
-                                                        <td align="left" valign="middle">
-                                                            <table border="0" cellspacing="0" cellpadding="0">
-                                                                <tr>
-                                                                    <td align="left" valign="middle" class="f-14 block" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; padding-right: 55px;">
-                                                                        24 Apr. 2020
-                                                                    </td>
-                                                                    <td align="center" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
-                                                                        Klaipeda,  Lithvinia,  LTKN
-                                                                    </td>
-                                                                </tr>
-                                                            </table>
-                                                        </td>
-                                                        <td align="right">
-                                                            <table border="0" cellspacing="0" cellpadding="0">
-                                                                <tr>
-                                                                    <td align="center" valign="middle" width="100"  class="w-85 f-11 h-18" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small f-11 h-18 ">
                                                                             Loaded
                                                                         </a>
                                                                     </td>
@@ -559,9 +579,40 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle"  class="w-85 f-11 h-18" width="100" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
-                                                                            Loadeded
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small  f-11 h-18 ">
+                                                                            Loaded
+                                                                        </a>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; padding-right: 55px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="center" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small  f-11 h-18 ">
+                                                                            Loaded
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -594,8 +645,8 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle"  class="w-100 f-11 h-18" width="115" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small  f-11 h-18 ">
                                                                             To be announced
                                                                         </a>
                                                                     </td>
@@ -626,8 +677,8 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle"  class="w-85 f-11 h-18" width="100" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small  f-11 h-18 ">
                                                                             Loadeded
                                                                         </a>
                                                                     </td>
@@ -657,9 +708,9 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle" width="100"  class="w-85 f-11 h-18" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; color: #fff; font-weight: 500; background-color: #F54617; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
-                                                                            Loadeded
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small f-11 h-18">
+                                                                            Loaded
                                                                         </a>
                                                                     </td>
                                                                 </tr>
@@ -688,8 +739,8 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle"  class="w-85 f-11 h-18" width="100" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; font-weight: 500; background-color: #F5F5F5; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #757575;">
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small f-11 h-18" disabled>
                                                                             Empty return
                                                                         </a>
                                                                     </td>
@@ -719,8 +770,8 @@
                                                         <td align="right">
                                                             <table border="0" cellspacing="0" cellpadding="0">
                                                                 <tr>
-                                                                    <td align="center" valign="middle" class="w-85 f-11 h-18" width="100" height="25" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 17px; font-weight: 500; background-color: #F5F5F5; border-radius: 4px;">
-                                                                        <a href="#" target="_blank" style="text-decoration: none; color: #757575;">
+                                                                    <td align="center">
+                                                                        <a href="#" target="_blank" class="btn small f-11 h-18" disabled>
                                                                             Waiting
                                                                         </a>
                                                                     </td>
@@ -755,8 +806,8 @@
                                             <td align="center" valign="top" class="fluid py-25" style="padding-top: 48px; padding-bottom: 35px;">
                                                 <table border="0" cellspacing="0" cellpadding="0" width="100%">
                                                     <tr>
-                                                        <td align="center" valign="middle" width="193" class="fluid h-35" height="45" style="background: #F54617; color: #fff; font-size: 14px; line-height: 16px; font-weight: 600; border-radius: 4px;">
-                                                            <a href="#" target="_blank" style="text-decoration: none; color: #fff;">
+                                                        <td align="center">
+                                                            <a href="#" target="_blank" width="193" class="h-35 btn fluid" style="height: 45px; font-size: 14px; line-height: 16px; font-weight: 600;">
                                                                 Review online
                                                             </a>
                                                         </td>

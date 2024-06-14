@@ -1806,6 +1806,9 @@ button:focus {
   right: 0;
   top: 0;
 }
+.checkbox+* {
+  cursor: pointer;
+}
 
 .checkbox__blue .checkbox__text {
   color: #67758d;
@@ -1861,9 +1864,9 @@ button:focus {
 }
 
 .check_1 .checkbox:checked~span {
-  background-color: #fff !important;
-  color: var(--orange-new, #F45617) !important;
-  border-color: var(--orange-new, #F45617) !important;
+  background-color: #FFE2DA !important;
+  color: var(--orange-new, #F54617) !important;
+  border-color: #FFE2DA !important;
 }
 
 .radio-custom .checkbox:checked~svg:not(.stroke-75) {
@@ -2517,7 +2520,7 @@ button:focus {
   border: 1px solid var(--surface-surface-brand);
 }
 .btn.white:hover {
-  background: var(--surface-surface-brand-2, #FFE2DA);
+  background: var(--surface-surface-brand-2, #FFE2DA)!important;
 }
 /* .btn.white.active svg:not(.stroke-75), */
 .btn.white:hover p,
@@ -3527,7 +3530,7 @@ button:focus {
 }
 
 .bg-gray-f5 {
-  background-color: var(--surface-surface-0, #F5F5F5);
+  background-color: var(--surface-surface-0, #F5F5F5)!important;
 }
 
 .bg-gray-f8 {
@@ -11139,6 +11142,24 @@ p.c-green {
   list-style-type: disc;
   padding-left: 16px;
 }
+.style-disk {
+  list-style-type: none;
+}
+.style-disk li {
+  position: relative;
+  padding-left: 22px;
+}
+.style-disk li:before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 10px;
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background-color: #757575;
+}
+
 .list-workers li {
   min-height: 111px;
   border-radius: 4px;

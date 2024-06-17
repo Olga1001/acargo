@@ -1,0 +1,968 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta charset="utf-8">
+        <meta name="x-apple-disable-message-reformatting">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>*|MC:SUBJECT|*</title>
+        <style type="text/css">
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+        
+            .btn.small {
+                min-width: 100px;
+                line-height: 25px;
+            }
+            
+            .btn.disabled {
+                background-color: #F5F5F5!important;
+                color: #757575!important;
+                cursor: no-drop;
+            }
+            .btn:not(.disabled):hover {
+                background-color: #C52D05!important;
+            }
+            .btn:not(.disabled):focus {
+                background-color: #F54617!important;
+                font-size: 16px!important;
+                font-weight: 700!important;
+                letter-spacing: -0.32px!important;
+            }
+            .btn.small:not(.disabled):focus {
+                font-size: 14px!important;
+            }
+
+            @media only screen and (max-width: 480px){
+                /* ===== TYPOGRAPHY ======== */
+                #bodyCell{padding: 0 !important;}
+                #templateContainer{width: 100% !important;}
+                .fluid{width: 100% !important; max-width: 100% !important;}
+                .fluid-content{display: block !important; width: 100% !important;}
+                /*display*/
+                .none{display: none !important;}
+                .block{display: block !important;}
+                /*wdith*/
+                .w-25{width: 25px !important;}
+                .w-50{width: 50px !important;}
+                .w-75{width: 75px !important;}
+                .w-100{width: 100px !important;}
+                .w-125{width: 125px !important;}
+                .w-140{width: 140px !important;}
+                .w-150{width: 150px !important;}
+                .w-175{width: 175px !important;}
+                .w-200{width: 200px !important;}
+                .w-225{width: 225px !important;}
+                .w-250{width: 250px !important;}
+                .w-275{width: 275px !important;}
+                .w-300{width: 300px !important;}
+                .w-100vw{width: 100%!important;}
+                /*padding*/
+                .p-0{padding: 0 !important;}
+                .pt-0{padding-top: 0 !important;}
+                .pb-0{padding-bottom: 0 !important;}
+                .pr-0{padding-right: 0 !important;}
+                .pl-0{padding-left: 0 !important;}
+
+                .p-5{padding: 5px !important;}
+
+                .p-10{padding: 10px !important;}
+                .pt-10{padding-top: 10px !important;}
+                .pb-10{padding-bottom: 10px !important;}
+                .pr-10{padding-right: 10px !important;}
+                .pl-10{padding-left: 10px !important;}
+
+                .p-15{padding: 15px !important;}
+                .pt-15{padding-top: 15px !important;}
+                .pb-15{padding-bottom: 15px !important;}
+                .pr-15{padding-right: 15px !important;}
+                .pl-15{padding-left: 15px !important;}
+
+                .p-20{padding: 20px !important;}
+                .pt-20{padding-top: 20px !important;}
+                .pb-20{padding-bottom: 20px !important;}
+                .pr-20{padding-right: 20px !important;}
+                .pl-20{padding-left: 20px !important;}
+
+                .p-25{padding: 25px !important;}
+                .pt-25{padding-top: 25px !important;}
+                .pb-25{padding-bottom: 25px !important;}
+                .pr-25{padding-right: 25px !important;}
+                .pl-25{padding-left: 25px !important;}
+
+                .p-30{padding: 30px !important;}
+                .pt-30{padding-top: 30px !important;}
+                .pb-30{padding-bottom: 30px !important;}
+                .pr-30{padding-right: 30px !important;}
+                .pl-30{padding-left: 30px !important;}
+
+                .p-35{padding: 35px !important;}
+                .pt-35{padding-top: 35px !important;}
+                .pb-35{padding-bottom: 35px !important;}
+                .pr-35{padding-right: 35px !important;}
+                .pl-35{padding-left: 35px !important;}
+
+                .p-40{padding: 40px !important;}
+                .pt-40{padding-top: 40px !important;}
+                .pb-40{padding-bottom: 40px !important;}
+                .pr-40{padding-right: 40px !important;}
+                .pl-40{padding-left: 40px !important;}
+
+                .p-45{padding: 45px !important;}
+                .pt-45{padding-top: 45px !important;}
+                .pb-45{padding-bottom: 45px !important;}
+                .pr-45{padding-right: 45px !important;}
+                .pl-45{padding-left: 45px !important;}
+
+                .p-50{padding: 50px !important;}
+                .pt-50{padding-top: 50px !important;}
+                .pb-50{padding-bottom: 50px !important;}
+                .pr-50{padding-right: 50px !important;}
+                .pl-50{padding-left: 50px !important;}
+
+                .px-0{padding-left: 0px !important; padding-right: 0px !important;}
+                .py-0{padding-top: 0px !important; padding-bottom: 0px !important;}
+
+                .px-10{padding-left: 10px !important; padding-right: 10px !important;}
+                .py-10{padding-top: 10px !important; padding-bottom: 10px !important;}
+
+                .px-15{padding-left: 15px !important; padding-right: 15px !important;}
+                .py-15{padding-top: 15px !important; padding-bottom: 15px !important;}
+
+                .px-20{padding-left: 20px !important; padding-right: 20px !important;}
+                .py-20{padding-top: 20px !important; padding-bottom: 20px !important;}
+
+                .px-25{padding-left: 25px !important; padding-right: 25px !important;}
+                .py-25{padding-top: 25px !important; padding-bottom: 25px !important;}
+
+                .px-30{padding-left: 30px !important; padding-right: 30px !important;}
+                .py-30{padding-top: 30px !important; padding-bottom: 30px !important;}
+
+                .px-35{padding-left: 35px !important; padding-right: 35px !important;}
+                .py-35{padding-top: 35px !important; padding-bottom: 35px !important;}
+
+                .px-40{padding-left: 40px !important; padding-right: 40px !important;}
+                .py-40{padding-top: 40px !important; padding-bottom: 40px !important;}
+
+                .px-45{padding-left: 45px !important; padding-right: 45px !important;}
+                .py-45{padding-top: 45px !important; padding-bottom: 45px !important;}
+
+                .px-50{padding-left: 50px !important; padding-right: 50px !important;}
+                .py-50{padding-top: 50px !important; padding-bottom: 50px !important;}
+
+                /*text center*/
+                .center{text-align: center !important;}
+                .left{text-align: left !important;}
+                .right{text-align: right !important;}
+                .valign-middle{vertical-align: middle !important;}
+                .valign-top{vertical-align: top !important;}
+                .valign-bottom{vertical-align: bottom !important;}
+
+                /*font-size*/
+                .f-8{font-size: 8px !important;}
+                .f-9{font-size: 9px !important; line-height: 14px !important;}
+                .f-10{font-size: 10px !important;}
+                .f-10a{font-size: 10px !important; line-height: 10px !important;}
+                .f-11{font-size: 11px !important;}
+                .f-12{font-size: 12px !important;}
+                .f-13{font-size: 13px !important;}
+                .f-14{font-size: 14px !important;}
+                .f-15{font-size: 15px !important;}
+                .f-16{font-size: 16px !important;}
+                .f-17{font-size: 17px !important;}
+                .f-18{font-size: 18px !important;}
+                .f-19{font-size: 19px !important;}
+                .f-20{font-size: 20px !important;}
+                .f-21{font-size: 21px !important;}
+                .f-22{font-size: 22px !important;}
+                .f-23{font-size: 23px !important;}
+                .f-24{font-size: 24px !important;}
+                .f-25{font-size: 25px !important;}
+                .f-26{font-size: 26px !important;}
+                .f-27{font-size: 27px !important;}
+                .f-28{font-size: 28px !important;}
+                .f-29{font-size: 29px !important;}
+                .f-30{font-size: 30px !important;}
+                .f-32{font-size: 32px !important;}
+                .f-34{font-size: 34px !important;}
+                .f-36{font-size: 36px !important;}
+                .f-38{font-size: 38px !important;}
+                .f-40{font-size: 40px !important;}
+                .f-42{font-size: 42px !important;}
+                .f-44{font-size: 44px !important;}
+                .f-46{font-size: 46px !important;}
+                .f-48{font-size: 48px !important;}
+                .f-50{font-size: 50px !important;}
+                .w-55{
+                    width: 60px !important;
+                }
+                .ml{
+                    margin: 0 auto !important;
+                }
+                .h-18 {
+                    height: 18px !important;
+                }
+                .h-22{
+                    height: 23px !important;
+                }
+                .h-20{
+                    height: 20px !important;
+                }
+                .w-105{
+                    width: 105px !important;
+                }
+                .pb-5{
+                    padding-bottom: 5px !important;
+                }
+                .pt-5{
+                    padding-top:  5px !important;
+                }
+                .h-40{
+                    height: 40px !important;
+                }
+                .h-35 {
+                    height: 35px !important;
+                }
+                .h-24{
+                    height: 24px !important;
+                }
+                .l-16{
+                    line-height: 16px !important;
+                }
+                .b-none{
+                    border: none !important;
+                }
+                .b-t{
+                    border-top: 1px solid #79C8F7 !important;
+                }
+                .b-b{
+                    border-bottom: 1px solid #79C8F7 !important;
+                }
+                .bg-3{
+                    background-color: #FEF5E6 !important;
+                   padding-top: 2px !important;
+                }
+                .bg-g{
+                    background: #FEF5E6 !important;
+                }
+                .br-0 {
+                    border-radius: 0!important;
+                }
+                /*fontwight #f1efef */
+                .normal{font-weight: 400 !important;}
+                .bold{font-weight: 700 !important;}
+                .medium{font-weight: 500 !important;}
+                .semi-bold{font-weight: 600 !important;}
+                .black{font-weight: 900 !important;}
+                .w-100{width: 100px !important;}                                    
+                .w-70{width: 70px !important;}                                    
+                /* ===== TYPOGRAPHY ======== */
+
+                /* ===== BTN ======== */
+                .btn {
+                    line-height: 35px!important;
+                }
+                .btn.small {
+                    min-width: 85px!important;
+                    padding: 0 8px!important;
+                    line-height: 18px!important;
+                }
+                .btn.small:not(.disabled):focus {
+                    font-size: 12px!important;
+                }
+            }
+        </style>
+    </head>
+    <body leftmargin="0" marginwidth="0" topmargin="0" marginheight="0" offset="0" bgcolor="#f1efef" style="font-family: 'Arial', sans-serif; padding: 0; margin: 0;"  yahoo="fix">
+        <center>
+            <table align="center" border="0" cellpadding="0" cellspacing="0" height="100%" width="100%" id="bodyTable" style="background-color: #f1efef;"> 
+                <tr>
+                    <td align="center" valign="top" id="bodyCell" style="padding-top: 20px; padding-bottom: 20px;">
+                        <!-- BEGIN TEMPLATE // -->
+                        <table border="0" cellpadding="0" cellspacing="0" width="600" id="templateContainer" style="background-color: #fff; max-width: 600px; width: 100%;">
+                            <!-- PREHEADER PART -->
+                            <tr>
+                                <td align="center" valign="middle" class="px-10 pt-20" style="padding-top: 35px; padding-left: 20px; padding-right: 20px;">
+                                    <table border="0" cellpadding="0" cellspacing="0" width="100%" id="templateHeader">
+                                        <tr>
+                                            <td  align="center" valign="middle" style="padding-bottom: 20px;">
+                                                <table  border="0" cellpadding="0" cellspacing="0" width="100%">
+                                                    <tr>
+                                                        <td valign="top" align="left" class="headerContent valign-middle">
+                                                           <a href="#" target="_bloank">
+                                                                <img src="https://mcusercontent.com/9700be602863bdd9f690d24db/images/f9b43a4c-eb67-951b-c7a0-478292dfa1da.png" width="164" class="w-140" style="max-width: 135px; vertical-align: middle;" alt="logo">
+                                                           </a>
+                                                        </td>
+                                                        <td align="right" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td align="right" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #000000; font-weight: 500;">
+                                                                        Today
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="right" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #000000; font-weight: 400;">
+                                                                        30 Mar 2022 08:10
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                       
+                                        <tr>
+                                            <td align="left" valign="top" class="f-14" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 19px; color: #000000; font-weight: 500; padding-bottom: 3px">
+                                                Dear customer Cargo Company
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" class="f-14 pb-20" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 19px; color: #282E3B; font-weight: 400; padding-bottom: 9px;">
+                                                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a <span class="none"><br></span> piece of classical Latin literature from 45 BC, making it over 2000 years old...
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- PREHEADER PART FINISH-->
+                            
+                            <!-- block 1 -->
+                            <tr>
+                                <td align="left" valign="top" class="fluid px-10 pb-35" style="padding-left: 20px; padding-right: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="left" valign="top" class="p-5" style="padding-left: 20px; padding-right: 20px; border-radius: 3px; background: rgba(245, 70, 23, 0.20);; padding-bottom: 11px; padding-top: 11px; padding-left: 10px;
+                                            ">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #F54617; font-weight: 500;">
+                                                            Arrival Date Changed: 
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #F54617; font-weight: 500;">
+                                                            Previous Date was 28 Apr 2022 and <span><u>New Date is 05 May 2022</u></span>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- block 1 -->
+                             <!-- block 2 -->
+                             <tr>
+                                <td align="left" valign="top" class="fluid px-10 pb-15 pt-0" style="padding-left: 20px; padding-right: 20px; padding-top: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="left" valign="top">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" class="f-15" style="font-family: 'Roboto', sans-serif; font-size: 16px; line-height: 20px; color: #282E3B; font-weight: 500;">
+                                                            OR - DR345678967
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td align="left" valign="top" class="f-14" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 400; padding-bottom: 10px;">
+                                                            Cargo shipping company
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" class="pb-20" style="padding-bottom: 30px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" >
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="top" style="padding-right: 10px;">
+                                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td align="center" valign="middle" class="w-70" width="83" height="24" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 16px; color: #000; font-weight: 500; background-color: #E4E4E4; border-radius: 2px;">
+                                                                                    <a href="#" target="_blank" style="text-decoration: none; color: #000;">
+                                                                                        2 x 45 CHI
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td align="left" valign="top" style="padding-right: 10px;">
+                                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td align="center" valign="middle" class="w-70" width="83" height="24" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 16px; color: #000; font-weight: 500; background-color: #E4E4E4; border-radius: 2px;">
+                                                                                    <a href="#" target="_blank" style="text-decoration: none; color: #000;">
+                                                                                      2 550 kg
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                    <td align="left" valign="top">
+                                                                        <table border="0" cellspacing="0" cellpadding="0">
+                                                                            <tr>
+                                                                                <td align="center" valign="middle" bgcolor="#DCF2FF" width="68" height="24" style="font-family: 'Roboto', sans-serif; font-size: 13px; line-height: 16px; color: #000; font-weight: 500; background-color: #E4E4E4; border-radius: 2px;">
+                                                                                    <a href="#" target="_blank" style="text-decoration: none; color: #000;">
+                                                                                       Import
+                                                                                    </a>
+                                                                                </td>
+                                                                            </tr>
+                                                                        </table>
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" class="fluid" style="padding-bottom: 7px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="f-13"  style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 500;">
+                                                                        Vilnius, LT
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #696969; font-weight: 400;">
+                                                                        29 Mar 2022
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="center" valign="middle" class="f-13"  style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 17px; color: #F54617; font-weight: 500; ">
+                                                            Delayed 18 Days
+                                                        </td>
+                                                        <td align="right" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td align="right" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 500;">
+                                                                        New York, USA
+                                                                    </td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td align="right" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #696969; font-weight: 400;">
+                                                                        29 Mar 2022
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" class="fluid pb-10" style="padding-bottom: 19px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="left" valign="top" class="fluid">
+                                                            <table border="0" bgcolor="#DCE2FE" cellspacing="0" cellpadding="0" width="100%">
+                                                                <tr>
+                                                                    <td align="left" valign="top" bgcolor="#F54617" width="72%" height="7" style="background-color: #F54617;">
+                                                                        
+                                                                    </td>
+                                                                    <td align="left" valign="top" bgcolor="rgba(146, 146, 146, 0.70)" width="28%" height="7" style="background-color: rgba(146, 146, 146, 0.70);">
+                                                                        
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="pb-10" style="padding-bottom: 15px;">
+                                                <table border="0" cellspacing="0" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 16px; color: #696969; font-weight: 300;">
+                                                            Transit time 28 days
+                                                        </td>
+                                                        <td align="right" valign="top" class="f-13"  style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 16px; color: #696969; font-weight: 300;">
+                                                            28 days left
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- block 2 -->
+                            
+                            <!-- block 3 -->
+                            <tr>
+                                <td align="left" valign="top" class="fluid px-10 pt-0 pb-5" style="padding-left: 20px; padding-right: 20px; padding-top: 15px; padding-bottom: 12px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%" style="border: 1px solid #B1B1B1; border-radius: 4px;">
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        24 Apr.
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        Loaded
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        Loaded
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        To be announced
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        Loaded
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class="block">
+                                                                        <table  border="0" cellspacing="0" cellpadding="0">
+                                                                            <td align="left" valign="middle" class= "f-13 normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                                Simonaitytes gatve, <br> Klaipeda, Lithvinia, LTKN
+                                                                            </td>
+                                                                        </table>
+                                                                     </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        To be announced
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        Loadeded
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #282E3B; font-weight: 600;">
+                                                                        Klaipeda
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11" style="
+                                                                    border-radius: 4px;
+                                                                    background: #F54617;
+                                                                    padding: 0 8px;
+                                                                    color: #FAFAFA!important;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;">
+                                                                        Loaded
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style="border-bottom: 1px solid #B1B1B1; padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #696969; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #696969;" >
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11 disabled" style="
+                                                                    border-radius: 4px;
+                                                                    padding: 0 8px;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;
+                                                                    background-color: #F5F5F5!important;
+                                                                    color: #757575!important;
+                                                                    cursor: no-drop;">
+                                                                        Empty return
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="middle" class="p-5" style=" padding-top: 10px; padding-bottom: 10px; padding-left: 15px; padding-right: 15px;">
+                                                <table border="0" cellspacing="0" class="fluid" width="100%" cellpadding="0">
+                                                    <tr>
+                                                        <td align="left" valign="middle">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="left" valign="middle" class="f-14 block w-100vw" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #696969; width: 140px; padding-right: 5px;">
+                                                                        24 Apr. 2020
+                                                                    </td>
+                                                                    <td align="left" valign="middle" class= "f-13 block normal" style="font-family: 'Roboto', sans-serif; font-size: 15px; line-height: 18px; color: #696969;">
+                                                                        Klaipeda,  Lithvinia,  LTKN
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <table border="0" cellspacing="0" cellpadding="0">
+                                                                <tr>
+                                                                    <td align="center" class="btn small f-11 disabled" style="
+                                                                    border-radius: 4px;
+                                                                    padding: 0 8px;
+                                                                    font-family: 'Roboto', sans-serif;
+                                                                    font-size: 13px;
+                                                                    font-style: normal;
+                                                                    font-weight: 500;
+                                                                    line-height: 25px;
+                                                                    letter-spacing: -0.26px;
+                                                                    text-decoration: none;
+                                                                    min-width: 100px;
+                                                                    display: block;
+                                                                    align-content: center;
+                                                                    box-sizing: border-box;
+                                                                    background-color: #F5F5F5!important;
+                                                                    color: #757575!important;
+                                                                    cursor: no-drop;">
+                                                                        Waiting
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- block 3 -->
+                             <!-- footer  -->
+                             <tr>
+                                <td align="left" valign="top" class="px-10" style="padding-left: 20px; padding-right: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #282E3B; font-weight: 400;">
+                                                Freight tracking by:
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="left" valign="top" class="f-13" style="font-family: 'Roboto', sans-serif; font-size: 14px; line-height: 18px; color: #282E3B; font-weight: 500;">
+                                               <a href="#" target="_blank" style="text-decoration: none; color: #282E3B;">
+                                                   aCargo.click
+                                               </a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td align="center" valign="top" class="fluid py-25" style="padding-top: 48px; padding-bottom: 35px;">
+                                                <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                                    <tr>
+                                                        <td align="center">
+                                                            <a href="#" target="_blank" width="193" class="btn fluid" style="
+                                                                border-radius: 4px;
+                                                                background: #F54617;
+                                                                padding: 0 8px;
+                                                                color: #FAFAFA!important;
+                                                                font-family: 'Roboto', sans-serif;
+                                                                font-size: 14px;
+                                                                font-style: normal;
+                                                                font-weight: 600;
+                                                                line-height: 45px;
+                                                                letter-spacing: -0.26px;
+                                                                text-decoration: none;
+                                                                min-width: 100px;
+                                                                display: block;
+                                                                align-content: center;
+                                                                box-sizing: border-box;">
+                                                                Review online
+                                                            </a>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <!-- footer  -->
+
+                            <!-- TYPOGRAPHY HERE
+                            <tr>
+                                <td align="left" valign="top" class="fluid" style="padding-left: 20px; padding-right: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" width="100%">
+                                        <tr>
+                                            <td align="left" valign="top" style="font-family: 'Roboto', sans-serif;"></td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            ---------Column two -----
+                            <tr>
+                                <td align="left" valign="top" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="fluid">
+                                        <tr>                                            
+                                            <td align="left" valign="top" class="fluid-content pr-0 pb-20" style="padding-right: 20px;">
+
+                                            </td>
+                                            <td align="left" valign="top" class="fluid-content">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+
+                            ******column three
+                            <tr>
+                                <td align="left" valig="top" style="padding-left: 20px; padding-right: 20px; padding-top: 20px; padding-bottom: 20px;">
+                                    <table border="0" cellspacing="0" cellpadding="0" class="fluid">
+                                        <tr>                                            
+                                            <td align="left" valign="top" class="fluid-content pr-0 pb-20" style="padding-right: 20px;">
+
+                                            </td>
+                                            <td align="left" valign="top" class="fluid-content pr-0 pb-20" style="padding-right: 20px;">
+
+                                            </td>
+                                            <td align="left" valign="top" class="fluid-content">
+
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                             -->
+
+                        </table>
+                        <!-- // END TEMPLATE -->
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </body>
+</html>

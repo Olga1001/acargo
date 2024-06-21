@@ -1078,7 +1078,7 @@ button:focus {
 .select__option:hover,
 .hover__option:hover,
 .hover__option.active,
-.select__menu .active:not(.contents__item, .btn) {
+.select__menu .active:not(.contents__item, .btn, .select) {
   /* background-color: #f5fbff; */
   background-color: rgba(235, 94, 19, 0.20);
   /* color: #109cf1; */
@@ -18650,6 +18650,10 @@ input+.autocomplete {
 }
 .valign-middle td, .valign-middle th {
   vertical-align: middle;
+}
+[data-toggle="collapse"]:not(.collapsed) .more,
+.collapsed[data-toggle="collapse"] .less {
+  display: none;
 }
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

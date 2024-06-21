@@ -740,10 +740,80 @@
                                         </div>
                                         <input type="text" class="px-2 input_customer select__item b-0 h-100 "
                                             value="5x40’HC" placeholder="" required>
-                                        <div class="select__drop">
-                                            <div class="select__menu br-4 p-2">
-                                                <a href="#" class="select__option p-1 mb-1">5x40’HC</a>
-                                                <a href="#" class="select__option p-1">5x40’HC</a>
+                                        <div class="select__drop min-w-250 w-fit-content right">
+                                            <div class="select__menu br-4 p-3">
+                                               <div class="items-center">
+                                                    <div class="col-6 max-w-95 pl-0 pr-1">
+                                                        <div class="h-35 mt-3 select b-0 arrow_small">
+                                                            <input type="text" class="select__item input_customer br-4 h-100" value="40 HC ">
+                                                            <!-- <div class="autocomplete mt-1">
+                                                                <ul>
+                                                                    <li>
+                                                                        <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div> -->
+                                                            <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                                            <div class="select__drop">
+                                                                <ul class="select__menu">
+                                                                    <li class="select__option active">40 HC </li>
+                                                                    <li class="select__option">50 HC </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 max-w-90 pr-0 pl-1">
+                                                        <div class="relative h-35 mt-3">
+                                                            <input type="text" class="input_customer br-4 h-100" value="2">
+                                                            <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                                        </div>
+                                                    </div>
+                                               </div>
+                                               <div class="items-center">
+                                                <div class="col-6 max-w-95 pl-0 pr-1">
+                                                    <div class="h-35 mt-3 select b-0 arrow_small">
+                                                        <input type="text" class="select__item input_customer br-4 h-100" value="40 HC">
+                                                        <!-- <div class="autocomplete mt-1">
+                                                            <ul>
+                                                                <li>
+                                                                    <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div> -->
+                                                        <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                                        <div class="select__drop">
+                                                            <ul class="select__menu">
+                                                                <li class="select__option active">40 HC </li>
+                                                                <li class="select__option">50 HC </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-6 max-w-90 pr-0 pl-1">
+                                                    <div class="relative h-35 mt-3">
+                                                        <input type="text" class="input_customer br-4 h-100" value="2">
+                                                        <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="p-1 mt-3 ml-auto">
+                                                    <svg class="svg-sprite-icon " width="12px" height="27px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                    </svg>
+                                                </a>
+                                                </div>
+                                                <a href="#" class="p-1 c-orange-f4 fs-14 weight-medium items-center mt-2">
+                                                    <svg class="svg-sprite-icon mr-1" width="17px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#plus2"></use>
+                                                    </svg>
+                                                    Add container type
+                                                </a>
+                                                <button type="button" class="btn w-100 mt-3">Search Rates</button>
                                             </div>
                                         </div>
                                     </div>
@@ -1138,7 +1208,7 @@
                                                 <span class="pl-1">45’ CHI</span>
                                             </label>
 
-                                            <div class="collapse mb-4" id="showContainerType">
+                                            <div class="collapse" id="showContainerType">
                                                 <label class="mb-2 items-center">
                                                     <input type="checkbox" class="checkbox">
                                                     <span class="checked-customer dark mr-2 br-4">
@@ -1164,8 +1234,8 @@
                                                 </label>
                                             </div>
 
-                                            <a href="#" class="collapsed underline mb-4 d-block collapsed-toggle" data-toggle="collapse"
-                                                data-target="#showContainerType">Show more</a>
+                                            <a href="#" class="collapsed underline mb-4 d-block pt-2" data-toggle="collapse"
+                                                data-target="#showContainerType">Show <span class="more">more</span> <span class="less">less</span></a>
 
                                             <p class="fs-16 weight-medium mb-3">Container type</p>
 
@@ -1312,8 +1382,8 @@
                                                 </label>
                                             </div>
 
-                                            <a href="#" class="collapsed underline d-block collapsed-toggle"  data-toggle="collapse"
-                                                data-target="#showShippingLine">Show more</a>
+                                            <a href="#" class="collapsed underline d-block pt-2"  data-toggle="collapse"
+                                                data-target="#showShippingLine">Show <span class="more">more</span> <span class="less">less</span></a>
 
                                         </div>
                                     </div>
@@ -1347,72 +1417,75 @@
                                         <div class="contents p-0" data-index="7">
                                             <div class="contents__item active">
                                                 <div class="b-1 mb-2 px-3 py-2 hover-b bg-white br-4">
-                                                    <div class="items-center pb-2 pt-1">
-                                                        <div class="w-100 pr-3">
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <label >
-                                                                    <input type="checkbox" class="checkbox">
-                                                                    <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
-                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                                    <div type="button" class="collapsed" data-toggle="collapse" data-target="#drop1">
+
+                                                        <div class="items-center pb-2 pt-1">
+                                                            <div class="w-100 pr-3">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <label >
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                                                        </svg>
+                                                                    </label>
+                                                                    <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2  h-fit">
+                                                                        <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
+                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                                                        </svg>
+                                                                        <span class="t-100 p-3 tooltip-content r-0">
+                                                                            <span class="px-1">Lorem ipsum dolor .</span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="items-center weight-medium text-nowrap mb-2">
+                                                                    <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                                                    <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                                                    <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                                                    <img src="../../img/logo/hapaglloyd-2.png" alt="image" width="70" height="50">
+                                                                        
+                                                                    <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                                                    <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                                                    <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between fs-14">
+                                                                    <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                                                    <p class="fs-13 c-gray-75">15 Days</p>
+                                                                    <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                                                </div>
+                                                                <hr class="my-3 b-gray-ee">
+                                                                <div class="items-center c-gray-75 fs-13">
+                                                                    <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
                                                                     </svg>
-                                                                </label>
-                                                                <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2  h-fit">
-                                                                    <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
-                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                                                    <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
                                                                     </svg>
-                                                                    <span class="t-100 p-3 tooltip-content r-0">
-                                                                        <span class="px-1">Lorem ipsum dolor .</span>
-                                                                    </span>
+                                                                    <p class="weight-medium mr-3">40’HC</p>
+                                                                    <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                                                    </svg>
+                                                                    <p class="weight-medium mr-3">12t</p>
+                                                                    <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                                                    <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Contract</a>
+                                                                    <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Fastest shedule</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
+                                                                <p class="py-3 weight-medium">
+                                                                    <span class="fs-22 pb-1 d-block">1 800 EUR</span>
+                                                                    <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
                                                                 </p>
-                                                            </div>
-                                                            <div class="items-center weight-medium text-nowrap mb-2">
-                                                                <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
-                                                                <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
-                                                                <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
-                                                                <img src="../../img/logo/hapaglloyd-2.png" alt="image" width="70" height="50">
-                                                                    
-                                                                <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
-                                                                <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
-                                                                <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
-                                                            </div>
-                                                            <div class="d-flex justify-content-between fs-14">
-                                                                <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
-                                                                <p class="fs-13 c-gray-75">15 Days</p>
-                                                                <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
-                                                            </div>
-                                                            <hr class="my-3 b-gray-ee">
-                                                            <div class="items-center c-gray-75 fs-13">
-                                                                <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
-                                                                </svg>
-                                                                <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
-                                                                </svg>
-                                                                <p class="weight-medium mr-3">40’HC</p>
-                                                                <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
-                                                                </svg>
-                                                                <p class="weight-medium mr-3">12t</p>
-                                                                <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
-                                                                <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Contract</a>
-                                                                <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Fastest shedule</a>
+                                                                <button type="button" class="btn min-w-150 py-1">Booking</button>
+                                                                <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
                                                             </div>
                                                         </div>
-                                                        <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
-                                                            <p class="py-3 weight-medium">
-                                                                <span class="fs-22 pb-1 d-block">1 800 EUR</span>
-                                                                <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
-                                                            </p>
-                                                            <button type="button" class="btn min-w-150 py-1">Booking</button>
-                                                            <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
-                                                        </div>
+                                                        <button type="button" class="bg-gray-f5 w-100 collapsed-arrow br-4">
+                                                            <svg class="svg-sprite-icon c-gray-75 "
+                                                                width="12px" height="17px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                                            </svg>
+                                                        </button>
                                                     </div>
-                                                    <button type="button" class="bg-gray-f5 w-100 collapsed collapsed-arrow br-4" data-toggle="collapse" data-target="#drop1">
-                                                        <svg class="svg-sprite-icon c-gray-75 "
-                                                            width="12px" height="17px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
-                                                        </svg>
-                                                    </button>
                                                     
                                                     <div class="collapse pt-3" id="drop1">
                                                         <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="4">
@@ -1614,12 +1687,11 @@
                                                                         </div>
                                                                         <div class="pl-3 min-w-160 weight-medium">
                                                                             <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
-                                                                            <div class="collapse show" id="moreDetails1">
-                                                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#moreDetails1,#lessDetails1,#dropShedule1">More details</a>
-                                                                            </div>
-                                                                            <div class="collapse" id="lessDetails1">
-                                                                                <a href="#" class="collapsed text-center d-block underline"  data-toggle="collapse" data-target="#lessDetails1,#moreDetails1,#dropShedule1">Less details</a>
-                                                                            </div>
+                                                                          
+                                                                            <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#dropShedule1">
+                                                                                <span class="more">More</span> <span class="less">Less</span>  details
+                                                                            </a>
+                                                                          
                                                                         </div>
                                                                     </div>
                                                                     <div class="collapse pt-3" id="dropShedule1">
@@ -1775,12 +1847,10 @@
                                                                         </div>
                                                                         <div class="pl-3 min-w-160 weight-medium">
                                                                             <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
-                                                                            <div class="collapse show" id="moreDetails12">
-                                                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#moreDetails12,#lessDetails12,#dropShedule12">More details</a>
-                                                                            </div>
-                                                                            <div class="collapse" id="lessDetails12">
-                                                                                <a href="#" class="collapsed text-center d-block underline"  data-toggle="collapse" data-target="#lessDetails12,#moreDetails12,#dropShedule12">Less details</a>
-                                                                            </div>
+                                                                            <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#dropShedule12">
+                                                                                <span class="more">More</span> <span class="less">Less</span> details
+                                                                            </a>
+                                                                           
                                                                         </div>
                                                                     </div>
                                                                     <div class="collapse pt-3" id="dropShedule12">
@@ -1906,73 +1976,75 @@
                                                     </div>
                                                 </div>
                                                 <div class="b-1 mb-2 px-3 py-2 hover-b bg-white br-4">
-                                                    <div class="items-center pb-2 pt-1">
-                                                        <div class="w-100 pr-3">
-                                                            <div class="d-flex justify-content-between mb-3">
-                                                                <label>
-                                                                    <input type="checkbox" class="checkbox">
-                                                                    <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
-                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                                    <div type="button" class="collapsed" data-toggle="collapse" data-target="#drop2">
+                                                        <div class="items-center pb-2 pt-1">
+                                                            <div class="w-100 pr-3">
+                                                                <div class="d-flex justify-content-between mb-3">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                                                        </svg>
+                                                                    </label>
+                                                                    <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2 h-fit">
+                                                                        <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
+                                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                                                        </svg>
+                                                                        <span class="t-100 p-3 tooltip-content r-0">
+                                                                            <span class="px-1">Lorem ipsum dolor .</span>
+                                                                        </span>
+                                                                    </p>
+                                                                </div>
+                                                                <div class="items-center weight-medium text-nowrap mb-2">
+                                                                    <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                                                    <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                                                    <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+
+                                                                    <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="20px" height="20px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line"></use>
                                                                     </svg>
-                                                                </label>
-                                                                <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2 h-fit">
-                                                                    <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
-                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+
+                                                                    <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                                                    <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                                                    <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                                                </div>
+                                                                <div class="d-flex justify-content-between fs-14">
+                                                                    <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                                                    <p class="fs-13 c-gray-75">15 Days</p>
+                                                                    <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                                                </div>
+                                                                <hr class="my-3 b-gray-ee">
+                                                                <div class="items-center c-gray-75 fs-13">
+                                                                    <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
                                                                     </svg>
-                                                                    <span class="t-100 p-3 tooltip-content r-0">
-                                                                        <span class="px-1">Lorem ipsum dolor .</span>
-                                                                    </span>
+                                                                    <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                                                    </svg>
+                                                                    <p class="weight-medium mr-3">40’HC</p>
+                                                                    <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                                                    </svg>
+                                                                    <p class="weight-medium mr-3">12t</p>
+                                                                    <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                                                </div>
+                                                            </div>
+                                                            <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
+                                                                <p class="py-3 weight-medium">
+                                                                    <span class="fs-22 pb-1 d-block">1 800 EUR</span>
+                                                                    <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
                                                                 </p>
-                                                            </div>
-                                                            <div class="items-center weight-medium text-nowrap mb-2">
-                                                                <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
-                                                                <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
-                                                                <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
-
-                                                                <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="20px" height="20px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line"></use>
-                                                                </svg>
-
-                                                                <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
-                                                                <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
-                                                                <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
-                                                            </div>
-                                                            <div class="d-flex justify-content-between fs-14">
-                                                                <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
-                                                                <p class="fs-13 c-gray-75">15 Days</p>
-                                                                <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
-                                                            </div>
-                                                            <hr class="my-3 b-gray-ee">
-                                                            <div class="items-center c-gray-75 fs-13">
-                                                                <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
-                                                                </svg>
-                                                                <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
-                                                                </svg>
-                                                                <p class="weight-medium mr-3">40’HC</p>
-                                                                <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
-                                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
-                                                                </svg>
-                                                                <p class="weight-medium mr-3">12t</p>
-                                                                <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                                                <button type="button" class="btn min-w-150 py-1">Booking</button>
+                                                                <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
                                                             </div>
                                                         </div>
-                                                        <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
-                                                            <p class="py-3 weight-medium">
-                                                                <span class="fs-22 pb-1 d-block">1 800 EUR</span>
-                                                                <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
-                                                            </p>
-                                                            <button type="button" class="btn min-w-150 py-1">Booking</button>
-                                                            <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
-                                                        </div>
+                                                        <button type="button" class="bg-gray-f5 w-100 collapsed-arrow br-4">
+                                                            <svg class="svg-sprite-icon c-gray-75 "
+                                                                width="12px" height="17px">
+                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                                            </svg>
+                                                        </button>
                                                     </div>
-                                                    <button type="button" class="bg-gray-f5 w-100 collapsed collapsed-arrow br-4" data-toggle="collapse" data-target="#drop2">
-                                                        <svg class="svg-sprite-icon c-gray-75 "
-                                                            width="12px" height="17px">
-                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
-                                                        </svg>
-                                                    </button>
                                                     
                                                     <div class="collapse pt-3" id="drop2">
                                                         <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="5">
@@ -2175,12 +2247,9 @@
                                                                         </div>
                                                                         <div class="pl-3 min-w-160 weight-medium">
                                                                             <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
-                                                                            <div class="collapse show" id="moreDetails2">
-                                                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#moreDetails2,#lessDetails2,#dropShedule2">More details</a>
-                                                                            </div>
-                                                                            <div class="collapse" id="lessDetails2">
-                                                                                <a href="#" class="collapsed text-center d-block underline"  data-toggle="collapse" data-target="#lessDetails2,#moreDetails2,#dropShedule2">Less details</a>
-                                                                            </div>
+                                                                            <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#dropShedule2">
+                                                                                <span class="more">More</span> <span class="less">Less</span> details
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="collapse pt-3" id="dropShedule2">
@@ -2336,12 +2405,9 @@
                                                                         </div>
                                                                         <div class="pl-3 min-w-160 weight-medium">
                                                                             <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
-                                                                            <div class="collapse show" id="moreDetails21">
-                                                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#moreDetails21,#lessDetails21,#dropShedule21">More details</a>
-                                                                            </div>
-                                                                            <div class="collapse" id="lessDetails21">
-                                                                                <a href="#" class="collapsed text-center d-block underline"  data-toggle="collapse" data-target="#lessDetails21,#moreDetails21,#dropShedule21">Less details</a>
-                                                                            </div>
+                                                                            <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#dropShedule21">
+                                                                                <span class="more">More</span> <span class="less">Less</span> details
+                                                                            </a>
                                                                         </div>
                                                                     </div>
                                                                     <div class="collapse pt-3" id="dropShedule21">

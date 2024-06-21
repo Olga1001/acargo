@@ -150,6 +150,7 @@ $(document).ready(function () {
     }
   }).on('focus', function(e) {
     if ($(this).closest(".select").find('.select__icon')) {
+      console.log($(this).closest(".select"))
       $(this).closest(".select").addClass('isfocus')
     }
   }).on('blur', function(e) {

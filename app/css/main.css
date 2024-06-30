@@ -33,22 +33,22 @@
 }
 
 *::-webkit-input-placeholder {
-  color: #929292;
+  color: #757575;
   line-height: 1;
 }
 
 *:-moz-placeholder {
-  color: #929292;
+  color: #757575;
   line-height: 1;
 }
 
 *::-moz-placeholder {
-  color: #929292;
+  color: #757575;
   line-height: 1;
 }
 
 *:-ms-input-placeholder {
-  color: #929292;
+  color: #757575;
   line-height: 1;
 }
 
@@ -2011,10 +2011,11 @@ button:focus {
 
 .checkbox:checked~.icon-star {
   fill: var(--orange-new)!important;
-}
-.checkbox:checked~.icon-star.stroke-75 {
   stroke: var(--orange-new)!important;
 }
+/* .checkbox:checked~.icon-star.stroke-75 {
+  stroke: var(--orange-new)!important;
+} */
 
 .radio-calendar .check {
   border: 1px solid rgba(235, 94, 19, 0.40);
@@ -2164,11 +2165,6 @@ button:focus {
 .checkbox:checked~.checked-customer.big {
   border-color: var(--orange-new, #F45617) !important;
   background-color: transparent;
-}
-
-.checkbox:checked~.checked-customer>span.checked-color {
-  color: var(--orange-new, #F45617) !important;
-  font-weight: 500;
 }
 
 .checkbox:checked~.checked-customer.painted {
@@ -2898,7 +2894,7 @@ button:focus {
 }
 
 .underline {
-  text-decoration-line: underline;
+  text-decoration-line: underline!important;
 }
 
 .text-decoration-none {
@@ -3661,6 +3657,9 @@ button:focus {
 .bg-green-dc {
   background-color: #DCF9EF;
 }
+.bg-green-dcf {
+  background-color: #DCF1D2;
+}
 
 .bg-green-19 {
   background-color: rgba(73, 221, 170, 0.19);
@@ -4373,7 +4372,10 @@ button:focus {
 .b-0 {
   border-width: 0 !important;
 }
-
+.bl-2 {
+  border-style: solid;
+  border-left-width: 2px !important;
+}
 .bl-3 {
   border-style: solid;
   border-left-width: 3px !important;
@@ -4637,6 +4639,9 @@ button:focus {
 
 .stroke-1b {
   stroke: #1E1E1E;
+}
+.stroke-bd {
+  stroke: #BDBDBD;
 }
 
 .stroke-orange-f4 {
@@ -9143,6 +9148,17 @@ a.tool-item img {
 
 .nav-tabs_v3 .nav-link.active svg.stroke-1e {
   stroke: var(--orange-new, #F45617) !important;
+}
+
+.nav-tabs_v3 .nav-link.active.full_bg svg:not([class*="stroke"]) {
+  fill: var(--text-text-invert, #FAFAFA)!important;
+}
+.nav-tabs_v3 .nav-link.active.full_bg svg:has([class*="stroke"]) {
+  stroke: var(--text-text-invert, #FAFAFA)!important;
+}
+.nav-tabs_v3 .nav-link.active.full_bg {
+  color: var(--text-text-invert, #FAFAFA)!important;
+  background: var(--surface-surface-brand, #F54617);
 }
 
 .nav-link.active.blue {

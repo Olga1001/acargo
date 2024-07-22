@@ -567,3 +567,26 @@ $$el('input[name="gridLine-table"]').forEach(radio => {
 function autoResize(textarea) {
   textarea.style = `height: calc(${textarea.scrollHeight}px + 2px)!important`;
 }
+
+// Synchronize horizontal scrolling
+// Get all elements with the class sync_scroll_x
+const syncScrollElements = document.querySelectorAll('.sync_scroll_x');
+
+// Function to synchronize the scroll positions
+function syncScrollX(e) {
+  // Get the current scroll position
+  const scrollLeft = e.target.scrollLeft;
+
+  // Synchronize scroll position for each element
+  syncScrollElements.forEach(element => {
+    // If the element is not the one that caused the event, change its scroll position
+    if (element !== e.target) {
+      element.scrollLeft = scrollLeft;
+    }
+  });
+}
+
+// Attach the scroll event listener to each element
+syncScrollElements.forEach(element => {
+  element.addEventListener('scroll', syncScrollX);
+});

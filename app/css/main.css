@@ -19,6 +19,7 @@
   --Color-Brand-SS-Grey: #D6D6D6;
   --text-text-invert: #FAFAFA;
   --surface-surface-brand: #F54617;
+  --Color-Status-Orange: #FF7900;
 }
 
 * {
@@ -247,6 +248,9 @@ body {
   background-color: #fff;
   letter-spacing: -0.28px;
   color: #1E1E1E;
+  -webkit-font-smoothing: antialiased; /* For WebKit browsers (Chrome, Safari) */
+  -moz-osx-font-smoothing: grayscale;  /* For Firefox on macOS */
+  
 }
 
 img {
@@ -3513,6 +3517,10 @@ button:focus {
   background-color: rgba(255, 222, 1, 0.17);
 }
 
+.bg-yellow-ffe {
+  background-color: #FFEFD8;
+}
+
 .bg-gray-e0 {
   background-color: #E0E0E0;
 }
@@ -4490,6 +4498,10 @@ button:focus {
   border-color: var(--Status-Warning, #FFB03D)!important;
 }
 
+.b-orange-ff7 {
+  border-color: var(--Color-Status-Orange, #FF7900)!important;
+}
+
 .b-orange-40 {
   border-color: rgba(235, 94, 19, 0.40) !important;
 }
@@ -4548,6 +4560,9 @@ button:focus {
 }
 .b-gray-eb {
   border-color: #EBEDF2;
+}
+.b-gray-e0 {
+  border-color: #E0E0E0;
 }
 .b-gray-92-70 {
   border-color: rgba(146, 146, 146, 0.70) !important;
@@ -15626,7 +15641,7 @@ p.c-green {
   position: absolute;
   left: 0;
   top: 0;
-  border: solid 1px transparent;
+  border: solid 1.5px transparent;
   transition: all 0.3s ease;
   width: 100%;
   height: 100%;

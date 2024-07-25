@@ -109,9 +109,12 @@ $(document).ready(function () {
           let formatOne = ev.currentTarget.getAttribute('data-format-one') ? ev.currentTarget.getAttribute('data-format-one') : 'MM.DD.YYYY';
           let formatTwo = ev.currentTarget.getAttribute('data-format-two') ? ev.currentTarget.getAttribute('data-format-two') : 'MM.DD.YYYY';
           $(this).val(picker.startDate.format(formatOne) + ' - ' + picker.endDate.format(formatTwo));
+        
+          $(this).parent().addClass('apply-datefilter')
         }).on('cancel.daterangepicker', function(ev, picker) {
           $(this).val('');
-        });
+          $(this).parent().removeClass('apply-datefilter')
+        })
       });
 
       $(function () {

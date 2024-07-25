@@ -1042,7 +1042,7 @@ button:focus {
 
 *::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background-color: #929292;
+  background-color: #757575;
 }
 
 .select__menu::-webkit-scrollbar-thumb {
@@ -13388,11 +13388,6 @@ p.c-green {
 
 .scroll-y {
   overflow-y: auto;
-  scrollbar-color: #b7bcd6 #ffffff;
-  scrollbar-width: thin;
-}
-
-.scroll-y.var1 {
   scrollbar-color: #757575 #BDBDBD;
   scrollbar-width: thin;
 }
@@ -13410,32 +13405,23 @@ p.c-green {
   height: 6px;
   -webkit-appearance: none;
   appearance: none;
+  background-color: var(--text-text-third, #BDBDBD);
 }
 
 .scroll-x::-webkit-scrollbar-thumb,
 .scroll-xy::-webkit-scrollbar-thumb,
 .scroll-y::-webkit-scrollbar-thumb {
   border-radius: 4px;
-  background: rgba(183, 188, 214, 0.37)
+  background-color: var(--border-border-2, #757575);
+}
+.scroll-y::-webkit-scrollbar-track {
+  background-color: var(--text-text-third, #BDBDBD);
 }
 
 .scroll-x::-webkit-scrollbar-button,
 .scroll-xy::-webkit-scrollbar-button,
 .scroll-y::-webkit-scrollbar-button {
   display: none;
-}
-
-.scroll-y.var1::-webkit-scrollbar {
-  width: 8px;
-  -webkit-appearance: none;
-  appearance: none;
-  border-radius: 20px;
-  background: var(--text-text-third, #BDBDBD);
-}
-
-.scroll-y.var1::-webkit-scrollbar-thumb {
-  border-radius: 20px;
-  background: var(--border-border-2, #757575);
 }
 
 .avatar-user {
@@ -14436,6 +14422,10 @@ p.c-green {
   -ms-transform: translateY(-50%) scaleX(-1);
   transform: translateY(-50%) scaleX(-1);
   right: 10px
+}
+
+.h-30vh {
+  height: 30vh;
 }
 
 .h-31 {
@@ -18709,6 +18699,16 @@ input+.autocomplete {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12' fill='none'%3E%3Cpath d='M4.12501 2.24999V9.74999C4.12495 9.8242 4.14691 9.89676 4.18812 9.95848C4.22932 10.0202 4.28791 10.0683 4.35646 10.0967C4.42502 10.1251 4.50047 10.1326 4.57325 10.1181C4.64603 10.1036 4.71288 10.0678 4.76532 10.0153L8.51532 6.2653C8.55019 6.23048 8.57785 6.18912 8.59672 6.14359C8.61559 6.09807 8.62531 6.04927 8.62531 5.99999C8.62531 5.95071 8.61559 5.90191 8.59672 5.85639C8.57785 5.81086 8.55019 5.76951 8.51532 5.73468L4.76532 1.98468C4.71288 1.93217 4.64603 1.89641 4.57325 1.88192C4.50047 1.86742 4.42502 1.87485 4.35646 1.90326C4.28791 1.93166 4.22932 1.97977 4.18812 2.0415C4.14691 2.10322 4.12495 2.17578 4.12501 2.24999Z' fill='%239E9E9E'/%3E%3C/svg%3E");
   background-position: left center;
 }
+
+.apply-datefilter .is {
+  display: none;
+}
+
+.apply-datefilter .d-none {
+  display: flex!important;
+}
+
+[name="datefilter"]
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 576px) {

@@ -527,17 +527,34 @@ let mut = new MutationObserver(function (muts) {
         setHeight(el, el.dataset.index)
       })
   }
+
+  const inner = $$el('.inner');
+
+  inner.forEach(item => {
+    if (item.closest('.collapse.show')) {
+      const parent = item.closest('.h-calc_1.sync_scroll_x')
+      const rectTopParent = parent.getBoundingClientRect().top
+  
+      console.log(rectTopParent)
+      item.style = `max-height: ` + (window.innerHeight - rectTopParent - 178) + `px`
+
+      parent.scrollTop = item.closest('.base-li').offsetTop - parent.offsetTop;
+    }
+  })
+
   mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
 
+
+$el('.h-calc_1.sync_scroll_x ').scrollTop =  $$el('.base-li')[1].offsetTop -  $el('.h-calc_1.sync_scroll_x ').offsetTop;
 
 $$el('.scrollTop').forEach(item => {
   item.addEventListener('click', () => {
     let selector = item.closest('.h-calc_1') ? '.h-calc_1' : 'html, body';
     let scrollUpValue = 0;
     if (item.dataset.top) {
-      scrollUpValue = +item.dataset.top
+      scrollUpValue = $$el('.base-li')[1].offsetTop -  $el('.h-calc_1.sync_scroll_x ').offsetTop;
     }
     console.log(scrollUpValue)
     $(selector).animate(
@@ -588,5 +605,70 @@ function syncScrollX(e) {
 
 // Attach the scroll event listener to each element
 syncScrollElements.forEach(element => {
-  element.addEventListener('scroll', syncScrollX);
+  element.addEventListener('scroll', (e) => {
+    syncScrollX(e)
+    updateDropdownPositions()
+  });
+});
+
+//update dropdown positions 
+const fixedElements = $$el('.fixed')
+
+function updateDropdownPositions() {
+  fixedElements.forEach(item => {
+    const parent = item.parentElement;
+    const parentRect = parent.getBoundingClientRect();
+
+    const leftParent = parentRect.left;
+    const topParent = parentRect.bottom;
+    const widthParent = parent.clientWidth;
+
+    item.style.left = `${leftParent}px`;
+    item.style.top = `${topParent}px`;
+    item.style.width = `${widthParent}px`;
+  });
+}
+
+updateDropdownPositions();
+window.addEventListener('resize', updateDropdownPositions);
+
+// Synchronizes the outer scroll with the inner scroll
+const outer = $$el('.outer');
+const inner = $$el('.inner');
+
+inner.forEach(item => {
+  item.addEventListener('scroll', function() {
+    const innerHeight = inner.scrollHeight;
+    const innerTop = inner.scrollTop;
+    const innerBottom = innerTop + inner.clientHeight;
+  
+    // Якщо внутрішній скрол досяг дна
+    if (innerBottom >= innerHeight) {
+      outer.scrollTop = outer.scrollHeight;
+    }
+  
+    // Якщо внутрішній скрол досяг верху
+    if (inner.scrollTop === 0) {
+      outer.scrollTop = 0;
+    }
+  });
+})
+
+// Synchronizes the inner scroll with the outer one
+outer.forEach(item => {
+  item.addEventListener('scroll', function() {
+    const outerHeight = outer.scrollHeight;
+    const outerTop = outer.scrollTop;
+    const outerBottom = outerTop + outer.clientHeight;
+
+    // If the outer scroll has reached the bottom
+    if (outerBottom >= outerHeight) {
+      inner.scrollTop = inner.scrollHeight;
+    }
+
+    // If the outer scroll has reached the top
+    if (outer.scrollTop === 0) {
+      inner.scrollTop = 0;
+    }
+  })
 });

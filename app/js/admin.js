@@ -116,7 +116,6 @@ $(document).ready(function () {
 });
 $(document).ready(function () {
   $('[data-toggle="collapse"]').click(function (e) {
-    console.log($(this).closest('.focus_row'))
     if ( $(this).closest('.focus_row').length > 0) {
       $(this).closest('.focus_row').find('.focus_row_item').toggleClass('bg-light-ffe')
      
@@ -514,12 +513,13 @@ document.addEventListener('click', (e) => {
 
 let optionMut = {
   childList: true,
-  subtree: true
+  subtree: true,
+  attributes: true
 };
 
 let mut = new MutationObserver(function (muts) {
   if ($$el('.h-calc_1')) {
-      mut.disconnect()
+     mut.disconnect()
       $$el('.h-calc_1').forEach(el => {
         setHeight(el, el.dataset.index)
       })
@@ -528,11 +528,14 @@ let mut = new MutationObserver(function (muts) {
   if ($$el('.inner').length > 0) {
     mut.disconnect()
     const inner = $$el('.inner');
+    console.log(inner.length)
 
     inner.forEach(item => {
       if (item.closest('.collapse.show')) {
         const parent = item.closest('.h-calc_1.sync_scroll_x')
         const rectTopParent = parent.getBoundingClientRect().top
+
+        console.log(parent)
     
         console.log(rectTopParent)
         item.style = `max-height: ` + (window.innerHeight - rectTopParent - 178) + `px`
@@ -548,6 +551,7 @@ mut.observe(document, optionMut);
 
 
 if ($el('.h-calc_1.sync_scroll_x') && $$el('.base-li')[1]) {
+  console.log('sync_scroll_x')
   $el('.h-calc_1.sync_scroll_x ').scrollTop =  $$el('.base-li')[1].offsetTop - $el('.h-calc_1.sync_scroll_x ').offsetTop;
 }
 
@@ -605,14 +609,6 @@ function syncScrollX(e) {
   });
 }
 
-// Attach the scroll event listener to each element
-syncScrollElements.forEach(element => {
-  element.addEventListener('scroll', (e) => {
-    syncScrollX(e)
-    updateDropdownPositions()
-  });
-});
-
 //update dropdown positions 
 const fixedElements = $$el('.fixed')
 
@@ -630,10 +626,18 @@ function updateDropdownPositions() {
     item.style.width = `${widthParent}px`;
   });
 }
-if (fixedElements.length > 0) {
+// if (fixedElements.length > 0) {
   updateDropdownPositions();
   window.addEventListener('resize', updateDropdownPositions);
-}
+// }
+
+// Attach the scroll event listener to each element
+syncScrollElements.forEach(element => {
+  element.addEventListener('scroll', (e) => {
+    syncScrollX(e)
+    updateDropdownPositions()
+  });
+});
 
 // Synchronizes the outer scroll with the inner scroll
 const outer = $$el('.outer');

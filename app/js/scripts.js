@@ -172,6 +172,72 @@ $(document).ready(function () {
           picker.container.addClass('calendar-customer');
         });
       });
+
+      $(function () {
+        $('[name="calendar-ranges"]').daterangepicker({
+          showDropdowns: true,
+          showWeekNumbers: true,
+          autoUpdateInput: false,
+          ranges: {
+            'Today': [moment(), moment()],
+            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
+            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
+            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
+        },
+        locale: {
+            "format": "DD MMM. YYYY",
+            "separator": " - ",
+            "applyLabel": "Done",
+            "cancelLabel": "Clear",
+            "fromLabel": "From",
+            "toLabel": "To",
+            "customRangeLabel": "Custom",
+            "weekLabel": "WK",
+            "daysOfWeek": [
+                "Su",
+                "Mo",
+                "Tu",
+                "We",
+                "Th",
+                "Fr",
+                "Sa"
+            ],
+            "monthNames": [
+                "January",
+                "February",
+                "March",
+                "April",
+                "May",
+                "June",
+                "July",
+                "August",
+                "September",
+                "October",
+                "November",
+                "December"
+            ],
+            "firstDay": 1
+        },
+        alwaysShowCalendars: true,
+        opens: "left",
+        buttonClasses: "p-1 w-120 min-w-auto",
+        applyButtonClasses: "btn",
+        cancelClass: "btn-white c-orange-f4 d-block"
+      }, function(start, end, label) {
+        console.log('New date range selected: ' + start.format('DD MMM. YYYY') + ' to ' + end.format('DD MMM. YYYY') + ' (predefined range: ' + label + ')');
+      }).on('show.daterangepicker', function (ev, picker) {
+        picker.container.addClass('calendar-ranges');
+      }).on('apply.daterangepicker', function(ev, picker) {
+        console.log(ev.currentTarget, picker)
+        $(this).val(picker.startDate.format('DD MMM. YYYY') + ' - ' + picker.endDate.format('DD MMM. YYYY'));
+        $(this).parent().addClass('apply-datefilter, isvalid')
+      }).on('cancel.daterangepicker', function(ev, picker) {
+        $(this).val('');
+        $(this).parent().removeClass('apply-datefilter, isvalid')
+      });
+    });
     }
   })
 });

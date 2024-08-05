@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="../../css/libs.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
-    <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+    <!-- <link href="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet"> -->
     <link href="../../css/style.css" rel="stylesheet">
 
     <link href="../../css/main.css" rel="stylesheet">
@@ -591,7 +591,7 @@
                         </div>
                         <div class="contents px-3 pt-3" data-index="0">
                             <div class="contents__item active">
-                                <form class="bg-white p-2 d-flex mb-2 br-4">
+                                <div class="bg-white p-2 d-flex mb-2 br-4">
                                     <ul class="nav nav-tabs_v3 b-1 b-gray-bd br-4" data-index="10">
                                         <li class="nav-item br-1 b-gray-bd">
                                             <a class="nav-link p-1 min-w-90 b-0 full_bg">
@@ -610,28 +610,32 @@
                                             </a>
                                         </li>
                                     </ul>
-                                    <div class="items-center select ml-auto br-4 b-gray-bd h-auto not-arrow max-w-190 isvalid">
+                                    <form class="items-center select ml-auto br-4 b-gray-bd h-auto not-arrow max-w-190">
                                         <div class="wh-29 h-100 d-flex bg-gray-e9 select__icon">
                                             <svg class="svg-sprite-icon c-gray-69 mx-auto" width="15px" height="29px">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
                                             </svg>
                                         </div>
-                                        <input type="text" class="px-2 input_customer select__item b-0 h-100 " value="Specify date range" placeholder="" required>
-                                        <div class="autocomplete mt-2">
-                                            <ul>
-                                                <li>
-                                                    <a href="#" class="p-2 bb-1 d-block">1</a>
-                                                </li>
-                                                <li>
-                                                    <a href="#" class="p-2 bb-1 d-block">2</a>
-                                                </li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <input type="text" class=" ml-2 input_customer max-w-100 br-4 py-1" value="01 Apr.  2022" >
-                                    <input type="text" class=" mx-2 input_customer max-w-100 br-4 py-1" value="25 Apr.  2022" >
+                                        <input type="text" class="px-2 input_customer select__item b-0 h-100 text-truncate pr-4" placeholder="Date" name="calendar-ranges" required>
+                                        <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                                            <svg class="svg-sprite-icon is"
+                                                width="14px" height="15px">
+                                                <use
+                                                    xlink:href="../../img/sprite/symbol/sprite.svg#arrow-down-2">
+                                                </use>
+                                            </svg>
+                                            <button type="reset" class="d-none p-0" onclick="$(this).closest('.apply-datefilter').removeClass('apply-datefilter')">
+                                                <svg class="svg-sprite-icon"
+                                                    width="12px" height="12px">
+                                                    <use
+                                                        xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                    </use>
+                                                </svg>
+                                            </button>
+                                        </div> 
+                                    </form>
                                     <button type="button" class="btn ml-4 p-1 w-160">Add new rate </button>
-                                </form>
+                                </div>
                                 <div class="h-calc_1 bg-white br-4" data-index="0">
                                     <div class="contents pt-0" data-index="10">
                                         <div class="contents__item ">
@@ -640,42 +644,51 @@
                                                     <tr>
                                                         <th class="pl-5 py-2 pr-3">
                                                             <p class="weight-medium mb-2"> Valid time</p>
-                                                            <div class="relative max-w-180">
+                                                            <form class="relative max-w-180">
                                                                 <input type="text"
-                                                                    class="input_customer bg-white b-0 br-4"
-                                                                    name="datefilter" placeholder="Time range"
-                                                                    data-format-one="DD MMM"
-                                                                    data-format-two="DD MMM. YYYY">
-                                                                <svg class="svg-sprite-icon c-gray-92 mx-2 absolute t-center r-0"
-                                                                    width="14px" height="15px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
-                                                                    </use>
-                                                                </svg>
-                                                            </div>
+                                                                    class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
+                                                                    name="calendar-ranges" placeholder="Time range">
+                                                                <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                                                                    <svg class="svg-sprite-icon is"
+                                                                        width="14px" height="15px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <button type="reset" class="d-none p-0" onclick="$(this).closest('.apply-datefilter').removeClass('apply-datefilter')">
+                                                                        <svg class="svg-sprite-icon"
+                                                                            width="12px" height="12px">
+                                                                            <use
+                                                                                xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                            </use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div> 
+                                                            </form>
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Origin</p>
                                                             <input type="text"
-                                                                    class="input_customer bg-white b-0 br-4 max-w-195" 
+                                                                    class="input_customer bg-white b-gray-ee br-4 max-w-195" 
                                                                     placeholder="From">
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Destination</p>
                                                             <input type="text"
-                                                            class="input_customer bg-white b-0 br-4 max-w-195" 
+                                                            class="input_customer bg-white b-gray-ee br-4 max-w-195" 
                                                             placeholder="To">
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Terms</p>
                                                             <div class="select b-0 max-w-95 h-fit arrow_small">
                                                                 <input type="text"
-                                                                    class="select__item input_customer bg-white br-4 b-0"
+                                                                    class="select__item input_customer bg-white br-4 b-gray-ee"
                                                                     placeholder="Select">
                                                                 <div class="select__drop">
-                                                                    <ul class="select__menu">
-                                                                        <li class="select__option active">1</li>
+                                                                    <ul class="select__menu var_2 fs-14 b-gray-bd">
+                                                                        <li class="select__option">1</li>
                                                                         <li class="select__option">2</li>
+                                                                        <li class="select__option">3</li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -685,7 +698,7 @@
                                                             <p class="weight-medium mb-2">Container</p>
                                                             <div class="select b-0 max-w-95 h-fit arrow_small">
                                                                 <input type="text"
-                                                                    class="select__item input_customer bg-white br-4 b-0"
+                                                                    class="select__item input_customer bg-white br-4 b-gray-ee"
                                                                     placeholder="Select">
                                                                 <div class="select__drop">
                                                                     <ul class="select__menu">
@@ -699,7 +712,7 @@
                                                             <p class="weight-medium mb-2">Rate</p>
                                                             <div class="relative max-w-95">
                                                                 <input type="text"
-                                                                    class="input_customer bg-white b-0 br-4">
+                                                                    class="input_customer bg-white b-gray-ee br-4">
                                                                 <p class="absolute r-7 t-center c-gray-75 fs-13">EUR</p>
                                                             </div>
                                                                 
@@ -708,7 +721,7 @@
                                                             <p class="weight-medium mb-2">Company</p>
                                                             <div class="select b-0 max-w-95 h-fit arrow_small">
                                                                 <input type="text"
-                                                                    class="select__item input_customer bg-white br-4 b-0"
+                                                                    class="select__item input_customer bg-white br-4 b-gray-ee"
                                                                     placeholder="Select">
                                                                 <div class="select__drop">
                                                                     <ul class="select__menu">
@@ -1364,42 +1377,51 @@
                                                     <tr>
                                                         <th class="pl-5 py-2 pr-3">
                                                             <p class="weight-medium mb-2"> Valid time</p>
-                                                            <div class="relative max-w-180">
+                                                            <form class="relative max-w-180">
                                                                 <input type="text"
-                                                                    class="input_customer bg-white b-0 br-4"
-                                                                    name="datefilter" placeholder="Time range"
-                                                                    data-format-one="DD MMM"
-                                                                    data-format-two="DD MMM. YYYY">
-                                                                <svg class="svg-sprite-icon c-gray-92 mx-2 absolute t-center r-0"
-                                                                    width="14px" height="15px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
-                                                                    </use>
-                                                                </svg>
-                                                            </div>
+                                                                class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
+                                                                name="calendar-ranges" placeholder="Time range">
+                                                                <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                                                                    <svg class="svg-sprite-icon is"
+                                                                        width="14px" height="15px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <button type="reset" class="d-none p-0" onclick="$(this).closest('.apply-datefilter').removeClass('apply-datefilter')">
+                                                                        <svg class="svg-sprite-icon"
+                                                                            width="12px" height="12px">
+                                                                            <use
+                                                                                xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                            </use>
+                                                                        </svg>
+                                                                    </button>
+                                                                </div> 
+                                                            </form>
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Origin</p>
                                                             <input type="text"
-                                                                    class="input_customer bg-white b-0 br-4 max-w-195" 
+                                                                    class="input_customer bg-white b-gray-ee br-4 max-w-195" 
                                                                     placeholder="From">
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Destination</p>
                                                             <input type="text"
-                                                            class="input_customer bg-white b-0 br-4 max-w-195" 
+                                                            class="input_customer bg-white b-gray-ee br-4 max-w-195" 
                                                             placeholder="To">
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Conatainer type</p>
                                                             <div class="select b-0 max-w-110 h-fit arrow_small">
                                                                 <input type="text"
-                                                                    class="select__item input_customer bg-white br-4 b-0"
+                                                                    class="select__item input_customer bg-white br-4 b-gray-ee"
                                                                     placeholder="Select">
                                                                 <div class="select__drop">
-                                                                    <ul class="select__menu">
-                                                                        <li class="select__option active">1</li>
-                                                                        <li class="select__option">2</li>
+                                                                    <ul class="select__menu var_2 fs-14 b-gray-bd">
+                                                                        <li class="select__option">30’HC</li>
+                                                                        <li class="select__option">40’HC</li>
+                                                                        <li class="select__option">40’CN</li>
                                                                     </ul>
                                                                 </div>
                                                             </div>
@@ -1408,13 +1430,13 @@
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Rate</p>
                                                             <input type="text"
-                                                                class="input_customer bg-white max-w-90 b-0 br-4"
+                                                                class="input_customer bg-white max-w-90 b-gray-ee br-4"
                                                                 placeholder="Amount">
                                                         </th>
                                                         <th class="px-3 py-2">
                                                             <p class="weight-medium mb-2">Carrier</p>
                                                             <input type="text"
-                                                                class="input_customer bg-white max-204 b-0 br-4"
+                                                                class="input_customer bg-white max-204 b-gray-ee br-4"
                                                                 placeholder="Company name">
                                                         </th>
                                                         <th class="py-2 px-3">
@@ -6768,7 +6790,7 @@
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
     <script src="../../vendor/sticky/jquery.sticky.js"></script>
-    <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script>
+    <!-- <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script> -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
     <script src="../../js/scripts.js"></script>

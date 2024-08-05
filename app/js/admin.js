@@ -150,7 +150,6 @@ $(document).ready(function () {
     }
   }).on('focus', function(e) {
     if ($(this).closest(".select").find('.select__icon')) {
-      console.log($(this).closest(".select"))
       $(this).closest(".select").addClass('isfocus')
     }
   }).on('blur', function(e) {
@@ -186,7 +185,6 @@ $(document).ready(function () {
     $(this).closest(".select").removeClass('active');
 
     if ($(this).closest(".select").find('.select__icon').length > 0) {
-      console.log($(this).closest(".select").find('.select__icon'))
       if ($(this).closest(".select").find('.select__item').val() != '') {
         $(this).closest(".select").addClass('isvalid')
       } else {
@@ -516,8 +514,7 @@ document.addEventListener('click', (e) => {
 
 let optionMut = {
   childList: true,
-  subtree: true,
-  attributes: true
+  subtree: true
 };
 
 let mut = new MutationObserver(function (muts) {
@@ -528,26 +525,31 @@ let mut = new MutationObserver(function (muts) {
       })
   }
 
-  const inner = $$el('.inner');
+  if ($$el('.inner').length > 0) {
+    mut.disconnect()
+    const inner = $$el('.inner');
 
-  inner.forEach(item => {
-    if (item.closest('.collapse.show')) {
-      const parent = item.closest('.h-calc_1.sync_scroll_x')
-      const rectTopParent = parent.getBoundingClientRect().top
-  
-      console.log(rectTopParent)
-      item.style = `max-height: ` + (window.innerHeight - rectTopParent - 178) + `px`
+    inner.forEach(item => {
+      if (item.closest('.collapse.show')) {
+        const parent = item.closest('.h-calc_1.sync_scroll_x')
+        const rectTopParent = parent.getBoundingClientRect().top
+    
+        console.log(rectTopParent)
+        item.style = `max-height: ` + (window.innerHeight - rectTopParent - 178) + `px`
 
-      parent.scrollTop = item.closest('.base-li').offsetTop - parent.offsetTop;
-    }
-  })
+        parent.scrollTop = item.closest('.base-li').offsetTop - parent.offsetTop;
+      }
+    })
+  }
 
   mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
 
 
-$el('.h-calc_1.sync_scroll_x ').scrollTop =  $$el('.base-li')[1].offsetTop -  $el('.h-calc_1.sync_scroll_x ').offsetTop;
+if ($el('.h-calc_1.sync_scroll_x') && $$el('.base-li')[1]) {
+  $el('.h-calc_1.sync_scroll_x ').scrollTop =  $$el('.base-li')[1].offsetTop - $el('.h-calc_1.sync_scroll_x ').offsetTop;
+}
 
 $$el('.scrollTop').forEach(item => {
   item.addEventListener('click', () => {
@@ -587,7 +589,7 @@ function autoResize(textarea) {
 
 // Synchronize horizontal scrolling
 // Get all elements with the class sync_scroll_x
-const syncScrollElements = document.querySelectorAll('.sync_scroll_x');
+const syncScrollElements = $$el('.sync_scroll_x');
 
 // Function to synchronize the scroll positions
 function syncScrollX(e) {
@@ -628,9 +630,10 @@ function updateDropdownPositions() {
     item.style.width = `${widthParent}px`;
   });
 }
-
-updateDropdownPositions();
-window.addEventListener('resize', updateDropdownPositions);
+if (fixedElements.length > 0) {
+  updateDropdownPositions();
+  window.addEventListener('resize', updateDropdownPositions);
+}
 
 // Synchronizes the outer scroll with the inner scroll
 const outer = $$el('.outer');

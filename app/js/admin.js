@@ -118,9 +118,20 @@ $(document).ready(function () {
   $('[data-toggle="collapse"]').click(function (e) {
     if ( $(this).closest('.focus_row').length > 0) {
       $(this).closest('.focus_row').find('.focus_row_item').toggleClass('bg-light-ffe')
-     
+    }
+
+    if ($(this).closest('.base-li').length > 0) {
+    
+      const parent = $(this).closest('.h-calc_1.sync_scroll_x')
+      parent.animate(
+        {
+          scrollTop: $(this).closest('.base-li').offset().top - parent.offset().top 
+        },
+        250
+      );
     }
   })
+
   $('.select__drop [data-toggle="collapse"], .relative > [data-toggle="collapse"]').click(function (e) {
     console.log(this)
 
@@ -525,34 +536,13 @@ let mut = new MutationObserver(function (muts) {
       })
   }
 
-  if ($$el('.inner').length > 0) {
-    mut.disconnect()
-    const inner = $$el('.inner');
-    console.log(inner.length)
-
-    inner.forEach(item => {
-      if (item.closest('.collapse.show')) {
-        const parent = item.closest('.h-calc_1.sync_scroll_x')
-        const rectTopParent = parent.getBoundingClientRect().top
-
-        console.log(parent)
-    
-        console.log(rectTopParent)
-        item.style = `max-height: ` + (window.innerHeight - rectTopParent - 178) + `px`
-
-        parent.scrollTop = item.closest('.base-li').offsetTop - parent.offsetTop;
-      }
-    })
-  }
-
   mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
 
 
 if ($el('.h-calc_1.sync_scroll_x') && $$el('.base-li')[1]) {
-  console.log('sync_scroll_x')
-  $el('.h-calc_1.sync_scroll_x ').scrollTop =  $$el('.base-li')[1].offsetTop - $el('.h-calc_1.sync_scroll_x ').offsetTop;
+  $el('.h-calc_1.sync_scroll_x ').scrollTop = $$el('.base-li')[1].offsetTop - $el('.h-calc_1.sync_scroll_x ').offsetTop;
 }
 
 $$el('.scrollTop').forEach(item => {
@@ -626,10 +616,11 @@ function updateDropdownPositions() {
     item.style.width = `${widthParent}px`;
   });
 }
-// if (fixedElements.length > 0) {
+
+if (fixedElements.length > 0) {
   updateDropdownPositions();
   window.addEventListener('resize', updateDropdownPositions);
-// }
+}
 
 // Attach the scroll event listener to each element
 syncScrollElements.forEach(element => {
@@ -637,45 +628,4 @@ syncScrollElements.forEach(element => {
     syncScrollX(e)
     updateDropdownPositions()
   });
-});
-
-// Synchronizes the outer scroll with the inner scroll
-const outer = $$el('.outer');
-const inner = $$el('.inner');
-
-inner.forEach(item => {
-  item.addEventListener('scroll', function() {
-    const innerHeight = inner.scrollHeight;
-    const innerTop = inner.scrollTop;
-    const innerBottom = innerTop + inner.clientHeight;
-  
-    // Якщо внутрішній скрол досяг дна
-    if (innerBottom >= innerHeight) {
-      outer.scrollTop = outer.scrollHeight;
-    }
-  
-    // Якщо внутрішній скрол досяг верху
-    if (inner.scrollTop === 0) {
-      outer.scrollTop = 0;
-    }
-  });
-})
-
-// Synchronizes the inner scroll with the outer one
-outer.forEach(item => {
-  item.addEventListener('scroll', function() {
-    const outerHeight = outer.scrollHeight;
-    const outerTop = outer.scrollTop;
-    const outerBottom = outerTop + outer.clientHeight;
-
-    // If the outer scroll has reached the bottom
-    if (outerBottom >= outerHeight) {
-      inner.scrollTop = inner.scrollHeight;
-    }
-
-    // If the outer scroll has reached the top
-    if (outer.scrollTop === 0) {
-      inner.scrollTop = 0;
-    }
-  })
 });

@@ -2300,6 +2300,31 @@
                     <input type="text" name="calendar-week" value="" >
                  
                     <br><br>
+                    <form class="items-center select br-4 b-gray-bd h-auto not-arrow max-w-190 ">
+                        <div class="wh-29 h-100 d-flex bg-gray-e9 select__icon">
+                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="15px" height="29px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#calendar-7"></use>
+                            </svg>
+                        </div>
+                        <input type="text" class="px-2 input_customer select__item b-0 h-100 text-truncate pr-4" name="calendar-ranges" required>
+                        <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                            <svg class="svg-sprite-icon is"
+                                width="14px" height="15px">
+                                <use
+                                    xlink:href="img/sprite/symbol/sprite.svg#arrow-down-2">
+                                </use>
+                            </svg>
+                            <button type="reset" class="d-none p-0" onclick="$(this).closest('.apply-datefilter').removeClass('apply-datefilter')">
+                                <svg class="svg-sprite-icon"
+                                    width="12px" height="12px">
+                                    <use
+                                        xlink:href="img/sprite/symbol/sprite.svg#close">
+                                    </use>
+                                </svg>
+                            </button>
+                        </div> 
+                    </form>
+                    <br><br>
                     <div class="data-calendar br-4 overflow-hidden pb-0">
                         <div class=" d-flex justify-content-between px-3 py-2 fs-14 weight-bold">
                         
@@ -3269,13 +3294,41 @@
                         </svg>
                     </button>
                     <br><br>
+
+                    <div class="d-flex h-31">
+                        <label class="mr-2">
+                            <input type="radio" name="radio_1" class="checkbox" checked="">
+                            <span class="radio-active px-3 h-100 d-flex br-4 bg-light-ee">
+                                <span class="m-auto d-block">All</span>
+                            </span>
+                        </label>
+                        <label class="mr-2">
+                            <input type="radio" name="radio_1" class="checkbox">
+                            <span class="radio-active px-3 h-100 items-center br-4 bg-light-ee c-gray-75">
+                                    <svg class="svg-sprite-icon mr-1" width="14px" height="14px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#boat5"></use>
+                                    </svg>
+                                    Sea
+                            </span>
+                        </label>
+                        <label class="mr-3">
+                            <input type="radio" name="radio_1" class="checkbox">
+                            <span class="radio-active px-3 h-100 items-center br-4 bg-light-ee c-gray-75">
+                                <svg class="svg-sprite-icon mr-1" width="15px" height="11px">
+                                    <use xlink:href="img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                </svg>
+                                Road
+                            </span>
+                        </label>
+                    </div>
+                    <br><br>
                     <div class="d-flex radio_v1 mt-1 mr-4">
                         <label>
-                            <input type="radio" name="radio" class="checkbox" checked>
+                            <input type="radio" name="radio_2" class="checkbox" checked>
                             <span>Month</span>
                         </label>
                         <label>
-                            <input type="radio" name="radio" class="checkbox">
+                            <input type="radio" name="radio_2" class="checkbox">
                             <span>Week</span>
                         </label>
                     </div>
@@ -3654,7 +3707,259 @@
                 <div id="inputs" class="pt-5 ">
                     <p class="fs-30 text-up bb-1 pt-5">inputs</p>
                     <br><br>
+                    <div class="d-flex p-3 bg-gray-f5 mt-3 br-4">
+                        <div class="w-40">
+                            <p class="weight-medium c-gray-69 mb-1">Orgin</p>
+                            <div class="items-center select br-4 b-gray-75 min-h-45 arrow_small">
+                                <!-- <input type="hidden" class="px-2 input_customer select__item b-0 h-100"
+                                    vlaue="Vilnius (LT)"> -->
+                                <div class="px-3 input_customer select__item b-0 h-100 items-center">
+                                    <div class="b-1 br-4 b-gray-75 px-1 items-center mr-2">
+                                        <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                            </use>
+                                        </svg>
+                                        <img src="img/flag.svg" alt="flag" width="14px" height="14px"
+                                            class="mr-1">
+                                        <p class="mr-2 lh-1_4 fs-14 c-black-1e">Vilnius (LT)</p>
+                                        <a href="#" class="d-flex">
+                                            <svg class="svg-sprite-icon" width="16px" height="10px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select__drop">
+                                    <div class="select__menu br-4 p-2">
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Klaipėda (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#anchor3">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Klaipėda (LT)</span>
+                                        </a>
+                                        <button type="button" class="btn w-100 mt-3">Button</button>
+                                    </div>
+                                </div>
+                            </div>
 
+                            <label class="mt-2 items-center">
+                                <input type="checkbox" class="checkbox" checked="">
+                                <span class="checked-customer small mr-2 br-4">
+                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#check">
+                                        </use>
+                                    </svg>
+                                </span>
+                                <span class="pl-1">Port changes included</span>
+                            </label>
+                        </div>
+                        <svg class="svg-sprite-icon stroke-1e mx-2 px-2 mt-3" width="28px"
+                            height="50px">
+                            <use xlink:href="img/sprite/symbol/sprite.svg#transfers2"></use>
+                        </svg>
+                        <div class="w-40">
+                            <p class="weight-medium c-gray-75 mb-1">Destination</p>
+                            <div class="items-center select br-4 b-gray-75 min-h-45 arrow_small">
+                                <!-- <input type="hidden" class="px-2 input_customer select__item b-0 h-100"
+                                    vlaue="Vilnius (LT)"> -->
+                                <div class="px-3 input_customer select__item b-0 h-100 items-center">
+                                    <div class="b-1 br-4 b-gray-75 px-1 items-center mr-2">
+                                        <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                            <use xlink:href="img/sprite/symbol/sprite.svg#anchor3">
+                                            </use>
+                                        </svg>
+                                        <img src="img/flag.svg" alt="flag" width="14px" height="14px"
+                                            class="mr-2">
+                                        <p class="mr-2 lh-1_4 fs-14 c-black-1e">Vilnius (LT)</p>
+                                        <a href="#" class="d-flex">
+                                            <svg class="svg-sprite-icon" width="16px" height="10px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close">
+                                                </use>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="select__drop">
+                                    <div class="select__menu br-4 p-2">
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Vilnius (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#building-2">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Klaipėda (LT)</span>
+                                        </a>
+                                        <a href="#" class="hover__option items-center p-1 mb-1">
+                                            <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#anchor3">
+                                                </use>
+                                            </svg>
+                                            <img src="img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                            <span>Klaipėda (LT)</span>
+                                        </a>
+                                        <button type="button" class="btn w-100 mt-3">Button</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <label class="mt-2 items-center">
+                                <input type="checkbox" class="checkbox" checked="">
+                                <span class="checked-customer small mr-2 br-4">
+                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                        <use xlink:href="img/sprite/symbol/sprite.svg#check">
+                                        </use>
+                                    </svg>
+                                </span>
+                                <span class="pl-1">Port changes included</span>
+                            </label>
+                        </div>
+                        <div class="w-150 flex-shrink-0 ml-3">
+                            <p class="weight-medium c-gray-75 mb-1">Orgin</p>
+                            <div class="items-center select br-4 b-gray-75 min-h-45 arrow_small">
+                                <input type="text" class="px-2 input_customer select__item b-0 h-100 fs-16" value="5x40’HC" placeholder="" required="">
+                                <div class="select__drop min-w-250 w-fit-content right">
+                                    <div class="select__menu br-4 p-3 b-gray-bd">
+                                    <div class="items-center">
+                                            <div class="col-6 max-w-95 pl-0 pr-1">
+                                                <div class="h-35 mt-3 select b-0 arrow_small">
+                                                    <input type="text" class="select__item input_customer br-4 h-100" value="40 HC ">
+                                                    <!-- <div class="autocomplete mt-1">
+                                                        <ul>
+                                                            <li>
+                                                                <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                            </li>
+                                                            <li>
+                                                                <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div> -->
+                                                    <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                                    <div class="select__drop">
+                                                        <ul class="select__menu">
+                                                            <li class="select__option active">40 HC </li>
+                                                            <li class="select__option">50 HC </li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 max-w-90 pr-0 pl-1">
+                                                <div class="relative h-35 mt-3">
+                                                    <input type="text" class="input_customer br-4 h-100" value="2">
+                                                    <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                                </div>
+                                            </div>
+                                    </div>
+                                    <div class="items-center">
+                                        <div class="col-6 max-w-95 pl-0 pr-1">
+                                            <div class="h-35 mt-3 select b-0 arrow_small">
+                                                <input type="text" class="select__item input_customer br-4 h-100" value="40 HC">
+                                                <!-- <div class="autocomplete mt-1">
+                                                    <ul>
+                                                        <li>
+                                                            <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                        </li>
+                                                        <li>
+                                                            <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                        </li>
+                                                    </ul>
+                                                </div> -->
+                                                <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                                <div class="select__drop">
+                                                    <ul class="select__menu">
+                                                        <li class="select__option active">40 HC </li>
+                                                        <li class="select__option">50 HC </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-6 max-w-90 pr-0 pl-1">
+                                            <div class="relative h-35 mt-3">
+                                                <input type="text" class="input_customer br-4 h-100" value="2">
+                                                <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                            </div>
+                                        </div>
+                                        <a href="#" class="p-1 mt-3 ml-auto">
+                                            <svg class="svg-sprite-icon " width="12px" height="27px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                        </div>
+                                        <a href="#" class="p-1 c-orange-f4 fs-14 weight-medium items-center mt-2">
+                                            <svg class="svg-sprite-icon mr-1" width="17px" height="17px">
+                                                <use xlink:href="img/sprite/symbol/sprite.svg#plus2"></use>
+                                            </svg>
+                                            Add container type
+                                        </a>
+                                        <button type="button" class="btn w-100 mt-3">Search Rates</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#" class="p-1 ml-2 mt-3">
+                            <svg class="svg-sprite-icon c-gray-75" width="13px" height="47px">
+                                <use xlink:href="img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <br><br>
                     <form class="items-center mr-2 select b-gray-bd h-31 w-160 w-130_1440 not-arrow br-4">
                         <div class="wh-29 d-flex bg-gray-e9 select__icon">
                             <svg class="svg-sprite-icon c-gray-69 mx-auto" width="13px" height="29px">
@@ -5739,6 +6044,10 @@
                         <use xlink:href="img/sprite/symbol/sprite.svg#arrowSquareOut"></use>
                     </svg>
 
+                    <svg class="svg-sprite-icon" width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#arrowSquareOut_externall"></use>
+                    </svg>
+
                     <svg class="svg-sprite-icon stroke-orange-f4" width="20px" height="20px">
                         <use xlink:href="img/sprite/symbol/sprite.svg#open-outline"></use>
                     </svg>
@@ -5769,6 +6078,9 @@
                     </svg>
                     <svg class="svg-sprite-icon" width="20px" height="20px">
                         <use xlink:href="img/sprite/symbol/sprite.svg#copy2"></use>
+                    </svg>
+                    <svg class="svg-sprite-icon" width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#copy3"></use>
                     </svg>
                     <br><br>
                     <svg class="svg-sprite-icon" width="20px" height="20px">
@@ -5928,6 +6240,19 @@
                             xlink:href="img/sprite/symbol/sprite.svg#arrowsMerge">
                         </use>
                     </svg>
+
+                    <svg class="svg-sprite-icon " width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#transfers"></use>
+                    </svg>
+                    <svg class="svg-sprite-icon " width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#transfers2"></use>
+                    </svg>
+                    <svg class="svg-sprite-icon " width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#transfers3"></use>
+                    </svg>
+                    <svg class="svg-sprite-icon" width="20px" height="20px">
+                        <use xlink:href="img/sprite/symbol/sprite.svg#arrowsLeftRight"></use>
+                    </svg>
                     <br><br>
 
                     <svg class="svg-sprite-icon" width="16px" height="16px">
@@ -5990,12 +6315,6 @@
                     </svg>
                     <svg class="svg-sprite-icon c-orange-f4" width="18px" height="18px">
                         <use xlink:href="img/sprite/symbol/sprite.svg#transfer-fill"></use>
-                    </svg>
-                    <svg class="svg-sprite-icon c-orange-f4" width="18px" height="18px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#transfers2"></use>
-                    </svg>
-                    <svg class="svg-sprite-icon c-orange-f4" width="18px" height="18px">
-                        <use xlink:href="img/sprite/symbol/sprite.svg#transfers3"></use>
                     </svg>
                     <br>
 

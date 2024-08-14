@@ -232,10 +232,10 @@ $(document).ready(function () {
       }).on('apply.daterangepicker', function(ev, picker) {
         console.log(ev.currentTarget, picker)
         $(this).val(picker.startDate.format('DD MMM. YYYY') + ' - ' + picker.endDate.format('DD MMM. YYYY'));
-        $(this).parent().addClass('apply-datefilter, isvalid')
+        $(this).parent().addClass('apply-datefilter isvalid')
       }).on('cancel.daterangepicker', function(ev, picker) {
         $(this).val('');
-        $(this).parent().removeClass('apply-datefilter, isvalid')
+        $(this).parent().removeClass('apply-datefilter isvalid')
       });
     });
     }

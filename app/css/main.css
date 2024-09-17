@@ -872,7 +872,7 @@ button:focus {
   position: absolute;
   left: 0;
   top: 0;
-  background: url('../img/arrow_down_2.svg') no-repeat center / 16px 10px;
+  background: url('../img/arrow_down_2.svg') no-repeat center / 16px ;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -882,6 +882,10 @@ button:focus {
   left: auto;
   right: 7px;
   pointer-events: none;
+}
+
+.select.arrow_dark:before {
+  background-image: url('../img/arrow_down_2_dark.svg');
 }
 
 .select.small:before {
@@ -1160,8 +1164,7 @@ button:focus {
   padding: 0 30px 0 13px;
   min-width: 30px;
   min-height: 10px;
-  color: #67758d;
-  color: #696969;
+  /* color: #696969; */
   font-size: 16px;
   white-space: nowrap;
   overflow: hidden;
@@ -1258,7 +1261,7 @@ button:focus {
 .select__option.active svg {
   fill: #109cf1;
 }
-.select.arrow_small:before,
+/* .select.arrow_small:before, */
 .select__two:before {
   right: 5px;
   background-size: 10px;
@@ -4629,6 +4632,10 @@ button:focus {
 
 .b-gray-e9 {
   border-color: #E9E9E9 !important;
+}
+
+.b-gray-9e {
+  border-color: #9E9E9E !important;
 }
 
 .b-gray-69 {
@@ -12559,6 +12566,10 @@ p.c-green {
   box-shadow: -2px 0px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.shadow18 {
+  box-shadow: 0px 0px 80px 0px rgba(0, 0, 0, 0.30)!important;
+}
+
 .h-7 {
   height: 7px
 }
@@ -18874,6 +18885,14 @@ textarea.input_customer {
 
 .popup-collapse.show .popup-collapse-bg {
   opacity: 1;
+}
+.popup-collapse .animate-right {
+  transform: translateX(100%);
+  transition: all 0.3s ease;
+}
+
+.popup-collapse.show .animate-right {
+  transform: translateX(0);
 }
 
 .popup-collapse-bg .container {

@@ -167,6 +167,15 @@ $(document).ready(function () {
       $(this).closest(".select").removeClass('isfocus')
     }
   })
+  $('input.b-0').on('focus', function(e) {
+      if ($(this).parent().hasClass('b-1')) {
+        $(this).parent().addClass('isfocus')
+      }
+  }).on('blur', function(e) {
+    if ($(this).parent().hasClass('b-1')) {
+      $(this).parent().removeClass('isfocus')
+    }
+  })
 
   $("form").on("reset", function() {
     $(this).find(".select__item").each(function() {

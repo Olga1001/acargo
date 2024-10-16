@@ -554,8 +554,8 @@ textarea {
 
 input:focus,
 textarea:focus {
-  /* border-color: #109cf1!important; */
   border-color: var(--orange-new, #F45617) !important;
+  box-shadow: 0px 0px 8px 0px rgba(245, 70, 23, 0.25);
 }
 
 input:active,
@@ -2137,6 +2137,7 @@ button:focus {
   border: 1px solid rgba(177, 177, 177, 0.62) !important;
   display: flex;
   background-color: #fff;
+  flex-shrink: 0;
 }
 .radio_checkboxes .checked-customer {
   background: var(--surface-surface-2, #E0E0E0);
@@ -4451,6 +4452,22 @@ button:focus {
   font-weight: 300!important;
 }
 
+.border-before:before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: 1.5px solid var(--border-border-1, #BDBDBD);
+  border-radius: 4px;
+  pointer-events: none;
+}
+
+.b-1_5 {
+  border: 1.5px solid var(--border-border-0, rgba(177, 177, 177, 0.5))!important;
+}
+
 .bl-0 {
   border-left-width: 0px !important;
 }
@@ -4506,9 +4523,6 @@ button:focus {
 
 .b-1 {
   border: 1px solid var(--border-border-0, rgba(177, 177, 177, 0.5)) !important;
-}
-.b-1_5 {
-  border: 1.5px solid var(--border-border-0, rgba(177, 177, 177, 0.5))!important;
 }
 
 .b-05 {
@@ -11794,7 +11808,7 @@ a.page-link.active svg {
 }
 
 .b-r-0 {
-  border-right: none;
+  border-right: none!important;
 }
 
 .br-r-0 {

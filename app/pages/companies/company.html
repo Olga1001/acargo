@@ -721,10 +721,10 @@
                                         <div class="br-4 p-2 bg-gray-f5 mb-3 lh-22">
                                             <p class="fs-14 weight-medium">Tags</p>
                                             <div class="d-flex flex-wrap fs-14 weight-medium c-orange-f4">
-                                                <div class="bg-white mt-2 br-4 px-2 mr-2 b-1 b-orange-f4">
+                                                <div class="bg-white mt-2 br-4 px-2 mr-2 b-1_5 b-orange-f4">
                                                 <p class="px-1">Transporter</p> 
                                                 </div>
-                                                <div class="bg-white mt-2 br-4 px-2 mr-2 b-1 b-orange-f4">
+                                                <div class="bg-white mt-2 br-4 px-2 mr-2 b-1_5 b-orange-f4">
                                                     <p class="px-1">New Client</p> 
                                                 </div>
                                             </div>
@@ -2136,39 +2136,41 @@
                                                     <th class="p-3 pl-4 w-150"><p class="pl-1">Due Date</p></th>
                                                     <th class="p-3 w-160">Paid or Not</th>
                                                 </tr>
-                                                <tr class="">
-                                                    <td colspan="7">
-                                                        <table class="w-100">
-                                                            <tr>
-                                                                <td class="b-1_5 br-4 b-gray-bd bg-light-ee items-center py-2 px-1"> 
-                                                                    <div class="col-7 items-center">
-                                                                        <div class="d-flex mr-5">
-                                                                            <label class="items-center fs-15">
-                                                                                <input type="checkbox" class="checkbox">
-                                                                                <span class="checked-customer br-4 small mr-3">
-                                                                                    <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="16px">
-                                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                                        </use>
-                                                                                    </svg>
-                                                                                </span>
-                                                                                <span>Select all</span>
-                                                                            </label>
-                                                                        </div>
-                        
-                                                                        <button type="button" class="btn white not-focus b-0 bg-none p-1 min-w-auto mr-4 lh-1_3">
-                                                                            <svg class="svg-sprite-icon c-orange-f4 mr-1" width="17" height="18px">
-                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#paperPlaneRight-send"></use>
+                                                <tr class="relative bg-light-ee"> 
+                                                    <td class="border-before py-2 pl-1" colspan="4"> 
+                                                        <div class="flex-between-center">
+                                                            <div class="col-7 items-center">
+                                                                <div class="d-flex mr-5">
+                                                                    <label class="items-center fs-15">
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <span class="checked-customer br-4 small mr-3">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="16px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                                </use>
                                                                             </svg>
-                                                                            Send
-                                                                        </button>
-                                                                    </div>
-                                                                    <p><span class="c-gray-75 fs-12 weight-bold pr-3">Total amount:</span><span class="weight-medium pr-3">4 200 EUR</span><span class="c-gray-75 fs-13">(Selected 2 Invoices)</span></p>
-                                                                </td>
-                                                            </tr>
-                                                        </table>
+                                                                        </span>
+                                                                        <span>Select all</span>
+                                                                    </label>
+                                                                </div>
+                
+                                                                <button type="button" class="btn white not-focus b-0 bg-none p-1 min-w-auto mr-4 lh-1_3">
+                                                                    <svg class="svg-sprite-icon c-orange-f4 mr-1" width="17" height="18px">
+                                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#paperPlaneRight-send"></use>
+                                                                    </svg>
+                                                                    Send
+                                                                </button>
+                                                            </div>
+                                                            <p class="c-gray-75 fs-12 weight-bold text-right">Total amount:</p>
+                                                        </div>
+                                                    </td>
+                                                    <td class="py-2 px-3" colspan="3" style="vertical-align: middle;">
+                                                        <p>
+                                                            <span class="weight-medium pr-3">4 200 EUR</span>
+                                                            <span class="c-gray-75 fs-13 lh-1_4">(Selected 2 Invoices)</span>
+                                                        </p>
                                                     </td>
                                                 </tr>
-                                                <tr class="bb-1">
+                                                <tr class="bb-1 hover-b br-4">
                                                     <td class="p-3 items-center">
                                                         <label class="items-center">
                                                             <input type="checkbox" class="checkbox">
@@ -2211,7 +2213,7 @@
                                                         <p>Not Paid</p>
                                                     </td>
                                                 </tr>
-                                                <tr class="bb-1">
+                                                <tr class="bb-1 hover-b br-4">
                                                     <td class="p-3 items-center">
                                                         <label class="items-center">
                                                             <input type="checkbox" class="checkbox">
@@ -2246,7 +2248,7 @@
                                                         <p>Paid</p>
                                                     </td>
                                                 </tr>
-                                                <tr class="bb-1">
+                                                <tr class="bb-1 hover-b br-4">
                                                     <td class="p-3 items-center">
                                                         <label class="items-center">
                                                             <input type="checkbox" class="checkbox">
@@ -2581,19 +2583,19 @@
                         <div class="row">
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Name</p>
-                                <input type="text" placeholder="First Name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="First Name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Position</p>
-                                <input type="text" placeholder="Contact position" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Contact position" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Last name</p>
-                                <input type="text" placeholder="Last name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Last name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Company</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Select contact company" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -2610,7 +2612,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Phone</p>
-                                <div class="d-flex br-4 b-gray-9e b-1"> 
+                                <div class="d-flex br-4 b-gray-9e b-1 bg-white"> 
                                     <!-- b-gray-9e b-1 -->
                                     <div class="w-50p select flex-shrink-0 b-0 bg-gray-e0 h-auto arrow_dark br-4-left ">
                                         <div class="w-50p select__item">
@@ -2632,7 +2634,7 @@
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Email</p>
-                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>
@@ -2664,19 +2666,19 @@
                         <div class="row">
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Name</p>
-                                <input type="text" placeholder="First Name" value="Christopher Montgomery" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="First Name" value="Christopher Montgomery" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Position</p>
-                                <input type="text" placeholder="Contact position" value="Manager" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Contact position" value="Manager" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Last name</p>
-                                <input type="text" placeholder="Last name" value="Winchester" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Last name" value="Winchester" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Company</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Select contact company" value="Cargo4S UAB" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -2693,7 +2695,7 @@
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Phone</p>
-                                <div class="d-flex br-4 b-gray-9e b-1">
+                                <div class="d-flex br-4 b-gray-9e b-1 bg-white">
                                     <div class="w-50p select flex-shrink-0 b-0 bg-gray-e0 h-auto arrow_dark br-4-left">
                                         <div class="w-50p select__item">
                                             <input type="image" src="../../img/flag.svg" class="p-0 ml-2 wh-14 min-w-auto absolute l-0 t-center">
@@ -2714,7 +2716,7 @@
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Email</p>
-                                <input type="text" placeholder="Email" value="jul.msdartins@cargo4s.com" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Email" value="jul.msdartins@cargo4s.com" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>
@@ -2740,13 +2742,13 @@
                     </div>
                     <div class="br-4 p-3 bg-gray-f5">
                         <p class="weight-medium c-gray-69 pb-1">Shipper</p>
-                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e mb-3 min-h-85">Acargo@mail.com
+                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e mb-3 min-h-85 bg-white">Acargo@mail.com
 +7 490 567 78 88
 Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <p class="weight-medium c-gray-69 pb-1">Consignee</p>
-                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e mb-3" rows="1">cargo4S@</textarea>
+                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e mb-3 bg-white" rows="1">cargo4S@</textarea>
                         <p class="weight-medium c-gray-69 pb-1">Notify</p>
-                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e" rows="1">Acargo@mail.com</textarea>
+                        <textarea class="br-4 b-1 px-3 py-2 lh-22 fs-16 b-gray-9e bg-white" rows="1">Acargo@mail.com</textarea>
                     </div>
                     <button type="button" class="btn w-200px mt-3">Save</button>
                 </div>
@@ -2768,7 +2770,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                     </div>
                     <div class="br-4 p-3 bg-gray-f5">
                         <p class="weight-medium c-gray-69 pb-1">Company</p>
-                        <div class="select h-fit b-gray-9e br-4 mb-3">
+                        <div class="select h-fit b-gray-9e br-4 mb-3 bg-white">
                             <input type="text" placeholder="Select company" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                             <div class="select__drop">
                                 <div class="select__menu var_2">
@@ -2783,7 +2785,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>
                         </div>
                         <p class="weight-medium c-gray-69 pb-1">Category</p>
-                        <div class="select h-fit b-gray-9e br-4">
+                        <div class="select h-fit b-gray-9e br-4 bg-white">
                             <input type="text" placeholder="Select category" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                             <div class="select__drop">
                                 <div class="select__menu var_2">
@@ -2819,7 +2821,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                     </div>
                     <div class="br-4 p-3 bg-gray-f5">
                         <p class="weight-medium c-gray-69 pb-1">Company</p>
-                        <div class="select h-fit b-gray-9e br-4">
+                        <div class="select h-fit b-gray-9e br-4 bg-white">
                             <input type="text" placeholder="Select company" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                             <div class="select__drop">
                                 <div class="select__menu var_2">
@@ -2860,11 +2862,11 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Location name</p>
-                                <input type="text" placeholder="Location name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Location name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Location type</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Select location type" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -2877,7 +2879,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Address</p>
                                 <div class="relative">
-                                    <input type="text" placeholder="Address" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                    <input type="text" placeholder="Address" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                                     <div class="autocomplete p-2 mt-2 br-4 b-1 b-gray-bd lh-1_4 fs-15">
                                         <ul>
                                             <li class="py-1 mb-1">
@@ -2901,7 +2903,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">GPS coordinates</p>
-                                <input type="text" placeholder="e.g. 55.709021, 21.134468" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="e.g. 55.709021, 21.134468" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>
@@ -2924,7 +2926,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Phone</p>
-                                <div class="d-flex br-4 b-gray-9e b-1">
+                                <div class="d-flex br-4 b-gray-9e b-1 bg-white">
                                     <div class="w-50p select flex-shrink-0 b-0 bg-gray-e0 h-auto arrow_dark br-4-left">
                                         <div class="w-50p select__item">
                                             <input type="image" src="../../img/flag.svg" class="p-0 ml-2 wh-14 min-w-auto absolute l-0 t-center">
@@ -2945,7 +2947,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Email</p>
-                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>
@@ -3086,7 +3088,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">From</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Selet working hours from" value="08:00" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -3098,7 +3100,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>  
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">To</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Selet working hours to" value="17:00" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -3165,7 +3167,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">From</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Selet working hours from" value="08:00" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -3176,8 +3178,8 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                                 </div>
                             </div>  
                             <div class="col-6">
-                                <p class="weight-medium pb-1 c-gray-69">To</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <p class="weight-medium pb-1 c-gray-6 bg-white9">To</p>
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Selet working hours to" value="17:00" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -3249,7 +3251,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Address</p>
                                 <div class="relative">
-                                    <input type="text" placeholder="Location name" value="Mainų g. 6" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                    <input type="text" placeholder="Location name" value="Mainų g. 6" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                                     <div class="autocomplete p-2 mt-2 br-4 b-1 b-gray-bd lh-1_4 fs-15">
                                         <ul>
                                             <li class="py-1 mb-1">
@@ -3273,7 +3275,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Region</p>
                                 <div class="relative">
-                                    <input type="text" placeholder="Region" value="Klaipėda" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                    <input type="text" placeholder="Region" value="Klaipėda" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                                     <div class="autocomplete p-2 mt-2 br-4 b-1 b-gray-bd lh-1_4 fs-15">
                                         <ul>
                                             <li class="py-1 mb-1">
@@ -3296,12 +3298,12 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Post code</p>
-                                <input type="text" placeholder="Code" value="94101" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Code" value="94101" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">GPS coordinates</p>
                                 <input type="text" placeholder="e.g. 55.709021, 21.134468" value="55.684986, 21.187150
-                                Klaipėda (LT)" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                Klaipėda (LT)" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>
@@ -3340,19 +3342,19 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Name</p>
-                                <input type="text" placeholder="First Name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="First Name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6 pb-3">
                                 <p class="weight-medium pb-1 c-gray-69">Position</p>
-                                <input type="text" placeholder="Contact position" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Contact position" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Last name</p>
-                                <input type="text" placeholder="Last name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Last name" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Company</p>
-                                <div class="select h-fit b-gray-9e br-4">
+                                <div class="select h-fit b-gray-9e br-4 bg-white">
                                     <input type="text" placeholder="Select contact company" class="py-2 px-3 fs-16 lh-22 select__item h-fit">
                                     <div class="select__drop">
                                         <ul class="select__menu">
@@ -3369,7 +3371,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                         <div class="row">
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Phone</p>
-                                <div class="d-flex br-4 b-gray-9e b-1">
+                                <div class="d-flex br-4 b-gray-9e b-1 bg-white">
                                     <div class="w-50p select flex-shrink-0 b-0 bg-gray-e0 h-auto arrow_dark br-4-left">
                                         <div class="w-50p select__item">
                                             <input type="image" src="../../img/flag.svg" class="p-0 ml-2 wh-14 min-w-auto absolute l-0 t-center">
@@ -3390,7 +3392,7 @@ Klaipeda, Lithvinia, 12/3 New Street, 345678</textarea>
                             </div>
                             <div class="col-6">
                                 <p class="weight-medium pb-1 c-gray-69">Email</p>
-                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16">
+                                <input type="text" placeholder="Email" class="py-2 px-3 br-4 b-gray-9e lh-22 fs-16 bg-white">
                             </div>
                         </div>
                     </div>

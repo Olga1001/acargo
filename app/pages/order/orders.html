@@ -544,7 +544,7 @@
                                             Road
                                         </span>
                                     </label>
-                                    <button type="button" class="btn p-1 w-100 max-w-170 ml-auto">New order</button>
+                                    <button type="button" class="btn p-1 w-100 max-w-170 ml-auto collapsed" data-target="#collapseCreateOrder" data-toggle="collapse">New order</button>
                                 </div>
 
                                 <div class="bg-white br-4 relative">
@@ -7098,6 +7098,594 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-collapse collapse show" id="collapseCreateOrder">
+        <div class="popup-collapse-bg d-flex overflow-hidden">
+            <div class="container max-1130 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
+                <div class="bg-white sticky-top py-3">
+                    <div class="flex-between-center pb-3">
+                        <h3 class="fs-18">Create order</h3>
+                        <a href="#" data-toggle="collapse" data-target="#collapseCreateOrder" class="collapsed" aria-expanded="false">
+                            <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
+                    <p class="fs-16">Order details</p>
+                    <div class="fs-14 c-gray-75 mt-3 weight-normal" data-index="2">
+                        <label class="mr-1">
+                            <input type="radio" name="radio_2" class="checkbox">
+                            <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
+                                Inport
+                            </span>
+                        </label>
+                        <label class="mr-1">
+                            <input type="radio" name="radio_2" class="checkbox">
+                            <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
+                                Export
+                            </span>
+                        </label>
+                        <label class="mr-1">
+                            <input type="radio" name="radio_2" class="checkbox">
+                            <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
+                                Cross-Trade
+                            </span>
+                        </label>
+                    </div>
+                    <div class="row mx--1 c-gray-69 pr-2">
+                        <div class="col-11 pl-2 pr-3">
+                            <div class="row mx--1">
+                                <div class="col-4 px-2 mt-3">
+                                    <p class="pb-1">Customer</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" placeholder="Select customer">
+                                        <div class="select__drop">
+                                            <ul class="select__menu br-4 p-2 weight-normal">
+                                                <li class="select__option py-1">customer</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-2 mt-3">
+                                    <p class="pb-1">Contanct person</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" placeholder="Select contact person">
+                                        <div class="select__drop">
+                                            <ul class="select__menu br-4 p-2 weight-normal">
+                                                <li class="select__option py-1">contact person</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-2 mt-3">
+                                    <p class="pb-1">Payment terms</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" placeholder="Select payment terms">
+                                        <div class="select__drop">
+                                            <ul class="select__menu br-4 p-2 weight-normal">
+                                                <li class="select__option py-1">payment terms</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 p-0 mt-3">
+                            <p class="pb-1">Currency</p>
+                            <div class="select br-4 bg-white b-gray-9e">
+                                <input type="text" class="select__item" value="Eur">
+                                <div class="select__drop">
+                                    <ul class="select__menu br-4 p-2 weight-normal">
+                                        <li class="select__option py-1">Eur</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="items-end mx--1 c-gray-69 pr-2">
+                        <div class="col-11 pl-2 pr-3">
+                            <div class="row mx--1">
+                                <div class="col-2 px-2 mt-3">
+                                    <p class="pb-1">Container type</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" placeholder="Type">
+                                        <div class="select__drop">
+                                            <ul class="select__menu br-4 p-2 weight-normal">
+                                                <li class="select__option py-1">Type</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-2 px-2 mt-3">
+                                    <p class="pb-1">Container quantity</p>
+                                    <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Quantity">
+                                </div>
+                                <div class="col-4 px-2 mt-3">
+                                    <p class="pb-1">Estimated ready day</p>
+                                    <div class="relative">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" name="calendar-ranges" placeholder="Select day">
+                                        <svg class="svg-sprite-icon absolute r-0 t-center mr-3" fill="#757575" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-4 px-2 mt-3">
+                                    <p class="pb-1">Requested delivery</p>
+                                    <div class="relative">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" name="calendar-ranges" placeholder="Select day">
+                                        <svg class="svg-sprite-icon absolute r-0 t-center mr-3" fill="#757575" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-1 p-0 mt-3">
+                            <label class="">
+                                <input type="checkbox" class="checkbox">
+                                <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                    ASAP
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="br-4 bg-gray-f5 p-3 mb-3 text-truncate-all">
+                    <div class="flex-between-center fs-16 lh-22">
+                        <p>Freight service</p>
+                        <p>Total: 15 790 EUR</p>
+                    </div>
+
+                    <div class="br-4 mt-3 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <svg class="svg-sprite-icon mr-2" fill="#F54617" width="18" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                            </svg>
+                            <p class="mr-auto">Pick-up</p>
+                            <p>180 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3 row">
+                            <div class="col-4">
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-w-190">Rucava 3477, LV</p>
+                                  
+                                </div>
+                                <div class="h-31 ml-2 b-1 b-gray-75 w-fit-content my-1"></div>
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-w-190">Kalipėda, LTKLJ</p>
+                                </div>
+                            </div>
+                            <div class="col-3 pt-2">
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                    </svg>
+                                    <p class="max-w-190">Autovesta UAB</p>
+                                </div>
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                    </svg>
+                                    <p class="max-w-190">3x40’HC</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="br-4 bg-white p-3 mr-4 fs-14 lh-22 mb-2">
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">Pick-up</p>
+                                        <p>170 EUR</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="c-gray-75 mr-auto">Margin</p>
+                                        <p>10 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="items-center justify-content-end mr-4">
+                                    <p>Margin</p>
+                                    <input type="number" class="b-gray-9e p-1 text-center ml-3 br-4 bg-white w-80 lh-22" value="10.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-4 mt-3 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <svg class="svg-sprite-icon mr-2" fill="#F54617" width="18" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                            </svg>
+                            <p class="mr-auto">Ocean freigt </p>
+                            <p>15 400 EUR + BL 30 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3 row">
+                            <div class="col-4">
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-w-190">Kalipėda, LTKLJ</p>
+                                </div>
+                                <div class="h-31 ml-2 b-1 b-gray-75 w-fit-content my-1"></div>
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-w-190">Shanchai, CNSHA</p>
+                                </div>
+                            </div>
+                            <div class="col-3 pt-2">
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                                    </svg>
+                                    <p class="max-w-190">Maersk</p>
+                                </div>
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                    </svg>
+                                    <p class="max-w-190">3x40’HC</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="br-4 bg-white p-3 mr-4 fs-14 lh-22 mb-2">
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">EST</p>
+                                        <p>170 EUR</p>
+                                    </div>
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">BL</p>
+                                        <p>10 EUR</p>
+                                    </div>
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">MHF</p>
+                                        <p>10 EUR</p>
+                                    </div>
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">Customs broker</p>
+                                        <p>160 EUR</p>
+                                    </div>
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">Freight</p>
+                                        <p>1 600 EUR</p>
+                                    </div>
+                                    <div class="d-flex ">
+                                        <p class="c-gray-75 mr-auto">Margin</p>
+                                        <p>10 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="items-center justify-content-end mr-4">
+                                    <p>Margin</p>
+                                    <input type="number" class="b-gray-9e p-1 text-center ml-3 br-4 bg-white w-80 lh-22" value="50.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="br-4 mt-3 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0">
+                            <svg class="svg-sprite-icon mr-2" fill="#F54617" width="18" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                            </svg>
+                            <p class="mr-auto">Pick-up</p>
+                            <p>180 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3 row">
+                            <div class="col-4">
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-204">Weizhou Marine Terminal Port, CNWMT</p>
+                                  
+                                </div>
+                                <div class="h-31 ml-2 b-1 b-gray-75 w-fit-content my-1"></div>
+                                <div class="items-center">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="17px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2"></use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag icon" class="mx-1" width="14" height="14">
+                                    <p class="max-w-190">Nanjing 910005, CN</p>
+                                </div>
+                            </div>
+                            <div class="col-3 pt-2">
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                    </svg>
+                                    <p class="max-w-190">Hellenic Container Transport SA</p>
+                                </div>
+                                <div class="items-center mb-3">
+                                    <svg class="svg-sprite-icon mr-2" fill="#000" width="15" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                    </svg>
+                                    <p class="max-w-190">3x40’HC</p>
+                                </div>
+                            </div>
+                            <div class="col-5">
+                                <div class="br-4 bg-white p-3 mr-4 fs-14 lh-22 mb-2">
+                                    <div class="d-flex mb-1">
+                                        <p class="c-gray-75 mr-auto">Pick-up</p>
+                                        <p>170 EUR</p>
+                                    </div>
+                                    <div class="d-flex">
+                                        <p class="c-gray-75 mr-auto">Margin</p>
+                                        <p>10 EUR</p>
+                                    </div>
+                                </div>
+                                <div class="items-center justify-content-end mr-4">
+                                    <p>Margin</p>
+                                    <input type="number" class="b-gray-9e p-1 text-center ml-3 br-4 bg-white w-80 lh-22" value="10.00">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-2">Add service</button>
+                </div>
+
+
+                <div class="br-4 bg-gray-f5 p-3 mb-3 text-truncate-all">
+                    <div class="flex-between-center fs-16 lh-22">
+                        <p>Extra services</p>
+                        <p>Total: 995 EUR</p>
+                    </div>
+
+                    <div class="br-4 mt-3 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <svg class="svg-sprite-icon mr-2" fill="#F54617" width="18" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                            </svg>
+                            <p class="mr-auto">Customs formalities</p>
+                            <p>25 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3">
+                        </div>
+                    </div>
+
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-2">Add service</button>
+                </div>
+
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
+                    <p class="fs-16">Cardo detais</p>
+                    <div class="br-4 p-3 bg-light-ee my-3">
+                        <div class="row mx--1 c-gray-69">
+                            <div class="col-4 px-2">
+                                <p class="pb-1">Cargo name</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo name">
+                            </div>
+                            <div class="col-4 px-2">
+                                <p class="pb-1">HS code</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Enter HS code">
+                            </div>
+                            <div class="col-2 px-2">
+                                <p class="pb-1">Weight (Kg)</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo weight Kg">
+                            </div>
+                        </div>
+                    </div>
+
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block">Add cargo</button>
+                </div>
+
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
+                    <p class="fs-16">Cardo detais</p>
+                    <div class="row mx--1 c-gray-69">
+                        <div class="col-4 px-2 mt-3">
+                            <p class="pb-1">Shipper</p>
+                            <div class="d-flex">
+                                <div class="select br-4 bg-white b-gray-9e mr-1">
+                                    <input type="text" class="select__item" placeholder="Select shipper">
+                                    <div class="select__drop">
+                                        <ul class="select__menu br-4 p-2 weight-normal">
+                                            <li class="select__option py-1">shipper</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                        Notify
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 px-2 mt-3">
+                            <p class="pb-1">Consignee</p>
+                            <div class="d-flex">
+                                <div class="select br-4 bg-white b-gray-9e mr-1">
+                                    <input type="text" class="select__item" placeholder="Select Consignee">
+                                    <div class="select__drop">
+                                        <ul class="select__menu br-4 p-2 weight-normal">
+                                            <li class="select__option py-1">consignee</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                        Notify
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-4 px-2 mt-3">
+                            <p class="pb-1">Agent</p>
+                            <div class="d-flex">
+                                <div class="select br-4 bg-white b-gray-9e mr-1">
+                                    <input type="text" class="select__item" placeholder="Select Agent">
+                                    <div class="select__drop">
+                                        <ul class="select__menu br-4 p-2 weight-normal">
+                                            <li class="select__option py-1">Agent</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <label class="">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                        Notify
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-3">Add other notify</button>
+                </div>
+
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
+                    <p class="fs-16">Documents</p>
+                    <div class="d-flex flex-wrap c-gray-75 mt-2">
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Invoice
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Packing List
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Bill of lading
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Sea Waybill
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Export declaration
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Origin Certificate
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Phyto Certificate
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                HT Certificate
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Fumigation
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Supplier Declaration
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Booking confirmation
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                T2L
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                Intra
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                EURO 1
+                            </span>
+                        </label>
+                        <label class="mt-2 mr-2">
+                            <input type="checkbox" class="checkbox">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                A.TR
+                            </span>
+                        </label>
+                    </div>
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block">Add other document</button>
+                </div>
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
+                    <p class="fs-16">Note</p>
+                    <textarea class="w-100 bg-white b-gray-9e br-4 px-3 py-2 lh-22 mt-3 fs-16" placeholder="Your notes"></textarea>
+                </div>
+                
+                <br>
+                <div class="flex-between-center">
+                    <button type="button" class="btn w-100 max-204">Create order</button>
+                    <div class="col-3 px-0 lh-22 ">
+                        <div class="fs-18 d-flex pb-2">
+                            <p class="c-gray-75 mr-auto">Total</p> 
+                            <p>45 100 EUR + BL 30 EUR</p>
+                        </div>
+                        <div class="fs-14 d-flex">
+                            <p class="c-gray-75 mr-auto">Per container</p> 
+                            <p>4 510 EUR + BL 30 EUR</p>
+                        </div>
+                    </div>
+                </div>
+                      
             </div>
         </div>
     </div>

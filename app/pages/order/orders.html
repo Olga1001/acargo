@@ -510,7 +510,7 @@
         <div class="d-flex flex-column w-100" id="content-wrapper">
             <div id="content">
 
-                <div class="container-fluid p-0 bg-gray-df " id="container-wrapper">
+                <div class="container-fluid p-0 bg-gray-df" id="container-wrapper">
                     <div id="box">
                         <div class="sticky-left px-3 py-2 bg-white w-100 shadow14">
                             <div class="max-1920 mx-auto w-100">
@@ -7102,7 +7102,7 @@
         </div>
     </div>
 
-    <div class="popup-collapse collapse show" id="collapseCreateOrder">
+    <div class="popup-collapse collapse" id="collapseCreateOrder">
         <div class="popup-collapse-bg d-flex overflow-hidden">
             <div class="container max-1130 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
                 <div class="bg-white sticky-top py-3">
@@ -7117,7 +7117,7 @@
                 </div>
                 <div class="br-4 bg-gray-f5 p-3 mb-3">
                     <p class="fs-16">Order details</p>
-                    <div class="fs-14 c-gray-75 mt-3 weight-normal" data-index="2">
+                    <div class="fs-14 c-gray-75 mt-3 weight-normal">
                         <label class="mr-1">
                             <input type="radio" name="radio_2" class="checkbox">
                             <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
@@ -7231,7 +7231,7 @@
                         <div class="col-1 p-0 mt-3">
                             <label class="">
                                 <input type="checkbox" class="checkbox">
-                                <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                     ASAP
                                 </span>
                             </label>
@@ -7454,11 +7454,10 @@
                         </div>
                     </div>
 
-                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-2">Add service</button>
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-2 collapsed" data-target="#collapseAddServicePopup" data-toggle="collapse">Add service</button>
                 </div>
 
-
-                <div class="br-4 bg-gray-f5 p-3 mb-3 text-truncate-all">
+                <div class="br-4 bg-gray-f5 p-3 mb-3">
                     <div class="flex-between-center fs-16 lh-22">
                         <p>Extra services</p>
                         <p>Total: 995 EUR</p>
@@ -7466,9 +7465,6 @@
 
                     <div class="br-4 mt-3 bg-light-ee overflow-hidden">
                         <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
-                            <svg class="svg-sprite-icon mr-2" fill="#F54617" width="18" height="20">
-                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
-                            </svg>
                             <p class="mr-auto">Customs formalities</p>
                             <p>25 EUR</p>
                             <a href="#" class="ml-3">
@@ -7477,17 +7473,253 @@
                                 </svg>
                             </a>
                         </div>
+                        <div class="p-3 d-flex justify-content-end">
+                            <div class="select br-4 bg-white b-gray-9e w-200px h-auto">
+                                <input type="text" class="select__item px-3 lh-22 py-1" value="Per LOT">
+                                <div class="select__drop">
+                                    <ul class="select__menu br-4 p-2 weight-normal">
+                                        <li class="select__option py-1">Per LOT</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex relative w-150 ml-3">
+                                <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="200">
+                                <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                    <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                    <div class="select__drop">
+                                        <div class="select__menu br-4 p-2 weight-normal">
+                                            <a href="#" class="select__option py-1">EUR</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-4 mt-2 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <p class="mr-auto">Fumigation</p>
+                            <p>360 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3 d-flex justify-content-end">
+                            <div class="select br-4 bg-white b-gray-9e w-200px h-auto">
+                                <input type="text" class="select__item px-3 lh-22 py-1" value="Per container">
+                                <div class="select__drop">
+                                    <ul class="select__menu br-4 p-2 weight-normal">
+                                        <li class="select__option py-1">Per container </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex relative w-150 ml-3">
+                                <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="120">
+                                <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                    <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                    <div class="select__drop">
+                                        <div class="select__menu br-4 p-2 weight-normal">
+                                            <a href="#" class="select__option py-1">EUR</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-4 mt-2 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <p class="mr-auto">Storage</p>
+                            <p>15 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3 d-flex justify-content-end">
+                            <div class="select br-4 bg-white b-gray-9e w-200px h-auto">
+                                <input type="text" class="select__item px-3 lh-22 py-1" value="Per TEU ">
+                                <div class="select__drop">
+                                    <ul class="select__menu br-4 p-2 weight-normal">
+                                        <li class="select__option py-1">Per TEU </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="d-flex relative w-150 ml-3">
+                                <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="15">
+                                <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                    <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                    <div class="select__drop">
+                                        <div class="select__menu br-4 p-2 weight-normal">
+                                            <a href="#" class="select__option py-1">EUR</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-4 mt-2 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <p class="mr-auto">Cargo insurance</p>
+                            <p>135 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
                         <div class="p-3">
+                            <div class="d-flex justify-content-end">
+                                <div class="select br-4 bg-white b-gray-9e w-200px h-auto">
+                                    <input type="text" class="select__item px-3 lh-22 py-1" value="Per container  ">
+                                    <div class="select__drop">
+                                        <ul class="select__menu br-4 p-2 weight-normal">
+                                            <li class="select__option py-1">Per container </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex relative w-150 ml-3">
+                                    <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="15">
+                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                        <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">EUR</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="items-center justify-content-end mt-3">
+                                <div class="w-200px fs-14 lh-22 c-gray-75">Cargo value</div>
+                                <div class="d-flex relative w-150 ml-3">
+                                    <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="7500">
+                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                        <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">EUR</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-4 mt-2 bg-light-ee overflow-hidden">
+                        <div class="items-center p-3 bg-gray-e0 fs-18 lh-22">
+                            <p class="mr-auto">Cargo insurance</p>
+                            <p>460 EUR</p>
+                            <a href="#" class="ml-3">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12px" height="12px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
+                        </div>
+                        <div class="p-3">
+                            <div class="d-flex justify-content-end">
+                                <div class="select br-4 bg-white b-gray-9e w-200px h-auto">
+                                    <input type="text" class="select__item px-3 lh-22 py-1" value="Precentage of value">
+                                    <div class="select__drop">
+                                        <ul class="select__menu br-4 p-2 weight-normal">
+                                            <li class="select__option py-1">Precentage of value</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="d-flex relative w-150 ml-3">
+                                    <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="460">
+                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                        <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">EUR</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="items-center justify-content-end mt-3">
+                                <div class="w-200px fs-14 lh-22 c-gray-75">Cargo value</div>
+                                <div class="d-flex relative w-150 ml-3">
+                                    <input type="number" class="br-4 b-gray-9e bg-white py-1 px-3 lh-22 h-auto" value="7500">
+                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                        <input type="text" class="select__item pl-2 fs-16 lh-22 py-1" value="EUR">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">EUR</a>
+                                            </div>
+                                        </div>
+                                    </div> 
+                                </div>
+                            </div>
+                            <div class="items-center justify-content-end mt-3">
+                                <div class="w-200px fs-14 lh-22 c-gray-75">Procentage</div>
+                                <div class="w-150 d-flex ml-3">
+                                    <button type="button" class="bg-gray-e0 px-2 d-flex b-1 b-gray-9e b-r-0 br-4-left">
+                                        <svg class="svg-sprite-icon m-auto" width="12" height="12">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#minus"></use>
+                                        </svg>
+                                    </button>
+                                    <input type="text" value="0.0221%" class="bl-0 b-gray-9e b-r-0 py-1 fs-16 text-center bg-white h-auto lh-22">
+                                    <button type="button" class="bg-gray-e0 px-2 d-flex b-1 b-gray-9e bl-0 br-4-right">
+                                        <svg class="svg-sprite-icon m-auto" width="12" height="12">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#plus3"></use>
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
-                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-2">Add service</button>
+                    <div class="relative ml-auto w-fit-content mt-2">
+                        <div>
+                            <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium collapsed" data-target="#collapseAddService" data-toggle="collapse">Add service
+                                <svg class="svg-sprite-icon ml-1 collapsed-arrow" width="14" height="14">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                </svg>
+                            </button>
+                            <div class="collapse absolute z-4 t-100 r-0 b-1 br-4 b-gray-bd p-2 bg-white" id="collapseAddService">
+                                <div class="relative">
+                                    <svg class="svg-sprite-icon absolute t-center r-0 mr-2" width="14" height="14">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
+                                    </svg>
+                                    <input type="text" class="py-1 px-2 br-4 h-auto lh-22 fs-16" value="Insu">
+                                </div>
+                                <ul class="autocomplete position-static py-2" style="display: block;">
+                                    <li>
+                                        <a href="#" class="py-2 d-block">Cargo insurance</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="py-2 d-block">Insurance</a>
+                                    </li>
+                                </ul>
+                                <button type="button" class="btn w-100 min-w-215 collapsed" data-toggle="collapse" data-target="#collapseAddServicePopup">Add new service</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
                 <div class="br-4 bg-gray-f5 p-3 mb-3">
                     <p class="fs-16">Cardo detais</p>
-                    <div class="br-4 p-3 bg-light-ee my-3">
+                    <div class="br-4 p-3 bg-light-ee mt-3">
                         <div class="row mx--1 c-gray-69">
+                            <div class="col-4 px-2">
+                                <p class="pb-1">Cargo name</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo name" value="Peat moss">
+                            </div>
+                            <div class="col-4 px-2">
+                                <p class="pb-1">HS code</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Enter HS code" value="156486484">
+                            </div>
+                            <div class="col-2 px-2">
+                                <p class="pb-1">Weight (Kg)</p>
+                                <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo weight Kg" value="2 800">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="br-4 p-3 bg-light-ee mt-3">
+                        <div class="row mx--1 c-gray-69 relative">
                             <div class="col-4 px-2">
                                 <p class="pb-1">Cargo name</p>
                                 <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo name">
@@ -7500,10 +7732,15 @@
                                 <p class="pb-1">Weight (Kg)</p>
                                 <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Cargo weight Kg">
                             </div>
+                            <a href="#" class="absolute r-0 t-center p-2">
+                                <svg class="svg-sprite-icon" fill="#757575" width="12" height="12">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </a>
                         </div>
                     </div>
 
-                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block">Add cargo</button>
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block mt-3">Add cargo</button>
                 </div>
 
                 <div class="br-4 bg-gray-f5 p-3 mb-3">
@@ -7522,7 +7759,7 @@
                                 </div>
                                 <label class="">
                                     <input type="checkbox" class="checkbox">
-                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                         Notify
                                     </span>
                                 </label>
@@ -7541,7 +7778,7 @@
                                 </div>
                                 <label class="">
                                     <input type="checkbox" class="checkbox">
-                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                         Notify
                                     </span>
                                 </label>
@@ -7560,7 +7797,7 @@
                                 </div>
                                 <label class="">
                                     <input type="checkbox" class="checkbox">
-                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                                    <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                         Notify
                                     </span>
                                 </label>
@@ -7575,96 +7812,96 @@
                     <div class="d-flex flex-wrap c-gray-75 mt-2">
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Invoice
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Packing List
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Bill of lading
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Sea Waybill
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Export declaration
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Origin Certificate
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Phyto Certificate
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 HT Certificate
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Fumigation
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Supplier Declaration
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Booking confirmation
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 T2L
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 Intra
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 EURO 1
                             </span>
                         </label>
                         <label class="mt-2 mr-2">
                             <input type="checkbox" class="checkbox">
-                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-33">
+                            <span class="radio-active px-3 br-4 bg-gray-e0 d-flex hover-red weight-normal _1441_lh-43 lh-31">
                                 A.TR
                             </span>
                         </label>
                     </div>
-                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block">Add other document</button>
+                    <button type="button" class="c-orange-f4 fs-14 lh-22 weight-medium ml-auto d-block collapsed" data-target="#collapseNewDocument" data-toggle="collapse">Add other document</button>
                 </div>
                 <div class="br-4 bg-gray-f5 p-3 mb-3">
                     <p class="fs-16">Note</p>
@@ -7673,7 +7910,7 @@
                 
                 <br>
                 <div class="flex-between-center">
-                    <button type="button" class="btn w-100 max-204">Create order</button>
+                    <button type="button" class="btn w-200px">Create order</button>
                     <div class="col-3 px-0 lh-22 ">
                         <div class="fs-18 d-flex pb-2">
                             <p class="c-gray-75 mr-auto">Total</p> 
@@ -7689,6 +7926,1934 @@
             </div>
         </div>
     </div>
+
+    <div class="popup-collapse collapse" id="collapseNewDocument">
+        <div class="popup-collapse-bg d-flex overflow-hidden">
+            <div class="container max-1350 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
+                <div class="bg-white sticky-top py-3 flex-between-center">
+                    <a href="#" class="c-gray-75 items-center" data-toggle="collapse" data-target="#collapseNewDocument">
+                        <svg class="svg-sprite-icon scale-x mr-2" width="24" height="16">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
+                        </svg>
+                        <span class="weight-normal">Back</span>
+                    </a>
+                    <a href="#" data-toggle="collapse" data-target="#collapseCreateOrder, #collapseNewDocument">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="fs-18 pb-3">New document</p>
+                <div class="mt-3 p-3 br-4 bg-gray-f5 ">
+                    <div class="row mx--1">
+                        <div class="col-4 px-2">
+                            <p class="pb-1 c-gray-69">Document name</p>
+                            <form class="select b-gray-9e br-4 not-arrow bg-white">
+                                <input type="text" class="select__item">
+                                <button type="reset" class="absolute r-0 t-center d-none mr-2">
+                                    <svg class="svg-sprite-icon " fill="#757575" width="12" height="12">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn w-200px mt-3">Save</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-collapse collapse" id="collapseAddServicePopup">
+        <div class="popup-collapse-bg d-flex overflow-hidden">
+            <div class="container max-1350 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
+                <div class="bg-white sticky-top py-3 flex-between-center">
+                    <a href="#" class="c-gray-75 items-center" data-toggle="collapse" data-target="#collapseAddServicePopup">
+                        <svg class="svg-sprite-icon scale-x mr-2" width="24" height="16">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
+                        </svg>
+                        <span class="weight-normal">Back</span>
+                    </a>
+                    <a href="#" data-toggle="collapse" data-target="#collapseCreateOrder, #collapseAddServicePopup">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="fs-18 pb-3">Add new service</p>
+                <div class="mt-3 p-3 br-4 bg-gray-f5 ">
+                    <div class="row mx--1">
+                        <div class="col-3 px-2">
+                            <p class="pb-1 c-gray-69">Service name</p>
+                            <input type="text" class="bg-white br-4 b-gray-9e" value="Document management">
+                        </div>
+                        <div class="col-3 px-2">
+                            <p class="pb-1 c-gray-69">Measurement unit</p>
+                            <div class="select br-4 bg-white b-gray-9e">
+                                <input type="text" class="select__item" value="Per container">
+                                <div class="select__drop">
+                                    <ul class="select__menu br-4 p-2 weight-normal">
+                                        <li class="select__option py-1">Per container</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-2">
+                            <p class="pb-1 c-gray-69">Price</p>
+                            <div class="d-flex relative w-160">
+                                <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                    <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                    <div class="select__drop">
+                                        <div class="select__menu br-4 p-2 weight-normal">
+                                            <a href="#" class="select__option py-1">EUR</a>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="btn w-200px mt-3" data-toggle="collapse" data-target="#collapseAddServicePopup">Save</button>
+            </div>
+        </div>
+    </div>
+    
+    <div class="popup-collapse collapse" id="collapseQuateRequest">
+        <div class="popup-collapse-bg d-flex overflow-hidden">
+            <div class="container max-1130 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
+                <div class="bg-white sticky-top py-3 flex-between-center">
+                    <a href="#" class="c-gray-75 items-center" data-toggle="collapse" data-target="#collapseQuateRequest">
+                        <svg class="svg-sprite-icon scale-x mr-2" width="24" height="16">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
+                        </svg>
+                        <span class="weight-normal">Back</span>
+                    </a>
+                    <a href="#" data-toggle="collapse" data-target="#collapseCreateOrder, #collapseQuateRequest">
+                        <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <p class="fs-18 pb-3">Quate request</p>
+
+                <form class="br-4 bg-gray-f5 mb-2 p-2 d-flex">
+                    <div class="items-center w-70_5w mr-2 ">
+                        <div class="items-center select br-4 b-gray-bd h-31 not-arrow w-50 bg-white isvalid">
+                            <button type="sumbit" class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                </svg>
+                            </button>
+                            <input type="hidden" class="px-2 input_customer select__item b-0 h-100" vlaue="Vilnius (LT)">
+                            <div class="px-2 input_customer select__item b-0 h-100 items-center">
+                                <div class="b-1 br-4 b-gray-75 px-1 items-center mr-2">
+                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3">
+                                        </use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                    <p class="mr-2 lh-1_4 fs-14 c-black-1e">Vilnius (LT)</p>
+                                    <a href="#" class="d-flex">
+                                        <svg class="svg-sprite-icon" width="16px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <svg class="svg-sprite-icon c-orange-f4 stroke-orange-f4 mx-2 px-1" width="18px" height="18px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#transfers2"></use>
+                        </svg>
+                        <div class="items-center select br-4 b-gray-bd h-31 not-arrow w-50 bg-white isvalid">
+                            <button type="sumbit" class="wh-29 d-flex bg-gray-e9 select__icon">
+                                <svg class="svg-sprite-icon stroke-69 mx-auto" width="11px" height="29px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                </svg>
+                            </button>
+                            <input type="hidden" class="px-2 input_customer select__item b-0 h-100" vlaue="Vilnius (LT)">
+                            <div class="px-2 input_customer select__item b-0 h-100 items-center">
+                                <div class="b-1 br-4 b-gray-75 px-1 items-center mr-2">
+                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3">
+                                        </use>
+                                    </svg>
+                                    <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-2">
+                                    <p class="mr-2 lh-1_4 fs-14 c-black-1e">Vilnius (LT)</p>
+                                    <a href="#" class="d-flex">
+                                        <svg class="svg-sprite-icon" width="16px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="items-center select mr-1 br-4 b-gray-bd h-31 not-arrow w-150 bg-white isvalid">
+                        <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="14px" height="29px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                            </svg>
+                        </div>
+                        <input type="text" class="px-2 input_customer select__item b-0 h-100 " value="15 Apr 2022 " placeholder="" required="">
+                        <div class="autocomplete mt-2">
+                            <ul>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">15 Apr 2022</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="p-2 bb-1 d-block">16 Apr 2022</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- <div class="select__drop">
+                            <div class="select__menu br-4 p-2">
+                                <a href="#" class="select__option p-1 mb-1">15 Apr 2022</a>
+                                <a href="#" class="select__option p-1">16 Apr 2022</a>
+                            </div>
+                        </div> -->
+                    </div>
+                    <div class="items-center select mr-1 br-4 b-gray-bd h-31 w-200px bg-white isvalid">
+                        <div class="wh-29 d-flex bg-gray-e9 select__icon">
+                            <svg class="svg-sprite-icon c-gray-69 mx-auto" width="15px" height="29px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                            </svg>
+                        </div>
+                        <input type="text" class="px-2 input_customer select__item b-0 h-100 " value="5x40’HC" placeholder="" required="">
+                        <div class="select__drop min-w-250 w-fit-content right" style="display: none;">
+                            <div class="select__menu br-4 p-3 b-gray-bd overflow-visible max-h-auto">
+                            <div class="items-center">
+                                    <div class="col-6 max-w-95 pl-0 pr-1">
+                                        <div class="h-35 mt-3 select b-0 arrow_small">
+                                            <input type="text" class="select__item input_customer br-4 h-100" value="40 HC ">
+                                            <!-- <div class="autocomplete mt-1">
+                                                <ul>
+                                                    <li>
+                                                        <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                    </li>
+                                                    <li>
+                                                        <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                    </li>
+                                                </ul>
+                                            </div> -->
+                                            <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                            <div class="select__drop">
+                                                <ul class="select__menu">
+                                                    <li class="select__option active">40 HC </li>
+                                                    <li class="select__option">50 HC </li>
+                                                    <li class="select__option">50 HC </li>
+                                                    <li class="select__option">50 HC </li>
+                                                    <li class="select__option">50 HC </li>
+                                                    <li class="select__option">50 HC </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-6 max-w-90 pr-0 pl-1">
+                                        <div class="relative h-35 mt-3">
+                                            <input type="text" class="input_customer br-4 h-100" value="2">
+                                            <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="items-center">
+                                <div class="col-6 max-w-95 pl-0 pr-1">
+                                    <div class="h-35 mt-3 select b-0 arrow_small">
+                                        <input type="text" class="select__item input_customer br-4 h-100" value="40 HC">
+                                        <!-- <div class="autocomplete mt-1">
+                                            <ul>
+                                                <li>
+                                                    <a href="#" class="p-2 bb-1 d-block">40 HC</a>
+                                                </li>
+                                                <li>
+                                                    <a href="#" class="p-2 bb-1 d-block">50 HC</a>
+                                                </li>
+                                            </ul>
+                                        </div> -->
+                                        <p class="name half h-100 top fs-12"><span>Container type</span></p>
+                                        <div class="select__drop">
+                                            <ul class="select__menu">
+                                                <li class="select__option active">40 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                                <li class="select__option">50 HC </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 max-w-90 pr-0 pl-1">
+                                    <div class="relative h-35 mt-3">
+                                        <input type="text" class="input_customer br-4 h-100" value="2">
+                                        <p class="name half h-100 top fs-12"><span>Qty.</span></p>
+                                    </div>
+                                </div>
+                                <a href="#" class="p-1 mt-3 ml-auto">
+                                    <svg class="svg-sprite-icon " width="12px" height="27px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                    </svg>
+                                </a>
+                                </div>
+                                <a href="#" class="p-1 c-orange-f4 fs-14 weight-medium items-center mt-2">
+                                    <svg class="svg-sprite-icon mr-1" width="17px" height="17px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#plus2"></use>
+                                    </svg>
+                                    Add container type
+                                </a>
+                                <button type="button" class="btn w-100 mt-3">Search Rates</button>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn wh-31">
+                        <svg class="svg-sprite-icon c-white " width="14px" height="16px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search"></use>
+                        </svg>
+                    </button>
+                </form>
+
+                <div class="br-4 bg-gray-f5 p-3">
+                    <div class="b-1 mb-2 px-3 py-2 hover-b bg-white br-4 mb-2">
+                        <div type="button" class="collapsed" data-toggle="collapse" data-target="#QuateRequestDrop1">
+                            <div class="items-center pb-2 pt-1">
+                                <div class="w-100 pr-3">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                            </svg>
+                                        </label>
+                                        <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2  h-fit">
+                                            <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                            </svg>
+                                            <span class="t-100 p-3 tooltip-content r-0">
+                                                <span class="px-1">Lorem ipsum dolor .</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="items-center weight-medium text-nowrap mb-2">
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/logo/hapaglloyd-2.png" alt="image" width="70" height="50">
+                                            
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between fs-14">
+                                        <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                        <p class="fs-13 c-gray-75">15 Days</p>
+                                        <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                    </div>
+                                    <hr class="my-3 b-gray-ee">
+                                    <div class="items-center c-gray-75 fs-13">
+                                        <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">40’HC</p>
+                                        <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">12t</p>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Contract</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Fastest shedule</a>
+                                    </div>
+                                </div>
+                                <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
+                                    <p class="py-3 weight-medium">
+                                        <span class="fs-22 pb-1 d-block">1 800 EUR</span>
+                                        <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
+                                    </p>
+                                    <button type="button" class="btn min-w-150 py-1">Booking</button>
+                                    <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-gray-f5 w-100 collapsed-arrow br-4">
+                                <svg class="svg-sprite-icon c-gray-75 " width="12px" height="17px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="collapse pt-3" id="QuateRequestDrop1">
+                            <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="1">
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75 active">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox" checked="">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Tarif</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Shedule</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Map</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="contents pt-3" data-index="1">
+                                <div class="contents__item active">
+                                    <div class="row weight-medium">
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Demurrages</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Detentions</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <a href="#" class="px-3 items-center ml-auto fs-13">
+                                            <svg class="svg-sprite-icon mr-2" width="16px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2">
+                                                </use>
+                                            </svg>
+                                            <span>Andrei Y.</span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 pr-1">
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Pick up </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Kalipėda, LTKLJ</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Ocean freigt </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Shanghai, CHSHA</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="col-6 pl-1 mt-3">
+                                            <div class="br-4 bg-gray-f5 p-3 lh-1_6 h-100">
+                                                <div class="d-flex mb-2">
+                                                    <div class="items-center h-fit">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="24px" height="24px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <p class="fs-18 weight-medium">Shanghai, CHSHA</p>
+                                                    </div>
+                                                    <div class="text-right ml-auto">
+                                                        <p class="weight-medium">1 500 EUR</p>
+                                                        <p class="fs-13 c-gray-69">+ BL 30 EUR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-white br-4 p-2 fs-14">
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Container protect</p>
+                                                        <p>788 EUR <span class="fs-13 weight-medium c-gray-75">/CONT</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Documentation Free-Destination</p>
+                                                        <p>834 EUR <span class="fs-13 weight-medium c-gray-75">/ TEU</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Destination Terminal Handling Charge</p>
+                                                        <p>188 EUR <span class="fs-13 weight-medium c-gray-75">/LOT</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="py-2 px-3 bg-light-ffe br-4 mt-3 mb-1">
+                                        <p class="fs-14 weight-medium pb-1 c-orange-f4">Notes</p>
+                                        <p class="fs-13 lh-1_3">Container    3 x 35’CH / HT / SO <br>
+                                            The essential factor in warehouse management is the safety rules. Warehouses  with safety as a priority would include wearing appropriate PPE. Community marketplace for people to send goods around the world. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads.</p>
+                                    </div>
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                            
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule1">
+                                                    <span class="more">More</span> <span class="less">Less</span>  details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule1">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule12">
+                                                    <span class="more">More</span> <span class="less">Less</span> details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule12">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="z-1 w-100" style="height: 522px">map</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-1 mb-2 px-3 py-2 hover-b bg-white br-4 mb-2">
+                        <div type="button" class="collapsed" data-toggle="collapse" data-target="#QuateRequestDrop2">
+                            <div class="items-center pb-2 pt-1">
+                                <div class="w-100 pr-3">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                            </svg>
+                                        </label>
+                                        <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2  h-fit">
+                                            <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                            </svg>
+                                            <span class="t-100 p-3 tooltip-content r-0">
+                                                <span class="px-1">Lorem ipsum dolor .</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="items-center weight-medium text-nowrap mb-2">
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/logo/hapaglloyd-2.png" alt="image" width="70" height="50">
+                                            
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between fs-14">
+                                        <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                        <p class="fs-13 c-gray-75">15 Days</p>
+                                        <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                    </div>
+                                    <hr class="my-3 b-gray-ee">
+                                    <div class="items-center c-gray-75 fs-13">
+                                        <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">40’HC</p>
+                                        <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">12t</p>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Contract</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Fastest shedule</a>
+                                    </div>
+                                </div>
+                                <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
+                                    <p class="py-3 weight-medium">
+                                        <span class="fs-22 pb-1 d-block">1 800 EUR</span>
+                                        <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
+                                    </p>
+                                    <button type="button" class="btn min-w-150 py-1">Booking</button>
+                                    <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-gray-f5 w-100 collapsed-arrow br-4">
+                                <svg class="svg-sprite-icon c-gray-75 " width="12px" height="17px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="collapse pt-3" id="QuateRequestDrop2">
+                            <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="2">
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75 active">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox" checked="">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Tarif</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Shedule</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Map</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="contents pt-3" data-index="2">
+                                <div class="contents__item active">
+                                    <div class="row weight-medium">
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Demurrages</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Detentions</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <a href="#" class="px-3 items-center ml-auto fs-13">
+                                            <svg class="svg-sprite-icon mr-2" width="16px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2">
+                                                </use>
+                                            </svg>
+                                            <span>Andrei Y.</span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 pr-1">
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Pick up </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Kalipėda, LTKLJ</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Ocean freigt </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Shanghai, CHSHA</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="col-6 pl-1 mt-3">
+                                            <div class="br-4 bg-gray-f5 p-3 lh-1_6 h-100">
+                                                <div class="d-flex mb-2">
+                                                    <div class="items-center h-fit">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="24px" height="24px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <p class="fs-18 weight-medium">Shanghai, CHSHA</p>
+                                                    </div>
+                                                    <div class="text-right ml-auto">
+                                                        <p class="weight-medium">1 500 EUR</p>
+                                                        <p class="fs-13 c-gray-69">+ BL 30 EUR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-white br-4 p-2 fs-14">
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Container protect</p>
+                                                        <p>788 EUR <span class="fs-13 weight-medium c-gray-75">/CONT</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Documentation Free-Destination</p>
+                                                        <p>834 EUR <span class="fs-13 weight-medium c-gray-75">/ TEU</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Destination Terminal Handling Charge</p>
+                                                        <p>188 EUR <span class="fs-13 weight-medium c-gray-75">/LOT</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="py-2 px-3 bg-light-ffe br-4 mt-3 mb-1">
+                                        <p class="fs-14 weight-medium pb-1 c-orange-f4">Notes</p>
+                                        <p class="fs-13 lh-1_3">Container    3 x 35’CH / HT / SO <br>
+                                            The essential factor in warehouse management is the safety rules. Warehouses  with safety as a priority would include wearing appropriate PPE. Community marketplace for people to send goods around the world. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads.</p>
+                                    </div>
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                            
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule2">
+                                                    <span class="more">More</span> <span class="less">Less</span>  details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule2">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule22">
+                                                    <span class="more">More</span> <span class="less">Less</span> details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule22">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="z-1 w-100" style="height: 522px">map</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b-1 mb-2 px-3 py-2 hover-b bg-white br-4">
+                        <div type="button" class="collapsed" data-toggle="collapse" data-target="#QuateRequestDrop3">
+                            <div class="items-center pb-2 pt-1">
+                                <div class="w-100 pr-3">
+                                    <div class="d-flex justify-content-between mb-3">
+                                        <label>
+                                            <input type="checkbox" class="checkbox">
+                                            <svg class="svg-sprite-icon icon-star stroke-75 c-none" width="14px" height="14px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#star"></use>
+                                            </svg>
+                                        </label>
+                                        <p class="relative px-1 d-inline-flex tooltip-b hover-icon-orange z-4 pb-2  h-fit">
+                                            <svg class="svg-sprite-icon c-gray-bd" alt="icon" width="17px" height="17px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#info"></use>
+                                            </svg>
+                                            <span class="t-100 p-3 tooltip-content r-0">
+                                                <span class="px-1">Lorem ipsum dolor .</span>
+                                            </span>
+                                        </p>
+                                    </div>
+                                    <div class="items-center weight-medium text-nowrap mb-2">
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/logo/hapaglloyd.png" alt="image" width="70" height="50">
+                                            
+                                        <div class="w-100 mx-2 bb-2 b-gray-ee"></div>
+                                        <img src="../../img/flag.svg" alt="flag" class="mr-1" width="14px" height="14px">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span> </p>
+                                    </div>
+                                    <div class="d-flex justify-content-between fs-14">
+                                        <p>ETD <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                        <p class="fs-13 c-gray-75">15 Days</p>
+                                        <p>ETA <span class="fs-13 weight-medium c-gray-75">15 Apr. 2022</span></p>
+                                    </div>
+                                    <hr class="my-3 b-gray-ee">
+                                    <div class="items-center c-gray-75 fs-13">
+                                        <svg class="svg-sprite-icon mr-3" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon mr-2" alt="icon" width="16px" height="16px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">40’HC</p>
+                                        <svg class="svg-sprite-icon mr-2 c-none stroke-75" alt="icon" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                        </svg>
+                                        <p class="weight-medium mr-3">12t</p>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-auto weight-normal">SPOT</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Contract</a>
+                                        <a href="#" class="block br-4 c-gray-75 hover-bg-light ml-1 weight-normal">Fastest shedule</a>
+                                    </div>
+                                </div>
+                                <div class="bl-1 b-gray-ee pl-3 text-center text-nowrap">
+                                    <p class="py-3 weight-medium">
+                                        <span class="fs-22 pb-1 d-block">1 800 EUR</span>
+                                        <span class="fs-13 c-gray-75">+ BL 30 EUR</span>
+                                    </p>
+                                    <button type="button" class="btn min-w-150 py-1">Booking</button>
+                                    <p class="pt-2 fs-13">Valid 15 Apr.- 18 Apr. 2022</p>
+                                </div>
+                            </div>
+                            <button type="button" class="bg-gray-f5 w-100 collapsed-arrow br-4">
+                                <svg class="svg-sprite-icon c-gray-75 " width="12px" height="17px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        
+                        <div class="collapse pt-3" id="QuateRequestDrop3">
+                            <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="3">
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75 active">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox" checked="">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Tarif</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Shedule</span>
+                                        </label>
+                                    </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a href="#" class="c-gray-75">
+                                        <label>
+                                            <input type="radio" name="radio-rate_1" class="checkbox">
+                                            <span class="p-2 br-1 b-white w-200px d-block bg-light-ee">Map</span>
+                                        </label>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="contents pt-3" data-index="3">
+                                <div class="contents__item active">
+                                    <div class="row weight-medium">
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Demurrages</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <div class="col-6 max-215 items-center c-gray-75">
+                                            <svg class="svg-sprite-icon mr-1 " width="15px" height="15px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                            </svg>
+                                            <p><span>Detentions</span>
+                                                <span class="fs-13 c-black-1e">15 days</span> </p>
+                                        </div>
+                                        <a href="#" class="px-3 items-center ml-auto fs-13">
+                                            <svg class="svg-sprite-icon mr-2" width="16px" height="16px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user-2">
+                                                </use>
+                                            </svg>
+                                            <span>Andrei Y.</span>
+                                        </a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-6 pr-1">
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Pick up </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Kalipėda, LTKLJ</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#boat3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Ocean freigt </span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                            <button type="button" class="text-left hover-b w-100 b-0 py-1 px-2 bg-gray-f5 br-4 flex-between-center weight-medium mt-3">
+                                                <span>
+                                                    <span class="items-center mb-2">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="20px" height="20px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <span class="fs-18">Shanghai, CHSHA</span>
+                                                    </span>
+                                                    <span>1850 EUR / per lot </span>
+                                                </span>
+                                                <svg class="svg-sprite-icon c-gray-75 mr-2" width="10px" height="10px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-1"></use>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="col-6 pl-1 mt-3">
+                                            <div class="br-4 bg-gray-f5 p-3 lh-1_6 h-100">
+                                                <div class="d-flex mb-2">
+                                                    <div class="items-center h-fit">
+                                                        <svg class="svg-sprite-icon c-orange-f4 mr-2" width="24px" height="24px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                        <p class="fs-18 weight-medium">Shanghai, CHSHA</p>
+                                                    </div>
+                                                    <div class="text-right ml-auto">
+                                                        <p class="weight-medium">1 500 EUR</p>
+                                                        <p class="fs-13 c-gray-69">+ BL 30 EUR</p>
+                                                    </div>
+                                                </div>
+                                                <div class="bg-white br-4 p-2 fs-14">
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Container protect</p>
+                                                        <p>788 EUR <span class="fs-13 weight-medium c-gray-75">/CONT</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Documentation Free-Destination</p>
+                                                        <p>834 EUR <span class="fs-13 weight-medium c-gray-75">/ TEU</span></p>
+                                                    </div>
+                                                    <div class="flex-between-center mb-2">
+                                                        <p class="c-gray-75 ">Destination Terminal Handling Charge</p>
+                                                        <p>188 EUR <span class="fs-13 weight-medium c-gray-75">/LOT</span></p>
+                                                    </div>
+                                                </div>
+                                            </div>   
+                                        </div>
+                                    </div>
+                                    <div class="py-2 px-3 bg-light-ffe br-4 mt-3 mb-1">
+                                        <p class="fs-14 weight-medium pb-1 c-orange-f4">Notes</p>
+                                        <p class="fs-13 lh-1_3">Container    3 x 35’CH / HT / SO <br>
+                                            The essential factor in warehouse management is the safety rules. Warehouses  with safety as a priority would include wearing appropriate PPE. Community marketplace for people to send goods around the world. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads. It helps to arrange the international cargo delivery from 1m³ or 50 kg till shiploads.</p>
+                                    </div>
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                            
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule3">
+                                                    <span class="more">More</span> <span class="less">Less</span>  details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule3">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="br-4 p-3 mb-2 bg-light-ee ">
+                                        <div class="items-center">
+                                            <div class="w-100 pr-3 weight-medium br-1 b-gray-bd">
+                                                <div class="items-center mb-3">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <p class="">Kalipėda, LTKLJ</p>
+                                                    <p class="c-gray-75 fs-13 mx-auto">11 days</p>
+                                                    <p class="">Shanghai, CHSHA</p>
+                                                    <svg class="svg-sprite-icon ml-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                </div>
+                                                <div class="items-center mb-2 c-orange-f4">
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex mr-2 flex-shrink-0">
+                                                        <svg class="svg-sprite-icon m-auto" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                        </svg>
+                                                    </div>
+                                                    <div class="w-100 line-tracking bg-orange-f4 mr-2"></div>
+                                                    <div class="wh-20 br-50 b-1_5 b-orange-f4 d-flex flex-shrink-0"><div class="wh-10 bg-orange-f4 br-50 m-auto"></div></div>
+                                                </div>
+                                                <div class="flex-between-center fs-13 c-gray-75">
+                                                    <p>15 Apr. 2022</p>
+                                                    <p>27 Apr. 2022</p>
+                                                </div>
+                                            </div>
+                                            <div class="pl-3 min-w-160 weight-medium">
+                                                <button type="button" class="btn mb-3 w-100 py-1">Booking</button>
+                                                <a href="#" class="collapsed text-center d-block c-orange-f4 underline" data-toggle="collapse" data-target="#QuateRequestDropShedule32">
+                                                    <span class="more">More</span> <span class="less">Less</span> details
+                                                </a>
+                                            
+                                            </div>
+                                        </div>
+                                        <div class="collapse pt-3" id="QuateRequestDropShedule32">
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 mb-1 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Lisboa, SPMDJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Trans
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                            <div class="bg-white br-4 p-2 items-center">
+                                                <div class="weight-medium d-flex mr-4">
+                                                    <div class="w-160 d-flex flex-shrink-0">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Shanghai, CHSHA</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                    <svg class="svg-sprite-icon px-2 mx-2" width="30px" height="17px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-2"> </use>
+                                                    </svg>
+                                                    <div class="w-160 d-flex flex-shrink-0 pl-1">
+                                                        <svg class="svg-sprite-icon mr-2" width="14px" height="17px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"> </use>
+                                                        </svg>
+                                                        <div class="">
+                                                            <p>Kalipėda, LTKLJ</p>
+                                                            <p class="c-gray-75 mt-1 fs-13">15 Apr. 2022</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium flex-center c-black-1e br-4 min-w-102">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#swap"> </use>
+                                                    </svg>
+                                                    2 Transfers
+                                                </div>
+                                                <div class="block mx-2 lh-22 weight-medium items-center c-black-1e br-4">
+                                                    <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clock2"> </use>
+                                                    </svg>
+                                                    3 days
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <div class="contents__item ">
+                                    <div class="z-1 w-100" style="height: 522px">map</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <script src="../../vendor/jquery/jquery.min.js"></script>
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>

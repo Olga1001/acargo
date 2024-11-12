@@ -6750,13 +6750,13 @@
                     </div>
                     <div class="nav fs-14 c-gray-75" data-index="2">
                         <label class="mr-1">
-                            <input type="radio" name="radio_2" class="checkbox">
+                            <input type="radio" name="radio_2" class="checkbox" checked>
                             <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
                                 Sea
                             </span>
                         </label>
                         <label class="mr-1">
-                            <input type="radio" name="radio_2" class="checkbox" checked="">
+                            <input type="radio" name="radio_2" class="checkbox">
                             <span class="radio-active p-3 br-4 bg-light-ee d-flex hover-red">
                                 Haulage
                             </span>
@@ -6770,24 +6770,628 @@
                     </div>
                 </div>
                 <div class="contents pt-3 weight-medium" data-index="2">
-                    <div class="contents__item"></div>
                     <div class="contents__item active">
                         <div class="br-4 bg-gray-f5 p-3 mb-3">
-                            <p class="fs-16">Order details</p>
+                            <p class="fs-16">Rate details</p>
                             <div class="row mx--1 c-gray-69">
                                 <div class="col-3 mt-3 px-2">
-                                    <p class=" pb-1">Direction</p>
-                                    <div class="row fs-14 c-gray-75 lh-1_8 text-center weight-normal">
-                                        <label class="col-6 pr-1">
+                                    <p class="pb-1">Provider</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" value="Sasa dis Ticaret AS">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">Sasa dis Ticaret AS</a>
+                                                <a href="#" class="select__option py-1">Sasa dis Ticaret AS</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-3 px-2">
+                                    <p class="pb-1">Valid time from and till</p>
+                                    <div class="relative">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" name="calendar-ranges" placeholder="Select day" value="09.10.2024 - 01.11.2024">
+                                        <svg class="svg-sprite-icon absolute r-0 t-center mr-3" fill="#757575" width="15px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-7"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="col-3 mt-3 px-2">
+                                    <p class="pb-1">Quotation No</p>
+                                    <input type="text" class="bg-white br-4 b-gray-9e" placeholder="Quotation No">
+                                </div>
+                                <div class="col-3 mt-3 px-2">
+                                    <p class="pb-1">Cargo category</p>
+                                    <div class="select br-4 bg-white b-gray-9e">
+                                        <input type="text" class="select__item" value="Aluminum">
+                                        <div class="select__drop">
+                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                <a href="#" class="select__option py-1">Aluminum</a>
+                                                <a href="#" class="select__option py-1">Aluminum</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="d-flex flex-wrap pt-3 bb-1 b-gray-ee p-0 fs-14 c-gray-75">
+                            <label class="br-1 b-white">
+                                <input type="radio" name="radio_4" class="checkbox" checked>
+                                <span class="radio-active px-2 br-4-top min-h-45 bg-light-ee items-center hover-red">
+                                    <span class="px-2"> LTKLJ-GRPIR 40’HC</span>
+                                    
+                                    <span class="d-none">
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="13" height="13">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#copy3"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20 ml-1">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="12" height="12">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="br-1 b-white">
+                                <input type="radio" name="radio_4" class="checkbox">
+                                <span class="radio-active px-2 br-4-top min-h-45 bg-light-ee items-center hover-red">
+                                    <span class="px-2">LTKLJ-GRPIR 30’HC </span>
+                                    
+                                    <span class="d-none">
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="13" height="13">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#copy3"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20 ml-1">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="12" height="12">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </span>
+                            </label>
+                            <label class="br-1 b-white">
+                                <input type="radio" name="radio_4" class="checkbox">
+                                <span class="radio-active px-2 br-4-top min-h-45 bg-light-ee items-center hover-red">
+                                    <span class="px-2">LTKLJ-GRPIR 40’HCP </span>
+                                    
+                                    <span class="d-none">
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="13" height="13">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#copy3"></use>
+                                            </svg>
+                                        </a>
+                                        <a href="#" class="br-4 wh-24 d-flex bg-white-20 ml-1">
+                                            <svg class="svg-sprite-icon m-auto" fill="white" width="12" height="12">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                            </svg>
+                                        </a>
+                                    </span>
+                                </span>
+                            </label>
+                            <button type="button" class="px-3 br-4-top min-h-45 weight-medium bg-gray-f5 items-center hover-red c-orange-f4">
+                                Add rate
+                                <svg class="svg-sprite-icon ml-1" width="16" height="16">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#plus3"></use>
+                                </svg>
+                            </button>
+                        </div>
+                        <div class="mt-2 p-3 br-4 bg-gray-f5 ">
+                            <p class="fs-16">Ocean freight</p>
+        
+                            <div class="row mx--1">
+                                <div class="col-4 px-2">
+                                    <div class="row mx--1 items-end">
+                                        <div class="col-4 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Container type</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="40’HC">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">40’HC</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-8 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Carier</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="ADMIRAL LINE">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">ADMIRAL LINE</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Shedule time</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="21-30 days">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">21-30 days</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-7 px-2 mt-3">
+                                            <div class="row mx--1 text-center weight-normal">
+                                                <div class="col-4 px-2">
+                                                    <label class="w-100">
+                                                        <input type="checkbox"  class="checkbox">
+                                                        <span class="radio-active _1441_lh-43 lh-31 br-4 bg-gray-e0 d-block hover-red">
+                                                            Incl. LI 
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-4 px-2">
+                                                    <label class="w-100">
+                                                        <input type="checkbox"  class="checkbox">
+                                                        <span class="radio-active _1441_lh-43 lh-31 br-4 bg-gray-e0 d-block hover-red">
+                                                            Incl. LO
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                                <div class="col-4 px-2">
+                                                    <label class="w-100">
+                                                        <input type="checkbox"  class="checkbox">
+                                                        <span class="radio-active _1441_lh-43 lh-31 br-4 bg-gray-e0 d-block hover-red">
+                                                            Incl. FOT 
+                                                        </span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 px-2">
+                                    <div class="br-4 p-3 bg-light-ee">
+                                        <div class="items-center">
+                                            <p class="fs-14">Freight charges</p>
+                                            <p class="fs-16 lh-22 ml-auto"><span class="c-gray-75">Subtotal:</span>1 200 EUR</p>
+                                        </div>
+
+                                        <div class="row mx--1 mt-3 c-gray-69">
+                                            <div class="col-7 px-2">Name</div>
+                                            <div class="col-5 px-2">
+                                                <div class="row">
+                                                    <div class="col-6">Per</div>
+                                                    <div class="col-6">Price</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-7 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
+                                            </div>
+                                            <div class="col-5 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-6 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="Container">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-2">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-7 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="Fuel">
+                                            </div>
+                                            <div class="col-5 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-6 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="Teu">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1">Container</a>
+                                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-2">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="1200">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="c-orange-f4 ml-auto d-block fs-14 lh-22 mt-3 weight-medium">Add charge</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 p-3 br-4 bg-gray-f5 ">
+                            <p class="fs-16">Orgin port</p>
+        
+                            <div class="row mx--1">
+                                <div class="col-4 px-2">
+                                    <div class="row mx--1 items-end">
+                                        <div class="col-8 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Port</p>
+                                            <form class="items-center select br-4 b-gray-bd not-arrow bg-white isvalid">
+                                                <div class="absolute l-0 t-center items-center">
+                                                    <svg class="svg-sprite-icon ml-3 " fill="#1e1e1e" width="13px" height="13px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="ml-2">
+                                                </div>
+                                                <input type="text" class="pl-56 py-1 select__item" value="Kalipėda, LTKLJ">
+                                           
+                                                <div class="absolute t-center r-0 pr-3">
+                                                    <button type="reset" class="d-none">
+                                                        <svg class="svg-sprite-icon" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-5 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Port storage</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="21-30 days">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">21-30 days</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 px-2">
+                                    <div class="br-4 p-3 bg-light-ee">
+                                        <div class="items-center">
+                                            <p class="fs-14">Freight charges</p>
+                                            <p class="fs-16 lh-22 ml-auto"><span class="c-gray-75">Subtotal:</span> 248 EUR</p>
+                                        </div>
+
+                                        <div class="row mx--1 mt-3 c-gray-69">
+                                            <div class="col-7 px-2">Name</div>
+                                            <div class="col-5 px-2">
+                                                <div class="row">
+                                                    <div class="col-6">Per</div>
+                                                    <div class="col-6">Price</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-7 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="OTHC">
+                                            </div>
+                                            <div class="col-5 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-6 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="Container">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-2">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="100">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-7 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="Storage">
+                                            </div>
+                                            <div class="col-5 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-6 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="Teu">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1">Container</a>
+                                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-2">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="50">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-7 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="DOC">
+                                            </div>
+                                            <div class="col-5 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-6 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="LOT">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1">Container</a>
+                                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                                    <a href="#" class="select__option py-1 active"></a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-2">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="50">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="c-orange-f4 ml-auto d-block fs-14 lh-22 mt-3 weight-medium">Add charge</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-2 p-3 br-4 bg-gray-f5 ">
+                            <p class="fs-16">Destination port</p>
+        
+                            <div class="row mx--1">
+                                <div class="col-4 px-2">
+                                    <div class="row mx--1 items-end">
+                                        <div class="col-8 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Port</p>
+                                            <form class="items-center select br-4 b-gray-bd not-arrow bg-white isvalid">
+                                                <div class="absolute l-0 t-center items-center">
+                                                    <svg class="svg-sprite-icon ml-3 " fill="#1e1e1e" width="13px" height="13px">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                                    </svg>
+                                                    <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="ml-2">
+                                                </div>
+                                                <input type="text" class="pl-56 py-1 select__item" value="Kalipėda, LTKLJ">
+                                           
+                                                <div class="absolute t-center r-0 pr-3">
+                                                    <button type="reset" class="d-none">
+                                                        <svg class="svg-sprite-icon" width="12px" height="12px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                        </svg>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                        <div class="col-5 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Demurrages</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="Combined">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">Combined</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-5 px-2 mt-3">
+                                            <p class="pb-1 c-gray-69">Detentions</p>
+                                            <div class="select br-4 bg-white b-gray-9e">
+                                                <input type="text" class="select__item" value="Combined">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">Combined</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-8 px-2">
+                                    <div class="br-4 p-3 bg-light-ee">
+                                        <div class="items-center">
+                                            <p class="fs-14">Freight charges</p>
+                                            <p class="fs-16 lh-22 ml-auto"><span class="c-gray-75">Subtotal:</span> 248 EUR</p>
+                                        </div>
+
+                                        <div class="row mx--1 mt-3 c-gray-69">
+                                            <div class="col-5 px-2">Name</div>
+                                            <div class="col-7 px-2">
+                                                <div class="row">
+                                                    <div class="col-5">Per</div>
+                                                    <div class="col-7">Price</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-5 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="Locals">
+                                            </div>
+                                            <div class="col-7 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-5 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="Container">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7 px-2 d-flex">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <label class="fs-14 c-gray-75 pl-3">
+                                                            <input type="checkbox" class="checkbox">
+                                                            <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                        </label>
+                                                    </div>
+        
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row mx--1 mt-2">
+                                            <div class="col-5 px-2">
+                                                <input type="text" class="bg-white br-4 b-gray-9e" value="Customs">
+                                            </div>
+                                            <div class="col-7 px-2">
+                                                <div class="row mx--1">
+                                                    <div class="col-5 px-2">
+                                                        <div class="select br-4 bg-white b-gray-9e">
+                                                            <input type="text" class="select__item" value="LOT">
+                                                            <div class="select__drop">
+                                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                                    <a href="#" class="select__option py-1 ">Container</a>
+                                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                                    <a href="#" class="select__option py-1 active">LOT</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-7 px-2 d-flex">
+                                                        <div class="d-flex relative">
+                                                            <input type="number" class="br-4 b-gray-9e bg-white" value="100">
+                                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                                <div class="select__drop">
+                                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div> 
+                                                        </div>
+                                                        <label class="fs-14 c-gray-75 pl-3">
+                                                            <input type="checkbox" class="checkbox">
+                                                            <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                        </label>
+                                                    </div>
+        
+                                                  
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button type="button" class="c-orange-f4 ml-auto d-block fs-14 lh-22 mt-3 weight-medium">Add charge</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="br-4 ml-auto my-2 bg-light-ee p-2 min-w-150 d-flex weight-medium lh-22 w-fit-content">
+                            <div class="text-right mx-auto">
+                                <p class="fs-15 c-gray-75">Total</p>
+                                <p class="fs-18">2 158 EUR</p>
+                            </div>
+                        </div>
+                        <div class="br-4 bg-gray-f5 p-3 mt-4">
+                            <p class="fs-16">Sprecification</p>
+                            <textarea class="w-100 bg-white b-gray-9e br-4 px-3 py-2 lh-22 mt-3 fs-16" placeholder="Sprecification"></textarea>
+                        </div>
+                        <br>
+                        <button type="button" class="btn w-100 max-204 collapsed mt-3" data-toggle="collapse" data-target="#collapseAddRate">Add rate</button>
+                    </div>
+                    <div class="contents__item">
+                        <div class="br-4 bg-gray-f5 p-3 mb-3">
+                            <p class="fs-16">Order details</p>
+                            <div class="row mx--1">
+                                <div class="col-3 mt-3 px-2">
+                                    <p class="c-gray-69">Direction</p>
+                                    <div class="d-flex fs-14 c-gray-75 text-center weight-normal mt-2">
+                                        <label class="pr-2 relative pt-2">
                                             <input type="radio" name="radio_3" class="checkbox">
-                                            <span class="radio-active px-3 py-2 py-1_1440 br-4 bg-light-ee d-flex justify-content-center hover-red">
+                                            <span class="radio-active py-2 br-4 bg-light-ee d-block min-w-90 hover-red">
                                                 Inport
+                                                <span class="d-none absolute br-50 t-0 r-0 wh-24 b-2 b-white bg-orange-f4">
+                                                    <svg class="svg-sprite-icon m-auto" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                             </span>
                                         </label>
-                                        <label class="col-6 pl-1">
+                                        <label class="pr-2 relative pt-2">
                                             <input type="radio" name="radio_3" class="checkbox" checked="">
-                                            <span class="radio-active px-3 py-2 py-1_1440 br-4 bg-light-ee d-flex justify-content-center hover-red">
+                                            <span class="radio-active py-2 br-4 bg-light-ee d-block min-w-90 hover-red">
                                                 Export
+                                                <span class="d-none absolute br-50 t-0 r-0 wh-24 b-2 b-white bg-orange-f4">
+                                                    <svg class="svg-sprite-icon m-auto" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                    </svg>
+                                                </span>
                                             </span>
                                         </label>
                                     </div>
@@ -7166,8 +7770,11 @@
                             <div class="br-4 w-100 b-gray-ee p-0 b-1_5 h-fit mx-2 my-auto"></div>
 
                             <div class="p-3 br-4 bg-gray-f5 b-1 b-orange-f4">
-                                <svg class="svg-sprite-icon" width="32" height="32">
+                                <!-- <svg class="svg-sprite-icon" width="32" height="32">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#fi_4400394"></use>
+                                </svg> -->
+                                <svg class="svg-sprite-icon" width="32" height="32">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#fi_4400394_2"></use>
                                 </svg>
                                 <p class="weight-bold mt-2 fs-12">CY-CY</p>
                                 <p class="fs-13 c-gray-75">Ocean freight</p>
@@ -7186,8 +7793,11 @@
                             <div class="br-4 w-100 b-orange-f4 p-0 b-1_5 h-fit mx-2 my-auto"></div>
 
                             <div class="p-3 br-4 bg-gray-f5 b-1 b-orange-f4">
-                                <svg class="svg-sprite-icon" width="32" height="32">
+                                <!-- <svg class="svg-sprite-icon" width="32" height="32">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#fi_9081911"></use>
+                                </svg> -->
+                                <svg class="svg-sprite-icon" width="32" height="32">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#fi_9081911_2"></use>
                                 </svg>
                                 <p class="weight-bold mt-2 fs-12">FOT</p>
                                 <p class="fs-13 c-gray-75">Free on truck</p>
@@ -7738,47 +8348,68 @@
                         <div class="col-7 px-2">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Freight charges</p>
-                                <div class="row mx--1 mt-3">
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-6 px-2">Name</div>
+                                    <div class="col-3 px-2">Per</div>
+                                    <div class="col-3 px-2">Price</div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Container">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <div class="row mx--1">
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Fuel">
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Teu">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1">Container</a>
+                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
                                                 </div>
                                             </div>
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="1200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
@@ -7865,47 +8496,69 @@
                         <div class="col-7 px-2">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Freight charges</p>
-                                <div class="row mx--1 mt-3">
+                               
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-6 px-2">Name</div>
+                                    <div class="col-3 px-2">Per</div>
+                                    <div class="col-3 px-2">Price</div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Container">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <div class="row mx--1">
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Fuel">
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Teu">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1">Container</a>
+                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
                                                 </div>
                                             </div>
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="1200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
                                                 </div>
-                                            </div>
+                                            </div> 
                                         </div>
                                     </div>
                                 </div>
@@ -7924,7 +8577,7 @@
         </div>
     </div>
 
-    <div class="popup-collapse collapse show" id="collapsePortsSurcharges">
+    <div class="popup-collapse collapse" id="collapsePortsSurcharges">
         <div class="popup-collapse-bg d-flex overflow-hidden">
             <div class="container max-1350 pb-3 px-4 ml-auto bg-white scroll-y animate-right weight-medium">
                 <div class="bg-white sticky-top py-3 flex-between-center">
@@ -8064,61 +8717,70 @@
                         <div class="w-100 max-616 px-2 mt-3">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Orgin port</p>
-                                <div class="row mx--1 mt-3">
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-6 px-2">Name</div>
+                                    <div class="col-3 px-2">Per</div>
+                                    <div class="col-3 px-2">Price</div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
-                                    <div class="col-6 px-2">
-                                        <div class="row mx--1">
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Container">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-6 px-2">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Fuel">
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Teu">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1">Container</a>
+                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="1200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
                                 </div>
                                 <button type="button" class="c-orange-f4 ml-auto d-block fs-14 lh-22 mt-3 weight-medium">Add charge</button>
                             </div>
@@ -8126,63 +8788,37 @@
                         <div class="w-100 px-2 mt-3">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Orgin port</p>
-                                <div class="row mx--1 mt-3">
-                                    <div class="col-5 px-2 mb-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                    </div>
-                                    <div class="col-7 px-2 mb-2">
-                                        <div class="items-end mx--1">
-                                            <div class=" px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <label class="fs-14 c-gray-75 px-2">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="radio-active px-3 _1441_lh-43 lh-33 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
-                                            </label>
+
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-5 px-2">Name</div>
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">Per</div>
+                                            <div class="col-5 px-2">Price</div>
                                         </div>
                                     </div>
-
-                                    <div class="col-5 px-2 mb-2">
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-5 px-2">
                                         <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
-                                    <div class="col-7 px-2 mb-2">
-                                        <div class="items-end mx--1">
-                                            <div class=" px-2">
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">
                                                 <div class="select br-4 bg-white b-gray-9e">
                                                     <input type="text" class="select__item" value="Container">
                                                     <div class="select__drop">
                                                         <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
+                                                            <a href="#" class="select__option py-1 active">Container</a>
+                                                            <a href="#" class="select__option py-1">Teu</a>
+                                                            <a href="#" class="select__option py-1">LOT</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class=" px-2">
+                                            <div class="col-7 px-2 d-flex">
                                                 <div class="d-flex relative">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
+                                                    <input type="number" class="br-4 b-gray-9e bg-white" value="200">
                                                     <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
                                                         <input type="text" class="select__item pl-2 fs-16" value="EUR">
                                                         <div class="select__drop">
@@ -8192,11 +8828,53 @@
                                                         </div>
                                                     </div> 
                                                 </div>
+                                                <label class="fs-14 c-gray-75 pl-3">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                </label>
                                             </div>
-                                            <label class="fs-14 c-gray-75 px-2">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="radio-active px-3 _1441_lh-43 lh-33 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
-                                            </label>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-5 px-2">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
+                                    </div>
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">
+                                                <div class="select br-4 bg-white b-gray-9e">
+                                                    <input type="text" class="select__item" value="Container">
+                                                    <div class="select__drop">
+                                                        <div class="select__menu br-4 p-2 weight-normal">
+                                                            <a href="#" class="select__option py-1 active">Container</a>
+                                                            <a href="#" class="select__option py-1">Teu</a>
+                                                            <a href="#" class="select__option py-1">LOT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 px-2 d-flex">
+                                                <div class="d-flex relative">
+                                                    <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                        <div class="select__drop">
+                                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                                <a href="#" class="select__option py-1">EUR</a>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <label class="fs-14 c-gray-75 pl-3">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                </label>
+                                            </div>
+
+                                          
                                         </div>
                                     </div>
                                 </div>
@@ -8276,61 +8954,71 @@
                         <div class="w-100 max-616 px-2 mt-3">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Orgin port</p>
-                                <div class="row mx--1 mt-3">
+                                
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-6 px-2">Name</div>
+                                    <div class="col-3 px-2">Per</div>
+                                    <div class="col-3 px-2">Price</div>
+                                </div>
+                                <div class="row mx--1 mt-2">
                                     <div class="col-6 px-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
-                                    <div class="col-6 px-2">
-                                        <div class="row mx--1">
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-6 px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Container">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1 active">Container</a>
+                                                    <a href="#" class="select__option py-1">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-6 px-2">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Fuel">
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="select br-4 bg-white b-gray-9e">
+                                            <input type="text" class="select__item" value="Teu">
+                                            <div class="select__drop">
+                                                <div class="select__menu br-4 p-2 weight-normal">
+                                                    <a href="#" class="select__option py-1">Container</a>
+                                                    <a href="#" class="select__option py-1 active">Teu</a>
+                                                    <a href="#" class="select__option py-1">LOT</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 px-2">
+                                        <div class="d-flex relative">
+                                            <input type="number" class="br-4 b-gray-9e bg-white" value="1200">
+                                            <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                <div class="select__drop">
+                                                    <div class="select__menu br-4 p-2 weight-normal">
+                                                        <a href="#" class="select__option py-1">EUR</a>
+                                                    </div>
+                                                </div>
+                                            </div> 
+                                        </div>
+                                    </div>
                                 </div>
                                 <button type="button" class="c-orange-f4 ml-auto d-block fs-14 lh-22 mt-3 weight-medium">Add charge</button>
                             </div>
@@ -8338,63 +9026,37 @@
                         <div class="w-100 px-2 mt-3">
                             <div class="br-4 p-3 bg-light-ee">
                                 <p class="fs-14">Orgin port</p>
-                                <div class="row mx--1 mt-3">
-                                    <div class="col-5 px-2 mb-2">
-                                        <p class="c-gray-69">Name</p>
-                                        <input type="text" class="bg-white br-4 b-gray-9e mt-2" value="Ocean freight">
-                                    </div>
-                                    <div class="col-7 px-2 mb-2">
-                                        <div class="items-end mx--1">
-                                            <div class=" px-2">
-                                                <p class="c-gray-69">Per</p>
-                                                <div class="select br-4 bg-white b-gray-9e mt-2">
-                                                    <input type="text" class="select__item" value="Container">
-                                                    <div class="select__drop">
-                                                        <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class=" px-2">
-                                                <p class="c-gray-69">Price</p>
-                                                <div class="d-flex relative mt-2">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
-                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
-                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
-                                                        <div class="select__drop">
-                                                            <div class="select__menu br-4 p-2 weight-normal">
-                                                                <a href="#" class="select__option py-1">EUR</a>
-                                                            </div>
-                                                        </div>
-                                                    </div> 
-                                                </div>
-                                            </div>
-                                            <label class="fs-14 c-gray-75 px-2">
-                                                <input type="checkbox" class="checkbox" checked>
-                                                <span class="radio-active px-3 _1441_lh-43 lh-33 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
-                                            </label>
+                                
+                                <div class="row mx--1 mt-3 c-gray-69">
+                                    <div class="col-5 px-2">Name</div>
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">Per</div>
+                                            <div class="col-5 px-2">Price</div>
                                         </div>
                                     </div>
-
-                                    <div class="col-5 px-2 mb-2">
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-5 px-2">
                                         <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
                                     </div>
-                                    <div class="col-7 px-2 mb-2">
-                                        <div class="items-end mx--1">
-                                            <div class=" px-2">
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">
                                                 <div class="select br-4 bg-white b-gray-9e">
                                                     <input type="text" class="select__item" value="Container">
                                                     <div class="select__drop">
                                                         <div class="select__menu br-4 p-2 weight-normal">
-                                                            <a href="#" class="select__option py-1">Container</a>
+                                                            <a href="#" class="select__option py-1 active">Container</a>
+                                                            <a href="#" class="select__option py-1">Teu</a>
+                                                            <a href="#" class="select__option py-1">LOT</a>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <div class=" px-2">
+                                            <div class="col-7 px-2 d-flex">
                                                 <div class="d-flex relative">
-                                                    <input type="number" class="br-4 b-gray-9e bg-white">
+                                                    <input type="number" class="br-4 b-gray-9e bg-white" value="200">
                                                     <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
                                                         <input type="text" class="select__item pl-2 fs-16" value="EUR">
                                                         <div class="select__drop">
@@ -8404,11 +9066,51 @@
                                                         </div>
                                                     </div> 
                                                 </div>
+                                                <label class="fs-14 c-gray-75 pl-3">
+                                                    <input type="checkbox" class="checkbox" checked>
+                                                    <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                </label>
                                             </div>
-                                            <label class="fs-14 c-gray-75 px-2">
-                                                <input type="checkbox" class="checkbox">
-                                                <span class="radio-active px-3 _1441_lh-43 lh-33 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
-                                            </label>
+
+                                          
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row mx--1 mt-2">
+                                    <div class="col-5 px-2">
+                                        <input type="text" class="bg-white br-4 b-gray-9e" value="Ocean freight">
+                                    </div>
+                                    <div class="col-7 px-2">
+                                        <div class="row mx--1">
+                                            <div class="col-5 px-2">
+                                                <div class="select br-4 bg-white b-gray-9e">
+                                                    <input type="text" class="select__item" value="Container">
+                                                    <div class="select__drop">
+                                                        <div class="select__menu br-4 p-2 weight-normal">
+                                                            <a href="#" class="select__option py-1 active">Container</a>
+                                                            <a href="#" class="select__option py-1">Teu</a>
+                                                            <a href="#" class="select__option py-1">LOT</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-7 px-2 d-flex">
+                                                <div class="d-flex relative">
+                                                    <input type="number" class="br-4 b-gray-9e bg-white" value="200">
+                                                    <div class="select br-4-right bg-gray-e0 bl-0 b-gray-9e w-100 small absolute r-0 t-0 h-100 max-w-65">
+                                                        <input type="text" class="select__item pl-2 fs-16" value="EUR">
+                                                        <div class="select__drop">
+                                                            <div class="select__menu br-4 p-2 weight-normal">
+                                                                <a href="#" class="select__option py-1">EUR</a>
+                                                            </div>
+                                                        </div>
+                                                    </div> 
+                                                </div>
+                                                <label class="fs-14 c-gray-75 pl-3">
+                                                    <input type="checkbox" class="checkbox">
+                                                    <span class="radio-active px-3 _1441_lh-43 lh-31 br-4 bg-gray-e0 d-flex hover-red ">FOT</span>
+                                                </label>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>

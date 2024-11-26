@@ -1909,6 +1909,29 @@ button:focus {
   display: inline-flex;
 }
 
+.border-checkbox {
+  padding: 16px;
+  border-radius: 4px;
+  display: block;
+  background-color: #f5f5f5;
+  border: 2px solid #f5f5f5;
+}
+
+.line-checkbox {
+  border-radius: 20px;
+  background-color: var(--border-border-0, #EEE);
+  height: 3px;
+  width: 135px;
+}
+
+.checkbox:checked~.line-checkbox {
+  background-color: var(--Color-Brand-Orange, #F54617);
+}
+
+.checkbox:checked~.border-checkbox {
+  border-color: var(--Color-Brand-Orange, #F54617);
+}
+
 .check_1 .checkbox:checked~span {
   background-color: #FFE2DA !important;
   color: var(--orange-new, #F54617) !important;
@@ -1944,11 +1967,15 @@ button:focus {
   font-weight: 600;
 }
 
-.checkbox:checked~.radio-active .d-none {
+.checkbox:checked~span .d-none {
   display: flex!important;
 }
-.checkbox:checked~.radio-active .is {
+.checkbox:checked~span .is {
   display: none!important;
+}
+
+.checkbox:checked ~ .line-checkbox {
+  border-color: var(--orange-new, #F45617) !important;
 }
 
 .checkbox:checked~.check_freight-type svg {

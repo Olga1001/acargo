@@ -737,6 +737,11 @@ button {
   flex-shrink: 0;
 }
 
+button[disabled] {
+  color: var(--text-text-third, #BDBDBD);
+  cursor: no-drop;
+}
+
 button:focus {
   outline: none;
 }
@@ -1942,6 +1947,9 @@ button:focus {
 .checkbox:checked~.radio-active .d-none {
   display: flex!important;
 }
+.checkbox:checked~.radio-active .is {
+  display: none!important;
+}
 
 .checkbox:checked~.check_freight-type svg {
   fill: #156CE4 !important;
@@ -2517,13 +2525,20 @@ button:focus {
   box-shadow: none;
 }
 
+.btn.gray {
+  background: var(--surface-surface-1, #EEE);
+  color: var(--text-text-secondary, #757575);
+}
+
 .btn.small {
   padding: 1.5px;
 }
+
 .btn:focus {
   outline: none;
   box-shadow: none;
 }
+
 .btn:not(.not-focus):focus {
   font-size: 16px;
   font-weight: 700;
@@ -3565,6 +3580,14 @@ button:focus {
   background-color: #FFEFD8;
 }
 
+.bg-gray-fa {
+  background-color: #fafafa;
+}
+
+.bg-gray-75 {
+  background-color: #757575;
+}
+
 .bg-gray-e0 {
   background-color: #E0E0E0;
 }
@@ -3718,6 +3741,10 @@ button:focus {
   background-color: #51BA20!important;
 }
 
+.bg-green-51_10 {
+  background-color: rgba(81, 186, 32, 0.10)!important;
+}
+
 .bg-green-eef {
   background-color: #EEF8E9 !important;
 }
@@ -3844,6 +3871,10 @@ button:focus {
 
 .bg-orange_v4 {
   background: #FFF1D9;
+}
+
+.bg-orange_fe {
+  background: #FEEDE8;
 }
 
 .bg-orange_v5,
@@ -9684,6 +9715,7 @@ a.tool-item img {
 
 .fs-16 {
   font-size: 16px !important;
+  line-height: 22px;
 }
 
 .fs-24 {
@@ -11508,10 +11540,35 @@ p.c-green {
 .nav-link.nav-link-pale.active svg.c-gray {
   fill: #049dbd;
 }
+
+.list-decimal {
+  list-style: none; 
+  counter-reset: custom-counter;
+}
+
+.list-decimal li {
+  counter-increment: custom-counter;
+  position: relative; 
+  display: flex;
+  align-items: center;
+}
+
+.list-decimal li::before {
+  content: counter(custom-counter) ".";
+  color: #696969;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; 
+  letter-spacing: -0.32px;
+  margin-right: 8px;
+}
+
 .list-disk {
   list-style-type: disc;
   padding-left: 16px;
 }
+
 .style-disk {
   list-style-type: none;
 }
@@ -12147,6 +12204,10 @@ a.page-link.active svg {
   border-radius: 2px;
 }
 
+.br-20 {
+  border-radius: 20px;
+}
+
 .br-4 {
   border-radius: 4px !important;
 }
@@ -12161,6 +12222,10 @@ a.page-link.active svg {
 
 .br-4-top {
   border-radius: 4px 4px 0 0 !important;
+}
+
+.br-4-bottom {
+  border-radius: 0 0 4px 4px!important;
 }
 
 .br-6 {
@@ -16078,6 +16143,10 @@ a.page-link.active svg {
 .hover-red:hover {
   background: var(--Color-Orange-shades-Orange-400, #C52D05)!important;
   color: var(--text-text-invert, #FAFAFA)!important;
+}
+
+.hover-red:hover .is.b-1 {
+  border-color: var(--text-text-invert, #FAFAFA)!important;
 }
 
 .hover-red:hover svg:not([class*="stroke"]) {

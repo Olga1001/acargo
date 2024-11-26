@@ -150,7 +150,6 @@ $(document).ready(function () {
     $(this).closest(".select").toggleClass('active').find(".select__drop").first().slideToggle(300).parents().siblings().find(".select").removeClass('active').find(".select__drop").slideUp(300);
   });
   $(".select__item").on('input change', function(e) {
-    console.log($(this).val())
     if ($(this).closest(".select").find('.select__icon')) {
       if ($(this).val() != '' || $(this).html() != '') {
         $(this).closest(".select").addClass('isvalid')

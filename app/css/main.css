@@ -1923,12 +1923,12 @@ button:focus {
   height: 3px;
   width: 135px;
 }
-
-.checkbox:checked~.line-checkbox {
+.way_checkbox .checkbox:checked + .border-checkbox + .checkbox:checked + .line-checkbox,
+.way_checkbox .checkbox:checked + div + .border-checkbox + .checkbox:checked + .line-checkbox {
   background-color: var(--Color-Brand-Orange, #F54617);
 }
-
-.checkbox:checked~.border-checkbox {
+.way_checkbox .checkbox:checked + .border-checkbox,
+.way_checkbox .checkbox:checked + div + .border-checkbox {
   border-color: var(--Color-Brand-Orange, #F54617);
 }
 
@@ -1966,16 +1966,13 @@ button:focus {
   color: #fff !important;
   font-weight: 600;
 }
-
+.way_checkbox .checkbox:checked + div + .border-checkbox .d-none,
 .checkbox:checked~span .d-none {
   display: flex!important;
 }
+.way_checkbox .checkbox:checked + div + .border-checkbox .is,
 .checkbox:checked~span .is {
   display: none!important;
-}
-
-.checkbox:checked ~ .line-checkbox {
-  border-color: var(--orange-new, #F45617) !important;
 }
 
 .checkbox:checked~.check_freight-type svg {

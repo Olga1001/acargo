@@ -1183,7 +1183,7 @@
                                                 <p class="fs-16 weight-medium mb-2">Container type</p>
 
                                                 <label class="mb-2 items-center">
-                                                    <input type="checkbox" class="checkbox" checked="">
+                                                    <input type="checkbox" class="checkbox collased" data-target="#collapseLocation" data-toggle="collapse">
                                                     <span class="checked-customer dark mr-2 br-4">
                                                         <svg class="svg-sprite-icon c-none mx-auto" width="12px"
                                                             height="18px">
@@ -2516,6 +2516,97 @@
 
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="popup-collapse collapse" id="collapseLocation">
+        <div class="popup-collapse-bg d-flex overflow-hidden">
+            <div class="container max-400 p-4 ml-auto bg-white scroll-y animate-right">
+                <form class="p-2">
+                    <div class="flex-between-center mb-3">
+                        <h3 class="fs-18 weight-medium">Pick up location</h3>
+                        <a href="#" data-toggle="collapse" data-target="#collapseLocation">
+                            <svg class="svg-sprite-icon " fill="#757575" width="15px" height="15px">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </a>
+                    </div>
+                    <p class="weight-medium pb-1 c-gray-69">Location</p>
+                    <div class="select not-arrow b-gray-9e br-4 bg-white mb-3">
+                        <input type="text" class="br-4 px-3 select__item" >
+                        <div class="autocomplete mt-2 b-1 b-gray-bd br-4 p-2 ">
+                            <ul>
+                                <li class="hover__option p-1 d-flex lh-1_2 mb-1">
+                                    <div class="d-flex">
+                                        <svg class="svg-sprite-icon mr-2" width="14" height="14">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                        </svg>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-2">
+                                    </div>
+                                    <div>
+                                        <p>Klaipėda (LTKLJ)</p>
+                                        <p class="c-gray-75">Lithuania</p>
+                                    </div>
+                                </li>
+                                <li class="hover__option p-1 d-flex lh-1_2 mb-1">
+                                    <div class="d-flex">
+                                        <svg class="svg-sprite-icon mr-2" width="14" height="14">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3"></use>
+                                        </svg>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-2">
+                                    </div>
+                                    <div>
+                                        <p>Klaipėda, Taikos pr. 128 (LT)</p>
+                                        <p class="c-gray-75">Lithuania</p>
+                                    </div>
+                                </li>
+                                <li class="hover__option p-1 d-flex lh-1_2 mb-1">
+                                    <div class="d-flex">
+                                        <svg class="svg-sprite-icon mr-2" width="14" height="14">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2"></use>
+                                        </svg>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-2">
+                                    </div>
+                                    <div>
+                                        <p>Kaunas, Taikos pr. 128 (LT)</p>
+                                        <p class="c-gray-75">Lithuania</p>
+                                    </div>
+                                </li>
+                            </ul>
+                            <button type="button" class="btn mt-3 w-100">Add new adress</button>
+                        </div>
+                        <button type="reset" class="d-none absolute t-center r-0 p-2 mr-2">
+                            <svg class="svg-sprite-icon" fill="#757575" width="12" height="12">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                            </svg>
+                        </button>
+                    </div>
+
+                    <div class="b-1 br-4 b-gray-9e bg-white mb-3">
+                        <div class="px-3 input_customer select__item b-0 h-100 items-center py-1">
+                            <div class="b-1 br-4 b-gray-75 px-1 items-center mr-2 my-1">
+                                <svg class="svg-sprite-icon mr-2" width="14px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#anchor3">
+                                    </use>
+                                </svg>
+                                <img src="../../img/flag.svg" alt="flag" width="14px" height="14px" class="mr-1">
+                                <p class="mr-2 lh-1_4 fs-14 c-black-1e">Klaipėda, Taikos pr. 128 (LT)</p>
+                                <a href="#" class="d-flex">
+                                    <svg class="svg-sprite-icon" width="16px" height="10px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <p class="weight-medium pb-1 c-gray-69">Postcode</p>
+                    <input type="text" class="br-4 px-3 b-gray-9e col-6 mb-3"  value="165235">
+
+                    <button type="submit" class="btn w-200px mt-3">Save</button>
+                </form>
             </div>
         </div>
     </div>

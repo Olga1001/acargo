@@ -413,8 +413,8 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).closest(".table__order-list").toggleClass('active');
     $(this).closest(".table__order-list").find(".drop-more").slideToggle(300);
-    $("input.range-way").bootstrapSlider('refresh');
-    $("input.range-way2").bootstrapSlider('refresh');
+    $("input.range-way").slider('refresh');
+    $("input.range-way2").slider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale');
   });
@@ -432,6 +432,35 @@ $(document).ready(function () {
       $("input.range-way3").bootstrapSlider('refresh');
     }, 1);
   });
+
+  //init slider range (jquery-ui)
+  $( ".slider-range" ).each(function(index, item) {
+    const currency = $(this).data("currency");
+    const minValue = $(this).data("min") || 0;
+    const maxValue = $(this).data("max") || 1000;
+    const values = [$(this).find('.amounts-min').html(), $(this).find('.amounts-max').html()]
+
+    $(this).find('.range').slider({
+      range: true,
+      min: minValue,
+      max: maxValue,
+      values: values,
+      slide: function( event, ui ) {
+        $(this).parent().find('.amounts-min').html(formatNumberWithSpaces(ui.values[0]) + " " + currency);
+        $(this).parent().find('.amounts-max').html(formatNumberWithSpaces(ui.values[1]) + " " + currency);
+      }
+    });
+
+    $(this).find('.amounts-min').html(formatNumberWithSpaces($(this).find('.range').slider("values", 0)) + " " + currency);
+    $(this).find('.amounts-max').html(formatNumberWithSpaces($(this).find('.range').slider("values", 1)) + " " + currency);
+  })
+
+  // to format numbers with spaces every three characters
+  function formatNumberWithSpaces(number) {
+    return number.toString().replace(/\B(?=(\d{3})+(?!\d))/g, " ");
+  }
+
+
   var $inputs = $('.table__rate-item, .select-calendar, .block_resize-input'); // Resize based on text if text.length > 0
   // Otherwise resize based on the placeholder
 

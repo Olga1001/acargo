@@ -178,6 +178,7 @@ $(document).ready(function () {
           showDropdowns: true,
           showWeekNumbers: true,
           autoUpdateInput: false,
+          autoApply: true,
           ranges: {
             'Today': [moment(), moment()],
             'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
@@ -229,6 +230,32 @@ $(document).ready(function () {
         console.log('New date range selected: ' + start.format('DD MMM. YYYY') + ' to ' + end.format('DD MMM. YYYY') + ' (predefined range: ' + label + ')');
       }).on('show.daterangepicker', function (ev, picker) {
         picker.container.addClass('calendar-ranges');
+        picker.container.find('.drp-buttons').remove();
+        picker.container.find('.radios-daterangepicker').remove();
+        console.log(ev, picker)
+        const tabs = `<div class="d-flex fs-14 mb-3 radios-daterangepicker">
+                        <label class="mr-2">
+                            <input type="radio" name="radio-daterangepicker" class="checkbox" checked="">
+                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                                <span class="m-auto d-block">CUT-OFF</span>
+                            </span>
+                        </label>
+                        <label class="mr-2">
+                            <input type="radio" name="radio-daterangepicker" class="checkbox">
+                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                                <span class="m-auto d-block">ETD</span>
+                            </span>
+                        </label>
+                        <label class="mr-2">
+                            <input type="radio" name="radio-daterangepicker" class="checkbox">
+                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                                <span class="m-auto d-block">ETD</span>
+                            </span>
+                        </label>
+                    </div>`;
+        picker.container.prepend(tabs);
+                  // $(picker.container).append(customDiv);
+
       }).on('apply.daterangepicker', function(ev, picker) {
         console.log(ev.currentTarget, picker)
         $(this).val(picker.startDate.format('DD MMM. YYYY') + ' - ' + picker.endDate.format('DD MMM. YYYY'));

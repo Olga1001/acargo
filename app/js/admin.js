@@ -413,8 +413,8 @@ $(document).ready(function () {
     e.preventDefault();
     $(this).closest(".table__order-list").toggleClass('active');
     $(this).closest(".table__order-list").find(".drop-more").slideToggle(300);
-    $("input.range-way").slider('refresh');
-    $("input.range-way2").slider('refresh');
+    $("input.range-way").bootstrapSlider('refresh');
+    $("input.range-way2").bootstrapSlider('refresh');
     $("input.range-way3").bootstrapSlider('refresh');
     $(this).closest(".table__order-list").find(".last").toggleClass('active-scale');
   });

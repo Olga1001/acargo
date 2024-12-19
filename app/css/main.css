@@ -5706,8 +5706,7 @@ button:focus {
   background-color: transparent!important;
 }
 
-.daterangepicker .calendar-table td,
-.daterangepicker .calendar-table tr:last-child th {
+.daterangepicker .calendar-table td{
   height: 35px;
   width: 35px;
   border: none;
@@ -5724,15 +5723,26 @@ button:focus {
   position: relative;
   z-index: 1;
 }
-
+.daterangepicker .calendar-table tr:last-child th,
 .daterangepicker .calendar-table tr:last-child th.week,
 .daterangepicker .calendar-table td.week, 
 .daterangepicker .calendar-table th.week {
   color: var(--Color-Brand-Orange, #F54617);
-  font-size: 14px;
+  font-size: 12px;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   line-height: 130%;
+  height: 35px;
+  width: 35px;
+  text-transform: uppercase;
+}
+.daterangepicker .calendar-table .week.active {
+  font-weight: 900;
+}
+
+.daterangepicker .calendar-table tr:last-child th {
+  color: var(--text-text-secondary, #757575);
+  font-weight: 700;
 }
 
 .daterangepicker td.off, 
@@ -5786,6 +5796,10 @@ button:focus {
 .daterangepicker .calendar-table td.start-date::before {
   background-color: var(--surface-surface-brand, #F54617)!important;
   border-radius: 4px 0 0 4px!important;
+}
+
+.daterangepicker.single .calendar-table td.start-date::before {
+  border-radius: 4px!important;
 }
 
 .daterangepicker .drp-buttons {
@@ -19112,6 +19126,20 @@ input+.autocomplete {
   border-radius: 50%;
   outline: none;
   cursor: pointer;
+}
+
+.circle-icon {
+  width: 18px !important;
+  height: 18px !important;
+  margin-left: -10px !important;
+  margin-top: -10px;
+  border-radius: 18px;
+  border: 2px solid #000;
+  text-align: center;
+  color: #000;
+  background-color: #fff;
+  font-size: 10px;
+  font-weight: 700;
 }
 
 /*==========  Desktop First  ==========*/

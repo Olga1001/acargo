@@ -65,7 +65,7 @@ $(document).ready(function () {
       };
 
       //option new calendars
-      let optionCalendarOne = {
+      const daterangepickerOptionsSingle = {
         singleDatePicker: true,
         showWeekNumbers: true,
         autoApply: true,
@@ -95,7 +95,6 @@ $(document).ready(function () {
         }
       }
 
-      //init new single-calendars
       $(function () {
         function addCustomArrows(picker) {
           const leftArrow = picker.container.find('.drp-calendar.left thead tr:first-child th:last-child');
@@ -140,7 +139,7 @@ $(document).ready(function () {
           const selectedRange = picker.chosenLabel;
           const formatOne = input.data('format-one') || 'DD MMM YYYY';
           const formatTwo = input.data('format-two') || 'DD MMM YYYY';
-  
+
           input.val(selectedRange || `${picker.startDate.format(formatOne)} - ${picker.endDate.format(formatTwo)}`);
           input.parent().addClass('apply-datefilter isvalid');
   
@@ -164,15 +163,33 @@ $(document).ready(function () {
           input.siblings(".text-daterangepicker").remove();
         }
 
-        //multi calendar
+        function addActiveWeek(container) {
+          container.find('.drp-calendar .calendar-table td.today').parent().find('.week').addClass('active')
+        }
+
+        function observeCalendarChanges(container) {
+          const observer = new MutationObserver(() => {
+              addActiveWeek(container);
+          });
+  
+          const target = container.find('.drp-calendar .calendar-table')[0];
+          if (target) {
+              observer.observe(target, { childList: true, subtree: true });
+          }
+      }
+
+        //init multi calendar
         $('[name="calendar-ranges"]').daterangepicker(daterangepickerOptions)
         .on('show.daterangepicker', function (ev, picker) {
             const container = picker.container;
+
             container.addClass('calendar-ranges');
-            // container.find('.drp-buttons').remove();
             container.find('.radios-daterangepicker').remove();
 
-            if (!container.find('.calendar-table .next').length) {
+            addActiveWeek(container);
+            observeCalendarChanges(container);
+
+            if (container.find('.calendar-table .next').length < 2) {
                 addCustomArrows(picker);
                 const originalUpdateCalendars = picker.updateCalendars.bind(picker);
                 picker.updateCalendars = function () {
@@ -186,8 +203,8 @@ $(document).ready(function () {
         .on('apply.daterangepicker', handleApply)
         .on('cancel.daterangepicker', handleCancel);
 
-        //single calendar
-        $('[name="calendar-v1"]').daterangepicker(optionCalendarOne)
+        //init single calendar
+        $('[name="calendar-v1"]').daterangepicker(daterangepickerOptionsSingle)
         .on('show.daterangepicker', function (ev, picker) {
           picker.container.addClass('calendar-v1');
         }).on('apply.daterangepicker', function(ev, picker) {

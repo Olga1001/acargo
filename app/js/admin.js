@@ -180,6 +180,10 @@ $(document).ready(function () {
     $(this).find(".select__item").each(function() {
         $(this).closest(".select").removeClass('isvalid');
     });
+
+    $(this).find('.text-daterangepicker').remove();
+    $(this).find('.apply-datefilter').removeClass('apply-datefilter isvalid');
+    $(this).removeClass('apply-datefilter isvalid');  
   });
 
   $(".link-share").click(function (e) {

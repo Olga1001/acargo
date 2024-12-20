@@ -25,8 +25,47 @@ $(document).ready(function () {
     if (typeof daterangepicker == 'function') {
       clearInterval(waitDaterangepicker)
 
+
+      const daterangepickerOptions = {
+        showDropdowns: true,
+        showWeekNumbers: true,
+        autoUpdateInput: false,
+        autoApply: true,
+        showCustomRangeLabel: false,
+        ranges: {
+            'Today': [moment(), moment()],
+            'This Week': [moment().startOf('week'), moment().endOf('week')],
+            'Next Week': [moment().add(1, 'week').startOf('week'), moment().add(1, 'week').endOf('week')],
+            'This Month': [moment().startOf('month'), moment().endOf('month')],
+            'Next Month': [moment().add(1, 'month').startOf('month'), moment().add(1, 'month').endOf('month')],
+            'This Year': [moment().startOf('year'), moment().endOf('year')],
+            'Last Year': [moment().subtract(1, 'year').startOf('year'), moment().subtract(1, 'year').endOf('year')]
+        },
+        locale: {
+            format: "DD MMM YYYY",
+            separator: " - ",
+            applyLabel: "Done",
+            cancelLabel: "Clear",
+            fromLabel: "From",
+            toLabel: "To",
+            customRangeLabel: "Custom",
+            weekLabel: "WK",
+            daysOfWeek: ["Su", "Mo", "Tu", "We", "Th", "Fr", "Sa"],
+            monthNames: [
+                "January", "February", "March", "April", "May", "June",
+                "July", "August", "September", "October", "November", "December"
+            ],
+            firstDay: 1
+        },
+        alwaysShowCalendars: true,
+        opens: "left",
+        buttonClasses: "p-1 w-120 min-w-auto",
+        applyButtonClasses: "btn",
+        cancelClass: "btn-white c-orange-f4 d-block"
+      };
+
       //option new calendars
-      let optionCalendarOne = {
+      const daterangepickerOptionsSingle = {
         singleDatePicker: true,
         showWeekNumbers: true,
         autoApply: true,
@@ -38,7 +77,7 @@ $(document).ready(function () {
         locale: {
           weekLabel: "WK",
           firstDay: 1,
-          format: "MM.DD.YYYY",
+          format: "MM DDD YYYY",
           monthNames: [
             "January",
             "February",
@@ -56,215 +95,124 @@ $(document).ready(function () {
         }
       }
 
-      //init new single-calendars
       $(function () {
-        $('input[name="calendar-v1"]').daterangepicker(optionCalendarOne
-        ).on('show.daterangepicker', function (ev, picker) {
+        function addCustomArrows(picker) {
+          const leftArrow = picker.container.find('.drp-calendar.left thead tr:first-child th:last-child');
+          const rightArrow = picker.container.find('.drp-calendar.right thead tr:first-child th:nth-child(2)');
+
+          if (!leftArrow.hasClass('next')) {
+              leftArrow.addClass("next available").prepend("<span></span>");
+          }
+
+          if (!rightArrow.hasClass('prev')) {
+              rightArrow.addClass("prev available").prepend("<span></span>");
+          }
+        }
+
+        function addTabs(container) {
+          const tabs = `
+            <div class="d-flex fs-14 mb-3 radios-daterangepicker">
+                <label class="mr-2">
+                    <input type="radio" name="radio-daterangepicker" class="checkbox" checked>
+                    <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                        <span class="m-auto d-block">CUT-OFF</span>
+                    </span>
+                </label>
+                <label class="mr-2">
+                    <input type="radio" name="radio-daterangepicker" class="checkbox">
+                    <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                        <span class="m-auto d-block">ETD</span>
+                    </span>
+                </label>
+                <label class="mr-2">
+                    <input type="radio" name="radio-daterangepicker" class="checkbox">
+                    <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
+                        <span class="m-auto d-block">ETA</span>
+                    </span>
+                </label>
+            </div>`;
+          container.prepend(tabs);
+        }
+
+        function handleApply(ev, picker) {
+          const input = $(ev.currentTarget);
+          const selectedRange = picker.chosenLabel;
+          const formatOne = input.data('format-one') || 'DD MMM YYYY';
+          const formatTwo = input.data('format-two') || 'DD MMM YYYY';
+
+          input.val(selectedRange || `${picker.startDate.format(formatOne)} - ${picker.endDate.format(formatTwo)}`);
+          input.parent().addClass('apply-datefilter isvalid');
+  
+          if (!input.data('tabs')) return;
+  
+          const activeTab = picker.container.find('.radios-daterangepicker .checkbox:checked')
+              .next('.radio-active').text().trim();
+          input.siblings(".text-daterangepicker").remove();
+  
+          if (activeTab) {
+              input.before(`<p class="text-daterangepicker">${activeTab}</p>`);
+              const tabWidth = input.prev().width();
+              input.attr('style', `padding-left: ${tabWidth + 12}px !important;`);
+          }
+        }
+
+        function handleCancel(ev) {
+          const input = $(ev.currentTarget);
+          input.val('');
+          input.parent().removeClass('apply-datefilter isvalid');
+          input.siblings(".text-daterangepicker").remove();
+        }
+
+        function addActiveWeek(container) {
+          container.find('.drp-calendar .calendar-table td.today').parent().find('.week').addClass('active')
+        }
+
+        function observeCalendarChanges(container) {
+          const observer = new MutationObserver(() => {
+              addActiveWeek(container);
+          });
+  
+          const target = container.find('.drp-calendar .calendar-table')[0];
+          if (target) {
+              observer.observe(target, { childList: true, subtree: true });
+          }
+        }
+
+        //init multi calendar
+        $('[name="calendar-ranges"]').daterangepicker(daterangepickerOptions)
+        .on('show.daterangepicker', function (ev, picker) {
+            const container = picker.container;
+
+            container.addClass('calendar-ranges');
+            container.find('.radios-daterangepicker').remove();
+
+            addActiveWeek(container);
+            observeCalendarChanges(container);
+
+            if (container.find('.calendar-table .next').length < 2) {
+                addCustomArrows(picker);
+                const originalUpdateCalendars = picker.updateCalendars.bind(picker);
+                picker.updateCalendars = function () {
+                    originalUpdateCalendars();
+                    addCustomArrows(picker);
+                };
+            }
+
+            if ($(ev.currentTarget).data('tabs')) addTabs(container);
+        })
+        .on('apply.daterangepicker', handleApply)
+        .on('cancel.daterangepicker', handleCancel);
+
+        //init single calendar
+        $('[name="calendar-v1"]').daterangepicker(daterangepickerOptionsSingle)
+        .on('show.daterangepicker', function (ev, picker) {
           picker.container.addClass('calendar-v1');
         }).on('apply.daterangepicker', function(ev, picker) {
-          $(this).val(picker.startDate.format('MM.DD.YYYY'));
-        });
+          $(ev.currentTarget).parent().addClass('apply-datefilter isvalid');
+          const format = picker.startDate.format($(ev.currentTarget).data('format') || 'DD MMM YYYY')
+          $(this).val(format);
+        }).on('cancel.daterangepicker', handleCancel);
       });
-      //init new single-calendars with week choose
-      $(function () {
-        $('input[name="calendar-week"]').daterangepicker(optionCalendarOne
-        ).on('show.daterangepicker', function (ev, picker) {
-          picker.container.addClass('calendar-v1 calendar-week');
-          $('.calendar-v1.calendar-week').find('.active').parent().addClass('active-week') //add class for week row
-        }).on('apply.daterangepicker', function(ev, picker) {
-          $(this).val(picker.startDate.format('MM.DD.YYYY'));
-        });
-      });
-      //init new calendars big
-      $(function() {
-        $('input[name="datefilter"]').daterangepicker({
-            autoUpdateInput: false,
-            showWeekNumbers: true,
-            autoApply: true,
-            showDropdowns: true,
-            locale: {
-              format: "MM.DD.YYYY",
-              weekLabel: "WK",
-              firstDay: 1,
-              cancelLabel: 'Clear',
-              monthNames: [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
-              ],
-            }
-        }).on('show.daterangepicker', function (ev, picker) {
-          picker.container.addClass('calendar-v1 big');
-        }).on('apply.daterangepicker', function(ev, picker) {
-          console.log(ev.currentTarget, picker)
-          let formatOne = ev.currentTarget.getAttribute('data-format-one') ? ev.currentTarget.getAttribute('data-format-one') : 'MM.DD.YYYY';
-          let formatTwo = ev.currentTarget.getAttribute('data-format-two') ? ev.currentTarget.getAttribute('data-format-two') : 'MM.DD.YYYY';
-          $(this).val(picker.startDate.format(formatOne) + ' - ' + picker.endDate.format(formatTwo));
-        
-          $(this).parent().addClass('apply-datefilter')
-        }).on('cancel.daterangepicker', function(ev, picker) {
-          $(this).val('');
-          $(this).parent().removeClass('apply-datefilter')
-        })
-      });
-
-      $(function () {
-        $('input[name="calendar"]').daterangepicker({
-          singleDatePicker: true,
-          // opens: 'center',
-          daysOfWeekHighlighted: "0,6",
-          autoUpdateInput: true,
-          inline:true,
-          showCustomRangeLabel: false,
-          alwaysShowCalendars: true,
-          alwaysOpen: true,
-          weekStart: 1,
-          locale: {
-            applyLabel: 'Add event',
-            direction: 'calendar-container'
-          }
-        }, function (start, end, label) {
-          console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-        }).on('show.daterangepicker', function (ev, picker) {
-          picker.container.addClass('calendar-customer');
-        });
-      
-      });
-
-      $(function () {
-        $('input[name="daterange"]').daterangepicker({
-          opens: 'left',
-          daysOfWeekHighlighted: "0,6",
-          autoUpdateInput: true,
-          weekStart: 1,
-          locale: {
-            applyLabel: 'Done'
-          }
-        }, function (start, end, label) {
-          console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-        }).on('show.daterangepicker', function (ev, picker) {
-          picker.container.addClass('calendar-customer');
-        });
-      });
-      $(function () {
-        var _$$daterangepicker;
-
-        $('input[name="dates"]').daterangepicker((_$$daterangepicker = {
-          singleDatePicker: true,
-          weekStart: 1,
-          opens: 'left',
-          autoUpdateInput: true,
-          daysOfWeekHighlighted: "0,6"
-        }, _defineProperty(_$$daterangepicker, "weekStart", 1), _defineProperty(_$$daterangepicker, "locale", {
-          applyLabel: 'Done'
-        }), _$$daterangepicker), function (start, end, label) {
-          console.log('New date range selected: ' + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
-        }).on('show.daterangepicker', function (ev, picker) {
-          picker.container.addClass('calendar-customer');
-        });
-      });
-
-      $(function () {
-        $('[name="calendar-ranges"]').daterangepicker({
-          showDropdowns: true,
-          showWeekNumbers: true,
-          autoUpdateInput: false,
-          autoApply: true,
-          ranges: {
-            'Today': [moment(), moment()],
-            'Yesterday': [moment().subtract(1, 'days'), moment().subtract(1, 'days')],
-            'Last 7 Days': [moment().subtract(6, 'days'), moment()],
-            'Last 30 Days': [moment().subtract(29, 'days'), moment()],
-            'This Month': [moment().startOf('month'), moment().endOf('month')],
-            'Last Month': [moment().subtract(1, 'month').startOf('month'), moment().subtract(1, 'month').endOf('month')]
-        },
-        locale: {
-            "format": "DD MMM. YYYY",
-            "separator": " - ",
-            "applyLabel": "Done",
-            "cancelLabel": "Clear",
-            "fromLabel": "From",
-            "toLabel": "To",
-            "customRangeLabel": "Custom",
-            "weekLabel": "WK",
-            "daysOfWeek": [
-                "Su",
-                "Mo",
-                "Tu",
-                "We",
-                "Th",
-                "Fr",
-                "Sa"
-            ],
-            "monthNames": [
-                "January",
-                "February",
-                "March",
-                "April",
-                "May",
-                "June",
-                "July",
-                "August",
-                "September",
-                "October",
-                "November",
-                "December"
-            ],
-            "firstDay": 1
-        },
-        alwaysShowCalendars: true,
-        opens: "left",
-        buttonClasses: "p-1 w-120 min-w-auto",
-        applyButtonClasses: "btn",
-        cancelClass: "btn-white c-orange-f4 d-block"
-      }, function(start, end, label) {
-        console.log('New date range selected: ' + start.format('DD MMM. YYYY') + ' to ' + end.format('DD MMM. YYYY') + ' (predefined range: ' + label + ')');
-      }).on('show.daterangepicker', function (ev, picker) {
-        picker.container.addClass('calendar-ranges');
-        picker.container.find('.drp-buttons').remove();
-        picker.container.find('.radios-daterangepicker').remove();
-        console.log(ev, picker)
-        const tabs = `<div class="d-flex fs-14 mb-3 radios-daterangepicker">
-                        <label class="mr-2">
-                            <input type="radio" name="radio-daterangepicker" class="checkbox" checked="">
-                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
-                                <span class="m-auto d-block">CUT-OFF</span>
-                            </span>
-                        </label>
-                        <label class="mr-2">
-                            <input type="radio" name="radio-daterangepicker" class="checkbox">
-                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
-                                <span class="m-auto d-block">ETD</span>
-                            </span>
-                        </label>
-                        <label class="mr-2">
-                            <input type="radio" name="radio-daterangepicker" class="checkbox">
-                            <span class="radio-active bg-light-ee p-2 d-flex br-4 hover-red">
-                                <span class="m-auto d-block">ETD</span>
-                            </span>
-                        </label>
-                    </div>`;
-        picker.container.prepend(tabs);
-                  // $(picker.container).append(customDiv);
-
-      }).on('apply.daterangepicker', function(ev, picker) {
-        console.log(ev.currentTarget, picker)
-        $(this).val(picker.startDate.format('DD MMM. YYYY') + ' - ' + picker.endDate.format('DD MMM. YYYY'));
-        $(this).parent().addClass('apply-datefilter isvalid')
-      }).on('cancel.daterangepicker', function(ev, picker) {
-        $(this).val('');
-        $(this).parent().removeClass('apply-datefilter isvalid')
-      });
-    });
     }
   })
 });

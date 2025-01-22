@@ -569,15 +569,26 @@ let optionMut = {
   attributes: true
 };
 
-let mut = new MutationObserver(function (muts) {
-  if ($$el('.h-calc_1')) {
-     mut.disconnect()
-      $$el('.h-calc_1').forEach(el => {
-        setHeight(el, el.dataset.index)
-      })
+let mut = new MutationObserver(function (mutі) {
+  // Processing elements with class .h-calc_1
+  const calcElements = $$el('.h-calc_1');
+  calcElements.forEach(el => {
+      setHeight(el, el.dataset.index);
+  });
+
+  // Check popup-collapse state and add/remove fixed_body class
+  const isPopupOpen = $('.popup-collapse.collapse.show').length > 0;
+  const isBodyFixed = $('html.fixed_body').length > 0;
+
+  if (isPopupOpen && !isBodyFixed) {
+    console.log('fixed_body');
+    $('html').addClass('fixed_body');
+  } else if (!isPopupOpen && isBodyFixed) {
+    console.log('not fixed_body');
+    $('html').removeClass('fixed_body');
   }
 
-  mut.observe(document, optionMut);
+  // mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
 
@@ -670,3 +681,13 @@ syncScrollElements.forEach(element => {
     updateDropdownPositions()
   });
 });
+
+const appHeight = () => {
+  if (!window.matchMedia("(max-width: 991px)").matches) return;
+  
+  $$el('.popup-collapse-bg .container').forEach(item => {
+    item.style.height = window.innerHeight + 'px';
+  })
+}
+window.addEventListener('resize', appHeight)
+appHeight()

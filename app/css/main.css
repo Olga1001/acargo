@@ -582,6 +582,7 @@ textarea:active~.name,
 textarea:focus~.name,
 textarea:valid~.name,
 input:active~.name,
+input[readonly]~.name,
 input:focus~.name,
 input:valid~.name {
   bottom: 24px;
@@ -594,7 +595,7 @@ textarea:focus~.name,
 textarea:valid~.name {
   bottom: calc(100% - 1px);
 }
-
+input[readonly]~.name.half,
 input:active~.name.half,
 input:focus~.name.half,
 input:valid~.name.half,
@@ -605,6 +606,7 @@ textarea:valid~.name.half {
   transform: translateY(50%);
 }
 
+input[readonly]~.name.half > span,
 input:active~.name.half > span,
 input:focus~.name.half > span,
 input:valid~.name.half > span,

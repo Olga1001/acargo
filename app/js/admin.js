@@ -578,12 +578,13 @@ let mut = new MutationObserver(function (mutі) {
 
   // Check popup-collapse state and add/remove fixed_body class
   const isPopupOpen = $('.popup-collapse.collapse.show').length > 0;
+  const isSwipeOpen = $('.collapse_mobile-swipe.collapse.show').length > 0;
   const isBodyFixed = $('html.fixed_body').length > 0;
 
-  if (isPopupOpen && !isBodyFixed) {
+  if (isSwipeOpen || isPopupOpen && !isBodyFixed) {
     console.log('fixed_body');
     $('html').addClass('fixed_body');
-  } else if (!isPopupOpen && isBodyFixed) {
+  } else if (!isSwipeOpen && !isPopupOpen && isBodyFixed) {
     console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }

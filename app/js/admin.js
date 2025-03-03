@@ -693,11 +693,18 @@ syncScrollElements.forEach(element => {
 });
 
 const appHeight = () => {
-  if (!window.matchMedia("(max-width: 1080px)").matches) return;
-  
-  $$el('.popup-collapse-bg .container, .collapse_mobile-swipe').forEach(item => {
-    item.style.height = window.innerHeight + 'px';
-  })
-}
-window.addEventListener('resize', appHeight)
-appHeight()
+  document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+};
+
+const handleResize = (e) => {
+  if (e.matches) {
+    appHeight();
+    window.addEventListener('resize', appHeight);
+  } else {
+    window.removeEventListener('resize', appHeight);
+  }
+};
+
+const mediaQuery = window.matchMedia("(max-width: 1080px)");
+mediaQuery.addEventListener('change', handleResize);
+handleResize(mediaQuery);

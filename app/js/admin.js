@@ -502,7 +502,9 @@ $(document).ready(function () {
 
 //set height
 function setHeight(el, index) {
+  if (window.matchMedia("(max-width: 1080px)").matches) return;
   let sumHeight = 0;
+
   if ($el(`.get-height[data-index="${index}"]`) != null) {
     $$el(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
   }

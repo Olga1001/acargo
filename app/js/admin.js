@@ -695,7 +695,7 @@ syncScrollElements.forEach(element => {
 const appHeight = () => {
   if (!window.matchMedia("(max-width: 1080px)").matches) return;
   
-  $$el('.popup-collapse-bg .container').forEach(item => {
+  $$el('.popup-collapse-bg .container, .collapse_mobile-swipe').forEach(item => {
     item.style.height = window.innerHeight + 'px';
   })
 }

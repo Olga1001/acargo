@@ -544,8 +544,8 @@
                 </div>
 
                 <div class="d-lg-flex">
-                    <div class="w-lg-293 w-100 collapse show collapse_mobile-swipe d-lg-block flex-shrink-0" id="collapseFilter">
-                        <div class="collapse__body p-lg-0 p-3 relative">
+                    <div class="w-lg-293 w-100 collapse collapse_mobile-swipe d-lg-block " id="collapseFilter">
+                        <form class="collapse__body p-lg-0 p-3 relative">
                             <div class="br-4 bg-gray-f5 p-3 mb-2 d-lg-block d-none">
                                 <p class="fs-16 weight-medium pb-2">Sort by</p>
                                 <div class="select h-100 br-4 bg-white b-0">
@@ -565,12 +565,12 @@
                                     </svg>
                                 </a>
                                 <h3 class="fs-15">Filter</h3>
-                                <a href="#" class="fs-12 c-gray-75"><b>Clear</b></a>
+                                <button type="reset" class="fs-12 c-gray-75"><b>Clear</b></button>
                             </div>
                             <div class="br-4 bg-gray-f5 p-3">
                                 <div class="d-lg-flex d-none flex-between-center mb-3">
                                     <h3>Filter</h3>
-                                    <a href="#" class="fs-14 c-orange-f4 weight-medium">Clear</a>
+                                    <button type="reset" class="fs-14 c-orange-f4 weight-medium">Clear</button>
                                 </div>
                                 <p class="fs-16 weight-medium pb-2">Search</p>
                                 <div class="relative mb-4">
@@ -681,7 +681,7 @@
                                     </label>
                                 </div>
                                 <p class="fs-16 weight-medium pb-2">Containers</p>
-                                <div class="d-flex flex-wrap fs-14 lh-31 text-center mb-4">
+                                <div class="d-flex flex-wrap fs-14 lh-31 text-center">
                                     <label class="mr-2 mb-2">
                                         <input type="checkbox" class="checkbox" checked>
                                         <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
@@ -706,7 +706,8 @@
                                     </label>
                                 </div>
                             </div>
-                        </div>
+                            <button type="submit" class="btn mt-3 mx-auto d-lg-none w-200px">Apply Filters</button>
+                        </form>
                     </div>
                     <div class="w-100 pl-lg-2">
                         <div class="p-md-1 br-4 bg-md-gray-f5 shadow11-md w-100">

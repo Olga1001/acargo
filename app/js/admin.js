@@ -554,12 +554,21 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+
 document.addEventListener('click', (e) => {
-  if (!e.target.closest('.people-group') && $el('.people-group')) {
+  if ($el('.people-group') && !e.target.closest('.people-group')) {
     $$el('.people-group .item').forEach(item => {
       item.classList.add('collapsed')
       item.nextElementSibling?.querySelector('.collapse')?.classList.remove('show')
     })
+  }
+
+  //hide popup - outside click
+  const popup = e.target.matches('.popup-collapse.show.collapse');
+  const swipePopup = e.target.matches('.collapse_mobile-swipe.show.collapse');
+
+  if (popup || swipePopup) {
+    e.target.classList.remove('show');
   }
 })
 
@@ -576,10 +585,10 @@ let mut = new MutationObserver(function (mutі) {
       setHeight(el, el.dataset.index);
   });
 
-  // Check popup-collapse state and add/remove fixed_body class
-  const isPopupOpen = $('.popup-collapse.collapse.show').length > 0;
-  const isSwipeOpen = $('.collapse_mobile-swipe.collapse.show').length > 0;
-  const isBodyFixed = $('html.fixed_body').length > 0;
+  // Check popup collapse state and add/remove fixed_body class
+  const isPopupOpen = $el('.popup-collapse.collapse.show');
+  const isSwipeOpen = $el('.collapse_mobile-swipe.collapse.show');
+  const isBodyFixed = $el('html.fixed_body');
 
   if (isSwipeOpen || isPopupOpen && !isBodyFixed) {
     console.log('fixed_body');
@@ -684,7 +693,7 @@ syncScrollElements.forEach(element => {
 });
 
 const appHeight = () => {
-  if (!window.matchMedia("(max-width: 991px)").matches) return;
+  if (!window.matchMedia("(max-width: 1080px)").matches) return;
   
   $$el('.popup-collapse-bg .container').forEach(item => {
     item.style.height = window.innerHeight + 'px';

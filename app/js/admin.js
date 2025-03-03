@@ -554,12 +554,21 @@ window.addEventListener('DOMContentLoaded', () => {
   })
 })
 
+
 document.addEventListener('click', (e) => {
-  if (!e.target.closest('.people-group') && $el('.people-group')) {
+  if ($el('.people-group') && !e.target.closest('.people-group')) {
     $$el('.people-group .item').forEach(item => {
       item.classList.add('collapsed')
       item.nextElementSibling?.querySelector('.collapse')?.classList.remove('show')
     })
+  }
+
+  //hide popup - outside click
+  const popup = e.target.matches('.popup-collapse.show.collapse');
+  const swipePopup = e.target.matches('.collapse_mobile-swipe.show.collapse');
+
+  if (popup || swipePopup) {
+    e.target.classList.remove('show');
   }
 })
 
@@ -576,14 +585,15 @@ let mut = new MutationObserver(function (mutі) {
       setHeight(el, el.dataset.index);
   });
 
-  // Check popup-collapse state and add/remove fixed_body class
-  const isPopupOpen = $('.popup-collapse.collapse.show').length > 0;
-  const isBodyFixed = $('html.fixed_body').length > 0;
+  // Check popup collapse state and add/remove fixed_body class
+  const isPopupOpen = $el('.popup-collapse.collapse.show');
+  const isSwipeOpen = $el('.collapse_mobile-swipe.collapse.show');
+  const isBodyFixed = $el('html.fixed_body');
 
-  if (isPopupOpen && !isBodyFixed) {
+  if (isSwipeOpen || isPopupOpen && !isBodyFixed) {
     console.log('fixed_body');
     $('html').addClass('fixed_body');
-  } else if (!isPopupOpen && isBodyFixed) {
+  } else if (!isSwipeOpen && !isPopupOpen && isBodyFixed) {
     console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }
@@ -683,11 +693,18 @@ syncScrollElements.forEach(element => {
 });
 
 const appHeight = () => {
-  if (!window.matchMedia("(max-width: 991px)").matches) return;
-  
-  $$el('.popup-collapse-bg .container').forEach(item => {
-    item.style.height = window.innerHeight + 'px';
-  })
-}
-window.addEventListener('resize', appHeight)
-appHeight()
+  document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
+};
+
+const handleResize = (e) => {
+  if (e.matches) {
+    appHeight();
+    window.addEventListener('resize', appHeight);
+  } else {
+    window.removeEventListener('resize', appHeight);
+  }
+};
+
+const mediaQuery = window.matchMedia("(max-width: 1080px)");
+mediaQuery.addEventListener('change', handleResize);
+handleResize(mediaQuery);

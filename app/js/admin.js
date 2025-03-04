@@ -567,7 +567,7 @@ document.addEventListener('click', (e) => {
 
   //hide popup - outside click
   const popup = e.target.matches('.popup-collapse.show.collapse');
-  const swipePopup = e.target.matches('.collapse_mobile-swipe.show.collapse');
+  const swipePopup = e.target.matches('.collapse_tablet-swipe.show.collapse');
 
   if (popup || swipePopup) {
     e.target.classList.remove('show');
@@ -589,7 +589,7 @@ let mut = new MutationObserver(function (mutі) {
 
   // Check popup collapse state and add/remove fixed_body class
   const isPopupOpen = $el('.popup-collapse.collapse.show');
-  const isSwipeOpen = $el('.collapse_mobile-swipe.collapse.show');
+  const isSwipeOpen = $el('.collapse_tablet-swipe.collapse.show');
   const isBodyFixed = $el('html.fixed_body');
 
   if (isSwipeOpen || isPopupOpen && !isBodyFixed) {

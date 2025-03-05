@@ -2716,7 +2716,7 @@ button:focus {
 
 #wrapper #content-wrapper {
   width: 100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .container-fluid {
@@ -10384,7 +10384,7 @@ p.c-green {
 }
 
 #wrapper {
-  overflow-x: hidden;
+  /* overflow-x: hidden; */
   padding-top: 60px;
   min-height: 100vh;
 }
@@ -12158,7 +12158,7 @@ a.page-link.active svg {
 .sticky-top {
   position: -webkit-sticky;
   position: sticky;
-  z-index: 7;
+  /* z-index: 9999; */
   top: 0;
 }
 
@@ -18045,6 +18045,9 @@ input+.autocomplete {
     border-top-width: 0px;
     border-style: solid;
   }
+  .absolute-md {
+    position: absolute;
+  }
 }
 
 @media (min-width: 1200px) {
@@ -19091,7 +19094,6 @@ input+.autocomplete {
   .right-table,
   .h-calc_1 {
     overflow-y: auto;
-    height: calc(100vh - 60px - 2rem - 20px);
   }
 
   .breadcrumbs-nav a,
@@ -20362,6 +20364,26 @@ input+.autocomplete {
 }
 
 @media only screen and (max-width: 1079px) {
+  .scroll-action-panel {
+    transition: all 0.3s ease;
+  }
+  .scroll-action-panel.action-up {
+    pointer-events: none;
+    transform: translateY(-100%);
+    position: sticky;
+    top: 0;
+  }
+  .scroll-action-panel.action-down {
+    transform: translateY(0);
+    pointer-events: auto;
+    border-bottom: 1px solid var(--border-border-0, #EEE);
+    background: #E0E0E0;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
+    position: sticky;
+    top: 60px;
+    z-index: 7;
+  }
+  
   .h-calc_1 {
     height: auto!important;
   }
@@ -20794,11 +20816,34 @@ input+.autocomplete {
     opacity: 0;
     pointer-events: none;
     background-color: #fff;
+    transform: translateX(100%);
   }
 
   .collapse.collapse_mobile-popup.show  {
     opacity: 1;
     pointer-events: auto;
+    transform: translateX(0);
+  }
+  
+  .collapse_mobile-modal {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: rgba(238, 238, 238, 0.8);
+    z-index: 99999;
+    display: flex!important;
+    height: var(--app-height);
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+  }
+  .collapse_mobile-modal.show {
+    opacity: 1;
+    pointer-events: auto;
+  }
+  .collapse_mobile-modal .collapse__body {
+    width: 88%;
   }
   
   .popup__booking-detail {

@@ -516,198 +516,239 @@
 
       <div class="d-flex flex-column w-100" id="content-wrapper">
         <div id="content">
-          <div class="container-fluid py-3" id="container-wrapper">
+          <div class="container-fluid" id="container-wrapper">
             <div id="box" class="container">
-                <div class="br-4 bg-white p-2 d-lg-block mb-2 d-none">
+                <div class="br-4 bg-white p-2 d-md-block d-none mb-lg-2" >
                     <h3>Bookings</h3>
                 </div>
-
-                <div class="d-lg-none d-flex mb-md-2 mb-3">
-                    <button type="button" class="br-200 fs-12 bg-white p-2 items-center mr-2 collapsed" data-target="#collapseFilter" data-toggle="collapse">
-                        <svg class="svg-sprite-icon mx-1" width="16" height="11">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#slidersHorizontal"></use>
-                        </svg>
-                        <b class="c-gray-75">Filter</b>
-                        <div class="br-50 bg-orange-f4 wh-20 flex-center mx-1 c-white weight-extraBold">1</div>
-                        <span type="button" class="wh-20 flex-center">
-                            <svg class="svg-sprite-icon" width="8" height="8">
-                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                <div class="scroll-action-panel py-md-0 py-1 mx--2 px-3">
+                    <div class="d-lg-none d-flex py-2">
+                        <button type="button" class="br-200 fs-12 bg-white p-2 items-center mr-2 collapsed" data-target="#collapseFilter" data-toggle="collapse">
+                            <svg class="svg-sprite-icon mx-1" width="16" height="11">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#slidersHorizontal"></use>
                             </svg>
-                        </span>
-                    </button>
-                    <button type="button" class="br-200 fs-12 bg-white p-2 items-center">
-                        <svg class="svg-sprite-icon mx-1" width="16" height="13">
-                            <use xlink:href="../../img/sprite/symbol/sprite.svg#caretUpDown"></use>
-                        </svg>
-                        <b class="pr-1">Creation date</b>
-                    </button>
+                            <b class="c-gray-75">Filter</b>
+                            <div class="br-50 bg-orange-f4 wh-20 flex-center mx-1 c-white weight-extraBold">1</div>
+                            <span type="button" class="wh-20 flex-center">
+                                <svg class="svg-sprite-icon" width="8" height="8">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                </svg>
+                            </span>
+                        </button>
+                        <button type="button" class="br-200 fs-12 bg-white p-2 items-center collapsed" data-target="#collapseSort" data-toggle="collapse">
+                            <svg class="svg-sprite-icon mx-1" width="16" height="13">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#caretUpDown"></use>
+                            </svg>
+                            <b class="pr-1">Creation date</b>
+                        </button>
+                    </div>
                 </div>
-
                 <div class="d-lg-flex">
-                    <div class="w-lg-293 w-100 collapse collapse_tablet-swipe d-lg-block " id="collapseFilter">
-                        <form class="collapse__body p-lg-0 p-3">
-                            <div class="br-4 bg-gray-f5 p-3 mb-2 d-lg-block d-none">
-                                <p class="fs-16 weight-medium pb-2">Sort by</p>
-                                <div class="select h-100 br-4 bg-white b-0">
-                                    <input type="text" value="Creation Date" class="select__item input_customer b-gray-f5 br-4">
-                                    <div class="select__drop">
-                                        <ul class="select__menu br-4 b-gray-bd p-2 fs-14">
-                                            <li class="select__option p-1">Creation Date</li>
-                                            <li class="select__option p-1">Creation Date</li>
-                                        </ul>
+                    <div class="lh-22 fs-14 w-lg-293 w-100 flex-shrink-0">
+                        <div class="collapse collapse_tablet-swipe d-lg-block mb-2" id="collapseSort">
+                            <div class="collapse__body p-lg-0 p-3 mt-auto h-fit">
+                                <div class="d-lg-none">
+                                    <div class="relative mb-3 py-1 fs-14">
+                                        <div>
+                                            <a type="button" class="p-1 collapsed" data-target="#collapseCurrency" data-toggle="collapse">
+                                                <svg class="svg-sprite-icon" width="16" height="16">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                                </svg>
+                                            </a>
+                                            <h3 class="fs-15 absolute xy-center">Sort by</h3>
+                                        </div>
+                                    </div>
+                                    <label class="w-100">
+                                        <input type="radio" name="radio-currency" class="checkbox" checked>
+                                        <span class="flex-between-center p-3 big bb-1">
+                                            Creation date
+                                            <svg class="svg-sprite-icon d-none " fill="#1e1e1e" width="20" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label class="w-100">
+                                        <input type="radio" name="radio-currency" class="checkbox">
+                                        <span class="flex-between-center p-3 big">
+                                            Ending date
+                                            <svg class="svg-sprite-icon d-none " fill="#1e1e1e" width="20" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                </div>
+
+                                <div class="br-4 bg-gray-f5 p-3 d-lg-block d-none">
+                                    <p class="fs-16 weight-medium pb-2">Sort by</p>
+                                    <div class="select h-100 br-4 bg-white b-0">
+                                        <input type="text" value="Creation Date" class="select__item input_customer b-gray-f5 br-4">
+                                        <div class="select__drop">
+                                            <ul class="select__menu br-4 b-gray-bd p-2 fs-14">
+                                                <li class="select__option p-1">Creation Date</li>
+                                                <li class="select__option p-1">Ending date</li>
+                                            </ul>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="d-lg-none flex-between-center mb-4 py-1">
-                                <a type="button" class="p-1 collapsed" data-target="#collapseFilter" data-toggle="collapse">
-                                    <svg class="svg-sprite-icon" width="16" height="16">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
-                                    </svg>
-                                </a>
-                                <h3 class="fs-15">Filter</h3>
-                                <button type="reset" class="fs-12 c-gray-75"><b>Clear</b></button>
-                            </div>
-                            <div class="br-4 bg-gray-f5 p-3">
-                                <div class="d-lg-flex d-none flex-between-center mb-3">
-                                    <h3>Filter</h3>
-                                    <button type="reset" class="fs-14 c-orange-f4 weight-medium">Clear</button>
+                        </div>
+                        
+                        <div class="collapse collapse_tablet-swipe d-lg-block" id="collapseFilter">
+                            <div class="collapse__body p-lg-0 px-3 pt-3 pb-lg-3 pb-0">
+                                <div class="d-lg-none flex-between-center mb-4 py-1">
+                                    <a type="button" class="p-1 collapsed" data-target="#collapseFilter" data-toggle="collapse">
+                                        <svg class="svg-sprite-icon" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </a>
+                                    <h3 class="fs-15">Filter</h3>
+                                    <button type="reset" class="fs-12 c-gray-75"><b>Clear</b></button>
                                 </div>
-                                <p class="fs-16 weight-medium pb-2">Search</p>
-                                <div class="relative mb-4">
-                                    <input type="text" placeholder="Search" class="input_customer br-4 bg-white b-gray-f5">
-                                    <svg class="svg-sprite-icon absolute r-0 t-center mr-2" fill="#757575" width="15" height="15">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
-                                    </svg>
-                                </div>
-                                <p class="fs-16 weight-medium pb-2">Shipments</p>
-                                <div class="d-flex fs-14 lh-31 mb-4">
-                                    <label class="mr-2">
-                                        <input type="radio" name="radio_shipments" class="checkbox" checked="">
-                                        <span class="radio-active px-3 flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
-                                            <span>All</span>
-                                        </span>
-                                    </label>
-                                    <label class="mr-2">
-                                        <input type="radio" name="radio_shipments" class="checkbox">
-                                        <span class="radio-active w-100px flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
-                                            <svg class="svg-sprite-icon mr-1" width="14px" height="14px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
-                                            </svg>
-                                            Sea
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="radio_shipments" class="checkbox">
-                                        <span class="radio-active w-100px flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
-                                            <svg class="svg-sprite-icon mr-1" width="15px" height="11px">
-                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
-                                            </svg>
-                                            Road
-                                        </span>
-                                    </label>
-                                </div>
-                                <p class="fs-16 weight-medium pb-2">Type</p>
-                                <div class="d-flex fs-14 lh-31 mb-4">
-                                    <label class="mr-2">
-                                        <input type="radio" name="radio_type" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span>Export</span>
-                                        </span>
-                                    </label>
-                                    <label class="mr-2">
-                                        <input type="radio" name="radio_type" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span>Import</span>
-                                        </span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="radio_type" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span>Cross-trade</span>
-                                        </span>
-                                    </label>
-                                </div>
-                                <p class="fs-16 weight-medium pb-2">Routing</p>
-                                <div class="items-center select b-gray-bd h-100 not-arrow br-4 bg-white mb-2">
-                                    <div class="d-flex bg-gray-e9 select__icon">
-                                        <svg class="svg-sprite-icon stroke-69 m-auto" width="11px" height="14">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                
+                                <div class="br-4 bg-gray-f5 p-3">
+                                    <div class="d-lg-flex d-none flex-between-center mb-3">
+                                        <h3>Filter</h3>
+                                        <button type="reset" class="fs-14 c-orange-f4 weight-medium">Clear</button>
+                                    </div>
+                                    <p class="fs-16 weight-medium pb-2">Search</p>
+                                    <div class="relative mb-4">
+                                        <input type="text" placeholder="Search" class="input_customer br-4 bg-white b-gray-f5">
+                                        <svg class="svg-sprite-icon absolute r-0 t-center mr-2" fill="#757575" width="15" height="15">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
                                         </svg>
                                     </div>
-                                    <input type="text" class="input_customer select__item b-0 fs-14" placeholder="From">
-                                    <div class="autocomplete mt-1">
-                                        <ul class="select__menu select__menu_2 ">
-                                            <li class="select__option hover-b">Origin 1</li>
-                                            <li class="select__option hover-b">Lithuania</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div class="items-center select b-gray-bd h-100 not-arrow br-4 bg-white mb-4">
-                                    <div class="d-flex bg-gray-e9 select__icon">
-                                        <svg class="svg-sprite-icon stroke-69 m-auto" width="11px" height="14">
-                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
-                                        </svg>
-                                    </div>
-                                    <input type="text" class="input_customer select__item b-0 fs-14" placeholder="To">
-                                    <div class="autocomplete mt-1">
-                                        <ul class="select__menu select__menu_2 ">
-                                            <li class="select__option hover-b">Origin 1</li>
-                                            <li class="select__option hover-b">Lithuania</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <p class="fs-16 weight-medium pb-2">Status</p>
-                                <div class="d-flex flex-wrap fs-14 lh-31 text-center mb-4">
-                                    <label class="mr-2 mb-2">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span class="mr-2">Cut-off in 7 days</span>
-                                            <b class="br-4 bg-white px-2 lh-24 c-gray-75">5</b>
-                                        </span>
-                                    </label>
-                                    <label class="mr-2 mb-2">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span class="mr-2">Departure in 7 days</span>
-                                            <b class="br-4 bg-white px-2 lh-24 c-gray-75">6</b>
-                                        </span>
-                                    </label>
-                                    <label class="mr-2 mb-2">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span class="mr-2">Arrival in 7 days</span>
-                                            <b class="br-4 bg-white px-2 lh-24 c-gray-75">6</b>
-                                        </span>
-                                    </label>
-                                </div>
-                                <p class="fs-16 weight-medium pb-2">Containers</p>
-                                <div class="d-flex flex-wrap fs-14 lh-31 text-center">
-                                    <label class="mr-2 mb-2">
-                                        <input type="checkbox" class="checkbox" checked>
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span class="mr-2">Pending gate out</span>
-                                            <b class="br-4 bg-white px-2 lh-24 c-gray-75">
-                                                <svg class="svg-sprite-icon mr-1" fill="#757575" alt="icon" width="15" height="15">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                    <p class="fs-16 weight-medium pb-2">Shipments</p>
+                                    <div class="d-flex fs-14 lh-31 mb-4">
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio_shipments" class="checkbox" checked="">
+                                            <span class="radio-active px-3 flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
+                                                <span>All</span>
+                                            </span>
+                                        </label>
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio_shipments" class="checkbox">
+                                            <span class="radio-active w-100px flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
+                                                <svg class="svg-sprite-icon mr-1" width="14px" height="14px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
                                                 </svg>
-                                                5</b>
-                                        </span>
-                                    </label>
-                                    <label class="mr-2 mb-2">
-                                        <input type="checkbox" class="checkbox">
-                                        <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
-                                            <span class="mr-2">Pending empty return</span>
-                                            <b class="br-4 bg-white px-2 lh-24 c-gray-75">
-                                                <svg class="svg-sprite-icon mr-1 c-gray-75" fill="#757575" alt="icon" width="15" height="15">
-                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                                Sea
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio_shipments" class="checkbox">
+                                            <span class="radio-active w-100px flex-center br-4 bg-gray-e0 c-gray-75 hover-red">
+                                                <svg class="svg-sprite-icon mr-1" width="15px" height="11px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
                                                 </svg>
-                                                6</b>
-                                        </span>
-                                    </label>
+                                                Road
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <p class="fs-16 weight-medium pb-2">Type</p>
+                                    <div class="d-flex fs-14 lh-31 mb-4">
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio_type" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span>Export</span>
+                                            </span>
+                                        </label>
+                                        <label class="mr-2">
+                                            <input type="radio" name="radio_type" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span>Import</span>
+                                            </span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="radio_type" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span>Cross-trade</span>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <p class="fs-16 weight-medium pb-2">Routing</p>
+                                    <div class="items-center select b-gray-bd h-100 not-arrow br-4 bg-white mb-2">
+                                        <div class="d-flex bg-gray-e9 select__icon">
+                                            <svg class="svg-sprite-icon stroke-69 m-auto" width="11px" height="14">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                            </svg>
+                                        </div>
+                                        <input type="text" class="input_customer select__item b-0 fs-14" placeholder="From">
+                                        <div class="autocomplete mt-1">
+                                            <ul class="select__menu select__menu_2 ">
+                                                <li class="select__option hover-b">Origin 1</li>
+                                                <li class="select__option hover-b">Lithuania</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="items-center select b-gray-bd h-100 not-arrow br-4 bg-white mb-4">
+                                        <div class="d-flex bg-gray-e9 select__icon">
+                                            <svg class="svg-sprite-icon stroke-69 m-auto" width="11px" height="14">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#pin2"></use>
+                                            </svg>
+                                        </div>
+                                        <input type="text" class="input_customer select__item b-0 fs-14" placeholder="To">
+                                        <div class="autocomplete mt-1">
+                                            <ul class="select__menu select__menu_2 ">
+                                                <li class="select__option hover-b">Origin 1</li>
+                                                <li class="select__option hover-b">Lithuania</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <p class="fs-16 weight-medium pb-2">Status</p>
+                                    <div class="fs-14 lh-31 mb-4">
+                                        <label class="mr-2 mb-2">
+                                            <input type="checkbox" class="checkbox" checked>
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span class="mr-2">Cut-off in 7 days</span>
+                                                <b class="br-4 bg-white px-2 lh-24 c-gray-75">5</b>
+                                            </span>
+                                        </label>
+                                        <label class="mr-2 mb-2">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span class="mr-2">Departure in 7 days</span>
+                                                <b class="br-4 bg-white px-2 lh-24 c-gray-75">6</b>
+                                            </span>
+                                        </label>
+                                        <label class="mr-2 mb-2">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span class="mr-2">Arrival in 7 days</span>
+                                                <b class="br-4 bg-white px-2 lh-24 c-gray-75">6</b>
+                                            </span>
+                                        </label>
+                                    </div>
+                                    <p class="fs-16 weight-medium pb-2">Containers</p>
+                                    <div class="fs-14 lh-31">
+                                        <label class="mr-2 mb-2">
+                                            <input type="checkbox" class="checkbox" checked>
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span class="mr-2">Pending gate out</span>
+                                                <b class="br-4 bg-white px-2 lh-24 c-gray-75">
+                                                    <svg class="svg-sprite-icon mr-1" fill="#757575" alt="icon" width="15" height="15">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                                    </svg>
+                                                    5</b>
+                                            </span>
+                                        </label>
+                                        <label class="mr-2 mb-2">
+                                            <input type="checkbox" class="checkbox">
+                                            <span class="radio-active px-2 flex-center br-4 bg-gray-e0 hover-red">
+                                                <span class="mr-2">Pending empty return</span>
+                                                <b class="br-4 bg-white px-2 lh-24 c-gray-75">
+                                                    <svg class="svg-sprite-icon mr-1 c-gray-75" fill="#757575" alt="icon" width="15" height="15">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                                    </svg>
+                                                    6</b>
+                                            </span>
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="p-2 d-lg-none position-sticky bot-0 l-0 bg-white mt-2 mx--2 shadow2">
+                                    <button type="submit" class="btn mx-auto w-200px">Apply Filters</button>
                                 </div>
                             </div>
-                            <button type="submit" class="btn mt-3 mx-auto d-lg-none w-200px">Apply Filters</button>
-                        </form>
+                        </div>
                     </div>
                     <div class="w-100 pl-lg-2">
                         <div class="p-md-1 br-4 bg-md-gray-f5 shadow11-md w-100">
@@ -737,7 +778,7 @@
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#pushPin"></use>
                                             </svg>
                                         </label>
-                                       
+                                    
                                         <div class="block c-gray-75 w-md-146 text-center py-2_5 weight-normal">Pending</div>
                                     </div>
                                 </div>

@@ -449,10 +449,11 @@ $(document).ready(function () {
       min: minValue,
       max: maxValue,
       values: values,
+      animate: true,
       slide: function( event, ui ) {
         $(this).parent().find('.amounts-min').html(formatNumberWithSpaces(ui.values[0]) + " " + currency);
         $(this).parent().find('.amounts-max').html(formatNumberWithSpaces(ui.values[1]) + " " + currency);
-      }
+      },
     });
 
     $(this).find('.amounts-min').html(formatNumberWithSpaces($(this).find('.range').slider("values", 0)) + " " + currency);
@@ -502,13 +503,16 @@ $(document).ready(function () {
 
 //set height
 function setHeight(el, index) {
+  if (window.matchMedia("(max-width: 1080px)").matches) return;
   let sumHeight = 0;
+
   if ($el(`.get-height[data-index="${index}"]`) != null) {
     $$el(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
   }
  
-  sumHeight += el.getBoundingClientRect().top;
-  
+  console.log(el.getBoundingClientRect().top, el.offsetTop)
+  sumHeight += el.getBoundingClientRect().top <= 0 ? el.offsetTop + 60 : el.getBoundingClientRect().top;
+
   el.style.height = `calc(100vh - ${Math.ceil(sumHeight)}px)`
 }
 
@@ -564,10 +568,9 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse');
-  const swipePopup = e.target.matches('.collapse_mobile-swipe.show.collapse');
+  const popup = e.target.matches('.popup-collapse.show.collapse, .collapse_tablet-swipe.show.collapse, .collapse_mobile-modal.show.collapse');
 
-  if (popup || swipePopup) {
+  if (popup) {
     e.target.classList.remove('show');
   }
 })
@@ -586,14 +589,16 @@ let mut = new MutationObserver(function (mutі) {
   });
 
   // Check popup collapse state and add/remove fixed_body class
-  const isPopupOpen = $el('.popup-collapse.collapse.show');
-  const isSwipeOpen = $el('.collapse_mobile-swipe.collapse.show');
+  const isAnyPopupOpen = $el('.popup-collapse.collapse.show, .collapse_tablet-swipe.collapse.show');
+  const isAnyMobilePopupOpen = $el('.collapse_mobile-popup.collapse.show');
   const isBodyFixed = $el('html.fixed_body');
 
-  if (isSwipeOpen || isPopupOpen && !isBodyFixed) {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+  if (isAnyPopupOpen || (isAnyMobilePopupOpen && isMobile) && !isBodyFixed) {
     console.log('fixed_body');
     $('html').addClass('fixed_body');
-  } else if (!isSwipeOpen && !isPopupOpen && isBodyFixed) {
+  } else if (!isAnyPopupOpen && (!isAnyMobilePopupOpen && isMobile) && isBodyFixed) {
     console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }
@@ -664,6 +669,9 @@ function syncScrollX(e) {
 //update dropdown positions 
 const fixedElements = $$el('.fixed')
 
+// Updates the positions of elements with the .fixed class. 
+// It sets their position relative to the parent element, 
+// preserving the left and top coordinates and the width of the parent.
 function updateDropdownPositions() {
   fixedElements.forEach(item => {
     const parent = item.parentElement;
@@ -679,6 +687,8 @@ function updateDropdownPositions() {
   });
 }
 
+// Checking for elements with the .fixed class, 
+// it calls init and window resize event.
 if (fixedElements.length > 0) {
   updateDropdownPositions();
   window.addEventListener('resize', updateDropdownPositions);
@@ -692,10 +702,16 @@ syncScrollElements.forEach(element => {
   });
 });
 
+// appHeight: Sets the CSS variable --app-height to the browser 
+// window height (window.innerHeight) for use in styles.
 const appHeight = () => {
   document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
 };
 
+// handleResize: Handles window resize. If the width is less than 
+// or equal to 1080px, it adds an event listener for resizing 
+// to update the height. If the condition is not met, it removes 
+// the event listener.
 const handleResize = (e) => {
   if (e.matches) {
     appHeight();
@@ -705,6 +721,54 @@ const handleResize = (e) => {
   }
 };
 
+// mediaQuery: Creates a media query for window widths up to 1080px 
+// and listens for changes to this query, invoking handleResize 
+// for proper handling.
 const mediaQuery = window.matchMedia("(max-width: 1080px)");
 mediaQuery.addEventListener('change', handleResize);
 handleResize(mediaQuery);
+
+// It calculates and sets the top margin for all elements with the 
+// stickyElement attribute. It adds the sticky-top class to each 
+// such element. The margin is calculated by accumulating the total 
+// height for each element and adding an additional 60 pixels. 
+// It is also called during window resize to update the margins.
+const getStickyTopOffset = (...classes) => {
+  const stickyElements = document.querySelectorAll('[stickyElement]');
+  if (!stickyElements.length) return; 
+
+  stickyElements.forEach(el => {
+    console.log(el.offsetTop)
+    el.style.top = `${el.offsetTop + 60}px`;
+    el.classList.add('sticky-top');
+  });
+};
+
+window.addEventListener('resize', getStickyTopOffset());
+// getStickyTopOffset();
+
+let lastScrollTop = 0;
+const scrollActionPanel = $$el('.scroll-action-panel'); // Всі панелі на сторінці
+
+window.addEventListener('scroll', function() {
+  if (!mediaQuery.matches) return;
+  const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
+
+  scrollActionPanel.forEach(panel => {
+    // Якщо прокрутили вгору
+    if (currentScrollTop < lastScrollTop) {
+      panel.classList.add('action-down')
+      panel.classList.remove('action-up')
+    } else {
+      panel.classList.add('action-up')
+      panel.classList.remove('action-down')
+    }
+
+    if (currentScrollTop < panel.nextElementSibling?.offsetTop - 40) {
+      panel.classList.remove('action-up')
+      panel.classList.remove('action-down')
+    }
+  });
+
+  lastScrollTop = currentScrollTop <= 0 ? 0 : currentScrollTop; // Запобігаємо негативним значенням
+});

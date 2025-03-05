@@ -17962,6 +17962,24 @@ input+.autocomplete {
   margin-right: auto;
   margin-left: auto; }
 
+.footer__bottom {
+  border-radius: 16px 16px 0px 0px;
+  border-top: 1px solid var(--Border-01, #E0E0E0);
+  background: var(--surface-surface-0, #F5F5F5);
+  box-shadow: 0px -5px 30px 0px rgba(0, 0, 0, 0.15);
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 8;
+  width: 100%;
+  padding: 12px 12px 16px;
+}
+.footer__bottom  .count-message {
+  line-height: 14px;
+  bottom: auto;
+  top: -3px;
+  right: -11.5px;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 320px) {
@@ -17993,6 +18011,10 @@ input+.autocomplete {
     padding-right: 1rem;
     padding-left: 1rem;
   } 
+  .mx-md--2 {
+    margin-left: -1rem !important;
+    margin-right: -1rem !important;
+  }
 
   .h-md-50 {
     height: 50px;
@@ -20800,7 +20822,7 @@ input+.autocomplete {
 
 @media only screen and (max-width: 767px) {
   .container-fluid {
-    padding: 0;
+    padding: 0 0 70px 0;
   }
 
   .collapse_mobile-popup {

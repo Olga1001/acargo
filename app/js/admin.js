@@ -762,7 +762,7 @@ window.addEventListener('scroll', function() {
       panel.classList.remove('action-down')
     }
 
-    if (currentScrollTop < panel.nextElementSibling?.offsetTop - 30) {
+    if (currentScrollTop < panel.nextElementSibling?.offsetTop - 40) {
       panel.classList.remove('action-up')
       panel.classList.remove('action-down')
     }

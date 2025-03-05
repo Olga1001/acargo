@@ -567,10 +567,9 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse');
-  const swipePopup = e.target.matches('.collapse_tablet-swipe.show.collapse');
-
-  if (popup || swipePopup) {
+  const popup = e.target.matches('.popup-collapse.show.collapse, collapse_tablet-swipe.show.collapse, .collapse_mobile-modal.show.collapse');
+  
+  if (popup) {
     e.target.classList.remove('show');
   }
 })
@@ -589,14 +588,16 @@ let mut = new MutationObserver(function (mutі) {
   });
 
   // Check popup collapse state and add/remove fixed_body class
-  const isPopupOpen = $el('.popup-collapse.collapse.show');
-  const isSwipeOpen = $el('.collapse_tablet-swipe.collapse.show');
+  const isAnyPopupOpen = $el('.popup-collapse.collapse.show, .collapse_tablet-swipe.collapse.show');
+  const isAnyMobilePopupOpen = $el('.collapse_mobile-popup.collapse.show');
   const isBodyFixed = $el('html.fixed_body');
 
-  if (isSwipeOpen || isPopupOpen && !isBodyFixed) {
+  const isMobile = window.matchMedia("(max-width: 767px)").matches;
+
+  if (isAnyPopupOpen || (isAnyMobilePopupOpen && isMobile) && !isBodyFixed) {
     console.log('fixed_body');
     $('html').addClass('fixed_body');
-  } else if (!isSwipeOpen && !isPopupOpen && isBodyFixed) {
+  } else if (!isAnyPopupOpen && (!isAnyMobilePopupOpen && isMobile) && isBodyFixed) {
     console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }

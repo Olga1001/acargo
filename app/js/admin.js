@@ -567,8 +567,8 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse, collapse_tablet-swipe.show.collapse, .collapse_mobile-modal.show.collapse');
-  
+  const popup = e.target.matches('.popup-collapse.show.collapse, .collapse_tablet-swipe.show.collapse, .collapse_mobile-modal.show.collapse');
+
   if (popup) {
     e.target.classList.remove('show');
   }

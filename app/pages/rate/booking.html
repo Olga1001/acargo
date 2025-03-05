@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>Acargo</title><!--[if IE]>
     <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
     <link href="../../css/libs.min.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css" />
@@ -550,7 +550,7 @@
                                 <div class="d-lg-none">
                                     <div class="relative mb-3 py-1 fs-14">
                                         <div>
-                                            <a type="button" class="p-1 collapsed" data-target="#collapseCurrency" data-toggle="collapse">
+                                            <a type="button" class="p-1 collapsed" data-target="#collapseSort" data-toggle="collapse">
                                                 <svg class="svg-sprite-icon" width="16" height="16">
                                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
                                                 </svg>
@@ -568,9 +568,27 @@
                                         </span>
                                     </label>
                                     <label class="w-100">
+                                        <input type="radio" name="radio-currency" class="checkbox" checked>
+                                        <span class="flex-between-center p-3 big bb-1">
+                                            Creation date
+                                            <svg class="svg-sprite-icon d-none " fill="#1e1e1e" width="20" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label class="w-100">
+                                        <input type="radio" name="radio-currency" class="checkbox" checked>
+                                        <span class="flex-between-center p-3 big bb-1">
+                                            Departure date
+                                            <svg class="svg-sprite-icon d-none " fill="#1e1e1e" width="20" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                            </svg>
+                                        </span>
+                                    </label>
+                                    <label class="w-100">
                                         <input type="radio" name="radio-currency" class="checkbox">
                                         <span class="flex-between-center p-3 big">
-                                            Ending date
+                                            Arrival date
                                             <svg class="svg-sprite-icon d-none " fill="#1e1e1e" width="20" height="15">
                                                 <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
                                             </svg>
@@ -584,8 +602,10 @@
                                         <input type="text" value="Creation Date" class="select__item input_customer b-gray-f5 br-4">
                                         <div class="select__drop">
                                             <ul class="select__menu br-4 b-gray-bd p-2 fs-14">
-                                                <li class="select__option p-1">Creation Date</li>
-                                                <li class="select__option p-1">Ending date</li>
+                                                <li class="select__option p-1 active">Creation Date</li>
+                                                <li class="select__option p-1">Cut-off date</li>
+                                                <li class="select__option p-1">Departure date</li>
+                                                <li class="select__option p-1">Arrival date</li>
                                             </ul>
                                         </div>
                                     </div>

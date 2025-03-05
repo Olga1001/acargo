@@ -457,6 +457,10 @@ $(document).ready(function () {
         $(this).parent().find('.amounts-min').html(formatNumberWithSpaces(ui.values[0]) + " " + currency);
         $(this).parent().find('.amounts-max').html(formatNumberWithSpaces(ui.values[1]) + " " + currency);
       },
+      change: function( event, ui ) {
+        $(this).parent().find('.amounts-min').html(formatNumberWithSpaces(ui.values[0]) + " " + currency);
+        $(this).parent().find('.amounts-max').html(formatNumberWithSpaces(ui.values[1]) + " " + currency);
+      }
     });
 
     $(this).find('.amounts-min').html(formatNumberWithSpaces($(this).find('.range').slider("values", 0)) + " " + currency);

@@ -568,7 +568,7 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show');
+  const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show, .popup-swiper.collapse.show');
 
   if (popup) {
     e.target.classList.remove('show');

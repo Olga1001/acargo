@@ -17874,7 +17874,7 @@ input+.autocomplete {
   opacity: 0;
   pointer-events: none;
   display: flex;
-  transition: all 0.3s ease;
+  height: var(--app-height);
 }
 .collapse.popup-swiper.show {
   opacity: 1;
@@ -20599,12 +20599,6 @@ input+.autocomplete {
 }
 
 @media only screen and (max-width: 767px) {
-  .collapse.popup-swiper {
-    height: 0;
-  }
-  .collapse.popup-swiper.show {
-    height: var(--app-height);
-  }
   .form-search input {
     position: static;
   }

@@ -537,13 +537,13 @@
                                     <div class="bg-white p-2 d-flex mb-2 br-4">
                                         <div class="nav" data-index="10">
                                             <label class="mr-2 ">
-                                                <input type="radio" name="radio_1" class="checkbox">
+                                                <input type="radio" name="radio_1" class="checkbox" checked>
                                                 <span class="radio-active px-3 h-100 d-flex br-4 bg-light-ee c-gray-75 hover-red">
                                                     <span class="m-auto d-block">All</span>
                                                 </span>
                                             </label>
                                             <label class="mr-2 active">
-                                                <input type="radio" name="radio_1" class="checkbox" checked>
+                                                <input type="radio" name="radio_1" class="checkbox">
                                                 <span class="radio-active px-3 h-100 items-center br-4 bg-light-ee c-gray-75 hover-red">
                                                     <svg class="svg-sprite-icon mr-1" width="14px" height="14px">
                                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
@@ -561,6 +561,10 @@
                                                 </span>
                                             </label>
                                         </div>
+                                        <button type="button" class="btn white py-1 ml-3">Publish</button>
+                                        <!-- <button type="button" class="btn py-1 ml-3">Publish</button> -->
+                                        <!-- <a href="#" class="p-2 ml-3">Publish</a> -->
+
                                         <form class="items-center select ml-auto br-4 b-gray-bd h-auto not-arrow max-w-190">
                                             <div class="wh-29 h-100 d-flex bg-gray-e9 select__icon">
                                                 <svg class="svg-sprite-icon c-gray-69 mx-auto" width="15px" height="29px">
@@ -591,33 +595,43 @@
                                     </div>
                                     <div class="h-calc_1 bg-white br-4" data-index="0">
                                         <div class="contents pt-0" data-index="10">
-                                            <div class="contents__item ">
+                                            <div class="contents__item active">
                                                 <table class="w-100 " >
                                                     <thead class="bg-light-ee sticky-top">
                                                         <tr>
-                                                            <th class="pl-5 py-2 pr-3">
-                                                                <p class="weight-medium mb-2"> Valid time</p>
-                                                                <form class="relative max-w-180">
-                                                                    <input type="text"
-                                                                        class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
-                                                                        name="calendar-ranges" placeholder="Time range">
-                                                                    <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
-                                                                        <svg class="svg-sprite-icon is"
-                                                                            width="14px" height="15px">
-                                                                            <use
-                                                                                xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <button type="reset" class="d-none p-0" >
-                                                                            <svg class="svg-sprite-icon"
-                                                                                width="12px" height="12px">
+                                                            <th class="py-2 px-3">
+                                                                <p class="weight-medium mb-2 ml-4 pl-1"> Valid time</p>
+                                                                <div class="items-center">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox" checked="">
+                                                                        <span class="checked-customer dark mr-2 br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <form class="relative max-w-180">
+                                                                        <input type="text"
+                                                                            class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
+                                                                            name="calendar-ranges" placeholder="Time range">
+                                                                        <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                                                                            <svg class="svg-sprite-icon is"
+                                                                                width="14px" height="15px">
                                                                                 <use
-                                                                                    xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                                    xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
                                                                                 </use>
                                                                             </svg>
-                                                                        </button>
-                                                                    </div> 
-                                                                </form>
+                                                                            <button type="reset" class="d-none p-0" >
+                                                                                <svg class="svg-sprite-icon"
+                                                                                    width="12px" height="12px">
+                                                                                    <use
+                                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div> 
+                                                                    </form>
+                                                                </div>
                                                             </th>
                                                             <th class="px-3 py-2">
                                                                 <p class="weight-medium mb-2">Origin</p>
@@ -684,6 +698,7 @@
                                                                     </div>
                                                                 </div>
                                                             </th>
+                                                            <th class="py-2 px-3" style="vertical-align: bottom;"><p class="weight-medium">Status</p></th>
                                                             <th class="py-2 px-3" style="vertical-align: bottom;">
                                                                 <!-- <p class="weight-medium mb-2 text-right">Actions</p> -->
                                                                 <a href="#" class="items-center underline justify-content-end">
@@ -704,7 +719,15 @@
                                                         <tr>
                                                             <td class="p-3">
                                                                 <div class="items-center py-2">
-                                                                    <a type="button" class="collapsed mr-3"  data-toggle="collapse" data-target="#seaDrop1">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox" checked="">
+                                                                        <span class="checked-customer dark br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a type="button" class="collapsed p-2 mx-2"  data-toggle="collapse" data-target="#seaDrop1">
                                                                         <svg class="svg-sprite-icon c-gray-75 collapsed-arrow" width="14px" height="14px">
                                                                             <use
                                                                                 xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
@@ -742,6 +765,7 @@
                                                                 <p>BL 30 EUR</p>
                                                             </td>
                                                             <td class="p-3"><p class="py-2">Cargo Logistic</p></td>
+                                                            <th class="py-2 px-3"><p class="py-2">Published</p></th>
                                                             <td class="p-3">
                                                                 <div class="items-center justify-content-end">
                                                                     <p class="relative px-1 tooltip-b hover-icon-orange z-4 py-2">
@@ -767,7 +791,7 @@
                                                             </td>
                                                         </tr>
                                                         <tr>
-                                                            <td colspan="8" class="">
+                                                            <td colspan="9" class="">
                                                                 <div class="collapse p-3" id="seaDrop1">
                                                                     <ul class="nav check_1 w-fit-content text-center br-4 lh-22 overflow-hidden fs-14 mx-auto weight-medium" data-index="9">
                                                                         <li class="nav-item">
@@ -1322,33 +1346,43 @@
                                                     </tbody>
                                                 </table>
                                             </div>
-                                            <div class="contents__item active">
+                                            <div class="contents__item">
                                                 <table class="w-100 " >
                                                     <thead class="bg-light-ee sticky-top">
                                                         <tr>
-                                                            <th class="pl-5 py-2 pr-3">
-                                                                <p class="weight-medium mb-2"> Valid time</p>
-                                                                <form class="relative max-w-180">
-                                                                    <input type="text"
-                                                                    class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
-                                                                    name="calendar-ranges" placeholder="Time range">
-                                                                    <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
-                                                                        <svg class="svg-sprite-icon is"
-                                                                            width="14px" height="15px">
-                                                                            <use
-                                                                                xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
-                                                                            </use>
-                                                                        </svg>
-                                                                        <button type="reset" class="d-none p-0" >
-                                                                            <svg class="svg-sprite-icon"
-                                                                                width="12px" height="12px">
+                                                            <th class="py-2 px-3">
+                                                                <p class="weight-medium mb-2 ml-4 pl-1"> Valid time</p>
+                                                                <div class="items-center">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <span class="checked-customer dark mr-2 br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <form class="relative max-w-180">
+                                                                        <input type="text"
+                                                                            class="input_customer bg-white b-gray-ee br-4 pr-4 text-truncate"
+                                                                            name="calendar-ranges" placeholder="Time range">
+                                                                        <div class="absolute bg-white t-center r-0 pr-2 c-gray-75 items-center">
+                                                                            <svg class="svg-sprite-icon is"
+                                                                                width="14px" height="15px">
                                                                                 <use
-                                                                                    xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                                    xlink:href="../../img/sprite/symbol/sprite.svg#calendar-3">
                                                                                 </use>
                                                                             </svg>
-                                                                        </button>
-                                                                    </div> 
-                                                                </form>
+                                                                            <button type="reset" class="d-none p-0" >
+                                                                                <svg class="svg-sprite-icon"
+                                                                                    width="12px" height="12px">
+                                                                                    <use
+                                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                                                                    </use>
+                                                                                </svg>
+                                                                            </button>
+                                                                        </div> 
+                                                                    </form>
+                                                                </div>
                                                             </th>
                                                             <th class="px-3 py-2">
                                                                 <p class="weight-medium mb-2">Origin</p>
@@ -1398,8 +1432,16 @@
                                                     <tbody class="hover-b lh-22 br-4">
                                                         <tr>
                                                             <td class="p-3 ">
-                                                                <div class="items-center">
-                                                                    <a type="button" class="collapsed mr-3"  data-toggle="collapse" data-target="#roadDrop1">
+                                                                <div class="items-center py-2">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox" checked="">
+                                                                        <span class="checked-customer dark br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a type="button" class="collapsed p-2 mx-2"  data-toggle="collapse" data-target="#roadDrop1">
                                                                         <svg class="svg-sprite-icon c-gray-75 collapsed-arrow" width="14px" height="14px">
                                                                             <use
                                                                                 xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
@@ -2000,15 +2042,23 @@
                                                     <tbody class="hover-b lh-22 br-4">
                                                         <tr>
                                                             <td class="p-3 ">
-                                                                <div class="items-center">
-                                                                    <a type="button" class="collapsed mr-3"  data-toggle="collapse" data-target="#roadDrop2">
+                                                                <div class="items-center py-2">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <span class="checked-customer dark br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a type="button" class="collapsed p-2 mx-2"  data-toggle="collapse" data-target="#roadDrop2">
                                                                         <svg class="svg-sprite-icon c-gray-75 collapsed-arrow" width="14px" height="14px">
                                                                             <use
                                                                                 xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
                                                                             </use>
                                                                         </svg>
                                                                     </a>
-                                                                    <p class="p-2 bl-2 b-orange-ff7 bg-yellow-ffe br-4-right">15 Apr. 2022 - 18 Apr. 2022</p>
+                                                                    <p class="p-2 bl-2 b-green-51 bg-green-dcf br-4-right">15 Apr. 2022 - 18 Apr. 2022</p>
                                                                 </div>
                                                             </td>
                                                             <td class="p-3">
@@ -2611,15 +2661,23 @@
                                                     <tbody class="hover-b lh-22 br-4">
                                                         <tr>
                                                             <td class="p-3 ">
-                                                                <div class="items-center">
-                                                                    <a type="button" class="collapsed mr-3"  data-toggle="collapse" data-target="#roadDrop3">
+                                                                <div class="items-center py-2">
+                                                                    <label>
+                                                                        <input type="checkbox" class="checkbox">
+                                                                        <span class="checked-customer dark br-4">
+                                                                            <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                                                            </svg>
+                                                                        </span>
+                                                                    </label>
+                                                                    <a type="button" class="collapsed p-2 mx-2"  data-toggle="collapse" data-target="#roadDrop3">
                                                                         <svg class="svg-sprite-icon c-gray-75 collapsed-arrow" width="14px" height="14px">
                                                                             <use
                                                                                 xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
                                                                             </use>
                                                                         </svg>
                                                                     </a>
-                                                                    <p class="p-2 bl-2 b-gray-e0 bg-gray-f5 br-4-right">15 Apr. 2022 - 18 Apr. 2022</p>
+                                                                    <p class="p-2 bl-2 b-green-51 bg-green-dcf br-4-right">15 Apr. 2022 - 18 Apr. 2022</p>
                                                                 </div>
                                                             </td>
                                                             <td class="p-3">
@@ -8441,6 +8499,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <label class="col-12 px-2 mt-3 items-center">
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark mr-2 br-4">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Published</span>
+                                </label>
                             </div>
                         </div>
                         <div class="col-7 px-2">
@@ -8598,6 +8665,15 @@
                                         </div>
                                     </div>
                                 </div>
+                                <label class="col-12 px-2 mt-3 items-center">
+                                    <input type="checkbox" class="checkbox" checked="">
+                                    <span class="checked-customer dark mr-2 br-4">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span>Published</span>
+                                </label>
                             </div>
                         </div>
                         <div class="col-7 px-2">

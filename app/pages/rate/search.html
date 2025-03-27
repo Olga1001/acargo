@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="ru-RU">
+    <head>
+        <meta charset="utf-8">
+        <title>Acargo</title><!--[if IE]>
+        <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+        <link href="../../css/libs.min.css" rel="stylesheet">
+        <link href="https://test.cargo4s.com/css/plugins/leaflet/leaflet.css" rel="stylesheet">
+        <link href="../../css/style.css" rel="stylesheet">
+        <link href="../../css/main.css" rel="stylesheet">
+    </head>
+    <body id="page-top">
+        <div id="wrapper" class="d-md-flex pt-md-0">
+            <div id="collapseSidebar" class="sidebar b-1 b-gray-e0 d-block collapse">
+                <div class="sidebar__container bg-white p-3 scroll-y d-flex flex-column sticky-top h-100vh">
+                    <div class="flex-between-center mb-4">
+                        <a href="/" class="sidebar-full">
+                            <svg class="svg-sprite-icon mx-1" fill="#F54617" width="100" height="22">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#logo"></use>
+                            </svg>
+                        </a>
+                        <button type="button" class="p-2 collapsed" data-target="#collapseSidebar" data-toggle="collapse" aria-expanded="false">
+                            <svg class="svg-sprite-icon collapsed-arrow d-md-block d-none" fill="#757575" width="20" height="10">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-1"></use>
+                            </svg>
+                            <svg class="svg-sprite-icon d-md-none" stroke="#757575" width="24" height="24">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#close2"></use>
+                            </svg>
+                        </button>
+                    </div>
+                    <hr class="d-md-none">
+                    <div class="d-md-none py-1">
+                        <div class="items-center pb-2">
+                            <img src="../../img/avatars/avatar.png" width="50" height="50" alt="avatar" class="br-50 b-1 b-gray-e0 mr-2">
+                            <div class="pl-1">
+                                <h3>James Powell</h3>
+                                <p class="c-gray-75">Logistics manager</p>
+                            </div>
+                        </div>
+                        <div class="px-2 br-4 py-1 items-center bg-gray-f5 w-fit-content">
+                            <svg class="svg-sprite-icon mr-1" fill="#F54617" width="20" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#user-5"></use>
+                            </svg>
+                            <p class="fs-14 weight-medium c-gray-75">Baltvia UAB</p>
+                        </div>
+                    </div>
+                    <hr class="d-md-none">
+                    <nav>
+                        <ul class="fs-14 weight-medium py-2">
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#layout-dashboard"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Dashboard</span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-orange-f4 bg-orange-f5-10">
+                                    <svg class="svg-sprite-icon" stroke="#F54617" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-check-2"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Bookings</span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#clipboard-list"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Orders</span>
+                                    <span class="count-message position-static d-block ml-2 sidebar-full">3</span>
+                                </a>
+                            </li>
+                            <li class="mt-2 collapse d-block h-100" id="collapseRate">
+                                <a type="button" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#bar-chart-2"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Rates</span>
+                                    <svg class="svg-sprite-icon ml-auto sidebar-full collapsed-arrow collapsed" fill="#757575" width="13" height="13" data-target="#collapseRate" data-toggle="collapse">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                                    </svg>
+                                </a>
+                                <ul class="collapse pl-4 bg-gray-f5 br-4 weight-normal" id="collapseRate">
+                                    <li>
+                                        <a href="#" class="c-gray-75 items-center p-2"><span class="p-1">Shipping rates</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="c-gray-75 items-center p-2"><span class="p-1">Global trends</span></a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="c-gray-75 items-center p-2">
+                                            <span class="p-1">Rate requests</span>
+                                            <span class="count-message position-static d-block ml-auto">2</span>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="c-gray-75 items-center p-2"><span class="p-1">Results</span></a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Companies</span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#file-pie-chart"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Quotations</span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#euro-2"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Finances</span>
+                                </a>
+                            </li>
+                            <hr class="my-3">
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#settings-2"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Settings</span>
+                                </a>
+                            </li>
+                            <li class="mt-2 d-md-none">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#user-6"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">User profile</span>
+                                </a>
+                            </li>
+                            <li class="mt-2 d-md-none">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Dark mode</span>
+                                </a>
+                            </li>
+                            <li class="mt-2">
+                                <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#life-buoy"></use>
+                                    </svg>
+                                    <span class="pl-2 sidebar-full">Support</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75 mt-auto fs-14 weight-medium">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#logout"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Log out</span>
+                    </a>
+                </div>
+           </div>
+            
+            <header class="header bg-gray-f5 d-md-none items-center p-2 shadow-none">
+                <b class="fs-24 pl-1">Search rates</b>
+                <button type="button" class="ml-auto p-1" data-target="#collapseSidebar" data-toggle="collapse">
+                    <svg class="svg-sprite-icon" stroke="#757575" width="16" height="12">
+                        <use xlink:href="../../img/sprite/symbol/sprite.svg#burger"></use>
+                    </svg>
+                </button>
+            </header>
+
+            <div class="d-flex flex-column w-100" id="content-wrapper">
+                <header class="sticky-top z-99 bg-white d-md-flex d-none align-items-center justify-content-end get-height" data-index="0">
+                    <a href="#" class="p-1">
+                        <svg class="svg-sprite-icon" fill="#757575" width="24" height="24">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+                        </svg>
+                    </a>
+                    <div class="currenty mx-3 d-lg-flex d-none">
+                        <div class="select b-0 h-100 small">
+                            <div class="select__item">USD</div>
+                            <div class="select__drop ">
+                                <ul class="select__menu br-4">
+                                    <li class="select__option active">USD</li>
+                                    <li class="select__option">EUR</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="price weight-bold">1,35 EUR</div>
+                    </div>
+
+                    <div class="items-center bl-1 px-3 py-2 b-gray-e0">
+                        <div class="dropdown no-arrow right-sticky m-1">
+                            <a href="#" class="p-1 dropdown-toggle" id="notepadDropdown" role="button" data-toggle="dropdown">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                </svg>
+                                <!-- <div class="count-message">99+</div> -->
+                            </a>
+
+                            <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="notepadDropdown">
+                                <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                    <h6 class="px-2 fs-14 weight-medium c-blue ">To-do list</h6>
+                                    <div class="items-center px-2">
+                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="h-dropdown">
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 pb-1 pt-3 c-dark" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-orange weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item px-2 py-1 c-dark b-1 b-blue" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Transport
+                                                assign ...</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between lh-1_4 fs-12 text-italic">
+                                                <span class="c-gray">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-navy-blue weight-medium">-2 days </span>
+                                            </span>
+                                        </span>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="dropdown no-arrow right-sticky m-1">
+                            <a href="#" class="dropdown-toggle p-1" id="messagesDropdown" role="button" data-toggle="dropdown">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#list-checks"></use>
+                                </svg>
+                                <div class="count-message">2</div>
+                            </a>
+                            
+
+                            <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="messagesDropdown">
+                                <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                    <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                                    <div class="items-center px-2">
+                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="h-dropdown">
+                                    <div class="p-2">
+                                        <div class="px-1">
+                                            <input type="text" class="input-search py-2 h-auto b-blue-v3">
+                                        </div>
+                                    </div>
+                                    <ul>
+                                        <li class="dropdown-item p-2">
+                                            <div class="p-1 d-flex justify-content-between align-items-center">
+                                                <div class="items-center">
+                                                    <div class="avatar small mr-3">
+                                                        <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                        <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                        <div class="online-user small"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                        <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item p-2 b-1 b-blue">
+                                            <div class="p-1 d-flex justify-content-between align-items-center">
+                                                <div class="items-center">
+                                                    <div class="avatar small mr-3">
+                                                        <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                        <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                        <div class="online-user small bg-gray"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                        <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item p-2">
+                                            <div class="p-1 d-flex justify-content-between align-items-center">
+                                                <div class="items-center">
+                                                    <div class="avatar small mr-3">
+                                                        <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                        <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                        <div class="online-user small"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                        <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item p-2">
+                                            <div class="p-1 d-flex justify-content-between align-items-center">
+                                                <div class="items-center">
+                                                    <div class="avatar small mr-3">
+                                                        <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                        <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                        <div class="online-user small bg-gray"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                        <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                            </div>
+                                        </li>
+                                        <li class="dropdown-item p-2">
+                                            <div class="p-1 d-flex justify-content-between align-items-center">
+                                                <div class="items-center">
+                                                    <div class="avatar small mr-3">
+                                                        <!--                                                <img src="../../img/users.svg" alt="avatar">-->
+                                                        <div class="avatar-letters c-white fs-12 b-0 bg-blue_v5">A.D.</div>
+                                                        <div class="online-user small"></div>
+                                                    </div>
+                                                    <div>
+                                                        <p class="fs-14 weight-medium c-navy">Sergey Ivanov (1)</p>
+                                                        <p class="fs-13 c-blue-gray">Acargo LTD.</p>
+                                                    </div>
+                                                </div>
+                                                <p class="text-italic fs-12 c-gray">10 hours ago</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown no-arrow m-1 right-sticky">
+                            <a href="#" class="dropdown-toggle p-1" id="alertsDropdown" role="button" data-toggle="dropdown">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#message-square"></use>
+                                </svg>
+                                <div class="count-message">14</div>
+                            </a>
+                        
+                            <div class="dropdown-list dropdown-menu  animated--grow-in" aria-labelledby="alertsDropdown">
+                                <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                    <h6 class="px-2 fs-14 weight-medium c-blue ">Notifications</h6>
+                                    <div class="items-center px-2">
+                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="15px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#sound-off-solid"></use>
+                                        </svg>
+                                        <svg class="svg-sprite-icon c-gray ml-3" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </div>
+                                </div>
+                                <div class="h-dropdown">
+                                    <a class="dropdown-item p-2 c-dark " href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                                selected ...</span>
+                                            <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                                <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-gray">1day ago</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item p-2 c-dark b-1 b-blue" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                                selected ...</span>
+                                            <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                                <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-gray">1day ago</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                    <a class="dropdown-item p-2 c-dark bg-light_v10" href="#">
+                                        <span class="px-1 d-block">
+                                            <span class="fs-14 weight-medium c-navy-blue pb-1 text-truncate">Loading time
+                                                selected ...</span>
+                                            <span class="fs-13 d-block lh-1_3">Acargo company</span>
+                                            <span class="fs-13 d-block lh-1_3">OR-6318267383</span>
+                                            <span class="d-flex justify-content-between pt-1 lh-1_4 fs-12 text-italic">
+                                                <span class="c-blue-gray ">12 Apr. 2021 14:00 PM</span>
+                                                <span class="c-gray">1day ago</span>
+                                            </span>
+                                        </span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="dropdown no-arrow ml-3 my-1 right-sticky">
+                            <a href="#" class="dropdown-toggle items-center b-1 br-200 bg-light-ee b-gray-e0" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <img src="../../img/avatars/avatar.png" alt="avatar" class="br-50 wh-27 b-1 b-gray-e0 mr-1">
+                                <svg class="svg-sprite-icon mr-2" fill="#757575" width="9" height="5">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-drop-down"></use>
+                                </svg>
+                            </a>
+                            <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                                <a class="dropdown-item mb-2" href="#">
+                                    <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#user-4"></use>
+                                    </svg>
+                                    My profile
+                                </a>
+                                <a class="dropdown-item mb-2" href="#">
+                                    <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar_2"></use>
+                                    </svg>
+                                    Calendar
+                                </a>
+                                <a class="dropdown-item mb-2" href="#">
+                                    <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                                    </svg>
+                                    To-do list
+                                </a>
+                                <div class="row px-3 py-3 mt-1 mx-0">
+                                    <div class="col-6 pr-2 mt-2">
+                                        <a href="#" class="items-center btn-manager active">
+                                            <svg class="svg-sprite-icon icon-manager mr-2 c-gray" width="10px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                            </svg>
+                                            Shipper
+                                        </a>
+                                    </div>
+                                    <div class="col-6 pl-2 mt-2">
+                                        <a href="#" class="items-center btn-manager ">
+                                            <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                            </svg>
+                                            Shipper
+                                        </a>
+                                    </div>
+                                    <div class="col-6 pr-2 mt-2">
+                                        <a href="#" class="items-center btn-manager ">
+                                            <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                            </svg>
+                                            Shipper
+                                        </a>
+                                    </div>
+                                    <div class="col-6 pl-2 mt-2">
+                                        <a href="#" class="items-center btn-manager">
+                                            <svg class="svg-sprite-icon icon-manager mr-3 c-gray" width="10px" height="12px">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#manager  "></use>
+                                            </svg>
+                                            .Client
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div id="content">
+                    <div class="container-fluid px-md-3 py-3 px-2" id="container-wrapper">
+                        <div id="box" class="max-1060 mx-auto">
+                            <div class="br-4 bg-white p-3 mb-2">
+                                <h3>Search rates</h3>
+                                <div class="d-flex b-1 p-1 b-gray-9e bg-gray-f5 w-fit-content br-4 mt-2">
+                                    <label>
+                                        <input type="radio" name="radio_1" class="checkbox" checked>
+                                        <span class="radio-active px-3 py-2 h-100 items-center br-4 c-gray-75 hover-red weight-medium">
+                                            <svg class="svg-sprite-icon mr-1" fill="#757575" width="15" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                                            </svg>
+                                            Sea freight
+                                        </span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="radio_1" class="checkbox">
+                                        <span class="radio-active px-3 py-2 h-100 items-center br-4 c-gray-75 hover-red weight-medium">
+                                            <svg class="svg-sprite-icon mr-1" width="15" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                            </svg>
+                                            Road freight
+                                        </span>
+                                    </label>
+                                </div>
+                                <div class="row mx--1 align-items-end">
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <p class="weight-medium c-gray-69 pb-1">Orgin port</p>
+                                        <div class="relative bg-gray-f5 b-1 b-gray-9e br-4 pl-3">
+                                            <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center ml-3" width="16" height="16">
+                                            <input type="text" class="b-0 pl-4 py-2 lh-22 br-4" value="Lithuania (LTKLJ)">
+                                            <svg class="svg-sprite-icon mr-3 absolute r-0 t-center " stroke="#757575" width="16" height="16">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#search4"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <p class="weight-medium c-gray-69 pb-1">Destination port</p>
+                                        <div class="relative bg-gray-f5 b-1 b-gray-9e br-4 pl-3">
+                                            <img src="../../img/flag.svg" alt="flag" class="absolute l-0 t-center ml-3" width="16" height="16">
+                                            <input type="text" class="b-0 pl-4 py-2 lh-22 br-4" value="Qingdao (CNTAO)">
+                                            <svg class="svg-sprite-icon mr-3 absolute r-0 t-center " stroke="#757575" width="16" height="16">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#search4"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <p class="weight-medium c-gray-69 pb-1">Departure date</p>
+                                        <div class="relative bg-gray-f5 b-1 b-gray-9e br-4 pl-3">
+                                            <svg class="svg-sprite-icon absolute l-0 t-center ml-3" stroke="#757575" width="16" height="16">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                            </svg>
+                                            <input type="text" class="b-0 pl-4 py-2 lh-22 br-4" value="Qingdao (CNTAO)">
+                                            <svg class="svg-sprite-icon mr-3 absolute r-0 t-center " stroke="#757575" width="16" height="16">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#search4"></use>
+                                            </svg>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <p class="weight-medium c-gray-69 pb-1">Maximum Weight</p>
+                                        <div class="select bg-gray-f5 b-1 b-gray-9e br-4 pl-3 h-fit">
+                                            <svg class="svg-sprite-icon absolute l-0 t-center ml-3" stroke="#757575" width="16" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#weight2"></use>
+                                            </svg>
+                                            <div class="select__item b-0 pl-4 py-2 lh-22 br-4">26000 kg</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu br-4">
+                                                    <li class="select__option active">26000 kg</li>
+                                                    <li class="select__option">260000 kg</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <p class="weight-medium c-gray-69 pb-1">Container type</p>
+                                        <div class="select bg-gray-f5 b-1 b-gray-9e br-4 pl-3 h-fit">
+                                            <svg class="svg-sprite-icon absolute l-0 t-center ml-3" fill="#757575" width="16" height="15">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                            </svg>
+                                            <div class="select__item b-0 pl-4 py-2 lh-22 br-4">All containers</div>
+                                            <div class="select__drop">
+                                                <ul class="select__menu br-4">
+                                                    <li class="select__option active">All containers</li>
+                                                    <li class="select__option">All containers 2</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 px-2 mt-3">
+                                        <button type="button" class="btn w-100">
+                                            <svg class="svg-sprite-icon mr-2" stroke="#fff" width="24" height="16">
+                                                <use xlink:href="../../img/sprite/symbol/sprite.svg#search4"></use>
+                                            </svg>
+                                            Search routes
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <h2 class="py-1">Recent searches</h2>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                            <div class="br-4 bg-white mt-2 px-3 d-md-flex align-items-md-center justify-content-md-between b-1">
+                                <div class="py-2">
+                                    <div class="items-center weight-medium mb-3">
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>LTKLJ <span class="c-gray-75">(LI)</span></p>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <svg class="svg-sprite-icon" fill="#bdbdbd" width="19" height="19">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <div class="bb-2 w-50p b-gray-ee mx-2"></div>
+                                        <img src="../../img/flag.svg" alt="flag" width="14" height="14" class="mr-1">
+                                        <p>USSGN <span class="c-gray-75">(LI)</span></p>
+                                    </div>
+                                    <div class="items-center weight-semi fs-12 c-gray-75">
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                        </svg>
+                                        <p class="mr-3">Road</p>
+                                        <svg class="svg-sprite-icon mr-2" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#container4"></use>
+                                        </svg>
+                                        <p class="mr-3">35’CHI, 40’HC, 30’HC</p>
+                                        <svg class="svg-sprite-icon mr-2" stroke="#757575" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>15 Apr. 2025</p>
+                                    </div>
+                                </div>
+                                <hr class="d-md-none m-0">
+                                <div class="d-flex flex-md-column flex-row-reverse justify-content-between py-2 align-items-center">
+                                    <button type="button" class="btn px-3 w-fit-content mx-md-auto"><span class="px-1"> Review rate</span></button>
+                                    <p class="mt-md-2 fs-13">1 000 EUR - 5 000 EUR</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <script src="../../vendor/jquery/jquery.min.js"></script>
+        <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="../../vendor/jquery-easing/jquery.easing.min.js"></script>
+        <!-- <script src="../../vendor/sticky/jquery.sticky.js"></script> -->
+        <!-- <script src="https://acargo.click/test/js/plugins/bootstrap-slider/bootstrap-slider.min.js"></script> -->
+        <!-- <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script> -->
+        <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+        <script src="../../js/admin.js"></script>
+    </body>
+</html>

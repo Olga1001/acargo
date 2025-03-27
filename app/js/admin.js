@@ -568,7 +568,7 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse, .collapse_tablet-swipe.show.collapse, .collapse_mobile-modal.show.collapse');
+  const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show, .popup-swiper.collapse.show');
 
   if (popup) {
     e.target.classList.remove('show');
@@ -589,20 +589,22 @@ let mut = new MutationObserver(function (mutі) {
   });
 
   // Check popup collapse state and add/remove fixed_body class
-  const isAnyPopupOpen = $el('.popup-collapse.collapse.show, .collapse_tablet-swipe.collapse.show');
-  const isAnyMobilePopupOpen = $el('.collapse_mobile-popup.collapse.show');
+  const isAnyPopupOpen = $el('.popup-collapse.collapse.show, .collapse.show .popup-swiper, .collapse.show .popup-full');
+  const isAnyMobilePopupOpen = $el('.collapse_mobile-popup.collapse.show, .sidebar.show');
   const isBodyFixed = $el('html.fixed_body');
 
   const isMobile = window.matchMedia("(max-width: 767px)").matches;
+  
+  const shouldBeFixed = isAnyPopupOpen || (isMobile && isAnyMobilePopupOpen) || (isMobile && isAnyMobilePopupOpen);
 
-  if (isAnyPopupOpen || (isAnyMobilePopupOpen && isMobile) && !isBodyFixed) {
+  if (shouldBeFixed && !isBodyFixed) {
     console.log('fixed_body');
     $('html').addClass('fixed_body');
-  } else if (!isAnyPopupOpen && (!isAnyMobilePopupOpen && isMobile) && isBodyFixed) {
+  } else if (!shouldBeFixed && isBodyFixed) {
     console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }
-
+  
   // mut.observe(document, optionMut);
 })
 mut.observe(document, optionMut);
@@ -707,46 +709,11 @@ syncScrollElements.forEach(element => {
 const appHeight = () => {
   document.documentElement.style.setProperty('--app-height', `${window.innerHeight}px`);
 };
+appHeight();
+window.addEventListener('resize', appHeight);
 
-// handleResize: Handles window resize. If the width is less than 
-// or equal to 1080px, it adds an event listener for resizing 
-// to update the height. If the condition is not met, it removes 
-// the event listener.
-const handleResize = (e) => {
-  if (e.matches) {
-    appHeight();
-    window.addEventListener('resize', appHeight);
-  } else {
-    window.removeEventListener('resize', appHeight);
-  }
-};
 
-// mediaQuery: Creates a media query for window widths up to 1080px 
-// and listens for changes to this query, invoking handleResize 
-// for proper handling.
 const mediaQuery = window.matchMedia("(max-width: 1080px)");
-mediaQuery.addEventListener('change', handleResize);
-handleResize(mediaQuery);
-
-// It calculates and sets the top margin for all elements with the 
-// stickyElement attribute. It adds the sticky-top class to each 
-// such element. The margin is calculated by accumulating the total 
-// height for each element and adding an additional 60 pixels. 
-// It is also called during window resize to update the margins.
-const getStickyTopOffset = (...classes) => {
-  const stickyElements = document.querySelectorAll('[stickyElement]');
-  if (!stickyElements.length) return; 
-
-  stickyElements.forEach(el => {
-    console.log(el.offsetTop)
-    el.style.top = `${el.offsetTop + 60}px`;
-    el.classList.add('sticky-top');
-  });
-};
-
-window.addEventListener('resize', getStickyTopOffset());
-// getStickyTopOffset();
-
 let lastScrollTop = 0;
 const scrollActionPanel = $$el('.scroll-action-panel'); // Всі панелі на сторінці
 

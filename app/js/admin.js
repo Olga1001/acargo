@@ -568,10 +568,15 @@ document.addEventListener('click', (e) => {
   }
 
   //hide popup - outside click
-  const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show, .popup-swiper.collapse.show');
+  const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show, .popup-swiper, .popup-full');
 
+  console.log(popup, e.target)
   if (popup) {
-    e.target.classList.remove('show');
+    if (e.target.matches('.collapse')) {
+      e.target.classList.remove('show');
+    } else {
+      e.target.parentElement.classList.remove('show');
+    }
   }
 })
 

@@ -15,7 +15,7 @@
   </head>
   <body id="page-top">
     <div id="wrapper" class="d-md-flex pt-md-0">
-        <div id="collapseSidebar" class="sidebar collapse b-1 b-gray-e0 d-block">
+        <div id="collapseSidebar" class="sidebar b-1 b-gray-e0 d-block collapse">
             <div class="sidebar__container bg-white p-3 scroll-y d-flex flex-column sticky-top h-100vh">
                 <div class="flex-between-center mb-4">
                     <a href="/" class="sidebar-full">
@@ -23,14 +23,14 @@
                             <use xlink:href="../../img/sprite/symbol/sprite.svg#logo"></use>
                         </svg>
                     </a>
-                    <button type="button" class="p-2 collapsed" data-target="#collapseSidebar" data-toggle="collapse">
+                    <a type="button" class="p-2 collapsed" data-target="#collapseSidebar" data-toggle="collapse" aria-expanded="false">
                         <svg class="svg-sprite-icon collapsed-arrow d-md-block d-none" fill="#757575" width="20" height="10">
                             <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-1"></use>
                         </svg>
                         <svg class="svg-sprite-icon d-md-none" stroke="#757575" width="24" height="24">
                             <use xlink:href="../../img/sprite/symbol/sprite.svg#close2"></use>
                         </svg>
-                    </button>
+                    </a>
                 </div>
                 <hr class="d-md-none">
                 <div class="d-md-none py-1">
@@ -147,7 +147,7 @@
                         </li>
                         <li class="mt-2 d-md-none">
                             <a href="#" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
-                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
                                 </svg>
                                 <span class="pl-2 sidebar-full">Dark mode</span>
@@ -662,42 +662,48 @@
                     <div class="w-100">
                         <div class="py-2 mb-1 items-center scroll-action-panel mx--1 px-2">
                             <h2 class=" d-md-block d-none">Bookings</h2>
-                            <div class="relative ml-auto col-4 px-1 bg-white br-16 d-md-block d-none">
-                                <input type="text" class="br-16 input_customer b-0 py-1" placeholder="Search">
-                                <button type="button" class="p-2 d-flex absolute r-0 t-center mr-1">
+                            <form class="select b-0 h-fit no-arrow ml-auto col-4 px-0 d-md-block d-none">
+                                <input type="text" class="br-16 select__item input_customer lh-1_5 py-1 b-white bg-white br-16" placeholder="Search">
+                                <button type="submit" class="p-2 d-flex is absolute r-0 t-center mr-1">
                                     <svg class="svg-sprite-icon" fill="#757575" width="15" height="15">
                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#search3"></use>
                                     </svg>
                                 </button>
-                            </div>
-                            <button type="button" class="br-200 fs-12 bg-white px-2 py-1 items-center collapsed ml-md-3 d-xxl-none" data-target="#collapseFilter" data-toggle="collapse">
-                                <svg class="svg-sprite-icon mx-1" width="13" height="22">
+                                <button type="reset" class="p-2 d-none absolute r-0 t-center mr-1">
+                                    <svg class="svg-sprite-icon" stroke="#757575" width="15" height="15">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#close2"></use>
+                                    </svg>
+                                </button>
+                            </form>
+                            <button type="button" class="br-200 fs-12 bg-white p-2 py-md-1 items-center ml-2 collapsed d-xxl-none" data-target="#collapseFilter" data-toggle="collapse" aria-expanded="false">
+                                <svg class="svg-sprite-icon mx-1" width="12" height="22">
                                     <use xlink:href="../../img/sprite/symbol/sprite.svg#slidersHorizontal"></use>
                                 </svg>
                                 <b class="c-gray-75 pl-1 weight-semi">Filter</b>
                                 <div class="br-50 bg-orange-f4 wh-20 flex-center mx-1 c-white weight-extraBold">1</div>
-                                <span type="button" class="wh-20 flex-center">
-                                    <svg class="svg-sprite-icon" width="8" height="8">
+                                <span type="button" class="flex-center">
+                                    <svg class="svg-sprite-icon px-2" width="24" height="22">
                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
                                     </svg>
                                 </span>
                             </button>
-                            <button type="button" class="br-200 fs-12 bg-white p-2 d-md-none items-center collapsed ml-3 w-120" data-target="#collapseSort" data-toggle="collapse">
-                                <svg class="svg-sprite-icon mx-1" width="16" height="13">
-                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#caretUpDown"></use>
+                            <button type="button" class="br-200 fs-12 bg-white p-2 py-md-1 items-center ml-2 collapsed d-md-none" data-target="#collapseSort" data-toggle="collapse">
+                                <svg class="svg-sprite-icon mx-1" stroke="#1e1e1e" width="16" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-down"></use>
                                 </svg>
-                                <b class="c-gray-75 pl-1 weight-semi">Sort by</b>
+                                <b class="pr-1">Creation date</b>
                             </button>
+                            
                             <div class="select no-arrow b-white h-fit br-200 bg-white d-md-flex d-none collapsed ml-2 w-fit-content min-w-120">
                                 <div class="absolute l-0 t-center ml-2 pl-1">
-                                    <svg class="svg-sprite-icon" width="16" height="13">
-                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#caretUpDown"></use>
+                                    <svg class="svg-sprite-icon" stroke="#1e1e1e" width="16" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-down"></use>
                                     </svg>
                                 </div>
                                 <div class="select__item p-2 lh-1 fs-12 pl-4 ml-2 w-100 z-1 weight-semi">
                                     <b class="c-gray-75">Sort by</b>
                                 </div>
-                                <div class="select__drop min-w-260 right pt-2">
+                                <div class="select__drop right pt-2">
                                     <ul class="select__menu b-0 br-6 shadow12 py-0 fs-14">
                                         <li class="select__option py-2 px-3">Creation date</li>
                                         <li class="select__option py-2 px-3">Cut-off date</li>

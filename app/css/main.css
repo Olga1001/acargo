@@ -25,6 +25,7 @@
 * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  caret-color: transparent;
 }
 
 *:before,
@@ -51,6 +52,10 @@
 *:-ms-input-placeholder {
   color: #757575;
   line-height: 1;
+}
+
+input, textarea, [contenteditable="true"] {
+  caret-color: auto; 
 }
 
 input:-webkit-autofill,
@@ -1634,7 +1639,7 @@ button:focus {
   right: 0;
   top: 0;
 }
-.checkbox+* {
+.checkbox~* {
   cursor: pointer;
 }
 
@@ -1962,6 +1967,7 @@ button:focus {
   opacity: 0;
   transition: all .2s ease;
 }
+label:hover .checked-customer:before, 
 .checkbox~.checked-customer:hover:before {
   opacity: 1;
 }

@@ -34,9 +34,7 @@ $(document).ready(function () {
   });
 
   $(".collapse_v2").each(function () {
-    console.log("1");
     let height = $(this).height();
-    console.log(height);
     $(this).find(".line__last").height(height - 53);
   });
 
@@ -133,8 +131,6 @@ $(document).ready(function () {
   })
 
   $('.select__drop [data-toggle="collapse"], .relative > [data-toggle="collapse"]').click(function (e) {
-    console.log(this)
-
     $(this).toggleClass('collapsed').parent().siblings().find('[data-toggle="collapse"]').removeClass('collapsed');
     let target = $(this).attr('data-target');
     $(target).toggleClass('show').parent().siblings().find('.collapse').removeClass('show');
@@ -359,7 +355,6 @@ $(document).ready(function () {
 
     let sumHeight = headerHeight + fixTopHeight + menuDropdownHeight + navHeight;
 
-    console.log(sumHeight)
     $(this).sticky({topSpacing:sumHeight});
   })
 });
@@ -510,7 +505,6 @@ function setHeight(el, index) {
     $$el(`.get-height[data-index="${index}"]`).forEach(item => sumHeight += item.offsetHeight);
   }
  
-  console.log(el.getBoundingClientRect().top, el.offsetTop)
   sumHeight += el.getBoundingClientRect().top <= 0 ? el.offsetTop + 60 : el.getBoundingClientRect().top;
 
   el.style.height = `calc(100vh - ${Math.ceil(sumHeight)}px)`
@@ -570,7 +564,6 @@ document.addEventListener('click', (e) => {
   //hide popup - outside click
   const popup = e.target.matches('.popup-collapse.show.collapse, .sidebar.show, .popup-swiper, .popup-full');
 
-  console.log(popup, e.target)
   if (popup) {
     if (e.target.matches('.collapse')) {
       e.target.classList.remove('show');
@@ -603,10 +596,8 @@ let mut = new MutationObserver(function (mutі) {
   const shouldBeFixed = isAnyPopupOpen || (isMobile && isAnyMobilePopupOpen) || (isMobile && isAnyMobilePopupOpen);
 
   if (shouldBeFixed && !isBodyFixed) {
-    console.log('fixed_body');
     $('html').addClass('fixed_body');
   } else if (!shouldBeFixed && isBodyFixed) {
-    console.log('not fixed_body');
     $('html').removeClass('fixed_body');
   }
   
@@ -626,7 +617,6 @@ $$el('.scrollTop').forEach(item => {
     if (item.dataset.top) {
       scrollUpValue = $$el('.base-li')[1].offsetTop -  $el('.h-calc_1.sync_scroll_x ').offsetTop;
     }
-    console.log(scrollUpValue)
     $(selector).animate(
       {
         scrollTop: scrollUpValue

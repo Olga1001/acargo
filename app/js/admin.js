@@ -713,7 +713,7 @@ let lastScrollTop = 0;
 const scrollActionPanel = $$el('.scroll-action-panel'); // Всі панелі на сторінці
 
 window.addEventListener('scroll', function() {
-  if (!mediaQuery.matches) return;
+  // if (!mediaQuery.matches) return;
   const currentScrollTop = window.pageYOffset || document.documentElement.scrollTop;
 
   scrollActionPanel.forEach(panel => {

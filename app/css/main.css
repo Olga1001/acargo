@@ -12250,6 +12250,10 @@ a.page-link.active svg {
   max-width: 670px;
 }
 
+.max-700 {
+  max-width: 700px;
+}
+
 .max-725 {
   max-width: 725px;
 }
@@ -18209,6 +18213,7 @@ input+.autocomplete {
     display: flex;
     background: var(--surface-surface-0, #F5F5F5);
     border: 1px solid var(--Border-01, #E0E0E0);
+    border-radius: 4px;
   }
   .collapse .popup-xxl-static  {
     opacity: 1;
@@ -18469,6 +18474,9 @@ input+.autocomplete {
   }
   .fs-lg-15 {
     font-size: 15px!important;
+  }
+  .fs-lg-16 {
+    font-size: 16px!important;
   }
   .bg-lg-gray-f5 {
     background: var(--surface-surface-0, #F5F5F5)!important;
@@ -18913,11 +18921,6 @@ input+.autocomplete {
     background-size: 13px !important;
   }
 
-  .circle-small {
-    width: 4px;
-    height: 4px;
-  }
-
   .link-item.big {
     font-size: 10px;
     line-height: 12px;
@@ -19033,10 +19036,6 @@ input+.autocomplete {
 
   .arrow-r-13:before {
     right: 10px;
-  }
-
-  .select__item {
-    padding: 0 25px 0 10px;
   }
 
   .max-204 {
@@ -19655,12 +19654,15 @@ input+.autocomplete {
     margin-top: 11px !important;
   }
 
+  .select {
+    height: fit-content;
+  }
   input,
   textarea {
     height: fit-content;
     /* height: 32px; */
     padding: 6.5px 13px;
-    font-size: 14px;
+    /* font-size: 14px; */
   }
 
   .input-date {
@@ -19713,15 +19715,6 @@ input+.autocomplete {
   .input-search.right {
     padding: 6.5px 33px 6.5px 13px !important;
     background-position: right 13px center;
-  }
-
-  .select__item {
-    font-size: 14px;
-    line-height: 30px;
-  }
-
-  .select {
-    height: 31px;
   }
 
   .select.mr-3 {
@@ -19904,6 +19897,7 @@ input+.autocomplete {
     padding-left: 68px;
   }
 }
+
 
 @media only screen and (max-width: 1280px) {
 
@@ -20301,6 +20295,9 @@ input+.autocomplete {
 }
 
 @media only screen and (max-width: 1079px) {
+  .sidebar.d-lg-block~ #content-wrapper{
+    padding-left: 0;
+  }
   .h-calc_1 {
     height: auto!important;
   }
@@ -20609,6 +20606,7 @@ input+.autocomplete {
   }
   .popup-full .collapse__container {
     border-radius: 0;
+    max-width: 100%;
   }
   .form-search_content {
     width: 100%;
@@ -20651,7 +20649,7 @@ input+.autocomplete {
     line-height: normal;
   }
   .container-fluid {
-    padding: 0 0 70px 0;
+    padding: 0;
   }
   
   input.input_customer, 

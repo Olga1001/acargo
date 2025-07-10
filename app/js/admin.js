@@ -104,10 +104,10 @@ $(document).ready(function () {
   }
 
 
-  $(".table__item").click(function () {
-    $(this).find(".table__arrow").toggleClass('active');
-    $(this).closest("li").find(".table__drop").slideToggle(300);
-  });
+  // $(".table__item").click(function () {
+  //   $(this).find(".table__arrow").toggleClass('active');
+  //   $(this).closest("li").find(".table__drop").slideToggle(300);
+  // });
   $(".transport-mode__item").click(function () {
     $(this).toggleClass('active').siblings().removeClass('active');
   });

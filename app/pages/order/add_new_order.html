@@ -1049,24 +1049,69 @@
                                 <div class="block bg-red-e6_10 c-red-e6 weight-normal mr-1">Loading No</div>
                                 <div class="block bg-orange_fe c-orange-f4 weight-normal">Loading No</div>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4 mt-3">
+                            <div class="row mx--1">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Order No.</p>
-                                    <input type="text" class="bg-white br-4 b-gray-bd" autocomplete="off"
-                                        id="internalorderid" data-disabled="1" readonly="" name="internalorderid"
-                                        value="OR4397">
+                                    <div class="d-flex">
+                                        <input type="text" class="bg-white br-4 b-gray-bd" autocomplete="off"
+                                            id="internalorderid" data-disabled="1" readonly="" name="internalorderid"
+                                            value="OR4397">
+                                        <label class="ml-2">
+                                            <input class="checkbox" type="radio" onchange="renewCustomLoadings(this)"
+                                                name="customorderno" checked="" value="our">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Shipper Order No.</p>
-                                    <input type="text" class="bg-white br-4 b-gray-bd"
-                                        onchange="renewCustomLoadings(this)" autocomplete="off" id="shipperorderid"
-                                        name="shipperorderid" value="">
+                                    <div class="d-flex">
+                                        <input type="text" class="bg-white br-4 b-gray-bd"
+                                            onchange="renewCustomLoadings(this)" autocomplete="off" id="shipperorderid"
+                                            name="shipperorderid" value="">
+                                        <label class="ml-2">
+                                            <input type="radio" onchange="renewCustomLoadings(this)"
+                                                name="customorderno" checked="" value="shipper" class="checkbox">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Client Order No.</p>
-                                    <input type="text" class="bg-white br-4 b-gray-bd" autocomplete="off"
-                                        onkeyup="renewCustomLoadings(this)" id="clientorderid" name="clientorderid"
-                                        value="">
+                                    <div class="d-flex">
+                                        <input type="text" class="bg-white br-4 b-gray-bd" autocomplete="off"
+                                            onkeyup="renewCustomLoadings(this)" id="clientorderid" name="clientorderid"
+                                            value="">
+                                        <label class="ml-2">
+                                            <input type="radio" onchange="renewCustomLoadings(this)"
+                                                name="customorderno" value="client" class="checkbox">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -1084,52 +1129,143 @@
                                 <button type="button" onclick="slideParties(this)" class="btn ml-auto px-4"
                                     data-hidden="1">+ Add</button>
                             </div>
-                            <div class="row">
-                                <div class="col-md-4 mt-3">
+                            <div class="row mx--1">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Customer</p>
-                                    <input type="hidden" onchange="getCustomerDestination(this)" autocomplete="off"
-                                        name="partiesid[8][]" id="partyid_8_1" value="">
-                                    <input name="parties[8][]" data-type="8" autocomplete="off"
-                                        data-target="#partyid_8_1" id="party_8_1" value="" type="text"
-                                        class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                    <div class="d-flex">
+                                        <input type="hidden" onchange="getCustomerDestination(this)" autocomplete="off"
+                                            name="partiesid[8][]" id="partyid_8_1" value="">
+                                        <input name="parties[8][]" data-type="8" autocomplete="off"
+                                            data-target="#partyid_8_1" id="party_8_1" value="" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                        
+                                        <label class="ml-2">
+                                            <input type="checkbox" class="checkbox" name="partiesnotify[8][]" value="1" onclick="checkPartiesNotifyCount(this)">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Consignee</p>
-                                    <input type="hidden" autocomplete="off" onchange="" name="partiesid[4][]"
-                                        id="partyid_4_1" value="">
-                                    <input name="parties[4][]" data-type="4" autocomplete="off" id="party_4_1"
-                                        data-target="#partyid_4_1" value="" type="text"
-                                        class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                    <div class="d-flex">
+                                        
+                                        <input type="hidden" autocomplete="off" onchange="" name="partiesid[4][]"
+                                            id="partyid_4_1" value="">
+                                        <input name="parties[4][]" data-type="4" autocomplete="off" id="party_4_1"
+                                            data-target="#partyid_4_1" value="" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                        
+                                        <label class="ml-2">
+                                            <input type="checkbox" class="checkbox" name="partiesnotify[4][]" value="1" onclick="checkPartiesNotifyCount(this)">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Shipper</p>
-                                    <input type="hidden" autocomplete="off" name="partiesid[3][]" id="partyid_3_1"
-                                        value="" onchange="getShipperOrigin(this)">
-                                    <input name="parties[3][]" data-type="3" autocomplete="off"
-                                        data-target="#partyid_3_1" id="party_3_1" value="" type="text"
-                                        class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                    <div class="d-flex">
+                                        <input type="hidden" autocomplete="off" name="partiesid[3][]" id="partyid_3_1"
+                                            value="" onchange="getShipperOrigin(this)">
+                                        <input name="parties[3][]" data-type="3" autocomplete="off"
+                                            data-target="#partyid_3_1" id="party_3_1" value="" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd">
+                                        <label class="ml-2">
+                                            <input type="checkbox" name="partiesnotify[3][]" value="1" onclick="checkPartiesNotifyCount(this)" class="checkbox">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="row parties-item" style="display:none;">
-                                <div class="col-md-4 mt-3">
+                            <div class="row parties-item mx--1" style="display:none;">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Agent</p>
-                                    <input type="hidden" autocomplete="off" name="partiesid[5][]" id="partyid_5_1" value=""/>
-                                    <input name="parties[5][]" data-type="5" autocomplete="off" data-target="#partyid_5_1" id="party_5_1" value="" type="text" class="typeaheadcompany bg-white br-4 b-gray-bd"/>
+                                    <div class="d-flex">
+                                        <input type="hidden" autocomplete="off" name="partiesid[5][]" id="partyid_5_1"
+                                            value="" />
+                                        <input name="parties[5][]" data-type="5" autocomplete="off"
+                                            data-target="#partyid_5_1" id="party_5_1" value="" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd" />
+                                        <label class="ml-2">
+                                            <input type="checkbox" class="checkbox" name="partiesnotify[5][]" value="1" onclick="checkPartiesNotifyCount(this)">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Customs Broker</p>
-                                    <input type="hidden" autocomplete="off" onchange="" name="partiesid[6][]"
-                                        id="partyid_6_1" value=""/>
-                                    <input name="parties[6][]" data-type="6" autocomplete="off" id="party_6_1"
-                                        data-target="#partyid_6_1" value="" type="text" class="typeaheadcompany bg-white br-4 b-gray-bd"/>
+                                    <div class="d-flex">
+                                        <input type="hidden" autocomplete="off" onchange="" name="partiesid[6][]"
+                                            id="partyid_6_1" value="" />
+                                        <input name="parties[6][]" data-type="6" autocomplete="off" id="party_6_1"
+                                            data-target="#partyid_6_1" value="" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd" />
+                                        <label class="ml-2">
+                                            <input type="checkbox" class="checkbox" name="partiesnotify[6][]" value="1" onclick="checkPartiesNotifyCount(this)">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
-                                <div class="col-md-4 mt-3">
+                                <div class="col-md-4 mt-3 px-2">
                                     <p class="c-gray-69 mb-1">Trucker dest.</p>
-                                    <input type="hidden" autocomplete="off" name="partiesid[9][]" id="partyid_9_1"
-                                        value=""/> 
+                                    <div class="d-flex">
+                                        <input type="hidden" autocomplete="off" name="partiesid[9][]" id="partyid_9_1"
+                                            value="" />
                                         <input name="parties[9][]" data-type="9" autocomplete="off"
-                                        data-target="#partyid_9_1" id="party_9_1" type="text"
-                                        class="typeaheadcompany bg-white br-4 b-gray-bd" value=""/>
+                                            data-target="#partyid_9_1" id="party_9_1" type="text"
+                                            class="typeaheadcompany bg-white br-4 b-gray-bd" value="" />
+                                        <label class="ml-2">
+                                            <input type="checkbox" name="partiesnotify[9][]" value="1" onclick="checkPartiesNotifyCount(this)" class="checkbox">
+                                            <span class="radio-active h-100 br-4 bg-gray-e0 d-flex hover-red px-3">
+                                                <span class="is wh-12 m-auto b-1 br-50 b-gray-75"></span>
+                                                <span class="d-none m-auto">
+                                                    <svg class="svg-sprite-icon" fill="white" width="12" height="12">
+                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                        </use>
+                                                    </svg>
+                                                </span>
+                                            </span>
+                                        </label>
+                                    </div>
                                 </div>
                             </div>
                         </div>

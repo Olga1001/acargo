@@ -609,6 +609,9 @@ textarea {
 input:not(.b-0):focus,
 textarea:not(.b-0):focus {
   border-color: var(--orange-new, #F45617) !important;
+}
+input:not(.b-0, .bb-1):focus,
+textarea:not(.b-0, .bb-1):focus {
   box-shadow: 0px 0px 8px 0px rgba(245, 70, 23, 0.25);
 }
 
@@ -17884,7 +17887,13 @@ input+.autocomplete {
 /* .scroll-action-panel.action-down {
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.15);
 } */
-
+.table__span {
+    /* display: block;
+    opacity: 0;
+    pointer-events: none;
+    position: absolute; */
+    font-size: initial;
+}
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media (min-width: 320px) {

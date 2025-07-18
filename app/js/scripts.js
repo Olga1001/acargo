@@ -143,6 +143,7 @@ $(document).ready(function () {
           input.val(selectedRange || `${picker.startDate.format(formatOne)} - ${picker.endDate.format(formatTwo)}`);
           input.parent().addClass('apply-datefilter isvalid');
   
+          $(this).trigger('change');
           if (!input.data('tabs')) return;
   
           const activeTab = picker.container.find('.radios-daterangepicker .checkbox:checked')
@@ -211,6 +212,7 @@ $(document).ready(function () {
           $(ev.currentTarget).parent().addClass('apply-datefilter isvalid');
           const format = picker.startDate.format($(ev.currentTarget).data('format') || 'DD MMM YYYY')
           $(this).val(format);
+          $(this).trigger('change');
         }).on('cancel.daterangepicker', handleCancel);
       });
     }

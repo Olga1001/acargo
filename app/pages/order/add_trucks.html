@@ -1,0 +1,2410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <title>Add New Order</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="https://test.cargo4s.com/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="../../css/libs.min.css" rel="stylesheet">
+    <link href="https://test.cargo4s.com/css/acargo/daterangepicker.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <script>
+        var baseUrl = 'https://test.cargo4s.com';
+    </script>
+</head>
+
+<body id="page-top">
+    <div class="chat-fixed d-flex align-items-end"></div>
+    <div id="wrapper" class="d-md-flex pt-md-0">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <div id="collapseSidebar" class="sidebar b-1 b-gray-e0 d-block collapse show">
+            <div class="sidebar__container bg-white p-3 scroll-y d-flex flex-column sticky-top h-100vh">
+                <div class="flex-between-center mb-4">
+                    <a href="https://test.cargo4s.com/dashboard/" class="sidebar-full">
+                        <svg class="svg-sprite-icon mx-1" fill="#F54617" width="100" height="22">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#logo">
+                            </use>
+                        </svg>
+                    </a>
+                    <button type="button" class="p-2 collapsed" data-target="#collapseSidebar" data-toggle="collapse"
+                        aria-expanded="false">
+                        <svg class="svg-sprite-icon collapsed-arrow d-md-block d-none" fill="#757575" width="20"
+                            height="10">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-1">
+                            </use>
+                        </svg>
+                        <svg class="svg-sprite-icon d-md-none" stroke="#757575" width="24" height="24">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close2">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+                <hr class="d-md-none">
+                <div class="d-md-none py-1">
+                    <div class="items-center pb-2">
+                        <img src="https://test.cargo4s.com/uploads/profiles/1/alex-dev-1737533750.png" alt="avatar"
+                            class="br-50 wh-27 b-1 b-gray-e0 mr-1">
+                        <div class="pl-1">
+                            <h3>Alex Primary ACC</h3>
+                            <p class="c-gray-75">Admin</p>
+                        </div>
+                    </div>
+                    <div class="px-2 br-4 py-1 items-center bg-gray-f5 w-fit-content">
+                        <svg class="svg-sprite-icon mr-1" fill="#F54617" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-5">
+                            </use>
+                        </svg>
+                        <p class="fs-14 weight-medium c-gray-75">Baltvia, UAB</p>
+                    </div>
+                </div>
+                <hr class="d-md-none">
+                <nav>
+                    <ul class="fs-14 weight-medium py-2">
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/dashboard/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#layout-dashboard">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/bookings/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-check-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Bookings</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">1797</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/orders/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#F54617" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#clipboard-list">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Orders</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">1190</span>
+                            </a>
+                        </li>
+                        <li class="mt-2 collapse d-block h-100" id="collapseRate">
+                            <a type="button"
+                                onclick="$(this).find('.collapsed-arrow').toggleClass('collapsed');$(this).find('.count-message').toggleClass('hide')"
+                                data-target="#collapseRate" data-toggle="collapse"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#bar-chart-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Rates</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">5</span>
+                                <svg class="svg-sprite-icon ml-auto sidebar-full collapsed-arrow collapsed "
+                                    fill="#757575" width="13" height="13">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
+                                    </use>
+                                </svg>
+                            </a>
+
+
+                            <!--                    <a type="button" onclick="$(this).find('.collapsed-arrow').toggleClass('collapsed');$(this).find('.count-message').toggleClass('hide')" data-target="#collapseRate" data-toggle="collapse" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bar-chart-2"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Rates</span>
+                        <span class="count-message position-static d-block ml-2 sidebar-full">5</span>
+                        <svg class="svg-sprite-icon ml-auto sidebar-full collapsed-arrow collapsed " fill="#757575" width="13" height="13" >
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                        </svg>
+                    </a>-->
+
+
+                            <ul class="collapse pl-4 bg-gray-f5 br-4 weight-normal" id="collapseRate">
+                                <li>
+                                    <a href="https://test.cargo4s.com/sales/rates/"
+                                        class="c-gray-75 items-center p-2"><span class="p-1">Shipping rates</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://test.cargo4s.com/requests/" class="c-gray-75 items-center p-2">
+                                        <span class="p-1">Rate requests</span>
+                                        <span class="count-message position-static d-block ml-auto">5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://test.cargo4s.com/rates/contract/"
+                                        class="c-gray-75 items-center p-2">
+                                        <span class="p-1">Quotations</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/customers/companies/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Companies</span>
+                            </a>
+                        </li>
+                        <!--                <li class="mt-2">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#file-pie-chart"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Quotations</span>
+                    </a>
+                </li>-->
+                        <!--                <li class="mt-2">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#euro-2"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Finances</span>
+                    </a>
+                </li>-->
+                        <hr class="my-3">
+
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/company/details/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#settings-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Settings</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/access/users/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-6">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Users</span>
+                            </a>
+                        </li>
+
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/customers/profile/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-6">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">User profile</span>
+                            </a>
+                        </li>
+                        <!--                <li class="mt-2 d-md-none">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Dark mode</span>
+                    </a>
+                </li>-->
+                        <li class="mt-2">
+                            <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#life-buoy">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://test.cargo4s.com/logout/"
+                    class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75 mt-auto fs-14 weight-medium">
+                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                        <use xlink:href="../../img/sprite/symbol/sprite.svg#logout">
+                        </use>
+                    </svg>
+                    <span class="pl-2 sidebar-full">Logout</span>
+                </a>
+            </div>
+        </div>
+        <header class="header bg-gray-f5 d-md-none items-center p-2 shadow-none">
+            <b class="fs-24 pl-1">Cargo4s.com</b>
+            <button type="button" class="ml-auto p-1" data-target="#collapseSidebar" data-toggle="collapse">
+                <svg class="svg-sprite-icon" stroke="#757575" width="16" height="12">
+                    <use xlink:href="../../img/sprite/symbol/sprite.svg#burger"></use>
+                </svg>
+            </button>
+        </header>
+        <div class="d-flex flex-column w-100" id="content-wrapper">
+            <header class="sticky-top z-99 bg-white d-md-flex d-none align-items-center justify-content-end get-height"
+                data-index="0">
+                <!--    <a href="javascript:void(0)" class="p-1">
+        <svg class="svg-sprite-icon" fill="#757575" width="24" height="24">
+            <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+        </svg>
+    </a>-->
+                <div class="currenty mx-3 d-lg-flex d-none">
+                    <div class="select b-0 h-100 small">
+                        <input type="hidden" name="defaultcurrency" value="2">
+                        <div class="select__item">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu br-4">
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="USD"
+                                    data-rate="1.1999" data-from-rate="1.0000" data-to-rate="0.8248"
+                                    class="select__option">
+                                    EUR->USD </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="GBP"
+                                    data-rate="0.8913" data-from-rate="1.0000" data-to-rate="1.1310"
+                                    class="select__option">
+                                    EUR->GBP </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="USD" data-to-code="EUR"
+                                    data-rate="0.8848" data-from-rate="0.8848" data-to-rate="1.0000"
+                                    class="select__option active">
+                                    USD->EUR </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="GBP" data-to-code="EUR"
+                                    data-rate="1.1910" data-from-rate="1.1910" data-to-rate="1.0000"
+                                    class="select__option">
+                                    GBP->EUR </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price weight-bold" id="default_currency_rate">
+                        0.8848 EUR </div>
+                </div>
+
+                <div class="items-center bl-1 px-3 py-2 b-gray-e0">
+                    <a href="https://test.cargo4s.com/calendar/" class="p-1">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8">
+                            </use>
+                        </svg>
+                        <!-- <div class="count-message">99+</div> -->
+                    </a>
+                    <div class="dropdown no-arrow right-sticky m-1">
+                        <a onclick="loadUserMessages(this, 'dialogs')" href="javascript:void(0)" id="messagesDropdown"
+                            class="dropdown-toggle p-1" role="button" data-toggle="dropdown">
+                            <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#message-square">
+                                </use>
+                            </svg>
+                            <div class="count-message" id="is_new_messages">2</div>
+                        </a>
+                        <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="messagesDropdown">
+                            <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                                <div class="items-center px-2">
+
+                                    <a href="javascript:void(0)" class="ml-3" onclick="muteMessages(this)">
+                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" onclick="$('#messagesDropdown').trigger('click');"
+                                        class="ml-3">
+                                        <svg class="svg-sprite-icon c-gray" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="h-dropdown">
+                                <div class="p-2">
+                                    <div class="px-1">
+                                        <input type="text" placeholder="Search" onkeyup="searchTopChat(this)" name="q"
+                                            id="top_chat_q" class="input-search py-2 h-auto b-blue-v3">
+                                    </div>
+                                </div>
+                                <ul id="top_messages"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown no-arrow ml-3 my-1 right-sticky">
+                        <a href="javascript:void(0)"
+                            class="dropdown-toggle items-center b-1 br-200 bg-light-ee b-gray-e0" id="userDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://test.cargo4s.com/uploads/profiles/1/alex-dev-1737533750.png" alt="avatar"
+                                class="br-50 wh-27 b-1 b-gray-e0 mr-1">
+                            <svg class="svg-sprite-icon mr-2" fill="#757575" width="9" height="5">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-drop-down">
+                                </use>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/profile/">
+                                <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-4">
+                                    </use>
+                                </svg>
+                                My profile
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/calendar/">
+                                <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar_2">
+                                    </use>
+                                </svg>
+                                Calendar
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/dashboard/">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous ">
+                                    </use>
+                                </svg>
+                                Dashboard
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/logout/">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous ">
+                                    </use>
+                                </svg>
+                                Logout
+                            </a>
+
+                            <!--                    <a class="dropdown-item mb-2" href="https://test.cargo4s.com/todolistnew/">
+                        <svg class="svg-sprite-icon icon-miscellaneous  mr-3 c-gray" width="15px" height="14px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                        </svg>
+                        To-do list
+                    </a>-->
+                            <!--<div class="row px-3 py-3 mt-1">-->
+
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <script>
+                function showCurrencyDefRate(event, input) {
+                    $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    event.stopPropagation();
+                    event.preventDefault();
+                    $('#default_currency_rate').html($(input).attr('data-rate') + ' ' + $(input).attr('data-to-code'));
+                    setTimeout(function () {
+                        $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    }, 10);
+                }
+            </script>
+            <div id="content">
+                <div class="container-fluid pt-0" id="container-wrapper">
+                    <div id="box" class="px-md-3 px-2 pb-4">
+                        <div class="scroll-action-panel py-1 my-md-1">
+                            <div class="overflow-md-visible py-2 w-100">
+                                <div class="px-3 py-2 bg-white items-center w-100 br-4">
+                                    <a href="#" class="mr-2 wh-40 d-flex hover-bg-light">
+                                        <svg class="svg-sprite-icon c-orange-f4 m-auto" width="18px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-2"></use>
+                                        </svg>
+                                    </a>
+                                    <nav class="breadcrumbs_v3 pl-1  scroll-x">
+                                        <ul class="d-flex">
+                                            <li class="active">
+                                                <a href="#">
+                                                    <span>
+                                                        <svg class="svg-sprite-icon mr-2" width="11px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                            </use>
+                                                        </svg>
+                                                        Orders
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="active2">
+                                                <a href="#"><span>Booking</span> </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#"><span>Pre-carriage</span> </a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#"><span>Loading</span> </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#"><span>Documents</span> </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="d-flex ml-auto" id="people-group">
+                                        <div class="d-flex people-group ml-4">
+                                            <div class="">
+                                                <button type="button" class="item collapsed" id="heading5"
+                                                    data-toggle="collapse" data-target="#collapseDropUser5">
+                                                    <p class="d-flex"> <span class="m-auto d-block">HS</span></p>
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropUser5"
+                                                        aria-labelledby="heading5" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <img src="../../img/avatars/avatar.png" alt="avatar"
+                                                                class="mx-auto mb-1 wh-57 br-50 b-1 b-gray-75">
+                                                            <p class="c-light-green mb-1">Online</p>
+                                                            <!-- c-gray-9e -->
+                                                            <p class="fs-18 text-truncate mb-1">Anna Ivanova -
+                                                                IvanovaIvanova
+                                                                lmdlkfdklbvskfdmbksmfbk</p>
+                                                            <p class="lh-1_4 c-gray-75">YALOVA FiDE TARIM URUNLERI
+                                                                PAZARLAMA
+                                                                INS.TUR.SAN.VE TIC.LTD.STI.</p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>info@cargo4s.com</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between">
+                                                                <p>+370 681 54861</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button type="button" class="item collapsed" id="heading6"
+                                                    data-toggle="collapse" data-target="#collapseDropUser6">
+                                                    <p class="d-flex"> <span class="m-auto d-block">AS</span></p>
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropUser6"
+                                                        aria-labelledby="heading6" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <img src="../../img/avatars/avatar.png" alt="avatar"
+                                                                class="mx-auto mb-1 wh-57 br-50 b-1 b-gray-75">
+                                                            <p class="c-light-green mb-1">Online</p>
+                                                            <!-- c-gray-9e -->
+                                                            <p class="fs-18 text-truncate mb-1">Anna Ivanova -
+                                                                IvanovaIvanova
+                                                                lmdlkfdklbvskfdmbksmfbk</p>
+                                                            <p class="lh-1_4 c-gray-75">YALOVA FiDE TARIM URUNLERI
+                                                                PAZARLAMA
+                                                                INS.TUR.SAN.VE TIC.LTD.STI.</p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>info@cargo4s.com</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between">
+                                                                <p>+370 681 54861</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="d-flex people-group ml-4">
+                                            <div class="">
+                                                <button type="button" class="item collapsed" id="heading1"
+                                                    data-toggle="collapse" data-target="#collapseDropUser1">
+                                                    <img src="../../img/avatars/avatar.png" alt="avatar">
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropUser1"
+                                                        aria-labelledby="heading1" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <img src="../../img/avatars/avatar.png" alt="avatar"
+                                                                class="mx-auto mb-1 wh-57 br-50 b-1 b-gray-75">
+                                                            <p class="c-light-green mb-1">Online</p>
+                                                            <!-- c-gray-9e -->
+                                                            <p class="fs-18 text-truncate mb-1">Anna Ivanova -
+                                                                IvanovaIvanova
+                                                                lmdlkfdklbvskfdmbksmfbk</p>
+                                                            <p class="lh-1_4 c-gray-75">YALOVA FiDE TARIM URUNLERI
+                                                                PAZARLAMA
+                                                                INS.TUR.SAN.VE TIC.LTD.STI.</p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>info@cargo4s.com</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between">
+                                                                <p>+370 681 54861</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button type="button" class="item collapsed" id="heading2"
+                                                    data-toggle="collapse" data-target="#collapseDropUser2">
+                                                    <img src="../../img/avatars/avatar2.png" alt="avatar">
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropUser2"
+                                                        aria-labelledby="heading2" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <img src="../../img/avatars/avatar2.png" alt="avatar"
+                                                                class="mx-auto mb-1 wh-57 br-50 b-1 b-gray-75">
+                                                            <p class="c-gray-9e mb-1">3 hours ago</p>
+                                                            <p class="fs-18 text-truncate mb-1">James Powell</p>
+                                                            <p class="lh-1_4 c-gray-75">Other Company</p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>info@cargo4s.com</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between">
+                                                                <p>+370 681 54861</p>
+                                                                <button type="button"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 ">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button type="button" class="wh-40 d-flex ml-2 hover-bg-light collapsed"
+                                        data-toggle="collapse" data-target="#collapseAddPeople">
+                                        <svg class="svg-sprite-icon c-orange-f4 m-auto" width="20px" height="20px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#userCirclePlus"></use>
+                                        </svg>
+                                    </button>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3 bg-white mb-3 br-4">
+                            <div class="items-center">
+                                <div class="row w-100">
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#package"></use>
+                                        </svg>
+                                        <p> Order No. PU24-1800-GR13</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#building-office"></use>
+                                        </svg>
+                                        <p>Compaqpeat SIA</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pin4"></use>
+                                        </svg>
+                                        <p>DAP Avlonas, GR</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#wallet"></use>
+                                        </svg>
+                                        <p>Payment terms: 14</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>Estimated ready week: 1</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>Requested delivery:</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn mb-3 py-3 h-fit">
+                                    <svg class="svg-sprite-icon absolute r-0 t-0" style="transform: rotate(-45deg)"
+                                        fill="#fff" width="18" height="18">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon mr-2" fill="#fff" width="15" height="15">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                                    </svg>
+                                    <span class="py-1">5x40'HC </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-white mb-3 br-4">
+                            <div id="not_trucked">
+                                <div class="flex-between-center pb-2">
+                                    <h2>Transocean Lietuva UAB | CUTT OFF: 06.01.2025 09:00</h2>
+
+                                    <a onclick="editContainerDates(this)" class="btn">
+                                        <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#create">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                    <div class="col-4 px-1 items-center">
+                                        <label class="mr-2 pr-1">
+                                            <input onchange="checkTrucks(this)" type="checkbox" name="containers[]"
+                                                value="3" class="checkbox">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <div>
+                                            <p class="pb-1 text-nowrap">PU24-1800-GR13 5 / 3</p>
+                                            <div class="d-flex block_resize-input">
+                                                <p class="c-gray-69 weight-medium pr-1 pb-1">Ready</p>
+                                                <div class="table__span" style="display: none;">. . . . .</div>
+                                                <input type="text" name="calendar-v1" value="14 Jan 2025"
+                                                    class="input-normal bb-1 fromdate hide p-0">
+                                                <p>14 Jan 2025</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                        <div class="d-flex">
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;">30 Nov - 30 Nov</div>
+                                                <input type="text" placeholder=". . . . ."
+                                                    class="input-normal bb-1 hide pt-0"
+                                                    value="30 Nov - 30 Nov">
+
+                                                <p>30 Nov - 30 Nov</p>
+                                            </div>
+                                            <p class="mx-3 c-gray">|</p>
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;">00:00 - 00:00</div>
+                                                <input type="text" placeholder="08:00 - 20:00"
+                                                    class="input-normal bb-1 dropdown-toggle hide pt-0"
+                                                    value="09:00 - 10:00" data-toggle="dropdown" aria-haspopup="true"
+                                                    aria-expanded="true" />
+
+                                                <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                    x-placement="bottom-start">
+                                                    <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">From</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    08:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="08:00">08:00</li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="20:00">
+                                                                            20:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">To</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    20:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="08:00">
+                                                                            08:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="20:00">20:00</li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <p>00:00 - 00:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap pb-1">Truck number:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="trucknumber[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap pb-1">Cont. release:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="cont[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                </div>
+                                <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                    <div class="col-4 px-1 items-center">
+                                        <label class="mr-2 pr-1">
+                                            <input onchange="checkTrucks(this)" type="checkbox" name="containers[]"
+                                                value="3" class="checkbox">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <div>
+                                            <p class="pb-1 text-nowrap">PU24-1800-GR13 5 / 3</p>
+                                            <div class="items-center block_resize-input">
+                                                <p class="c-gray-69 weight-medium pr-1">Ready</p>
+                                                <div class="table__span" style="display: none;">. . . . .</div>
+                                                <input type="text" name="calendar-v1" class="input-normal bb-1 fromdate"
+                                                    placeholder=". . . . .">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                        <div class="items-center">
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;"> . . . .</div>
+                                                <input type="text" placeholder=". . . . ." name="calendar-ranges" data-format-one="DD MMM" data-format-two="DD MMM"
+                                                    class="input-normal bb-1">
+                                            </div>
+                                            <p class="mx-3 c-gray d-sm-block d-none">|</p>
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;"> . . . .</div>
+                                                <input type="text" placeholder=". . . . ."
+                                                    class="input-normal bb-1 dropdown-toggle" data-toggle="dropdown"
+                                                    aria-haspopup="true" aria-expanded="true" />
+
+                                                <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                    x-placement="bottom-start">
+                                                    <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">From</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    08:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="08:00">08:00</li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="20:00">
+                                                                            20:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">To</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    20:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="08:00">
+                                                                            08:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="20:00">20:00</li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap">Truck number:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="trucknumber[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap">Cont. release:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="cont[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                </div>
+                                <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                    <div class="col-4 px-1 items-center">
+                                        <label class="mr-2 pr-1">
+                                            <input onchange="checkTrucks(this)" type="checkbox" name="containers[]"
+                                                value="3" class="checkbox">
+                                            <span class="checked-customer dark">
+                                                <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                    </use>
+                                                </svg>
+                                            </span>
+                                        </label>
+                                        <div>
+                                            <p class="pb-1 text-nowrap">PU24-1800-GR13 5 / 3</p>
+                                            <div class="items-center block_resize-input">
+                                                <p class="c-gray-69 weight-medium pr-1">Ready</p>
+                                                <div class="table__span" style="display: none;">. . . . .</div>
+                                                <input type="text" name="calendar-v1" class="input-normal bb-1 fromdate"
+                                                    placeholder=". . . . .">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3">
+                                        <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                        <div class="items-center">
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;"> . . . .</div>
+                                                <input type="text" placeholder=". . . . ." name="calendar-ranges" data-format-one="DD MMM" data-format-two="DD MMM"
+                                                    class="input-normal bb-1">
+                                            </div>
+                                            <p class="mx-3 c-gray d-sm-block d-none">|</p>
+                                            <div class="block_resize-input">
+                                                <div class="table__span" style="display: none;"> . . . .</div>
+                                                <input type="text" placeholder=". . . . ."
+                                                    class="input-normal bb-1 dropdown-toggle hide"
+                                                    data-toggle="dropdown" aria-haspopup="true" aria-expanded="true" />
+
+                                                <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                    x-placement="bottom-start">
+                                                    <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">From</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    08:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="08:00">08:00</li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="20:00">
+                                                                            20:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-6 px-1">
+                                                            <p class="fs-13 c-white mb-1">To</p>
+                                                            <div class="select h-auto b-white select-noarrow br-4">
+                                                                <div
+                                                                    class="select__item fs-13 c-white px-1 text-center">
+                                                                    20:00</div>
+                                                                <div class="select__drop">
+                                                                    <ul
+                                                                        class="select__menu small max-h-107 py-2 text-center">
+                                                                        <li class="select__option" data-value="06:00">
+                                                                            06:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="07:00">
+                                                                            07:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="08:00">
+                                                                            08:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="09:00">
+                                                                            09:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="10:00">
+                                                                            10:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="11:00">
+                                                                            11:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="12:00">
+                                                                            12:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="13:00">
+                                                                            13:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="14:00">
+                                                                            14:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="15:00">
+                                                                            15:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="16:00">
+                                                                            16:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="17:00">
+                                                                            17:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="18:00">
+                                                                            18:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="19:00">
+                                                                            19:00
+                                                                        </li>
+                                                                        <li class="select__option active"
+                                                                            data-value="20:00">20:00</li>
+                                                                        <li class="select__option" data-value="21:00">
+                                                                            21:00
+                                                                        </li>
+                                                                        <li class="select__option" data-value="22:00">
+                                                                            22:00
+                                                                        </li>
+                                                                    </ul>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <p>00:00 - 00:00</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap">Truck number:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="trucknumber[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                    <div class="col-2 d-flex align-items-end block_resize-input">
+                                        <p class="text-nowrap">Cont. release:</p>
+                                        <div class="table__span" style="display: none;">. . . . .</div>
+                                        <input type="text" class="input-normal ml-3 bb-1" name="cont[]" value=""
+                                            placeholder=". . . . .">
+                                    </div>
+                                </div>
+                                <label class="items-center py-2">
+                                    <input type="checkbox" name="checkallnottracked"
+                                        onclick="checkAllTrucks(this, '#not_trucked')" class="checkbox">
+                                    <span class="checked-customer dark mr-2">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                                        </svg>
+                                    </span>
+                                    <span class="pl-1">Select all</span>
+                                </label>
+                            </div>
+                            <div class="trucks-assign__details mt-4">
+                                <div class="row">
+                                    <div class="col-5 col-6_1440">
+                                        <div class="row">
+                                            <div class="col-6 pr-3 pt-3">
+                                                <div class="relative mt-4">
+                                                    <img src="https://test.cargo4s.com/img/countries/svg/latvia.svg"
+                                                        alt="flag" class="absolute l-0 t-center" width="16px"
+                                                        height="16px">
+                                                    <input type="text" class="input-normal pl-4 bb-1"
+                                                        placeholder="Loading place" />
+                                                    <ul class="autocomplete mt-2 py-1 max-h-215 scroll-y">
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                    </ul>
+                                                    <p class="name top">Loading place</p>
+                                                </div>
+                                                <!-- <p class="fs-14 lh-22 weight-light text-truncate">Briežuciems parish, 4595, Latvia</p> -->
+                                            </div>
+                                            <div class="col-6 pr-3 pt-3">
+                                                <div class="relative mt-4">
+                                                    <img src="https://test.cargo4s.com/img/countries/svg/lithuania.svg"
+                                                        alt="flag" class=" absolute l-0 t-center" width="16px"
+                                                        height="16px">
+                                                    <input type="text" placeholder="Delivery place..."
+                                                        class="input-normal pl-4 bb-1" />
+                                                    <ul class="autocomplete mt-2 py-1 max-h-215 scroll-y">
+                                                        <li class="select__option py-1">Rucava</li>
+                                                        <li class="select__option py-1">Rucava</li>
+                                                    </ul>
+                                                    <p class="name top">Delivery place</p>
+                                                </div>
+                                                <!-- <p class="fs-14 lh-22 weight-light text-truncate">Apt 4B 2311 North Los Robles Avenue street  </p> -->
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-7 col-6_1440 max-725">
+                                        <div class="row">
+                                            <div class="col-4 pr-3 pt-3">
+                                                <div class="relative mt-4">
+                                                    <input type="text" required="" id="ready_date"
+                                                        class="input-normal pl-0 input-date right-0 bb-1 br-0 text-left c-dark py-1 fromdate"
+                                                        name="ready_date" value="" inited="1">
+                                                    <p class="name">Cargo ready date</p>
+                                                </div>
+                                                <label class="items-center mt-1">
+                                                    <input type="checkbox" value="1" class="checkbox">
+                                                    <span class="checked-customer dark mr-2">
+                                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px"
+                                                            height="18px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                            </use>
+                                                        </svg>
+                                                    </span>
+                                                    <span class="fs-14 weight-light">Cargo is ready</span>
+                                                </label>
+                                            </div>
+                                            <div class="col-4 pr-3 pt-3">
+                                                <div class="relative mt-4">
+                                                    <input type="text" required="" id="loading_date" name="loading_date"
+                                                        class="fromdate input-normal pl-0 input-date right-0 bb-1 py-1"
+                                                        value="" inited="1">
+                                                    <p class="name">Loading date</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-4 pr-3 pt-3 max-w-170">
+                                                <div class="relative mt-4">
+                                                    <input type="text" class="input-normal pl-0 input-time
+                                                        right-0 bb-1
+                                                        dropdown-toggle" placeholder=". . . ." readonly=""
+                                                        data-from="08:00" data-to="20:00" name="loading_time"
+                                                        id="loading_time" value="08:00 - 20:00" data-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false">
+                                                    <p class="top name">Loading time</p>
+                                                    <div class="dropdown-menu p-0" aria-labelledby="dropdownTime">
+                                                        <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                            <div class="col-6 px-1">
+                                                                <p class="fs-13 c-white mb-1">From</p>
+                                                                <div class="select h-auto b-white select-noarrow br-4">
+                                                                    <div
+                                                                        class="select__item fs-13 c-white px-1 text-center">
+                                                                        08:00</div>
+                                                                    <div class="select__drop">
+                                                                        <ul
+                                                                            class="select__menu small max-h-107 py-2 text-center">
+                                                                            <li class="select__option"
+                                                                                data-value="06:00">06:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="07:00">07:00
+                                                                            </li>
+                                                                            <li class="select__option active"
+                                                                                data-value="08:00">08:00</li>
+                                                                            <li class="select__option"
+                                                                                data-value="09:00">09:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="10:00">10:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="11:00">11:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="12:00">12:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="13:00">13:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="14:00">14:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="15:00">15:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="16:00">16:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="17:00">17:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="18:00">18:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="19:00">19:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="20:00">20:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="21:00">21:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="22:00">22:00
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 px-1">
+                                                                <p class="fs-13 c-white mb-1">To</p>
+                                                                <div class="select h-auto b-white select-noarrow br-4">
+                                                                    <div
+                                                                        class="select__item fs-13 c-white px-1 text-center">
+                                                                        20:00</div>
+                                                                    <div class="select__drop">
+                                                                        <ul
+                                                                            class="select__menu small max-h-107 py-2 text-center">
+                                                                            <li class="select__option"
+                                                                                data-value="06:00">06:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="07:00">07:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="08:00">08:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="09:00">09:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="10:00">10:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="11:00">11:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="12:00">12:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="13:00">13:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="14:00">14:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="15:00">15:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="16:00">16:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="17:00">17:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="18:00">18:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="19:00">19:00
+                                                                            </li>
+                                                                            <li class="select__option active"
+                                                                                data-value="20:00">20:00</li>
+                                                                            <li class="select__option"
+                                                                                data-value="21:00">21:00
+                                                                            </li>
+                                                                            <li class="select__option"
+                                                                                data-value="22:00">22:00
+                                                                            </li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-5 col-6_1440">
+                                        <div class="row">
+                                            <div class="col-6 pr-3 pt-3 v-c__itm">
+                                                <div class="select h-fit b-0 br-0 mt-4 bb-1 arrow-r-0" inited="1">
+                                                    <svg class="svg-sprite-icon c-black-1e mx-auto absolute l-0 t-center"
+                                                        width="13px" height="14px">
+                                                        <use
+                                                            xlink:href="../../img/sprite/symbol/sprite.svg#office-building4">
+                                                        </use>
+                                                    </svg>
+                                                    <div class="select__item d-flex align-items-center pr-3">
+                                                        <input type="text" readonly="" class="input-normal pl-2 br-0"
+                                                            placeholder="Select transport rate" value="">
+                                                        <div class="fs-14 pl-0 h-auto ml-auto weight-medium lh-1">0 EUR
+                                                        </div>
+                                                    </div>
+                                                    <p class="name top">Transport rate</p>
+                                                    <div class="select__drop">
+                                                        <div class="select__menu py-3 px-2 " id="order_loading_rates">
+                                                            <div class="mb-3 empty-option">
+                                                                <p class="c-blue-gray weight-medium fs-16"><span>Not
+                                                                        found rates</span></p>
+                                                            </div><a type="button"
+                                                                onclick="addNewLandRate(this, 'origin')"
+                                                                class="btn-white w-100 p-2 mt-3">+ Add new rate</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-6 pr-3 pt-3">
+                                                <div class="relative h-fit mt-4 ">
+                                                    <input type="text" class="input-normal bb-1" value=""
+                                                        id="transporter_cont" name="cont" required>
+                                                    <p class="name">Cont.release</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-3 pt-3">
+                                        <div class="relative mt-4 ">
+                                            <input type="text" class="input-normal bb-1" required />
+                                            <p class="name">Company</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="pt-3 col-5 col-6_1440">
+                                        <div class="relative h-fit mt-4 select arrow-r-0 h-fit b-0 br-0">
+                                            <input type="text" name="loading_label"
+                                                class="select__item input-normal bb-1 "
+                                                placeholder="Select requirements" value="">
+                                            <p class="top name">Additional requirements</p>
+                                            <div class="select__drop" style="display: none;">
+                                                <ul class="select__menu">
+                                                    <li class="select__option" data-value="">Unselect requirements</li>
+                                                    <li class="select__option" data-text="FIFO terms collect"
+                                                        data-value="21">FIFO terms</li>
+                                                    <li class="select__option" data-text="Krautis nuo 26/09 iki 01/10"
+                                                        data-value="25">Krovos nr. SI2409 </li>
+                                                    <li class="select__option" data-text="loading SO39231"
+                                                        data-value="24">
+                                                        loading SO39231</li>
+                                                    <li class="select__option"
+                                                        data-text="visam siam bookingui pakrovos numeriukai: pakrovos nr. GR2385.1-10"
+                                                        data-value="26">pakrovos nr. GR2385.1-10</li>
+                                                    <li class="select__option" data-text="pakrovos nr. GR2385.1-10"
+                                                        data-value="27">pakrovos nr. GR2385.1-10</li>
+                                                    <li class="select__option" data-text="pakrovos nr. GR2385.1-10"
+                                                        data-value="28">pakrovos nr. GR2385.1-10</li>
+                                                    <li class="select__option" data-text="+4C" data-value="23">
+                                                        Temperature</li>
+                                                    <li class="select__option" data-value="add">Add New requirement</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <a href="javascript:void(0)" onclick="addTrucks(this)" id="add_trucks"
+                                    class="btn max-250 mx-auto mt-4">Order</a>
+
+                                <label class="items-center mt-3 mx-auto w-fit-content">
+                                    <input type="checkbox" value="1" class="checkbox" />
+                                    <span class="checked-customer dark mr-2">
+                                        <svg class="svg-sprite-icon c-none mx-auto" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                            </use>
+                                        </svg>
+                                    </span>
+                                    <span>Send transport order by email</span>
+                                </label>
+                            </div>
+
+                        </div>
+
+                        <div class="p-3 bg-white mb-3 br-4">
+                            <div class="items-center pb-2">
+                                <h2>Hapag LT 2X</h2>
+                                <svg class="svg-sprite-icon ml-3 mr-auto" fill="#696969" width="22" height="22">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#truck-line2"></use>
+                                </svg>
+                                <a onclick="editTruckContainers(this, 4740)" class="btn ml-2">
+                                    <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#create">
+                                        </use>
+                                    </svg>
+                                </a>
+                                <a onclick="deleteTruck(this, 4740)" class="btn ml-2">
+                                    <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#bin">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                <div class="col-4 px-1 items-center">
+                                    <a href="#" class="p-2 mr-2">
+                                        <svg class="svg-sprite-icon" fill="#696969" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div>
+                                        <p class="pb-1 text-nowrap">7 / 2</p>
+                                        <p><span class="c-gray-69 weight-medium pr-1">Ready</span> 14 Jan 2025</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                    <div class="d-flex">
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">30 Nov - 30 Nov</div>
+                                            <input type="text" placeholder=". . . . ."
+                                                class="input-normal bb-1 hide pt-0"
+                                                value="30 Nov - 30 Nov" style="width: 108.422px;">
+
+                                            <p>30 Nov - 30 Nov</p>
+                                        </div>
+                                        <p class="mx-3 c-gray">|</p>
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">09:00 - 10:00</div>
+                                            <input type="text" placeholder="08:00 - 20:00"
+                                                class="input-normal bb-1 dropdown-toggle hide pt-0"
+                                                value="09:00 - 10:00" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true" style="width: 88.4219px;">
+
+                                            <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                x-placement="bottom-start">
+                                                <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">From</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                08:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="08:00">08:00</li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="20:00">
+                                                                        20:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">To</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                20:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="08:00">
+                                                                        08:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="20:00">20:00</li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>00:00 - 00:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-end block_resize-input">
+                                    <p class="text-nowrap pb-1">Truck number:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1 hide" name="trucknumber[]" value=""
+                                        placeholder=". . . . ." >
+                                    <p class="pb-1 pl-2">3</p>
+                                </div>
+                                <div class="col-2 d-flex align-items-end block_resize-input">
+                                    <p class="text-nowrap pb-1">Cont. release:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1 hide" name="cont[]" value=""
+                                        placeholder=". . . . .">
+                                    <p class="pb-1 pl-2">0</p>
+                                </div>
+                            </div>
+                            <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                <div class="col-4 px-1 items-center">
+                                    <a href="#" class="p-2 mr-2">
+                                        <svg class="svg-sprite-icon" fill="#696969" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div>
+                                        <p class="pb-1 text-nowrap">7 / 2</p>
+                                        <p><span class="c-gray-69 weight-medium pr-1">Ready</span> 14 Jan 2025</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                    <div class="d-flex">
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">30 Nov - 30 Nov</div>
+                                            <input type="text" placeholder=". . . . ."
+                                                class="input-normal bb-1 hide pt-0"
+                                                value="30 Nov - 30 Nov" style="width: 108.422px;">
+
+                                            <p>30 Nov - 30 Nov</p>
+                                        </div>
+                                        <p class="mx-3 c-gray">|</p>
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">09:00 - 10:00</div>
+                                            <input type="text" placeholder="08:00 - 20:00"
+                                                class="input-normal bb-1 dropdown-toggle hide pt-0"
+                                                value="09:00 - 10:00" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true" style="width: 88.4219px;">
+
+                                            <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                x-placement="bottom-start">
+                                                <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">From</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                08:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="08:00">08:00</li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="20:00">
+                                                                        20:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">To</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                20:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="08:00">
+                                                                        08:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="20:00">20:00</li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p>00:00 - 00:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-end block_resize-input mt-2">
+                                    <p class="text-nowrap pb-1">Truck number:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1 hide" name="trucknumber[]" value=""
+                                        placeholder=". . . . ." >
+                                    <p class="pb-1 pl-2">3</p>
+                                </div>
+                                <div class="col-2 d-flex align-items-end block_resize-input mt-2">
+                                    <p class="text-nowrap pb-1">Cont. release:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1 hide" name="cont[]" value=""
+                                        placeholder=". . . . .">
+                                    <p class="pb-1 pl-2">0</p>
+                                </div>
+                            </div>
+                            <div class="row mx-0 b-05 br-4 hover-b hover-bg-light_02 mt-2 p-2">
+                                <div class="col-4 px-1 items-center">
+                                    <a href="#" class="p-2 mr-2">
+                                        <svg class="svg-sprite-icon" fill="#696969" width="12px" height="18px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close"></use>
+                                        </svg>
+                                    </a>
+                                    <div>
+                                        <p class="pb-1 text-nowrap">7 / 2</p>
+                                        <p><span class="c-gray-69 weight-medium pr-1">Ready</span> 14 Jan 2025</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <p class="c-gray-69 weight-medium pb-1">Loading</p>
+                                    <div class="d-flex">
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">30 Nov - 30 Nov</div>
+                                            <input type="text" placeholder=". . . . ."
+                                                class="input-normal bb-1 pt-0"
+                                                value="30 Nov - 30 Nov">
+
+                                            <p class="hide">30 Nov - 30 Nov</p>
+                                        </div>
+                                        <p class="mx-3 c-gray">|</p>
+                                        <div class="block_resize-input">
+                                            <div class="table__span" style="display: none;">09:00 - 10:00</div>
+                                            <input type="text" placeholder="08:00 - 20:00"
+                                                class="input-normal bb-1 dropdown-toggle pt-0"
+                                                value="09:00 - 10:00" data-toggle="dropdown" aria-haspopup="true"
+                                                aria-expanded="true">
+
+                                            <div class="dropdown-menu p-0" aria-labelledby="dropdownTime"
+                                                x-placement="bottom-start">
+                                                <div class="dropdown-time bg-orange-f4 row mx-0 p-2 br-4">
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">From</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                08:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="08:00">08:00</li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="20:00">
+                                                                        20:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-6 px-1">
+                                                        <p class="fs-13 c-white mb-1">To</p>
+                                                        <div class="select h-auto b-white select-noarrow br-4">
+                                                            <div class="select__item fs-13 c-white px-1 text-center">
+                                                                20:00</div>
+                                                            <div class="select__drop">
+                                                                <ul
+                                                                    class="select__menu small max-h-107 py-2 text-center">
+                                                                    <li class="select__option" data-value="06:00">
+                                                                        06:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="07:00">
+                                                                        07:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="08:00">
+                                                                        08:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="09:00">
+                                                                        09:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="10:00">
+                                                                        10:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="11:00">
+                                                                        11:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="12:00">
+                                                                        12:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="13:00">
+                                                                        13:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="14:00">
+                                                                        14:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="15:00">
+                                                                        15:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="16:00">
+                                                                        16:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="17:00">
+                                                                        17:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="18:00">
+                                                                        18:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="19:00">
+                                                                        19:00
+                                                                    </li>
+                                                                    <li class="select__option active"
+                                                                        data-value="20:00">20:00</li>
+                                                                    <li class="select__option" data-value="21:00">
+                                                                        21:00
+                                                                    </li>
+                                                                    <li class="select__option" data-value="22:00">
+                                                                        22:00
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <p class="hide">00:00 - 00:00</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-3 d-flex align-items-end block_resize-input mt-2">
+                                    <p class="text-nowrap pb-1">Truck number:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1" name="trucknumber[]" value=""
+                                        placeholder=". . . . ." >
+                                    <p class="pb-1 pl-2 hide">3</p>
+                                </div>
+                                <div class="col-2 d-flex align-items-end block_resize-input mt-2">
+                                    <p class="text-nowrap pb-1">Cont. release:</p>
+                                    <div class="table__span" style="display: none;">. . . . .</div>
+                                    <input type="text" class="input-normal ml-3 bb-1" name="cont[]" value=""
+                                        placeholder=". . . . .">
+                                    <p class="pb-1 pl-2 hide">0</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="p-3 bg-white mb-3 br-4">
+                            <div class="flex-between-center pb-2">
+                                <h2>DESTINATION TRUCKING</h2>
+                                <a onclick="editTrucksTransporter(this, 4375)" class="btn">
+                                    <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#create">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="row">
+                                <div class="col-3">
+                                    <div class="relative mt-4 ">
+                                        <input type="hidden" autocomplete="off" name="destinationbookingid" id="destinationbookingid" value="3500">
+                                        <input type="hidden" autocomplete="off" name="transporter" id="booking_transporter" value="891">
+                                        <input name="booking_transporter_str" data-disabled="1" data-type="9" autocomplete="off" data-target="#booking_transporter" id="booking_transporter_str" type="text" class="typeaheadcompany input-normal bb-1">
+                                        <p class="name">Company</p>
+                                    </div>
+                                </div>
+                                <div class="col-3">
+                                    <div class="relative mt-4 ">
+                                        <input type="text" data-disabled="1" id="booking_transport_price" name="transport_price" class="input-normal bb-1">
+                                        <p class="name">Price</p>
+                                    </div>
+                                </div>
+                                <div class="relative h-fit mt-4 select arrow-r-0 h-fit b-0 br-0 w-fit-content" >
+                                    <input type="hidden" name="transport_currency" id="booking_transport_currency" value="1">       
+                                    <input type="text" name="loading_label" class="select__item input-normal bb-1 " placeholder="Select requirements" value="EUR">
+                                    <p class="name top">Currency</p>
+                                    <div class="select__drop top">
+                                        <ul class="select__menu p-2">
+                                            <li class="select__option p-1 mb-1" data-value="1">
+                                                EUR</li>
+                                            <li class="select__option p-1 mb-1" data-value="2">
+                                                USD</li>
+                                            <li class="select__option p-1 mb-1" data-value="3">
+                                                GBP</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="flex-center mx-auto max-500">
+                            <a href="javascript:void(0)" data-value="save" onclick="sendOrderBooking(this)"
+                                class="btn white w-45 mr-2">Save </a>
+                            <a href="javascript:void(0)" data-value="next" type="button"
+                                onclick="sendOrderBooking(this)" class="btn w-45 ml-2">Save &amp; Next </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function hideContainerDates(button) {
+            $(button).blur();
+
+            $(button).attr('onclick', 'editContainerDates(this)');
+            $(button).html(`
+            <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
+            </svg>`);
+        }
+
+        function editContainerDates(button) {
+            $(button).blur();
+
+            $(button).attr('onclick', 'hideContainerDates(this)');
+            $(button).html(`
+            <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+            </svg>`);
+
+        }
+
+        function addTrucks(button) {
+            $(button).blur();
+            var data = $(button).closest('form').serialize();
+
+            lockActionButton(button);
+            $.ajax({
+                method: "POST",
+                url: baseUrl + "/exports/ajax/addordertruck/",
+                data: data,
+                success: function (res) {
+                    unlockActionButton(button, 'Order');
+                    if (res.errors.length) {
+                        $.each(res.errors, function (index, item) {
+                            showNotifyMessage('#order_notifications', item, 'error');
+                        });
+                    } else {
+
+                        $('#not_trucked').find('input[type="checkbox"]:checked').closest('li').remove();
+                        if (!$('#transporterid').prop('readonly')) {
+                            $('#transporterid').val('');
+                        }
+                        if (!$('#transporter').prop('readonly')) {
+                            $('#transporter').val('');
+                        }
+                        if (!$('#sendorder').length) {
+                            $('#sendorder').prop('checked', false)
+                        }
+                        if ($('input[name="vehicle_types[]"]').length && $('input[name="vehicle_types[]"]:checked').length) {
+                            $('input[name="vehicle_types[]"]').prop('checked', false)
+                        }
+                        $('#originbookingid').val('');
+                        if ($('#originbookingval').length) {
+                            $('#originbookingval').val('');
+                        }
+                        if ($('#loading_time').length) {
+                            $('#loading_time').val('');
+                            $('#loading_time_from').val('08:00');
+                            $('#loading_time_till').val('20:00');
+                        }
+                        if ($('#delivery_time').length) {
+                            $('#delivery_time').val('');
+                            $('#delivery_time_from').val('08:00');
+                            $('#delivery_time_till').val('20:00');
+                        }
+                        if ($('#loading_date_source').length) {
+                            $('#loading_date_source').val('');
+                            $('#loading_date').val('');
+                        }
+                        if ($('#delivery_date_source').length) {
+                            $('#delivery_date_source').val('');
+                            $('#delivery_date').val('');
+                        }
+                        if ($('#transporter_vehicle_type').length) {
+                            resetSelectDropdown($('#transporter_vehicle_type').closest('.select'));
+                        }
+                        if ($('#requirements_description').find('textarea[name="requirements"]').length) {
+                            resetSelectDropdown($('#truck_requirements'));
+                            $('#requirements_description').addClass('hide');
+                        }
+
+                        $('#transporter_price').val('');
+                        if ($('#transporter_cont').length) {
+                            $('#transporter_cont').val('');
+                        }
+                        if ($('#transporter_trailer').length) {
+                            $('#transporter_trailer').val('');
+                        }
+                        $('#assigned_containers').html(res.html);
+                        if ($('#assigned_containers').find('input.fromdate').length) {
+                            initCustomDatepicker($('#assigned_containers').find('input.fromdate'), "DD.MM.YYYY");
+                            //                        $('#assigned_containers').find('input.fromdate').datepicker({
+                            //                            format: "DD.MM.YYYY",
+                            //                            autoclose:true,
+                            //                            weekStart : 1
+                            //                        });
+                        }
+                        initSelectDropdown('#assigned_containers');
+                        checkTrucks(button);
+
+                        checkPrecarriageCompleted();
+                    }
+                }
+            });
+
+
+        }
+        function checkAllTrucks(input, container) {
+            if ($(container).length) {
+                if ($(input).prop('checked')) {
+                    $(container).find('input[type="checkbox"]').prop('checked', true);
+                } else {
+                    $(container).find('input[type="checkbox"]').prop('checked', false);
+                }
+                checkTrucks(input);
+            }
+        }
+
+        function checkTrucks(input) {
+            if ($('#not_trucked').length) {
+                if ($('#not_trucked').find('input[type="checkbox"]:checked').length) {
+                    var lastreadyvalue = 0;
+                    $.each($('#not_trucked').find('input[type="checkbox"]:checked'), function (ind, item) {
+                        if (parseInt($(item).attr('data-ready')) > lastreadyvalue) {
+                            lastreadyvalue = parseInt($(item).attr('data-ready'));
+                            $('#ready_date').val($(item).attr('data-ready-display'));
+                            $('#ready_date').trigger('change');
+                        }
+                    });
+                    $('#add_trucks').removeClass('disabled');
+                    $('.trucks-assign__details').removeClass('hide');
+                } else {
+                    $('#add_trucks').addClass('disabled');
+                    $('.trucks-assign__details').addClass('hide');
+                }
+            }
+        }
+
+        function editTruck(button, truckid){
+            $(button).blur();
+            $('.truck-item_'+truckid).find('input').prop('disabled', false);
+            $('.truck-item_'+truckid).find('.select').removeClass('disabled');
+            
+            $('.truck-item_'+truckid).find('.container-action').removeClass('hide');
+            $('.truck-item_'+truckid).find('.container-title').addClass('hide');
+            $(button).attr('onclick', 'disableTruck(this, '+truckid+')');
+            $(button).html(`
+                <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                </svg>`);
+        }
+        
+        function disableTruck(button, truckid){
+            $(button).blur();
+            
+            $('.truck-item_'+truckid).find('input[type="checkbox"]').prop('checked', false);
+            $('.truck-item_'+truckid).find('input').prop('disabled', true);
+            $('.truck-item_'+truckid).find('.select').addClass('disabled');
+            $(button).attr('onclick', 'editTruck(this, '+truckid+')');
+            $(button).html(`
+                <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                    <use xlink:href="../../img/sprite/symbol/sprite.svg#create"></use>
+                </svg>`);
+        }
+
+        function editTruckContainers(button, truckid){
+            $(button).blur();
+
+            $(button).attr('onclick', 'disableTruck(this, '+truckid+')');
+            $(button).html(`
+                <svg class="svg-sprite-icon m-1" fill="#fff" width="16" height="16">
+                    <use xlink:href="../../img/sprite/symbol/sprite.svg#check"></use>
+                </svg>`);
+
+        }
+
+
+    </script>
+    <script src="https://test.cargo4s.com/vendor/jquery/jquery.min.js"></script>
+    <script src="https://test.cargo4s.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://test.cargo4s.com/js/plugins/typeahead/typeahead.js"></script>
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>

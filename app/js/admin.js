@@ -494,6 +494,10 @@ $(document).ready(function () {
     var $this = $(this);
     resizeForText.call($this, $this.val());
   });
+  $inputs.find('input').on("change", function () {
+    var $this = $(this);
+    resizeForText.call($this, $this.val());
+  });
 });
 
 //set height

@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no">
+
+    <title>Add New Order</title><!--[if IE]>
+    <meta http-equiv="X-UA-Compatible" content="IE = edge"><![endif]-->
+
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet">
+
+    <link href="https://test.cargo4s.com/js/plugins/bootstrap-slider/bootstrap-slider.min.css" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&amp;display=swap" rel="stylesheet">
+    <link href="../../css/libs.min.css" rel="stylesheet">
+    <link href="https://test.cargo4s.com/css/acargo/daterangepicker.css" rel="stylesheet">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link href="../../css/main.css" rel="stylesheet">
+    <script>
+        var baseUrl = 'https://test.cargo4s.com';
+    </script>
+</head>
+
+<body id="page-top">
+    <div class="chat-fixed d-flex align-items-end"></div>
+    <div id="wrapper" class="d-md-flex pt-md-0">
+        <div class="overlay"></div>
+        <!-- Sidebar -->
+        <div id="collapseSidebar" class="sidebar d-block collapse show">
+            <div class="sidebar__container bg-white p-3 scroll-y d-flex flex-column sticky-top h-100vh b-1 b-gray-e0">
+                <div class="flex-between-center mb-4">
+                    <a href="https://test.cargo4s.com/dashboard/" class="sidebar-full">
+                        <svg class="svg-sprite-icon mx-1" fill="#F54617" width="100" height="22">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#logo">
+                            </use>
+                        </svg>
+                    </a>
+                    <button type="button" class="p-2 collapsed" data-target="#collapseSidebar" data-toggle="collapse"
+                        aria-expanded="false">
+                        <svg class="svg-sprite-icon collapsed-arrow d-md-block d-none" fill="#757575" width="20"
+                            height="10">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-1">
+                            </use>
+                        </svg>
+                        <svg class="svg-sprite-icon d-md-none" stroke="#757575" width="24" height="24">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close2">
+                            </use>
+                        </svg>
+                    </button>
+                </div>
+                <hr class="d-md-none">
+                <div class="d-md-none py-1">
+                    <div class="items-center pb-2">
+                        <img src="https://test.cargo4s.com/uploads/profiles/1/alex-dev-1737533750.png" alt="avatar"
+                            class="br-50 wh-27 b-1 b-gray-e0 mr-1">
+                        <div class="pl-1">
+                            <h3>Alex Primary ACC</h3>
+                            <p class="c-gray-75">Admin</p>
+                        </div>
+                    </div>
+                    <div class="px-2 br-4 py-1 items-center bg-gray-f5 w-fit-content">
+                        <svg class="svg-sprite-icon mr-1" fill="#F54617" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#user-5">
+                            </use>
+                        </svg>
+                        <p class="fs-14 weight-medium c-gray-75">Baltvia, UAB</p>
+                    </div>
+                </div>
+                <hr class="d-md-none">
+                <nav>
+                    <ul class="fs-14 weight-medium py-2">
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/dashboard/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#layout-dashboard">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Dashboard</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/bookings/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-check-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Bookings</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">1797</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/orders/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#F54617" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#clipboard-list">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Orders</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">1190</span>
+                            </a>
+                        </li>
+                        <li class="mt-2 collapse d-block h-100" id="collapseRate">
+                            <a type="button"
+                                onclick="$(this).find('.collapsed-arrow').toggleClass('collapsed');$(this).find('.count-message').toggleClass('hide')"
+                                data-target="#collapseRate" data-toggle="collapse"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#bar-chart-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Rates</span>
+                                <span class="count-message position-static d-block ml-2 sidebar-full">5</span>
+                                <svg class="svg-sprite-icon ml-auto sidebar-full collapsed-arrow collapsed "
+                                    fill="#757575" width="13" height="13">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2">
+                                    </use>
+                                </svg>
+                            </a>
+
+
+                            <!--                    <a type="button" onclick="$(this).find('.collapsed-arrow').toggleClass('collapsed');$(this).find('.count-message').toggleClass('hide')" data-target="#collapseRate" data-toggle="collapse" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#bar-chart-2"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Rates</span>
+                        <span class="count-message position-static d-block ml-2 sidebar-full">5</span>
+                        <svg class="svg-sprite-icon ml-auto sidebar-full collapsed-arrow collapsed " fill="#757575" width="13" height="13" >
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-up-2"></use>
+                        </svg>
+                    </a>-->
+
+
+                            <ul class="collapse pl-4 bg-gray-f5 br-4 weight-normal" id="collapseRate">
+                                <li>
+                                    <a href="https://test.cargo4s.com/sales/rates/"
+                                        class="c-gray-75 items-center p-2"><span class="p-1">Shipping rates</span></a>
+                                </li>
+                                <li>
+                                    <a href="https://test.cargo4s.com/requests/" class="c-gray-75 items-center p-2">
+                                        <span class="p-1">Rate requests</span>
+                                        <span class="count-message position-static d-block ml-auto">5</span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://test.cargo4s.com/rates/contract/"
+                                        class="c-gray-75 items-center p-2">
+                                        <span class="p-1">Quotations</span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/customers/companies/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#building-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Companies</span>
+                            </a>
+                        </li>
+                        <!--                <li class="mt-2">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#file-pie-chart"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Quotations</span>
+                    </a>
+                </li>-->
+                        <!--                <li class="mt-2">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#euro-2"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Finances</span>
+                    </a>
+                </li>-->
+                        <hr class="my-3">
+
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/company/details/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#settings-2">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Settings</span>
+                            </a>
+                        </li>
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/access/users/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-6">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Users</span>
+                            </a>
+                        </li>
+
+                        <li class="mt-2">
+                            <a href="https://test.cargo4s.com/customers/profile/"
+                                class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-6">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">User profile</span>
+                            </a>
+                        </li>
+                        <!--                <li class="mt-2 d-md-none">
+                    <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                        <svg class="svg-sprite-icon" fill="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+                        </svg>
+                        <span class="pl-2 sidebar-full">Dark mode</span>
+                    </a>
+                </li>-->
+                        <li class="mt-2">
+                            <a href="javascript:void(0)" class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75">
+                                <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#life-buoy">
+                                    </use>
+                                </svg>
+                                <span class="pl-2 sidebar-full">Support</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <a href="https://test.cargo4s.com/logout/"
+                    class="items-center p-2 br-4 hover-bg_f5_10 c-gray-75 mt-auto fs-14 weight-medium">
+                    <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                        <use xlink:href="../../img/sprite/symbol/sprite.svg#logout">
+                        </use>
+                    </svg>
+                    <span class="pl-2 sidebar-full">Logout</span>
+                </a>
+            </div>
+        </div>
+        <header class="header bg-gray-f5 d-md-none items-center p-2 shadow-none">
+            <b class="fs-24 pl-1">Cargo4s.com</b>
+            <button type="button" class="ml-auto p-1" data-target="#collapseSidebar" data-toggle="collapse">
+                <svg class="svg-sprite-icon" stroke="#757575" width="16" height="12">
+                    <use xlink:href="../../img/sprite/symbol/sprite.svg#burger"></use>
+                </svg>
+            </button>
+        </header>
+        <div class="d-flex flex-column w-100" id="content-wrapper">
+            <header class="sticky-top z-99 bg-white d-md-flex d-none align-items-center justify-content-end get-height"
+                data-index="0">
+                <!--    <a href="javascript:void(0)" class="p-1">
+        <svg class="svg-sprite-icon" fill="#757575" width="24" height="24">
+            <use xlink:href="../../img/sprite/symbol/sprite.svg#moon"></use>
+        </svg>
+    </a>-->
+                <div class="currenty mx-3 d-lg-flex d-none">
+                    <div class="select b-0 h-100 small">
+                        <input type="hidden" name="defaultcurrency" value="2">
+                        <div class="select__item">USD</div>
+                        <div class="select__drop ">
+                            <ul class="select__menu br-4">
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="USD"
+                                    data-rate="1.1999" data-from-rate="1.0000" data-to-rate="0.8248"
+                                    class="select__option">
+                                    EUR->USD </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="EUR" data-to-code="GBP"
+                                    data-rate="0.8913" data-from-rate="1.0000" data-to-rate="1.1310"
+                                    class="select__option">
+                                    EUR->GBP </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="USD" data-to-code="EUR"
+                                    data-rate="0.8848" data-from-rate="0.8848" data-to-rate="1.0000"
+                                    class="select__option active">
+                                    USD->EUR </li>
+                                <li onclick="showCurrencyDefRate(event, this)" data-from-code="GBP" data-to-code="EUR"
+                                    data-rate="1.1910" data-from-rate="1.1910" data-to-rate="1.0000"
+                                    class="select__option">
+                                    GBP->EUR </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="price weight-bold" id="default_currency_rate">
+                        0.8848 EUR </div>
+                </div>
+
+                <div class="items-center bl-1 px-3 py-2 b-gray-e0">
+                    <a href="https://test.cargo4s.com/calendar/" class="p-1">
+                        <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8">
+                            </use>
+                        </svg>
+                        <!-- <div class="count-message">99+</div> -->
+                    </a>
+                    <div class="dropdown no-arrow right-sticky m-1">
+                        <a onclick="loadUserMessages(this, 'dialogs')" href="javascript:void(0)" id="messagesDropdown"
+                            class="dropdown-toggle p-1" role="button" data-toggle="dropdown">
+                            <svg class="svg-sprite-icon" stroke="#757575" width="20" height="20">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#message-square">
+                                </use>
+                            </svg>
+                            <div class="count-message" id="is_new_messages">2</div>
+                        </a>
+                        <div class="dropdown-list dropdown-menu animated--grow-in" aria-labelledby="messagesDropdown">
+                            <div class="d-flex justify-content-between align-items-center px-1 py-2 bg-blue-v6">
+                                <h6 class="px-2 fs-14 weight-medium c-blue ">Messages</h6>
+                                <div class="items-center px-2">
+
+                                    <a href="javascript:void(0)" class="ml-3" onclick="muteMessages(this)">
+                                        <svg class="svg-sprite-icon c-gray" width="14px" height="14px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#subway_sound">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                    <a href="javascript:void(0)" onclick="$('#messagesDropdown').trigger('click');"
+                                        class="ml-3">
+                                        <svg class="svg-sprite-icon c-gray" width="10px" height="10px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#close">
+                                            </use>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="h-dropdown">
+                                <div class="p-2">
+                                    <div class="px-1">
+                                        <input type="text" placeholder="Search" onkeyup="searchTopChat(this)" name="q"
+                                            id="top_chat_q" class="input-search py-2 h-auto b-blue-v3">
+                                    </div>
+                                </div>
+                                <ul id="top_messages"></ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="dropdown no-arrow ml-3 my-1 right-sticky">
+                        <a href="javascript:void(0)"
+                            class="dropdown-toggle items-center b-1 br-200 bg-light-ee b-gray-e0" id="userDropdown"
+                            role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <img src="https://test.cargo4s.com/uploads/profiles/1/alex-dev-1737533750.png" alt="avatar"
+                                class="br-50 wh-27 b-1 b-gray-e0 mr-1">
+                            <svg class="svg-sprite-icon mr-2" fill="#757575" width="9" height="5">
+                                <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-drop-down">
+                                </use>
+                            </svg>
+                        </a>
+                        <div class="dropdown-menu shadow animated--grow-in pt-3" aria-labelledby="userDropdown">
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/profile/">
+                                <svg class="svg-sprite-icon icon-user-4 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#user-4">
+                                    </use>
+                                </svg>
+                                My profile
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/calendar/">
+                                <svg class="svg-sprite-icon icon-calendar_2 mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar_2">
+                                    </use>
+                                </svg>
+                                Calendar
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/dashboard/">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous ">
+                                    </use>
+                                </svg>
+                                Dashboard
+                            </a>
+                            <a class="dropdown-item mb-2" href="https://test.cargo4s.com/logout/">
+                                <svg class="svg-sprite-icon icon-miscellaneous mr-3 c-gray" width="15px" height="14px">
+                                    <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous ">
+                                    </use>
+                                </svg>
+                                Logout
+                            </a>
+
+                            <!--                    <a class="dropdown-item mb-2" href="https://test.cargo4s.com/todolistnew/">
+                        <svg class="svg-sprite-icon icon-miscellaneous  mr-3 c-gray" width="15px" height="14px">
+                            <use xlink:href="../../img/sprite/symbol/sprite.svg#miscellaneous "></use>
+                        </svg>
+                        To-do list
+                    </a>-->
+                            <!--<div class="row px-3 py-3 mt-1">-->
+
+                            <!--</div>-->
+                        </div>
+                    </div>
+
+                </div>
+            </header>
+            <script>
+                function showCurrencyDefRate(event, input) {
+                    $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    event.stopPropagation();
+                    event.preventDefault();
+                    $('#default_currency_rate').html($(input).attr('data-rate') + ' ' + $(input).attr('data-to-code'));
+                    setTimeout(function () {
+                        $(input).closest('.select').find('.select__item').html($(input).attr('data-from-code'));
+                    }, 10);
+                }
+            </script>
+            <div id="content">
+                <div class="container-fluid pt-0" id="container-wrapper">
+                    <div id="box" class="px-md-3 px-2 pb-4">
+                        <div class="scroll-action-panel py-1 my-md-1">
+                            <div class="overflow-md-visible py-2 w-100">
+                                <div class="px-3 py-2 bg-white items-center w-100 br-4">
+                                    <a href="#" class="mr-2 wh-40 d-flex hover-bg-light">
+                                        <svg class="svg-sprite-icon c-orange-f4 m-auto" width="18px" height="15px">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-left-2"></use>
+                                        </svg>
+                                    </a>
+                                    <nav class="breadcrumbs_v3 pl-1  scroll-x">
+                                        <ul class="d-flex">
+                                            <li class="active">
+                                                <a href="#">
+                                                    <span>
+                                                        <svg class="svg-sprite-icon mr-2" width="11px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                            </use>
+                                                        </svg>
+                                                        Orders
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="item">
+                                                <a href="#"><span>Booking</span> </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#"><span>Pre-carriage</span> </a>
+                                            </li>
+                                            <li class="active">
+                                                <a href="#">
+                                                    <span>
+                                                        <svg class="svg-sprite-icon mr-2" width="11px" height="11px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                            </use>
+                                                        </svg>
+                                                        Loading
+                                                    </span>
+                                                </a>
+                                            </li>
+                                            <li class="">
+                                                <a href="#"><span>Documents</span> </a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="d-flex ml-auto">
+                                        <input type="hidden" name="completed" value="1">
+                                        <a href="javascript:void(0)" id="complete_order_step_button"
+                                            onclick="markStepCompleted(this, 'order')" data-value="COMPLETED"
+                                            type="button" class="btn w-110 ml-2">COMPLETED</a>
+                                    </div>
+                                    <div class="d-flex ml-auto" id="people-group">
+                                        <div class="d-flex people-group ml-4">
+                                            <div class="">
+                                                <button type="button" class="item isOnline collapsed"
+                                                    id="headingAdmin75" data-toggle="collapse"
+                                                    data-target="#collapseDropAdmin75">
+                                                    <p class="d-flex"> <span class="m-auto d-block">DK</span></p>
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropAdmin75"
+                                                        aria-labelledby="headingAdmin75" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <p class="d-flex wh-57 br-50 b-1 b-gray-75 mx-auto mb-1">
+                                                                <span class="m-auto d-block">DK</span>
+                                                            </p>
+                                                            <p class=" c-light-green mb-1">
+                                                                Online </p>
+                                                            <!-- c-gray-9e -->
+                                                            <p class="fs-18 text-truncate mb-1">
+                                                                Dominyka Kazlauskaitė - Sales </p>
+                                                            <p class="lh-1_4 c-gray-75"></p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>dominyka@...argo4s.com</p>
+                                                                <button type="button" data-toggle="tooltip"
+                                                                    data-value="dominyka@cargo4s.com"
+                                                                    title="Copy to clipboard: dominyka@cargo4s.com"
+                                                                    onclick="copyText(this, event)"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 flex-shrink-0">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>+370 673 64 140</p>
+                                                                <button type="button" data-toggle="tooltip"
+                                                                    data-value="+370 673 64 140"
+                                                                    title="Copy to clipboard: +370 673 64 140"
+                                                                    onclick="copyText(this, event)"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 flex-shrink-0">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-10 mx-auto">
+                                                                <button type="button"
+                                                                    onclick="loadUserDialog(this, 75, 0, 1);"
+                                                                    class="w-100 py-2_5 btn-light flex-center lh-1_4">
+                                                                    <svg class="svg-sprite-icon c-orange-f4 mr-2"
+                                                                        width="16px" height="16px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <span>Start Chat</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="">
+                                                <button type="button" class="item isOnline collapsed"
+                                                    id="headingAdmin27" data-toggle="collapse"
+                                                    data-target="#collapseDropAdmin27">
+                                                    <p class="d-flex"> <span class="m-auto d-block">SV</span></p>
+                                                </button>
+                                                <div class="relative">
+                                                    <div class="collapse weight-medium fs-13" id="collapseDropAdmin27"
+                                                        aria-labelledby="headingAdmin27" data-parent="#people-group">
+                                                        <div class="p-3 text-center ">
+                                                            <p class="d-flex wh-57 br-50 b-1 b-gray-75 mx-auto mb-1">
+                                                                <span class="m-auto d-block">SV</span>
+                                                            </p>
+                                                            <p class=" c-light-green mb-1">
+                                                                Online </p>
+                                                            <!-- c-gray-9e -->
+                                                            <p class="fs-18 text-truncate mb-1">
+                                                                Svetlana Vlasova - Sales </p>
+                                                            <p class="lh-1_4 c-gray-75"></p>
+                                                        </div>
+                                                        <div class="p-2 bg-gray-f5 row mx-0 text-truncate-all">
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>svetlana@...argo4s.com</p>
+                                                                <button type="button" data-toggle="tooltip"
+                                                                    data-value="svetlana@cargo4s.com"
+                                                                    title="Copy to clipboard: svetlana@cargo4s.com"
+                                                                    onclick="copyText(this, event)"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 flex-shrink-0">
+                                                                    <svg class="svg-sprite-icon c-black-1e "
+                                                                        width="12px" height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div
+                                                                class="col-10 mx-auto items-center justify-content-between mb-2">
+                                                                <p>+370 6096 7686</p>
+                                                                <button type="button" data-toggle="tooltip"
+                                                                    data-value="+370 6096 7686"
+                                                                    title="Copy to clipboard: +370 6096 7686"
+                                                                    onclick="copyText(this, event)"
+                                                                    class="p-1 bg-light-ee hover-bg-gray-d6 flex-shrink-0">
+                                                                    <svg class="svg-sprite-icon c-black-1e" width="12px"
+                                                                        height="12px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#copy2">
+                                                                        </use>
+                                                                    </svg>
+                                                                </button>
+                                                            </div>
+                                                            <div class="col-10 mx-auto">
+                                                                <button type="button"
+                                                                    onclick="loadUserDialog(this, 27, 0, 1);"
+                                                                    class="w-100 py-2_5 btn-light flex-center lh-1_4">
+                                                                    <svg class="svg-sprite-icon c-orange-f4 mr-2"
+                                                                        width="16px" height="16px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#chatTeardropDots">
+                                                                        </use>
+                                                                    </svg>
+                                                                    <span>Start Chat</span>
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="px-3 pt-3 bg-white mb-3 br-4">
+                            <div class="items-center">
+                                <div class="row w-100">
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#package"></use>
+                                        </svg>
+                                        <p> Order No. PU24-1800-GR13</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#building-office"></use>
+                                        </svg>
+                                        <p>Compaqpeat SIA</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#pin4"></use>
+                                        </svg>
+                                        <p>DAP Avlonas, GR</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" fill="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#wallet"></use>
+                                        </svg>
+                                        <p>Payment terms: 14</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>Estimated ready week: 1</p>
+                                    </div>
+                                    <div class="col-lg-4 col-sm-6 items-center mb-3">
+                                        <svg class="svg-sprite-icon mr-2" stroke="#696969" width="15" height="18">
+                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#calendar-8"></use>
+                                        </svg>
+                                        <p>Requested delivery:</p>
+                                    </div>
+                                </div>
+                                <button type="button" class="btn mb-3 py-3 h-fit">
+                                    <svg class="svg-sprite-icon absolute r-0 t-0" style="transform: rotate(-45deg)"
+                                        fill="#fff" width="18" height="18">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#arrow-right-3"></use>
+                                    </svg>
+                                    <svg class="svg-sprite-icon mr-2" fill="#fff" width="15" height="15">
+                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#boat5"></use>
+                                    </svg>
+                                    <span class="py-1">5x40'HC </span>
+                                </button>
+                            </div>
+                        </div>
+
+                        <div class="p-3 bg-white mb-3 br-4">
+                            <h2 class="pb-2">Loading</h2>
+                            <table class="mt-2 fs-14 w-100" valign="middle">
+                                <tbody>
+                                    <tr class="bg-gray-69-20 weight-medium">
+                                        <th class="p-2">Order</th>
+                                        <th class="p-2">Status</th>
+                                        <th class="p-2">Loading date</th>
+                                        <th class="p-2">Container</th>
+                                        <th class="p-2">Truck</th>
+                                        <th class="p-2">Cargo weight, kg</th>
+                                    </tr>
+                                    <tr class="b-05">
+                                        <td class="py-1 px-2 align-middle">
+                                            <a href="#" onclick="addLoading(this, 2)">PU24-1800-GR13 7
+                                                / 2 </a>
+                                            <ul>
+                                                <li>
+                                                    <a href="javascript:void(0)" class="replace-click" onclick="" data-onclick="printCRM(this, 4375, 2)">1.  Print  CMR</a>
+                                                </li>
+                                                <li>
+                                                    <a href="javascript:void(0)" class="completed-hide hide"
+                                                        onclick="addLoadingDocuments(this, 2)">+ Add invoice</a>
+                                                </li>
+                                            </ul>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <div
+                                                class="min-w-80 fs-13 c-orange-f4 p-2 bg-orange-f4_20 w-fit-content text-center my-auto">
+                                                Transport assigned</div>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">18 Apr. 2022</td>
+                                        <td class="py-1 px-2 align-middle">ONEU5022740</td>
+                                        <td class="py-1 px-2 align-middle">LEN235/SN365</td>
+                                        <td class="py-1 px-2 align-middle">25552</td>
+                                    </tr>
+                                    <tr class="b-05">
+                                        <td class="py-1 px-2 align-middle">OR - AA879942855</td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <div
+                                                class="min-w-80 fs-13 p-2 bg-gray-69-20 w-fit-content text-center my-auto">
+                                                Transport assigned</div>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">18 Apr. 2022</td>
+                                        <td class="py-1 px-2 align-middle"></td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <p class="pb-1">KL189765 </p>
+                                            <p>Alexey Ivanov</p>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle"></td>
+                                    </tr>
+                                    <tr class="b-05">
+                                        <td class="py-1 px-2 align-middle">OR - AA879942855</td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <div
+                                                class="min-w-80 fs-13 c-orange-f4 p-2 bg-orange-f4_20 w-fit-content text-center my-auto">
+                                                Awaiting</div>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">18 Apr. 2022</td>
+                                        <td class="py-1 px-2 align-middle"></td>
+                                        <td class="py-1 px-2 align-middle"></td>
+                                        <td class="py-1 px-2 align-middle"></td>
+                                    </tr>
+                                    <tr class="b-05">
+                                        <td class="py-1 px-2 align-middle">OR - AA879942855</td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <div
+                                                class="min-w-80 fs-13 p-2 bg-gray-69-20 w-fit-content text-center my-auto">
+                                                Completed</div>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">18 Apr. 2022</td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <p class="pb-1">ВВ-879942855</p>
+                                            <p><span class="weight-medium fs-13">Seal </span> 942855</p>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">
+                                            <p class="pb-1">KL189765 </p>
+                                            <p>Alexey Ivanov</p>
+                                        </td>
+                                        <td class="py-1 px-2 align-middle">1250</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="flex-center mx-auto max-500">
+                            <a href="javascript:void(0)" data-value="save" onclick="sendOrderBooking(this)"
+                                class="btn white w-45 mr-2">Save </a>
+                            <a href="javascript:void(0)" data-value="next" type="button"
+                                onclick="sendOrderBooking(this)" class="btn w-45 ml-2">Save &amp; Next </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://test.cargo4s.com/vendor/jquery/jquery.min.js"></script>
+    <script src="https://test.cargo4s.com/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/momentjs/latest/moment.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"></script>
+    <script src="https://test.cargo4s.com/js/plugins/typeahead/typeahead.js"></script>
+    <script src="../../js/admin.js"></script>
+    <script src="../../js/scripts.js"></script>
+</body>
+
+</html>

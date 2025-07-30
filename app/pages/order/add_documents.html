@@ -762,8 +762,8 @@
                                         </th>
                                         <th class="p-2"></th>
                                     </tr>
-                                </thead> 
-                                <tbody>
+                                </thead>
+                                <tbody id="other_documents">
                                     <tr class="b-05 hover-b-orange hover-bg-light_02">
                                         <td class="py-1 px-2 align-middle">
                                             <div class="lh-22 px-1">Shipping Line Instructions</div>
@@ -784,97 +784,94 @@
                                                 </a>
                                             </p>
                                         </td>
+                                        <td class="py-1 px-2 align-middle">Client / Agent</td>
                                         <td class="py-1 px-2 align-middle">
-                                            <div class="select h-fit b-0 br-0 not-arrow">
-                                                <div class="d-flex select__item fs-14 lh-1_4 p-0 c-dark">Client / Agent
-                                                </div>
-                                                <div class="select__drop min-w-285">
-                                                    <div class="select__menu p-2 h-auto">
-
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Select all</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox" checked="">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Agent</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox" checked="">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Client</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Shipper</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Customs broker</span>
-                                                        </label>
-                                                        <div class="d-flex mt-3 p-1">
-                                                            <div class="w-50 pr-2">
-                                                                <button
-                                                                    class="btn-white p-2 min-w-auto h-fit w-100 lh-22"
-                                                                    type="button">Cancel</button>
-                                                            </div>
-                                                            <div class="w-50 pl-2">
-                                                                <button
-                                                                    class="btn-aquamarine p-2 min-w-auto w-100 lh-22 h-100 "
-                                                                    type="button">Save</button>
+                                            <div class="items-center justify-content-end ">
+                                                <div class="select h-fit b-0 not-arrow w-fit-content ml-1">
+                                                    <a class="p-1 d-flex select__item lh-1 min-w-auto">
+                                                        <svg class="svg-sprite-icon c-gray-69" width="14px"
+                                                            height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#share2">
+                                                            </use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="select__drop min-w-285 right">
+                                                        <div class="select__menu p-2 h-auto">
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Select all</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox" checked="">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Agent</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox" checked="">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Client</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Shipper</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Customs broker</span>
+                                                            </label>
+                                                            <div class="d-flex mt-3 p-1">
+                                                                <div class="w-50 pr-2">
+                                                                    <button
+                                                                        class="btn-white p-2 min-w-auto h-fit w-100 lh-22"
+                                                                        type="button">Cancel</button>
+                                                                </div>
+                                                                <div class="w-50 pl-2">
+                                                                    <button
+                                                                        class="btn-aquamarine p-2 min-w-auto w-100 lh-22 h-100 "
+                                                                        type="button">Save</button>
+                                                                </div>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-                                        </td>
-                                        <td class="py-1 px-2 align-middle">
-                                            <div class="d-flex justify-content-end">
-                                                <a href="#" class="p-1 ml-1">
-                                                    <svg class="svg-sprite-icon c-gray-69" width="14px" height="16px">
-                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#share2">
-                                                        </use>
-                                                    </svg>
-                                                </a>
                                                 <a href="#" class="p-1 ml-1">
                                                     <svg class="svg-sprite-icon c-gray-69" width="17px" height="15px">
                                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#print2">
@@ -901,103 +898,101 @@
                                                 + Add document
                                             </a>
                                         </td>
+                                        <td class="py-1 px-2 align-middle">Client / Agent</td>
                                         <td class="py-1 px-2 align-middle">
-                                            <div class="select h-fit b-0 br-0 not-arrow">
-                                                <div class="d-flex select__item fs-14 lh-1_4 p-0 c-dark">Client / Agent
-                                                </div>
-                                                <div class="select__drop min-w-285">
-                                                    <div class="select__menu p-2 h-auto">
-
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Select all</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox" checked="">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Agent</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox" checked="">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Client</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Shipper</span>
-                                                        </label>
-                                                        <label class="items-center px-1 mt-2">
-                                                            <input type="checkbox" class="checkbox">
-                                                            <span class="checked-customer dark mr-2">
-                                                                <svg class="svg-sprite-icon c-white mx-auto"
-                                                                    width="12px" height="18px">
-                                                                    <use
-                                                                        xlink:href="../../img/sprite/symbol/sprite.svg#check">
-                                                                    </use>
-                                                                </svg>
-                                                            </span>
-                                                            <span class="pl-1">Customs broker</span>
-                                                        </label>
-                                                        <div class="d-flex mt-3 p-1">
-                                                            <div class="w-50 pr-2">
-                                                                <button
-                                                                    class="btn-white p-2 min-w-auto h-fit w-100 lh-22"
-                                                                    type="button">Cancel</button>
-                                                            </div>
-                                                            <div class="w-50 pl-2">
-                                                                <button
-                                                                    class="btn-aquamarine p-2 min-w-auto w-100 lh-22 h-100 "
-                                                                    type="button">Save</button>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </td>
-                                        <td class="py-1 px-2 align-middle">
-                                            <div class="d-flex justify-content-end">
+                                            <div class="items-center justify-content-end">
                                                 <a href="#" class="p-1 ml-1">
                                                     <svg class="svg-sprite-icon c-gray-69" width="17px" height="15px">
                                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#create3">
                                                         </use>
                                                     </svg>
                                                 </a>
-                                                <a href="#" class="p-1 ml-1">
-                                                    <svg class="svg-sprite-icon c-gray-69" width="14px" height="16px">
-                                                        <use xlink:href="../../img/sprite/symbol/sprite.svg#share2">
-                                                        </use>
-                                                    </svg>
-                                                </a>
+                                                <div class="select h-fit b-0 not-arrow w-fit-content ml-1">
+                                                    <a class="p-1 d-flex select__item lh-1 min-w-auto">
+                                                        <svg class="svg-sprite-icon c-gray-69" width="14px"
+                                                            height="16px">
+                                                            <use xlink:href="../../img/sprite/symbol/sprite.svg#share2">
+                                                            </use>
+                                                        </svg>
+                                                    </a>
+                                                    <div class="select__drop min-w-285 right">
+                                                        <div class="select__menu p-2 h-auto">
+
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Select all</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox" checked="">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Agent</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox" checked="">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Client</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Shipper</span>
+                                                            </label>
+                                                            <label class="items-center px-1 mt-2">
+                                                                <input type="checkbox" class="checkbox">
+                                                                <span class="checked-customer dark mr-2">
+                                                                    <svg class="svg-sprite-icon c-white mx-auto"
+                                                                        width="12px" height="18px">
+                                                                        <use
+                                                                            xlink:href="../../img/sprite/symbol/sprite.svg#check">
+                                                                        </use>
+                                                                    </svg>
+                                                                </span>
+                                                                <span class="pl-1">Customs broker</span>
+                                                            </label>
+                                                            <div class="d-flex mt-3 p-1">
+                                                                <div class="w-50 pr-2">
+                                                                    <button
+                                                                        class="btn-white p-2 min-w-auto h-fit w-100 lh-22"
+                                                                        type="button">Cancel</button>
+                                                                </div>
+                                                                <div class="w-50 pl-2">
+                                                                    <button
+                                                                        class="btn-aquamarine p-2 min-w-auto w-100 lh-22 h-100 "
+                                                                        type="button">Save</button>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                                 <a href="#" class="p-1 ml-1">
                                                     <svg class="svg-sprite-icon c-gray-69" width="17px" height="15px">
                                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#print2">
@@ -1133,11 +1128,10 @@
                                         </use>
                                     </svg>
                                 </a>
-                                <a href="javascript:void(0)" onclick="deleteOrderCourier(this, false)"
-                                    class="btn ml-2">
+                                <a href="javascript:void(0)" onclick="deleteOrderCourier(this, false)" class="btn ml-2">
                                     <svg class="svg-sprite-icon m-1" fill="#fff" width="14" height="14">
                                         <use xlink:href="../../img/sprite/symbol/sprite.svg#bin2"></use>
-                                    </svg> 
+                                    </svg>
                                 </a>
                             </div>
                             <div class="row mx--1">

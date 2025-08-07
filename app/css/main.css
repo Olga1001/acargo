@@ -1721,8 +1721,16 @@ button:focus {
   color: var(--orange-new, #F45617) !important;
 }
 
-.checkbox:checked ~ .checkbox__fill--gray {
+.checkbox:checked ~ .checkbox__fill--gray[fill] {
   fill: #757575!important;
+}
+
+.checkbox:checked ~ .checkbox__fill--blue[fill] {
+  fill: #2388E4 !important;
+}
+
+.checkbox:checked ~ .checkbox__fill--blue[stroke] {
+  stroke: #2388E4 !important;
 }
 
 .checkbox:checked~.check-method {

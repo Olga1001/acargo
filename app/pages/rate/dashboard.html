@@ -794,12 +794,69 @@
                                         </a>
                                     </div>
                                     <div class="d-lg-flex align-items-center my-lg-auto mt-auto">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="207" height="207" viewBox="0 0 208 207" fill="none" class="d-flex mb-lg-0 mb-4 mx-lg-0 mx-auto">
-                                            <path d="M180.865 34.1887C169.466 21.5482 155.127 11.9139 139.116 6.13909C123.104 0.3643 105.916 -1.37269 89.0735 1.08198C72.2308 3.53665 56.2534 10.1072 42.5565 20.2116C28.8597 30.3161 17.8662 43.6425 10.5498 59.0105C3.23349 74.3785 -0.17987 91.3136 0.612101 108.316C1.40407 125.318 6.37693 141.863 15.0902 156.484C23.8034 171.105 35.9882 183.352 50.565 192.139C65.1418 200.927 81.6609 205.984 98.6589 206.862L102.149 139.323C96.2577 139.019 90.5326 137.266 85.4805 134.221C80.4285 131.175 76.2055 126.931 73.1857 121.863C70.1659 116.796 68.4424 111.062 68.1679 105.169C67.8934 99.2765 69.0764 93.4071 71.6121 88.0808C74.1478 82.7546 77.9579 78.136 82.705 74.634C87.452 71.132 92.9894 68.8548 98.8268 68.004C104.664 67.1533 110.621 67.7553 116.17 69.7567C121.719 71.7581 126.689 75.0972 130.64 79.4781L180.865 34.1887Z" fill="#F54617"/>
-                                            <path d="M186.444 40.9277C195.62 53.0186 202.025 66.9799 205.204 81.8221C208.384 96.6644 208.259 112.024 204.84 126.813L138.949 111.58C140.134 106.454 140.177 101.131 139.075 95.9869C137.973 90.8429 135.754 86.0042 132.573 81.8137L186.444 40.9277Z" fill="#1E1E1E"/>
-                                            <path d="M203.25 132.855C198.015 150.556 188.14 166.535 174.651 179.135L128.486 129.714C133.161 125.347 136.584 119.809 138.398 113.674L203.25 132.855Z" fill="#585352"/>
-                                            <path d="M169.626 183.534C151.903 198.066 129.859 206.305 106.949 206.958L105.022 139.356C112.962 139.13 120.602 136.275 126.745 131.238L169.626 183.534Z" fill="#BDBDBD"/>
-                                        </svg>
+                                        <svg id="donutChart" width="206" height="206" viewBox="0 0 206 206" style="transform: rotate(90deg);"  class="d-flex mb-lg-0 mb-4 mx-lg-0 mx-auto"></svg>
+
+                                        <script>
+                                            function setDonutChart(svgId, data) {
+                                                const svg = document.getElementById(svgId);
+                                                svg.innerHTML = ""; // очистка
+                                                
+                                                const cx = 103, cy = 103; 
+                                                const outerR = 103;          
+                                                const innerR = outerR - 70;    
+                                                
+                                                const total = data.reduce((a, b) => a + b, 0);
+                                                let startAngle = 0;
+                                                let gapAngle = 4 * Math.PI / 180;
+                                                
+                                                data.forEach((value, i) => {
+                                                    let endAngle = startAngle + (value / total) * 2 * Math.PI;
+                                                
+                                                    // відступи з обох боків
+                                                    const angle1 = startAngle + gapAngle / 2;
+                                                    const angle2 = endAngle - gapAngle / 2;
+                                                
+                                                    if (angle2 <= angle1) {
+                                                        startAngle = endAngle;
+                                                        return; // сегмент надто малий
+                                                    }
+                                                
+                                                    // точки зовнішньої дуги
+                                                    const x1 = cx + outerR * Math.cos(angle1);
+                                                    const y1 = cy + outerR * Math.sin(angle1);
+                                                    const x2 = cx + outerR * Math.cos(angle2);
+                                                    const y2 = cy + outerR * Math.sin(angle2);
+                                                
+                                                    // точки внутрішньої дуги
+                                                    const x3 = cx + innerR * Math.cos(angle2);
+                                                    const y3 = cy + innerR * Math.sin(angle2);
+                                                    const x4 = cx + innerR * Math.cos(angle1);
+                                                    const y4 = cy + innerR * Math.sin(angle1);
+                                                
+                                                    const largeArc = (angle2 - angle1) > Math.PI ? 1 : 0;
+                                                
+                                                    const d = `
+                                                    M ${x1} ${y1}
+                                                    A ${outerR} ${outerR} 0 ${largeArc} 1 ${x2} ${y2}
+                                                    L ${x3} ${y3}
+                                                    A ${innerR} ${innerR} 0 ${largeArc} 0 ${x4} ${y4}
+                                                    Z
+                                                    `;
+                                                
+                                                    const colors = ["#F54617", "#1E1E1E", "#585352", "#BDBDBD"];
+
+                                                    const path = document.createElementNS("http://www.w3.org/2000/svg", "path");
+                                                    path.setAttribute("d", d);
+                                                    path.setAttribute("fill", colors[i % colors.length]);
+                                                    svg.appendChild(path);
+                                                
+                                                    startAngle = endAngle;
+                                                });
+                                            }
+                                            
+                                            setDonutChart("donutChart", [60, 18, 10, 12]);
+                                        </script>
+    
                                         <ul class="pl-lg-3 mx-auto pt-lg-0 pt-2 d-lg-block d-flex flex-wrap mr-lg-0 w-fit-content">
                                             <li class="mb-1 p-1 max-w-lg-fit-content col-sm-4 col-6">
                                                 <a href="#" class="br-4 px-2 py-1 items-center hover-b-orange b-1 b-white">
